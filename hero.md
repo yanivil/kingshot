@@ -1,3 +1,7 @@
+---
+# Date the values below were read in the game (YYYY-MM-DD). Used by scripts/build_data.py.
+as_of: 2026-10-21
+---
 # Hero Roster & Gear Documentation
 
 Documentation of hero progression, skill levels, star ascensions, and equipped gear in [Kingshot](https://www.centurygames.com/games/kingshot/).

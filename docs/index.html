@@ -842,7 +842,8 @@ class Dashboard extends StateHost {
           var txt = s.state === 'empty' ? 'Empty' : (s.state === 'plus0' ? '+0' : (s.state || NR));
           return { slot: (s.quality ? s.quality + ' ' : '') + (s.slot || 'Slot'), stateText: txt, cls: badS ? 'bad' : '' };
         }),
-        slotsNote: slots === null ? 'Slot-by-slot gear: Not recorded.' : 'Other slots: Not recorded.',
+        // gear.slotsComplete (set by scripts/build_data.py) means the list is every slot, not just the problem ones.
+        slotsNote: slots === null ? 'Slot-by-slot gear: Not recorded.' : (dh0.gear.slotsComplete === true ? 'All slots recorded.' : 'Other slots: Not recorded.'),
         hasGearNote: !!(dh0.gear && dh0.gear.note), gearNote: (dh0.gear && dh0.gear.note) || '',
         widgetText: !w ? NR : (w.unlocked ? 'Unlocked' + (w.name ? ' · ' + w.name : '') + ' · ' + (w.level != null ? '+' + w.level : 'level ' + NR) : 'Locked'),
         skills: (Array.isArray(dh0.skills) ? dh0.skills : []).map(function (k) {

@@ -1,3 +1,7 @@
+---
+# Date the values below were read in the game (YYYY-MM-DD). Used by scripts/build_data.py.
+as_of: 2026-10-21
+---
 # Kingshot Gift & Redeem Codes Tracker
 
 A complete tracker for all active and recent promotional gift codes for [Kingshot](https://www.centurygames.com/games/kingshot/) discovered across official announcements, community milestones, and social media channels (Discord, Facebook, and Instagram).
@@ -10,8 +14,8 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 
 | Redeemed? | Gift Code | Rewards & Free Items | Source / Notes | Updated |
 | :---: | :--- | :--- | :--- | :---: |
-| [ ] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code | 2026-10-21 |
-| [ ] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-21 |
+| [x] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code | 2026-10-21 |
+| [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-21 |
 
 ## How to Redeem Codes
 
@@ -39,9 +43,9 @@ These promotional codes have recently concluded their redemption period or reach
 | [ ] | `VIP1017` | Governor Concierge VIP Code (Expired October 20, 2026) | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup | 2026-10-21 |
 | [ ] | `IG200KS` | Official Instagram 200K Followers | 1,000 Gems, 2x Mythic Hero Shards, 10x 1h Speedups, Resources | 2026-10-21 |
 | [ ] | `CHALLENGE26` | Community Challenge Event | 1,000 Gems, Skill Manuals, Charm Guides, 3x 1h Speedups | 2026-10-21 |
-| [ ] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone | 2026-10-21 |
-| [ ] | `WELLDONE` | Weekend Community Boost | 1,000 Gems, 20K Hero XP, 4x 1h Speedups, City Resources | 2026-10-21 |
-| [ ] | `KS1005` | October Weekend Drop | 500 Gems, 10x 5m Speedups, 200 Hero XP, Avatar Frame | 2026-10-21 |
+| [x] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone | 2026-10-21 |
+| [x] | `WELLDONE` | Weekend Community Boost | 1,000 Gems, 20K Hero XP, 4x 1h Speedups, City Resources | 2026-10-21 |
+| [x] | `KS1005` | October Weekend Drop | 500 Gems, 10x 5m Speedups, 200 Hero XP, Avatar Frame | 2026-10-21 |
 | [ ] | `EXPLORETHEWORLD` | World Exploration Promo | 1,000 Gems, Skill Books, Charm Materials, Artisan's Vision | 2026-10-21 |
 | [ ] | `MIDAUTUMN26` | Mid-Autumn Festival 2026 | 1,000 Gems, 300 VIP XP, 20x 5m Speedups, 50 Stamina | 2026-10-21 |
 | [ ] | `JPHolidaySEP` | Regional Celebration Drop | 1,000 Gems, Skill Manuals, 3x 1h Speedups, Charm Materials | 2026-10-21 |

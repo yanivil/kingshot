@@ -1,3 +1,7 @@
+---
+# Date the values below were read in the game (YYYY-MM-DD). Used by scripts/build_data.py.
+as_of: 2026-10-21
+---
 # Troops Inventory & Formations
 
 Detailed breakdown of military forces, training facilities, infirmary capacity, and configured march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
