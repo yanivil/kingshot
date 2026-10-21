@@ -17,7 +17,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T3) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks |
 | **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 53 | 3-Star (T3) | **Core Carry:** Deep flanking penetration targeting enemy backline squishies |
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 49 | 3-Star (T5) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure |
-| **Backline (Right)** | **Amane** | Archer | Epic (Purple) | Lv. 49 | 4 Stars | **Secondary Ranged DPS:** Concentrated backline archery fire and squad attack buffs |
+| **Backline (Right)** | **Amane** | Archer | Epic (Purple) | Lv. 46 | 2-Star (T5) | **Secondary Ranged DPS:** Concentrated backline archery fire and squad attack buffs |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
 * **Defensive Squad Power:** **2,349,445**
@@ -30,7 +30,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Frontline (Right)** | **Fahd** | Cavalry | Epic (Purple) | Lv. 48 | 2-Star (T5) | **Defensive Bruiser:** Frontline brawler applying enemy damage reduction |
 | **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 53 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage |
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 49 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage |
-| **Backline (Right)** | **Amane** | Archer | Epic (Purple) | Lv. 49 | 4 Stars | **Secondary Ranged DPS:** Backline suppressive fire |
+| **Backline (Right)** | **Amane** | Archer | Epic (Purple) | Lv. 46 | 2-Star (T5) | **Secondary Ranged DPS:** Backline suppressive fire |
 
 ## Wall Guard (City Barricade Defense)
 
@@ -46,7 +46,7 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 49 | 3-Star (T3) | Primary shield wall and garrison damage reduction |
 | **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 53 | 3-Star (T3) | Counter-offensive burst damage against attackers |
-| **Slot 3** | **Amane** | Archer | Epic (Purple) | Lv. 49 | 4 Stars | Suppressive archery and defense synergy |
+| **Slot 3** | **Amane** | Archer | Epic (Purple) | Lv. 46 | 2-Star (T5) | Suppressive archery and defense synergy |
 
 ### Barricade 2 (Secondary Gate)
 * **Status:** Level 10 (MAX)
@@ -67,4 +67,4 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 | Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power |
 | :--- | :---: | :--- | :--- | :--- | :---: | :---: |
 | **Beast Hunt** | `Be` | Diana (Lv. 49) | Jabel (Lv. 53) | Forrest (Lv. 49) | 29% Inf / 30% Cav / 41% Arc | 9,303,894 |
-| **Attack** | `Att` | Howard (Lv. 49) | Jabel (Lv. 53) | Amane (Lv. 49) | 36% Inf / 40% Cav / 24% Arc | 10,026,067 |
+| **Attack** | `Att` | Howard (Lv. 49) | Jabel (Lv. 53) | Amane (Lv. 46) | 36% Inf / 40% Cav / 24% Arc | 10,026,067 |
