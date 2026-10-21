@@ -48,6 +48,12 @@ This repository provides:
 * **`design/dashboard-prototype.dc.html`**: The approved design prototype (design-canvas format; not runnable on its own).
 * **`CHANGELOG.md`**: History of changes.
 
+### Update dates
+
+Every value in `profile.md`, `hero.md`, `lineups.md`, `troops.md` and `codes.md` carries the date it was
+last uploaded: tables have an **Updated** column, and other values end with _(YYYY-MM-DD)_.
+When you change a value, set its date to the day of the upload. Unchanged rows keep their old date.
+
 ## Account Dashboard
 
 A phone-first dashboard that answers three questions: where the account stands, where it is weak,
