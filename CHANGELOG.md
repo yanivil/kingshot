@@ -18,3 +18,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `hero.md`: Chenko promoted to 3-Star Tier 4; Gordon's Culinary Chaos and Amane's Exorcism reach Lv. 3;
   Yeonwoo and Saul equip Windbreaker Leatherwear in the empty chest slot.
 - `lineups.md`: Arena offensive squad power is now 2,383,515, and Chenko is listed at 3-Star (T4).
+- `docs/index.html`: `KS_DATA` updated to match these changes (Chenko, Gordon, Yeonwoo, Amane, Saul,
+  Arena attack power), including the recommendation and data-health text that quoted the old values.
