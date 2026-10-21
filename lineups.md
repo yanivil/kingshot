@@ -14,7 +14,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 49 | 3-Star (T3) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) |
-| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T3) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks |
+| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T4) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks |
 | **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 53 | 3-Star (T3) | **Core Carry:** Deep flanking penetration targeting enemy backline squishies |
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 49 | 3-Star (T5) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure |
 | **Backline (Right)** | **Amane** | Archer | Epic (Purple) | Lv. 46 | 2-Star (T5) | **Secondary Ranged DPS:** Concentrated backline archery fire and squad attack buffs |
@@ -57,7 +57,7 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Slot 1** | **Fahd** | Cavalry | Epic (Purple) | Lv. 48 | 2-Star (T5) | Incoming damage reduction and garrison endurance |
-| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T3) | Rapid cavalry counter-strikes |
+| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T4) | Rapid cavalry counter-strikes |
 | **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 49 | 3-Star (T5) | Defensive ranged archery and splash suppressive fire |
 
 * **Total City Wall Defense Hero Power:** 2.7M (1.4M + 1.3M)
