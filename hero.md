@@ -13,7 +13,7 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 | **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 3) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg |
 | **Gordon** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Reserve / Support Bruiser | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP |
 | **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Arena Defense (Front-R), Barricade 2 (Lead) | **Defensive Bruiser:** Frontline brawler & enemy debuffer |
-| **Amane** | SR / Epic | Archer | Lv. 49 | 4 Stars | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Ranged DPS:** Sustained archery damage & rally buffs |
+| **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 49 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 49 | 3-Star (Tier 3) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) |
 | **Olive** | Rare (Blue) | Archer | Lv. 49 | 3-Star (Tier 4) | Reserve / Economy | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) |
@@ -908,3 +908,80 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 | :--- | :---: | :---: | :--- | :--- |
 | **Desert Eclipse** | Top | **Lv. 3** | Rising sand cloud **reduces Enemy Squads' Damage Dealt by 12%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 16% reduction) |
 | **Pathfinder** | Bot | **Lv. 3** | Leads his warriors, **increasing Solo Hunting March Speed by 60%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +80% Speed) |
+
+## In-Depth Hero Profile: Amane
+
+* **Hero Name:** Amane
+* **Rarity:** **SR / Epic** (Generation 1)
+* **Class & Role:** Archer Development Specialist / Umbrella Marksman (Bow / Hammer)
+* **Current Level:** **Lv. 46** (XP: 276,957 / 100,000 — **Ready to Upgrade to Lv. 47**)
+* **Star Tier:** **2-Star (Tier 5)** (Shards: 0 / 40 to 3-Star promotion)
+* **Total Hero Power:** **267,790**
+* **Troop Capacity Boost:** **+9,540 Troops**
+* **Escort Guards:** **7 Escorts**
+* **Total Equipped Gear Power:** **49,950** *(3/4 slots equipped; Chest Armor vacant)*
+
+### 1. Overall Combat & Development Attributes (Base + Gear)
+
+| Category | Attribute | Total Value | Tactical & Strategic Effect |
+| :--- | :--- | :---: | :--- |
+| **Conquest (Hero)** | **Hero Attack** | **1,067** | Ranged magical umbrella and sigil damage scaling |
+| | **Hero Defense** | **996** | Base defense rating against counter-attacks |
+| | **Hero Health** | **6,336** | Backline ranged combatant health pool |
+| **Conquest (Escort)** | **Escort Attack** | **355** | Attack output of her 7 escort marksmen |
+| | **Escort Defense** | **332** | Defense rating of her escort guards |
+| | **Escort Health** | **2,112** | Health pool of escort guards |
+| **Expedition (March)** | **Archer Attack** | **+60.64%** | Army-wide bonus to deployed Archers |
+| | **Archer Defense** | **+60.64%** | Durability bonus for archer units |
+| | **Archer Lethality**| **+13.40%** | Casualty conversion rate for archers (from gear) |
+| | **Archer Health** | **+6.00%** | Durability pool for deployed archer squads (from gear) |
+
+### 2. Star Promotion Milestone Preview (2-Star Tier 5 ➔ 3-Star)
+
+Current Status: **0 / 40 Shards** (needs **40 shards** for 3-Star promotion).
+
+| Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
+| :--- | :---: | :---: | :---: |
+| **Base Hero Power** | 140,160 | **+21,920** | 162,080 |
+| **Hero Attack** | 617 | **+76** | 693 |
+| **Hero Defense** | 636 | **+78** | 714 |
+| **Hero Health** | 3,816 | **+468** | 4,284 |
+| **Escort Attack** | 205 | **+26** | 231 |
+| **Escort Defense** | 212 | **+26** | 238 |
+| **Escort Health** | 1,272 | **+156** | 1,428 |
+| **Archer Attack** | +60.64% | **+5.80%** | **+66.44%** |
+| **Archer Defense** | +60.64% | **+5.80%** | **+66.44%** |
+
+### 3. Equipped Hero Gear
+
+Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
+
+| Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+10** | 19,950 | ATK: +87 / HP: +270 | ATK: +29 / HP: +90 | +7.40% Archer Lethality |
+| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health |
+| **Armor** | *None Equipped* | — | — | — | — | — | — | — |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **Base (+0)** | 15,000 | ATK: +72 / HP: +225 | ATK: +24 / HP: +75 | +6.00% Archer Lethality |
+
+#### Aggregate Stat Bonuses from Gear
+* **Expedition Troop Multipliers:**
+  * **Archer Lethality:** **+13.40%** (+7.40% Faceplate + 6.00% Boots)
+  * **Archer Health:** **+6.00%** (+6.00% Bracers)
+* **Conquest Raw Attribute Increases:**
+  * **Hero Attributes:** +159 Attack | +60 Defense | +720 Health
+  * **Escort Squad Attributes:** +53 Attack | +20 Defense | +240 Health
+
+### 4. Exploration Skills (PvP, Arena & Campaign)
+
+| Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Sakura Blossom** | Active (Top) | **Lv. 2** | Protective enchantment **increases all Hero & Escorts' Attack by 2% and Attack Speed by 3% for 4s**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: 2.5% ATK / 3.5% Speed) |
+| **Fire Sigil** | Passive (Mid) | **Lv. 2** | Lobs fiery sigil, dealing **Attack * 165% damage** to enemy. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: 180% DMG) |
+| **Divine Melody** | Passive (Bot) | **Lv. 2** | Every 3 basic attacks **increases Attack Speed by 2% until end of battle**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: +3% Speed) |
+
+### 5. Expedition & Development Skills (Army Warfare & City Management)
+
+| Skill Name | Slot | Current Level | Strategic & Settlement Utility | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Tri-Phalanx** | Top (Warfare) | **Lv. 3** | Trademark formation **increases all Squads' total Attack by 15%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% ATK) |
+| **Exorcism** | Bot (Development) | **Lv. 2** | Wards off evil, **increasing Infirmary Healing Speed by 20%**. | **In Progress** (33/30 Epic Development Books to Lv. 3: +30% Speed) |
