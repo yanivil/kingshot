@@ -193,6 +193,17 @@ class MergeAndOutputTests(unittest.TestCase):
             with self.assertRaises(bd.BuildError):
                 bd.inject(template, {})
 
+    def test_governor_name_row_is_optional(self) -> None:
+        """Without a Governor Name row the name is null and no warning is raised for it."""
+        body = ("## Governor Identity & Account Statistics\n\n"
+                "| Attribute | Value | Details | Updated |\n| :--- | :---: | :--- | :---: |\n"
+                "| **Alliance** | **SPQ** | x | 2026-10-21 |\n")
+        log = bd.BuildLog()
+        governor = bd.parse_profile(body, "2026-10-21", log)["governor"]
+        self.assertIsNone(governor["name"])
+        self.assertEqual(governor["alliance"], "SPQ")
+        self.assertFalse([w for w in log.warnings if "Governor Name" in w])
+
     def test_player_id_guard(self) -> None:
         """The build refuses to write text containing the Player ID."""
         bd.check_player_id("nothing here", "123456789")

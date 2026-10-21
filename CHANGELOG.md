@@ -51,3 +51,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
   It remains in the git history of earlier commits.
+- The governor name, from `profile.md` (the "Governor Name" row, now optional for the generator),
+  `troops.md`, `README.md`, the hand-written `KS_DATA` in `docs/index.html` and the design prototype.
+  The dashboard header shows "Governor: Not recorded". The name remains in the git history.

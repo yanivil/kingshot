@@ -16,7 +16,7 @@ KS_DATA, stored between the lines ``/* KS_DATA:BEGIN */`` and
 Rules (agreed before this script was written, see docs/SCHEMA.md):
 
 * A value that is not in the files becomes ``null``. Nothing is invented.
-* Rows are found by their exact bold label (e.g. ``Governor Name``). A renamed
+* Rows are found by their exact bold label (e.g. ``Overall Account Power``). A renamed
   label turns the field into ``null`` and prints a warning.
 * data/manual.json may only fill fields the parser left empty; setting a field
   the .md files already provide stops the build.
@@ -588,7 +588,9 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     player_id = identity.get("Player ID")
 
     governor = {
-        "name": strip_md(label_value(identity, "Governor Name", src, log)) or None,
+        # Optional row: the name is deliberately not stored in this public repo,
+        # so its absence is expected and not a warning.
+        "name": strip_md(identity.get("Governor Name")) or None,
         "kingdom": parse_number(label_value(identity, "Kingdom / Server", src, log)),
         "alliance": strip_md(label_value(identity, "Alliance", src, log)) or None,
         "vip": parse_number(label_value(identity, "VIP Level", src, log)),

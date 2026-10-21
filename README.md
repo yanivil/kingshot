@@ -38,7 +38,7 @@ Mechanically, the game shares its progression framework and engine with Century 
 ## Repository Scope
 
 This repository provides:
-* **`profile.md`**: Governor account identity ([SPQ]Aldric), Kingdom #2508, Town Center Lv. 20 stats & perks.
+* **`profile.md`**: Governor account identity, Kingdom #2508, Town Center Lv. 20 stats & perks.
 * **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones.
 * **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (City Wall Guard), and saved March Presets (`Be` and `Att`).
 * **`troops.md`**: Tier VII standing troop inventory, march capacities, and infirmary hospital caps.
