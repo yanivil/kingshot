@@ -1,3 +1,7 @@
+---
+# Date the values below were read in the game (YYYY-MM-DD). Used by scripts/build_data.py.
+as_of: 2026-10-21
+---
 # Arena & Wall Guard Lineups
 
 Deployment configurations for 5v5 Arena offense and defense, city barricade defense (Wall Guard), and saved march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
