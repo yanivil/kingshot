@@ -50,7 +50,9 @@ hand-written, so the file still works when opened directly.
 | `lockedHeroesNotInData` | number \| null | Shown as a note under the hero grid |
 
 ### `governor`
-`name`, `kingdom`, `alliance`, `vip`, `power`, `kills`, `stamina{current,max}`, `serverDay`, `asOf`.
+`name`, `kingdom`, `alliance`, `vip`, `power`, `powerRounded`, `kills`, `stamina{current,max}`, `serverDay`, `asOf`.
+`powerRounded: true` means the game showed a rounded figure (e.g. 11.4M); the Overview tile then shows it
+rounded too instead of a precise-looking 11,400,000.
 
 ### `townCenter`
 `level`, `citizens{current,max}`, `attack`, `defense`, `health`,

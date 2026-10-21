@@ -12,12 +12,12 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **11,110,919** (11.1M) | Total empire strength | 2026-10-21 |
+| **Overall Account Power** | **11.4M** | Total empire strength (the profile screen shows only the rounded figure) | 2026-10-21 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-21 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-21 |
 | **Total Combat Kills** | **291,236** | Total enemy unit casualties inflicted | 2026-10-21 |
 | **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-21 |
-| **Stamina** | **240 / 200** | Governor hunting and expedition energy | 2026-10-21 |
+| **Stamina** | **161 / 200** | Governor hunting and expedition energy | 2026-10-21 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-21 |
 | **Governor Gear** | **6 / 6 Locked** | Governor equipment slots pending unlock | 2026-10-21 |
 

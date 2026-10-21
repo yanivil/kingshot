@@ -587,6 +587,7 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         gear_pair = None
     player_id = identity.get("Player ID")
 
+    power = parse_amount(label_value(identity, "Overall Account Power", src, log))
     governor = {
         # Optional row: the name is deliberately not stored in this public repo,
         # so its absence is expected and not a warning.
@@ -594,7 +595,9 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         "kingdom": parse_number(label_value(identity, "Kingdom / Server", src, log)),
         "alliance": strip_md(label_value(identity, "Alliance", src, log)) or None,
         "vip": parse_number(label_value(identity, "VIP Level", src, log)),
-        "power": parse_number(label_value(identity, "Overall Account Power", src, log)),
+        "power": power["value"] if power else None,
+        # The profile screen may show only "11.4M"; the page then shows it rounded too.
+        "powerRounded": power["rounded"] if power else None,
         "kills": parse_number(label_value(identity, "Total Combat Kills", src, log)),
         "stamina": {"current": stamina[0], "max": stamina[1]} if stamina else None,
         "serverDay": None,  # Not recorded in any .md file.

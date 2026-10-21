@@ -204,6 +204,15 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(governor["alliance"], "SPQ")
         self.assertFalse([w for w in log.warnings if "Governor Name" in w])
 
+    def test_rounded_account_power_is_flagged(self) -> None:
+        """'11.4M' gives 11,400,000 with powerRounded true; an exact figure gives false."""
+        row = "| **Overall Account Power** | **{}** | x | 2026-10-21 |\n"
+        head = ("## Governor Identity & Account Statistics\n\n"
+                "| Attribute | Value | Details | Updated |\n| :--- | :---: | :--- | :---: |\n")
+        for text, value, rounded in (("11.4M", 11400000, True), ("11,110,919", 11110919, False)):
+            governor = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governor"]
+            self.assertEqual((governor["power"], governor["powerRounded"]), (value, rounded))
+
     def test_player_id_guard(self) -> None:
         """The build refuses to write text containing the Player ID."""
         bd.check_player_id("nothing here", "123456789")

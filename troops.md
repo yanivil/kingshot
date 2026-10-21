@@ -14,20 +14,20 @@ All standing forces are **Tier VII (Brave)** units across the three military bra
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VII | Brave Infantry | 26,948 | 30.1% | In Town / Ready | **+80** | 2026-10-21 |
-| **Cavalry** | VII | Brave Cavalry | 31,273 | 35.0% | In Town / Ready | **+80** | 2026-10-21 |
-| **Marksmen** | VII | Brave Archer | 31,191 | 34.9% | In Town / Ready | **+80** | 2026-10-21 |
-| **Total Military Force** | **VII** | — | **89,412** | **100%** | **0 Injured** | **+240** | 2026-10-21 |
+| **Infantry** | VII | Brave Infantry | 30,756 | 31.7% | In Town / Ready | — | 2026-10-21 |
+| **Cavalry** | VII | Brave Cavalry | 33,127 | 34.2% | In Town / Ready | — | 2026-10-21 |
+| **Marksmen** | VII | Brave Archer | 33,045 | 34.1% | In Town / Ready | — | 2026-10-21 |
+| **Total Military Force** | **VII** | — | **96,928** | **100%** | **0 Injured** | — | 2026-10-21 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 89,412 | Fully mustered in town (+240 recently trained) | 2026-10-21 |
+| **Total Standing Troops** | 96,928 | Troops Preview shows 96,928 / 96,928 | 2026-10-21 |
 | **Single March Capacity** | 74,880 | Maximum troops per deployment | 2026-10-21 |
 | **Available March Queues** | 4 / 4 | All 4 dispatch queues unlocked | 2026-10-21 |
-| **Infirmary Hospital Capacity** | 36,900 | 0 / 36,900 injured (0% occupancy) | 2026-10-21 |
-| **Overall Account Power** | 11,110,919 | VIP 3 (Kingdom #2508) | 2026-10-21 |
+| **Infirmary Hospital Capacity** | 38,600 | 0 / 38,600 injured (0% occupancy) | 2026-10-21 |
+| **Overall Account Power** | 11.4M | VIP 3 (Kingdom #2508) | 2026-10-21 |
 | **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP | 2026-10-21 |
 
 ## Saved March Formations
