@@ -209,4 +209,5 @@ removed before parsing and not used, so they can never be read as a value.
   skill status, roster/profile disagreement. Shown as annotations on the GitHub Actions run.
 - **Error** (nothing is written): a missing `.md` file, no hero roster table, invalid `data/manual.json`,
   a manual/parsed collision, not exactly one `KS_DATA` block in the template, or the Player ID appearing
-  anywhere in the output.
+  anywhere in the output. The Player ID check runs only if profile.md has a "Player ID" row; the
+  repository no longer stores the ID, so today there is nothing it could leak.

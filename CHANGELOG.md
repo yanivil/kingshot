@@ -49,4 +49,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `README.md`: architecture, data-update steps and the GitHub Pages setting for the generator.
 
 ### Removed
-- `README.md`: the Player ID from the `profile.md` description. It stays in `profile.md` and in git history.
+- The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
+  It remains in the git history of earlier commits.

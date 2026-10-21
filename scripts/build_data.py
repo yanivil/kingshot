@@ -20,7 +20,8 @@ Rules (agreed before this script was written, see docs/SCHEMA.md):
   label turns the field into ``null`` and prints a warning.
 * data/manual.json may only fill fields the parser left empty; setting a field
   the .md files already provide stops the build.
-* The Player ID is read only to make sure it never reaches the output.
+* If profile.md has a "Player ID" row, it is read only to make sure the ID
+  never reaches the output. (The row is optional and currently absent.)
 
 Usage::
 
