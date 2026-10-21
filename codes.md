@@ -6,14 +6,16 @@ as_of: 2026-10-21
 
 A complete tracker for all active and recent promotional gift codes for [Kingshot](https://www.centurygames.com/games/kingshot/) discovered across official announcements, community milestones, and social media channels (Discord, Facebook, and Instagram).
 
+Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
+
 Use the **Redeemed?** column to track which codes you have already claimed on your account.
 
 ## Active Codes
 
-| Redeemed? | Gift Code | Rewards & Free Items | Source / Notes |
-| :---: | :--- | :--- | :--- |
-| [x] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code |
-| [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code |
+| Redeemed? | Gift Code | Rewards & Free Items | Source / Notes | Updated |
+| :---: | :--- | :--- | :--- | :---: |
+| [x] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code | 2026-10-21 |
+| [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-21 |
 
 ## How to Redeem Codes
 
@@ -35,30 +37,30 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 
 These promotional codes have recently concluded their redemption period or reached their global redemption cap. They are archived below for reference in case Century Games re-activates them during future seasonal celebrations.
 
-| Redeemed? | Gift Code | Channel / Milestone Event | Recorded Rewards |
-| :---: | :--- | :--- | :--- |
-| [ ] | `KS1017` | Community Event Code (Expired October 20, 2026) | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame |
-| [ ] | `VIP1017` | Governor Concierge VIP Code (Expired October 20, 2026) | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup |
-| [ ] | `IG200KS` | Official Instagram 200K Followers | 1,000 Gems, 2x Mythic Hero Shards, 10x 1h Speedups, Resources |
-| [ ] | `CHALLENGE26` | Community Challenge Event | 1,000 Gems, Skill Manuals, Charm Guides, 3x 1h Speedups |
-| [x] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone |
-| [x] | `WELLDONE` | Weekend Community Boost | 1,000 Gems, 20K Hero XP, 4x 1h Speedups, City Resources |
-| [x] | `KS1005` | October Weekend Drop | 500 Gems, 10x 5m Speedups, 200 Hero XP, Avatar Frame |
-| [ ] | `EXPLORETHEWORLD` | World Exploration Promo | 1,000 Gems, Skill Books, Charm Materials, Artisan's Vision |
-| [ ] | `MIDAUTUMN26` | Mid-Autumn Festival 2026 | 1,000 Gems, 300 VIP XP, 20x 5m Speedups, 50 Stamina |
-| [ ] | `JPHolidaySEP` | Regional Celebration Drop | 1,000 Gems, Skill Manuals, 3x 1h Speedups, Charm Materials |
-| [ ] | `KS0919` | September Drop | 500 Gems, Speedups, Hero XP, Avatar Frame |
-| [ ] | `KS0909` | Flash Weekend Gift | 500 Gems, Speedups, Hero XP, Avatar Frame |
-| [ ] | `KS0907` | Community Milestone Drop | 500 Gems, Speedups, Hero XP, Avatar Frame |
-| [ ] | `OFFICIALSTORE0904` | Official Web Store Launch Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources |
-| [ ] | `CHILLWEEKEND` | Community Discord Event | 1,000 Gems, 5x Gold Keys, 2x Platinum Keys, Charm Guides |
-| [ ] | `FB2500KT` | Official Facebook Milestone | 2,000 Gems, 3x Mythic Hero Shards, 10x 1h Training Speedups |
-| [ ] | `VIP0822` | Governor Concierge VIP Drop | 2,000 Gems, 5x Mystery Chests, Charm Guides, 8h Speedup |
-| [ ] | `KS0822` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame |
-| [ ] | `JP26SUMMER` | Summer Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources |
-| [ ] | `OFFICIALSTORE08011` | Web Store Anniversary Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources |
-| [ ] | `KS0810` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame |
-| [ ] | `HAPPYCATDAY` | International Cat Day Event | 1,000 Gems, 2x Lucky Hero Gear Chests, Enhancement XP |
+| Redeemed? | Gift Code | Channel / Milestone Event | Recorded Rewards | Updated |
+| :---: | :--- | :--- | :--- | :---: |
+| [ ] | `KS1017` | Community Event Code (Expired October 20, 2026) | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | 2026-10-21 |
+| [ ] | `VIP1017` | Governor Concierge VIP Code (Expired October 20, 2026) | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup | 2026-10-21 |
+| [ ] | `IG200KS` | Official Instagram 200K Followers | 1,000 Gems, 2x Mythic Hero Shards, 10x 1h Speedups, Resources | 2026-10-21 |
+| [ ] | `CHALLENGE26` | Community Challenge Event | 1,000 Gems, Skill Manuals, Charm Guides, 3x 1h Speedups | 2026-10-21 |
+| [x] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone | 2026-10-21 |
+| [x] | `WELLDONE` | Weekend Community Boost | 1,000 Gems, 20K Hero XP, 4x 1h Speedups, City Resources | 2026-10-21 |
+| [x] | `KS1005` | October Weekend Drop | 500 Gems, 10x 5m Speedups, 200 Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `EXPLORETHEWORLD` | World Exploration Promo | 1,000 Gems, Skill Books, Charm Materials, Artisan's Vision | 2026-10-21 |
+| [ ] | `MIDAUTUMN26` | Mid-Autumn Festival 2026 | 1,000 Gems, 300 VIP XP, 20x 5m Speedups, 50 Stamina | 2026-10-21 |
+| [ ] | `JPHolidaySEP` | Regional Celebration Drop | 1,000 Gems, Skill Manuals, 3x 1h Speedups, Charm Materials | 2026-10-21 |
+| [ ] | `KS0919` | September Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `KS0909` | Flash Weekend Gift | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `KS0907` | Community Milestone Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `OFFICIALSTORE0904` | Official Web Store Launch Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
+| [ ] | `CHILLWEEKEND` | Community Discord Event | 1,000 Gems, 5x Gold Keys, 2x Platinum Keys, Charm Guides | 2026-10-21 |
+| [ ] | `FB2500KT` | Official Facebook Milestone | 2,000 Gems, 3x Mythic Hero Shards, 10x 1h Training Speedups | 2026-10-21 |
+| [ ] | `VIP0822` | Governor Concierge VIP Drop | 2,000 Gems, 5x Mystery Chests, Charm Guides, 8h Speedup | 2026-10-21 |
+| [ ] | `KS0822` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `JP26SUMMER` | Summer Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
+| [ ] | `OFFICIALSTORE08011` | Web Store Anniversary Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
+| [ ] | `KS0810` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
+| [ ] | `HAPPYCATDAY` | International Cat Day Event | 1,000 Gems, 2x Lucky Hero Gear Chests, Enhancement XP | 2026-10-21 |
 
 ## Official Channels to Monitor for New Codes
 

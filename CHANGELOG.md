@@ -35,6 +35,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Arena attack power), including the recommendation and data-health text that quoted the old values.
 - Jabel: Lv. 54 (cap until Town Center Lv. 21), power 564,200, troop capacity +11,525, boots enhanced
   to +20; stats updated in `hero.md`, her level in `lineups.md` and `troops.md`, and her `KS_DATA` entry.
+- `profile.md`, `hero.md`, `lineups.md`, `troops.md`, `codes.md`: every value now shows when it was last
+  uploaded (an **Updated** column in tables, _(YYYY-MM-DD)_ after other values). Initial dates come from
+  git history; all current values were uploaded on 2026-10-21. README documents the convention.
 - `codes.md`: Kingshot888, VIP777, KS1005, WELLDONE and Hangul2026 marked redeemed, matching the dashboard.
 - Dashboard data now comes from the generator, so it shows more of what the `.md` files hold: every hero's
   generation and role, all four gear slots, one entry per skill, the next promotion step for 14 of 15
