@@ -842,6 +842,7 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 * **Total Hero Power:** **295,760**
 * **Troop Capacity Boost:** **+10,125 Troops**
 * **Escort Guards:** **7 Escorts**
+* **Total Equipped Gear Power:** **71,560**
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
@@ -874,7 +875,26 @@ Current Status: **10 / 40 Shards** (needs **30 more shards** for 3-Star promotio
 | **Cavalry Attack** | +60.64% | **+5.80%** | **+66.44%** |
 | **Cavalry Defense** | +60.64% | **+5.80%** | **+66.44%** |
 
-### 3. Exploration Skills (PvP, Arena & Campaign)
+### 3. Equipped Hero Gear
+
+All 4 pieces match the native **Cavalry** troop class synergy:
+
+| Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+11** | 20,500 | ATK: +73 / HP: +366 | ATK: +24 / HP: +122 | +7.54% Cavalry Lethality |
+| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health |
+| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health |
+| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality |
+
+#### Aggregate Stat Bonuses from Gear
+* **Expedition Troop Multipliers:**
+  * **Cavalry Lethality:** **+15.22%** (+7.54% Armet + 7.68% Boots)
+  * **Cavalry Health:** **+12.00%** (+6.00% Gauntlets + 6.00% Breastplate)
+* **Conquest Raw Attribute Increases:**
+  * **Hero Attributes:** +147 Attack | +120 Defense | +1,338 Health
+  * **Escort Squad Attributes:** +48 Attack | +40 Defense | +446 Health
+
+### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank |
 | :--- | :---: | :---: | :--- | :--- |
@@ -882,7 +902,7 @@ Current Status: **10 / 40 Shards** (needs **30 more shards** for 3-Star promotio
 | **Eagle Wings** | Passive (Mid) | **Lv. 2** | After Sandstorm, Fahd's eagle directs attacks, **increasing personal & nearby friendly Squads' Attack by 20% for 2s**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: +25% ATK) |
 | **Dune General** | Passive (Bot) | **Lv. 2** | Harsh desert instincts **increase his personal Attack Speed by 15%**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: +20% Speed) |
 
-### 4. Expedition Skills (Army Warfare & Beast Hunting)
+### 5. Expedition Skills (Army Warfare & Beast Hunting)
 
 | Skill Name | Slot | Current Level | Strategic & March Utility | Upgrade Status & Next Rank |
 | :--- | :---: | :---: | :--- | :--- |
