@@ -21,7 +21,8 @@ All standing forces are **Tier VII (Brave)** units across the three military bra
 | **Single March Capacity** | 74,880 | Maximum troops per deployment |
 | **Available March Queues** | 4 / 4 | All 4 dispatch queues unlocked |
 | **Infirmary Hospital Capacity** | 36,900 | 0 / 36,900 injured (0% occupancy) |
-| **Overall Account Power** | 10,979,559+ | VIP 3 |
+| **Overall Account Power** | 11,110,919 | VIP 3 ([SPQ]Aldric, Kingdom #2508) |
+| **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP |
 
 ## Saved March Formations
 
