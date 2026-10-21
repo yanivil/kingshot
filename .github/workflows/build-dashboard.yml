@@ -1,0 +1,71 @@
+# Build the account dashboard from the .md files and publish it to GitHub Pages.
+#
+# Why a build step: docs/index.html in the repo keeps a hand-written KS_DATA
+# block; scripts/build_data.py regenerates that block from profile.md,
+# hero.md, troops.md, lineups.md, codes.md and data/manual.json into a
+# separate build/ folder, and only that folder is published.
+#
+# This workflow never commits or pushes: it has read-only access to the code
+# and deploys through the Pages artifact, so main only changes through PRs.
+#
+# One-time setting: Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
+
+name: Build and deploy dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.md"             # profile/hero/troops/lineups/codes.md (root level only)
+      - "data/manual.json"
+      - "docs/**"
+      - "scripts/**"       # a generator change must republish too
+      - ".github/workflows/build-dashboard.yml"
+  workflow_dispatch:       # manual run from the Actions tab
+
+permissions:
+  contents: read           # no write access: the workflow cannot commit to main
+  pages: write             # publish to GitHub Pages
+  id-token: write          # required by deploy-pages to verify the deployment
+
+# One deployment at a time; a newer push waits instead of cancelling a deploy halfway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Show Python version
+        run: python3 --version
+
+      - name: Test the generator
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
+
+      - name: Generate build/index.html
+        # Warnings (missing labels, missing dates) are shown as annotations and
+        # do not fail the run; structural errors and a Player ID leak do.
+        run: python3 scripts/build_data.py --out build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the build folder
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

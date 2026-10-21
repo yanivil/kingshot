@@ -3,6 +3,11 @@
 `docs/index.html` renders every view from one JSON object, `KS_DATA`, found between
 `/* KS_DATA:BEGIN */` and `/* KS_DATA:END */`. Replace only that block to update the dashboard.
 
+`scripts/build_data.py` generates this block from the five account `.md` files and
+`data/manual.json` (see [Where each field comes from](#where-each-field-comes-from)) and writes it
+into a copy of the page, `build/index.html`. The block inside `docs/index.html` itself stays
+hand-written, so the file still works when opened directly.
+
 ## General rules
 
 - **Missing = `null`.** The page shows "Not recorded" for any `null`/absent value. Never invent a value.
@@ -74,11 +79,12 @@
 | Field | Type | Notes |
 |---|---|---|
 | `name` | string | Required; the key used everywhere else |
-| `rarity`, `cls`, `generation`, `role` | string \| null | Filter options are built from the values present |
+| `rarity`, `cls`, `role` | string \| null | Filter options are built from the values present |
+| `generation` | number \| null | Shown as "Gen N"; also a filter |
 | `level`, `stars`, `tier` | number \| null | |
 | `shards` | `{have, need, to}` \| null | `to` = next step label (`"4★"`, `"T4"`); `null` shows "next step" |
 | `power`, `gearPower` | number \| null | |
-| `gear` | `{slots, note}` \| null | `slots` = `null` (not recorded) or `[{slot, state, quality?}]`; `state` is `"empty"`, `"plus0"` or free text. Empty and +0 slots are highlighted |
+| `gear` | `{slots, slotsComplete?, note}` \| null | `slots` = `null` (not recorded) or `[{slot, state, quality?}]`; `state` is `"empty"`, `"plus0"` or free text such as `"+17"`. Empty and +0 slots are highlighted. `slotsComplete: true` means `slots` lists every slot (the drawer then says "All slots recorded."); absent or `false` means only some slots are listed ("Other slots: Not recorded.") |
 | `widget` | `{unlocked, name, level}` \| null | |
 | `skills` | array \| null | `{name, status, level?, count?, all?, needs?, effect?, note?, confidence?}`; `status` is `capped`, `upgradeable`, `progress` or `locked` |
 | `notes` | string[] | Shown in the drawer |
@@ -123,3 +129,81 @@ across the roster, and stale or undated sections.
 
 ### `codes`
 `asOf`, `active[{code, redeemed}]`, `expired[{code, redeemed}]`, `expiredTotal`.
+
+## Where each field comes from
+
+`scripts/build_data.py` builds `KS_DATA` from five Markdown files plus one hand-edited JSON file.
+Rows are found by their **exact bold label**: renaming a label in a `.md` file turns that field
+into `null` and prints a warning.
+
+### Dates (`as_of` front matter)
+
+Each `.md` file starts with the date its values were read in the game:
+
+```
+---
+as_of: 2026-10-21
+---
+```
+
+That date becomes the `asOf` of every section built from the file. A missing or malformed date gives
+`null` (the page flags the section as undated) and a warning.
+
+### Field sources
+
+| `KS_DATA` | Source | Rule |
+|---|---|---|
+| `meta.schemaVersion` | script | Constant `1` |
+| `meta.snapshotAsOf` | front matter | Newest `as_of` of the five files |
+| `meta.staleAfterDays`, `meta.previousSnapshot`, `meta.lockedHeroesNotInData` | `data/manual.json` | |
+| `governor` | profile.md, "Governor Identity" table | Governor Name, Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
+| `townCenter` | profile.md, "Town Center (TC)" section | Current Level, Citizens / Workforce Capacity, the Attack / Defense / Health table; perks from the heading `(6 / 7 Unlocked)`, checked against the perk table. `perks.namesVerified` comes from `data/manual.json` |
+| `resources` | profile.md | Stored Food (Bread), Free Gems. A K/M/B suffix (`94.6M`) means `rounded: true`. Wood, stone, iron: `null` |
+| `governorGear` | profile.md, "Governor Gear" | `6 / 6 Locked` = 6 locked of 6 slots |
+| `army` | troops.md | `Tier VII (Brave)` → `"T7 Brave"`; inventory table (Infantry → `inf`, Cavalry → `cav`, Marksmen → `arc` "Archers"); the "Total Military Force" row gives total and injured; the caps table gives march capacity, queues and infirmary |
+| `rules` | `data/manual.json` | Community rules (Unverified) |
+| `heroes[]` | hero.md | See below |
+| `drillCamp` | `data/manual.json` | |
+| `lineups.marches` | troops.md, "Formation N: Purpose (`Tag`)" sections | Heroes (`Lead` marks the lead), deployed counts, ratios, power. lineups.md's preset table is only a cross-check |
+| `lineups.arena` | lineups.md | "… Squad Power"; `Frontline` rows → `front`, `Backline` rows → `back` |
+| `lineups.barricades` | lineups.md, "Barricade N" sections | `Level 10 (MAX)` → level 10, `maxed: true`; Combined Hero Power (`1.4M` → rounded) |
+| `lineups.guardStation` | not recorded | `null` |
+| `lineups.asOf` | front matter | Older of troops.md and lineups.md |
+| `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
+| `codes` | codes.md | `[x]` = redeemed, `[ ]` = not; every row of both tables; `expiredTotal` = number of expired rows |
+
+### Hero rules (hero.md)
+
+- **List and order:** the "Active Hero Roster" table. Details come from each
+  "In-Depth Hero Profile: Name" section; where both give a value (rarity, level, stars), the profile wins
+  and a warning is printed.
+- **name:** a bracketed alias is dropped (`Jabel (Jable)` → `Jabel`).
+- **rarity:** `SSR / Mythic` → `Mythic`, `Rare (Blue)` → `Rare`. **generation:** `(Generation N)` in the
+  profile's Rarity line. **role:** the bold label in the roster's role column (`**Core Carry:** …` → `Core Carry`).
+- **shards:** `(Shards: have / need to X)`. `to` comes from X (`4-Star promotion` → `4★`,
+  `Tier 5 promotion` → `T5`); when X is only "next promotion", from the preview heading
+  (`… ➔ Tier 4` → `T4`); otherwise `null`.
+- **gear.slots:** every row of the gear table (or the gear bullets): Helmet, Gauntlets → Gloves,
+  Armor → Chest, Boots. `Base (+0)` → `plus0`, `None Equipped` → `empty`, otherwise the level (`+17`);
+  `quality` from the rarity column; `slotsComplete: true`.
+- **widget:** the "Exclusive Widget" line. `Unlocked (…)` gives `name: null` (the brackets describe the
+  icon); no line gives `widget: null`.
+- **skills:** one entry per row of every skill table. `Capped at …` → `capped` (`needs` from
+  "Requires N-Star"); `In Progress (a/b …)` → `progress` with note `a/b …`, or `upgradeable` with
+  `confidence: "Inferred"` when a ≥ b; `Locked` → `locked` (`needs` from "Unlocks at N-Star").
+  Effect text is not copied.
+- **gear.note, notes:** from `data/manual.json` → `heroes.<Name>.gearNote` / `notes`.
+
+### `data/manual.json`
+
+- Top-level keys use the `KS_DATA` names; `heroes` is keyed by hero name. Keys starting with `_` are ignored.
+- It can only fill fields the `.md` files leave empty. Setting a field the `.md` files already
+  provide stops the build, so every value has one home.
+
+### Warnings and errors
+
+- **Warning** (the build continues, the value is `null`): missing label, missing date, unknown
+  skill status, roster/profile disagreement. Shown as annotations on the GitHub Actions run.
+- **Error** (nothing is written): a missing `.md` file, no hero roster table, invalid `data/manual.json`,
+  a manual/parsed collision, not exactly one `KS_DATA` block in the template, or the Player ID appearing
+  anywhere in the output.
