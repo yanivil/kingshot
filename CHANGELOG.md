@@ -47,6 +47,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `docs/SCHEMA.md`: `gear.slotsComplete`, `generation` as a number, and a "Where each field comes from"
   section with every parsing rule.
 - `README.md`: architecture, data-update steps and the GitHub Pages setting for the generator.
+- Account data from new in-game screens (Troops Preview, Governor Profile):
+  - `troops.md`: Infantry 30,756, Cavalry 33,127, Archers 33,045 (total 96,928; shares recomputed),
+    infirmary capacity 38,600, account power 11.4M. The old "Net Change" values are cleared (not shown).
+  - `profile.md`: account power 11.4M (the screen shows only the rounded figure), stamina 161 / 200.
+- `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
+  as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
