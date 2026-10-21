@@ -12,7 +12,7 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 | **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation |
 | **Diana** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) |
 | **Quinn** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Ready Reserve / High Attack DPS | **Heavy Sniper:** Massive burst sniper & troop buffer |
-| **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 3) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg |
+| **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg |
 | **Gordon** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Reserve / Support Bruiser | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP |
 | **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Arena Defense (Front-R), Barricade 2 (Lead) | **Defensive Bruiser:** Frontline brawler & enemy debuffer |
 | **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed |
@@ -182,9 +182,9 @@ All 4 pieces match the native **Infantry** troop class synergy:
 * **Hero Name:** Chenko
 * **Rarity:** **SR / Epic** (Generation 1)
 * **Class & Role:** Cavalry Combat Specialist / Offensive Bruiser (Crossed Swords / Horse)
-* **Current Level:** **Lv. 49** (XP: 228,957 / 130,000 — **Ready to Upgrade to Lv. 50**)
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 33 / 40 to next promotion)
-* **Total Hero Power:** **408,520**
+* **Current Level:** **Lv. 49** (XP: 62,107 / 130,000 to Lv. 50)
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 0 / 40 to Tier 5 promotion)
+* **Total Hero Power:** **430,600** *(+22,080 increase)*
 * **Troop Capacity Boost:** **+10,420 Troops**
 * **Escort Guards:** **7 Escorts**
 * **Total Equipped Gear Power:** **91,800**
@@ -193,32 +193,32 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Category | Attribute | Total Value | Tactical Effect |
 | :--- | :--- | :---: | :--- |
-| **Conquest (Hero)** | **Hero Attack** | **1,130** | Solid attack value bolstered by *Weapon Upgrade* passive |
-| | **Hero Defense** | **1,375** | Massive defensive scaling bolstered by *Defense Upgrade* (+50%) |
-| | **Hero Health** | **11,310** | Durable cavalry bruiser health pool |
-| **Conquest (Escort)** | **Escort Attack** | **376** | Attack output of her 7 escort cavalry |
-| | **Escort Defense** | **458** | Defense rating of escort guards |
-| | **Escort Health** | **3,770** | Health pool of escort guards |
-| **Expedition (March)** | **Cavalry Attack** | **+79.98%** | Army-wide bonus to all deployed Cavalry |
-| | **Cavalry Defense**| **+79.98%** | Durability bonus for cavalry forces |
+| **Conquest (Hero)** | **Hero Attack** | **1,178** | Solid attack value bolstered by *Weapon Upgrade* passive |
+| | **Hero Defense** | **1,435** | Massive defensive scaling bolstered by *Defense Upgrade* (+50%) |
+| | **Hero Health** | **11,790** | Durable cavalry bruiser health pool |
+| **Conquest (Escort)** | **Escort Attack** | **392** | Attack output of her 7 escort cavalry |
+| | **Escort Defense** | **478** | Defense rating of escort guards |
+| | **Escort Health** | **3,930** | Health pool of escort guards |
+| **Expedition (March)** | **Cavalry Attack** | **+84.49%** | Army-wide bonus to all deployed Cavalry (+4.51% tier boost) |
+| | **Cavalry Defense**| **+84.49%** | Durability bonus for cavalry forces (+4.51% tier boost) |
 | | **Cavalry Lethality**| **+16.20%** | Higher enemy casualty conversion (from gear) |
 | | **Cavalry Health** | **+16.34%** | Squad health expansion for cavalry units (from gear) |
 
-### 2. Star Promotion Milestone Preview (3-Star Tier 3 ➔ Tier 4)
+### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **33 / 40 Shards** (needs only **7 more shards** for Tier 4 promotion).
+Current Status: **0 / 40 Shards** (needs **40 shards** for Tier 5 promotion).
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
 | :--- | :---: | :---: | :---: |
-| **Base Hero Power** | 223,200 | **+22,080** | 245,280 |
-| **Hero Attack** | 720 | **+48** | 768 |
-| **Hero Defense** | 900 | **+60** | 960 |
-| **Hero Health** | 7,200 | **+480** | 7,680 |
-| **Escort Attack** | 240 | **+16** | 256 |
-| **Escort Defense** | 300 | **+20** | 320 |
-| **Escort Health** | 2,400 | **+160** | 2,560 |
-| **Cavalry Attack** | +79.98% | **+4.51%** | **+84.49%** |
-| **Cavalry Defense** | +79.98% | **+4.51%** | **+84.49%** |
+| **Base Hero Power** | 245,280 | **+23,120** | 268,400 |
+| **Hero Attack** | 768 | **+48** | 816 |
+| **Hero Defense** | 960 | **+60** | 1,020 |
+| **Hero Health** | 7,680 | **+480** | 8,160 |
+| **Escort Attack** | 256 | **+16** | 272 |
+| **Escort Defense** | 320 | **+20** | 340 |
+| **Escort Health** | 2,560 | **+160** | 2,720 |
+| **Cavalry Attack** | +84.49% | **+4.51%** | **+89.00%** |
+| **Cavalry Defense** | +84.49% | **+4.51%** | **+89.00%** |
 
 ### 3. Equipped Hero Gear
 
@@ -259,9 +259,9 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 * **Hero Name:** Gordon
 * **Rarity:** **SR / Epic** (Generation 1)
 * **Class & Role:** Cavalry Combat Specialist / Support Bruiser (Crossed Swords / Horse)
-* **Current Level:** **Lv. 49** (XP: 37,037 / 130,000 to Lv. 50)
-* **Star Tier:** **3-Star (Tier 4)** (Shards: 2 / 40 to next promotion)
-* **Total Hero Power:** **422,630**
+* **Current Level:** **Lv. 49** (XP: 62,107 / 130,000 to Lv. 50)
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 7 / 40 to Tier 5 promotion)
+* **Total Hero Power:** **425,150** *(+2,520 power increase)*
 * **Troop Capacity Boost:** **+10,420 Troops**
 * **Escort Guards:** **7 Escorts**
 * **Total Equipped Gear Power:** **88,870**
@@ -283,7 +283,7 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **2 / 40 Shards** (needs **38 more shards** for Tier 5 promotion).
+Current Status: **7 / 40 Shards** (needs **33 more shards** for Tier 5 promotion).
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
 | :--- | :---: | :---: | :---: |
@@ -321,7 +321,7 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank |
 | :--- | :---: | :---: | :--- | :--- |
 | **BBQ Feast** | Active (Top) | **Lv. 3** | Restores Health by **Attack * 240% to all troops** and grants **+6% Attack for 4s**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 260% Heal / +6.5% ATK) |
-| **Culinary Chaos** | Passive (Mid) | **Lv. 2** | Chaotic kitchen life **reduces personal damage taken by 15%**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: 20% reduction) |
+| **Culinary Chaos** | Passive (Mid) | **Lv. 3** | Chaotic kitchen life **reduces personal damage taken by 20%**. | **In Progress** (6/50 Epic Expedition Manuals to Lv. 4: 25% reduction) |
 | **Emergency Snack** | Passive (Bot) | **Lv. 2** | Regular snacking **restores Health equal to Attack * 55% every 5s**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: 60% Heal) |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
@@ -762,27 +762,27 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 * **Hero Name:** Yeonwoo
 * **Rarity:** **SR / Epic** (Generation 1)
 * **Class & Role:** Archer Development Specialist / Dual-Blade Duelist (Bow / Hammer)
-* **Current Level:** **Lv. 49** (XP: 276,957 / 130,000 — **Ready to Upgrade to Lv. 50**)
+* **Current Level:** **Lv. 49** (XP: 62,107 / 130,000 to Lv. 50)
 * **Star Tier:** **2-Star (Tier 5)** (Shards: 7 / 40 to next promotion)
-* **Total Hero Power:** **298,040**
+* **Total Hero Power:** **313,040**
 * **Troop Capacity Boost:** **+10,420 Troops**
 * **Escort Guards:** **7 Escorts**
-* **Total Equipped Gear Power:** **64,360** *(3/4 slots equipped; Chest Armor vacant)*
+* **Total Equipped Gear Power:** **79,360**
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Strategic Effect |
 | :--- | :--- | :---: | :--- |
 | **Conquest (Hero)** | **Hero Attack** | **1,103** | Dual-blade melee strike scaling boosted by *Twin Fangs* (+16%) |
-| | **Hero Defense** | **1,032** | Solid defensive rating |
-| | **Hero Health** | **6,569** | Agile combat health pool |
+| | **Hero Defense** | **1,092** | Solid defensive rating |
+| | **Hero Health** | **6,794** | Agile combat health pool |
 | **Conquest (Escort)** | **Escort Attack** | **367** | Attack output of her 7 escort guards |
-| | **Escort Defense** | **344** | Defense rating of her escort guards |
-| | **Escort Health** | **2,189** | Health pool of escort guards |
+| | **Escort Defense** | **364** | Defense rating of her escort guards |
+| | **Escort Health** | **2,264** | Health pool of escort guards |
 | **Expedition (March)** | **Archer Attack** | **+60.64%** | Army-wide bonus to deployed Archers |
 | | **Archer Defense** | **+60.64%** | Durability bonus for archer units |
 | | **Archer Lethality**| **+15.22%** | Casualty conversion rate for archers (from gear) |
-| | **Archer Health** | **+8.10%** | Durability pool for deployed archer squads (from gear) |
+| | **Archer Health** | **+14.10%** | Durability pool for deployed archer squads (from gear) |
 
 ### 2. Star Promotion Milestone Preview (2-Star Tier 5 ➔ 3-Star)
 
@@ -802,22 +802,22 @@ Current Status: **7 / 40 Shards** (needs **33 more shards** for 3-Star promotion
 
 ### 3. Equipped Hero Gear
 
-Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
+All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+11** | 20,500 | ATK: +88 / HP: +274 | ATK: +29 / HP: +91 | +7.54% Archer Lethality |
 | **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health |
-| **Armor** | *None Equipped* | — | — | — | — | — | — | — |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+12** | 21,060 | ATK: +90 / HP: +279 | ATK: +30 / HP: +93 | +7.68% Archer Lethality |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Archer Lethality:** **+15.22%** (+7.54% Faceplate + 7.68% Boots)
-  * **Archer Health:** **+8.10%** (+8.10% Bracers)
+  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear)
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +178 Attack | +78 Defense | +845 Health
-  * **Escort Squad Attributes:** +59 Attack | +26 Defense | +281 Health
+  * **Hero Attributes:** +178 Attack | +138 Defense | +1,070 Health
+  * **Escort Squad Attributes:** +59 Attack | +46 Defense | +356 Health
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
@@ -916,9 +916,9 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 * **Hero Name:** Amane
 * **Rarity:** **SR / Epic** (Generation 1)
 * **Class & Role:** Archer Development Specialist / Umbrella Marksman (Bow / Hammer)
-* **Current Level:** **Lv. 46** (XP: 276,957 / 100,000 — **Ready to Upgrade to Lv. 47**)
+* **Current Level:** **Lv. 46** (XP: 62,107 / 100,000 to Lv. 47)
 * **Star Tier:** **2-Star (Tier 5)** (Shards: 0 / 40 to 3-Star promotion)
-* **Total Hero Power:** **267,790**
+* **Total Hero Power:** **270,310** *(+2,520 power increase)*
 * **Troop Capacity Boost:** **+9,540 Troops**
 * **Escort Guards:** **7 Escorts**
 * **Total Equipped Gear Power:** **49,950** *(3/4 slots equipped; Chest Armor vacant)*
@@ -986,34 +986,34 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 | Skill Name | Slot | Current Level | Strategic & Settlement Utility | Upgrade Status & Next Rank |
 | :--- | :---: | :---: | :--- | :--- |
 | **Tri-Phalanx** | Top (Warfare) | **Lv. 3** | Trademark formation **increases all Squads' total Attack by 15%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% ATK) |
-| **Exorcism** | Bot (Development) | **Lv. 2** | Wards off evil, **increasing Infirmary Healing Speed by 20%**. | **In Progress** (33/30 Epic Development Books to Lv. 3: +30% Speed) |
+| **Exorcism** | Bot (Development) | **Lv. 3** | Wards off evil, **increasing Infirmary Healing Speed by 30%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 40% Speed) |
 
 ## In-Depth Hero Profile: Saul
 
 * **Hero Name:** Saul
 * **Rarity:** **SSR / Mythic** (Generation 1)
 * **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer)
-* **Current Level:** **Lv. 50** (XP: 26,957 / 140,000 to Lv. 51)
+* **Current Level:** **Lv. 50** (XP: 62,107 / 140,000 to Lv. 51)
 * **Star Tier:** **1-Star (Tier 5)** (Shards: 1 / 15 to 2-Star promotion)
-* **Total Hero Power:** **254,200**
+* **Total Hero Power:** **274,150** *(+19,950 increase)*
 * **Troop Capacity Boost:** **+10,685 Troops**
 * **Escort Guards:** **8 Escorts**
-* **Total Equipped Gear Power:** **69,300** *(3/4 slots equipped; Chest Armor vacant)*
+* **Total Equipped Gear Power:** **89,250**
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Strategic Effect |
 | :--- | :--- | :---: | :--- |
 | **Conquest (Hero)** | **Hero Attack** | **1,029** | Ballista bolt and projectile strike scaling |
-| | **Hero Defense** | **780** | Base defensive rating |
-| | **Hero Health** | **6,106** | Engineer combat health pool |
+| | **Hero Defense** | **852** | Base defensive rating |
+| | **Hero Health** | **6,376** | Engineer combat health pool |
 | **Conquest (Escort)** | **Escort Attack** | **343** | Attack output of his 8 escort guards |
-| | **Escort Defense** | **260** | Defense rating of his escort guards |
-| | **Escort Health** | **2,035** | Health pool of escort guards |
+| | **Escort Defense** | **284** | Defense rating of his escort guards |
+| | **Escort Health** | **2,125** | Health pool of escort guards |
 | **Expedition (March)** | **Archer Attack** | **+57.68%** | Army-wide bonus to deployed Archers |
 | | **Archer Defense** | **+57.68%** | Durability bonus for archer units |
 | | **Archer Lethality**| **+16.48%** | Casualty conversion rate for archers (from gear) |
-| | **Archer Health** | **+9.00%** | Durability pool for deployed archer squads (from gear) |
+| | **Archer Health** | **+16.40%** | Durability pool for deployed archer squads (from gear) |
 
 ### 2. Star Promotion Milestone Preview (1-Star Tier 5 ➔ 2-Star)
 
@@ -1032,22 +1032,22 @@ Current Status: **1 / 15 Shards** (needs **14 shards** for 2-Star promotion).
 
 ### 3. Equipped Hero Gear
 
-Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
+All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality |
 | **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health |
-| **Armor** | *None Equipped* | — | — | — | — | — | — | — |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots)
-  * **Archer Health:** **+9.00%** (+9.00% Bracers)
+  * **Archer Health:** **+16.40%** (+9.00% Bracers + 7.40% Leatherwear)
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +192 Attack | +90 Defense | +931 Health
-  * **Escort Squad Attributes:** +64 Attack | +30 Defense | +310 Health
+  * **Hero Attributes:** +192 Attack | +162 Defense | +1,201 Health
+  * **Escort Squad Attributes:** +64 Attack | +54 Defense | +400 Health
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
