@@ -8,8 +8,6 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 
 | Redeemed? | Gift Code | Rewards & Free Items | Source / Notes |
 | :---: | :--- | :--- | :--- |
-| [ ] | `KS1017` | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Community event code (Expires October 20, 2026) |
-| [ ] | `VIP1017` | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup | Governor Concierge VIP code (Expires October 20, 2026) |
 | [ ] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code |
 | [ ] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code |
 
@@ -35,6 +33,8 @@ These promotional codes have recently concluded their redemption period or reach
 
 | Redeemed? | Gift Code | Channel / Milestone Event | Recorded Rewards |
 | :---: | :--- | :--- | :--- |
+| [ ] | `KS1017` | Community Event Code (Expired October 20, 2026) | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame |
+| [ ] | `VIP1017` | Governor Concierge VIP Code (Expired October 20, 2026) | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup |
 | [ ] | `IG200KS` | Official Instagram 200K Followers | 1,000 Gems, 2x Mythic Hero Shards, 10x 1h Speedups, Resources |
 | [ ] | `CHALLENGE26` | Community Challenge Event | 1,000 Gems, Skill Manuals, Charm Guides, 3x 1h Speedups |
 | [ ] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone |
