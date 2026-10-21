@@ -1,0 +1,498 @@
+{
+  "_readme": [
+    "Hand-edited inputs for scripts/build_data.py: content that is a judgment or a game rule, not data read from the .md files.",
+    "Values here are merged into KS_DATA as-is. A key that the .md parser also produces is an error (the build fails).",
+    "Field meanings: docs/SCHEMA.md. Keys starting with '_' are ignored."
+  ],
+  "meta": {
+    "staleAfterDays": 7,
+    "previousSnapshot": {
+      "asOf": null,
+      "heroes": [
+        "Jabel",
+        "Quinn",
+        "Diana",
+        "Howard",
+        "Gordon",
+        "Chenko",
+        "Seth",
+        "Olive",
+        "Forrest",
+        "Edwin",
+        "Yeonwoo",
+        "Fahd",
+        "Amane"
+      ]
+    },
+    "lockedHeroesNotInData": 2
+  },
+  "townCenter": {
+    "perks": {
+      "namesVerified": false
+    }
+  },
+  "rules": {
+    "source": "Community sources",
+    "confidence": "Unverified",
+    "heroLevelCapByTC": {
+      "19": 49,
+      "20": 54,
+      "21": 59,
+      "22": 64,
+      "25": 79
+    },
+    "drillCamp": "Slotted heroes match the level of the lowest of the 5 instructors and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP. A hero removed from Drill Camp returns to its own level.",
+    "oneMarchPerHero": "A hero can be in only one march at a time.",
+    "gen2Heroes": {
+      "serverDay": 50
+    }
+  },
+  "heroes": {
+    "Jabel": {
+      "gearNote": "Gear power includes widget Banner of Faith +1.",
+      "notes": [
+        "Lv 54 is her current cap: the game shows “Requirement: Town Center Lv. 21”.",
+        "Boots enhanced to +20 (25,900 power, +8.80% Cavalry Lethality)."
+      ]
+    },
+    "Quinn": {
+      "notes": [
+        "No star-preview data."
+      ]
+    },
+    "Chenko": {
+      "gearNote": "All Rare gear."
+    },
+    "Seth": {
+      "gearNote": "Full Epic set."
+    },
+    "Saul": {
+      "notes": [
+        "Skill effects recorded: construction speed +6%, construction cost −6%.",
+        "Skill effects recorded: squads DEF +4% / HP +6%."
+      ]
+    }
+  },
+  "drillCamp": {
+    "asOf": "2026-10-19",
+    "instructors": [
+      {
+        "hero": "Jabel",
+        "level": 49
+      },
+      {
+        "hero": "Chenko",
+        "level": 49
+      },
+      {
+        "hero": "Howard",
+        "level": 49
+      },
+      {
+        "hero": "Quinn",
+        "level": 49
+      },
+      {
+        "hero": "Diana",
+        "level": 49
+      }
+    ],
+    "slotsTotal": 15,
+    "slotsOpen": 7,
+    "slotted": [],
+    "lockedSlots": [
+      {
+        "slot": 8,
+        "requirement": "TC 21",
+        "tcLevel": 21,
+        "note": "Screen says “requires Lv 21”, read as Town Center 21"
+      }
+    ],
+    "testHero": "Edwin"
+  },
+  "recommendations": [
+    {
+      "id": "weak-amane",
+      "priority": 1,
+      "type": "Weak links",
+      "what": "Fix the weak link in your key lineups: Amane",
+      "why": "Amane is Lv 46 with 270,310 power and an empty chest slot, yet she sits in Arena attack, Arena defense, Barricade 1 and the Att march.",
+      "evidence": [
+        "hero.md: Amane Lv 46, 270,310 power, chest slot empty",
+        "lineups.md: Arena attack, Arena defense, Barricade 1, Att"
+      ],
+      "cost": null,
+      "confidence": [
+        "Verified"
+      ],
+      "heroes": [
+        "Amane"
+      ],
+      "note": null
+    },
+    {
+      "id": "drill-fill",
+      "priority": 2,
+      "type": "Drill Camp",
+      "what": "Fill the 7 empty Drill Camp slots, reset the slotted heroes, and put the refunded Hero XP into the lowest instructor",
+      "why": "7 slots are open and 10 heroes are not instructors. Slotting Amane and Helga (Lv 46) would raise them to 49 at no XP cost. Saul (Lv 50) is above the instructors, so don't slot him.",
+      "evidence": [
+        "Drill Camp screen, 19 Oct: 7 open slots, all instructors Lv 49",
+        "hero.md: Amane 46, Helga 46, Saul 50"
+      ],
+      "cost": "No XP to slot (per community rule)",
+      "confidence": [
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Amane",
+        "Helga",
+        "Saul",
+        "Edwin"
+      ],
+      "note": "Test one gathering hero (Edwin) first."
+    },
+    {
+      "id": "gear-gaps",
+      "priority": 3,
+      "type": "Gear gaps",
+      "what": "Fill 1 empty chest slot and upgrade 10 pieces still at +0",
+      "why": "Amane's chest slot is empty. +0 pieces on Amane (2), Olive (2), Fahd (2), Yeonwoo (1), Edwin (1), Saul (1, Epic) and Helga (1, Epic).",
+      "evidence": [
+        "hero.md gear slots"
+      ],
+      "cost": null,
+      "confidence": [
+        "Verified"
+      ],
+      "heroes": [
+        "Amane",
+        "Olive",
+        "Fahd",
+        "Yeonwoo",
+        "Edwin",
+        "Saul",
+        "Helga"
+      ],
+      "note": null
+    },
+    {
+      "id": "skills-now",
+      "priority": 4,
+      "type": "Skills affordable now",
+      "what": "Check whether Fahd's and Amane's skills can be upgraded right now",
+      "why": "Fahd and Amane show 34/30 Epic manuals.",
+      "evidence": [
+        "hero.md skill screens"
+      ],
+      "cost": "30 manuals per upgrade, as shown",
+      "confidence": [
+        "Inferred"
+      ],
+      "heroes": [
+        "Fahd",
+        "Amane"
+      ],
+      "note": "Probably an old reading: Gordon's latest skill screen shows 6 Epic Expedition Manuals."
+    },
+    {
+      "id": "near-promo",
+      "priority": 5,
+      "type": "Near promotion",
+      "what": "Finish the promotions that are a few shards away",
+      "why": "Forrest is 4 shards from T4, Helga 5 from T1, Howard 6, Edwin 7, and Saul 14 from 2★ (unlocks 2 skills).",
+      "evidence": [
+        "hero.md shard counts"
+      ],
+      "cost": "4–14 shards each; shard sources unknown",
+      "confidence": [
+        "Verified"
+      ],
+      "heroes": [
+        "Forrest",
+        "Helga",
+        "Howard",
+        "Edwin",
+        "Saul"
+      ],
+      "note": "Verified from data; where to get the shards is not recorded."
+    },
+    {
+      "id": "jabel-two-marches",
+      "priority": 6,
+      "type": "Setup conflicts",
+      "what": "Take Jabel out of either Be or Att",
+      "why": "Jabel is in both presets, so those two marches can't run at the same time.",
+      "evidence": [
+        "lineups.md: Be (Diana, Jabel, Forrest), Att (Howard, Jabel, Amane)"
+      ],
+      "cost": null,
+      "confidence": [
+        "Unverified"
+      ],
+      "heroes": [
+        "Jabel"
+      ],
+      "note": "Rests on the community rule that a hero can be in only one march at a time."
+    },
+    {
+      "id": "seth-epic-set",
+      "priority": 7,
+      "type": "Gear gaps",
+      "what": "Consider moving Seth's full Epic infantry set",
+      "why": "Seth is a Rare economy hero holding a full Epic set. Check whether it would serve more on Howard or Helga.",
+      "evidence": [
+        "hero.md: Seth gear power 137,700, full Epic set"
+      ],
+      "cost": null,
+      "confidence": [
+        "Unverified"
+      ],
+      "heroes": [
+        "Seth",
+        "Howard",
+        "Helga"
+      ],
+      "note": "Compare Gear Details first."
+    }
+  ],
+  "features": [
+    {
+      "name": "Town Center & buildings",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "profile.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Research",
+      "unlock": null,
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Heroes",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "hero.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Hero Gear & Widgets",
+      "unlock": {
+        "type": "tc",
+        "level": 15
+      },
+      "state": null,
+      "hasData": true,
+      "source": "hero.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Skills",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "hero.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Drill Camp",
+      "unlock": {
+        "type": "tc",
+        "level": 13
+      },
+      "state": null,
+      "hasData": true,
+      "source": null,
+      "asOf": "2026-10-19",
+      "note": null
+    },
+    {
+      "name": "Troops",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "troops.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Arena",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "lineups.md",
+      "asOf": "2026-10-21",
+      "note": null
+    },
+    {
+      "name": "Guard Station",
+      "unlock": null,
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Barricades",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "lineups.md",
+      "asOf": "2026-10-21",
+      "note": "Both at Lv 10 (max)."
+    },
+    {
+      "name": "Mystic Trial",
+      "unlock": {
+        "type": "tc",
+        "level": 19
+      },
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Governor Gear",
+      "unlock": {
+        "type": "tc",
+        "level": 22
+      },
+      "state": null,
+      "hasData": true,
+      "source": "profile.md",
+      "asOf": "2026-10-21",
+      "note": "6 of 6 slots locked."
+    },
+    {
+      "name": "Governor Charms",
+      "unlock": {
+        "type": "tc",
+        "level": 25
+      },
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Pets",
+      "unlock": {
+        "type": "serverDay",
+        "day": 55
+      },
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Alliance",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "profile.md",
+      "asOf": "2026-10-21",
+      "note": "Alliance SPQ."
+    },
+    {
+      "name": "Events",
+      "unlock": null,
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Truegold / War Academy",
+      "unlock": {
+        "type": "tc",
+        "level": 30
+      },
+      "state": null,
+      "hasData": false,
+      "source": null,
+      "asOf": null,
+      "note": null
+    },
+    {
+      "name": "Gift codes",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "codes.md",
+      "asOf": "2026-10-21",
+      "note": null
+    }
+  ],
+  "dataHealth": {
+    "conflicts": [
+      {
+        "area": "All files",
+        "title": "As-of dates are placeholders",
+        "detail": "All five files carry as_of 2026-10-21 as a placeholder until the in-game read dates are confirmed. Values come from different reading times. Hero XP shows 62,107, 276,957, 37,037 and 26,957 on different heroes, which looks like account inventory read at different times."
+      },
+      {
+        "area": "Heroes · Olive",
+        "title": "Olive's Archer Health disagrees",
+        "detail": "+8.10% in one reading, +14.10% in another."
+      },
+      {
+        "area": "Town Center",
+        "title": "Perk names look interpreted",
+        "detail": "The perk names don't look like in-game text, so only the 6/7 count is shown."
+      }
+    ],
+    "missing": [
+      {
+        "area": "Governor",
+        "title": "Server day"
+      },
+      {
+        "area": "City",
+        "title": "Research"
+      },
+      {
+        "area": "City",
+        "title": "Speedups"
+      },
+      {
+        "area": "City",
+        "title": "Wood, stone and iron"
+      },
+      {
+        "area": "Heroes",
+        "title": "Shard and book inventories"
+      },
+      {
+        "area": "Defense",
+        "title": "Guard Station"
+      },
+      {
+        "area": "Drill Camp",
+        "title": "Current state (last read 19 Oct, before Saul and Helga were recorded)"
+      },
+      {
+        "area": "Events",
+        "title": "Events"
+      }
+    ]
+  }
+}

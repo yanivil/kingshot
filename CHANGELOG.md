@@ -13,6 +13,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   so a future generator can replace it without touching layout or logic.
 - `docs/SCHEMA.md`: field-by-field reference for `KS_DATA`.
 - `design/dashboard-prototype.dc.html`: the approved design prototype the page was built from.
+- `scripts/build_data.py`: generator that builds `KS_DATA` from `profile.md`, `hero.md`, `troops.md`,
+  `lineups.md`, `codes.md` and `data/manual.json`, and writes `build/index.html`. Missing values become
+  `null` with a warning; a manual/parsed collision, a missing template block or a Player ID leak stops the
+  build. Standard library only. Tests in `scripts/test_build_data.py`.
+- `data/manual.json`: hand-edited content that is a judgment or a community rule rather than game data
+  (recommendations, data-health notes, rules, features, Drill Camp, meta settings, hero notes), seeded
+  with the values previously hand-written in `docs/index.html`.
+- `.github/workflows/build-dashboard.yml`: on push to `main` (root `.md` files, `data/manual.json`,
+  `docs/**`, `scripts/**`, the workflow) or manual run, tests and runs the generator and deploys `build/`
+  to GitHub Pages. Read-only on the repository; never commits.
+- `as_of:` front matter in the five `.md` files (2026-10-21 for all, as a placeholder until the
+  in-game read dates are confirmed).
+- `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
 - `hero.md`: Chenko promoted to 3-Star Tier 4; Gordon's Culinary Chaos and Amane's Exorcism reach Lv. 3;
@@ -25,3 +38,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `profile.md`, `hero.md`, `lineups.md`, `troops.md`, `codes.md`: every value now shows when it was last
   uploaded (an **Updated** column in tables, _(YYYY-MM-DD)_ after other values). Initial dates come from
   git history; all current values were uploaded on 2026-10-21. README documents the convention.
+- `codes.md`: Kingshot888, VIP777, KS1005, WELLDONE and Hangul2026 marked redeemed, matching the dashboard.
+- Dashboard data now comes from the generator, so it shows more of what the `.md` files hold: every hero's
+  generation and role, all four gear slots, one entry per skill, the next promotion step for 14 of 15
+  heroes, and all 22 expired codes.
+- `docs/index.html`: the hero drawer says "All slots recorded." instead of "Other slots: Not recorded."
+  when `gear.slotsComplete` is true.
+- `docs/SCHEMA.md`: `gear.slotsComplete`, `generation` as a number, and a "Where each field comes from"
+  section with every parsing rule.
+- `README.md`: architecture, data-update steps and the GitHub Pages setting for the generator.
