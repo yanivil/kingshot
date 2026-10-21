@@ -7,7 +7,7 @@ Deployment configurations for 5v5 Arena offense and defense, city barricade defe
 Your Arena configurations feature a dedicated setup for **Offensive Attacks** and **Defensive Stalls**:
 
 ### 1. Arena Offensive Squad (Attack Lineup)
-* **Offensive Squad Power:** **2,361,435** *(+11,990 power over defense setup)*
+* **Offensive Squad Power:** **2,383,515** *(+34,070 power over defense setup)*
 * **Formation Archetype:** Dual-Frontline Tank & Aggressive Flanker with Triple-Backline DPS
 * **Frontline Swap:** **Chenko** replaces Fahd in the right frontline slot for higher offensive burst and rapid line-breaking.
 
