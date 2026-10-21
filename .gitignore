@@ -1,0 +1,4 @@
+# Output of scripts/build_data.py; published by the workflow, never committed.
+build/
+# Python bytecode from running the generator or its tests.
+__pycache__/
