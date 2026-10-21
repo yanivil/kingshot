@@ -47,3 +47,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `docs/SCHEMA.md`: `gear.slotsComplete`, `generation` as a number, and a "Where each field comes from"
   section with every parsing rule.
 - `README.md`: architecture, data-update steps and the GitHub Pages setting for the generator.
+
+### Removed
+- `README.md`: the Player ID from the `profile.md` description. It stays in `profile.md` and in git history.
