@@ -1,0 +1,1819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Kingshot account dashboard</title>
+<!--
+  Kingshot account dashboard — static page for GitHub Pages.
+  One self-contained file: styles, data (KS_DATA) and logic all live here.
+  To update content, change only the JSON between /* KS_DATA:BEGIN */ and /* KS_DATA:END */.
+  Schema: docs/SCHEMA.md. Design source: design/dashboard-prototype.dc.html.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+body{margin:0}
+a{color:#1D57B5}a:hover{color:#123E85}
+/* ---- Theme tokens: light is the default, dark via toggle or system preference ---- */
+.ks{--bg:#F2F3F0;--surface:#FFFFFF;--surface-2:#F6F7F4;--track:#E2E5DF;--line:#D6DAD3;--ink:#15181C;--muted:#4F5761;--accent:#1D57B5;--accent-soft:#E3ECFA;--on-accent:#FFFFFF;--warn:#A64500;--warn-soft:#FCEBDD;--good:#1F6B47;--good-soft:#E1F1E8;--inf:#27467A;--cav:#C77A1E;--arc:#8DBBE3;--mythic:#B07D10;--epic:#7A3FB0;--rare:#2C6FCB;--scrim:rgba(10,12,15,.5)}
+.ks.theme-dark{--bg:#0E1115;--surface:#161A20;--surface-2:#1C2128;--track:#2A313A;--line:#2C333C;--ink:#E7E9EC;--muted:#A2AAB4;--accent:#86B3FF;--accent-soft:#1B2A44;--on-accent:#0E1115;--warn:#FFAA66;--warn-soft:#3A2414;--good:#7FD3A6;--good-soft:#16302A;--inf:#4F7BC4;--cav:#E3A04E;--arc:#BFDDF5;--mythic:#E2B54A;--epic:#B98BEA;--rare:#7FB0F0;--scrim:rgba(0,0,0,.6)}
+@media (prefers-color-scheme: dark){.ks.theme-auto{--bg:#0E1115;--surface:#161A20;--surface-2:#1C2128;--track:#2A313A;--line:#2C333C;--ink:#E7E9EC;--muted:#A2AAB4;--accent:#86B3FF;--accent-soft:#1B2A44;--on-accent:#0E1115;--warn:#FFAA66;--warn-soft:#3A2414;--good:#7FD3A6;--good-soft:#16302A;--inf:#4F7BC4;--cav:#E3A04E;--arc:#BFDDF5;--mythic:#E2B54A;--epic:#B98BEA;--rare:#7FB0F0;--scrim:rgba(0,0,0,.6)}}
+.ks{background:var(--bg);color:var(--ink);font-family:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.45;min-height:100vh;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+.ks *{box-sizing:border-box}
+.ks button{font:inherit;color:inherit}
+.ks button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ks h1,.ks h2,.ks h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-height:1.1}
+/* ---- Header ---- */
+.top{border-bottom:1px solid var(--line);background:var(--surface)}
+.top-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px}
+.who{display:flex;flex-direction:column;gap:2px;flex:1 1 200px;min-width:0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ks h1{font-size:30px;font-weight:700}
+.age{display:flex;flex-direction:column;gap:1px;flex:0 1 auto}
+.age-main{font-weight:600}
+.age-sub{font-size:13px;color:var(--muted)}
+.age-sub.warn{color:var(--warn);font-weight:600}
+.theme-btn{min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+/* ---- Shell: side menu on desktop, scrolling tab strip on phone ---- */
+.shell{max-width:1280px;margin:0 auto;padding:16px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.nav{flex:1 1 190px;max-width:220px;display:flex;flex-direction:column;gap:2px}
+.nav-btn{min-height:44px;padding:0 12px;border:0;border-radius:8px;background:transparent;font-weight:600;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;white-space:nowrap}
+.nav-btn:hover{background:var(--surface-2)}
+.nav-btn.on{background:var(--accent-soft);color:var(--accent)}
+.nav-badge{font-size:12px;font-weight:600;padding:1px 7px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink)}
+.nav-badge.warn{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.view{display:flex;flex-direction:column;gap:16px}
+.view-h{display:flex;flex-direction:column;gap:2px}
+.view-h h2{font-size:30px;font-weight:700}
+.lede{margin:0;color:var(--muted)}
+/* ---- Panels, tiles ---- */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.panel-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;margin-bottom:12px}
+.panel-h h3{font-size:21px;font-weight:700}
+.asof{font-size:12.5px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:16px;align-items:start}
+.col{display:flex;flex-direction:column;gap:16px;min-width:0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:10px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.tile-l{font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.tile-v{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:30px;line-height:1.1}
+.tile-v.nr{font-size:20px;color:var(--muted)}
+.tile-note{font-size:12.5px;font-weight:600;color:var(--warn)}
+.tile-s{font-size:12px;color:var(--muted)}
+.empty{margin:0;color:var(--muted);font-style:italic}
+.foot{margin:0;font-size:13px;color:var(--muted)}
+.note{margin:12px 0 0;font-size:14px}
+.mini{font-size:12.5px;color:var(--muted)}
+.mini.warn,.warntext{color:var(--warn);font-weight:600}
+/* ---- Confidence + state badges: label text always present, shape differs too ---- */
+.conf{display:inline-flex;align-items:center;font-size:12px;font-weight:700;letter-spacing:.02em;padding:1px 8px;border-radius:99px;border:1.5px solid transparent;white-space:nowrap}
+.conf-verified{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.conf-inferred{border-color:var(--accent);color:var(--accent)}
+.conf-unverified,.conf-not-recorded{border-color:var(--warn);border-style:dashed;color:var(--warn)}
+.badge-new{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:4px;background:var(--ink);color:var(--bg)}
+.rar{display:inline-flex;align-items:center;gap:5px;font-weight:600;color:var(--ink)}
+.rar::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--muted)}
+.rar-mythic::before{background:var(--mythic)}.rar-epic::before{background:var(--epic)}.rar-rare::before{background:var(--rare)}
+/* ---- Bars ---- */
+.meter{display:flex;flex-direction:column;gap:4px}
+.meter-l{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+.meter-l b{color:var(--ink);font-weight:600}
+.bar{display:block;height:6px;border-radius:3px;background:var(--track);overflow:hidden}
+.bar-f{display:block;height:100%;border-radius:3px;background:var(--accent)}
+.stack{display:flex;gap:2px;height:16px;border-radius:4px;overflow:hidden;background:var(--surface)}
+.seg{display:block;height:100%}
+.seg-inf{background:var(--inf)}.seg-cav{background:var(--cav)}.seg-arc{background:var(--arc)}
+.legend{display:grid;grid-template-columns:auto 1fr auto auto;gap:6px 12px;align-items:center;margin-top:12px;font-size:14px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.num{text-align:right;font-weight:600}
+/* ---- Overview pieces ---- */
+.moves{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.move{width:100%;display:grid;grid-template-columns:28px 1fr;gap:10px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);text-align:left;cursor:pointer;min-height:44px}
+.move:hover{border-color:var(--accent)}
+.move-n{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:24px;line-height:1;color:var(--accent)}
+.move-b{display:flex;flex-direction:column;gap:6px;min-width:0}
+.move-t{font-weight:600;font-size:15.5px}
+.move-m{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:13px;color:var(--muted)}
+.rows{display:flex;flex-direction:column}
+.row-btn{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:8px 2px;border:0;border-bottom:1px solid var(--line);background:transparent;text-align:left;cursor:pointer;width:100%}
+.row-btn:last-child{border-bottom:0}
+.row-btn:hover .row-k{color:var(--accent)}
+.row-k{font-weight:500}
+.row-v{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:20px;white-space:nowrap}
+.row-v.warn{color:var(--warn)}
+.agetbl{display:grid;grid-template-columns:1fr auto auto;gap:8px 14px;font-size:14px;align-items:baseline}
+.agetbl .h{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+/* ---- Filters ---- */
+.fbar{display:flex;flex-direction:column;gap:8px}
+.fgroup{display:flex;align-items:center;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.flabel{flex:0 0 78px;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.chip{flex:0 0 auto;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* ---- Hero cards ---- */
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:10px}
+.hcard{width:100%;display:flex;flex-direction:column;gap:9px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);text-align:left;cursor:pointer;min-width:0}
+.hcard:hover{border-color:var(--accent)}
+.hc-top{display:flex;align-items:baseline;gap:8px;min-width:0}
+.hc-name{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:23px;line-height:1}
+.hc-power{margin-left:auto;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:19px}
+.hc-meta{display:flex;flex-wrap:wrap;gap:2px 10px;font-size:13.5px;color:var(--muted)}
+.hc-row{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+.hc-row b{color:var(--ink);font-weight:600}
+.chips-s{display:flex;flex-wrap:wrap;gap:4px}
+.chip-s{font-size:12px;padding:2px 7px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line)}
+.flag{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--warn)}
+.flag svg{flex:none}
+/* ---- Drawer: side panel on desktop, bottom sheet on phone ---- */
+.drawer-wrap{position:fixed;inset:0;z-index:50;display:flex;justify-content:flex-end}
+.scrim{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:var(--scrim);cursor:pointer}
+.drawer{position:relative;width:min(460px,100%);height:100%;overflow-y:auto;background:var(--surface);border-left:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:16px}
+.dr-h{display:flex;align-items:flex-start;gap:12px}
+.dr-h h2{font-size:32px;font-weight:700}
+.x-btn{margin-left:auto;flex:none;width:44px;height:44px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.dr-sec{display:flex;flex-direction:column;gap:8px}
+.dr-sec h3{font-size:18px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--muted)}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;margin:0;font-size:14px}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0;min-width:0}
+.slot-row{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px}
+.slot-row.bad{border-color:var(--warn);background:var(--warn-soft)}
+.slot-row.bad .slot-st{color:var(--warn);font-weight:700}
+.sk-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 10px;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+.sk-name{font-weight:600}
+.sk-note{flex-basis:100%;font-size:13px;color:var(--muted)}
+.st{font-size:12px;font-weight:700;padding:1px 8px;border-radius:99px;border:1.5px solid var(--line);white-space:nowrap}
+.st-capped{color:var(--muted)}
+.st-upgradeable{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.st-progress{border-color:var(--accent);color:var(--accent)}
+.st-locked{border-style:dashed;color:var(--muted)}
+/* ---- Drill Camp ---- */
+.instr{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(112px,100%),1fr));gap:8px}
+.instr-c{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);min-width:0}
+.instr-c.lowest{border:2px solid var(--warn);background:var(--warn-soft)}
+.instr-n{font-weight:600}
+.instr-v{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:26px;line-height:1.05}
+.lowtag{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--warn)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100px,100%),1fr));gap:6px}
+.slot{display:flex;flex-direction:column;gap:1px;min-height:72px;padding:8px;border-radius:8px;font-size:12.5px;min-width:0}
+.slot-n{font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.slot-s{font-weight:600;font-size:14px}
+.slot-d{color:var(--muted)}
+.slot.open{border:1.5px dashed var(--accent)}
+.slot.open .slot-s{color:var(--accent)}
+.slot.filled{background:var(--accent-soft);border:1px solid var(--accent)}
+.slot.locked{background:var(--surface-2);border:1px solid var(--line)}
+.plan{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+.plan li{padding-left:2px}
+.plan-l{display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px}
+.linkish{border:0;background:transparent;padding:0;min-height:32px;font-weight:700;color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.warnbox{margin-top:12px;padding:10px 12px;border-radius:8px;background:var(--warn-soft);color:var(--ink);font-size:14px}
+.warnbox strong{color:var(--warn)}
+.okbox{margin-top:12px;padding:10px 12px;border-radius:8px;background:var(--good-soft);font-size:14px}
+/* ---- Army / Defense ---- */
+.march{display:flex;flex-direction:column;gap:10px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2)}
+.march-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 10px}
+.march-h h4{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:22px;font-weight:700}
+.big{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:20px}
+.form{display:flex;flex-direction:column;gap:6px}
+.form-lbl{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.form-row{display:grid;gap:6px}
+.form-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.form-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fslot{display:flex;flex-direction:column;gap:1px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2);min-width:0;text-align:left;cursor:pointer;min-height:58px}
+.fslot:hover{border-color:var(--accent)}
+.fslot-n{font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fslot-p{font-size:12.5px;color:var(--muted)}
+.check{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin-top:12px;font-size:14px}
+.check .num.warn{color:var(--warn)}
+/* ---- Features ---- */
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(250px,100%),1fr));gap:10px}
+.feat{display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
+.feat-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.feat-h h4{margin:0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:20px;font-weight:700}
+.state{font-size:12px;font-weight:700;padding:1px 8px;border-radius:99px;border:1.5px solid transparent;white-space:nowrap}
+.s-active{background:var(--good-soft);color:var(--good)}
+.s-locked{background:var(--surface-2);border-color:var(--ink);color:var(--ink)}
+.s-coming-soon{border-color:var(--accent);color:var(--accent)}
+.s-unknown{border-color:var(--muted);border-style:dashed;color:var(--muted)}
+.feat .kv{grid-template-columns:76px 1fr;font-size:13.5px}
+/* ---- Lists (health, codes, invest) ---- */
+.list{display:flex;flex-direction:column;gap:8px}
+.item{padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);display:flex;flex-direction:column;gap:4px}
+.item-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 10px}
+.item-t{font-weight:700}
+.item-a{font-size:12.5px;color:var(--muted)}
+.item p{margin:0;font-size:14px}
+.rec{display:flex;flex-direction:column;gap:10px}
+.rec-what{font-weight:700;font-size:16.5px;line-height:1.35}
+.rec-heroes{display:flex;flex-wrap:wrap;gap:4px 10px}
+.rec-ev{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted)}
+.grp{display:flex;flex-direction:column;gap:10px}
+.grp-h{display:flex;align-items:baseline;gap:10px}
+.grp-h h3{font-size:22px;font-weight:700}
+.codes{display:grid;grid-template-columns:1fr auto;gap:0;font-size:15px}
+.codes span{padding:10px 2px;border-bottom:1px solid var(--line)}
+.code{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px}
+.ok{color:var(--good);font-weight:700}
+@media (max-width:760px){
+.top-in{padding:12px}
+.ks h1{font-size:25px}
+.shell{padding:12px;gap:12px}
+.nav{flex:1 1 100%;max-width:none;flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:4px}
+.nav-btn{flex:0 0 auto;border:1px solid var(--line);background:var(--surface)}
+.nav-btn.on{border-color:var(--accent)}
+.view-h h2{font-size:26px}
+.drawer-wrap{align-items:flex-end}
+.drawer{width:100%;height:auto;max-height:88vh;border-left:0;border-top:1px solid var(--line);border-radius:14px 14px 0 0}
+.kv{grid-template-columns:96px 1fr}
+.tile-v{font-size:26px}
+}
+</style>
+</head>
+<body class="ks theme-auto">
+<div id="app"></div>
+<noscript><p style="padding:16px">This dashboard needs JavaScript.</p></noscript>
+<script>
+'use strict';
+/* =====================================================================
+ * KS_DATA — the ONLY source of content for this dashboard.
+ * A GitHub Action will replace everything between the BEGIN/END markers
+ * with JSON generated from profile.md, hero.md, troops.md, lineups.md,
+ * codes.md. Every component renders from this object; null means
+ * "Not recorded" and is shown as such, never as a blank.
+ * ===================================================================== */
+/* KS_DATA:BEGIN */
+var KS_DATA = {
+  "meta": {
+    "schemaVersion": 1,
+    "snapshotAsOf": "2026-10-21",
+    "staleAfterDays": 7,
+    "previousSnapshot": {
+      "asOf": null,
+      "heroes": ["Jabel","Quinn","Diana","Howard","Gordon","Chenko","Seth","Olive","Forrest","Edwin","Yeonwoo","Fahd","Amane"]
+    },
+    "lockedHeroesNotInData": 2
+  },
+  "governor": {
+    "name": "[SPQ]Aldric", "kingdom": 2508, "alliance": "SPQ", "vip": 3,
+    "power": 11110919, "kills": 291236,
+    "stamina": { "current": 240, "max": 200 },
+    "serverDay": null,
+    "asOf": "2026-10-21"
+  },
+  "townCenter": {
+    "level": 20,
+    "citizens": { "current": 32, "max": 32 },
+    "attack": 584, "defense": 1168, "health": 17523,
+    "perks": { "unlocked": 6, "total": 7, "namesVerified": false },
+    "asOf": "2026-10-21"
+  },
+  "resources": {
+    "bread": { "value": 94600000, "rounded": true },
+    "wood": null, "stone": null, "iron": null,
+    "gems": { "value": 17030, "rounded": false },
+    "asOf": "2026-10-21"
+  },
+  "governorGear": { "slotsTotal": 6, "slotsLocked": 6, "asOf": "2026-10-21" },
+  "army": {
+    "total": 89412, "tier": "T7 Brave", "injured": 0,
+    "classes": [
+      { "key": "inf", "name": "Infantry", "count": 26948, "pct": 30.1 },
+      { "key": "cav", "name": "Cavalry",  "count": 31273, "pct": 35.0 },
+      { "key": "arc", "name": "Archers",  "count": 31191, "pct": 34.9 }
+    ],
+    "marchCapacity": 74880,
+    "queues": { "current": 4, "max": 4 },
+    "infirmary": 36900,
+    "asOf": "2026-10-21"
+  },
+  "rules": {
+    "source": "Community sources",
+    "confidence": "Unverified",
+    "heroLevelCapByTC": { "19": 49, "20": 54, "21": 59, "22": 64, "25": 79 },
+    "drillCamp": "Slotted heroes match the level of the lowest of the 5 instructors and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP. A hero removed from Drill Camp returns to its own level.",
+    "oneMarchPerHero": "A hero can be in only one march at a time.",
+    "gen2Heroes": { "serverDay": 50 }
+  },
+  "heroes": [
+    { "name": "Jabel", "rarity": "Mythic", "cls": "Cavalry", "generation": null, "role": null,
+      "level": 53, "stars": 3, "tier": 3, "shards": { "have": 0, "need": 40, "to": null },
+      "power": 559000, "gearPower": 128960,
+      "gear": { "slots": null, "note": "Gear power includes widget Banner of Faith +1." },
+      "widget": { "unlocked": true, "name": "Banner of Faith", "level": 1 },
+      "skills": [
+        { "name": "Four skills", "count": 4, "status": "capped", "needs": "4★" },
+        { "name": "Persistence", "level": 3, "status": "progress", "note": "13/50 Mythic books" },
+        { "name": "Youthful Rage", "level": 3, "status": "progress", "note": "13/50 Mythic books" }
+      ],
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Quinn", "rarity": "Epic", "cls": "Archer", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 5, "shards": { "have": 76, "need": 100, "to": "4★" },
+      "power": 478920, "gearPower": 117000,
+      "gear": { "slots": null, "note": null }, "widget": null, "skills": null,
+      "notes": ["No star-preview data."], "asOf": "2026-10-21" },
+    { "name": "Diana", "rarity": "Epic", "cls": "Archer", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 5, "shards": { "have": 54, "need": 100, "to": "4★" },
+      "power": 472250, "gearPower": 110330,
+      "gear": { "slots": null, "note": null }, "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Howard", "rarity": "Epic", "cls": "Infantry", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 3, "shards": { "have": 34, "need": 40, "to": null },
+      "power": 442745, "gearPower": 126025,
+      "gear": { "slots": null, "note": null }, "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Gordon", "rarity": "Epic", "cls": "Cavalry", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 4, "shards": { "have": 2, "need": 40, "to": null },
+      "power": 422630, "gearPower": 88870,
+      "gear": { "slots": null, "note": null }, "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Chenko", "rarity": "Epic", "cls": "Cavalry", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 3, "shards": { "have": 33, "need": 40, "to": null },
+      "power": 408520, "gearPower": 91800,
+      "gear": { "slots": null, "note": "All Rare gear." }, "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Seth", "rarity": "Rare", "cls": "Infantry", "generation": null, "role": "Economy (iron)",
+      "level": 49, "stars": 3, "tier": 3, "shards": { "have": 18, "need": 40, "to": null },
+      "power": 400264, "gearPower": 137700,
+      "gear": { "slots": null, "note": "Full Epic set." }, "widget": null,
+      "skills": [ { "name": "All skills", "all": true, "status": "capped", "needs": "4★" } ],
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Olive", "rarity": "Rare", "cls": "Archer", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 4, "shards": { "have": 10, "need": 40, "to": null },
+      "power": 349216, "gearPower": 91650,
+      "gear": { "slots": [ { "slot": "Chest", "state": "plus0" }, { "slot": "Boots", "state": "plus0" } ], "note": null },
+      "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Forrest", "rarity": "Rare", "cls": "Infantry", "generation": null, "role": null,
+      "level": 49, "stars": 3, "tier": 3, "shards": { "have": 36, "need": 40, "to": "T4" },
+      "power": 344748, "gearPower": 84830,
+      "gear": { "slots": null, "note": null }, "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Edwin", "rarity": "Rare", "cls": "Cavalry", "generation": null, "role": "Gathering",
+      "level": 49, "stars": 3, "tier": 2, "shards": { "have": 33, "need": 40, "to": null },
+      "power": 317021, "gearPower": 79360,
+      "gear": { "slots": [ { "slot": "Chest", "state": "plus0" } ], "note": null },
+      "widget": null, "skills": null,
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Yeonwoo", "rarity": "Epic", "cls": "Archer", "generation": null, "role": null,
+      "level": 49, "stars": 2, "tier": 5, "shards": { "have": 7, "need": 40, "to": null },
+      "power": 298040, "gearPower": 64360,
+      "gear": { "slots": [ { "slot": "Chest", "state": "empty" } ], "note": null },
+      "widget": null,
+      "skills": [ { "name": "All skills", "all": true, "status": "capped", "needs": "3★" } ],
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Fahd", "rarity": "Epic", "cls": "Cavalry", "generation": null, "role": null,
+      "level": 48, "stars": 2, "tier": 5, "shards": { "have": 10, "need": 40, "to": null },
+      "power": 295760, "gearPower": 71560,
+      "gear": { "slots": [ { "slot": "Gloves", "state": "plus0" }, { "slot": "Chest", "state": "plus0" } ], "note": null },
+      "widget": null,
+      "skills": [ { "name": "Exploration skills", "level": 2, "status": "upgradeable", "note": "34/30 manuals shown", "confidence": "Inferred" } ],
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Amane", "rarity": "Epic", "cls": "Archer", "generation": null, "role": null,
+      "level": 46, "stars": 2, "tier": 5, "shards": { "have": 0, "need": 40, "to": null },
+      "power": 267790, "gearPower": 49950,
+      "gear": { "slots": [ { "slot": "Chest", "state": "empty" }, { "slot": "Gloves", "state": "plus0" }, { "slot": "Boots", "state": "plus0" } ], "note": null },
+      "widget": null,
+      "skills": [
+        { "name": "Exploration skills", "level": 2, "status": "upgradeable", "note": "34/30 Epic manuals shown", "confidence": "Inferred" },
+        { "name": "Exorcism", "effect": "Infirmary healing +20%", "level": 2, "status": "upgradeable", "note": "33/30 Development books shown", "confidence": "Inferred" },
+        { "name": "Tri-Phalanx", "effect": "+15% squad Attack", "status": "capped", "needs": "3★" }
+      ],
+      "notes": [], "asOf": "2026-10-21" },
+    { "name": "Saul", "rarity": "Mythic", "cls": "Archer", "generation": null, "role": null,
+      "level": 50, "stars": 1, "tier": 5, "shards": { "have": 1, "need": 15, "to": "2★" },
+      "power": 254200, "gearPower": 69300,
+      "gear": { "slots": [ { "slot": "Chest", "state": "empty" }, { "slot": "Gloves", "state": "plus0", "quality": "Epic" } ], "note": null },
+      "widget": null,
+      "skills": [ { "name": "All skills", "all": true, "status": "locked", "needs": "2★", "note": "Capped or locked" } ],
+      "notes": ["Skill effects recorded: construction speed +6%, construction cost −6%.", "Skill effects recorded: squads DEF +4% / HP +6%."],
+      "asOf": "2026-10-21" },
+    { "name": "Helga", "rarity": "Mythic", "cls": "Infantry", "generation": null, "role": null,
+      "level": 46, "stars": 1, "tier": 0, "shards": { "have": 0, "need": 5, "to": "T1" },
+      "power": 237505, "gearPower": 92905,
+      "gear": { "slots": [ { "slot": "Gloves", "state": "plus0", "quality": "Epic" } ], "note": null },
+      "widget": { "unlocked": true, "name": null, "level": null },
+      "skills": [ { "name": "All skills", "all": true, "status": "locked", "needs": "2★", "note": "Capped or locked" } ],
+      "notes": [], "asOf": "2026-10-21" }
+  ],
+  "drillCamp": {
+    "asOf": "2026-10-19",
+    "instructors": [
+      { "hero": "Jabel", "level": 49 }, { "hero": "Chenko", "level": 49 }, { "hero": "Howard", "level": 49 },
+      { "hero": "Quinn", "level": 49 }, { "hero": "Diana", "level": 49 }
+    ],
+    "slotsTotal": 15,
+    "slotsOpen": 7,
+    "slotted": [],
+    "lockedSlots": [ { "slot": 8, "requirement": "TC 21", "tcLevel": 21, "note": "Screen says “requires Lv 21”, read as Town Center 21" } ],
+    "testHero": "Edwin"
+  },
+  "lineups": {
+    "asOf": "2026-10-21",
+    "marches": [
+      { "name": "Be", "purpose": "Beast hunt",
+        "heroes": [ { "hero": "Diana", "lead": true }, { "hero": "Jabel" }, { "hero": "Forrest" } ],
+        "troops": { "inf": 21450, "cav": 22319, "arc": 31111 },
+        "ratioPct": { "inf": 29, "cav": 30, "arc": 41 },
+        "power": 9303894 },
+      { "name": "Att", "purpose": "Attack",
+        "heroes": [ { "hero": "Howard", "lead": true }, { "hero": "Jabel" }, { "hero": "Amane" } ],
+        "troops": { "inf": 26868, "cav": 29872, "arc": 18140 },
+        "ratioPct": { "inf": 36, "cav": 40, "arc": 24 },
+        "power": 10026067 }
+    ],
+    "arena": {
+      "attack":  { "power": 2361435, "front": ["Howard","Chenko"], "back": ["Jabel","Diana","Amane"] },
+      "defense": { "power": 2349445, "front": ["Howard","Fahd"],   "back": ["Jabel","Diana","Amane"] }
+    },
+    "guardStation": null,
+    "barricades": [
+      { "name": "Barricade 1", "level": 10, "maxed": true, "power": 1400000, "powerRounded": true, "heroes": ["Howard","Jabel","Amane"] },
+      { "name": "Barricade 2", "level": 10, "maxed": true, "power": 1300000, "powerRounded": true, "heroes": ["Fahd","Chenko","Diana"] }
+    ]
+  },
+  "recommendations": [
+    { "id": "weak-amane", "priority": 1, "type": "Weak links",
+      "what": "Fix the weak link in your key lineups: Amane",
+      "why": "Amane is Lv 46 with 267,790 power and an empty chest slot, yet she sits in Arena attack, Arena defense, Barricade 1 and the Att march.",
+      "evidence": ["hero.md: Amane Lv 46, 267,790 power, chest slot empty", "lineups.md: Arena attack, Arena defense, Barricade 1, Att"],
+      "cost": null, "confidence": ["Verified"], "heroes": ["Amane"], "note": null },
+    { "id": "drill-fill", "priority": 2, "type": "Drill Camp",
+      "what": "Fill the 7 empty Drill Camp slots, reset the slotted heroes, and put the refunded Hero XP into the lowest instructor",
+      "why": "7 slots are open and 10 heroes are not instructors. Slotting Amane and Helga (Lv 46) would raise them to 49 at no XP cost. Saul (Lv 50) is above the instructors, so don't slot him.",
+      "evidence": ["Drill Camp screen, 19 Oct: 7 open slots, all instructors Lv 49", "hero.md: Amane 46, Helga 46, Saul 50"],
+      "cost": "No XP to slot (per community rule)", "confidence": ["Inferred", "Unverified"], "heroes": ["Amane", "Helga", "Saul", "Edwin"],
+      "note": "Test one gathering hero (Edwin) first." },
+    { "id": "gear-gaps", "priority": 3, "type": "Gear gaps",
+      "what": "Fill 3 empty chest slots and upgrade 9 pieces still at +0",
+      "why": "Empty chest slots on Yeonwoo, Amane and Saul. +0 pieces on Amane (2), Olive (2), Fahd (2), Edwin (1), Saul (1, Epic) and Helga (1, Epic).",
+      "evidence": ["hero.md gear slots"],
+      "cost": null, "confidence": ["Verified"], "heroes": ["Yeonwoo", "Amane", "Saul", "Olive", "Fahd", "Edwin", "Helga"], "note": null },
+    { "id": "skills-now", "priority": 4, "type": "Skills affordable now",
+      "what": "Check whether Fahd's and Amane's skills can be upgraded right now",
+      "why": "Fahd and Amane show 34/30 manuals, and Amane shows 33/30 Development books.",
+      "evidence": ["hero.md skill screens"],
+      "cost": "30 manuals or 30 Development books per upgrade, as shown", "confidence": ["Inferred"], "heroes": ["Fahd", "Amane"],
+      "note": "The book counts may be an old reading." },
+    { "id": "near-promo", "priority": 5, "type": "Near promotion",
+      "what": "Finish the promotions that are a few shards away",
+      "why": "Forrest is 4 shards from T4, Helga 5 from T1, Howard 6, Chenko 7, Edwin 7, and Saul 14 from 2★ (unlocks 2 skills).",
+      "evidence": ["hero.md shard counts"],
+      "cost": "4–14 shards each; shard sources unknown", "confidence": ["Verified"], "heroes": ["Forrest", "Helga", "Howard", "Chenko", "Edwin", "Saul"],
+      "note": "Verified from data; where to get the shards is not recorded." },
+    { "id": "jabel-two-marches", "priority": 6, "type": "Setup conflicts",
+      "what": "Take Jabel out of either Be or Att",
+      "why": "Jabel is in both presets, so those two marches can't run at the same time.",
+      "evidence": ["lineups.md: Be (Diana, Jabel, Forrest), Att (Howard, Jabel, Amane)"],
+      "cost": null, "confidence": ["Unverified"], "heroes": ["Jabel"],
+      "note": "Rests on the community rule that a hero can be in only one march at a time." },
+    { "id": "seth-epic-set", "priority": 7, "type": "Gear gaps",
+      "what": "Consider moving Seth's full Epic infantry set",
+      "why": "Seth is a Rare economy hero holding a full Epic set. Check whether it would serve more on Howard or Helga.",
+      "evidence": ["hero.md: Seth gear power 137,700, full Epic set"],
+      "cost": null, "confidence": ["Unverified"], "heroes": ["Seth", "Howard", "Helga"],
+      "note": "Compare Gear Details first." }
+  ],
+  "features": [
+    { "name": "Town Center & buildings", "unlock": null, "state": "Active", "hasData": true, "source": "profile.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Research", "unlock": null, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Heroes", "unlock": null, "state": "Active", "hasData": true, "source": "hero.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Hero Gear & Widgets", "unlock": { "type": "tc", "level": 15 }, "state": null, "hasData": true, "source": "hero.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Skills", "unlock": null, "state": "Active", "hasData": true, "source": "hero.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Drill Camp", "unlock": { "type": "tc", "level": 13 }, "state": null, "hasData": true, "source": null, "asOf": "2026-10-19", "note": null },
+    { "name": "Troops", "unlock": null, "state": "Active", "hasData": true, "source": "troops.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Arena", "unlock": null, "state": "Active", "hasData": true, "source": "lineups.md", "asOf": "2026-10-21", "note": null },
+    { "name": "Guard Station", "unlock": null, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Barricades", "unlock": null, "state": "Active", "hasData": true, "source": "lineups.md", "asOf": "2026-10-21", "note": "Both at Lv 10 (max)." },
+    { "name": "Mystic Trial", "unlock": { "type": "tc", "level": 19 }, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Governor Gear", "unlock": { "type": "tc", "level": 22 }, "state": null, "hasData": true, "source": "profile.md", "asOf": "2026-10-21", "note": "6 of 6 slots locked." },
+    { "name": "Governor Charms", "unlock": { "type": "tc", "level": 25 }, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Pets", "unlock": { "type": "serverDay", "day": 55 }, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Alliance", "unlock": null, "state": "Active", "hasData": true, "source": "profile.md", "asOf": "2026-10-21", "note": "Alliance SPQ." },
+    { "name": "Events", "unlock": null, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Truegold / War Academy", "unlock": { "type": "tc", "level": 30 }, "state": null, "hasData": false, "source": null, "asOf": null, "note": null },
+    { "name": "Gift codes", "unlock": null, "state": "Active", "hasData": true, "source": "codes.md", "asOf": "2026-10-21", "note": null }
+  ],
+  "dataHealth": {
+    "conflicts": [
+      { "area": "All files", "title": "No file carries an as-of date",
+        "detail": "Values come from different reading times. Hero XP shows 276,957, 37,037 and 26,957 on different heroes, which looks like account inventory read at different times." },
+      { "area": "Heroes · Olive", "title": "Olive's Archer Health disagrees",
+        "detail": "+8.10% in one reading, +14.10% in another." },
+      { "area": "Town Center", "title": "Perk names look interpreted",
+        "detail": "The perk names don't look like in-game text, so only the 6/7 count is shown." }
+    ],
+    "missing": [
+      { "area": "Governor", "title": "Server day" },
+      { "area": "City", "title": "Research" },
+      { "area": "City", "title": "Speedups" },
+      { "area": "City", "title": "Wood, stone and iron" },
+      { "area": "Heroes", "title": "Shard and book inventories" },
+      { "area": "Defense", "title": "Guard Station" },
+      { "area": "Drill Camp", "title": "Current state (last read 19 Oct, before Saul and Helga were recorded)" },
+      { "area": "Events", "title": "Events" }
+    ]
+  },
+  "codes": {
+    "asOf": "2026-10-21",
+    "active": [ { "code": "Kingshot888", "redeemed": true }, { "code": "VIP777", "redeemed": true } ],
+    "expired": [ { "code": "KS1005", "redeemed": true }, { "code": "WELLDONE", "redeemed": true }, { "code": "Hangul2026", "redeemed": true } ],
+    "expiredTotal": 22
+  }
+};
+/* KS_DATA:END */
+
+/* =====================================================================
+ * State host.
+ * Why: the dashboard logic above was designed around a tiny
+ * "state + setState + re-render" contract. This shim provides exactly
+ * that contract with no framework, so the logic stays unchanged and the
+ * page remains one dependency-free file.
+ * ===================================================================== */
+
+/**
+ * Minimal state container. Subclasses set `this.state` and call
+ * `setState(patch)`; every change triggers a full re-render.
+ */
+class StateHost {
+  /** Create an empty state host. */
+  constructor() {
+    this.state = {};
+  }
+
+  /**
+   * Merge a partial state object and re-render.
+   * @param {object} patch Keys to overwrite in `this.state`.
+   * @returns {void}
+   */
+  setState(patch) {
+    var prev = this.state;
+    this.state = Object.assign({}, prev, patch);
+    afterStateChange(prev, this.state);
+    render();
+  }
+}
+
+/**
+ * Kingshot account dashboard.
+ * Renders all ten views and the hero drawer from KS_DATA. Nothing below
+ * names a hero, a count or a layout position: lists, grids and charts are
+ * built from the data arrays and handle 1–60 heroes.
+ */
+class Dashboard extends StateHost {
+  /**
+   * Create the dashboard with its initial UI state.
+   */
+  constructor() {
+    super();
+    // UI state only. Data never lives in state, so a regenerated KS_DATA always wins.
+    this.state = { view: 'overview', theme: 'auto', fCls: 'all', fRar: 'all', fGen: 'all', fRole: 'all', sort: 'power', hero: null, iType: 'all', iHero: 'all' };
+  }
+
+  /* ------------------------------------------------------------------
+   * Formatting helpers. Every helper turns null/undefined into
+   * "Not recorded" so no component can render a blank value.
+   * ------------------------------------------------------------------ */
+
+  /**
+   * Format a number with thousands separators.
+   * @param {?number} v
+   * @returns {string}
+   */
+  num(v) {
+    return (v === null || v === undefined || isNaN(v)) ? 'Not recorded' : Number(v).toLocaleString('en-US');
+  }
+
+  /**
+   * Format a large number compactly (94.6M). Used where the source itself was rounded.
+   * @param {?number} v
+   * @returns {string}
+   */
+  compact(v) {
+    if (v === null || v === undefined) return 'Not recorded';
+    if (Math.abs(v) >= 1e6) return (Math.round(v / 1e5) / 10).toLocaleString('en-US') + 'M';
+    if (Math.abs(v) >= 1e3) return (Math.round(v / 1e2) / 10).toLocaleString('en-US') + 'K';
+    return String(v);
+  }
+
+  /**
+   * Parse an ISO date (YYYY-MM-DD) as UTC midnight.
+   * @param {?string} iso
+   * @returns {?Date} null when missing or malformed
+   */
+  parse(iso) {
+    if (!iso) return null;
+    var d = new Date(iso + 'T00:00:00Z');
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  /**
+   * "21 Oct 2026" (long) or "21 Oct" (short).
+   * @param {?string} iso
+   * @param {boolean} short
+   * @returns {string}
+   */
+  date(iso, short) {
+    var d = this.parse(iso);
+    if (!d) return 'date not recorded';
+    var M = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return d.getUTCDate() + ' ' + M[d.getUTCMonth()] + (short ? '' : ' ' + d.getUTCFullYear());
+  }
+
+  /**
+   * Whole days between an as-of date and today (viewer's clock, UTC days).
+   * @param {?string} iso
+   * @returns {?number} null when the date is missing
+   */
+  ageDays(iso) {
+    var d = this.parse(iso);
+    if (!d) return null;
+    var now = new Date();
+    var today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    return Math.max(0, Math.floor((today - d.getTime()) / 86400000));
+  }
+
+  /**
+   * Human age label: "today", "1 day old", "5 days old", "age unknown".
+   * @param {?string} iso
+   * @returns {string}
+   */
+  ageText(iso) {
+    var n = this.ageDays(iso);
+    if (n === null) return 'age unknown';
+    if (n === 0) return 'today';
+    return n === 1 ? '1 day old' : n + ' days old';
+  }
+
+  /**
+   * "as of 21 Oct" with a fallback.
+   * @param {?string} iso
+   * @returns {string}
+   */
+  asOf(iso) {
+    return iso ? 'as of ' + this.date(iso, true) : 'as of: Not recorded';
+  }
+
+  /**
+   * Build template inputs. All derived values (caps, sums, conflicts,
+   * placement plan, feature states) are computed here from KS_DATA.
+   * @returns {object}
+   */
+  renderVals() {
+    var self = this;
+    var S = this.state;
+    var D = (typeof KS_DATA === 'object' && KS_DATA) ? KS_DATA : {};
+    var NR = 'Not recorded';
+    var meta = D.meta || {};
+    var gov = D.governor || {};
+    var tcObj = D.townCenter || {};
+    var res = D.resources || {};
+    var army = D.army || {};
+    var rules = D.rules || {};
+    var L = D.lineups || {};
+    var DC = D.drillCamp || null;
+    var codesD = D.codes || null;
+    var heroes = Array.isArray(D.heroes) ? D.heroes : [];
+    var recsRaw = Array.isArray(D.recommendations) ? D.recommendations : [];
+    var featsRaw = Array.isArray(D.features) ? D.features : [];
+    var dh = D.dataHealth || {};
+    var snapshot = meta.snapshotAsOf || null;
+    var staleDays = meta.staleAfterDays != null ? meta.staleAfterDays : 7;
+
+    /* ---------- Theme ---------- */
+    var themes = ['auto', 'light', 'dark'];
+    var themeNames = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var cycleTheme = function () { self.setState({ theme: themes[(themes.indexOf(S.theme) + 1) % themes.length] }); };
+
+    /* ---------- Level cap from the (Unverified) community rule table ---------- */
+    var tc = tcObj.level != null ? tcObj.level : null;
+    var capTable = rules.heroLevelCapByTC || {};
+    var cap = (tc != null && capTable[String(tc)] != null) ? capTable[String(tc)] : null;
+
+    var byName = {};
+    heroes.forEach(function (h) { if (h && h.name) byName[h.name] = h; });
+
+    // "New" = not in the previous snapshot's hero list. No previous list → nobody is new.
+    var prevList = (meta.previousSnapshot && Array.isArray(meta.previousSnapshot.heroes)) ? meta.previousSnapshot.heroes : [];
+    var isNew = function (n) { return prevList.length > 0 && prevList.indexOf(n) < 0; };
+
+    /* ---------- Assignments: derived from lineups, never stored per hero ---------- */
+    var assign = {};
+    var addA = function (n, label, kind) { if (!n) return; (assign[n] = assign[n] || []).push({ label: label, kind: kind }); };
+    (L.marches || []).forEach(function (m) {
+      (m.heroes || []).forEach(function (x) { addA(x.hero, 'March ' + m.name + (x.lead ? ' · lead' : ''), 'march'); });
+    });
+    var arena = L.arena || {};
+    [['attack', 'Arena attack'], ['defense', 'Arena defense']].forEach(function (p) {
+      var t = arena[p[0]]; if (!t) return;
+      (t.front || []).forEach(function (n) { addA(n, p[1] + ' · front', 'arena'); });
+      (t.back || []).forEach(function (n) { addA(n, p[1] + ' · back', 'arena'); });
+    });
+    (L.barricades || []).forEach(function (b) { (b.heroes || []).forEach(function (n) { addA(n, b.name, 'barricade'); }); });
+    if (L.guardStation && Array.isArray(L.guardStation.heroes)) L.guardStation.heroes.forEach(function (n) { addA(n, 'Guard Station', 'guard'); });
+    if (DC) {
+      (DC.instructors || []).forEach(function (i) { addA(i.hero, 'Drill instructor', 'drill'); });
+      (DC.slotted || []).forEach(function (n) { addA(n, 'Drill slot', 'drill'); });
+    }
+    var inLineup = function (n) { return (assign[n] || []).some(function (a) { return a.kind !== 'drill'; }); };
+
+    var openHero = function (n) { return function () { self.setState({ hero: n }); }; };
+
+    /* ---------- Hero view-models ---------- */
+    var ST = { capped: 'Capped', upgradeable: 'Upgradeable now', progress: 'In progress', locked: 'Locked until next star' };
+    var heroVM = function (h) {
+      var lvl = h.level != null ? h.level : null;
+      var levelText = lvl == null ? NR : (cap != null ? lvl + ' / ' + cap : lvl + ' / cap not recorded');
+      var levelPct = (lvl != null && cap) ? Math.min(100, Math.round(lvl / cap * 100)) : 0;
+      var parts = [];
+      if (h.stars != null) parts.push(h.stars + '★');
+      if (h.tier != null) parts.push('T' + h.tier);
+      var sh = h.shards || null;
+      var shardOk = sh && sh.have != null && sh.need;
+      var shardText = shardOk ? sh.have + '/' + sh.need + ' to ' + (sh.to || 'next step') : NR;
+      var shardPct = shardOk ? Math.min(100, Math.round(sh.have / sh.need * 100)) : 0;
+      var slots = (h.gear && Array.isArray(h.gear.slots)) ? h.gear.slots : null;
+      var bad = slots ? slots.filter(function (s) { return s.state === 'empty' || s.state === 'plus0'; }) : [];
+      // Skill summary: "4 capped · 2 in progress", "All capped", or Not recorded.
+      var skillText = 'Skills: ' + NR;
+      if (Array.isArray(h.skills) && h.skills.length) {
+        var counts = {}; var allParts = [];
+        h.skills.forEach(function (k) {
+          if (k.all) allParts.push('All ' + (ST[k.status] || k.status || NR).toLowerCase());
+          else counts[k.status] = (counts[k.status] || 0) + (k.count || 1);
+        });
+        var cp = ['capped', 'upgradeable', 'progress', 'locked'].filter(function (k) { return counts[k]; })
+          .map(function (k) { return counts[k] + ' ' + ST[k].toLowerCase(); });
+        skillText = 'Skills: ' + allParts.concat(cp).join(' · ');
+      }
+      var rar = h.rarity || NR;
+      return {
+        key: h.name, name: h.name || NR, isNew: isNew(h.name),
+        rarity: rar, rarCls: 'rar-' + String(rar).toLowerCase().replace(/[^a-z]/g, ''),
+        cls: h.cls || 'Class: ' + NR,
+        genText: h.generation != null ? 'Gen ' + h.generation : 'Gen: ' + NR,
+        roleText: h.role || NR,
+        starsText: parts.length ? parts.join(' ') : 'Stars: ' + NR,
+        levelText: levelText, levelPct: levelPct, lvl: lvl,
+        shardText: shardText, shardPct: shardPct, shardRatio: shardOk ? sh.have / sh.need : -1,
+        power: h.power != null ? h.power : null, powerText: self.num(h.power),
+        gearPower: h.gearPower != null ? h.gearPower : null, gearText: self.num(h.gearPower),
+        skillText: skillText,
+        hasFlag: bad.length > 0,
+        flagText: 'Gear: ' + bad.map(function (s) { return s.slot + (s.state === 'empty' ? ' empty' : ' +0'); }).join(', '),
+        assign: (assign[h.name] || []).map(function (a) { return { label: a.label }; }),
+        noAssign: !(assign[h.name] || []).length,
+        open: openHero(h.name)
+      };
+    };
+    var allVM = heroes.filter(function (h) { return h && h.name; }).map(heroVM);
+
+    /* ---------- Hero filters (options derived from data, incl. "Not recorded") ---------- */
+    var distinct = function (key) {
+      var vals = []; var hasNull = false;
+      heroes.forEach(function (h) { var v = h[key]; if (v === null || v === undefined || v === '') hasNull = true; else if (vals.indexOf(v) < 0) vals.push(v); });
+      if (hasNull) vals.push('__none');
+      return vals;
+    };
+    var fdefs = [
+      { key: 'cls', st: 'fCls', label: 'Class' },
+      { key: 'rarity', st: 'fRar', label: 'Rarity' },
+      { key: 'generation', st: 'fGen', label: 'Gen' },
+      { key: 'role', st: 'fRole', label: 'Role' }
+    ];
+    var chip = function (stKey, value, label) {
+      var on = S[stKey] === value;
+      var patch = {}; patch[stKey] = value;
+      return { label: label, cls: on ? 'on' : '', pressed: on ? 'true' : 'false', pick: function () { self.setState(patch); } };
+    };
+    var filterGroups = fdefs.map(function (fd) {
+      return { label: fd.label, chips: ['all'].concat(distinct(fd.key)).map(function (v) {
+        var lbl = v === 'all' ? 'All' : (v === '__none' ? NR : (fd.key === 'generation' ? 'Gen ' + v : String(v)));
+        return chip(fd.st, v, lbl);
+      }) };
+    });
+    filterGroups.push({ label: 'Sort', chips: [['power', 'Power'], ['level', 'Level'], ['gear', 'Gear power'], ['shards', 'Shard progress'], ['name', 'Name']].map(function (p) { return chip('sort', p[0], p[1]); }) });
+    var match = function (h, key, sel) {
+      if (sel === 'all') return true;
+      if (sel === '__none') return h[key] === null || h[key] === undefined || h[key] === '';
+      return h[key] === sel;
+    };
+    var desc = function (a, b) { return (b == null ? -Infinity : b) - (a == null ? -Infinity : a); };
+    var sorters = {
+      power: function (a, b) { return desc(a.power, b.power); },
+      level: function (a, b) { return desc(a.lvl, b.lvl) || desc(a.power, b.power); },
+      gear: function (a, b) { return desc(a.gearPower, b.gearPower); },
+      shards: function (a, b) { return b.shardRatio - a.shardRatio; },
+      name: function (a, b) { return String(a.name).localeCompare(String(b.name)); }
+    };
+    var heroList = heroes.filter(function (h) {
+      return h && h.name && match(h, 'cls', S.fCls) && match(h, 'rarity', S.fRar) && match(h, 'generation', S.fGen) && match(h, 'role', S.fRole);
+    }).map(function (h) { return allVM.filter(function (x) { return x.key === h.name; })[0]; })
+      .sort(sorters[S.sort] || sorters.power);
+    var heroAsOfs = heroes.map(function (h) { return h.asOf; }).filter(Boolean).sort();
+    var heroOldest = heroAsOfs.length ? heroAsOfs[0] : null;
+    var sortName = { power: 'power', level: 'level', gear: 'gear power', shards: 'shard progress', name: 'name' }[S.sort];
+    var gen2 = rules.gen2Heroes && rules.gen2Heroes.serverDay;
+    var heroMeta = {
+      countText: 'Showing ' + heroList.length + ' of ' + allVM.length + ' heroes · sorted by ' + sortName + ' · ' + self.asOf(heroOldest),
+      empty: heroList.length === 0,
+      capNote: cap != null ? 'Level cap ' + cap + ' at Town Center ' + tc + ' (community rule, Unverified).' : 'Level cap at Town Center ' + (tc != null ? tc : NR) + ': Not recorded.',
+      lockedNote: (meta.lockedHeroesNotInData ? meta.lockedHeroesNotInData + ' locked heroes are not in the data. ' : '') + (gen2 ? 'Gen 2 heroes arrive on server day ' + gen2 + ' (Unverified); server day: ' + (gov.serverDay != null ? gov.serverDay : NR) + '.' : '')
+    };
+
+    /* ---------- Hero drawer ---------- */
+    var dh0 = S.hero ? byName[S.hero] : null;
+    var drawer = { open: false, name: '', rarity: '', rarCls: '', cls: '', genText: '', isNew: false, asOf: '', levelText: '', starsText: '', shardText: '', powerText: '', gearText: '', roleText: '', slots: [], slotsNote: '', hasGearNote: false, gearNote: '', widgetText: '', skills: [], noSkills: false, assign: [], noAssign: false, hasNotes: false, notes: [] };
+    if (dh0) {
+      var vm = allVM.filter(function (x) { return x.key === dh0.name; })[0];
+      var slots = (dh0.gear && Array.isArray(dh0.gear.slots)) ? dh0.gear.slots : null;
+      var w = dh0.widget;
+      drawer = {
+        open: true, name: vm.name, rarity: vm.rarity, rarCls: vm.rarCls, cls: vm.cls, genText: vm.genText, isNew: vm.isNew,
+        asOf: self.asOf(dh0.asOf), levelText: vm.levelText + (cap != null ? ' (cap per TC ' + tc + ', Unverified)' : ''),
+        starsText: vm.starsText, shardText: vm.shardText, powerText: vm.powerText, gearText: vm.gearText, roleText: vm.roleText,
+        slots: (slots || []).map(function (s) {
+          var badS = s.state === 'empty' || s.state === 'plus0';
+          var txt = s.state === 'empty' ? 'Empty' : (s.state === 'plus0' ? '+0' : (s.state || NR));
+          return { slot: (s.quality ? s.quality + ' ' : '') + (s.slot || 'Slot'), stateText: txt, cls: badS ? 'bad' : '' };
+        }),
+        slotsNote: slots === null ? 'Slot-by-slot gear: Not recorded.' : 'Other slots: Not recorded.',
+        hasGearNote: !!(dh0.gear && dh0.gear.note), gearNote: (dh0.gear && dh0.gear.note) || '',
+        widgetText: !w ? NR : (w.unlocked ? 'Unlocked' + (w.name ? ' · ' + w.name : '') + ' · ' + (w.level != null ? '+' + w.level : 'level ' + NR) : 'Locked'),
+        skills: (Array.isArray(dh0.skills) ? dh0.skills : []).map(function (k) {
+          var name = k.name + (k.level != null ? ' · Lv ' + k.level : '');
+          var note = [k.effect, k.note, k.needs ? 'Needs ' + k.needs : null].filter(Boolean).join(' · ');
+          return { name: name, statusText: ST[k.status] || NR, stCls: 'st-' + (k.status || 'locked'), note: note || ' ',
+                   hasConf: !!k.confidence, conf: k.confidence || '', confCls: 'conf conf-' + String(k.confidence || '').toLowerCase() };
+        }),
+        noSkills: !Array.isArray(dh0.skills) || !dh0.skills.length,
+        assign: vm.assign, noAssign: vm.noAssign,
+        hasNotes: Array.isArray(dh0.notes) && dh0.notes.length > 0,
+        notes: (dh0.notes || []).map(function (t) { return { text: t }; })
+      };
+    }
+    var closeHero = function () { self.setState({ hero: null }); };
+
+    /* ---------- Drill Camp: lowest instructor, slots, placement plan ---------- */
+    var dc = { has: false, missing: true, lede: 'Drill Camp data: Not recorded.', instructors: [], slots: [], plan: [] };
+    if (DC) {
+      var ins = DC.instructors || [];
+      var lv = ins.map(function (i) { return i.level; }).filter(function (x) { return x != null; });
+      var minLvl = lv.length ? Math.min.apply(null, lv) : null;
+      var lowest = ins.filter(function (i) { return i.level === minLvl; });
+      var insVM = ins.map(function (i) {
+        var now = byName[i.hero] ? byName[i.hero].level : null;
+        var mm = now != null && i.level != null && now !== i.level;
+        return { name: i.hero || NR, levelText: i.level != null ? 'Lv ' + i.level : NR, isLowest: minLvl != null && i.level === minLvl,
+                 cls: (minLvl != null && i.level === minLvl) ? 'lowest' : '', mismatch: mm,
+                 mismatchText: mm ? 'Hero data now: Lv ' + now : '' };
+      });
+      var lowestText = minLvl == null ? 'Instructor levels: Not recorded.'
+        : (lowest.length === ins.length ? 'All ' + ins.length + ' instructors are tied at Lv ' + minLvl + '. Every slotted hero runs at Lv ' + minLvl + '.'
+          : 'Lowest: ' + lowest.map(function (i) { return i.hero; }).join(', ') + ' at Lv ' + minLvl + '. Every slotted hero runs at this level.');
+      var total = DC.slotsTotal != null ? DC.slotsTotal : 0;
+      var filled = DC.slotted || [];
+      var openN = DC.slotsOpen != null ? DC.slotsOpen : 0;
+      var openEmpty = Math.max(0, openN - filled.length);
+      var insSet = ins.map(function (i) { return i.hero; });
+      // Candidates = heroes that are not instructors and not already slotted.
+      var cands = heroes.filter(function (h) { return h.name && insSet.indexOf(h.name) < 0 && filled.indexOf(h.name) < 0; });
+      var above = cands.filter(function (h) { return minLvl != null && h.level != null && h.level > minLvl; });
+      var unknownLv = cands.filter(function (h) { return h.level == null; });
+      var eligible = cands.filter(function (h) { return minLvl != null && h.level != null && h.level <= minLvl; });
+      // Rank: biggest free level gain first, then heroes outside lineups, then the test hero, then lowest power.
+      eligible.sort(function (a, b) {
+        var g = (b.level - a.level) * -1; if (g) return g;
+        var la = inLineup(a.name) ? 1 : 0, lb = inLineup(b.name) ? 1 : 0; if (la !== lb) return la - lb;
+        if (a.name === DC.testHero) return -1; if (b.name === DC.testHero) return 1;
+        return (a.power || 0) - (b.power || 0);
+      });
+      var placed = eligible.slice(0, openEmpty);
+      var overflow = eligible.slice(openEmpty);
+      var locked = DC.lockedSlots || [];
+      var cells = [];
+      for (var i = 1; i <= total; i++) {
+        if (i <= filled.length) cells.push({ n: i, state: 'Filled', detail: filled[i - 1], cls: 'filled' });
+        else if (i <= openN) {
+          var p = placed[i - filled.length - 1];
+          cells.push({ n: i, state: 'Open · empty', detail: p ? 'Plan: ' + p.name : 'No candidate', cls: 'open' });
+        } else {
+          var lk = locked.filter(function (x) { return x.slot === i; })[0];
+          var req = lk && lk.requirement ? lk.requirement : 'Requirement not recorded';
+          var dist = (lk && lk.tcLevel != null && tc != null) ? (lk.tcLevel - tc > 0 ? ' · ' + (lk.tcLevel - tc) + (lk.tcLevel - tc === 1 ? ' level away' : ' levels away') : ' · should be open now') : '';
+          cells.push({ n: i, state: 'Locked', detail: req + dist, cls: 'locked' });
+        }
+      }
+      dc = {
+        has: true, missing: false,
+        lede: 'Reading from ' + self.date(DC.asOf) + ' (' + self.ageText(DC.asOf) + ')' + (snapshot && DC.asOf && DC.asOf < snapshot ? ', older than the hero data.' : '.'),
+        asOf: self.asOf(DC.asOf),
+        instructors: insVM, lowestText: lowestText,
+        slots: cells,
+        slotSummary: openN + ' open · ' + filled.length + ' filled · ' + Math.max(0, total - openN) + ' locked · ' + total + ' total',
+        planLead: openEmpty + ' slots empty and ' + cands.length + ' non-instructor heroes. Place these heroes:',
+        plan: placed.map(function (h) {
+          var gain = minLvl - h.level;
+          return { name: h.name, open: openHero(h.name),
+                   change: 'Lv ' + h.level + ' → ' + minLvl + (gain > 0 ? ' (+' + gain + ', no XP)' : ''),
+                   reason: gain > 0 ? (inLineup(h.name) ? 'free levels · in a lineup' : 'free levels') : (h.name === DC.testHero ? 'test hero · reset to refund XP' : (inLineup(h.name) ? 'in a lineup · reset to refund XP' : 'reset to refund XP')) };
+        }),
+        stepText: 'Then reset the slotted heroes to refund their Hero XP and put that XP into the lowest instructor' + (DC.testHero ? '. Test with ' + DC.testHero + ' first.' : '.'),
+        hasOverflow: overflow.length > 0,
+        overflowText: overflow.map(function (h) { return h.name + ' (Lv ' + h.level + ')'; }).join(', ') + ' — more candidates than open slots.',
+        hasAbove: above.length > 0,
+        aboveText: above.map(function (h) { return h.name + ' (Lv ' + h.level + ')'; }).join(', ') + ' is above the lowest instructor (Lv ' + minLvl + '); a slot could lower it.',
+        hasUnknown: unknownLv.length > 0,
+        unknownText: unknownLv.map(function (h) { return h.name; }).join(', '),
+        ruleNote: (rules.drillCamp ? 'Rule used: ' + rules.drillCamp + ' ' : '') + '(' + (rules.source || 'Source not recorded') + ', ' + (rules.confidence || 'Unverified') + '.)'
+      };
+    }
+
+    /* ---------- Army & marches ---------- */
+    var classes = Array.isArray(army.classes) ? army.classes : [];
+    var clsTotal = classes.reduce(function (s, c) { return s + (c.count || 0); }, 0);
+    var mkSplit = function (counts, pcts) {
+      var tot = classes.reduce(function (s, c) { return s + (counts[c.key] || 0); }, 0);
+      return classes.map(function (c) {
+        var n = counts[c.key];
+        var pct = pcts && pcts[c.key] != null ? pcts[c.key] : (tot ? Math.round((n || 0) / tot * 1000) / 10 : null);
+        return { name: c.name, segCls: 'seg-' + c.key, countText: self.num(n), pctText: pct != null ? pct + '%' : NR, w: tot ? ((n || 0) / tot * 100).toFixed(2) : 0 };
+      });
+    };
+    var armyCounts = {}; var armyPcts = {};
+    classes.forEach(function (c) { armyCounts[c.key] = c.count; armyPcts[c.key] = c.pct; });
+    var marchUse = {};
+    (L.marches || []).forEach(function (m) { (m.heroes || []).forEach(function (x) { (marchUse[x.hero] = marchUse[x.hero] || []).push(m.name); }); });
+    var marchConflicts = Object.keys(marchUse).filter(function (n) { return marchUse[n].length > 1; }).map(function (n) {
+      return { text: n + ' is in ' + marchUse[n].join(' and ') + ', so those marches can’t run at the same time.' };
+    });
+    var q = army.queues || {};
+    var armyVM = {
+      lede: (army.tier ? 'All troops ' + army.tier + '. ' : '') + 'Injured: ' + self.num(army.injured) + '.',
+      asOf: self.asOf(army.asOf),
+      tiles: [
+        { label: 'Total troops', value: self.num(army.total), vCls: army.total == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
+        { label: 'March capacity', value: self.num(army.marchCapacity), vCls: army.marchCapacity == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
+        { label: 'March queues', value: q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, vCls: q.current == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
+        { label: 'Infirmary', value: self.num(army.infirmary), vCls: army.infirmary == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
+        { label: 'Injured', value: self.num(army.injured), vCls: army.injured == null ? 'nr' : '', asOf: self.asOf(army.asOf) }
+      ],
+      split: mkSplit(armyCounts, armyPcts),
+      splitAria: 'Troop split: ' + classes.map(function (c) { return c.name + ' ' + (c.pct != null ? c.pct + '%' : NR); }).join(', '),
+      hasConflicts: marchConflicts.length > 0, conflicts: marchConflicts,
+      marchAsOf: self.asOf(L.asOf),
+      marches: (L.marches || []).map(function (m) {
+        var t = m.troops || {};
+        var sum = classes.reduce(function (s, c) { return s + (t[c.key] || 0); }, 0);
+        var sp = mkSplit(t, m.ratioPct);
+        return { name: m.name || NR, purpose: m.purpose || 'Purpose: ' + NR,
+                 heroes: (m.heroes || []).map(function (x) { return { label: x.hero + (x.lead ? ' · lead' : '') + (marchUse[x.hero] && marchUse[x.hero].length > 1 ? ' · also in another march' : '') }; }),
+                 split: sp, aria: 'Troop ratio ' + sp.map(function (s) { return s.name + ' ' + s.pctText; }).join(', '),
+                 totalText: sum ? self.num(sum) + (army.marchCapacity ? ' of ' + self.num(army.marchCapacity) : '') : NR,
+                 powerText: self.num(m.power) };
+      }),
+      noMarches: !(L.marches || []).length,
+      orderNote: 'Troop numbers are read in the order ' + classes.map(function (c) { return c.name; }).join(' / ') + '.'
+    };
+
+    /* ---------- Defense: stated power vs. sum of current hero powers ---------- */
+    var sumPowers = function (names) {
+      var missing = names.filter(function (n) { return !byName[n] || byName[n].power == null; });
+      var s = names.reduce(function (acc, n) { return acc + ((byName[n] && byName[n].power) || 0); }, 0);
+      return { sum: s, missing: missing };
+    };
+    var powerCheck = function (stated, names, rounded) {
+      var sp = sumPowers(names);
+      var diff = stated != null ? stated - sp.sum : null;
+      var pct = (diff != null && sp.sum) ? Math.round(diff / sp.sum * 1000) / 10 : null;
+      var flagged = pct != null && Math.abs(pct) > 1;
+      return {
+        statedText: stated == null ? NR : (rounded ? self.compact(stated) + ' (rounded)' : self.num(stated)),
+        sumText: self.num(sp.sum) + (sp.missing.length ? ' (missing: ' + sp.missing.join(', ') + ')' : ''),
+        diffText: diff == null ? NR : (diff >= 0 ? '+' : '−') + self.num(Math.abs(diff)) + (pct != null ? ' (' + (pct >= 0 ? '+' : '−') + Math.abs(pct) + '%)' : ''),
+        diffCls: flagged ? 'warn' : '', flagged: flagged, diff: diff, sum: sp.sum, pct: pct
+      };
+    };
+    var slotVM = function (n) {
+      var h = byName[n];
+      return { name: n || 'Empty', sub: h ? (h.cls || NR) + ' · ' + self.compact(h.power) : 'Not in hero data', open: openHero(n) };
+    };
+    var teams = [['attack', 'Arena attack'], ['defense', 'Arena defense']].filter(function (p) { return arena[p[0]]; }).map(function (p) {
+      var t = arena[p[0]];
+      var names = (t.front || []).concat(t.back || []);
+      var c = powerCheck(t.power, names, false);
+      return { key: p[0], name: p[1], asOf: self.asOf(L.asOf),
+               front: (t.front || []).map(slotVM), back: (t.back || []).map(slotVM),
+               frontCls: 'form-' + Math.max(1, Math.min(3, (t.front || []).length)), backCls: 'form-' + Math.max(1, Math.min(3, (t.back || []).length)),
+               statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls,
+               hasNote: c.flagged, note: 'Stated power is not the same as today’s hero powers added up. Possible cause: the lineup was read earlier than the hero data (Inferred).' };
+    });
+    var barricades = (L.barricades || []).map(function (b) {
+      var c = powerCheck(b.power, b.heroes || [], b.powerRounded);
+      return { name: b.name || NR, levelText: b.level != null ? 'Lv ' + b.level + (b.maxed ? ' (max)' : '') : 'Level: ' + NR,
+               heroes: (b.heroes || []).map(function (n) { return { label: n }; }),
+               statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls };
+    });
+    var guard = L.guardStation
+      ? { text: (L.guardStation.heroes || []).join(', ') || 'Heroes: ' + NR, cls: '', asOf: self.asOf(L.asOf) }
+      : { text: 'Guard Station: Not recorded.', cls: 'empty', asOf: self.asOf(null) };
+
+    /* ---------- City ---------- */
+    var perks = tcObj.perks || {};
+    var gg = D.governorGear || null;
+    var resRow = function (k, o) {
+      if (!o || o.value == null) return { k: k, v: NR, cls: 'empty' };
+      return { k: k, v: o.rounded ? self.compact(o.value) + ' (rounded on screen)' : self.num(o.value), cls: '' };
+    };
+    var ggFeat = featsRaw.filter(function (f) { return f.name === 'Governor Gear'; })[0];
+    var ggUnlockLvl = ggFeat && ggFeat.unlock && ggFeat.unlock.type === 'tc' ? ggFeat.unlock.level : null;
+    var st = gov.stamina || {};
+    var city = {
+      asOf: self.asOf(tcObj.asOf),
+      tc: [
+        { k: 'Level', v: tc != null ? 'Lv ' + tc : NR },
+        { k: 'Attack', v: self.num(tcObj.attack) },
+        { k: 'Defense', v: self.num(tcObj.defense) },
+        { k: 'Health', v: self.num(tcObj.health) },
+        { k: 'Citizens', v: tcObj.citizens && tcObj.citizens.current != null ? tcObj.citizens.current + ' / ' + (tcObj.citizens.max != null ? tcObj.citizens.max : '?') : NR }
+      ],
+      perkText: perks.unlocked != null ? perks.unlocked + ' / ' + (perks.total != null ? perks.total : '?') : NR,
+      perkPct: (perks.unlocked != null && perks.total) ? Math.round(perks.unlocked / perks.total * 100) : 0,
+      perkNote: perks.namesVerified ? '' : 'Perk names are left out: the recorded names look interpreted, not in-game text (Unverified).',
+      resAsOf: self.asOf(res.asOf),
+      res: [resRow('Bread', res.bread), resRow('Wood', res.wood), resRow('Stone', res.stone), resRow('Iron', res.iron), resRow('Gems', res.gems)],
+      ggAsOf: self.asOf(gg && gg.asOf),
+      ggText: gg ? (gg.slotsLocked != null ? gg.slotsLocked + ' of ' + (gg.slotsTotal != null ? gg.slotsTotal : '?') + ' slots locked' : 'Slots: ' + NR) : 'Governor Gear: ' + NR,
+      ggUnlock: ggUnlockLvl != null ? 'Unlocks at TC ' + ggUnlockLvl + (tc != null && ggUnlockLvl > tc ? ', ' + (ggUnlockLvl - tc) + ' levels away' : '') + ' (community rule, Unverified).' : 'Unlock requirement: ' + NR,
+      govAsOf: self.asOf(gov.asOf),
+      gov: [
+        { k: 'VIP', v: gov.vip != null ? String(gov.vip) : NR },
+        { k: 'Total kills', v: self.num(gov.kills) },
+        { k: 'Stamina', v: st.current != null ? st.current + ' / ' + (st.max != null ? st.max : '?') : NR },
+        { k: 'Server day', v: gov.serverDay != null ? String(gov.serverDay) : NR }
+      ]
+    };
+
+    /* ---------- Recommendations (Invest + Top 5) ---------- */
+    var recs = recsRaw.slice().sort(function (a, b) { return (a.priority == null ? 1e9 : a.priority) - (b.priority == null ? 1e9 : b.priority); });
+    var confVM = function (list) {
+      var l = Array.isArray(list) && list.length ? list : ['Not recorded'];
+      return l.map(function (c) { return { label: c === 'Not recorded' ? 'Confidence: Not recorded' : c, cls: 'conf conf-' + String(c).toLowerCase().replace(/\s+/g, '-') }; });
+    };
+    var recVM = function (r, i) {
+      var hs = Array.isArray(r.heroes) ? r.heroes : [];
+      return { rank: i + 1, what: r.what || NR, why: r.why || NR, cost: r.cost || 'Not known',
+               confs: confVM(r.confidence), type: r.type || 'Other',
+               heroes: hs.map(function (n) { return { name: n, open: openHero(n) }; }), noHeroes: hs.length === 0,
+               evidence: (r.evidence || []).map(function (e) { return { text: e }; }), hasEvidence: (r.evidence || []).length > 0,
+               note: r.note || '', hasNote: !!r.note };
+    };
+    var ranked = recs.map(recVM);
+    var moves = ranked.slice(0, 5).map(function (r) {
+      return { n: r.rank, what: r.what, confs: r.confs, cost: r.cost, go: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); } };
+    });
+    var types = []; recs.forEach(function (r) { var t = r.type || 'Other'; if (types.indexOf(t) < 0) types.push(t); });
+    var recHeroes = []; recs.forEach(function (r) { (r.heroes || []).forEach(function (n) { if (recHeroes.indexOf(n) < 0) recHeroes.push(n); }); });
+    var shown = ranked.filter(function (r) {
+      return (S.iType === 'all' || r.type === S.iType) && (S.iHero === 'all' || r.heroes.some(function (h) { return h.name === S.iHero; }));
+    });
+    var invest = {
+      typeChips: [chip('iType', 'all', 'All')].concat(types.map(function (t) { return chip('iType', t, t); })),
+      heroChips: [chip('iHero', 'all', 'All')].concat(recHeroes.map(function (n) { return chip('iHero', n, n); })),
+      groups: types.map(function (t) {
+        var rs = shown.filter(function (r) { return r.type === t; });
+        return { type: t, recs: rs, countText: rs.length === 1 ? '1 move' : rs.length + ' moves' };
+      }).filter(function (g) { return g.recs.length; }),
+      empty: shown.length === 0
+    };
+
+    /* ---------- Features: state from data, or computed from the unlock rule ---------- */
+    var features = featsRaw.map(function (f) {
+      var state = f.state || null; var unlockText = 'Not recorded'; var byRule = false;
+      var u = f.unlock;
+      if (u && u.type === 'tc') {
+        var gap = tc != null ? u.level - tc : null;
+        unlockText = 'TC ' + u.level + (gap == null ? '' : (gap > 0 ? ' · ' + gap + (gap === 1 ? ' level away' : ' levels away') : ' · reached'));
+        if (!state && gap != null) { state = gap > 0 ? 'Locked' : 'Active'; byRule = true; }
+      } else if (u && u.type === 'serverDay') {
+        var sd = gov.serverDay;
+        var g2 = sd != null ? u.day - sd : null;
+        unlockText = 'Server day ' + u.day + (g2 == null ? ' · server day not recorded' : (g2 > 0 ? ' · ' + g2 + ' days away' : ' · reached'));
+        if (!state && g2 != null) { state = g2 > 0 ? 'Locked' : 'Active'; byRule = true; }
+      }
+      state = state || 'Unknown';
+      return {
+        name: f.name || NR, state: state + (byRule ? ' (by rule)' : ''),
+        stateCls: 's-' + state.toLowerCase().replace(/\s+/g, '-'),
+        unlockText: unlockText,
+        dataText: f.hasData ? 'In repo' + (f.source ? ': ' + f.source : ' (file not recorded)') : 'No data in repo',
+        dataCls: f.hasData ? '' : 'warntext',
+        ageText: f.asOf ? self.date(f.asOf, true) + ' · ' + self.ageText(f.asOf) : '—',
+        hasNote: !!f.note, note: f.note || ''
+      };
+    });
+    var featCounts = {}; features.forEach(function (f) { var k = f.state.replace(' (by rule)', ''); featCounts[k] = (featCounts[k] || 0) + 1; });
+    var featMeta = {
+      lede: features.length + ' systems · ' + Object.keys(featCounts).map(function (k) { return featCounts[k] + ' ' + k.toLowerCase(); }).join(' · '),
+      ruleNote: '"By rule" states come from community unlock rules (Unverified), compared against Town Center ' + (tc != null ? tc : NR) + ' and server day ' + (gov.serverDay != null ? gov.serverDay : NR) + '.'
+    };
+
+    /* ---------- Data age per area ---------- */
+    var sections = [
+      { label: 'Governor', asOf: gov.asOf },
+      { label: 'Town Center', asOf: tcObj.asOf },
+      { label: 'Resources', asOf: res.asOf },
+      { label: 'Army', asOf: army.asOf },
+      { label: 'Heroes', asOf: heroOldest },
+      { label: 'Drill Camp', asOf: DC ? DC.asOf : null },
+      { label: 'Lineups & marches', asOf: L.asOf },
+      { label: 'Gift codes', asOf: codesD ? codesD.asOf : null }
+    ];
+    var staleOf = function (s) {
+      var d = self.ageDays(s.asOf);
+      if (d === null) return 'undated';
+      if (snapshot && s.asOf < snapshot) return 'older';
+      if (d > staleDays) return 'stale';
+      return '';
+    };
+    var ageRows = sections.map(function (s) {
+      var k = staleOf(s);
+      return { label: s.label, date: s.asOf ? self.date(s.asOf, true) : NR, age: self.ageText(s.asOf) + (k === 'older' ? ' · older' : (k === 'stale' ? ' · stale' : '')), cls: k ? 'warntext' : '' };
+    });
+    var dated = sections.filter(function (s) { return s.asOf; }).sort(function (a, b) { return a.asOf < b.asOf ? -1 : 1; });
+    var oldest = dated[0] || null;
+    var anyStale = sections.some(function (s) { return staleOf(s) === 'stale' || staleOf(s) === 'undated'; });
+
+    /* ---------- Data health: stored items + checks computed from the data ---------- */
+    var conflicts = (dh.conflicts || []).map(function (c) { return { title: c.title || NR, area: c.area || '', detail: c.detail || '' }; });
+    teams.forEach(function (t) {
+      var a = arena[t.key]; var c = powerCheck(a.power, (a.front || []).concat(a.back || []), false);
+      if (c.flagged) conflicts.push({ title: t.name + ': stated power ≠ sum of hero powers', area: 'Defense & Arena', detail: 'Heroes add up to ' + c.sumText + ' vs. ' + c.statedText + ' stated. The lineup power looks older than the hero data.' });
+    });
+    (L.barricades || []).forEach(function (b) {
+      var c = powerCheck(b.power, b.heroes || [], b.powerRounded);
+      if (c.flagged) conflicts.push({ title: b.name + ': stated power ≠ sum of hero powers', area: 'Defense & Arena', detail: 'Heroes add up to ' + c.sumText + ' vs. ' + c.statedText + ' stated.' });
+    });
+    if (DC) (DC.instructors || []).forEach(function (i) {
+      var now = byName[i.hero] ? byName[i.hero].level : null;
+      if (now != null && i.level != null && now !== i.level) conflicts.push({ title: i.hero + ': Drill Camp level ≠ hero level', area: 'Drill Camp', detail: 'Drill Camp (' + self.date(DC.asOf, true) + ') shows Lv ' + i.level + '; hero data (' + self.date(byName[i.hero].asOf, true) + ') shows Lv ' + now + '. Re-read the Drill Camp screen.' });
+    });
+    var missing = (dh.missing || []).map(function (m) { return { title: m.title || NR, area: m.area || '' }; });
+    // Per-field gaps across the roster, so new heroes with partial data show up here automatically.
+    [['generation', 'Generation'], ['skills', 'Skills'], ['role', 'Role']].forEach(function (p) {
+      var n = heroes.filter(function (h) { return h[p[0]] === null || h[p[0]] === undefined; }).length;
+      if (n) missing.push({ title: p[1] + ' not recorded for ' + n + ' of ' + heroes.length + ' heroes', area: 'Heroes' });
+    });
+    var noSlots = heroes.filter(function (h) { return !(h.gear && Array.isArray(h.gear.slots)); }).length;
+    if (noSlots) missing.push({ title: 'Slot-by-slot gear not recorded for ' + noSlots + ' of ' + heroes.length + ' heroes', area: 'Heroes' });
+    var stale = sections.filter(function (s) { return staleOf(s); }).map(function (s) {
+      var k = staleOf(s);
+      return { title: s.label, area: k === 'undated' ? 'Undated' : (k === 'older' ? 'Older than snapshot' : 'Stale'),
+               detail: k === 'undated' ? 'No as-of date recorded.' : 'As of ' + self.date(s.asOf) + ' (' + self.ageText(s.asOf) + ')' + (k === 'older' && snapshot ? '; the snapshot is ' + self.date(snapshot) + '.' : '.') };
+    });
+    var health = {
+      lede: conflicts.length + ' conflicts · ' + missing.length + ' missing · ' + stale.length + ' stale or older',
+      conflicts: conflicts, missing: missing, stale: stale, noStale: stale.length === 0,
+      conflictCount: conflicts.length + ' found', missingCount: missing.length + ' gaps', staleCount: stale.length + ' areas'
+    };
+
+    /* ---------- Codes ---------- */
+    var codeRow = function (c) { return { code: c.code || NR, state: c.redeemed === true ? 'Redeemed' : (c.redeemed === false ? 'Not redeemed' : NR), cls: c.redeemed === true ? 'ok' : (c.redeemed === false ? 'warntext' : 'empty') }; };
+    var codes = codesD ? {
+      asOf: self.asOf(codesD.asOf),
+      lede: (codesD.active || []).length + ' active · ' + (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' expired',
+      active: (codesD.active || []).map(codeRow), noActive: !(codesD.active || []).length,
+      expired: (codesD.expired || []).map(codeRow),
+      expiredCount: (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' total',
+      unlistedText: codesD.expiredTotal != null && codesD.expiredTotal > (codesD.expired || []).length ? (codesD.expiredTotal - (codesD.expired || []).length) + ' more expired codes are not listed by name.' : ''
+    } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, expired: [], expiredCount: NR, unlistedText: '' };
+
+    /* ---------- Overview ---------- */
+    var tile = function (label, value, asOfIso, note) {
+      return { label: label, value: value, vCls: value === NR ? 'nr' : '', asOf: self.asOf(asOfIso), hasNote: !!note, note: note || '' };
+    };
+    var gems = res.gems && res.gems.value != null ? res.gems.value : null;
+    var tiles = [
+      tile('Account power', self.num(gov.power), gov.asOf),
+      tile('Town Center', tc != null ? 'Lv ' + tc : NR, tcObj.asOf),
+      tile('Total troops', self.num(army.total), army.asOf),
+      tile('March capacity', self.num(army.marchCapacity), army.asOf),
+      tile('March queues', q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, army.asOf),
+      tile('Infirmary', self.num(army.infirmary), army.asOf),
+      tile('VIP', gov.vip != null ? String(gov.vip) : NR, gov.asOf),
+      tile('Gems', self.num(gems), res.asOf),
+      tile('Stamina', st.current != null ? st.current + '/' + (st.max != null ? st.max : '?') : NR, gov.asOf, (st.current != null && st.max != null && st.current > st.max) ? 'Above max' : '')
+    ];
+    var go = function (view) { return function () { self.setState({ view: view }); }; };
+    var belowCap = cap != null ? heroes.filter(function (h) { return h.level != null && h.level < cap; }).length : null;
+    var emptySlots = 0, plus0 = 0;
+    heroes.forEach(function (h) { ((h.gear && h.gear.slots) || []).forEach(function (s) { if (s.state === 'empty') emptySlots++; if (s.state === 'plus0') plus0++; }); });
+    var watch = [
+      { label: belowCap != null ? 'Heroes below the Lv ' + cap + ' cap' : 'Heroes below level cap', value: belowCap != null ? belowCap + ' of ' + heroes.length : NR, cls: belowCap ? 'warn' : '', go: go('heroes') },
+      { label: 'Empty gear slots / pieces at +0', value: emptySlots + ' / ' + plus0, cls: (emptySlots || plus0) ? 'warn' : '', go: go('invest') },
+      { label: 'Empty Drill Camp slots', value: DC ? String(Math.max(0, (DC.slotsOpen || 0) - (DC.slotted || []).length)) : NR, cls: DC && (DC.slotsOpen || 0) > (DC.slotted || []).length ? 'warn' : '', go: go('drill') },
+      { label: 'Heroes in more than one march', value: String(marchConflicts.length), cls: marchConflicts.length ? 'warn' : '', go: go('army') },
+      { label: 'Data conflicts to resolve', value: String(conflicts.length), cls: conflicts.length ? 'warn' : '', go: go('health') }
+    ];
+
+    /* ---------- Navigation ---------- */
+    var views = [
+      ['overview', 'Overview', null], ['heroes', 'Heroes', String(allVM.length)], ['drill', 'Drill Camp', null],
+      ['army', 'Army & marches', marchConflicts.length ? '!' : null], ['defense', 'Defense & Arena', null], ['city', 'City', null],
+      ['invest', 'Invest', String(recs.length)], ['features', 'Features', null],
+      ['health', 'Data health', String(conflicts.length + missing.length + stale.length)], ['codes', 'Codes', null]
+    ];
+    var vflags = {}; views.forEach(function (x) { vflags[x[0]] = S.view === x[0]; });
+    var nav = views.map(function (x) {
+      var on = S.view === x[0];
+      return { label: x[1], cls: on ? 'on' : '', current: on ? 'page' : 'false', go: function () { self.setState({ view: x[0], hero: null }); },
+               hasBadge: x[2] != null, badge: x[2] || '', badgeCls: (x[0] === 'health' || x[0] === 'army') ? 'warn' : '' };
+    });
+
+    return {
+      themeClass: S.theme, themeName: themeNames[S.theme], cycleTheme: cycleTheme,
+      gov: { name: gov.name || 'Governor: ' + NR,
+             line: [gov.kingdom != null ? 'Kingdom #' + gov.kingdom : 'Kingdom: ' + NR, gov.alliance ? 'Alliance ' + gov.alliance : 'Alliance: ' + NR, gov.vip != null ? 'VIP ' + gov.vip : null].filter(Boolean).join(' · ') },
+      age: { snapshot: snapshot ? self.date(snapshot) : NR,
+             sub: self.ageText(snapshot) + (oldest && oldest.asOf !== snapshot ? ' · oldest: ' + oldest.label + ', ' + self.date(oldest.asOf, true) + ' (' + self.ageText(oldest.asOf) + ')' : ''),
+             subCls: anyStale ? 'warn' : '', staleDays: staleDays },
+      nav: nav, v: vflags,
+      tiles: tiles, moves: moves, movesEmpty: moves.length === 0, watch: watch, ageRows: ageRows,
+      filterGroups: filterGroups, heroList: heroList, heroMeta: heroMeta,
+      drawer: drawer, closeHero: closeHero,
+      dc: dc, army: armyVM,
+      teams: teams, barricades: barricades, noBarricades: barricades.length === 0, defAsOf: self.asOf(L.asOf), guard: guard,
+      city: city, invest: invest, features: features, featMeta: featMeta, health: health, codes: codes
+    };
+  }
+}
+
+/* =====================================================================
+ * Rendering helpers.
+ * Why: every data value passes through esc() before reaching innerHTML,
+ * because KS_DATA is generated from user-edited Markdown files.
+ * ===================================================================== */
+
+/** @type {Function[]} Click handlers registered during the current render. */
+var handlers = [];
+/** @type {?string} Focus key to restore after the next render. */
+var pendingFocus = null;
+/** @type {?string} Focus key of the control that opened the hero drawer. */
+var drawerOpener = null;
+/** @type {?string} Focus key of the control clicked most recently. */
+var lastClickKey = null;
+
+/**
+ * HTML-escape any value for safe use in text and attributes.
+ * @param {*} v Value to escape; null/undefined become an empty string.
+ * @returns {string}
+ */
+function esc(v) {
+  return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}
+
+/**
+ * Map a list to HTML and join it. Tolerates null/undefined lists.
+ * @param {?Array} list
+ * @param {function(*, number): string} fn
+ * @returns {string}
+ */
+function each(list, fn) {
+  return (Array.isArray(list) ? list : []).map(fn).join('');
+}
+
+/**
+ * Return `html` when `cond` is truthy, else an empty string.
+ * @param {*} cond
+ * @param {string} html
+ * @returns {string}
+ */
+function when(cond, html) {
+  return cond ? html : '';
+}
+
+/**
+ * Register a click handler and return the attributes that bind it.
+ * The stable `data-fk` key lets focus survive a full re-render.
+ * @param {Function} fn Handler to call on click.
+ * @param {string} key Stable focus key, unique within the page.
+ * @returns {string} Attribute string, starting with a space.
+ */
+function on(fn, key) {
+  handlers.push(fn);
+  return ' data-h="' + (handlers.length - 1) + '" data-fk="' + esc(key) + '"';
+}
+
+/**
+ * Clamp a percentage for inline width styles.
+ * @param {*} n
+ * @returns {number} 0–100
+ */
+function pct(n) {
+  var x = Number(n);
+  return isNaN(x) ? 0 : Math.max(0, Math.min(100, x));
+}
+
+/** Inline icons (decorative, hidden from screen readers). */
+var ICON_THEME = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v16"></path><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path></svg>';
+var ICON_WARN = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"></path><path d="M12 10v5"></path><path d="M12 18h.01"></path></svg>';
+var ICON_CLOSE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>';
+
+/**
+ * Render a list of confidence badges.
+ * @param {Array<{label:string, cls:string}>} confs
+ * @returns {string}
+ */
+function tplConfs(confs) {
+  return each(confs, function (c) { return '<span class="' + esc(c.cls) + '">' + esc(c.label) + '</span>'; });
+}
+
+/**
+ * Render a stacked class bar plus its legend rows.
+ * @param {Array<object>} split Segments from renderVals (name, segCls, w, countText, pctText).
+ * @param {string} aria Accessible description of the whole bar.
+ * @param {boolean} tight Remove the legend's top margin (inside march cards).
+ * @returns {string}
+ */
+function tplSplit(split, aria, tight) {
+  return '<div class="stack" role="img" aria-label="' + esc(aria) + '">' +
+    each(split, function (s) { return '<span class="seg ' + esc(s.segCls) + '" style="width:' + pct(s.w) + '%"></span>'; }) +
+    '</div><div class="legend"' + (tight ? ' style="margin-top:0"' : '') + '>' +
+    each(split, function (s) {
+      return '<span class="sw ' + esc(s.segCls) + '" aria-hidden="true"></span><span>' + esc(s.name) + '</span>' +
+        '<span class="num">' + esc(s.countText) + '</span><span class="num">' + esc(s.pctText) + '</span>';
+    }) + '</div>';
+}
+
+/**
+ * Render a row of filter chips.
+ * @param {string} label Group label.
+ * @param {Array<object>} chips Chips from renderVals (label, cls, pressed, pick).
+ * @param {string} keyPrefix Focus-key prefix for this group.
+ * @returns {string}
+ */
+function tplChipGroup(label, chips, keyPrefix) {
+  return '<div class="fgroup" role="group" aria-label="' + esc(label) + '"><span class="flabel">' + esc(label) + '</span>' +
+    each(chips, function (c) {
+      return '<button class="chip ' + esc(c.cls) + '" aria-pressed="' + esc(c.pressed) + '"' + on(c.pick, keyPrefix + ':' + c.label) + '>' + esc(c.label) + '</button>';
+    }) + '</div>';
+}
+
+/* =====================================================================
+ * View templates — one function per view, mirroring the approved
+ * prototype's markup and class names one-to-one.
+ * ===================================================================== */
+
+/**
+ * Header with governor identity, data age and theme toggle.
+ * @param {object} v View-model from renderVals().
+ * @returns {string}
+ */
+function tplHeader(v) {
+  return '<header class="top"><div class="top-in">' +
+    '<div class="who"><span class="eyebrow">' + esc(v.gov.line) + '</span><h1>' + esc(v.gov.name) + '</h1></div>' +
+    '<div class="age"><span class="age-main">Data as of ' + esc(v.age.snapshot) + '</span>' +
+    '<span class="age-sub ' + esc(v.age.subCls) + '">' + esc(v.age.sub) + '</span></div>' +
+    '<button class="theme-btn"' + on(v.cycleTheme, 'theme') + ' aria-label="Change colour theme, current: ' + esc(v.themeName) + '">' +
+    ICON_THEME + '<span>' + esc(v.themeName) + '</span></button>' +
+    '</div></header>';
+}
+
+/**
+ * View navigation: side menu on desktop, scrolling tab strip on phone.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplNav(v) {
+  return '<nav class="nav" aria-label="Dashboard views">' + each(v.nav, function (n) {
+    return '<button class="nav-btn ' + esc(n.cls) + '"' + (n.current === 'page' ? ' aria-current="page"' : '') + on(n.go, 'nav:' + n.label) + '>' +
+      '<span>' + esc(n.label) + '</span>' +
+      when(n.hasBadge, '<span class="nav-badge ' + esc(n.badgeCls) + '">' + esc(n.badge) + '</span>') +
+      '</button>';
+  }) + '</nav>';
+}
+
+/**
+ * View 1 — Overview: tiles, top 5 moves, weak spots, data age.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplOverview(v) {
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Overview</h2><p class="lede">Where you stand, where you\'re weak, and where the next resources should go.</p></div>' +
+    '<div class="tiles">' + each(v.tiles, function (t) {
+      return '<div class="tile"><span class="tile-l">' + esc(t.label) + '</span><span class="tile-v ' + esc(t.vCls) + '">' + esc(t.value) + '</span>' +
+        when(t.hasNote, '<span class="tile-note">' + esc(t.note) + '</span>') +
+        '<span class="tile-s">' + esc(t.asOf) + '</span></div>';
+    }) + '</div>' +
+    '<div class="grid2">' +
+    '<section class="panel"><div class="panel-h"><h3>Top 5 moves now</h3><span class="asof">Ranked from Invest</span></div>' +
+    '<ol class="moves">' + each(v.moves, function (m) {
+      return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
+        '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
+        '<span class="move-m">' + tplConfs(m.confs) + '<span>Cost: ' + esc(m.cost) + '</span></span></span></button></li>';
+    }) + '</ol>' +
+    when(v.movesEmpty, '<p class="empty">No recommendations recorded.</p>') +
+    '</section>' +
+    '<div class="col">' +
+    '<section class="panel"><div class="panel-h"><h3>Weak spots</h3><span class="asof">Counted from the data</span></div><div class="rows">' +
+    each(v.watch, function (w) {
+      return '<button class="row-btn"' + on(w.go, 'watch:' + w.label) + '><span class="row-k">' + esc(w.label) + '</span><span class="row-v ' + esc(w.cls) + '">' + esc(w.value) + '</span></button>';
+    }) + '</div></section>' +
+    '<section class="panel"><div class="panel-h"><h3>Data age</h3><span class="asof">Stale after ' + esc(v.age.staleDays) + ' days</span></div>' +
+    '<div class="agetbl"><span class="h">Area</span><span class="h">As of</span><span class="h">Age</span>' +
+    each(v.ageRows, function (r) { return '<span>' + esc(r.label) + '</span><span>' + esc(r.date) + '</span><span class="' + esc(r.cls) + '">' + esc(r.age) + '</span>'; }) +
+    '</div></section>' +
+    '</div></div></div>';
+}
+
+/**
+ * View 2 — Heroes: filters, sort, hero cards.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplHeroes(v) {
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Heroes</h2><p class="lede">' + esc(v.heroMeta.countText) + '</p></div>' +
+    '<section class="panel"><div class="fbar">' +
+    each(v.filterGroups, function (g) { return tplChipGroup(g.label, g.chips, 'f-' + g.label); }) +
+    '</div></section>' +
+    '<div class="hgrid">' + each(v.heroList, function (h) {
+      return '<button class="hcard"' + on(h.open, 'hero:' + h.key) + ' aria-label="' + esc(h.name) + ': open details">' +
+        '<span class="hc-top"><span class="hc-name">' + esc(h.name) + '</span>' +
+        when(h.isNew, '<span class="badge-new">New</span>') +
+        '<span class="hc-power">' + esc(h.powerText) + '</span></span>' +
+        '<span class="hc-meta"><span class="rar ' + esc(h.rarCls) + '">' + esc(h.rarity) + '</span><span>' + esc(h.cls) + '</span>' +
+        '<span>' + esc(h.genText) + '</span><span>' + esc(h.starsText) + '</span></span>' +
+        '<span class="meter"><span class="meter-l"><span>Level vs cap</span><b>' + esc(h.levelText) + '</b></span>' +
+        '<span class="bar" aria-hidden="true"><span class="bar-f" style="width:' + pct(h.levelPct) + '%"></span></span></span>' +
+        '<span class="meter"><span class="meter-l"><span>Shards</span><b>' + esc(h.shardText) + '</b></span>' +
+        '<span class="bar" aria-hidden="true"><span class="bar-f" style="width:' + pct(h.shardPct) + '%"></span></span></span>' +
+        '<span class="hc-row"><span>Gear power <b>' + esc(h.gearText) + '</b></span><span>' + esc(h.skillText) + '</span></span>' +
+        when(h.hasFlag, '<span class="flag">' + ICON_WARN + esc(h.flagText) + '</span>') +
+        '<span class="chips-s">' + each(h.assign, function (a) { return '<span class="chip-s">' + esc(a.label) + '</span>'; }) +
+        when(h.noAssign, '<span class="mini">No assignments recorded</span>') + '</span>' +
+        '</button>';
+    }) + '</div>' +
+    when(v.heroMeta.empty, '<p class="empty">No heroes match these filters.</p>') +
+    '<p class="foot">' + esc(v.heroMeta.capNote) + '</p>' +
+    '<p class="foot">' + esc(v.heroMeta.lockedNote) + '</p>' +
+    '</div>';
+}
+
+/**
+ * View 3 — Drill Camp: instructors, slots, placement plan.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplDrill(v) {
+  var dc = v.dc;
+  var body = dc.missing ? '<section class="panel"><p class="empty">Drill Camp: Not recorded.</p></section>' :
+    '<section class="panel"><div class="panel-h"><h3>Drill Instructors</h3><span class="asof">' + esc(dc.asOf) + '</span></div>' +
+    '<div class="instr">' + each(dc.instructors, function (i) {
+      return '<div class="instr-c ' + esc(i.cls) + '"><span class="instr-n">' + esc(i.name) + '</span><span class="instr-v">' + esc(i.levelText) + '</span>' +
+        when(i.isLowest, '<span class="lowtag">Lowest</span>') +
+        when(i.mismatch, '<span class="mini warn">' + esc(i.mismatchText) + '</span>') + '</div>';
+    }) + '</div><p class="note">' + esc(dc.lowestText) + '</p></section>' +
+    '<section class="panel"><div class="panel-h"><h3>Drill Slots</h3><span class="asof">' + esc(dc.slotSummary) + '</span></div>' +
+    '<div class="slots">' + each(dc.slots, function (s) {
+      return '<div class="slot ' + esc(s.cls) + '"><span class="slot-n">Slot ' + esc(s.n) + '</span><span class="slot-s">' + esc(s.state) + '</span><span class="slot-d">' + esc(s.detail) + '</span></div>';
+    }) + '</div></section>' +
+    '<section class="panel"><div class="panel-h"><h3>Placement plan</h3><span class="conf conf-unverified">Unverified until tested in-game</span></div>' +
+    '<p style="margin:0">' + esc(dc.planLead) + '</p>' +
+    '<ol class="plan">' + each(dc.plan, function (p) {
+      return '<li><span class="plan-l"><button class="linkish"' + on(p.open, 'plan:' + p.name) + '>' + esc(p.name) + '</button><span>' + esc(p.change) + '</span><span class="mini">' + esc(p.reason) + '</span></span></li>';
+    }) + '</ol>' +
+    '<p class="note">' + esc(dc.stepText) + '</p>' +
+    when(dc.hasOverflow, '<div class="warnbox"><strong>No slot left for:</strong> ' + esc(dc.overflowText) + '</div>') +
+    when(dc.hasAbove, '<div class="warnbox"><strong>Don\'t slot:</strong> ' + esc(dc.aboveText) + '</div>') +
+    when(dc.hasUnknown, '<div class="warnbox"><strong>Level not recorded:</strong> ' + esc(dc.unknownText) + '</div>') +
+    '<p class="foot" style="margin-top:12px">' + esc(dc.ruleNote) + '</p></section>';
+  return '<div class="view"><div class="view-h"><h2>Drill Camp</h2><p class="lede">' + esc(dc.lede) + '</p></div>' + body + '</div>';
+}
+
+/**
+ * View 4 — Army & marches: troop split, conflicts, presets.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplArmy(v) {
+  var a = v.army;
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Army &amp; marches</h2><p class="lede">' + esc(a.lede) + '</p></div>' +
+    '<div class="tiles">' + each(a.tiles, function (t) {
+      return '<div class="tile"><span class="tile-l">' + esc(t.label) + '</span><span class="tile-v ' + esc(t.vCls) + '">' + esc(t.value) + '</span><span class="tile-s">' + esc(t.asOf) + '</span></div>';
+    }) + '</div>' +
+    '<section class="panel"><div class="panel-h"><h3>Troop split by class</h3><span class="asof">' + esc(a.asOf) + '</span></div>' +
+    tplSplit(a.split, a.splitAria, false) + '</section>' +
+    when(a.hasConflicts, each(a.conflicts, function (c) {
+      return '<div class="warnbox"><strong>Setup conflict:</strong> ' + esc(c.text) + ' <span class="conf conf-unverified">Unverified rule</span></div>';
+    })) +
+    '<section class="panel"><div class="panel-h"><h3>March presets</h3><span class="asof">' + esc(a.marchAsOf) + '</span></div>' +
+    '<div class="grid2">' + each(a.marches, function (m) {
+      return '<div class="march"><div class="march-h"><h4>' + esc(m.name) + '</h4><span class="mini">' + esc(m.purpose) + '</span></div>' +
+        '<div class="chips-s">' + each(m.heroes, function (h) { return '<span class="chip-s">' + esc(h.label) + '</span>'; }) + '</div>' +
+        tplSplit(m.split, m.aria, true) +
+        '<div class="hc-row"><span>Troops <b>' + esc(m.totalText) + '</b></span><span>Power <b>' + esc(m.powerText) + '</b></span></div></div>';
+    }) + '</div>' +
+    when(a.noMarches, '<p class="empty">March presets: Not recorded.</p>') +
+    '<p class="foot" style="margin-top:12px">' + esc(a.orderNote) + '</p></section>' +
+    '</div>';
+}
+
+/**
+ * One power check block (stated vs. sum of hero powers).
+ * @param {object} c Object with statedText, sumText, diffText, diffCls.
+ * @param {boolean} tight Remove the top margin.
+ * @returns {string}
+ */
+function tplCheck(c, tight) {
+  return '<div class="check"' + (tight ? ' style="margin-top:0"' : '') + '>' +
+    '<span>Stated power</span><span class="num">' + esc(c.statedText) + '</span>' +
+    '<span>Sum of current hero powers</span><span class="num">' + esc(c.sumText) + '</span>' +
+    '<span>Difference</span><span class="num ' + esc(c.diffCls) + '">' + esc(c.diffText) + '</span></div>';
+}
+
+/**
+ * View 5 — Defense & Arena: 2-front / 3-back grids, barricades, guard station.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplDefense(v) {
+  var slot = function (team) {
+    return function (f) {
+      return '<button class="fslot"' + on(f.open, 'slot:' + team + ':' + f.name) + '><span class="fslot-n">' + esc(f.name) + '</span><span class="fslot-p">' + esc(f.sub) + '</span></button>';
+    };
+  };
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Defense &amp; Arena</h2><p class="lede">Lineups as recorded, checked against today\'s hero powers.</p></div>' +
+    '<div class="grid2">' + each(v.teams, function (t) {
+      return '<section class="panel"><div class="panel-h"><h3>' + esc(t.name) + '</h3><span class="asof">' + esc(t.asOf) + '</span></div>' +
+        '<div class="form"><span class="form-lbl">Front</span><div class="form-row ' + esc(t.frontCls) + '">' + each(t.front, slot(t.key + 'f')) + '</div>' +
+        '<span class="form-lbl">Back</span><div class="form-row ' + esc(t.backCls) + '">' + each(t.back, slot(t.key + 'b')) + '</div></div>' +
+        tplCheck(t, false) +
+        when(t.hasNote, '<p class="foot" style="margin-top:8px">' + esc(t.note) + '</p>') +
+        '</section>';
+    }) + '</div>' +
+    '<section class="panel"><div class="panel-h"><h3>Barricades</h3><span class="asof">' + esc(v.defAsOf) + '</span></div>' +
+    '<div class="grid2">' + each(v.barricades, function (b) {
+      return '<div class="march"><div class="march-h"><h4>' + esc(b.name) + '</h4><span class="mini">' + esc(b.levelText) + '</span></div>' +
+        '<div class="chips-s">' + each(b.heroes, function (h) { return '<span class="chip-s">' + esc(h.label) + '</span>'; }) + '</div>' +
+        tplCheck(b, true) + '</div>';
+    }) + '</div>' +
+    when(v.noBarricades, '<p class="empty">Barricades: Not recorded.</p>') + '</section>' +
+    '<section class="panel"><div class="panel-h"><h3>Guard Station</h3><span class="asof">' + esc(v.guard.asOf) + '</span></div>' +
+    '<p class="' + esc(v.guard.cls) + '" style="margin:0">' + esc(v.guard.text) + '</p></section>' +
+    '</div>';
+}
+
+/**
+ * Definition-list rows.
+ * @param {Array<{k:string, v:string, cls:?string}>} rows
+ * @returns {string}
+ */
+function tplKv(rows) {
+  return '<dl class="kv">' + each(rows, function (r) { return '<dt>' + esc(r.k) + '</dt><dd class="' + esc(r.cls || '') + '">' + esc(r.v) + '</dd>'; }) + '</dl>';
+}
+
+/**
+ * View 6 — City: Town Center, resources, Governor Gear, governor stats.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplCity(v) {
+  var c = v.city;
+  return '<div class="view">' +
+    '<div class="view-h"><h2>City</h2><p class="lede">Town Center, stores and Governor Gear.</p></div>' +
+    '<div class="grid2">' +
+    '<section class="panel"><div class="panel-h"><h3>Town Center</h3><span class="asof">' + esc(c.asOf) + '</span></div>' + tplKv(c.tc) +
+    '<div class="meter" style="margin-top:14px"><span class="meter-l"><span>Perks unlocked</span><b>' + esc(c.perkText) + '</b></span>' +
+    '<span class="bar" aria-hidden="true"><span class="bar-f" style="width:' + pct(c.perkPct) + '%"></span></span></div>' +
+    when(c.perkNote, '<p class="foot" style="margin-top:8px">' + esc(c.perkNote) + '</p>') + '</section>' +
+    '<div class="col">' +
+    '<section class="panel"><div class="panel-h"><h3>Stored resources</h3><span class="asof">' + esc(c.resAsOf) + '</span></div>' + tplKv(c.res) + '</section>' +
+    '<section class="panel"><div class="panel-h"><h3>Governor Gear</h3><span class="asof">' + esc(c.ggAsOf) + '</span></div>' +
+    '<p style="margin:0;font-weight:600">' + esc(c.ggText) + '</p><p class="foot" style="margin-top:6px">' + esc(c.ggUnlock) + '</p></section>' +
+    '<section class="panel"><div class="panel-h"><h3>Governor</h3><span class="asof">' + esc(c.govAsOf) + '</span></div>' + tplKv(c.gov) + '</section>' +
+    '</div></div></div>';
+}
+
+/**
+ * View 7 — Invest: grouped, filterable recommendations.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplInvest(v) {
+  var iv = v.invest;
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Invest</h2><p class="lede">Every move with what to do, why, cost and how sure we are.</p></div>' +
+    '<section class="panel"><div class="fbar">' + tplChipGroup('Type', iv.typeChips, 'itype') + tplChipGroup('Hero', iv.heroChips, 'ihero') + '</div></section>' +
+    each(iv.groups, function (g) {
+      return '<div class="grp"><div class="grp-h"><h3>' + esc(g.type) + '</h3><span class="mini">' + esc(g.countText) + '</span></div>' +
+        each(g.recs, function (r) {
+          return '<section class="panel rec">' +
+            '<div class="item-h"><span class="rec-what">' + esc(r.rank) + '. ' + esc(r.what) + '</span><span class="move-m">' + tplConfs(r.confs) + '</span></div>' +
+            '<dl class="kv"><dt>Why</dt><dd>' + esc(r.why) + '</dd><dt>Cost</dt><dd>' + esc(r.cost) + '</dd>' +
+            '<dt>Heroes</dt><dd><span class="rec-heroes">' +
+            each(r.heroes, function (h) { return '<button class="linkish"' + on(h.open, 'rec:' + r.rank + ':' + h.name) + '>' + esc(h.name) + '</button>'; }) +
+            when(r.noHeroes, '<span class="mini">None named</span>') + '</span></dd></dl>' +
+            when(r.hasEvidence, '<ul class="rec-ev">' + each(r.evidence, function (e) { return '<li>' + esc(e.text) + '</li>'; }) + '</ul>') +
+            when(r.hasNote, '<p class="foot">' + esc(r.note) + '</p>') +
+            '</section>';
+        }) + '</div>';
+    }) +
+    when(iv.empty, '<p class="empty">No recommendations match these filters.</p>') +
+    '</div>';
+}
+
+/**
+ * View 8 — Features: one card per game system.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplFeatures(v) {
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Features</h2><p class="lede">' + esc(v.featMeta.lede) + '</p></div>' +
+    '<div class="fgrid">' + each(v.features, function (f) {
+      return '<div class="feat"><div class="feat-h"><h4>' + esc(f.name) + '</h4><span class="state ' + esc(f.stateCls) + '">' + esc(f.state) + '</span></div>' +
+        '<dl class="kv"><dt>Unlock</dt><dd>' + esc(f.unlockText) + '</dd><dt>Data</dt><dd class="' + esc(f.dataCls) + '">' + esc(f.dataText) + '</dd>' +
+        '<dt>Age</dt><dd>' + esc(f.ageText) + '</dd></dl>' +
+        when(f.hasNote, '<p class="foot">' + esc(f.note) + '</p>') + '</div>';
+    }) + '</div>' +
+    '<p class="foot">' + esc(v.featMeta.ruleNote) + '</p></div>';
+}
+
+/**
+ * View 9 — Data health: conflicts, missing, stale.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplHealth(v) {
+  var h = v.health;
+  var item = function (x, withDetail) {
+    return '<div class="item"><div class="item-h"><span class="item-t">' + esc(x.title) + '</span><span class="item-a">' + esc(x.area) + '</span></div>' +
+      when(withDetail && x.detail, '<p>' + esc(x.detail) + '</p>') + '</div>';
+  };
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Data health</h2><p class="lede">' + esc(h.lede) + '</p></div>' +
+    '<section class="panel"><div class="panel-h"><h3>Conflicts</h3><span class="asof">' + esc(h.conflictCount) + '</span></div>' +
+    '<div class="list">' + each(h.conflicts, function (c) { return item(c, true); }) + '</div></section>' +
+    '<div class="grid2">' +
+    '<section class="panel"><div class="panel-h"><h3>Missing</h3><span class="asof">' + esc(h.missingCount) + '</span></div>' +
+    '<div class="list">' + each(h.missing, function (m) { return item(m, false); }) + '</div></section>' +
+    '<section class="panel"><div class="panel-h"><h3>Stale or undated</h3><span class="asof">' + esc(h.staleCount) + '</span></div>' +
+    '<div class="list">' + each(h.stale, function (s) { return item(s, true); }) + '</div>' +
+    when(h.noStale, '<p class="empty">Nothing older than the stale limit.</p>') + '</section>' +
+    '</div></div>';
+}
+
+/**
+ * View 10 — Gift codes.
+ * @param {object} v
+ * @returns {string}
+ */
+function tplCodes(v) {
+  var c = v.codes;
+  var row = function (x) { return '<span class="code">' + esc(x.code) + '</span><span class="' + esc(x.cls) + '">' + esc(x.state) + '</span>'; };
+  return '<div class="view">' +
+    '<div class="view-h"><h2>Gift codes</h2><p class="lede">' + esc(c.lede) + '</p></div>' +
+    '<div class="grid2">' +
+    '<section class="panel"><div class="panel-h"><h3>Active</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
+    '<div class="codes">' + each(c.active, row) + '</div>' +
+    when(c.noActive, '<p class="empty">No active codes recorded.</p>') + '</section>' +
+    '<section class="panel"><div class="panel-h"><h3>Expired</h3><span class="asof">' + esc(c.expiredCount) + '</span></div>' +
+    '<div class="codes">' + each(c.expired, row) + '</div>' +
+    when(c.unlistedText, '<p class="foot" style="margin-top:10px">' + esc(c.unlistedText) + '</p>') + '</section>' +
+    '</div></div>';
+}
+
+/**
+ * Hero detail drawer (side panel on desktop, bottom sheet on phone).
+ * @param {object} v
+ * @returns {string}
+ */
+function tplDrawer(v) {
+  var d = v.drawer;
+  if (!d.open) return '';
+  return '<div class="drawer-wrap">' +
+    '<button class="scrim" tabindex="-1"' + on(v.closeHero, 'scrim') + ' aria-label="Close hero details"></button>' +
+    '<aside class="drawer" role="dialog" aria-modal="true" aria-label="' + esc(d.name) + ' details">' +
+    '<div class="dr-h"><div style="display:flex;flex-direction:column;gap:4px;min-width:0">' +
+    '<span class="hc-meta"><span class="rar ' + esc(d.rarCls) + '">' + esc(d.rarity) + '</span><span>' + esc(d.cls) + '</span><span>' + esc(d.genText) + '</span>' +
+    when(d.isNew, '<span class="badge-new">New</span>') + '</span>' +
+    '<h2>' + esc(d.name) + '</h2><span class="asof">' + esc(d.asOf) + '</span></div>' +
+    '<button class="x-btn"' + on(v.closeHero, 'drawer-close') + ' aria-label="Close">' + ICON_CLOSE + '</button></div>' +
+    '<dl class="kv"><dt>Level</dt><dd>' + esc(d.levelText) + '</dd><dt>Stars / tier</dt><dd>' + esc(d.starsText) + '</dd>' +
+    '<dt>Shards</dt><dd>' + esc(d.shardText) + '</dd><dt>Hero power</dt><dd>' + esc(d.powerText) + '</dd>' +
+    '<dt>Gear power</dt><dd>' + esc(d.gearText) + '</dd><dt>Role</dt><dd>' + esc(d.roleText) + '</dd></dl>' +
+    '<div class="dr-sec"><h3>Gear slots</h3>' +
+    each(d.slots, function (s) { return '<div class="slot-row ' + esc(s.cls) + '"><span>' + esc(s.slot) + '</span><span class="slot-st">' + esc(s.stateText) + '</span></div>'; }) +
+    '<p class="foot">' + esc(d.slotsNote) + '</p>' +
+    when(d.hasGearNote, '<p class="foot">' + esc(d.gearNote) + '</p>') +
+    '<p class="foot">Widget: ' + esc(d.widgetText) + '</p></div>' +
+    '<div class="dr-sec"><h3>Skills</h3>' +
+    each(d.skills, function (k) {
+      return '<div class="sk-row"><span class="sk-name">' + esc(k.name) + '</span>' +
+        '<span class="move-m"><span class="st ' + esc(k.stCls) + '">' + esc(k.statusText) + '</span>' +
+        when(k.hasConf, '<span class="' + esc(k.confCls) + '">' + esc(k.conf) + '</span>') + '</span>' +
+        '<span class="sk-note">' + esc(k.note) + '</span></div>';
+    }) +
+    when(d.noSkills, '<p class="empty">Skills: Not recorded.</p>') + '</div>' +
+    '<div class="dr-sec"><h3>Assignments</h3><div class="chips-s">' +
+    each(d.assign, function (a) { return '<span class="chip-s">' + esc(a.label) + '</span>'; }) + '</div>' +
+    when(d.noAssign, '<p class="empty">No assignments recorded.</p>') + '</div>' +
+    when(d.hasNotes, '<div class="dr-sec"><h3>Notes</h3><ul class="rec-ev" style="color:var(--ink)">' +
+      each(d.notes, function (n) { return '<li>' + esc(n.text) + '</li>'; }) + '</ul></div>') +
+    '</aside></div>';
+}
+
+/** View id → template function. */
+var VIEWS = {
+  overview: tplOverview, heroes: tplHeroes, drill: tplDrill, army: tplArmy, defense: tplDefense,
+  city: tplCity, invest: tplInvest, features: tplFeatures, health: tplHealth, codes: tplCodes
+};
+
+/* =====================================================================
+ * App wiring: one render function, one delegated click listener,
+ * focus restoration, Escape-to-close, persisted theme.
+ * ===================================================================== */
+
+var app = new Dashboard();
+var root = document.getElementById('app');
+
+// Restore the viewer's theme choice. Storage can be blocked (private mode); fall back to "auto".
+try {
+  var savedTheme = window.localStorage.getItem('ks-theme');
+  if (savedTheme === 'light' || savedTheme === 'dark' || savedTheme === 'auto') app.state.theme = savedTheme;
+} catch (err) { /* storage unavailable: keep default */ }
+
+/**
+ * Side effects of a state change that the logic class should not know about:
+ * theme persistence, scroll reset on view change, drawer focus management.
+ * @param {object} prev State before the change.
+ * @param {object} next State after the change.
+ * @returns {void}
+ */
+function afterStateChange(prev, next) {
+  if (prev.theme !== next.theme) {
+    try { window.localStorage.setItem('ks-theme', next.theme); } catch (err) { /* ignore */ }
+  }
+  if (prev.view !== next.view) window.scrollTo(0, 0);
+  if (!prev.hero && next.hero) { drawerOpener = lastClickKey; pendingFocus = 'drawer-close'; }
+  if (prev.hero && !next.hero) { pendingFocus = drawerOpener; drawerOpener = null; }
+}
+
+/**
+ * Render the whole page from the current state. Cheap enough for this
+ * data size (≤60 heroes), and keeps the page free of a diffing library.
+ * @returns {void}
+ */
+function render() {
+  var active = document.activeElement;
+  var focusKey = pendingFocus || (active && active.getAttribute ? active.getAttribute('data-fk') : null);
+  pendingFocus = null;
+  handlers = [];
+  var v = app.renderVals();
+  document.body.className = 'ks theme-' + v.themeClass;
+  // Lock page scroll behind the open drawer.
+  document.body.style.overflow = v.drawer.open ? 'hidden' : '';
+  var tpl = VIEWS[app.state.view] || tplOverview;
+  root.innerHTML = tplHeader(v) +
+    '<div class="shell">' + tplNav(v) + '<main class="main">' + tpl(v) + '</main></div>' +
+    tplDrawer(v);
+  if (focusKey) {
+    var el = root.querySelector('[data-fk="' + (window.CSS && CSS.escape ? CSS.escape(focusKey) : focusKey) + '"]');
+    if (el) el.focus({ preventScroll: true });
+  }
+}
+
+// One delegated listener for every button rendered by on().
+root.addEventListener('click', function (ev) {
+  var el = ev.target.closest('[data-h]');
+  if (!el) return;
+  var fn = handlers[Number(el.getAttribute('data-h'))];
+  lastClickKey = el.getAttribute('data-fk');
+  if (typeof fn === 'function') fn();
+});
+
+// Escape closes the hero drawer.
+document.addEventListener('keydown', function (ev) {
+  if (ev.key === 'Escape' && app.state.hero) app.setState({ hero: null });
+});
+
+// Follow system theme changes live while in "auto".
+try {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { if (app.state.theme === 'auto') render(); });
+} catch (err) { /* older browsers: theme updates on next interaction */ }
+
+render();
+</script>
+</body>
+</html>
