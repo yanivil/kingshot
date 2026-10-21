@@ -6,7 +6,7 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 53 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Marches (`Att` / `Be`) | **Core Carry:** Primary burst damage dealer & rally leader |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Marches (`Att` / `Be`) | **Core Carry:** Primary burst damage dealer & rally leader |
 | **Saul** | SSR / Mythic | Archer | Lv. 50 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) |
 | **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction |
 | **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation |
@@ -27,31 +27,33 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 * **Hero Name:** Jabel
 * **Rarity:** **SSR / Mythic** (Generation 1)
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords)
-* **Current Level:** **Lv. 53** (XP: 37,037 / 170,000 to Lv. 54)
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**)
 * **Star Tier:** **3-Star (Tier 3)** (Shards: 0 / 40 to next promotion)
-* **Total Hero Power:** **559,000**
-* **Troop Capacity Boost:** **+11,340 Troops**
+* **Total Hero Power:** **564,200**
+* **Troop Capacity Boost:** **+11,525 Troops**
 * **Escort Guards:** **8 Escorts**
-* **Total Equipped Gear Power:** **128,960**
+* **Total Equipped Gear Power:** **131,460**
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect |
 | :--- | :--- | :---: | :--- |
-| **Conquest (Hero)** | **Hero Attack** | **1,461** | Core attack scaling for exploration skills and auto-attacks |
-| | **Hero Defense** | **1,484** | Damage mitigation against incoming enemy hero attacks |
-| | **Hero Health** | **14,733** | Total health pool in Arena and Campaign stages |
-| **Conquest (Escort)** | **Escort Attack** | **486** | Attack value of her 8 escort bodyguards |
-| | **Escort Defense** | **494** | Defense value of her 8 escort bodyguards |
-| | **Escort Health** | **4,911** | Health pool of escort bodyguards |
+| **Conquest (Hero)** | **Hero Attack** | **1,472** | Core attack scaling for exploration skills and auto-attacks |
+| | **Hero Defense** | **1,490** | Damage mitigation against incoming enemy hero attacks |
+| | **Hero Health** | **14,817** | Total health pool in Arena and Campaign stages |
+| **Conquest (Escort)** | **Escort Attack** | **490** | Attack value of her 8 escort bodyguards |
+| | **Escort Defense** | **496** | Defense value of her 8 escort bodyguards |
+| | **Escort Health** | **4,939** | Health pool of escort bodyguards |
 | **Expedition (March)** | **Cavalry Attack** | **+114.26%** | Massive offensive bonus applied to all deployed Cavalry |
 | | **Cavalry Defense**| **+114.26%** | High armor rating reducing cavalry casualties in field battles |
-| | **Cavalry Lethality**| **+21.62%** | Direct bonus to enemy casualty conversion (from gear) |
+| | **Cavalry Lethality**| **+22.18%** | Direct bonus to enemy casualty conversion (from gear) |
 | | **Cavalry Health** | **+23.85%** | Expanded squad durability in open-field clashes (from gear) |
 
 ### 2. Star Promotion Milestone Preview
 
 Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Shards** (currently 0/40).
+
+*Recorded at Lv. 53, before the level-up to Lv. 54; not re-read since.*
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
 | :--- | :---: | :---: | :---: |
@@ -80,9 +82,9 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 * **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power  
   *Conquest:* Hero +80 DEF / +402 HP (Escort +26 DEF / +134 HP)  
   *Expedition:* +8.38% Cavalry Health
-* **Boots:** **Brigader's Battle Boots (+16, Rare Blue)** — 23,400 Power  
-  *Conquest:* Hero +79 ATK / +396 HP (Escort +26 ATK / +132 HP)  
-  *Expedition:* +8.24% Cavalry Lethality
+* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power  
+  *Conquest:* Hero +84 ATK / +420 HP (Escort +28 ATK / +140 HP)  
+  *Expedition:* +8.80% Cavalry Lethality
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 

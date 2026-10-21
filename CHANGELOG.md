@@ -20,3 +20,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `lineups.md`: Arena offensive squad power is now 2,383,515, and Chenko is listed at 3-Star (T4).
 - `docs/index.html`: `KS_DATA` updated to match these changes (Chenko, Gordon, Yeonwoo, Amane, Saul,
   Arena attack power), including the recommendation and data-health text that quoted the old values.
+- Jabel: Lv. 54 (cap until Town Center Lv. 21), power 564,200, troop capacity +11,525, boots enhanced
+  to +20; stats updated in `hero.md`, her level in `lineups.md` and `troops.md`, and her `KS_DATA` entry.
