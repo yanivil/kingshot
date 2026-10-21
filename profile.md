@@ -13,7 +13,6 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
 | **Governor Name** | **[SPQ]Aldric** | Sovereign account handle | 2026-10-21 |
-| **Player ID** | **REDACTED** | Unique Century Games numeric account identifier | 2026-10-21 |
 | **Overall Account Power** | **11,110,919** (11.1M) | Total empire strength | 2026-10-21 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-21 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-21 |
