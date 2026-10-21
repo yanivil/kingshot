@@ -159,7 +159,7 @@ removed before parsing and not used, so they can never be read as a value.
 | `meta.schemaVersion` | script | Constant `1` |
 | `meta.snapshotAsOf` | front matter | Newest `as_of` of the five files |
 | `meta.staleAfterDays`, `meta.previousSnapshot`, `meta.lockedHeroesNotInData` | `data/manual.json` | |
-| `governor` | profile.md, "Governor Identity" table | Governor Name, Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
+| `governor` | profile.md, "Governor Identity" table | Governor Name (optional row, not stored today, so `name` is `null` and the header shows "Governor: Not recorded"), Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
 | `townCenter` | profile.md, "Town Center (TC)" section | Current Level, Citizens / Workforce Capacity, the Attack / Defense / Health table; perks from the heading `(6 / 7 Unlocked)`, checked against the perk table. `perks.namesVerified` comes from `data/manual.json` |
 | `resources` | profile.md | Stored Food (Bread), Free Gems. A K/M/B suffix (`94.6M`) means `rounded: true`. Wood, stone, iron: `null` |
 | `governorGear` | profile.md, "Governor Gear" | `6 / 6 Locked` = 6 locked of 6 slots |
