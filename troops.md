@@ -40,7 +40,7 @@ All standing forces are **Tier VII (Brave)** units across the three military bra
 ### Formation 2: Attack (`Att`) — PvP / Open-Field Preset
 * **Formation Power:** 10,026,067
 * **Total Troops:** 74,880 / 74,880 (Full March)
-* **Assigned Heroes:** Howard (Lv. 49, Infantry Lead), Jabel (Lv. 53, Cavalry), Amane (Lv. 49, Archer)
+* **Assigned Heroes:** Howard (Lv. 49, Infantry Lead), Jabel (Lv. 53, Cavalry), Amane (Lv. 46, Archer)
 * **Tactical Objective:** Balanced frontline absorption and cavalry hammer for player battles and rally strikes.
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % |
