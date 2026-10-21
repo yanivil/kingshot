@@ -7,6 +7,8 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
 | **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 53 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Marches (`Att` / `Be`) | **Core Carry:** Primary burst damage dealer & rally leader |
+| **Saul** | SSR / Mythic | Archer | Lv. 50 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) |
+| **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction |
 | **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation |
 | **Diana** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) |
 | **Quinn** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Ready Reserve / High Attack DPS | **Heavy Sniper:** Massive burst sniper & troop buffer |
@@ -985,3 +987,159 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 | :--- | :---: | :---: | :--- | :--- |
 | **Tri-Phalanx** | Top (Warfare) | **Lv. 3** | Trademark formation **increases all Squads' total Attack by 15%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% ATK) |
 | **Exorcism** | Bot (Development) | **Lv. 2** | Wards off evil, **increasing Infirmary Healing Speed by 20%**. | **In Progress** (33/30 Epic Development Books to Lv. 3: +30% Speed) |
+
+## In-Depth Hero Profile: Saul
+
+* **Hero Name:** Saul
+* **Rarity:** **SSR / Mythic** (Generation 1)
+* **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer)
+* **Current Level:** **Lv. 50** (XP: 26,957 / 140,000 to Lv. 51)
+* **Star Tier:** **1-Star (Tier 5)** (Shards: 1 / 15 to 2-Star promotion)
+* **Total Hero Power:** **254,200**
+* **Troop Capacity Boost:** **+10,685 Troops**
+* **Escort Guards:** **8 Escorts**
+* **Total Equipped Gear Power:** **69,300** *(3/4 slots equipped; Chest Armor vacant)*
+
+### 1. Overall Combat & Development Attributes (Base + Gear)
+
+| Category | Attribute | Total Value | Tactical & Strategic Effect |
+| :--- | :--- | :---: | :--- |
+| **Conquest (Hero)** | **Hero Attack** | **1,029** | Ballista bolt and projectile strike scaling |
+| | **Hero Defense** | **780** | Base defensive rating |
+| | **Hero Health** | **6,106** | Engineer combat health pool |
+| **Conquest (Escort)** | **Escort Attack** | **343** | Attack output of his 8 escort guards |
+| | **Escort Defense** | **260** | Defense rating of his escort guards |
+| | **Escort Health** | **2,035** | Health pool of escort guards |
+| **Expedition (March)** | **Archer Attack** | **+57.68%** | Army-wide bonus to deployed Archers |
+| | **Archer Defense** | **+57.68%** | Durability bonus for archer units |
+| | **Archer Lethality**| **+16.48%** | Casualty conversion rate for archers (from gear) |
+| | **Archer Health** | **+9.00%** | Durability pool for deployed archer squads (from gear) |
+
+### 2. Star Promotion Milestone Preview (1-Star Tier 5 ➔ 2-Star)
+
+Current Status: **1 / 15 Shards** (needs **14 shards** for 2-Star promotion).
+
+| Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
+| :--- | :---: | :---: | :---: |
+| **Base Hero Power** | 84,400 | **+15,400** | 99,800 |
+| **Hero Attack** | 444 | **+66** | 510 |
+| **Hero Defense** | 366 | **+54** | 420 |
+| **Hero Health** | 2,745 | **+405** | 3,150 |
+| **Escort Attack** | 148 | **+22** | 170 |
+| **Escort Defense** | 122 | **+18** | 140 |
+| **Escort Health** | 915 | **+135** | 1,050 |
+| **New Skills Unlocked** | — | — | **Superior Techniques Lv. 1** & **Positional Battler Lv. 1** |
+
+### 3. Equipped Hero Gear
+
+Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
+
+| Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality |
+| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health |
+| **Armor** | *None Equipped* | — | — | — | — | — | — | — |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality |
+
+#### Aggregate Stat Bonuses from Gear
+* **Expedition Troop Multipliers:**
+  * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots)
+  * **Archer Health:** **+9.00%** (+9.00% Bracers)
+* **Conquest Raw Attribute Increases:**
+  * **Hero Attributes:** +192 Attack | +90 Defense | +931 Health
+  * **Escort Squad Attributes:** +64 Attack | +30 Defense | +310 Health
+
+### 4. Exploration Skills (PvP, Arena & Campaign)
+
+| Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Rapid Fire** | Active (Top) | **Lv. 2** | Delivers multiple hits, **each dealing Attack * 60% damage and stunning target for 2s**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: 65% DMG) |
+| **Final Prayer** | Passive (Mid) | **Lv. 2** | When Health drops below 50%, **increases Defense by +75%**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: +100% DEF) |
+| **Superior Techniques** | Passive (Bot) | **Lv. 1 (Locked)** | Passively **increases Attack Speed by +10%**. | **Locked** (Unlocks at 2-Star ascension; up to +30% at Lv. 5) |
+
+### 5. Expedition & Development Skills (Army Warfare & City Construction)
+
+| Skill Name | Slot | Current Level | Strategic & City Utility | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Taskforce Training** | Top (Expedition) | **Lv. 2** | Highly empowering training program **increases all Squads' Defense by +4% and Health by +6%**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: +6% DEF / +9% HP) |
+| **Resourceful** | Mid (Development) | **Lv. 2** | Efficient construction management **increases Construction Speed by +6% and reduces Construction Costs by -6%**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: +9% Speed / -9% Cost) |
+| **Positional Battler** | Bot (Expedition) | **Lv. 1 (Locked)** | Masterful battlefield manipulation **increases all Squads' total Lethality by +5%**. | **Locked** (Unlocks at 2-Star ascension; up to +25% at Lv. 5) |
+
+## In-Depth Hero Profile: Helga
+
+* **Hero Name:** Helga
+* **Rarity:** **SSR / Mythic** (Generation 1)
+* **Class & Role:** Infantry Combat Specialist / Valkyrie Tank (Shield / Crossed Swords)
+* **Current Level:** **Lv. 46** (XP: 26,957 / 100,000 to Lv. 47)
+* **Star Tier:** **1-Star (Tier 0)** (Shards: 0 / 5 to next tier advancement)
+* **Total Hero Power:** **237,505**
+* **Troop Capacity Boost:** **+9,540 Troops**
+* **Escort Guards:** **7 Escorts**
+* **Total Equipped Gear Power:** **92,905**
+* **Exclusive Widget:** Unlocked (Purple Stag/Antler Emblem)
+
+### 1. Overall Combat Attributes (Base + Gear)
+
+| Category | Attribute | Total Value | Tactical Effect |
+| :--- | :--- | :---: | :--- |
+| **Conquest (Hero)** | **Hero Attack** | **559** | Spear strike and antler charge scaling |
+| | **Hero Defense** | **695** | Solid armor rating mitigating physical damage |
+| | **Hero Health** | **11,083** | Massive frontline tank health pool |
+| **Conquest (Escort)** | **Escort Attack** | **183** | Attack rating of her 7 bodyguard escorts |
+| | **Escort Defense** | **231** | Defense rating of her escort guards |
+| | **Escort Health** | **3,694** | Health pool of escort guards |
+| **Expedition (March)** | **Infantry Attack** | **+41.23%** | Army-wide bonus to deployed Infantry |
+| | **Infantry Defense** | **+41.23%** | Durability bonus for infantry units |
+| | **Infantry Lethality**| **+17.38%** | Casualty conversion rate for infantry (from gear) |
+| | **Infantry Health** | **+18.63%** | Expanded squad durability pool for infantry (from gear) |
+
+### 2. Star Promotion Milestone Preview (1-Star Tier 0 ➔ Tier 1)
+
+Current Status: **0 / 5 Shards** (needs **5 shards** for next tier advancement).
+
+| Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value |
+| :--- | :---: | :---: | :---: |
+| **Base Hero Power** | 45,980 | **+8,140** | 54,120 |
+| **Hero Attack** | 177 | **+25** | 202 |
+| **Hero Defense** | 210 | **+30** | 240 |
+| **Hero Health** | 3,465 | **+495** | 3,960 |
+| **Escort Attack** | 58 | **+9** | 67 |
+| **Escort Defense** | 70 | **+10** | 80 |
+| **Escort Health** | 1,155 | **+165** | 1,320 |
+| **Infantry Attack** | +41.23% | **+3.29%** | **+44.52%** |
+| **Infantry Defense** | +41.23% | **+3.29%** | **+44.52%** |
+
+### 3. Equipped Hero Gear
+
+All 4 pieces match the native **Infantry** troop class synergy:
+
+| Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+10** | 29,925 | ATK: +82 / HP: +810 | ATK: +27 / HP: +270 | +11.10% Infantry Lethality |
+| **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +675 | DEF: +30 / HP: +225 | +9.00% Infantry Health |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+3** | 24,570 | DEF: +95 / HP: +715 | DEF: +31 / HP: +238 | +9.63% Infantry Health |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+2** | 15,910 | ATK: +47 / HP: +468 | ATK: +15 / HP: +156 | +6.28% Infantry Lethality |
+
+#### Aggregate Stat Bonuses from Gear
+* **Expedition Troop Multipliers:**
+  * **Infantry Lethality:** **+17.38%** (+11.10% Helm + 6.28% Greaves)
+  * **Infantry Health:** **+18.63%** (+9.00% Gloves + 9.63% Shroud)
+* **Conquest Raw Attribute Increases:**
+  * **Hero Attributes:** +129 Attack | +185 Defense | +2,668 Health
+  * **Escort Squad Attributes:** +42 Attack | +61 Defense | +889 Health
+
+### 4. Exploration Skills (PvP, Arena & Campaign)
+
+| Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Antler Assault** | Active (Top) | **Lv. 2** | Antler charge deals **Attack * 176% AoE damage, knocks targets back, and stuns for 1s**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: 192% AoE) |
+| **Spear Charge** | Passive (Mid) | **Lv. 2** | Rapid lunge deals **Attack * 165% damage to target**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: 180% DMG) |
+| **Fury** | Passive (Bot) | **Lv. 1 (Locked)** | When taking damage, **10% chance of increasing Attack by 4% for 3s (stacks up to 5x)**. | **Locked** (Unlocks at 2-Star ascension; up to 12% per stack at Lv. 5) |
+
+### 5. Expedition Skills (Army Warfare & Rallies)
+
+| Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank |
+| :--- | :---: | :---: | :--- | :--- |
+| **Oath of Guardian** | Top | **Lv. 2** | Sacred vow grants **16% chance of reducing damage taken by 50% for all squads**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: 24% chance) |
+| **Echoes of Valhalla**| Mid | **Lv. 2** | Blows war horn to motivate troops, **increasing all Squads' Attack by 10%**. | **Capped at Lv. 2** (Requires 2-Star ascension for Lv. 3: +15% ATK) |
+| **Nature's Balance** | Bot | **Lv. 1 (Locked)** | Embodying nature's wrath **increases all Squads' total Lethality by 5%**. | **Locked** (Unlocks at 2-Star ascension; up to +25% at Lv. 5) |
