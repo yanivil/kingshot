@@ -87,6 +87,9 @@ LEVEL_RE = re.compile(r"Lv\.\s*(\d+)")
 STARS_RE = re.compile(r"(\d+)-Star\s*\((?:Tier\s*|T)(\d+)\)")
 SHARDS_RE = re.compile(r"Shards:\s*(\d[\d,]*)\s*/\s*(\d[\d,]*)\s*to\s+([^)]*)\)")
 PREVIEW_RE = re.compile(r"Star Promotion Milestone Preview \(.*?➔\s*([^)]+)\)")
+# "Last uploaded" stamp after a value, e.g. "**94.6M** _(2026-10-21)_". It is
+# repository bookkeeping, not game data, and must never be read as a number.
+UPLOAD_DATE_RE = re.compile(r"\s*_\(\d{4}-\d{2}-\d{2}\)_")
 SUFFIX = {"K": 1_000, "M": 1_000_000, "B": 1_000_000_000}
 
 
@@ -158,7 +161,7 @@ class Table:
 
 
 def strip_md(text: Optional[str]) -> str:
-    """Remove bold, italic and code markers and collapse whitespace.
+    """Remove bold, italic and code markers, upload-date stamps, and collapse whitespace.
 
     Args:
         text: Raw Markdown text; ``None`` is treated as empty.
@@ -168,7 +171,7 @@ def strip_md(text: Optional[str]) -> str:
     """
     if not text:
         return ""
-    plain = text.replace("**", "").replace("`", "")
+    plain = UPLOAD_DATE_RE.sub("", text).replace("**", "").replace("`", "")
     # Only *wrapped* italics are removed: "Attack * 65%" in skill text is a
     # multiplication sign with spaces around it and must stay.
     plain = re.sub(r"\*([^*\s][^*]*?)\*", r"\1", plain)
@@ -357,8 +360,9 @@ def bullets(lines: List[str]) -> Dict[str, str]:
         lines: Markdown lines.
 
     Returns:
-        Label -> raw value. Indented (nested) bullets are ignored, and when a
-        label repeats the first one wins.
+        Label -> raw value without its ``_(YYYY-MM-DD)_`` upload stamp.
+        Indented (nested) bullets are ignored, and when a label repeats the
+        first one wins.
     """
     found: Dict[str, str] = {}
     for line in lines:
@@ -366,7 +370,7 @@ def bullets(lines: List[str]) -> Dict[str, str]:
         if match:
             label = strip_md(match.group(1))
             if label not in found:
-                found[label] = match.group(2)
+                found[label] = UPLOAD_DATE_RE.sub("", match.group(2))
     return found
 
 

@@ -149,6 +149,9 @@ as_of: 2026-10-21
 That date becomes the `asOf` of every section built from the file. A missing or malformed date gives
 `null` (the page flags the section as undated) and a warning.
 
+The per-value upload dates (the **Updated** table column and `_(YYYY-MM-DD)_` after other values) are
+removed before parsing and not used, so they can never be read as a value.
+
 ### Field sources
 
 | `KS_DATA` | Source | Rule |

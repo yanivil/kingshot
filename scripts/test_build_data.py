@@ -73,6 +73,14 @@ class ValueParserTests(unittest.TestCase):
         """``Attack * 65%`` is not italics and must survive."""
         self.assertEqual(bd.strip_md("**Attack * 65%** and *italic*"), "Attack * 65% and italic")
 
+    def test_upload_date_stamp_is_never_data(self) -> None:
+        """A trailing ``_(YYYY-MM-DD)_`` stamp is removed before any value is read."""
+        self.assertEqual(bd.rarity_label("**SSR / Mythic** (Generation 1) _(2026-10-21)_"), "Mythic")
+        self.assertEqual(bd.parse_amount("**94.6M** _(2026-10-21)_"), {"value": 94600000, "rounded": True})
+        # A value line holding only a stamp has no value; it must not become 2026.
+        self.assertIsNone(bd.parse_amount("_(2026-10-21)_"))
+        self.assertEqual(bd.bullets(["* **Free Gems:** **17,030** _(2026-10-21)_"]), {"Free Gems": "**17,030**"})
+
 
 class FrontMatterTests(unittest.TestCase):
     """``as_of`` front matter handling."""
