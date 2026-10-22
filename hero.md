@@ -15,7 +15,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-22 |
 | **Saul** | SSR / Mythic | Archer | Lv. 50 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) | 2026-10-21 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-21 |
-| **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-21 |
+| **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 4) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-22 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-22 |
 | **Quinn** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-21 |
@@ -121,43 +121,43 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 * **Hero Name:** Howard _(2026-10-21)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Combat Specialist (Crossed Swords / Shield) _(2026-10-21)_
-* **Current Level:** **Lv. 49** (XP: 37,037 / 130,000 to Lv. 50) _(2026-10-21)_
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 34 / 40 to next promotion) _(2026-10-21)_
-* **Total Hero Power:** **442,745** _(2026-10-21)_
-* **Troop Capacity Boost:** **+10,420 Troops** _(2026-10-21)_
-* **Escort Guards:** **7 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **126,025** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 9 / 40 to next promotion) _(2026-10-22)_
+* **Total Hero Power:** **477,020** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** Not recorded (the chest piece is now +19; its power wasn't shown) _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **906** | Moderate attack output focused on utility whacks | 2026-10-21 |
-| | **Hero Defense** | **1,422** | Solid frontline armor reducing physical damage | 2026-10-21 |
-| | **Hero Health** | **17,716** | **Highest health pool on the account**, anchoring the frontline | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **301** | Attack rating of his 7 bodyguard defenders | 2026-10-21 |
-| | **Escort Defense** | **474** | Defense value of bodyguard escort | 2026-10-21 |
-| | **Escort Health** | **5,905** | High escort health pool absorbing splash damage | 2026-10-21 |
-| **Expedition (March)** | **Infantry Attack** | **+79.98%** | Offensive multiplier for all deployed Infantry troops | 2026-10-21 |
-| | **Infantry Defense** | **+79.98%** | Primary mitigation stat for deployed Infantry | 2026-10-21 |
-| | **Infantry Lethality**| **+21.86%** | Casualty conversion rate for infantry (from gear) | 2026-10-21 |
-| | **Infantry Health** | **+21.37%** | Base durability multiplier for frontline troops (from gear) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **960** | Moderate attack output focused on utility whacks | 2026-10-22 |
+| | **Hero Defense** | **1,516** | Solid frontline armor reducing physical damage | 2026-10-22 |
+| | **Hero Health** | **18,823** | **Highest health pool on the account**, anchoring the frontline | 2026-10-21 |
+| **Conquest (Escort)** | **Escort Attack** | **320** | Attack rating of his 8 bodyguard defenders | 2026-10-22 |
+| | **Escort Defense** | **505** | Defense value of bodyguard escort | 2026-10-22 |
+| | **Escort Health** | **6,274** | High escort health pool absorbing splash damage | 2026-10-22 |
+| **Expedition (March)** | **Infantry Attack** | **+84.49%** | Offensive multiplier for all deployed Infantry troops | 2026-10-22 |
+| | **Infantry Defense** | **+84.49%** | Primary mitigation stat for deployed Infantry | 2026-10-22 |
+| | **Infantry Lethality**| **+21.86%** | Casualty conversion rate for infantry (from gear) | 2026-10-22 |
+| | **Infantry Health** | **+21.79%** | Base durability multiplier for frontline troops (from gear) | 2026-10-22 |
 
-### 2. Star Promotion Milestone Preview (3-Star Tier 3 ➔ Tier 4)
+### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **34 / 40 Shards** (needs only **6 more shards** for next tier promotion). _(2026-10-21)_
+Current Status: **9 / 40 Shards** (promoted to Tier 4; needs **31 more shards** for Tier 5). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 223,200 | **+22,080** | 245,280 | 2026-10-21 |
-| **Hero Attack** | 552 | **+36** | 588 | 2026-10-21 |
-| **Hero Defense** | 900 | **+60** | 960 | 2026-10-21 |
-| **Hero Health** | 10,800 | **+720** | 11,520 | 2026-10-21 |
-| **Escort Attack** | 184 | **+12** | 196 | 2026-10-21 |
-| **Escort Defense** | 300 | **+20** | 320 | 2026-10-21 |
-| **Escort Health** | 3,600 | **+240** | 3,840 | 2026-10-21 |
-| **Infantry Attack** | +79.98% | **+4.51%** | **+84.49%** | 2026-10-21 |
-| **Infantry Defense** | +79.98% | **+4.51%** | **+84.49%** | 2026-10-21 |
+| **Base Hero Power** | 245,280 | **+23,120** | 268,400 | 2026-10-22 |
+| **Hero Attack** | 588 | **+37** | 625 | 2026-10-22 |
+| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-22 |
+| **Hero Health** | 11,520 | **+720** | 12,240 | 2026-10-22 |
+| **Escort Attack** | 196 | **+12** | 208 | 2026-10-22 |
+| **Escort Defense** | 320 | **+20** | 340 | 2026-10-22 |
+| **Escort Health** | 3,840 | **+240** | 4,080 | 2026-10-22 |
+| **Infantry Attack** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-22 |
+| **Infantry Defense** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 
@@ -165,26 +165,25 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-10-21 |
-| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +630 | DEF: +28 / HP: +210 | +8.80% Infantry Health | 2026-10-21 |
-| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+17** | 36,015 | DEF: +120 / HP: +904 | DEF: +40 / HP: +301 | +12.57% Infantry Health | 2026-10-21 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+19** | 25,260 | ATK: +63 / HP: +621 | ATK: +21 / HP: +207 | +8.66% Infantry Lethality | 2026-10-21 |
+| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-10-22 |
+| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +630 | DEF: +28 / HP: +210 | +8.80% Infantry Health | 2026-10-22 |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+19** | Not shown | Not shown | Not shown | +12.99% Infantry Health (from the Hero Stats total) | 2026-10-22 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+19** | 25,260 | ATK: +63 / HP: +621 | ATK: +21 / HP: +207 | +8.66% Infantry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Infantry Lethality:** **+21.86%** (+13.20% Helm + 8.66% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+21.37%** (+8.80% Gloves + 12.57% Shroud) _(2026-10-21)_
+  * **Infantry Health:** **+21.79%** (+8.80% Gloves + 12.99% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +159 Attack | +204 Defense | +3,100 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +53 Attack | +68 Defense | +1,033 Health _(2026-10-21)_
+  * **Hero / Escort Attributes:** Not recorded since the chest piece went to +19 _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Shielded Strike** | Active (Top) | **Lv. 3** | Solid whack knocking target back, dealing **240% AoE damage**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 260% AoE) | 2026-10-21 |
-| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: +12.5% DEF) | 2026-10-21 |
-| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-21 |
+| **Shielded Strike** | Active (Top) | **Lv. 3** | Solid whack knocking target back, dealing **240% AoE damage**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 260% AoE) | 2026-10-22 |
+| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: +12.5% DEF) | 2026-10-22 |
+| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-22 |
 
 ### 5. Expedition Skills (Army Warfare & Garrison)
 

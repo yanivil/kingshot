@@ -213,6 +213,12 @@ class MergeAndOutputTests(unittest.TestCase):
             governor = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governor"]
             self.assertEqual((governor["power"], governor["powerRounded"]), (value, rounded))
 
+    def test_not_recorded_values_stay_missing(self) -> None:
+        """Numbers inside a "Not recorded (…)" note are never read as the value."""
+        self.assertIsNone(bd.parse_number("Not recorded (the chest piece is now +19)"))
+        self.assertIsNone(bd.parse_number("**Not shown** since 2026-10-22"))
+        self.assertEqual(bd.parse_number("**134,670**"), 134670)
+
     def test_newest_date_uses_update_stamps(self) -> None:
         """The newest valid stamp wins; no stamp falls back; bad dates are skipped."""
         text = "| x | 2026-10-21 |\n* **A:** 5 _(2026-10-22)_\n| y | 2026-13-40 |"

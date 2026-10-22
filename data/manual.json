@@ -77,11 +77,11 @@
       },
       {
         "hero": "Saul",
-        "level": 50
+        "level": 54
       },
       {
         "hero": "Chenko",
-        "level": 49
+        "level": 54
       },
       {
         "hero": "Diana",
@@ -93,8 +93,10 @@
       }
     ],
     "slotsTotal": 15,
-    "slotsOpen": 7,
-    "slotted": [],
+    "slotsOpen": 6,
+    "slotted": [
+      "Howard"
+    ],
     "lockedSlots": [
       {
         "slot": 8,
@@ -104,7 +106,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "Chenko identified by appearance (purple hair); the other four match their hero screens. Confirm in game."
+    "_instructorNote": "Chenko identified by appearance (purple hair). Chenko's and Saul's Lv 54 is inferred: Howard shows Lv 54 in a drill slot on 22 Oct, and slotted heroes take the lowest instructor's level. Only Howard is confirmed slotted; the other slots weren't shown."
   },
   "recommendations": [
     {
@@ -112,23 +114,23 @@
       "priority": 1,
       "type": "Gear",
       "what": "Move Seth's Epic gloves and boots to Howard",
-      "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+17) are better than Seth's, so keep those.",
+      "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+19) are better than Seth's, so keep those.",
       "changes": [
         {
           "where": "Howard's gear",
           "before": [
             "Praetorian's Helm (Epic +20)",
             "Stonewall Gloves (Rare +20)",
-            "Praetorian's Shroud (Epic +17)",
+            "Praetorian's Shroud (Epic +19)",
             "Stonewall Greaves (Rare +19)"
           ],
           "after": [
             "Praetorian's Helm (Epic +20)",
             "Praetorian's Gloves (Epic +15)",
-            "Praetorian's Shroud (Epic +17)",
+            "Praetorian's Shroud (Epic +19)",
             "Praetorian's Greaves (Epic +16)"
           ],
-          "note": "Gear power 126,025 → 144,165"
+          "note": "Gloves 25,900 → 34,200 and boots 25,260 → 35,100 (+18,140 gear power)"
         },
         {
           "where": "Seth's gear",
@@ -155,7 +157,7 @@
       "evidence": [
         "Gloves: 34,200 vs 25,900 power; DEF +117 vs +84; HP +877 vs +630; Infantry Health +12.15% vs +8.80%",
         "Boots: 35,100 vs 25,260 power; ATK +90 vs +63; HP +891 vs +621; Infantry Lethality +12.36% vs +8.66%",
-        "Helmet and chest: Howard's 38,850 and 36,015 beat Seth's 34,200 each"
+        "Helmet and chest: Howard's +20 and +19 Epic pieces beat Seth's +15"
       ],
       "cost": "None (a swap)",
       "confidence": [
@@ -172,63 +174,61 @@
       "id": "drill-fill",
       "priority": 2,
       "type": "Drill Camp",
-      "what": "Slot Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo; reset them; spend the XP on Chenko",
-      "why": "The camp lifts slotted heroes to the lowest instructor's level, Lv 49: Amane and Helga gain 3 levels and Fahd 1, at no cost. A level reset sets a hero to Lv 1 and refunds all their Hero XP, and a slotted hero still auto-levels to the camp level. Chenko is now the only Lv 49 instructor (Jabel, Quinn and Diana are 54, Saul 50), so every level Chenko gains up to 50 raises every slotted hero.",
+      "what": "Fill the rest of the Drill Camp: every slotted hero now becomes Lv 54",
+      "why": "Howard sits in a drill slot at Lv 54 (he was 49), so the camp now runs at Lv 54. Any hero you add jumps to 54 at no XP cost: Amane and Helga from 46, Fahd from 48, the others from 49.",
       "changes": [
         {
-          "where": "Drill slots 1–7",
-          "before": [],
+          "where": "Drill slots",
+          "before": [
+            "Howard",
+            "(others not shown)"
+          ],
           "after": [
+            "Howard",
+            "Gordon",
             "Amane",
             "Helga",
             "Fahd",
-            "Howard",
-            "Gordon",
             "Forrest",
             "Yeonwoo"
           ]
         }
       ],
       "steps": [
-        "Level Drills: put Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo in the 7 open slots. They should all show Lv 49.",
-        "Level Resets: reset Amane first. Check that she still shows Lv 49 and that your Hero XP went up. Read the confirmation screen for any cost.",
-        "If that worked, reset the other six slotted heroes.",
-        "Spend the XP on Chenko first: at Lv 50 all seven slotted heroes become Lv 50.",
-        "Then raise Chenko and Saul together, up to Lv 54, the cap until Town Center 21.",
-        "Don't reset Olive, Seth, Edwin or any instructor. They aren't slotted, so they would really drop to Lv 1."
+        "Open Hero Drill Camp → Level Drills and check which slots are already filled.",
+        "Fill the open ones in this order: Gordon, Amane, Helga, Fahd, Forrest, Yeonwoo (7 slots in total with Howard).",
+        "Reset a slotted hero only if you need its XP: it stays Lv 54 while slotted, but goes back to its own level (Lv 1 after a reset) if removed.",
+        "Don't reset Olive, Seth, Edwin or any instructor."
       ],
       "evidence": [
+        "Howard's hero screen, 22 Oct: Lv 54 and “You cannot level up a hero within a Drill Camp!”",
         "Drill Camp screen, 22 Oct: “Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors”",
-        "Level Resets screen, 22 Oct: “reset the hero level to Lv. 1 and refund all the Hero XP”",
-        "Instructors: Jabel 54, Quinn 54, Diana 54 (hero screens), Saul 50, Chenko 49; 7 open slots, slot 8 at Town Center 21",
-        "hero.md: Amane 46, Helga 46, Fahd 48"
+        "Instructors: Jabel, Quinn and Diana at Lv 54 on their own screens; Chenko and Saul at 54 inferred"
       ],
-      "cost": "No XP to slot; reset cost not recorded",
+      "cost": "No XP",
       "confidence": [
         "Verified",
         "Inferred"
       ],
       "heroes": [
+        "Howard",
+        "Gordon",
         "Amane",
         "Helga",
         "Fahd",
-        "Howard",
-        "Gordon",
         "Forrest",
-        "Yeonwoo",
-        "Chenko"
+        "Yeonwoo"
       ],
-      "note": "Why these seven: Amane, Helga and Fahd gain levels now; Howard, Gordon, Forrest and Yeonwoo are combat heroes that rise with the camp later. Olive, Seth and Edwin are gathering heroes and stay at Lv 49. Not recorded: whether a slotted hero can still be deployed (check Howard after step 1), and what happens if a reset hero leaves the camp (community sources say it goes back to its own level, Lv 1)."
+      "note": "Gordon is first because he is in three line-ups (Arena defense, Barricade 2, Be). Send the Drill Camp screen and I'll record the actual slots."
     },
     {
       "id": "near-promo",
       "priority": 3,
       "type": "Promotion",
       "what": "Promote Quinn to 4★ first: 3 shards to go",
-      "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Howard 6 to T4, Edwin 7 to T3, Saul 14 to 2★.",
+      "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★. Howard reached T4 on 22 Oct.",
       "steps": [
         "Quinn: 3 shards to 4★ (Redeem shows 0 spare).",
-        "Howard: 6 shards to T4 (main tank).",
         "Forrest: 4 shards to T4 (Be march).",
         "Later: Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★ (unlocks 2 skills)."
       ],
@@ -241,7 +241,6 @@
       ],
       "heroes": [
         "Quinn",
-        "Howard",
         "Forrest",
         "Helga",
         "Edwin",

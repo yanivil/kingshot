@@ -11,6 +11,8 @@ hand-written, so the file still works when opened directly.
 ## General rules
 
 - **Missing = `null`.** The page shows "Not recorded" for any `null`/absent value. Never invent a value.
+  In a .md file, write a missing number as "Not recorded (reason)" or "Not shown (reason)"; the generator reads it
+  as `null` even when the reason contains numbers.
 - **Dates** are ISO strings `YYYY-MM-DD`. Every section carries `asOf`; heroes carry their own `asOf`.
 - **Never include the Player ID.** The page has no field for it.
 - **Derived values are not stored.** Level caps, assignments, power sums, conflicts, the Drill Camp

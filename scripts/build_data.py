@@ -421,7 +421,12 @@ def parse_amount(text: Optional[str]) -> Optional[Dict[str, Any]]:
     Returns:
         ``{"value": int, "rounded": bool}``, or ``None`` if there is no number.
     """
-    match = AMOUNT_RE.search(strip_md(text))
+    plain = strip_md(text)
+    # "Not recorded (…)" / "Not shown (…)" mark a missing value; a number in
+    # the explanation (a date, a "+19") must not be read as the value.
+    if re.match(r"\s*not\s+(recorded|shown)\b", plain, re.IGNORECASE):
+        return None
+    match = AMOUNT_RE.search(plain)
     if not match:
         return None
     number = Decimal(match.group(1).replace(",", ""))
