@@ -58,7 +58,10 @@ This repository provides:
 
 Every value in `profile.md`, `hero.md`, `lineups.md`, `troops.md` and `codes.md` carries the date it was
 last uploaded: tables have an **Updated** column, and other values end with _(YYYY-MM-DD)_.
-When you change a value, set its date to the day of the upload. Unchanged rows keep their old date.
+When a screenshot shows a value, set its date to the day of the upload, whether the value changed or was
+only re-confirmed (the date means "last seen in game", not "last changed"). A derived line, such as a gear
+total, takes the new date only when every value it is built from was re-confirmed. Values not shown in the
+upload keep their old date.
 
 The dashboard dates come from these upload dates: each hero shows the newest date in its roster row and
 profile, and every other section shows the newest date in its file. So updating a value's date is enough
