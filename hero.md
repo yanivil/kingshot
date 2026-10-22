@@ -1034,6 +1034,7 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
 * **Escort Guards:** **8 Escorts** _(2026-10-22)_
 * **Total Equipped Gear Power:** **89,250** _(2026-10-22)_
+* **Exclusive Widget:** Locked — Rabbitgear Cannon (gear screen shows a lock) _(2026-10-22)_
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
 
@@ -1111,7 +1112,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
 * **Escort Guards:** **8 Escorts** _(2026-10-22)_
 * **Total Equipped Gear Power:** **92,905** _(2026-10-22)_
-* **Exclusive Widget:** Unlocked (Purple Stag/Antler Emblem) _(2026-10-21)_
+* **Exclusive Widget:** Locked — Bands of Tyre (gear screen shows a lock) _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 

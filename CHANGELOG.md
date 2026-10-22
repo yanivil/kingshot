@@ -95,6 +95,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- `hero.md`: Helga's widget is **Bands of Tyre, locked** (was recorded as unlocked from the emblem icon); Saul's
+  Rabbitgear Cannon, locked, is now recorded. `scripts/build_data.py` keeps a locked widget's name ("Locked — Name";
+  new test; `docs/SCHEMA.md`).
 - Helga from her screens of 2026-10-22: Lv. 54 in a Drill Camp slot (was 46), power 259,615, troop capacity 11,525,
   8 escorts, Hero 599 ATK / 743 DEF / 11,875 HP, Escort 198 / 247 / 3,958. Shards (0 / 5), bonuses, promotion preview,
   skills and gear unchanged. All 15 heroes now carry 2026-10-22 readings.

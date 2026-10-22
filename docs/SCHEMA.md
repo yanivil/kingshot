@@ -197,7 +197,7 @@ The upload dates are removed before values are parsed, so they can never be read
   Armor → Chest, Boots. `Base (+0)` → `plus0`, `None Equipped` → `empty`, otherwise the level (`+17`);
   `quality` from the rarity column; `slotsComplete: true`.
 - **widget:** the "Exclusive Widget" line. `Unlocked (…)` gives `name: null` (the brackets describe the
-  icon); no line gives `widget: null`.
+  icon); `Locked — Name (…)` gives `unlocked: false` with that name; no line gives `widget: null`.
 - **skills:** one entry per row of every skill table. `Capped at …` → `capped` (`needs` from
   "Requires N-Star"); `In Progress (a/b …)` → `progress` with note `a/b …`, or `upgradeable` with
   `confidence: "Inferred"` when a ≥ b; `Locked` → `locked` (`needs` from "Unlocks at N-Star").

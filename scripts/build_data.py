@@ -1042,7 +1042,9 @@ def parse_widget(info: Dict[str, str]) -> Optional[Dict[str, Any]]:
         return None
     text = strip_md(raw)
     if text.startswith("Locked"):
-        return {"unlocked": False, "name": None, "level": None}
+        # "Locked — Bands of Tyre (note)": the name after the dash, if given.
+        named = re.match(r"Locked\s*[—-]\s*([^(]+)", text)
+        return {"unlocked": False, "name": named.group(1).strip() if named else None, "level": None}
     if text.startswith("Unlocked"):
         # "Unlocked (Purple Stag/Antler Emblem)": the brackets describe the
         # icon, they are not the widget's name.
