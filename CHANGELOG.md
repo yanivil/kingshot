@@ -60,6 +60,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `hero.md`: Jabel's power 567,410 and new stats from 2026-10-22 (Hero Defense 1,497, Hero Health 14,853,
   Escort Defense 498, Escort Health 4,951, Cavalry Health +24.69%). A gear piece was upgraded, but the
   gear screen wasn't shared, so her gear rows and gear power (131,460) are still the 2026-10-21 values.
+- `hero.md`: Jabel's Crusader's Gauntlets +7 → +11 (30,750 power, Hero +109 DEF / +549 HP, Escort +36 DEF /
+  +183 HP, +11.31% Cavalry Health); gear power 134,670. This accounts exactly for her 2026-10-22 stat changes.
 - From Diana's hero screens and the Drill Camp screen of 2026-10-22:
   - `hero.md`: Diana's XP counter 2,020 / 130,000 and 22 / 50 manuals; everything else re-checked, unchanged.
   - `profile.md`: gems 21,450 (gem counter on the Drill Camp screen).

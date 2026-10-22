@@ -38,7 +38,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 * **Total Hero Power:** **567,410** _(2026-10-22)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-21)_
 * **Escort Guards:** **8 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **131,460** (as of 2026-10-21; a gear piece has been upgraded since, see the 2026-10-22 stats) _(2026-10-21)_
+* **Total Equipped Gear Power:** **134,670** _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
@@ -79,9 +79,9 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
   *Conquest:* Hero +60 ATK / +60 DEF / +600 HP (Escort +20 / +20 / +200)  
   *Expedition:* +5.00% Cavalry Lethality & +5.00% Cavalry Health  
   *Exclusive Skill:* **Crimson Spirit Lv. 1**
-* **Gauntlets:** **Crusader's Gauntlets (+7, Epic Purple)** — 27,540 Power _(2026-10-21)_  
-  *Conquest:* Hero +102 DEF / +513 HP (Escort +34 DEF / +171 HP)  
-  *Expedition:* +10.47% Cavalry Health
+* **Gauntlets:** **Crusader's Gauntlets (+11, Epic Purple)** — 30,750 Power _(2026-10-22)_  
+  *Conquest:* Hero +109 DEF / +549 HP (Escort +36 DEF / +183 HP)  
+  *Expedition:* +11.31% Cavalry Health
 * **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-21)_  
   *Conquest:* Hero +80 ATK / +402 HP (Escort +26 ATK / +134 HP)  
   *Expedition:* +8.38% Cavalry Lethality
