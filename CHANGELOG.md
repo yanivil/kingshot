@@ -197,6 +197,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `hero.md`: re-confirmed and restamped to 2026-10-22: Forrest's Stonewall Gloves (+12), Shroud (+14), Greaves (+12)
   and Infantry Health total; Olive's and Yeonwoo's Windbreaker Bracers (+15). Gordon's Breastplate (+14) and
   Chenko's Breastplate and Battle Boots (+15) were re-confirmed too and already carried that date. No values changed.
+- `data/manual.json`: recommendations re-checked against the 22 Oct gear uploads. The Seth → Howard gear move now
+  sends Howard's freed Stonewall Gloves (+20) and Greaves (+19) to Forrest (Be march) instead of Seth, and Seth takes
+  Forrest's +12 pieces. Howard's chest numbers (37,890; DEF +124 / HP +931) are in the evidence, each hero's gear
+  power and troop bonuses before and after are shown, and the note says which parts are Verified, Inferred and
+  Unverified. Quinn's promotion and Gordon's skill moves are unchanged (no new shard or manual data).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
