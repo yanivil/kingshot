@@ -434,11 +434,6 @@
   "dataHealth": {
     "conflicts": [
       {
-        "area": "All files",
-        "title": "Hero XP readings differ",
-        "detail": "Hero XP shows 62,107, 276,957, 37,037, 26,957, 2,020 and 51,686 on different hero screens, which looks like account inventory read at different times."
-      },
-      {
         "area": "Town Center",
         "title": "Perk names look interpreted",
         "detail": "The perk names don't look like in-game text, so only the 6/7 count is shown."
