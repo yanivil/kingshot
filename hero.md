@@ -618,16 +618,16 @@ All 4 pieces match the native **Archer** troop class synergy:
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-10-22 |
 | **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-22 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-21 |
-| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **Base (+0)** | 15,000 | ATK: +72 / HP: +225 | ATK: +24 / HP: +75 | +6.00% Archer Lethality | 2026-10-21 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-22 |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **Base (+0)** | 15,000 | ATK: +72 / HP: +225 | ATK: +24 / HP: +75 | +6.00% Archer Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Archer Lethality:** **+19.20%** (+13.20% Faceplate + 6.00% Boots) _(2026-10-21)_
-  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear) _(2026-10-21)_
+  * **Archer Lethality:** **+19.20%** (+13.20% Faceplate + 6.00% Boots) _(2026-10-22)_
+  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +225 Attack | +138 Defense | +1,214 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +75 Attack | +46 Defense | +404 Health _(2026-10-21)_
+  * **Hero Attributes:** +225 Attack | +138 Defense | +1,214 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +75 Attack | +46 Defense | +404 Health _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
@@ -846,13 +846,13 @@ All 4 pieces match the native **Archer** troop class synergy:
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+11** | 20,500 | ATK: +88 / HP: +274 | ATK: +29 / HP: +91 | +7.54% Archer Lethality | 2026-10-21 |
 | **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-22 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-21 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-22 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+12** | 21,060 | ATK: +90 / HP: +279 | ATK: +30 / HP: +93 | +7.68% Archer Lethality | 2026-10-21 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Archer Lethality:** **+15.22%** (+7.54% Faceplate + 7.68% Boots) _(2026-10-21)_
-  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear) _(2026-10-21)_
+  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
   * **Hero Attributes:** +178 Attack | +138 Defense | +1,070 Health _(2026-10-21)_
   * **Escort Squad Attributes:** +59 Attack | +46 Defense | +356 Health _(2026-10-21)_
@@ -1077,16 +1077,16 @@ All 4 pieces match the native **Archer** troop class synergy:
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-22 |
 | **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health | 2026-10-22 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health | 2026-10-21 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health | 2026-10-22 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots) _(2026-10-22)_
-  * **Archer Health:** **+16.40%** (+9.00% Bracers + 7.40% Leatherwear) _(2026-10-21)_
+  * **Archer Health:** **+16.40%** (+9.00% Bracers + 7.40% Leatherwear) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +192 Attack | +162 Defense | +1,201 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +64 Attack | +54 Defense | +400 Health _(2026-10-21)_
+  * **Hero Attributes:** +192 Attack | +162 Defense | +1,201 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +64 Attack | +54 Defense | +400 Health _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
@@ -1157,15 +1157,15 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+10** | 29,925 | ATK: +82 / HP: +810 | ATK: +27 / HP: +270 | +11.10% Infantry Lethality | 2026-10-22 |
 | **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +675 | DEF: +30 / HP: +225 | +9.00% Infantry Health | 2026-10-22 |
 | **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+3** | 24,570 | DEF: +95 / HP: +715 | DEF: +31 / HP: +238 | +9.63% Infantry Health | 2026-10-22 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+2** | 15,910 | ATK: +47 / HP: +468 | ATK: +15 / HP: +156 | +6.28% Infantry Lethality | 2026-10-21 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+2** | 15,910 | ATK: +47 / HP: +468 | ATK: +15 / HP: +156 | +6.28% Infantry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+17.38%** (+11.10% Helm + 6.28% Greaves) _(2026-10-21)_
+  * **Infantry Lethality:** **+17.38%** (+11.10% Helm + 6.28% Greaves) _(2026-10-22)_
   * **Infantry Health:** **+18.63%** (+9.00% Gloves + 9.63% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +129 Attack | +185 Defense | +2,668 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +42 Attack | +61 Defense | +889 Health _(2026-10-21)_
+  * **Hero Attributes:** +129 Attack | +185 Defense | +2,668 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +42 Attack | +61 Defense | +889 Health _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
