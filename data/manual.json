@@ -181,10 +181,9 @@
       "priority": 2,
       "type": "Promotion",
       "what": "Promote Quinn to 4★ first: 3 shards to go",
-      "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★. Howard reached T4 on 22 Oct.",
+      "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★. Howard and Forrest reached T4 on 22 Oct.",
       "steps": [
         "Quinn: 3 shards to 4★ (Redeem shows 0 spare).",
-        "Forrest: 4 shards to T4 (Be march).",
         "Later: Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★ (unlocks 2 skills)."
       ],
       "evidence": [
@@ -196,7 +195,6 @@
       ],
       "heroes": [
         "Quinn",
-        "Forrest",
         "Helga",
         "Edwin",
         "Saul"

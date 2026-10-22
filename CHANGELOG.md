@@ -95,6 +95,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Forrest from his screens of 2026-10-22: Lv. 54 in a Drill Camp slot, promoted to 3-Star Tier 4 (3 / 40 to T5), power
+  371,073, troop capacity 11,525, 8 escorts, Hero 764 ATK / 1,458 DEF / 14,994 HP, Escort 254 / 485 / 4,998, Infantry
+  Attack/Defense +54.31%, new promotion preview. Gear and skills unchanged. Level and tier updated in the roster,
+  `lineups.md` and `troops.md`; Forrest leaves the promotion move.
 - Olive from her screens of 2026-10-22: Lv. 54, power 372,601, troop capacity 11,525, 8 escorts, shards 16 / 40, Hero
   1,256 ATK / 1,446 DEF / 7,590 HP, Escort 418 / 482 / 2,529. Her Archer Health is +14.10% (gloves 8.10% + chest 6.00%),
   which settles the 8.10% / 14.10% conflict; the Data health note is removed. Promotion preview, skills and gear unchanged.
