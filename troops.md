@@ -35,7 +35,7 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 ### Formation 1: Beast Hunting (`Be`) — PvE Preset
 * **Formation Power:** 9,195,741 _(2026-10-22)_
 * **Total Troops:** 75,960 / 75,960 (Full March) _(2026-10-22)_
-* **Assigned Heroes:** Diana (Lv. 49, Archer Lead), Gordon (Lv. 49, Cavalry), Forrest (Lv. 49, Infantry) _(2026-10-22)_
+* **Assigned Heroes:** Diana (Lv. 54, Archer Lead), Gordon (Lv. 49, Cavalry), Forrest (Lv. 49, Infantry) _(2026-10-22)_
 * **Tactical Objective:** High archer burst to eliminate map beasts and wandering monsters with minimal casualties, boosted by Diana's -15% Stamina Cost and +60% Hunting March Speed. _(2026-10-21)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
@@ -47,7 +47,7 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 ### Formation 2: Attack (`Att`) — PvP / Open-Field Preset
 * **Formation Power:** 10,767,581 _(2026-10-22)_
 * **Total Troops:** 77,785 / 77,785 (Full March) _(2026-10-22)_
-* **Assigned Heroes:** Howard (Lv. 49, Infantry Lead), Jabel (Lv. 54, Cavalry), Quinn (Lv. 54, Archer) _(2026-10-22)_
+* **Assigned Heroes:** Howard (Lv. 54, Infantry Lead), Jabel (Lv. 54, Cavalry), Quinn (Lv. 54, Archer) _(2026-10-22)_
 * **Tactical Objective:** Balanced frontline absorption and cavalry hammer for player battles and rally strikes. _(2026-10-21)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
