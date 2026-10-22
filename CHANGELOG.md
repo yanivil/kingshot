@@ -194,6 +194,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `hero.md`: Saul's Windbreaker Faceplate (+16), Windbreaker Boots (+16) and Archer Lethality total re-confirmed
   and restamped to 2026-10-22. The same upload re-confirmed Chenko's, Gordon's, Edwin's and Quinn's pieces,
   which already carried that date. No values changed.
+- `hero.md`: re-confirmed and restamped to 2026-10-22: Forrest's Stonewall Gloves (+12), Shroud (+14), Greaves (+12)
+  and Infantry Health total; Olive's and Yeonwoo's Windbreaker Bracers (+15). Gordon's Breastplate (+14) and
+  Chenko's Breastplate and Battle Boots (+15) were re-confirmed too and already carried that date. No values changed.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
