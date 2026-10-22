@@ -28,6 +28,14 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Seth** | Rare (Blue) | Infantry | Lv. 49 | 3-Star (Tier 3) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-21 |
 | **Edwin** | Rare (Blue) | Cavalry | Lv. 49 | 3-Star (Tier 2) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-10-21 |
 
+## Heroes Not Yet Recruited
+
+Heroes shown in the hero list but not recruited. They are not in the roster above, so the dashboard does not count them.
+
+| Hero | Rarity | Class | Shards | Shown Power | Notes | Updated |
+| :--- | :---: | :---: | :---: | :---: | :--- | :---: |
+| **Amadeus** | SSR / Mythic | Infantry | 0 / 20 to recruit | 20,550 | Combat specialist (crossed swords); Recruit button grey | 2026-10-22 |
+
 ## In-Depth Hero Profile: Jabel (Jable)
 
 * **Hero Name:** Jabel _(2026-10-21)_
@@ -437,7 +445,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
 
-Current Status: **95 / 100 Shards** (needs **5 more shards** for 4-Star Ascension). _(2026-10-22)_
+Current Status: **95 / 100 Shards** (needs **5 more shards** for 4-Star Ascension; confirmed in game). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |

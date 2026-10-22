@@ -91,6 +91,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   instructor, Level Resets refund all Hero XP; 22 Oct screens) and which part is still community (a hero
   removed from the camp returns to its own level).
 - `profile.md`: gems 21,550 (Drill Camp screen, 2026-10-22).
+- `hero.md`: new "Heroes Not Yet Recruited" table with Amadeus (SSR / Mythic infantry, 0 / 20 shards, 20,550
+  shown power). The generator ignores it, so the dashboard still lists 15 heroes. Quinn's 5-shard need to 4★
+  is confirmed in game; the promotion move no longer asks about the "Redeem 2" button.
 - `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.

@@ -183,7 +183,7 @@ removed before parsing and not used, so they can never be read as a value.
 
 - **List and order:** the "Active Hero Roster" table. Details come from each
   "In-Depth Hero Profile: Name" section; where both give a value (rarity, level, stars), the profile wins
-  and a warning is printed.
+  and a warning is printed. The "Heroes Not Yet Recruited" table is for reference only and is not read.
 - **name:** a bracketed alias is dropped (`Jabel (Jable)` → `Jabel`).
 - **rarity:** `SSR / Mythic` → `Mythic`, `Rare (Blue)` → `Rare`. **generation:** `(Generation N)` in the
   profile's Rarity line. **role:** the bold label in the roster's role column (`**Core Carry:** …` → `Core Carry`).
