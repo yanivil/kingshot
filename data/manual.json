@@ -412,13 +412,14 @@
       "what": "Promote Quinn to 4★ first: 5 shards to go",
       "why": "Quinn is at 95 / 100 shards and joins four lineups with move 1. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Howard 6 to T4, Edwin 7 to T3, Saul 14 to 2★.",
       "steps": [
-        "Quinn: 5 shards to 4★. His promotion screen shows a Redeem button with 2; check whether those are his shards.",
+        "Quinn: 5 shards to 4★.",
         "Howard: 6 shards to T4 (main tank).",
         "Forrest: 4 shards to T4 (Be march).",
         "Later: Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★ (unlocks 2 skills)."
       ],
       "evidence": [
-        "hero.md shard counts, Quinn's promotion preview of 22 Oct"
+        "hero.md shard counts, Quinn's promotion preview of 22 Oct",
+        "Confirmed in game on 22 Oct: Quinn needs 5 shards"
       ],
       "cost": "4–14 shards each; shard sources not recorded",
       "confidence": [
