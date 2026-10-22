@@ -20,7 +20,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Quinn** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-22 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-22 |
-| **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-22 |
+| **Fahd** | SR / Epic | Cavalry | Lv. 54 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-22 |
 | **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-22 |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 54 | 3-Star (Tier 4) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) | 2026-10-22 |
@@ -874,43 +874,43 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Hero Name:** Fahd _(2026-10-21)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Cavalry Combat Specialist / Defensive Bruiser (Horse / Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 48** (XP: 276,957 / 120,000 — **Ready to Upgrade to Lv. 49**) _(2026-10-21)_
-* **Star Tier:** **2-Star (Tier 5)** (Shards: 10 / 40 to 3-Star promotion) _(2026-10-21)_
-* **Total Hero Power:** **295,760** _(2026-10-21)_
-* **Troop Capacity Boost:** **+10,125 Troops** _(2026-10-21)_
-* **Escort Guards:** **7 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **71,560** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
+* **Star Tier:** **2-Star (Tier 5)** (Shards: 10 / 40 to 3-Star promotion) _(2026-10-22)_
+* **Total Hero Power:** **308,000** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** **71,560** _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **904** | Base melee sword strike scaling | 2026-10-21 |
-| | **Hero Defense** | **1,068** | Solid defensive rating resisting enemy assaults | 2026-10-21 |
-| | **Hero Health** | **8,922** | Durable frontline brawler health pool | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **300** | Attack output of his 7 bodyguard escorts | 2026-10-21 |
-| | **Escort Defense** | **356** | Defense rating of his escort guards | 2026-10-21 |
-| | **Escort Health** | **2,974** | Health pool of escort guards | 2026-10-21 |
-| **Expedition (March)** | **Cavalry Attack** | **+60.64%** | Army-wide bonus to deployed Cavalry | 2026-10-21 |
-| | **Cavalry Defense** | **+60.64%** | Durability bonus for cavalry units | 2026-10-21 |
-| | **Cavalry Lethality**| **+15.22%** | Casualty conversion rate for cavalry (from gear) | 2026-10-21 |
-| | **Cavalry Health** | **+12.00%** | Durability pool for deployed cavalry squads (from gear) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **933** | Base melee sword strike scaling | 2026-10-22 |
+| | **Hero Defense** | **1,104** | Solid defensive rating resisting enemy assaults | 2026-10-22 |
+| | **Hero Health** | **9,210** | Durable frontline brawler health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **310** | Attack output of his 8 bodyguard escorts | 2026-10-22 |
+| | **Escort Defense** | **368** | Defense rating of his escort guards | 2026-10-22 |
+| | **Escort Health** | **3,070** | Health pool of escort guards | 2026-10-22 |
+| **Expedition (March)** | **Cavalry Attack** | **+60.64%** | Army-wide bonus to deployed Cavalry | 2026-10-22 |
+| | **Cavalry Defense** | **+60.64%** | Durability bonus for cavalry units | 2026-10-22 |
+| | **Cavalry Lethality**| **+15.22%** | Casualty conversion rate for cavalry (from gear) | 2026-10-22 |
+| | **Cavalry Health** | **+12.00%** | Durability pool for deployed cavalry squads (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (2-Star Tier 5 ➔ 3-Star)
 
-Current Status: **10 / 40 Shards** (needs **30 more shards** for 3-Star promotion). _(2026-10-21)_
+Current Status: **10 / 40 Shards** (needs **30 more shards** for 3-Star promotion). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 140,160 | **+21,920** | 162,080 | 2026-10-21 |
-| **Hero Attack** | 508 | **+63** | 571 | 2026-10-21 |
-| **Hero Defense** | 636 | **+78** | 714 | 2026-10-21 |
-| **Hero Health** | 5,088 | **+624** | 5,712 | 2026-10-21 |
-| **Escort Attack** | 169 | **+21** | 190 | 2026-10-21 |
-| **Escort Defense** | 212 | **+26** | 238 | 2026-10-21 |
-| **Escort Health** | 1,696 | **+208** | 1,904 | 2026-10-21 |
-| **Cavalry Attack** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-21 |
-| **Cavalry Defense** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-21 |
+| **Base Hero Power** | 140,160 | **+21,920** | 162,080 | 2026-10-22 |
+| **Hero Attack** | 508 | **+63** | 571 | 2026-10-22 |
+| **Hero Defense** | 636 | **+78** | 714 | 2026-10-22 |
+| **Hero Health** | 5,088 | **+624** | 5,712 | 2026-10-22 |
+| **Escort Attack** | 169 | **+21** | 190 | 2026-10-22 |
+| **Escort Defense** | 212 | **+26** | 238 | 2026-10-22 |
+| **Escort Health** | 1,696 | **+208** | 1,904 | 2026-10-22 |
+| **Cavalry Attack** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-22 |
+| **Cavalry Defense** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 
@@ -918,26 +918,26 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+11** | 20,500 | ATK: +73 / HP: +366 | ATK: +24 / HP: +122 | +7.54% Cavalry Lethality | 2026-10-21 |
-| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-21 |
-| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-21 |
-| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality | 2026-10-21 |
+| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+11** | 20,500 | ATK: +73 / HP: +366 | ATK: +24 / HP: +122 | +7.54% Cavalry Lethality | 2026-10-22 |
+| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-22 |
+| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-22 |
+| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Cavalry Lethality:** **+15.22%** (+7.54% Armet + 7.68% Boots) _(2026-10-21)_
-  * **Cavalry Health:** **+12.00%** (+6.00% Gauntlets + 6.00% Breastplate) _(2026-10-21)_
+  * **Cavalry Lethality:** **+15.22%** (+7.54% Armet + 7.68% Boots) _(2026-10-22)_
+  * **Cavalry Health:** **+12.00%** (+6.00% Gauntlets + 6.00% Breastplate) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +147 Attack | +120 Defense | +1,338 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +48 Attack | +40 Defense | +446 Health _(2026-10-21)_
+  * **Hero Attributes:** +147 Attack | +120 Defense | +1,338 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +48 Attack | +40 Defense | +446 Health _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Sandstorm** | Active (Top) | **Lv. 2** | Blinding sandstorm **reduces all Enemy Squads' Attack by 2% for 2s**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: 3% reduction) | 2026-10-21 |
-| **Eagle Wings** | Passive (Mid) | **Lv. 2** | After Sandstorm, Fahd's eagle directs attacks, **increasing personal & nearby friendly Squads' Attack by 20% for 2s**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: +25% ATK) | 2026-10-21 |
-| **Dune General** | Passive (Bot) | **Lv. 2** | Harsh desert instincts **increase his personal Attack Speed by 15%**. | **In Progress** (34/30 Epic Expedition Manuals to Lv. 3: +20% Speed) | 2026-10-21 |
+| **Sandstorm** | Active (Top) | **Lv. 2** | Blinding sandstorm **reduces all Enemy Squads' Attack by 2% for 2s**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: 3% reduction) | 2026-10-22 |
+| **Eagle Wings** | Passive (Mid) | **Lv. 2** | After Sandstorm, Fahd's eagle directs attacks, **increasing personal & nearby friendly Squads' Attack by 20% for 2s**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: +25% ATK) | 2026-10-22 |
+| **Dune General** | Passive (Bot) | **Lv. 2** | Harsh desert instincts **increase his personal Attack Speed by 15%**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: +20% Speed) | 2026-10-22 |
 
 ### 5. Expedition Skills (Army Warfare & Beast Hunting)
 
