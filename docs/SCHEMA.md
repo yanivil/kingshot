@@ -136,6 +136,10 @@ across the roster, and stale or undated sections.
 ### `codes`
 `asOf`, `active[{code, redeemed}]`, `expired[{code, redeemed}]`, `expiredTotal`.
 
+The page lays the viewer's own marks over `redeemed`: they live in the browser's `localStorage` under
+`ks-code-marks` as `{"<code>": true|false}`, never in `KS_DATA`. On load, a mark is dropped when it is not a
+boolean, names a code that isn't listed, or already equals the `codes.md` value.
+
 ## Where each field comes from
 
 `scripts/build_data.py` builds `KS_DATA` from five Markdown files plus one hand-edited JSON file.
