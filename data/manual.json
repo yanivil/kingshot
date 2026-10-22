@@ -462,8 +462,8 @@
     "conflicts": [
       {
         "area": "All files",
-        "title": "As-of dates are placeholders",
-        "detail": "All five files carry as_of 2026-10-21 as a placeholder until the in-game read dates are confirmed. Values come from different reading times. Hero XP shows 62,107, 276,957, 37,037 and 26,957 on different heroes, which looks like account inventory read at different times."
+        "title": "Hero XP readings differ",
+        "detail": "Hero XP shows 62,107, 276,957, 37,037, 26,957, 2,020 and 51,686 on different hero screens, which looks like account inventory read at different times."
       },
       {
         "area": "Heroes · Olive",

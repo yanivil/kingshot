@@ -150,18 +150,19 @@ as_of: 2026-10-21
 ---
 ```
 
-That date becomes the `asOf` of every section built from the file. A missing or malformed date gives
-`null` (the page flags the section as undated) and a warning.
+It is now only a fallback. A section's `asOf` is the newest per-value upload date (the **Updated** table
+column and `_(YYYY-MM-DD)_` after other values) in it: for a hero, its roster row plus its
+"In-Depth Hero Profile" section; for every other section, the whole file. With no upload date, the
+front-matter date is used; with neither, `null` (the page flags the section as undated) and a warning.
 
-The per-value upload dates (the **Updated** table column and `_(YYYY-MM-DD)_` after other values) are
-removed before parsing and not used, so they can never be read as a value.
+The upload dates are removed before values are parsed, so they can never be read as a value.
 
 ### Field sources
 
 | `KS_DATA` | Source | Rule |
 |---|---|---|
 | `meta.schemaVersion` | script | Constant `1` |
-| `meta.snapshotAsOf` | front matter | Newest `as_of` of the five files |
+| `meta.snapshotAsOf` | upload dates | Newest date of the five files |
 | `meta.staleAfterDays`, `meta.previousSnapshot`, `meta.lockedHeroesNotInData` | `data/manual.json` | |
 | `governor` | profile.md, "Governor Identity" table | Governor Name (optional row, not stored today, so `name` is `null` and the header shows "Governor: Not recorded"), Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
 | `townCenter` | profile.md, "Town Center (TC)" section | Current Level, Citizens / Workforce Capacity, the Attack / Defense / Health table; perks from the heading `(6 / 7 Unlocked)`, checked against the perk table. `perks.namesVerified` comes from `data/manual.json` |
@@ -175,7 +176,7 @@ removed before parsing and not used, so they can never be read as a value.
 | `lineups.arena` | lineups.md | "… Squad Power"; `Frontline` rows → `front`, `Backline` rows → `back` |
 | `lineups.barricades` | lineups.md, "Barricade N" sections | `Level 10 (MAX)` → level 10, `maxed: true`; Combined Hero Power (`1.4M` → rounded) |
 | `lineups.guardStation` | not recorded | `null` |
-| `lineups.asOf` | front matter | Older of troops.md and lineups.md |
+| `lineups.asOf` | upload dates | Older of troops.md's and lineups.md's newest dates |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
 | `codes` | codes.md | `[x]` = redeemed, `[ ]` = not; every row of both tables; `expiredTotal` = number of expired rows |
 

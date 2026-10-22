@@ -60,8 +60,10 @@ Every value in `profile.md`, `hero.md`, `lineups.md`, `troops.md` and `codes.md`
 last uploaded: tables have an **Updated** column, and other values end with _(YYYY-MM-DD)_.
 When you change a value, set its date to the day of the upload. Unchanged rows keep their old date.
 
-These upload dates are separate from the `as_of:` line at the top of each file (the day the values were
-read in the game). The dashboard generator uses only `as_of:` and ignores the upload dates.
+The dashboard dates come from these upload dates: each hero shows the newest date in its roster row and
+profile, and every other section shows the newest date in its file. So updating a value's date is enough
+to move the dashboard date forward. The `as_of:` line at the top of each file is only the fallback for a
+section with no dates.
 
 ## Account Dashboard
 
@@ -91,8 +93,8 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
 
 ### Updating the data
 
-1. **Game data:** edit the `.md` file and set its `as_of:` line (front matter at the top) to the date you
-   read the values in the game. Keep the bold labels as they are: they are how the generator finds each value.
+1. **Game data:** edit the `.md` file and set the changed value's **Updated** date (or its _(YYYY-MM-DD)_)
+   to today. Keep the bold labels as they are: they are how the generator finds each value.
 2. **Judgments and rules** (recommendations, data-health notes, rules, features, Drill Camp, hero notes):
    edit `data/manual.json`. It can only add what the `.md` files don't provide. A recommendation that
    moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
