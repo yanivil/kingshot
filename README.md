@@ -96,8 +96,8 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
 2. **Judgments and rules** (recommendations, data-health notes, rules, features, Drill Camp, hero notes):
    edit `data/manual.json`. It can only add what the `.md` files don't provide. A recommendation that
    moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
-   state in `changes` (`where`, `before`, `after`). The dashboard shows the final line-up in the Top 5
-   and the full before → after on the Invest page.
+   state in `changes` (`where`, `before`, `after`, or `rows` with `Front` / `Back` groups for the Arena).
+   The dashboard shows the final line-up in the Top 5 and a Now / Suggested comparison on the Invest page.
 3. Merge to `main`. The workflow rebuilds and republishes the dashboard; warnings (e.g. a renamed label)
    appear as annotations on the Actions run.
 

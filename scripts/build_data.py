@@ -1375,13 +1375,33 @@ def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
         if steps is not None and not (isinstance(steps, list) and all(isinstance(s, str) for s in steps)):
             log.warn("data/manual.json", f"recommendation '{rid}': 'steps' must be a list of strings")
         for change in rec.get("changes") or []:
-            # Each change needs a label and two string lists; "before" may be
-            # empty (e.g. filling empty Drill Camp slots).
-            ok = (isinstance(change, dict) and isinstance(change.get("where"), str)
-                  and all(isinstance(change.get(k), list) and all(isinstance(x, str) for x in change[k])
-                          for k in ("before", "after")))
+            # Each change needs a label and either two string lists ("before"
+            # may be empty, e.g. filling empty Drill Camp slots) or "rows":
+            # labelled groups such as Arena Front / Back, each with the same.
+            ok = isinstance(change, dict) and isinstance(change.get("where"), str)
+            if ok and "rows" in change:
+                rows = change["rows"]
+                ok = isinstance(rows, list) and bool(rows) and all(
+                    isinstance(row, dict) and isinstance(row.get("label"), str) and _string_lists(row)
+                    for row in rows)
+            elif ok:
+                ok = _string_lists(change)
             if not ok:
-                log.warn("data/manual.json", f"recommendation '{rid}': each change needs 'where', 'before' and 'after'")
+                log.warn("data/manual.json",
+                         f"recommendation '{rid}': each change needs 'where' and 'before'/'after' (or 'rows')")
+
+
+def _string_lists(obj: Dict[str, Any]) -> bool:
+    """Return True when ``obj['before']`` and ``obj['after']`` are lists of strings.
+
+    Args:
+        obj: A change or one of its rows.
+
+    Returns:
+        Whether both keys hold lists of strings.
+    """
+    return all(isinstance(obj.get(k), list) and all(isinstance(x, str) for x in obj[k])
+               for k in ("before", "after"))
 
 
 def check_player_id(text: str, player_id: Optional[str]) -> None:

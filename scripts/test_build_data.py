@@ -224,13 +224,15 @@ class MergeAndOutputTests(unittest.TestCase):
         """Unknown heroes and malformed steps/changes warn; a valid entry does not."""
         ks = {"heroes": [{"name": "Quinn"}, {"name": "Amane"}], "recommendations": [
             {"id": "ok", "heroes": ["Quinn"], "steps": ["Do it."],
-             "changes": [{"where": "Camp", "before": [], "after": ["Amane"]}]},
+             "changes": [{"where": "Camp", "before": [], "after": ["Amane"]},
+                         {"where": "Arena", "rows": [{"label": "Back", "before": ["Amane"], "after": ["Quinn"]}]}]},
             {"id": "bad", "heroes": ["Quin"], "steps": "Do it.",
-             "changes": [{"where": "Arena", "after": ["Quinn"]}]},
+             "changes": [{"where": "Arena", "after": ["Quinn"]},
+                         {"where": "Arena", "rows": [{"label": "Back", "after": ["Quinn"]}]}]},
         ]}
         log = bd.BuildLog()
         bd.check_recommendations(ks, log)
-        self.assertEqual(len(log.warnings), 3)
+        self.assertEqual(len(log.warnings), 4)
         self.assertTrue(all("'bad'" in w for w in log.warnings))
 
 

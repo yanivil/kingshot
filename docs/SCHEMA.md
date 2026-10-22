@@ -118,7 +118,7 @@ rounded too instead of a precise-looking 11,400,000.
 | `evidence` | Strings citing the source data |
 | `note` | Optional caveat |
 | `steps` | Optional. Strings, one in-game action each; shown as a numbered list on Invest |
-| `changes` | Optional. `[{where, before: string[], after: string[], note?}]`: the end state of each line-up, gear set or slot group the move touches. Overview Top 5 shows `where: after` with new entries in bold; Invest shows before (leaving entries struck out) and after (joining entries highlighted). An empty `before` shows "Empty". The generator warns on a malformed entry or a hero name not in `hero.md` |
+| `changes` | Optional. `[{where, before: string[], after: string[], note?}]` or, for grouped line-ups such as the Arena, `[{where, rows: [{label, before, after}], note?}]` (e.g. `Front` / `Back`). The end state of each line-up, gear set or slot group the move touches. Overview Top 5 shows `where: after` (`where: Front … · Back …` for rows) with new entries in bold; Invest shows Now (leaving entries struck out) and Suggested (joining entries highlighted), as a Now / Suggested table when there are rows. An empty `before` shows "Empty". The generator warns on a malformed entry or a hero name not in `hero.md` |
 
 ### `features[]`
 `{name, unlock, state, hasData, source, asOf, note}`.

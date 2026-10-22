@@ -218,7 +218,12 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .chg{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--surface-2);display:flex;flex-direction:column;gap:4px;min-width:0}
 .chg-w{font-weight:700;font-size:14px}
 .chg-r{display:flex;flex-wrap:wrap;gap:2px 6px;font-size:14px;align-items:baseline}
-.chg-l{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);min-width:52px}
+.chg-l{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);min-width:78px}
+.chg-t{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}
+.chg-t th,.chg-t td{text-align:left;vertical-align:top;padding:4px 6px 4px 0;border-top:1px solid var(--line)}
+.chg-t thead th{border-top:0;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.chg-t th[scope=row]{width:52px;font-weight:600;color:var(--muted);font-size:13px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .tok{overflow-wrap:anywhere}
 .tok-out{text-decoration:line-through;color:var(--muted)}
 .tok-new{font-weight:700;color:var(--good)}
@@ -1077,17 +1082,25 @@ class Dashboard extends StateHost {
       var l = Array.isArray(list) && list.length ? list : ['Not recorded'];
       return l.map(function (c) { return { label: c === 'Not recorded' ? 'Confidence: Not recorded' : c, cls: 'conf conf-' + String(c).toLowerCase().replace(/\s+/g, '-') }; });
     };
-    /* Before/after rows: a name only in "before" is struck out (it leaves),
+    /* Now/suggested rows: a name only in "before" is struck out (it leaves),
        a name only in "after" is highlighted (it joins). An empty "before"
-       means the slots were empty. */
+       means the slots were empty. A change with "rows" (e.g. Arena Front /
+       Back) is shown as a table, one row per group, compared row by row. */
+    var rowVM = function (label, b, a) {
+      var before = Array.isArray(b) ? b : [], after = Array.isArray(a) ? a : [];
+      return {
+        label: label || '', beforeEmpty: before.length === 0,
+        before: before.map(function (t) { return { text: t, cls: after.indexOf(t) < 0 ? 'tok tok-out' : 'tok' }; }),
+        after: after.map(function (t) { return { text: t, isNew: before.indexOf(t) < 0, cls: before.indexOf(t) < 0 ? 'tok tok-new' : 'tok' }; })
+      };
+    };
     var chgVM = function (list) {
       return (Array.isArray(list) ? list : []).filter(function (c) { return c && c.where; }).map(function (c) {
-        var before = Array.isArray(c.before) ? c.before : [], after = Array.isArray(c.after) ? c.after : [];
-        return {
-          where: c.where, note: c.note || '', hasNote: !!c.note, beforeEmpty: before.length === 0,
-          before: before.map(function (t) { return { text: t, cls: after.indexOf(t) < 0 ? 'tok tok-out' : 'tok' }; }),
-          after: after.map(function (t) { return { text: t, isNew: before.indexOf(t) < 0, cls: before.indexOf(t) < 0 ? 'tok tok-new' : 'tok' }; })
-        };
+        var tabular = Array.isArray(c.rows) && c.rows.length > 0;
+        var rows = tabular
+          ? c.rows.map(function (r) { return rowVM(r && r.label, r && r.before, r && r.after); })
+          : [rowVM('', c.before, c.after)];
+        return { where: c.where, note: c.note || '', hasNote: !!c.note, tabular: tabular, rows: rows };
       });
     };
     var recVM = function (r, i) {
@@ -1450,8 +1463,12 @@ function tplOverview(v) {
       return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
         '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
         each(m.changes, function (c) {
+          // Final state only; grouped changes read "Front a, b · Back c, d".
           return '<span class="move-c">' + esc(c.where) + ': ' +
-            each(c.after, function (a, k) { return (k ? ', ' : '') + (a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); }) + '</span>';
+            each(c.rows, function (r, j) {
+              return (j ? ' · ' : '') + (r.label ? esc(r.label) + ' ' : '') +
+                each(r.after, function (a, k) { return (k ? ', ' : '') + (a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); });
+            }) + '</span>';
         }) +
         '<span class="move-m">' + tplConfs(m.confs) + '<span>Cost: ' + esc(m.cost) + '</span></span></span></button></li>';
     }) + '</ol>' +
@@ -1641,6 +1658,17 @@ function tplCity(v) {
 }
 
 /**
+ * Render a comma-separated token list for a now/suggested row.
+ * @param {Array<{text:string, cls:string}>} toks Tokens with their CSS class (struck out / highlighted).
+ * @param {boolean} empty True when the "now" side was empty slots.
+ * @returns {string}
+ */
+function tplToks(toks, empty) {
+  if (empty) return '<span class="tok tok-out">Empty</span>';
+  return each(toks, function (t, k) { return '<span class="' + esc(t.cls) + '">' + esc(t.text) + (k < toks.length - 1 ? ',' : '') + '</span> '; });
+}
+
+/**
  * View 7 — Invest: grouped, filterable recommendations.
  * @param {object} v
  * @returns {string}
@@ -1662,10 +1690,13 @@ function tplInvest(v) {
             when(r.hasSteps, '<ol class="rec-steps">' + each(r.steps, function (t) { return '<li>' + esc(t.text) + '</li>'; }) + '</ol>') +
             when(r.hasChanges, '<div class="chgs">' + each(r.changes, function (c) {
               return '<div class="chg"><span class="chg-w">' + esc(c.where) + '</span>' +
-                '<div class="chg-r"><span class="chg-l">Before</span>' +
-                (c.beforeEmpty ? '<span class="tok tok-out">Empty</span>' : each(c.before, function (t, k) { return '<span class="' + esc(t.cls) + '">' + esc(t.text) + (k < c.before.length - 1 ? ',' : '') + '</span>'; })) + '</div>' +
-                '<div class="chg-r"><span class="chg-l">After</span>' +
-                each(c.after, function (t, k) { return '<span class="' + esc(t.cls) + '">' + esc(t.text) + (k < c.after.length - 1 ? ',' : '') + '</span>'; }) + '</div>' +
+                (c.tabular
+                  ? '<table class="chg-t"><thead><tr><th scope="col"><span class="sr">Group</span></th><th scope="col">Now</th><th scope="col">Suggested</th></tr></thead><tbody>' +
+                    each(c.rows, function (row) {
+                      return '<tr><th scope="row">' + esc(row.label) + '</th><td>' + tplToks(row.before, row.beforeEmpty) + '</td><td>' + tplToks(row.after, false) + '</td></tr>';
+                    }) + '</tbody></table>'
+                  : '<div class="chg-r"><span class="chg-l">Now</span>' + tplToks(c.rows[0].before, c.rows[0].beforeEmpty) + '</div>' +
+                    '<div class="chg-r"><span class="chg-l">Suggested</span>' + tplToks(c.rows[0].after, false) + '</div>') +
                 when(c.hasNote, '<span class="foot">' + esc(c.note) + '</span>') + '</div>';
             }) + '</div>') +
             when(r.hasEvidence, '<ul class="rec-ev">' + each(r.evidence, function (e) { return '<li>' + esc(e.text) + '</li>'; }) + '</ul>') +
