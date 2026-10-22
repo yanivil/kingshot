@@ -35,25 +35,25 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-21)_
 * **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-21)_
 * **Star Tier:** **3-Star (Tier 3)** (Shards: 17 / 40 to next promotion) _(2026-10-22)_
-* **Total Hero Power:** **564,200** _(2026-10-21)_
+* **Total Hero Power:** **567,410** _(2026-10-22)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-21)_
 * **Escort Guards:** **8 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **131,460** _(2026-10-21)_
+* **Total Equipped Gear Power:** **131,460** (as of 2026-10-21; a gear piece has been upgraded since, see the 2026-10-22 stats) _(2026-10-21)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
 | **Conquest (Hero)** | **Hero Attack** | **1,472** | Core attack scaling for exploration skills and auto-attacks | 2026-10-21 |
-| | **Hero Defense** | **1,490** | Damage mitigation against incoming enemy hero attacks | 2026-10-21 |
-| | **Hero Health** | **14,817** | Total health pool in Arena and Campaign stages | 2026-10-21 |
+| | **Hero Defense** | **1,497** | Damage mitigation against incoming enemy hero attacks | 2026-10-22 |
+| | **Hero Health** | **14,853** | Total health pool in Arena and Campaign stages | 2026-10-22 |
 | **Conquest (Escort)** | **Escort Attack** | **490** | Attack value of her 8 escort bodyguards | 2026-10-21 |
-| | **Escort Defense** | **496** | Defense value of her 8 escort bodyguards | 2026-10-21 |
-| | **Escort Health** | **4,939** | Health pool of escort bodyguards | 2026-10-21 |
+| | **Escort Defense** | **498** | Defense value of her 8 escort bodyguards | 2026-10-22 |
+| | **Escort Health** | **4,951** | Health pool of escort bodyguards | 2026-10-22 |
 | **Expedition (March)** | **Cavalry Attack** | **+114.26%** | Massive offensive bonus applied to all deployed Cavalry | 2026-10-21 |
 | | **Cavalry Defense**| **+114.26%** | High armor rating reducing cavalry casualties in field battles | 2026-10-21 |
 | | **Cavalry Lethality**| **+22.18%** | Direct bonus to enemy casualty conversion (from gear) | 2026-10-21 |
-| | **Cavalry Health** | **+23.85%** | Expanded squad durability in open-field clashes (from gear) | 2026-10-21 |
+| | **Cavalry Health** | **+24.69%** | Expanded squad durability in open-field clashes (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview
 

@@ -57,6 +57,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   8 escorts, shards 91 / 100, new hero and escort stats, Archer Health +20.74%, chest piece +17, 22 / 50
   manuals, and a new star-promotion preview section. The chest piece's power and conquest stats (and so the
   gear power total, 117,610) are inferred from the same item on Diana. Roster level updated to Lv. 52.
+- `hero.md`: Jabel's power 567,410 and new stats from 2026-10-22 (Hero Defense 1,497, Hero Health 14,853,
+  Escort Defense 498, Escort Health 4,951, Cavalry Health +24.69%). A gear piece was upgraded, but the
+  gear screen wasn't shared, so her gear rows and gear power (131,460) are still the 2026-10-21 values.
 - From Diana's hero screens and the Drill Camp screen of 2026-10-22:
   - `hero.md`: Diana's XP counter 2,020 / 130,000 and 22 / 50 manuals; everything else re-checked, unchanged.
   - `profile.md`: gems 21,450 (gem counter on the Drill Camp screen).
