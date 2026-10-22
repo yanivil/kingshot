@@ -128,7 +128,7 @@ computes it from `unlock` and labels it "(by rule)", or shows "Unknown".
 
 ### `dataHealth`
 `conflicts[{area, title, detail}]` and `missing[{area, title}]`. The page adds computed items:
-lineup power vs. sum of hero powers (>1% difference), Drill Camp level vs. hero level, per-field gaps
+lineup power vs. sum of hero powers (>1% difference; for a rounded figure such as "1.3M", more than half its last digit, i.e. 50,000), Drill Camp level vs. hero level, per-field gaps
 across the roster, and stale or undated sections.
 
 ### `codes`

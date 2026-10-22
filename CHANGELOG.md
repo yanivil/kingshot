@@ -93,6 +93,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Move 1 now also replaces Fahd with Gordon in the Arena defense front: Fahd is the weakest hero there, and the
   −12% skill he was picked for is an Expedition (march) skill. Move 7 now saves manuals for Gordon's Emergency
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
+- Line-ups as saved in game on 2026-10-22:
+  - `lineups.md`: Arena attack back row has Quinn instead of Amane. Its power is not recorded yet.
+  - Arena defense: front row Howard and Gordon, back row Jabel, Diana and Quinn; power 2,417,730.
+  - Barricade 1: Howard, Jabel, Quinn (1.5M). Barricade 2: Gordon, Chenko, Diana (1.3M).
+  - `Be`: Diana, Gordon, Forrest (9,195,741). `Att`: Howard, Jabel, Quinn (10,767,581).
+  - `troops.md`: the two marches' troops and power. Tier VII counts are now 31,858 / 33,477 / 33,395 (98,730),
+    plus 150 Veteran Cavalry and 150 Veteran Archers noted. March capacity is 77,785 (`Att`) or 75,960 (`Be`).
+  - `profile.md` and `troops.md`: account power 11,537,653 (exact). `profile.md`: bread 104.5M.
+  - `hero.md`: the roster's assignments for Jabel, Quinn, Gordon, Fahd and Amane.
+  - `data/manual.json`: the applied moves (Quinn for Amane, Gordon for Fahd, Gordon for Jabel in `Be`) and
+    Fahd's gear move (he is in no line-up now) are removed; 4 moves remain.
+- `docs/index.html`: a rounded line-up power ("1.3M") is flagged on Data health only when it is off by more
+  than its rounding (50,000), not by more than 1%.
 - `data/manual.json`: the Drill Camp rule now says which parts are in-game text (auto-level to the lowest
   instructor, Level Resets refund all Hero XP; 22 Oct screens) and which part is still community (a hero
   removed from the camp returns to its own level).
