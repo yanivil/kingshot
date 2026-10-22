@@ -213,6 +213,17 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .rec-what{font-weight:700;font-size:16.5px;line-height:1.35}
 .rec-heroes{display:flex;flex-wrap:wrap;gap:4px 10px}
 .rec-ev{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted)}
+.rec-steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px;font-size:14.5px}
+.chgs{display:flex;flex-direction:column;gap:8px}
+.chg{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--surface-2);display:flex;flex-direction:column;gap:4px;min-width:0}
+.chg-w{font-weight:700;font-size:14px}
+.chg-r{display:flex;flex-wrap:wrap;gap:2px 6px;font-size:14px;align-items:baseline}
+.chg-l{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);min-width:52px}
+.tok{overflow-wrap:anywhere}
+.tok-out{text-decoration:line-through;color:var(--muted)}
+.tok-new{font-weight:700;color:var(--good)}
+.move-c{font-size:13.5px;color:var(--ink);overflow-wrap:anywhere}
+.move-c b{color:var(--good)}
 .grp{display:flex;flex-direction:column;gap:10px}
 .grp-h{display:flex;align-items:baseline;gap:10px}
 .grp-h h3{font-size:22px;font-weight:700}
@@ -1066,17 +1077,35 @@ class Dashboard extends StateHost {
       var l = Array.isArray(list) && list.length ? list : ['Not recorded'];
       return l.map(function (c) { return { label: c === 'Not recorded' ? 'Confidence: Not recorded' : c, cls: 'conf conf-' + String(c).toLowerCase().replace(/\s+/g, '-') }; });
     };
+    /* Before/after rows: a name only in "before" is struck out (it leaves),
+       a name only in "after" is highlighted (it joins). An empty "before"
+       means the slots were empty. */
+    var chgVM = function (list) {
+      return (Array.isArray(list) ? list : []).filter(function (c) { return c && c.where; }).map(function (c) {
+        var before = Array.isArray(c.before) ? c.before : [], after = Array.isArray(c.after) ? c.after : [];
+        return {
+          where: c.where, note: c.note || '', hasNote: !!c.note, beforeEmpty: before.length === 0,
+          before: before.map(function (t) { return { text: t, cls: after.indexOf(t) < 0 ? 'tok tok-out' : 'tok' }; }),
+          after: after.map(function (t) { return { text: t, isNew: before.indexOf(t) < 0, cls: before.indexOf(t) < 0 ? 'tok tok-new' : 'tok' }; })
+        };
+      });
+    };
     var recVM = function (r, i) {
       var hs = Array.isArray(r.heroes) ? r.heroes : [];
+      var chg = chgVM(r.changes);
       return { rank: i + 1, what: r.what || NR, why: r.why || NR, cost: r.cost || 'Not known',
                confs: confVM(r.confidence), type: r.type || 'Other',
                heroes: hs.map(function (n) { return { name: n, open: openHero(n) }; }), noHeroes: hs.length === 0,
                evidence: (r.evidence || []).map(function (e) { return { text: e }; }), hasEvidence: (r.evidence || []).length > 0,
-               note: r.note || '', hasNote: !!r.note };
+               note: r.note || '', hasNote: !!r.note,
+               steps: (Array.isArray(r.steps) ? r.steps : []).map(function (t) { return { text: t }; }),
+               hasSteps: Array.isArray(r.steps) && r.steps.length > 0,
+               changes: chg, hasChanges: chg.length > 0 };
     };
     var ranked = recs.map(recVM);
     var moves = ranked.slice(0, 5).map(function (r) {
-      return { n: r.rank, what: r.what, confs: r.confs, cost: r.cost, go: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); } };
+      return { n: r.rank, what: r.what, confs: r.confs, cost: r.cost, changes: r.changes,
+               go: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); } };
     });
     var types = []; recs.forEach(function (r) { var t = r.type || 'Other'; if (types.indexOf(t) < 0) types.push(t); });
     var recHeroes = []; recs.forEach(function (r) { (r.heroes || []).forEach(function (n) { if (recHeroes.indexOf(n) < 0) recHeroes.push(n); }); });
@@ -1420,6 +1449,10 @@ function tplOverview(v) {
     '<ol class="moves">' + each(v.moves, function (m) {
       return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
         '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
+        each(m.changes, function (c) {
+          return '<span class="move-c">' + esc(c.where) + ': ' +
+            each(c.after, function (a, k) { return (k ? ', ' : '') + (a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); }) + '</span>';
+        }) +
         '<span class="move-m">' + tplConfs(m.confs) + '<span>Cost: ' + esc(m.cost) + '</span></span></span></button></li>';
     }) + '</ol>' +
     when(v.movesEmpty, '<p class="empty">No recommendations recorded.</p>') +
@@ -1626,6 +1659,15 @@ function tplInvest(v) {
             '<dt>Heroes</dt><dd><span class="rec-heroes">' +
             each(r.heroes, function (h) { return '<button class="linkish"' + on(h.open, 'rec:' + r.rank + ':' + h.name) + '>' + esc(h.name) + '</button>'; }) +
             when(r.noHeroes, '<span class="mini">None named</span>') + '</span></dd></dl>' +
+            when(r.hasSteps, '<ol class="rec-steps">' + each(r.steps, function (t) { return '<li>' + esc(t.text) + '</li>'; }) + '</ol>') +
+            when(r.hasChanges, '<div class="chgs">' + each(r.changes, function (c) {
+              return '<div class="chg"><span class="chg-w">' + esc(c.where) + '</span>' +
+                '<div class="chg-r"><span class="chg-l">Before</span>' +
+                (c.beforeEmpty ? '<span class="tok tok-out">Empty</span>' : each(c.before, function (t, k) { return '<span class="' + esc(t.cls) + '">' + esc(t.text) + (k < c.before.length - 1 ? ',' : '') + '</span>'; })) + '</div>' +
+                '<div class="chg-r"><span class="chg-l">After</span>' +
+                each(c.after, function (t, k) { return '<span class="' + esc(t.cls) + '">' + esc(t.text) + (k < c.after.length - 1 ? ',' : '') + '</span>'; }) + '</div>' +
+                when(c.hasNote, '<span class="foot">' + esc(c.note) + '</span>') + '</div>';
+            }) + '</div>') +
             when(r.hasEvidence, '<ul class="rec-ev">' + each(r.evidence, function (e) { return '<li>' + esc(e.text) + '</li>'; }) + '</ul>') +
             when(r.hasNote, '<p class="foot">' + esc(r.note) + '</p>') +
             '</section>';

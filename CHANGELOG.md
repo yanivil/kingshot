@@ -73,6 +73,24 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Archer Lethality +20.74%, 25 / 50 manuals. Windbreaker Boots +16 → +17 (24,010 power, ATK +97 / HP +301,
   escort ATK +32 / HP +100, +8.38% Archer Lethality). The chest piece values, inferred until now, are confirmed
   by its own screen; gear power is 118,220. The boots upgrade accounts exactly for the stat and power changes.
+- Recommendations now say what to do, not only what is wrong. Each move names the replacement and shows the
+  end state:
+  - `data/manual.json`: the seven moves are rewritten and re-ranked (free swaps first):
+    1. Quinn replaces Amane in Arena attack, Arena defense, Barricade 1 and Att.
+    2. Gordon replaces Jabel in Be.
+    3. Seth's Epic gloves and boots go to Howard.
+    4. Drill Camp: who to slot and reset, and where the XP goes.
+    5. Fahd's two +0 pieces go to +12.
+    6. Quinn's 4★ is first in the promotion order.
+    7. Save manuals for Fahd's Eagle Wings.
+  - New optional `steps` and `changes` fields (`docs/SCHEMA.md`). `docs/index.html` shows the final
+    line-up under each Top 5 move and a before → after block plus numbered steps on the Invest page.
+  - `scripts/build_data.py` warns when a recommendation names an unknown hero or has a malformed
+    `steps`/`changes` entry (new test).
+- `data/manual.json`: the Drill Camp rule now says which parts are in-game text (auto-level to the lowest
+  instructor, Level Resets refund all Hero XP; 22 Oct screens) and which part is still community (a hero
+  removed from the camp returns to its own level).
+- `profile.md`: gems 21,550 (Drill Camp screen, 2026-10-22).
 - `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.

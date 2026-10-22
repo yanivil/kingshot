@@ -1345,9 +1345,43 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
             ks[key] = []
     if ks["dataHealth"] is None:
         ks["dataHealth"] = {"conflicts": [], "missing": []}
+    check_recommendations(ks, log)
 
     check_player_id(json.dumps(ks, ensure_ascii=False), profile["playerId"])
     return ks, profile["playerId"]
+
+
+def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
+    """Warn about recommendations the page would show wrongly.
+
+    Why: recommendations are hand-written in manual.json, so a misspelled hero
+    name or a malformed ``changes`` entry would otherwise reach the page
+    silently (an unclickable hero, an empty before/after row).
+
+    Args:
+        ks: KS_DATA after manual.json was applied.
+        log: Warning collector.
+
+    Returns:
+        None.
+    """
+    known = {h["name"] for h in ks["heroes"]}
+    for rec in ks["recommendations"]:
+        rid = rec.get("id") or rec.get("what") or "?"
+        for name in rec.get("heroes") or []:
+            if name not in known:
+                log.warn("data/manual.json", f"recommendation '{rid}': hero '{name}' is not in hero.md")
+        steps = rec.get("steps")
+        if steps is not None and not (isinstance(steps, list) and all(isinstance(s, str) for s in steps)):
+            log.warn("data/manual.json", f"recommendation '{rid}': 'steps' must be a list of strings")
+        for change in rec.get("changes") or []:
+            # Each change needs a label and two string lists; "before" may be
+            # empty (e.g. filling empty Drill Camp slots).
+            ok = (isinstance(change, dict) and isinstance(change.get("where"), str)
+                  and all(isinstance(change.get(k), list) and all(isinstance(x, str) for x in change[k])
+                          for k in ("before", "after")))
+            if not ok:
+                log.warn("data/manual.json", f"recommendation '{rid}': each change needs 'where', 'before' and 'after'")
 
 
 def check_player_id(text: str, player_id: Optional[str]) -> None:

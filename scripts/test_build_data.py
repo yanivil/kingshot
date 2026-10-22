@@ -220,6 +220,19 @@ class MergeAndOutputTests(unittest.TestCase):
         with self.assertRaises(bd.BuildError):
             bd.check_player_id('{"x": "123456789"}', "123456789")
 
+    def test_recommendation_checks(self) -> None:
+        """Unknown heroes and malformed steps/changes warn; a valid entry does not."""
+        ks = {"heroes": [{"name": "Quinn"}, {"name": "Amane"}], "recommendations": [
+            {"id": "ok", "heroes": ["Quinn"], "steps": ["Do it."],
+             "changes": [{"where": "Camp", "before": [], "after": ["Amane"]}]},
+            {"id": "bad", "heroes": ["Quin"], "steps": "Do it.",
+             "changes": [{"where": "Arena", "after": ["Quinn"]}]},
+        ]}
+        log = bd.BuildLog()
+        bd.check_recommendations(ks, log)
+        self.assertEqual(len(log.warnings), 3)
+        self.assertTrue(all("'bad'" in w for w in log.warnings))
+
 
 class RepositoryTests(unittest.TestCase):
     """End-to-end run on the real files: structure and privacy, not values."""
