@@ -68,6 +68,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `data/manual.json`: Drill Camp instructors are now Jabel 54, Saul 50, Chenko 49 (identified by
     appearance), Diana 49 and Quinn 52; 7 open slots, none filled; slot 8 needs Town Center 21. The
     drill-fill recommendation, the Drill Camp feature date and the stale "Drill Camp" missing item are updated.
+- `hero.md`: Quinn from his hero, skill and gear screens of 2026-10-22 (later the same day): power 486,220,
+  shards 95 / 100, XP counter 51,686 / 160,000, Hero Attack 1,558, Hero Health 9,628, Escort Health 3,208,
+  Archer Lethality +20.74%, 25 / 50 manuals. Windbreaker Boots +16 → +17 (24,010 power, ATK +97 / HP +301,
+  escort ATK +32 / HP +100, +8.38% Archer Lethality). The chest piece values, inferred until now, are confirmed
+  by its own screen; gear power is 118,220. The boots upgrade accounts exactly for the stat and power changes.
 - `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
