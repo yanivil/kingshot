@@ -201,41 +201,45 @@
     },
     {
       "id": "near-promo",
-      "priority": 2,
+      "priority": 3,
       "type": "Promotion",
-      "what": "Promote Quinn to 4★ first: 3 shards to go",
-      "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Helga 5 to T1, Saul 14 to 2★. On 22 Oct Howard and Forrest reached T4 and Edwin T3.",
+      "what": "Quinn is 4★. Next promotions: Helga 5 shards, Seth 11, Saul 14, Jabel 21",
+      "why": "Quinn reached 4★ on 22 Oct: power 490,460 → 528,735 (+37,360 from the promotion, +915 from his Faceplate going to +17); his next tier needs 99 more shards. The closest promotions now are Helga (5 to Tier 1), Seth (11 to Tier 4), Saul (14 to 2★) and Jabel (21 to Tier 4). Helga, Seth and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat.",
       "steps": [
-        "Quinn: 3 shards to 4★ (Redeem shows 0 spare).",
-        "Later: Helga 5 to T1, Saul 14 to 2★ (unlocks 2 skills)."
+        "Helga: 5 shards to 1★ Tier 1.",
+        "Seth: 11 shards to 3★ Tier 4 (gathering hero).",
+        "Saul: 14 shards to 2★ (unlocks 2 skills).",
+        "Jabel: 21 shards to 3★ Tier 4 (in every combat lineup)."
       ],
       "evidence": [
-        "hero.md shard counts, Quinn's promotion screen of 22 Oct (97 / 100)"
+        "hero.md shard counts (22 Oct)",
+        "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0"
       ],
-      "cost": "4–14 shards each; shard sources not recorded",
+      "cost": "5–21 shards each; shard sources not recorded",
       "confidence": [
         "Verified"
       ],
       "heroes": [
-        "Quinn",
         "Helga",
-        "Saul"
+        "Seth",
+        "Saul",
+        "Jabel"
       ],
       "note": "Shard counts are verified; where to get shards is not recorded."
     },
     {
       "id": "gordon-skill",
-      "priority": 3,
+      "priority": 2,
       "type": "Skills",
-      "what": "Save 3 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
-      "why": "The latest skill screen (Chenko's, later on 22 Oct) shows 27 Epic Expedition Manuals, up from 25 on Gordon's screen earlier that day. His Emergency Snack (Lv 2) needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), the cheapest upgrade among his skills; he holds the Arena defense front, Barricade 2 and the Be march.",
+      "what": "Save 2 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
+      "why": "The latest skill screen (Quinn's, late on 22 Oct) shows 28 Epic Expedition Manuals, up from 25 on Gordon's screen earlier that day and 27 on Chenko's. His Emergency Snack (Lv 2) needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), the cheapest upgrade among his skills; he holds the Arena defense front, Barricade 2 and the Be march.",
       "steps": [
-        "Collect 3 more Epic Expedition Manuals (27 of 30).",
+        "Collect 2 more Epic Expedition Manuals (28 of 30).",
         "Gordon → Skills → Emergency Snack → Upgrade."
       ],
       "evidence": [
         "hero.md: Gordon's Emergency Snack Lv 2, 30 manuals to Lv 3 (22 Oct)",
-        "hero.md: Chenko's exploration skills show 27/50 Epic Expedition Manuals (22 Oct, the latest reading)"
+        "hero.md: Quinn's exploration skills show 28/50 Epic Expedition Manuals (22 Oct, the latest reading)"
       ],
       "cost": "30 Epic Expedition Manuals",
       "confidence": [
@@ -244,7 +248,7 @@
       "heroes": [
         "Gordon"
       ],
-      "note": "Inferred: the 27 manuals on Chenko's screen are the same shared stock that Gordon's exploration skills use (both are Epic heroes' exploration skills). Check the count on Gordon's Emergency Snack screen before upgrading."
+      "note": "Inferred: the 28 manuals on Quinn's screen are the same shared stock that Gordon's exploration skills use (both are Epic heroes' exploration skills). Check the count on Gordon's Emergency Snack screen before upgrading."
     }
   ],
   "features": [
