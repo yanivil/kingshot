@@ -126,7 +126,7 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 * **Total Hero Power:** **477,020** _(2026-10-22)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
 * **Escort Guards:** **8 Escorts** _(2026-10-22)_
-* **Total Equipped Gear Power:** Not recorded (the chest piece is now +19; its power wasn't shown) _(2026-10-22)_
+* **Total Equipped Gear Power:** **127,900** _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
@@ -167,7 +167,7 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-10-22 |
 | **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +630 | DEF: +28 / HP: +210 | +8.80% Infantry Health | 2026-10-22 |
-| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+19** | Not shown | Not shown | Not shown | +12.99% Infantry Health (from the Hero Stats total) | 2026-10-22 |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+19** | 37,890 | DEF: +124 / HP: +931 | DEF: +41 / HP: +310 | +12.99% Infantry Health | 2026-10-22 |
 | **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+19** | 25,260 | ATK: +63 / HP: +621 | ATK: +21 / HP: +207 | +8.66% Infantry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
@@ -175,7 +175,10 @@ All 4 pieces match the native **Infantry** troop class synergy:
   * **Infantry Lethality:** **+21.86%** (+13.20% Helm + 8.66% Greaves) _(2026-10-21)_
   * **Infantry Health:** **+21.79%** (+8.80% Gloves + 12.99% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero / Escort Attributes:** Not recorded since the chest piece went to +19 _(2026-10-22)_
+  * **Hero Attributes:** ATK +159 / DEF +208 / HP +3,127 (sum of the 4 pieces) _(2026-10-22)_
+  * **Escort Attributes:** ATK +53 / DEF +69 / HP +1,042 (sum of the 4 pieces) _(2026-10-22)_
+
+Gear power is 38,850 + 25,900 + 37,890 + 25,260 = 127,900. _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 

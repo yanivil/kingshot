@@ -181,6 +181,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
+- `hero.md`: Howard's Praetorian's Shroud (+19) read from its gear screen: 37,890 power, DEF +124 / HP +931,
+  escort DEF +41 / HP +310. His gear power is now 127,900 (was "Not recorded"), and the hero / escort stat sums
+  from gear are filled in. Seven other gear screens from the same upload match the recorded values (2026-10-22).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
