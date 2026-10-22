@@ -202,6 +202,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Forrest's +12 pieces. Howard's chest numbers (37,890; DEF +124 / HP +931) are in the evidence, each hero's gear
   power and troop bonuses before and after are shown, and the note says which parts are Verified, Inferred and
   Unverified. Quinn's promotion and Gordon's skill moves are unchanged (no new shard or manual data).
+- `data/manual.json`: removed the "Hero XP readings differ" data-health conflict. All six readings it quoted were
+  replaced by the 22 Oct Lv 54 hero updates, and no data file holds a Hero XP reading any more.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
