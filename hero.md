@@ -13,7 +13,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
 | **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-22 |
-| **Saul** | SSR / Mythic | Archer | Lv. 50 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) | 2026-10-21 |
+| **Saul** | SSR / Mythic | Archer | Lv. 54 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) | 2026-10-22 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-21 |
 | **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 4) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-22 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-22 |
@@ -1028,42 +1028,42 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 * **Hero Name:** Saul _(2026-10-21)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 50** (XP: 62,107 / 140,000 to Lv. 51) _(2026-10-21)_
-* **Star Tier:** **1-Star (Tier 5)** (Shards: 1 / 15 to 2-Star promotion) _(2026-10-21)_
-* **Total Hero Power:** **274,150** *(+19,950 increase)* _(2026-10-21)_
-* **Troop Capacity Boost:** **+10,685 Troops** _(2026-10-21)_
-* **Escort Guards:** **8 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **89,250** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-22)_
+* **Star Tier:** **1-Star (Tier 5)** (Shards: 1 / 15 to 2-Star promotion) _(2026-10-22)_
+* **Total Hero Power:** **284,550** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** **89,250** _(2026-10-22)_
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Strategic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,029** | Ballista bolt and projectile strike scaling | 2026-10-21 |
-| | **Hero Defense** | **852** | Base defensive rating | 2026-10-21 |
-| | **Hero Health** | **6,376** | Engineer combat health pool | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **343** | Attack output of his 8 escort guards | 2026-10-21 |
-| | **Escort Defense** | **284** | Defense rating of his escort guards | 2026-10-21 |
-| | **Escort Health** | **2,125** | Health pool of escort guards | 2026-10-21 |
-| **Expedition (March)** | **Archer Attack** | **+57.68%** | Army-wide bonus to deployed Archers | 2026-10-21 |
-| | **Archer Defense** | **+57.68%** | Durability bonus for archer units | 2026-10-21 |
-| | **Archer Lethality**| **+16.48%** | Casualty conversion rate for archers (from gear) | 2026-10-21 |
-| | **Archer Health** | **+16.40%** | Durability pool for deployed archer squads (from gear) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **1,058** | Ballista bolt and projectile strike scaling | 2026-10-22 |
+| | **Hero Defense** | **876** | Base defensive rating | 2026-10-22 |
+| | **Hero Health** | **6,556** | Engineer combat health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **352** | Attack output of his 8 escort guards | 2026-10-22 |
+| | **Escort Defense** | **292** | Defense rating of his escort guards | 2026-10-22 |
+| | **Escort Health** | **2,185** | Health pool of escort guards | 2026-10-22 |
+| **Expedition (March)** | **Archer Attack** | **+57.68%** | Army-wide bonus to deployed Archers | 2026-10-22 |
+| | **Archer Defense** | **+57.68%** | Durability bonus for archer units | 2026-10-22 |
+| | **Archer Lethality**| **+16.48%** | Casualty conversion rate for archers (from gear) | 2026-10-22 |
+| | **Archer Health** | **+16.40%** | Durability pool for deployed archer squads (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (1-Star Tier 5 ➔ 2-Star)
 
-Current Status: **1 / 15 Shards** (needs **14 shards** for 2-Star promotion). _(2026-10-21)_
+Current Status: **1 / 15 Shards** (needs **14 shards** for 2-Star promotion). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 84,400 | **+15,400** | 99,800 | 2026-10-21 |
-| **Hero Attack** | 444 | **+66** | 510 | 2026-10-21 |
-| **Hero Defense** | 366 | **+54** | 420 | 2026-10-21 |
-| **Hero Health** | 2,745 | **+405** | 3,150 | 2026-10-21 |
-| **Escort Attack** | 148 | **+22** | 170 | 2026-10-21 |
-| **Escort Defense** | 122 | **+18** | 140 | 2026-10-21 |
-| **Escort Health** | 915 | **+135** | 1,050 | 2026-10-21 |
-| **New Skills Unlocked** | — | — | **Superior Techniques Lv. 1** & **Positional Battler Lv. 1** | 2026-10-21 |
+| **Base Hero Power** | 84,400 | **+15,400** | 99,800 | 2026-10-22 |
+| **Hero Attack** | 444 | **+66** | 510 | 2026-10-22 |
+| **Hero Defense** | 366 | **+54** | 420 | 2026-10-22 |
+| **Hero Health** | 2,745 | **+405** | 3,150 | 2026-10-22 |
+| **Escort Attack** | 148 | **+22** | 170 | 2026-10-22 |
+| **Escort Defense** | 122 | **+18** | 140 | 2026-10-22 |
+| **Escort Health** | 915 | **+135** | 1,050 | 2026-10-22 |
+| **New Skills Unlocked** | — | — | **Superior Techniques Lv. 1** & **Positional Battler Lv. 1** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 
