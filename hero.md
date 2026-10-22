@@ -279,24 +279,24 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 * **Class & Role:** Cavalry Combat Specialist / Support Bruiser (Crossed Swords / Horse) _(2026-10-21)_
 * **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
 * **Star Tier:** **3-Star (Tier 4)** (Shards: 10 / 40 to Tier 5 promotion) _(2026-10-22)_
-* **Total Hero Power:** **435,470** _(2026-10-22)_
+* **Total Hero Power:** **438,560** (+2,520 from Emergency Snack Lv. 3, then +570 from the Battle Boots going to +13) _(2026-10-22)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
 * **Escort Guards:** **8 Escorts** _(2026-10-22)_
-* **Total Equipped Gear Power:** **88,870** _(2026-10-22)_
+* **Total Equipped Gear Power:** **89,440** _(2026-10-22)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,198** | Balanced attack scaling for basic strikes and heal scaling | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **1,199** | Balanced attack scaling for basic strikes and heal scaling | 2026-10-22 |
 | | **Hero Defense** | **1,462** | Solid durability resisting enemy counter-attacks | 2026-10-22 |
-| | **Hero Health** | **12,000** | Bruiser health pool bolstered by self-healing | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **398** | Attack output of his 8 bodyguard cavalrymen | 2026-10-22 |
+| | **Hero Health** | **12,006** | Bruiser health pool bolstered by self-healing | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **399** | Attack output of his 8 bodyguard cavalrymen | 2026-10-22 |
 | | **Escort Defense** | **487** | Defense rating of his escort squad | 2026-10-22 |
-| | **Escort Health** | **4,000** | Health pool of escort guards | 2026-10-22 |
+| | **Escort Health** | **4,002** | Health pool of escort guards | 2026-10-22 |
 | **Expedition (March)** | **Cavalry Attack** | **+84.49%** | Army-wide bonus to all deployed Cavalry | 2026-10-22 |
 | | **Cavalry Defense**| **+84.49%** | High armor multiplier for cavalry marches | 2026-10-22 |
-| | **Cavalry Lethality**| **+15.78%** | Casualty conversion rate for cavalry (from gear) | 2026-10-22 |
+| | **Cavalry Lethality**| **+15.92%** | Casualty conversion rate for cavalry (from gear) | 2026-10-22 |
 | | **Cavalry Health** | **+16.06%** | Durability pool for cavalry forces (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
@@ -324,23 +324,26 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 | **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+15** | 22,800 | ATK: +78 / HP: +390 | ATK: +26 / HP: +130 | +8.10% Cavalry Lethality | 2026-10-22 |
 | **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +390 | DEF: +26 / HP: +130 | +8.10% Cavalry Health | 2026-10-22 |
 | **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **+14** | 22,210 | DEF: +76 / HP: +384 | DEF: +25 / HP: +128 | +7.96% Cavalry Health | 2026-10-22 |
-| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality | 2026-10-22 |
+| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+13** | 21,630 | ATK: +75 / HP: +378 | ATK: +25 / HP: +126 | +7.82% Cavalry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Cavalry Lethality:** **+15.78%** (+8.10% Armet + 7.68% Boots) _(2026-10-22)_
+  * **Cavalry Lethality:** **+15.92%** (+8.10% Armet + 7.82% Boots) _(2026-10-22)_
   * **Cavalry Health:** **+16.06%** (+8.10% Gauntlets + 7.96% Breastplate) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +152 Attack | +154 Defense | +1,536 Health _(2026-10-22)_
-  * **Escort Squad Attributes:** +50 Attack | +51 Defense | +512 Health _(2026-10-22)_
+  * **Hero Attributes:** +153 Attack | +154 Defense | +1,542 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +51 Attack | +51 Defense | +514 Health _(2026-10-22)_
+
+The Battle Boots went from +12 to +13 on 2026-10-22; their Gear Enhancement screen shows 20 / 75 toward +14 and "No enhancement
+materials/gear available". _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **BBQ Feast** | Active (Top) | **Lv. 3** | Restores Health by **Attack * 240% to all troops** and grants **+6% Attack for 4s**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 260% Heal / +6.5% ATK) | 2026-10-22 |
+| **BBQ Feast** | Active (Top) | **Lv. 3** | Restores Health by **Attack * 240% to all troops** and grants **+6% Attack for 4s**. | **In Progress** (5/50 Epic Expedition Manuals to Lv. 4: 260% Heal / +6.5% ATK) | 2026-10-22 |
 | **Culinary Chaos** | Passive (Mid) | **Lv. 3** | Chaotic kitchen life **reduces personal damage taken by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-22 |
-| **Emergency Snack** | Passive (Bot) | **Lv. 2** | Regular snacking **restores Health equal to Attack * 55% every 5s**. | **In Progress** (25/30 Epic Expedition Manuals to Lv. 3: 60% Heal) | 2026-10-22 |
+| **Emergency Snack** | Passive (Bot) | **Lv. 3** | Regular snacking **restores Health equal to Attack * 60% every 5s** (60% from the Lv. 2 screen's upgrade preview). | **In Progress** (upgraded from Lv. 2 on 22 Oct; the cost to Lv. 4 was not shown) | 2026-10-22 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
