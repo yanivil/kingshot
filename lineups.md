@@ -20,7 +20,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
 | **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) | 2026-10-22 |
-| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T4) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks | 2026-10-21 |
+| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks | 2026-10-22 |
 | **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Deep flanking penetration targeting enemy backline squishies | 2026-10-21 |
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure | 2026-10-22 |
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-22 |
@@ -63,7 +63,7 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
 | **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T4) | Team healing and garrison endurance | 2026-10-22 |
-| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 49 | 3-Star (T4) | Rapid cavalry counter-strikes | 2026-10-21 |
+| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | Rapid cavalry counter-strikes | 2026-10-22 |
 | **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | Defensive ranged archery and splash suppressive fire | 2026-10-22 |
 
 * **Total City Wall Defense Hero Power:** 2.8M (1.5M + 1.3M) _(2026-10-22)_
