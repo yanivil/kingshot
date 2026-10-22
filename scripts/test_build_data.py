@@ -213,6 +213,13 @@ class MergeAndOutputTests(unittest.TestCase):
             governor = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governor"]
             self.assertEqual((governor["power"], governor["powerRounded"]), (value, rounded))
 
+    def test_locked_widget_keeps_its_name(self) -> None:
+        """A locked widget keeps the name given after the dash; a bare "Locked" has none."""
+        self.assertEqual(bd.parse_widget({"Exclusive Widget": "Locked — Bands of Tyre (gear screen shows a lock)"}),
+                         {"unlocked": False, "name": "Bands of Tyre", "level": None})
+        self.assertEqual(bd.parse_widget({"Exclusive Widget": "Locked"}),
+                         {"unlocked": False, "name": None, "level": None})
+
     def test_not_recorded_values_stay_missing(self) -> None:
         """Numbers inside a "Not recorded (…)" note are never read as the value."""
         self.assertIsNone(bd.parse_number("Not recorded (the chest piece is now +19)"))
