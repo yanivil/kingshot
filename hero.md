@@ -24,8 +24,8 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 49 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-21 |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 49 | 3-Star (Tier 3) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) | 2026-10-21 |
-| **Olive** | Rare (Blue) | Archer | Lv. 49 | 3-Star (Tier 4) | Reserve / Economy | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-21 |
-| **Seth** | Rare (Blue) | Infantry | Lv. 49 | 3-Star (Tier 3) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-21 |
+| **Olive** | Rare (Blue) | Archer | Lv. 54 | 3-Star (Tier 4) | Reserve / Economy | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-22 |
+| **Seth** | Rare (Blue) | Infantry | Lv. 54 | 3-Star (Tier 3) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-22 |
 | **Edwin** | Rare (Blue) | Cavalry | Lv. 49 | 3-Star (Tier 2) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-10-21 |
 
 ## Heroes Not Yet Recruited
@@ -493,43 +493,43 @@ expedition totals match the Hero Stats screen: Archer Lethality +20.74% (12.36% 
 * **Hero Name:** Seth _(2026-10-21)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Economy Specialist / Iron Gathering (Shield / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 49** (XP: 276,957 / 130,000 — **Ready to Upgrade to Lv. 50**) _(2026-10-21)_
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 18 / 40 to next promotion) _(2026-10-21)_
-* **Total Hero Power:** **400,264** _(2026-10-21)_
-* **Troop Capacity Boost:** **+10,420 Troops** _(2026-10-21)_
-* **Escort Guards:** **7 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **137,700** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-22)_
+* **Star Tier:** **3-Star (Tier 3)** (Shards: 29 / 40 to next promotion) _(2026-10-22)_
+* **Total Hero Power:** **408,649** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** **137,700** _(2026-10-22)_
 
 ### 1. Overall Combat & Gathering Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Economic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **785** | Basic physical swing damage | 2026-10-21 |
-| | **Hero Defense** | **1,452** | High defense rating bolstered by frontline gear | 2026-10-21 |
-| | **Hero Health** | **15,397** | Exceptional frontline health pool | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **261** | Attack output of his 7 bodyguard escorts | 2026-10-21 |
-| | **Escort Defense** | **484** | Defense rating of his escort guards | 2026-10-21 |
-| | **Escort Health** | **5,131** | Health pool of escort guards | 2026-10-21 |
-| **Expedition (March)** | **Infantry Attack** | **+51.41%** | Army-wide bonus to deployed Infantry | 2026-10-21 |
-| | **Infantry Defense** | **+51.41%** | Durability bonus for infantry units | 2026-10-21 |
-| | **Infantry Lethality**| **+24.51%** | Casualty conversion rate for infantry (from gear) | 2026-10-21 |
-| | **Infantry Health** | **+24.30%** | Expanded squad durability for infantry (from gear) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **800** | Basic physical swing damage | 2026-10-22 |
+| | **Hero Defense** | **1,482** | High defense rating bolstered by frontline gear | 2026-10-22 |
+| | **Hero Health** | **15,690** | Exceptional frontline health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **266** | Attack output of his 8 bodyguard escorts | 2026-10-22 |
+| | **Escort Defense** | **494** | Defense rating of his escort guards | 2026-10-22 |
+| | **Escort Health** | **5,229** | Health pool of escort guards | 2026-10-22 |
+| **Expedition (March)** | **Infantry Attack** | **+51.41%** | Army-wide bonus to deployed Infantry | 2026-10-22 |
+| | **Infantry Defense** | **+51.41%** | Durability bonus for infantry units | 2026-10-22 |
+| | **Infantry Lethality**| **+24.51%** | Casualty conversion rate for infantry (from gear) | 2026-10-22 |
+| | **Infantry Health** | **+24.30%** | Expanded squad durability for infantry (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 3 ➔ Tier 4)
 
-Current Status: **18 / 40 Shards** (needs **22 more shards** for Tier 4 promotion). _(2026-10-21)_
+Current Status: **29 / 40 Shards** (needs **11 more shards** for Tier 4 promotion). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 181,350 | **+17,940** | 199,290 | 2026-10-21 |
-| **Hero Attack** | 448 | **+30** | 478 | 2026-10-21 |
-| **Hero Defense** | 900 | **+60** | 960 | 2026-10-21 |
-| **Hero Health** | 8,775 | **+585** | 9,360 | 2026-10-21 |
-| **Escort Attack** | 149 | **+10** | 159 | 2026-10-21 |
-| **Escort Defense** | 300 | **+20** | 320 | 2026-10-21 |
-| **Escort Health** | 2,925 | **+195** | 3,120 | 2026-10-21 |
-| **Infantry Attack** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-21 |
-| **Infantry Defense** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-21 |
+| **Base Hero Power** | 181,350 | **+17,940** | 199,290 | 2026-10-22 |
+| **Hero Attack** | 448 | **+30** | 478 | 2026-10-22 |
+| **Hero Defense** | 900 | **+60** | 960 | 2026-10-22 |
+| **Hero Health** | 8,775 | **+585** | 9,360 | 2026-10-22 |
+| **Escort Attack** | 149 | **+10** | 159 | 2026-10-22 |
+| **Escort Defense** | 300 | **+20** | 320 | 2026-10-22 |
+| **Escort Health** | 2,925 | **+195** | 3,120 | 2026-10-22 |
+| **Infantry Attack** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-22 |
+| **Infantry Defense** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 
@@ -569,43 +569,43 @@ All 4 pieces match the native **Infantry** troop class synergy:
 * **Hero Name:** Olive _(2026-10-21)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer Economy Specialist / Food & Bread Gathering (Bow / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 49** (XP: 276,957 / 130,000 — **Ready to Upgrade to Lv. 50**) _(2026-10-21)_
-* **Star Tier:** **3-Star (Tier 4)** (Shards: 10 / 40 to next promotion) _(2026-10-21)_
-* **Total Hero Power:** **349,216** _(2026-10-21)_
-* **Troop Capacity Boost:** **+10,420 Troops** _(2026-10-21)_
-* **Escort Guards:** **7 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **91,650** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-22)_
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 16 / 40 to next promotion) _(2026-10-22)_
+* **Total Hero Power:** **372,601** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** **91,650** _(2026-10-22)_
 
 ### 1. Overall Combat & Gathering Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Economic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,232** | Ranged damage scaling | 2026-10-21 |
-| | **Hero Defense** | **1,356** | Solid defense rating against incoming enemy fire | 2026-10-21 |
-| | **Hero Health** | **7,219** | Ranged survivor health pool | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **410** | Attack output of her 7 escort marksmen | 2026-10-21 |
-| | **Escort Defense** | **452** | Defense value of her escort guards | 2026-10-21 |
-| | **Escort Health** | **2,405** | Health pool of escort guards | 2026-10-21 |
-| **Expedition (March)** | **Archer Attack** | **+54.31%** | Army-wide bonus to deployed Archers | 2026-10-21 |
-| | **Archer Defense** | **+54.31%** | Durability bonus for archer units | 2026-10-21 |
-| | **Archer Lethality**| **+19.20%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-10-21 |
-| | **Archer Health** | **+8.10%** | Durability pool for deployed archer squads (gear base) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **1,256** | Ranged damage scaling | 2026-10-22 |
+| | **Hero Defense** | **1,446** | Solid defense rating against incoming enemy fire | 2026-10-22 |
+| | **Hero Health** | **7,590** | Ranged survivor health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **418** | Attack output of her 8 escort marksmen | 2026-10-22 |
+| | **Escort Defense** | **482** | Defense value of her escort guards | 2026-10-22 |
+| | **Escort Health** | **2,529** | Health pool of escort guards | 2026-10-22 |
+| **Expedition (March)** | **Archer Attack** | **+54.31%** | Army-wide bonus to deployed Archers | 2026-10-22 |
+| | **Archer Defense** | **+54.31%** | Durability bonus for archer units | 2026-10-22 |
+| | **Archer Lethality**| **+19.20%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-10-22 |
+| | **Archer Health** | **+14.10%** | Durability pool for deployed archer squads (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **10 / 40 Shards** (needs **30 more shards** for Tier 5 promotion). _(2026-10-21)_
+Current Status: **16 / 40 Shards** (needs **24 more shards** for Tier 5 promotion). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 199,290 | **+18,785** | 218,075 | 2026-10-21 |
-| **Hero Attack** | 757 | **+48** | 805 | 2026-10-21 |
-| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-21 |
-| **Hero Health** | 4,680 | **+292** | 4,972 | 2026-10-21 |
-| **Escort Attack** | 252 | **+16** | 268 | 2026-10-21 |
-| **Escort Defense** | 320 | **+20** | 340 | 2026-10-21 |
-| **Escort Health** | 1,560 | **+97** | 1,657 | 2026-10-21 |
-| **Archer Attack** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-21 |
-| **Archer Defense** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-21 |
+| **Base Hero Power** | 199,290 | **+18,785** | 218,075 | 2026-10-22 |
+| **Hero Attack** | 757 | **+48** | 805 | 2026-10-22 |
+| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-22 |
+| **Hero Health** | 4,680 | **+292** | 4,972 | 2026-10-22 |
+| **Escort Attack** | 252 | **+16** | 268 | 2026-10-22 |
+| **Escort Defense** | 320 | **+20** | 340 | 2026-10-22 |
+| **Escort Health** | 1,560 | **+97** | 1,657 | 2026-10-22 |
+| **Archer Attack** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-22 |
+| **Archer Defense** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 

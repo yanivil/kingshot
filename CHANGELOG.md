@@ -95,6 +95,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Olive from her screens of 2026-10-22: Lv. 54, power 372,601, troop capacity 11,525, 8 escorts, shards 16 / 40, Hero
+  1,256 ATK / 1,446 DEF / 7,590 HP, Escort 418 / 482 / 2,529. Her Archer Health is +14.10% (gloves 8.10% + chest 6.00%),
+  which settles the 8.10% / 14.10% conflict; the Data health note is removed. Promotion preview, skills and gear unchanged.
+- Seth from his screens of 2026-10-22: Lv. 54 (levelled, not in the Drill Camp), power 408,649, troop capacity 11,525,
+  8 escorts, shards 29 / 40, Hero 800 ATK / 1,482 DEF / 15,690 HP, Escort 266 / 494 / 5,229. Bonuses, promotion
+  preview, gear (+15 / +15 / +15 / +16, still his Epic set) and skills (Lv 4, capped until 4★) unchanged.
 - Gordon from his screens of 2026-10-22: Lv. 54 in a Drill Camp slot, power 435,470, troop capacity 11,525, 8 escorts,
   shards 10 / 40, Hero 1,198 ATK / 1,462 DEF / 12,000 HP, Escort 398 / 487 / 4,000, 25 / 50 manuals (the odd 6 / 50 on
   Culinary Chaos is replaced). Bonuses, promotion preview, skill levels and gear unchanged. Level updated in the
