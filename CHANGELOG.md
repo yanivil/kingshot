@@ -95,6 +95,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Amane from her screens of 2026-10-22: Lv. 54 in a Drill Camp slot (was 46), power 286,390, troop capacity 11,525,
+  8 escorts, Hero 1,113 ATK / 1,044 DEF / 6,624 HP, Escort 370 / 348 / 2,208, 25 / 30 manuals (the old 34 / 30 reading
+  is replaced). Shards (0 / 40), bonuses, promotion preview, skill levels and gear (chest still empty) unchanged.
 - Fahd from his screens of 2026-10-22: Lv. 54 in a Drill Camp slot (was 48), power 308,000, troop capacity 11,525,
   8 escorts, Hero 933 ATK / 1,104 DEF / 9,210 HP, Escort 310 / 368 / 3,070, 25 / 30 manuals (the old 34 / 30 reading is
   replaced). Shards, bonuses, promotion preview, skill levels and gear unchanged.
