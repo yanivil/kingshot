@@ -41,7 +41,7 @@
       "22": 64,
       "25": 79
     },
-    "drillCamp": "Slotted heroes match the level of the lowest of the 5 instructors and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP. A hero removed from Drill Camp returns to its own level.",
+    "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 Oct) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
     "oneMarchPerHero": "A hero can be in only one march at a time.",
     "gen2Heroes": {
       "serverDay": 50
@@ -108,149 +108,353 @@
   },
   "recommendations": [
     {
-      "id": "weak-amane",
+      "id": "amane-to-quinn",
       "priority": 1,
-      "type": "Weak links",
-      "what": "Fix the weak link in your key lineups: Amane",
-      "why": "Amane is Lv 46 with 270,310 power and an empty chest slot, yet she sits in Arena attack, Arena defense, Barricade 1 and the Att march.",
-      "evidence": [
-        "hero.md: Amane Lv 46, 270,310 power, chest slot empty",
-        "lineups.md: Arena attack, Arena defense, Barricade 1, Att"
+      "type": "Lineups",
+      "what": "Replace Amane with Quinn in Arena attack, Arena defense, Barricade 1 and the Att march",
+      "why": "Quinn is Lv 52 with 486,220 power and full gear, and he is in no lineup. Amane holds the same archer slot at Lv 46 with 270,310 power and an empty chest slot. In the Arena, Quinn's Headshot hits for 480% of Attack; Amane's Fire Sigil hits for 165%. In the Att march you give up Amane's Tri-Phalanx (+15% squad Attack) and get Quinn's Sixth Sense (−12% damage taken) and Precision Shot (50% chance of +30% damage).",
+      "changes": [
+        {
+          "where": "Arena attack",
+          "before": [
+            "Howard",
+            "Chenko",
+            "Jabel",
+            "Diana",
+            "Amane"
+          ],
+          "after": [
+            "Howard",
+            "Chenko",
+            "Jabel",
+            "Diana",
+            "Quinn"
+          ]
+        },
+        {
+          "where": "Arena defense",
+          "before": [
+            "Howard",
+            "Fahd",
+            "Jabel",
+            "Diana",
+            "Amane"
+          ],
+          "after": [
+            "Howard",
+            "Fahd",
+            "Jabel",
+            "Diana",
+            "Quinn"
+          ]
+        },
+        {
+          "where": "Barricade 1",
+          "before": [
+            "Howard",
+            "Jabel",
+            "Amane"
+          ],
+          "after": [
+            "Howard",
+            "Jabel",
+            "Quinn"
+          ]
+        },
+        {
+          "where": "Att march",
+          "before": [
+            "Howard (lead)",
+            "Jabel",
+            "Amane"
+          ],
+          "after": [
+            "Howard (lead)",
+            "Jabel",
+            "Quinn"
+          ]
+        }
       ],
-      "cost": null,
+      "steps": [
+        "Arena → Attack lineup: put Quinn in Amane's back-right slot.",
+        "Arena → Defense lineup: the same swap.",
+        "Barricade 1: put Quinn in slot 3.",
+        "March presets → Att: replace Amane with Quinn."
+      ],
+      "evidence": [
+        "hero.md: Quinn Lv 52, 486,220 power, gear 118,220 (4/4); Amane Lv 46, 270,310 power, gear 49,950 (chest empty)",
+        "hero.md skills: Headshot 480%, Fire Sigil 165%, Tri-Phalanx +15% ATK, Sixth Sense −12%, Precision Shot 50% / +30%",
+        "lineups.md: Amane in Arena attack, Arena defense, Barricade 1, Att"
+      ],
+      "cost": "None (a swap)",
       "confidence": [
-        "Verified"
+        "Verified",
+        "Inferred"
       ],
       "heroes": [
-        "Amane"
+        "Amane",
+        "Quinn"
       ],
-      "note": null
+      "note": "The numbers are from the data; that Quinn is the better pick is a judgment. Jabel, Diana and Chenko are Drill Camp instructors and already sit in these lineups, so being an instructor does not keep Quinn out."
     },
     {
-      "id": "drill-fill",
+      "id": "jabel-two-marches",
       "priority": 2,
-      "type": "Drill Camp",
-      "what": "Fill the 7 empty Drill Camp slots, reset the slotted heroes, and put the refunded Hero XP into the lowest instructor",
-      "why": "7 slots are open and 10 heroes are not instructors. The lowest instructor is Lv 49, so slotting Amane, Helga (Lv 46) and Fahd (Lv 48) would raise them to 49 at no XP cost.",
-      "evidence": [
-        "Drill Camp screen, 22 Oct: 7 open slots, 0 filled, lowest instructor Lv 49",
-        "hero.md: Amane 46, Helga 46, Fahd 48"
+      "type": "Lineups",
+      "what": "Put Gordon in the Be march instead of Jabel",
+      "why": "Jabel is in both Be and Att, so the two marches can't run at the same time. Keep her in Att for combat. Gordon is also Cavalry, so Be keeps its troop mix; he is Lv 49 with 425,150 power, in no other lineup, and his Trash Talk and Super Nutrients add +15% squad Attack and +15% squad Health.",
+      "changes": [
+        {
+          "where": "Be march",
+          "before": [
+            "Diana (lead)",
+            "Jabel",
+            "Forrest"
+          ],
+          "after": [
+            "Diana (lead)",
+            "Gordon",
+            "Forrest"
+          ]
+        },
+        {
+          "where": "Att march (with move 1)",
+          "before": [
+            "Howard (lead)",
+            "Jabel",
+            "Amane"
+          ],
+          "after": [
+            "Howard (lead)",
+            "Jabel",
+            "Quinn"
+          ]
+        }
       ],
-      "cost": "No XP to slot (per community rule)",
+      "steps": [
+        "March presets → Be: replace Jabel with Gordon."
+      ],
+      "evidence": [
+        "lineups.md: Be (Diana, Jabel, Forrest), Att (Howard, Jabel, Amane)",
+        "hero.md: Gordon Cavalry, Lv 49, 425,150 power, Trash Talk +15% ATK, Super Nutrients +15% HP"
+      ],
+      "cost": "None (a swap)",
       "confidence": [
         "Inferred",
         "Unverified"
       ],
       "heroes": [
-        "Amane",
-        "Helga",
-        "Fahd",
-        "Edwin"
-      ],
-      "note": "Test one gathering hero (Edwin) first."
-    },
-    {
-      "id": "gear-gaps",
-      "priority": 3,
-      "type": "Gear gaps",
-      "what": "Fill 1 empty chest slot and upgrade 10 pieces still at +0",
-      "why": "Amane's chest slot is empty. +0 pieces on Amane (2), Olive (2), Fahd (2), Yeonwoo (1), Edwin (1), Saul (1, Epic) and Helga (1, Epic).",
-      "evidence": [
-        "hero.md gear slots"
-      ],
-      "cost": null,
-      "confidence": [
-        "Verified"
-      ],
-      "heroes": [
-        "Amane",
-        "Olive",
-        "Fahd",
-        "Yeonwoo",
-        "Edwin",
-        "Saul",
-        "Helga"
-      ],
-      "note": null
-    },
-    {
-      "id": "skills-now",
-      "priority": 4,
-      "type": "Skills affordable now",
-      "what": "Check whether Fahd's and Amane's skills can be upgraded right now",
-      "why": "Fahd and Amane show 34/30 Epic manuals.",
-      "evidence": [
-        "hero.md skill screens"
-      ],
-      "cost": "30 manuals per upgrade, as shown",
-      "confidence": [
-        "Inferred"
-      ],
-      "heroes": [
-        "Fahd",
-        "Amane"
-      ],
-      "note": "Probably an old reading: Gordon's latest skill screen shows 6 Epic Expedition Manuals."
-    },
-    {
-      "id": "near-promo",
-      "priority": 5,
-      "type": "Near promotion",
-      "what": "Finish the promotions that are a few shards away",
-      "why": "Forrest is 4 shards from T4, Helga 5 from T1, Howard 6, Edwin 7, and Saul 14 from 2★ (unlocks 2 skills).",
-      "evidence": [
-        "hero.md shard counts"
-      ],
-      "cost": "4–14 shards each; shard sources unknown",
-      "confidence": [
-        "Verified"
-      ],
-      "heroes": [
-        "Forrest",
-        "Helga",
-        "Howard",
-        "Edwin",
-        "Saul"
-      ],
-      "note": "Verified from data; where to get the shards is not recorded."
-    },
-    {
-      "id": "jabel-two-marches",
-      "priority": 6,
-      "type": "Setup conflicts",
-      "what": "Take Jabel out of either Be or Att",
-      "why": "Jabel is in both presets, so those two marches can't run at the same time.",
-      "evidence": [
-        "lineups.md: Be (Diana, Jabel, Forrest), Att (Howard, Jabel, Amane)"
-      ],
-      "cost": null,
-      "confidence": [
-        "Unverified"
-      ],
-      "heroes": [
-        "Jabel"
+        "Jabel",
+        "Gordon"
       ],
       "note": "Rests on the community rule that a hero can be in only one march at a time."
     },
     {
-      "id": "seth-epic-set",
-      "priority": 7,
-      "type": "Gear gaps",
-      "what": "Consider moving Seth's full Epic infantry set",
-      "why": "Seth is a Rare economy hero holding a full Epic set. Check whether it would serve more on Howard or Helga.",
-      "evidence": [
-        "hero.md: Seth gear power 137,700, full Epic set"
+      "id": "seth-gear-to-howard",
+      "priority": 3,
+      "type": "Gear",
+      "what": "Move Seth's Epic gloves and boots to Howard",
+      "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+17) are better than Seth's, so keep those.",
+      "changes": [
+        {
+          "where": "Howard's gear",
+          "before": [
+            "Praetorian's Helm (Epic +20)",
+            "Stonewall Gloves (Rare +20)",
+            "Praetorian's Shroud (Epic +17)",
+            "Stonewall Greaves (Rare +19)"
+          ],
+          "after": [
+            "Praetorian's Helm (Epic +20)",
+            "Praetorian's Gloves (Epic +15)",
+            "Praetorian's Shroud (Epic +17)",
+            "Praetorian's Greaves (Epic +16)"
+          ],
+          "note": "Gear power 126,025 → 144,165"
+        },
+        {
+          "where": "Seth's gear",
+          "before": [
+            "Praetorian's Helm (Epic +15)",
+            "Praetorian's Gloves (Epic +15)",
+            "Praetorian's Shroud (Epic +15)",
+            "Praetorian's Greaves (Epic +16)"
+          ],
+          "after": [
+            "Praetorian's Helm (Epic +15)",
+            "Stonewall Gloves (Rare +20)",
+            "Praetorian's Shroud (Epic +15)",
+            "Stonewall Greaves (Rare +19)"
+          ],
+          "note": "Gear power 137,700 → 119,560"
+        }
       ],
-      "cost": null,
+      "steps": [
+        "Howard → Gear → Gloves → Swap: pick Seth's Praetorian's Gloves (+15).",
+        "Howard → Gear → Boots → Swap: pick Seth's Praetorian's Greaves (+16).",
+        "Seth → Gear: equip Howard's old Stonewall Gloves and Stonewall Greaves."
+      ],
+      "evidence": [
+        "Gloves: 34,200 vs 25,900 power; DEF +117 vs +84; HP +877 vs +630; Infantry Health +12.15% vs +8.80%",
+        "Boots: 35,100 vs 25,260 power; ATK +90 vs +63; HP +891 vs +621; Infantry Lethality +12.36% vs +8.66%",
+        "Helmet and chest: Howard's 38,850 and 36,015 beat Seth's 34,200 each"
+      ],
+      "cost": "None (a swap)",
       "confidence": [
+        "Verified",
         "Unverified"
       ],
       "heroes": [
-        "Seth",
         "Howard",
-        "Helga"
+        "Seth"
       ],
-      "note": "Compare Gear Details first."
+      "note": "Check in Gear Details that the + level moves with the piece before you confirm."
+    },
+    {
+      "id": "drill-fill",
+      "priority": 4,
+      "type": "Drill Camp",
+      "what": "Slot Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo; reset them; spend the XP on Chenko and Diana",
+      "why": "The camp lifts slotted heroes to the lowest instructor's level, Lv 49: Amane and Helga gain 3 levels and Fahd 1, at no cost. A level reset sets a hero to Lv 1 and refunds all their Hero XP, and a slotted hero still auto-levels to 49. Chenko and Diana are the two Lv 49 instructors, so raising both raises every slotted hero.",
+      "changes": [
+        {
+          "where": "Drill slots 1–7",
+          "before": [],
+          "after": [
+            "Amane",
+            "Helga",
+            "Fahd",
+            "Howard",
+            "Gordon",
+            "Forrest",
+            "Yeonwoo"
+          ]
+        }
+      ],
+      "steps": [
+        "Level Drills: put Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo in the 7 open slots. They should all show Lv 49.",
+        "Level Resets: reset Amane first. Check that she still shows Lv 49 and that your Hero XP went up. Read the confirmation screen for any cost.",
+        "If that worked, reset the other six slotted heroes.",
+        "Spend the XP on Chenko and Diana, one level at a time on both (Diana needs 130,000 XP for Lv 50). With both at Lv 50, all seven slotted heroes become Lv 50.",
+        "Keep going: Chenko, Diana and Saul to 51 and 52, then add Quinn, up to Lv 54, the cap until Town Center 21.",
+        "Don't reset Olive, Seth, Edwin or any instructor. They aren't slotted, so they would really drop to Lv 1."
+      ],
+      "evidence": [
+        "Drill Camp screen, 22 Oct: “Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors”",
+        "Level Resets screen, 22 Oct: “reset the hero level to Lv. 1 and refund all the Hero XP”",
+        "Instructors: Jabel 54, Quinn 52, Saul 50, Chenko 49, Diana 49; 7 open slots, slot 8 at Town Center 21",
+        "hero.md: Amane 46, Helga 46, Fahd 48, Diana 2,020 / 130,000 XP"
+      ],
+      "cost": "No XP to slot; reset cost not recorded",
+      "confidence": [
+        "Verified",
+        "Inferred"
+      ],
+      "heroes": [
+        "Amane",
+        "Helga",
+        "Fahd",
+        "Howard",
+        "Gordon",
+        "Forrest",
+        "Yeonwoo",
+        "Chenko",
+        "Diana"
+      ],
+      "note": "Why these seven: Amane, Helga and Fahd gain levels now; Howard, Gordon, Forrest and Yeonwoo are combat heroes that rise with the camp later. Olive, Seth and Edwin are gathering heroes and stay at Lv 49. Not recorded: whether a slotted hero can still be deployed (check Howard after step 1), and what happens if a reset hero leaves the camp (community sources say it goes back to its own level, Lv 1)."
+    },
+    {
+      "id": "fahd-gear",
+      "priority": 5,
+      "type": "Gear",
+      "what": "Enhance Fahd's Gauntlets and Breastplate from +0 to +12",
+      "why": "Fahd stays in Arena defense and Barricade 2, and these two pieces are still at +0 (15,000 power each). At +12 each would match his boots (21,060).",
+      "changes": [
+        {
+          "where": "Fahd's gear",
+          "before": [
+            "Brigader's Armet +11",
+            "Brigader's Gauntlets +0",
+            "Brigader's Breastplate +0",
+            "Brigader's Battle Boots +12"
+          ],
+          "after": [
+            "Brigader's Armet +11",
+            "Brigader's Gauntlets +12",
+            "Brigader's Breastplate +12",
+            "Brigader's Battle Boots +12"
+          ],
+          "note": "Gear power about 71,560 → 83,680"
+        }
+      ],
+      "steps": [
+        "Fahd → Gear → Gauntlets → Enhance to +12.",
+        "Fahd → Gear → Breastplate → Enhance to +12."
+      ],
+      "evidence": [
+        "hero.md: Fahd Gauntlets +0 and Breastplate +0 at 15,000; Battle Boots +12 at 21,060",
+        "The same Rare piece has the same power at the same level in every slot (Gordon's +15 helmet and gauntlets: 22,800 each)"
+      ],
+      "cost": "Enhancement materials; amount not recorded",
+      "confidence": [
+        "Verified",
+        "Inferred"
+      ],
+      "heroes": [
+        "Fahd"
+      ],
+      "note": "The other +0 pieces can wait: Amane leaves the lineups with move 1, and Olive, Yeonwoo, Edwin, Saul and Helga are in none. Amane's empty chest slot only matters if she stays."
+    },
+    {
+      "id": "near-promo",
+      "priority": 6,
+      "type": "Promotion",
+      "what": "Promote Quinn to 4★ first: 5 shards to go",
+      "why": "Quinn is at 95 / 100 shards and joins four lineups with move 1. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Howard 6 to T4, Edwin 7 to T3, Saul 14 to 2★.",
+      "steps": [
+        "Quinn: 5 shards to 4★. His promotion screen shows a Redeem button with 2; check whether those are his shards.",
+        "Howard: 6 shards to T4 (main tank).",
+        "Forrest: 4 shards to T4 (Be march).",
+        "Later: Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★ (unlocks 2 skills)."
+      ],
+      "evidence": [
+        "hero.md shard counts, Quinn's promotion preview of 22 Oct"
+      ],
+      "cost": "4–14 shards each; shard sources not recorded",
+      "confidence": [
+        "Verified"
+      ],
+      "heroes": [
+        "Quinn",
+        "Howard",
+        "Forrest",
+        "Helga",
+        "Edwin",
+        "Saul"
+      ],
+      "note": "Shard counts are verified; where to get shards is not recorded."
+    },
+    {
+      "id": "fahd-skill",
+      "priority": 7,
+      "type": "Skills",
+      "what": "Save 5 more Epic Expedition Manuals, then upgrade Fahd's Eagle Wings to Lv 3",
+      "why": "Quinn's skill screen of 22 Oct shows 25 Epic Expedition Manuals, and Fahd's Lv 3 upgrades cost 30. Eagle Wings (+20% → +25% Attack for Fahd and nearby squads) is his biggest effect, and he stays in two lineups. Amane's upgrades can wait once she leaves the lineups.",
+      "steps": [
+        "Collect 5 more Epic Expedition Manuals.",
+        "Fahd → Skills → Eagle Wings → Upgrade."
+      ],
+      "evidence": [
+        "hero.md: Quinn 25/50 manuals (22 Oct); Fahd Eagle Wings Lv 2, 30 manuals to Lv 3"
+      ],
+      "cost": "30 Epic Expedition Manuals",
+      "confidence": [
+        "Inferred"
+      ],
+      "heroes": [
+        "Fahd"
+      ],
+      "note": "Fahd's and Amane's screens showed 34/30 on 21 Oct, and Gordon's showed 25 and 6 that day, so check Fahd's skill screen for the current count."
     }
   ],
   "features": [

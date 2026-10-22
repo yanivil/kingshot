@@ -93,7 +93,10 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
 1. **Game data:** edit the `.md` file and set its `as_of:` line (front matter at the top) to the date you
    read the values in the game. Keep the bold labels as they are: they are how the generator finds each value.
 2. **Judgments and rules** (recommendations, data-health notes, rules, features, Drill Camp, hero notes):
-   edit `data/manual.json`. It can only add what the `.md` files don't provide.
+   edit `data/manual.json`. It can only add what the `.md` files don't provide. A recommendation that
+   moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
+   state in `changes` (`where`, `before`, `after`). The dashboard shows the final line-up in the Top 5
+   and the full before → after on the Invest page.
 3. Merge to `main`. The workflow rebuilds and republishes the dashboard; warnings (e.g. a renamed label)
    appear as annotations on the Actions run.
 
