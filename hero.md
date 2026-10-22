@@ -17,7 +17,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-21 |
 | **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-21 |
 | **Diana** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-21 |
-| **Quinn** | SR / Epic | Archer | Lv. 52 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
+| **Quinn** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-21 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-22 |
 | **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-22 |
@@ -421,10 +421,10 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Hero Name:** Quinn _(2026-10-21)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 52** (XP: 51,686 / 160,000 to Lv. 53) _(2026-10-22)_
-* **Star Tier:** **3-Star (Tier 5)** (Shards: 95 / 100 to 4-Star promotion) _(2026-10-22)_
-* **Total Hero Power:** **486,220** _(2026-10-22)_
-* **Troop Capacity Boost:** **+11,140 Troops** _(2026-10-22)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-22)_
+* **Star Tier:** **3-Star (Tier 5)** (Shards: 97 / 100 to 4-Star promotion) _(2026-10-22)_
+* **Total Hero Power:** **490,460** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
 * **Escort Guards:** **8 Escorts** _(2026-10-22)_
 * **Total Equipped Gear Power:** **118,220** _(2026-10-22)_
 
@@ -432,12 +432,12 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,558** | High base attack, delivering powerful burst sniper damage | 2026-10-22 |
-| | **Hero Defense** | **1,554** | High personal defense against counter-sniping | 2026-10-22 |
-| | **Hero Health** | **9,628** | Balanced ranged health pool | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **519** | Attack rating of his 8 bodyguard archers | 2026-10-22 |
-| | **Escort Defense** | **517** | Defense rating of his 8 bodyguard archers | 2026-10-22 |
-| | **Escort Health** | **3,208** | Health pool of his bodyguard squad | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **1,569** | High base attack, delivering powerful burst sniper damage | 2026-10-22 |
+| | **Hero Defense** | **1,566** | High personal defense against counter-sniping | 2026-10-22 |
+| | **Hero Health** | **9,700** | Balanced ranged health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **522** | Attack rating of his 8 bodyguard archers | 2026-10-22 |
+| | **Escort Defense** | **521** | Defense rating of his 8 bodyguard archers | 2026-10-22 |
+| | **Escort Health** | **3,232** | Health pool of his bodyguard squad | 2026-10-22 |
 | **Expedition (March)** | **Archer Attack** | **+89.01%** | Army-wide bonus to all deployed Marksmen/Archers | 2026-10-22 |
 | | **Archer Defense** | **+89.01%** | Defense bonus mitigating incoming enemy cavalry damage | 2026-10-22 |
 | | **Archer Lethality**| **+20.74%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-10-22 |
@@ -445,7 +445,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
 
-Current Status: **95 / 100 Shards** (needs **5 more shards** for 4-Star Ascension; confirmed in game). _(2026-10-22)_
+Current Status: **97 / 100 Shards** (needs **3 more shards** for 4-Star Ascension). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
