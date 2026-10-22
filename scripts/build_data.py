@@ -91,6 +91,9 @@ PREVIEW_RE = re.compile(r"Star Promotion Milestone Preview \(.*?➔\s*([^)]+)\)"
 # "Last uploaded" stamp after a value, e.g. "**94.6M** _(2026-10-21)_". It is
 # repository bookkeeping, not game data, and must never be read as a number.
 UPLOAD_DATE_RE = re.compile(r"\s*_\(\d{4}-\d{2}-\d{2}\)_")
+# Any ISO date in the text: the per-value upload stamps (_(YYYY-MM-DD)_ and the
+# "Updated" table column). The newest one dates a section; see newest_date().
+ISO_DATE_RE = re.compile(r"(?<![\d-])(\d{4}-\d{2}-\d{2})(?![\d-])")
 SUFFIX = {"K": 1_000, "M": 1_000_000, "B": 1_000_000_000}
 
 
@@ -232,6 +235,29 @@ def read_source(path: Path, log: BuildLog) -> Tuple[Optional[str], str]:
     except ValueError:
         log.warn(path.name, f"as_of '{raw}' is not a YYYY-MM-DD date; treating it as missing")
         return None, body
+
+
+def newest_date(text: str, fallback: Optional[str] = None) -> Optional[str]:
+    """Return the newest valid ISO date in ``text``, or ``fallback``.
+
+    Why: every value in the .md files carries the date it was last uploaded,
+    so the newest stamp in a section says how fresh that section is. The
+    front-matter ``as_of`` is only the fallback for text without stamps.
+
+    Args:
+        text: Markdown text (a section, a table row, or a whole file body).
+        fallback: Date to return when the text holds no valid date.
+
+    Returns:
+        ``YYYY-MM-DD`` or ``fallback``.
+    """
+    found = []
+    for raw in ISO_DATE_RE.findall(text):
+        try:
+            found.append(dt.date.fromisoformat(raw).isoformat())
+        except ValueError:
+            continue  # e.g. "2026-13-40" is not a date
+    return max(found) if found else fallback
 
 
 def split_sections(body: str) -> List[Section]:
@@ -1090,6 +1116,9 @@ def parse_heroes(body: str, as_of: Optional[str], log: BuildLog) -> List[Dict[st
             "asOf": as_of,
         }
         profile = profiles.pop(name, None)
+        # A hero is as fresh as the newest value recorded for it (roster row
+        # plus its profile section); the file date is only the fallback.
+        hero["asOf"] = newest_date(" ".join(row.values()) + "\n" + ("\n".join(profile.lines) if profile else ""), as_of)
         if profile is None:
             log.warn(src, f"{name}: no In-Depth Hero Profile; detail fields set to null")
             heroes.append(hero)
@@ -1287,13 +1316,17 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
     """
     dates: Dict[str, Optional[str]] = {}
     bodies: Dict[str, str] = {}
+    front_dates: Dict[str, Optional[str]] = {}
     for name in SOURCE_FILES:
-        dates[name], bodies[name] = read_source(root / name, log)
+        front_dates[name], bodies[name] = read_source(root / name, log)
+        # The newest per-value stamp wins over the front-matter date, so a
+        # section's date moves forward as soon as one of its values is updated.
+        dates[name] = newest_date(bodies[name], front_dates[name])
 
     profile = parse_profile(bodies["profile.md"], dates["profile.md"], log)
     troops = parse_troops(bodies["troops.md"], dates["troops.md"], log)
     lineups = parse_lineups(bodies["lineups.md"], dates["lineups.md"], log)
-    heroes = parse_heroes(bodies["hero.md"], dates["hero.md"], log)
+    heroes = parse_heroes(bodies["hero.md"], front_dates["hero.md"], log)
     codes = parse_codes(bodies["codes.md"], dates["codes.md"], log)
     cross_check_marches(troops["marches"], lineups["presets"], log)
 

@@ -213,6 +213,13 @@ class MergeAndOutputTests(unittest.TestCase):
             governor = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governor"]
             self.assertEqual((governor["power"], governor["powerRounded"]), (value, rounded))
 
+    def test_newest_date_uses_update_stamps(self) -> None:
+        """The newest valid stamp wins; no stamp falls back; bad dates are skipped."""
+        text = "| x | 2026-10-21 |\n* **A:** 5 _(2026-10-22)_\n| y | 2026-13-40 |"
+        self.assertEqual(bd.newest_date(text, "2026-10-01"), "2026-10-22")
+        self.assertEqual(bd.newest_date("no dates", "2026-10-01"), "2026-10-01")
+        self.assertIsNone(bd.newest_date("no dates"))
+
     def test_player_id_guard(self) -> None:
         """The build refuses to write text containing the Player ID."""
         bd.check_player_id("nothing here", "123456789")

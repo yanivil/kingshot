@@ -95,6 +95,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Dashboard dates now follow the per-value upload dates (`scripts/build_data.py`, new test): each hero shows the
+  newest date in its roster row and profile, other sections the newest date in their file. The front-matter
+  `as_of` is only a fallback, so sections updated on 2026-10-22 no longer show 21 Oct. `README.md`,
+  `docs/SCHEMA.md` and the Data health note about placeholder dates are updated.
 - Quinn from his screens of 2026-10-22 (later): Lv. 54 (cap until Town Center 21), power 490,460, troop capacity
   11,525, shards 97 / 100, Hero 1,569 ATK / 1,566 DEF / 9,700 HP, Escort 522 / 521 / 3,232. Skills (25 / 50 manuals),
   gear and promotion preview unchanged. His level is updated in `hero.md`, `lineups.md`, `troops.md` and the Drill
