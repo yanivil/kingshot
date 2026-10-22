@@ -26,7 +26,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-22 |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
-* **Defensive Squad Power:** **2,417,730** _(2026-10-22)_
+* **Defensive Squad Power:** **2,452,930** _(2026-10-22)_
 * **Formation Archetype:** Dual-Frontline Tank & Healer with Triple-Backline DPS _(2026-10-22)_
 * **Tactical Intent:** **Gordon** holds the front-right slot: BBQ Feast heals all troops and he takes 20% less damage, keeping the backline alive. _(2026-10-22)_
 
@@ -34,7 +34,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
 | **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-10-22 |
 | **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-10-22 |
-| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage | 2026-10-21 |
+| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage | 2026-10-22 |
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage | 2026-10-22 |
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Heavy Sniper:** Single-target burst damage | 2026-10-22 |
 
@@ -51,7 +51,7 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
 | **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | Primary shield wall and garrison damage reduction | 2026-10-22 |
-| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | Counter-offensive burst damage against attackers | 2026-10-21 |
+| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | Counter-offensive burst damage against attackers | 2026-10-22 |
 | **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | Burst archery damage against attackers | 2026-10-22 |
 
 ### Barricade 2 (Secondary Gate)

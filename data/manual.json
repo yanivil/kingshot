@@ -28,7 +28,7 @@
   },
   "townCenter": {
     "perks": {
-      "namesVerified": false
+      "namesVerified": true
     }
   },
   "rules": {
@@ -433,11 +433,6 @@
   ],
   "dataHealth": {
     "conflicts": [
-      {
-        "area": "Town Center",
-        "title": "Perk names look interpreted",
-        "detail": "The perk names don't look like in-game text, so only the 6/7 count is shown."
-      }
     ],
     "missing": [
       {

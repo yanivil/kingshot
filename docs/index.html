@@ -1058,10 +1058,12 @@ class Dashboard extends StateHost {
       var sp = sumPowers(names);
       var diff = stated != null ? stated - sp.sum : null;
       var pct = (diff != null && sp.sum) ? Math.round(diff / sp.sum * 1000) / 10 : null;
-      // A rounded figure ("1.3M") is only exact to half its last digit, so
-      // flag it only when the gap is bigger than that (50,000 for "1.3M").
+      // A short figure ("1.3M") is cut to one decimal, not rounded: on 22 Oct
+      // Barricade 2 showed 1.3M for heroes adding up to 1,358,960. So the real
+      // value is from the figure up to (not including) the next 0.1 step, and
+      // only a sum outside that range is flagged.
       var unit = stated >= 1e9 ? 1e9 : stated >= 1e6 ? 1e6 : stated >= 1e3 ? 1e3 : 1;
-      var flagged = rounded ? (diff != null && Math.abs(diff) > unit * 0.05) : (pct != null && Math.abs(pct) > 1);
+      var flagged = rounded ? (diff != null && (diff > 0 || -diff >= unit * 0.1)) : (pct != null && Math.abs(pct) > 1);
       return {
         statedText: stated == null ? NR : (rounded ? self.compact(stated) + ' (rounded)' : self.num(stated)),
         sumText: self.num(sp.sum) + (sp.missing.length ? ' (missing: ' + sp.missing.join(', ') + ')' : ''),
@@ -1824,7 +1826,8 @@ function tplHealth(v) {
   return '<div class="view">' +
     '<div class="view-h"><h2>Data health</h2><p class="lede">' + esc(h.lede) + '</p></div>' +
     '<section class="panel"><div class="panel-h"><h3>Conflicts</h3><span class="asof">' + esc(h.conflictCount) + '</span></div>' +
-    '<div class="list">' + each(h.conflicts, function (c) { return item(c, true); }) + '</div></section>' +
+    '<div class="list">' + each(h.conflicts, function (c) { return item(c, true); }) + '</div>' +
+    when(!h.conflicts.length, '<p class="empty">No conflicts found.</p>') + '</section>' +
     '<div class="grid2">' +
     '<section class="panel"><div class="panel-h"><h3>Missing</h3><span class="asof">' + esc(h.missingCount) + '</span></div>' +
     '<div class="list">' + each(h.missing, function (m) { return item(m, false); }) + '</div></section>' +
