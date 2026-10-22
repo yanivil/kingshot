@@ -201,7 +201,7 @@
     },
     {
       "id": "near-promo",
-      "priority": 3,
+      "priority": 2,
       "type": "Promotion",
       "what": "Quinn is 4★. Next promotions: Helga 5 shards, Seth 11, Saul 14, Jabel 21",
       "why": "Quinn reached 4★ on 22 Oct: power 490,460 → 528,735 (+37,360 from the promotion, +915 from his Faceplate going to +17); his next tier needs 99 more shards. The closest promotions now are Helga (5 to Tier 1), Seth (11 to Tier 4), Saul (14 to 2★) and Jabel (21 to Tier 4). Helga, Seth and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat.",
@@ -226,29 +226,6 @@
         "Jabel"
       ],
       "note": "Shard counts are verified; where to get shards is not recorded."
-    },
-    {
-      "id": "gordon-skill",
-      "priority": 2,
-      "type": "Skills",
-      "what": "Save 2 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
-      "why": "The latest skill screen (Quinn's, late on 22 Oct) shows 28 Epic Expedition Manuals, up from 25 on Gordon's screen earlier that day and 27 on Chenko's. His Emergency Snack (Lv 2) needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), the cheapest upgrade among his skills; he holds the Arena defense front, Barricade 2 and the Be march.",
-      "steps": [
-        "Collect 2 more Epic Expedition Manuals (28 of 30).",
-        "Gordon → Skills → Emergency Snack → Upgrade."
-      ],
-      "evidence": [
-        "hero.md: Gordon's Emergency Snack Lv 2, 30 manuals to Lv 3 (22 Oct)",
-        "hero.md: Quinn's exploration skills show 28/50 Epic Expedition Manuals (22 Oct, the latest reading)"
-      ],
-      "cost": "30 Epic Expedition Manuals",
-      "confidence": [
-        "Inferred"
-      ],
-      "heroes": [
-        "Gordon"
-      ],
-      "note": "Inferred: the 28 manuals on Quinn's screen are the same shared stock that Gordon's exploration skills use (both are Epic heroes' exploration skills). Check the count on Gordon's Emergency Snack screen before upgrading."
     }
   ],
   "features": [

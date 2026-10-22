@@ -253,6 +253,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   28/50 Epic Expedition Manuals and 31/50 Epic Conquest Books. Roster row and the three `lineups.md` rows now say 4-Star.
 - `data/manual.json`: the promotion move now lists the next promotions (Helga 5, Seth 11, Saul 14, Jabel 21) and drops
   to priority 3; Gordon's Emergency Snack move needs 2 more manuals (28 of 30) and moves to priority 2.
+- `hero.md`, Gordon (2026-10-22): Emergency Snack is Lv. 3 (all five skills at Lv. 3), +2,520 power; BBQ Feast shows 5/50
+  Epic Expedition Manuals. Brigader's Battle Boots +12 → +13 (21,630; ATK +75 / HP +378; escort ATK +25 / HP +126; +7.82%
+  Cavalry Lethality; 20 / 75 toward +14, no enhancement materials left), +570 power. Hero power 438,560, gear power 89,440,
+  Hero Stats 1,199 / 1,462 / 12,006, escort 399 / 487 / 4,002, Cavalry Lethality +15.92%; gear totals updated.
+- `data/manual.json`: the Gordon Emergency Snack move is done and removed; the promotion move is priority 2.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
