@@ -93,9 +93,15 @@
       }
     ],
     "slotsTotal": 15,
-    "slotsOpen": 6,
+    "slotsOpen": 0,
     "slotted": [
-      "Howard"
+      "Amane",
+      "Helga",
+      "Howard",
+      "Gordon",
+      "Yeonwoo",
+      "Fahd",
+      "Forrest"
     ],
     "lockedSlots": [
       {
@@ -106,7 +112,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "Chenko identified by appearance (purple hair). Chenko's and Saul's Lv 54 is inferred: Howard shows Lv 54 in a drill slot on 22 Oct, and slotted heroes take the lowest instructor's level. Only Howard is confirmed slotted; the other slots weren't shown."
+    "_instructorNote": "Slots from the Drill Camp screen of 22 Oct (all 7 filled). That screen still showed instructors Jabel 54, Saul 50, Chenko 49, Diana 49, Quinn 52, so it was taken before Quinn and Diana reached 54. Howard's later hero screen shows Lv 54 in his slot, which by the camp rule means all 5 instructors are now 54; Chenko's and Saul's 54 is inferred, not seen. Chenko identified by appearance."
   },
   "recommendations": [
     {
@@ -171,59 +177,8 @@
       "note": "Check in Gear Details that the + level moves with the piece before you confirm."
     },
     {
-      "id": "drill-fill",
-      "priority": 2,
-      "type": "Drill Camp",
-      "what": "Fill the rest of the Drill Camp: every slotted hero now becomes Lv 54",
-      "why": "Howard sits in a drill slot at Lv 54 (he was 49), so the camp now runs at Lv 54. Any hero you add jumps to 54 at no XP cost: Amane and Helga from 46, Fahd from 48, the others from 49.",
-      "changes": [
-        {
-          "where": "Drill slots",
-          "before": [
-            "Howard",
-            "(others not shown)"
-          ],
-          "after": [
-            "Howard",
-            "Gordon",
-            "Amane",
-            "Helga",
-            "Fahd",
-            "Forrest",
-            "Yeonwoo"
-          ]
-        }
-      ],
-      "steps": [
-        "Open Hero Drill Camp → Level Drills and check which slots are already filled.",
-        "Fill the open ones in this order: Gordon, Amane, Helga, Fahd, Forrest, Yeonwoo (7 slots in total with Howard).",
-        "Reset a slotted hero only if you need its XP: it stays Lv 54 while slotted, but goes back to its own level (Lv 1 after a reset) if removed.",
-        "Don't reset Olive, Seth, Edwin or any instructor."
-      ],
-      "evidence": [
-        "Howard's hero screen, 22 Oct: Lv 54 and “You cannot level up a hero within a Drill Camp!”",
-        "Drill Camp screen, 22 Oct: “Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors”",
-        "Instructors: Jabel, Quinn and Diana at Lv 54 on their own screens; Chenko and Saul at 54 inferred"
-      ],
-      "cost": "No XP",
-      "confidence": [
-        "Verified",
-        "Inferred"
-      ],
-      "heroes": [
-        "Howard",
-        "Gordon",
-        "Amane",
-        "Helga",
-        "Fahd",
-        "Forrest",
-        "Yeonwoo"
-      ],
-      "note": "Gordon is first because he is in three line-ups (Arena defense, Barricade 2, Be). Send the Drill Camp screen and I'll record the actual slots."
-    },
-    {
       "id": "near-promo",
-      "priority": 3,
+      "priority": 2,
       "type": "Promotion",
       "what": "Promote Quinn to 4★ first: 3 shards to go",
       "why": "Quinn is at 97 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Edwin 7 to T3, Saul 14 to 2★. Howard reached T4 on 22 Oct.",
@@ -250,7 +205,7 @@
     },
     {
       "id": "gordon-skill",
-      "priority": 4,
+      "priority": 3,
       "type": "Skills",
       "what": "Save 5 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
       "why": "Quinn's skill screen of 22 Oct shows 25 Epic Expedition Manuals. Gordon's Emergency Snack needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), and he now holds the Arena defense front. Fahd left the Arena, so his Arena skills can wait.",
