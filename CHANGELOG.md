@@ -247,6 +247,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Expedition Manuals, expedition skills 28/50 Epic Conquest Books (expedition rows restamped from 21 Oct).
 - `data/manual.json`: Gordon's Emergency Snack move now needs 3 more manuals (27 of 30), using Chenko's later reading of
   the shared stock (Inferred).
+- `hero.md`, Quinn (2026-10-22): promoted to **4-Star (Tier 0)**, 1 / 100 shards; Berserker's Faceplate +16 → +17 (36,015;
+  ATK +146 / HP +452; escort ATK +48 / HP +150; +12.57% Archer Lethality). Hero power 528,735 (= 490,460 + 37,360
+  promotion + 915 Faceplate), gear power 119,135; new Hero Stats and the 4★ Tier 0 → Tier 1 preview; skill rows show
+  28/50 Epic Expedition Manuals and 31/50 Epic Conquest Books. Roster row and the three `lineups.md` rows now say 4-Star.
+- `data/manual.json`: the promotion move now lists the next promotions (Helga 5, Seth 11, Saul 14, Jabel 21) and drops
+  to priority 3; Gordon's Emergency Snack move needs 2 more manuals (28 of 30) and moves to priority 2.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
