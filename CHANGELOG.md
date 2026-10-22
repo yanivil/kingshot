@@ -87,6 +87,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
     line-up under each Top 5 move and a before → after block plus numbered steps on the Invest page.
   - `scripts/build_data.py` warns when a recommendation names an unknown hero or has a malformed
     `steps`/`changes` entry (new test).
+- Arena changes in recommendations are shown by row, Front and Back, as a Now / Suggested table on Invest and
+  as "Front … · Back …" in the Top 5 (`changes[].rows`, `docs/SCHEMA.md`). The other changes read Now / Suggested
+  instead of Before / After.
+- Move 1 now also replaces Fahd with Gordon in the Arena defense front: Fahd is the weakest hero there, and the
+  −12% skill he was picked for is an Expedition (march) skill. Move 7 now saves manuals for Gordon's Emergency
+  Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `data/manual.json`: the Drill Camp rule now says which parts are in-game text (auto-level to the lowest
   instructor, Level Resets refund all Hero XP; 22 Oct screens) and which part is still community (a hero
   removed from the camp returns to its own level).
