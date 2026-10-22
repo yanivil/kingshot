@@ -208,13 +208,13 @@
       "priority": 3,
       "type": "Skills",
       "what": "Save 5 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
-      "why": "Quinn's skill screen of 22 Oct shows 25 Epic Expedition Manuals. Gordon's Emergency Snack needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), and he now holds the Arena defense front. Fahd left the Arena, so his Arena skills can wait.",
+      "why": "Gordon's skill screen of 22 Oct shows 25 Epic Expedition Manuals. His Emergency Snack (Lv 2) needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), the cheapest upgrade among his skills; he holds the Arena defense front, Barricade 2 and the Be march.",
       "steps": [
         "Collect 5 more Epic Expedition Manuals.",
         "Gordon → Skills → Emergency Snack → Upgrade."
       ],
       "evidence": [
-        "hero.md: Quinn 25/50 manuals (22 Oct); Gordon Emergency Snack Lv 2, 25/30 to Lv 3 (21 Oct)"
+        "hero.md: Gordon 25/50 manuals on his BBQ Feast screen (22 Oct); Emergency Snack Lv 2, 30 to Lv 3"
       ],
       "cost": "30 Epic Expedition Manuals",
       "confidence": [
@@ -223,7 +223,7 @@
       "heroes": [
         "Gordon"
       ],
-      "note": "Gordon's screens of 21 Oct showed 25 and 6 manuals; check the count on his skill screen."
+      "note": "The Emergency Snack cost (30) is from the 21 Oct reading; check it on his skill screen."
     }
   ],
   "features": [
