@@ -237,6 +237,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Generator (`scripts/build_data.py`, `date_features`): a feature whose `source` is one of the five .md files now takes
   that file's newest upload date, so the Features page no longer shows 21 Oct for sections updated on 22 Oct. Test
   added; README and SCHEMA updated.
+- `hero.md`: ten more gear screens (2026-10-22) re-confirmed recorded values; restamped to 2026-10-22: Saul's
+  Leatherwear (+10), Archer Health total and gear attribute totals; Helga's Stonewall Greaves (+2), Infantry Lethality
+  total and gear attribute totals; Yeonwoo's Leatherwear and Archer Health total; Olive's Leatherwear and Boots and all
+  her gear totals. Fahd's, Amane's and Edwin's re-confirmed pieces already carried that date. No values changed.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
