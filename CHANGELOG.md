@@ -93,6 +93,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Move 1 now also replaces Fahd with Gordon in the Arena defense front: Fahd is the weakest hero there, and the
   −12% skill he was picked for is an Expedition (march) skill. Move 7 now saves manuals for Gordon's Emergency
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
+- `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
+  preview, skills and gear were re-checked and are unchanged.
 - Line-ups as saved in game on 2026-10-22:
   - `lineups.md`: Arena attack back row has Quinn instead of Amane. Its power is not recorded yet.
   - Arena defense: front row Howard and Gordon, back row Jabel, Diana and Quinn; power 2,417,730.
