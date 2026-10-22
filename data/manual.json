@@ -108,177 +108,8 @@
   },
   "recommendations": [
     {
-      "id": "amane-to-quinn",
-      "priority": 1,
-      "type": "Lineups",
-      "what": "Quinn replaces Amane in 4 lineups; Gordon replaces Fahd in the Arena defense",
-      "why": "Quinn is Lv 52 with 486,220 power and full gear, and he is in no lineup. Amane holds the same archer slot at Lv 46 with 270,310 power and an empty chest slot; in the Arena his Headshot hits for 480% of Attack against her Fire Sigil's 165%. Fahd is the weakest hero in the Arena defense (Lv 48, 295,760 power, two +0 gear pieces), and the −12% damage skill he was picked for (Desert Eclipse) is an Expedition skill, which hero.md lists for marches, not the Arena. Gordon is Lv 49 with 425,150 power and is the squad's only healer: BBQ Feast heals all troops for 240% of his Attack, and he takes 20% less damage. Chenko has almost the same stats, but his Arena skills only help himself and he already holds the Arena attack front. In the Att march you give up Amane's Tri-Phalanx (+15% squad Attack) and get Quinn's Sixth Sense (−12% damage taken) and Precision Shot (50% chance of +30% damage).",
-      "changes": [
-        {
-          "where": "Arena attack",
-          "rows": [
-            {
-              "label": "Front",
-              "before": [
-                "Howard",
-                "Chenko"
-              ],
-              "after": [
-                "Howard",
-                "Chenko"
-              ]
-            },
-            {
-              "label": "Back",
-              "before": [
-                "Jabel",
-                "Diana",
-                "Amane"
-              ],
-              "after": [
-                "Jabel",
-                "Diana",
-                "Quinn"
-              ]
-            }
-          ]
-        },
-        {
-          "where": "Arena defense",
-          "rows": [
-            {
-              "label": "Front",
-              "before": [
-                "Howard",
-                "Fahd"
-              ],
-              "after": [
-                "Howard",
-                "Gordon"
-              ]
-            },
-            {
-              "label": "Back",
-              "before": [
-                "Jabel",
-                "Diana",
-                "Amane"
-              ],
-              "after": [
-                "Jabel",
-                "Diana",
-                "Quinn"
-              ]
-            }
-          ]
-        },
-        {
-          "where": "Barricade 1",
-          "before": [
-            "Howard",
-            "Jabel",
-            "Amane"
-          ],
-          "after": [
-            "Howard",
-            "Jabel",
-            "Quinn"
-          ]
-        },
-        {
-          "where": "Att march",
-          "before": [
-            "Howard (lead)",
-            "Jabel",
-            "Amane"
-          ],
-          "after": [
-            "Howard (lead)",
-            "Jabel",
-            "Quinn"
-          ]
-        }
-      ],
-      "steps": [
-        "Arena → Attack lineup: put Quinn in Amane's back-row slot, then Save.",
-        "Arena → Defense lineup: put Quinn in Amane's back-row slot and Gordon in Fahd's front-row slot, then Save.",
-        "Barricade 1: put Quinn in slot 3.",
-        "March presets → Att: replace Amane with Quinn."
-      ],
-      "evidence": [
-        "hero.md: Quinn Lv 52, 486,220 power, gear 118,220 (4/4); Amane Lv 46, 270,310 power, gear 49,950 (chest empty)",
-        "hero.md: Fahd Lv 48, 295,760 power, two +0 pieces; Desert Eclipse is under his Expedition Skills",
-        "hero.md: Gordon Lv 49, 425,150 power, BBQ Feast heals all troops 240% of Attack, Culinary Chaos −20% damage taken; Chenko 430,600, Defense Upgrade +50% personal Defense",
-        "lineups.md: Amane in Arena attack, Arena defense, Barricade 1, Att; Fahd in Arena defense front"
-      ],
-      "cost": "None (a swap)",
-      "confidence": [
-        "Verified",
-        "Inferred"
-      ],
-      "heroes": [
-        "Amane",
-        "Quinn",
-        "Fahd",
-        "Gordon"
-      ],
-      "note": "The numbers come from the data; which hero fits better is a judgment. Chenko is the alternative for the defense front. Your defense screen of 22 Oct showed 2,288,340 squad power with Quinn in, lower than the 2,349,445 recorded with Amane on 21 Oct; the reason is not known yet."
-    },
-    {
-      "id": "jabel-two-marches",
-      "priority": 2,
-      "type": "Lineups",
-      "what": "Put Gordon in the Be march instead of Jabel",
-      "why": "Jabel is in both Be and Att, so the two marches can't run at the same time. Keep her in Att for combat. Gordon is also Cavalry, so Be keeps its troop mix; he is Lv 49 with 425,150 power, in no other lineup, and his Trash Talk and Super Nutrients add +15% squad Attack and +15% squad Health.",
-      "changes": [
-        {
-          "where": "Be march",
-          "before": [
-            "Diana (lead)",
-            "Jabel",
-            "Forrest"
-          ],
-          "after": [
-            "Diana (lead)",
-            "Gordon",
-            "Forrest"
-          ]
-        },
-        {
-          "where": "Att march (with move 1)",
-          "before": [
-            "Howard (lead)",
-            "Jabel",
-            "Amane"
-          ],
-          "after": [
-            "Howard (lead)",
-            "Jabel",
-            "Quinn"
-          ]
-        }
-      ],
-      "steps": [
-        "March presets → Be: replace Jabel with Gordon."
-      ],
-      "evidence": [
-        "lineups.md: Be (Diana, Jabel, Forrest), Att (Howard, Jabel, Amane)",
-        "hero.md: Gordon Cavalry, Lv 49, 425,150 power, Trash Talk +15% ATK, Super Nutrients +15% HP"
-      ],
-      "cost": "None (a swap)",
-      "confidence": [
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Jabel",
-        "Gordon"
-      ],
-      "note": "Rests on the community rule that a hero can be in only one march at a time. Gordon can also defend in the Arena: Arena lineups and marches don't block each other (Jabel is in both today)."
-    },
-    {
       "id": "seth-gear-to-howard",
-      "priority": 3,
+      "priority": 1,
       "type": "Gear",
       "what": "Move Seth's Epic gloves and boots to Howard",
       "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+17) are better than Seth's, so keep those.",
@@ -339,7 +170,7 @@
     },
     {
       "id": "drill-fill",
-      "priority": 4,
+      "priority": 2,
       "type": "Drill Camp",
       "what": "Slot Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo; reset them; spend the XP on Chenko and Diana",
       "why": "The camp lifts slotted heroes to the lowest instructor's level, Lv 49: Amane and Helga gain 3 levels and Fahd 1, at no cost. A level reset sets a hero to Lv 1 and refunds all their Hero XP, and a slotted hero still auto-levels to 49. Chenko and Diana are the two Lv 49 instructors, so raising both raises every slotted hero.",
@@ -391,53 +222,11 @@
       "note": "Why these seven: Amane, Helga and Fahd gain levels now; Howard, Gordon, Forrest and Yeonwoo are combat heroes that rise with the camp later. Olive, Seth and Edwin are gathering heroes and stay at Lv 49. Not recorded: whether a slotted hero can still be deployed (check Howard after step 1), and what happens if a reset hero leaves the camp (community sources say it goes back to its own level, Lv 1)."
     },
     {
-      "id": "fahd-gear",
-      "priority": 5,
-      "type": "Gear",
-      "what": "Enhance Fahd's Gauntlets and Breastplate from +0 to +12",
-      "why": "Fahd stays in Barricade 2, and his Gauntlets and Breastplate are still at +0 (15,000 power each). At +12 each would match his boots (21,060).",
-      "changes": [
-        {
-          "where": "Fahd's gear",
-          "before": [
-            "Brigader's Armet +11",
-            "Brigader's Gauntlets +0",
-            "Brigader's Breastplate +0",
-            "Brigader's Battle Boots +12"
-          ],
-          "after": [
-            "Brigader's Armet +11",
-            "Brigader's Gauntlets +12",
-            "Brigader's Breastplate +12",
-            "Brigader's Battle Boots +12"
-          ],
-          "note": "Gear power about 71,560 → 83,680"
-        }
-      ],
-      "steps": [
-        "Fahd → Gear → Gauntlets → Enhance to +12.",
-        "Fahd → Gear → Breastplate → Enhance to +12."
-      ],
-      "evidence": [
-        "hero.md: Fahd Gauntlets +0 and Breastplate +0 at 15,000; Battle Boots +12 at 21,060",
-        "The same Rare piece has the same power at the same level in every slot (Gordon's +15 helmet and gauntlets: 22,800 each)"
-      ],
-      "cost": "Enhancement materials; amount not recorded",
-      "confidence": [
-        "Verified",
-        "Inferred"
-      ],
-      "heroes": [
-        "Fahd"
-      ],
-      "note": "The other +0 pieces can wait: Amane leaves the lineups with move 1, and Olive, Yeonwoo, Edwin, Saul and Helga are in none."
-    },
-    {
       "id": "near-promo",
-      "priority": 6,
+      "priority": 3,
       "type": "Promotion",
       "what": "Promote Quinn to 4★ first: 5 shards to go",
-      "why": "Quinn is at 95 / 100 shards and joins four lineups with move 1. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Howard 6 to T4, Edwin 7 to T3, Saul 14 to 2★.",
+      "why": "Quinn is at 95 / 100 shards and now sits in Arena attack, Arena defense, Barricade 1 and Att. His preview shows +37,360 power at 4★ (+105 Attack, +108 Defense, +648 Health). Next closest: Forrest 4 to T4, Helga 5 to T1, Howard 6 to T4, Edwin 7 to T3, Saul 14 to 2★.",
       "steps": [
         "Quinn: 5 shards to 4★.",
         "Howard: 6 shards to T4 (main tank).",
@@ -464,10 +253,10 @@
     },
     {
       "id": "gordon-skill",
-      "priority": 7,
+      "priority": 4,
       "type": "Skills",
       "what": "Save 5 more Epic Expedition Manuals, then upgrade Gordon's Emergency Snack to Lv 3",
-      "why": "Quinn's skill screen of 22 Oct shows 25 Epic Expedition Manuals. Gordon's Emergency Snack needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), and he joins the Arena defense with move 1. Fahd leaves the Arena, so his Arena skills can wait.",
+      "why": "Quinn's skill screen of 22 Oct shows 25 Epic Expedition Manuals. Gordon's Emergency Snack needs 30 for Lv 3 (heals 55% → 60% of his Attack every 5 s), and he now holds the Arena defense front. Fahd left the Arena, so his Arena skills can wait.",
       "steps": [
         "Collect 5 more Epic Expedition Manuals.",
         "Gordon → Skills → Emergency Snack → Upgrade."

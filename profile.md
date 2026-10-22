@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **11.4M** | Total empire strength (the profile screen shows only the rounded figure) | 2026-10-21 |
+| **Overall Account Power** | **11,537,653** | Total empire strength (exact figure from the city screen's top bar) | 2026-10-22 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-21 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-21 |
 | **Total Combat Kills** | **291,236** | Total enemy unit casualties inflicted | 2026-10-21 |
@@ -29,7 +29,7 @@ The Town Center represents the administrative heart of the settlement, governing
 
 * **Current Level:** **Level 20** (Upgrade button active) _(2026-10-21)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-21)_
-* **Stored Food (Bread):** **94.6M** _(2026-10-21)_
+* **Stored Food (Bread):** **104.5M** _(2026-10-22)_
 * **Free Gems:** **21,550** (gem counter on the Drill Camp screen) _(2026-10-22)_
 
 | Attribute | Base Value | Tactical Function | Updated |

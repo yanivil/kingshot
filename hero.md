@@ -12,16 +12,16 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Marches (`Att` / `Be`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-21 |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-22 |
 | **Saul** | SSR / Mythic | Archer | Lv. 50 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) | 2026-10-21 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-21 |
 | **Howard** | SR / Epic | Infantry | Lv. 49 | 3-Star (Tier 3) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-21 |
 | **Diana** | SR / Epic | Archer | Lv. 49 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-21 |
-| **Quinn** | SR / Epic | Archer | Lv. 52 | 3-Star (Tier 5) | Ready Reserve / High Attack DPS | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
+| **Quinn** | SR / Epic | Archer | Lv. 52 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-21 |
-| **Gordon** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Reserve / Support Bruiser | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-21 |
-| **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Arena Defense (Front-R), Barricade 2 (Lead) | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-21 |
-| **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-21 |
+| **Gordon** | SR / Epic | Cavalry | Lv. 49 | 3-Star (Tier 4) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-22 |
+| **Fahd** | SR / Epic | Cavalry | Lv. 48 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-22 |
+| **Amane** | SR / Epic | Archer | Lv. 46 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 49 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-21 |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 49 | 3-Star (Tier 3) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) | 2026-10-21 |
 | **Olive** | Rare (Blue) | Archer | Lv. 49 | 3-Star (Tier 4) | Reserve / Economy | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-21 |
