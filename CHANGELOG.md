@@ -57,6 +57,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   8 escorts, shards 91 / 100, new hero and escort stats, Archer Health +20.74%, chest piece +17, 22 / 50
   manuals, and a new star-promotion preview section. The chest piece's power and conquest stats (and so the
   gear power total, 117,610) are inferred from the same item on Diana. Roster level updated to Lv. 52.
+- From Diana's hero screens and the Drill Camp screen of 2026-10-22:
+  - `hero.md`: Diana's XP counter 2,020 / 130,000 and 22 / 50 manuals; everything else re-checked, unchanged.
+  - `profile.md`: gems 21,450 (gem counter on the Drill Camp screen).
+  - `data/manual.json`: Drill Camp instructors are now Jabel 54, Saul 50, Chenko 49 (identified by
+    appearance), Diana 49 and Quinn 52; 7 open slots, none filled; slot 8 needs Town Center 21. The
+    drill-fill recommendation, the Drill Camp feature date and the stale "Drill Camp" missing item are updated.
 - `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
