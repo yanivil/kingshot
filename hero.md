@@ -617,7 +617,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-10-22 |
-| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-21 |
+| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-22 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-21 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **Base (+0)** | 15,000 | ATK: +72 / HP: +225 | ATK: +24 / HP: +75 | +6.00% Archer Lethality | 2026-10-21 |
 
@@ -693,14 +693,14 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Stonewall Helm** | Infantry | **Rare** | **+11** | 20,500 | ATK: +56 / HP: +549 | ATK: +18 / HP: +183 | +7.54% Infantry Lethality | 2026-10-21 |
-| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+12** | 21,060 | DEF: +74 / HP: +558 | DEF: +24 / HP: +186 | +7.68% Infantry Health | 2026-10-21 |
-| **Armor** | **Stonewall Shroud** | Infantry | **Rare** | **+14** | 22,210 | DEF: +76 / HP: +576 | DEF: +25 / HP: +192 | +7.96% Infantry Health | 2026-10-21 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+12** | 21,060 | ATK: +57 / HP: +558 | ATK: +19 / HP: +186 | +7.68% Infantry Lethality | 2026-10-21 |
+| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+12** | 21,060 | DEF: +74 / HP: +558 | DEF: +24 / HP: +186 | +7.68% Infantry Health | 2026-10-22 |
+| **Armor** | **Stonewall Shroud** | Infantry | **Rare** | **+14** | 22,210 | DEF: +76 / HP: +576 | DEF: +25 / HP: +192 | +7.96% Infantry Health | 2026-10-22 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+12** | 21,060 | ATK: +57 / HP: +558 | ATK: +19 / HP: +186 | +7.68% Infantry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Infantry Lethality:** **+15.22%** (+7.54% Helm + 7.68% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+15.64%** (+7.68% Gloves + 7.96% Shroud) _(2026-10-21)_
+  * **Infantry Health:** **+15.64%** (+7.68% Gloves + 7.96% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
   * **Hero Attributes:** +113 Attack | +150 Defense | +2,241 Health _(2026-10-21)_
   * **Escort Squad Attributes:** +37 Attack | +49 Defense | +747 Health _(2026-10-21)_
@@ -845,7 +845,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+11** | 20,500 | ATK: +88 / HP: +274 | ATK: +29 / HP: +91 | +7.54% Archer Lethality | 2026-10-21 |
-| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-21 |
+| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-22 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-21 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+12** | 21,060 | ATK: +90 / HP: +279 | ATK: +30 / HP: +93 | +7.68% Archer Lethality | 2026-10-21 |
 
