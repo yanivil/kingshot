@@ -90,13 +90,13 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 * **Gauntlets:** **Crusader's Gauntlets (+11, Epic Purple)** — 30,750 Power _(2026-10-22)_  
   *Conquest:* Hero +109 DEF / +549 HP (Escort +36 DEF / +183 HP)  
   *Expedition:* +11.31% Cavalry Health
-* **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-21)_  
+* **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
   *Conquest:* Hero +80 ATK / +402 HP (Escort +26 ATK / +134 HP)  
   *Expedition:* +8.38% Cavalry Lethality
-* **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power _(2026-10-21)_  
+* **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
   *Conquest:* Hero +80 DEF / +402 HP (Escort +26 DEF / +134 HP)  
   *Expedition:* +8.38% Cavalry Health
-* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-21)_  
+* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-22)_  
   *Conquest:* Hero +84 ATK / +420 HP (Escort +28 ATK / +140 HP)  
   *Expedition:* +8.80% Cavalry Lethality
 
@@ -540,18 +540,18 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+15** | 34,200 | ATK: +89 / HP: +877 | ATK: +29 / HP: +292 | +12.15% Infantry Lethality | 2026-10-21 |
-| **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **+15** | 34,200 | DEF: +117 / HP: +877 | DEF: +39 / HP: +292 | +12.15% Infantry Health | 2026-10-21 |
-| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+15** | 34,200 | DEF: +117 / HP: +877 | DEF: +39 / HP: +292 | +12.15% Infantry Health | 2026-10-21 |
-| **Boots** | **Praetorian's Greaves** | Infantry | **Epic** | **+16** | 35,100 | ATK: +90 / HP: +891 | ATK: +30 / HP: +297 | +12.36% Infantry Lethality | 2026-10-21 |
+| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+15** | 34,200 | ATK: +89 / HP: +877 | ATK: +29 / HP: +292 | +12.15% Infantry Lethality | 2026-10-22 |
+| **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **+15** | 34,200 | DEF: +117 / HP: +877 | DEF: +39 / HP: +292 | +12.15% Infantry Health | 2026-10-22 |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+15** | 34,200 | DEF: +117 / HP: +877 | DEF: +39 / HP: +292 | +12.15% Infantry Health | 2026-10-22 |
+| **Boots** | **Praetorian's Greaves** | Infantry | **Epic** | **+16** | 35,100 | ATK: +90 / HP: +891 | ATK: +30 / HP: +297 | +12.36% Infantry Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+24.51%** (+12.15% Helm + 12.36% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+24.30%** (+12.15% Gloves + 12.15% Shroud) _(2026-10-21)_
+  * **Infantry Lethality:** **+24.51%** (+12.15% Helm + 12.36% Greaves) _(2026-10-22)_
+  * **Infantry Health:** **+24.30%** (+12.15% Gloves + 12.15% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +179 Attack | +234 Defense | +3,522 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +59 Attack | +78 Defense | +1,173 Health _(2026-10-21)_
+  * **Hero Attributes:** +179 Attack | +234 Defense | +3,522 Health _(2026-10-22)_
+  * **Escort Squad Attributes:** +59 Attack | +78 Defense | +1,173 Health _(2026-10-22)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
@@ -616,7 +616,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-10-21 |
+| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-10-22 |
 | **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-21 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-21 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **Base (+0)** | 15,000 | ATK: +72 / HP: +225 | ATK: +24 / HP: +75 | +6.00% Archer Lethality | 2026-10-21 |
@@ -1076,7 +1076,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-21 |
-| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health | 2026-10-21 |
+| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health | 2026-10-22 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health | 2026-10-21 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-21 |
 
@@ -1154,15 +1154,15 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+10** | 29,925 | ATK: +82 / HP: +810 | ATK: +27 / HP: +270 | +11.10% Infantry Lethality | 2026-10-21 |
-| **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +675 | DEF: +30 / HP: +225 | +9.00% Infantry Health | 2026-10-21 |
-| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+3** | 24,570 | DEF: +95 / HP: +715 | DEF: +31 / HP: +238 | +9.63% Infantry Health | 2026-10-21 |
+| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+10** | 29,925 | ATK: +82 / HP: +810 | ATK: +27 / HP: +270 | +11.10% Infantry Lethality | 2026-10-22 |
+| **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +675 | DEF: +30 / HP: +225 | +9.00% Infantry Health | 2026-10-22 |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+3** | 24,570 | DEF: +95 / HP: +715 | DEF: +31 / HP: +238 | +9.63% Infantry Health | 2026-10-22 |
 | **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+2** | 15,910 | ATK: +47 / HP: +468 | ATK: +15 / HP: +156 | +6.28% Infantry Lethality | 2026-10-21 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Infantry Lethality:** **+17.38%** (+11.10% Helm + 6.28% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+18.63%** (+9.00% Gloves + 9.63% Shroud) _(2026-10-21)_
+  * **Infantry Health:** **+18.63%** (+9.00% Gloves + 9.63% Shroud) _(2026-10-22)_
 * **Conquest Raw Attribute Increases:**
   * **Hero Attributes:** +129 Attack | +185 Defense | +2,668 Health _(2026-10-21)_
   * **Escort Squad Attributes:** +42 Attack | +61 Defense | +889 Health _(2026-10-21)_

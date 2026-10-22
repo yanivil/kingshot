@@ -158,6 +158,8 @@ column and `_(YYYY-MM-DD)_` after other values) in it: for a hero, its roster ro
 front-matter date is used; with neither, `null` (the page flags the section as undated) and a warning.
 
 The upload dates are removed before values are parsed, so they can never be read as a value.
+An upload date means "last seen in game": it moves forward when a screenshot re-confirms a value, not only
+when the value changes (see README "Update dates").
 
 ### Field sources
 

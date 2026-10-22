@@ -184,6 +184,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `hero.md`: Howard's Praetorian's Shroud (+19) read from its gear screen: 37,890 power, DEF +124 / HP +931,
   escort DEF +41 / HP +310. His gear power is now 127,900 (was "Not recorded"), and the hero / escort stat sums
   from gear are filled in. Seven other gear screens from the same upload match the recorded values (2026-10-22).
+- Date rule (README "Update dates", `docs/SCHEMA.md`): an upload date now means "last seen in game". A value
+  re-confirmed by a screenshot takes the upload date even when it didn't change; a derived total moves only
+  when all its parts were re-confirmed.
+- `hero.md`: re-confirmed gear restamped to 2026-10-22: all four of Seth's pieces and his gear totals;
+  Helga's helm, gloves, shroud and Infantry Health total; Saul's Berserker's Bracers; Olive's Berserker's
+  Faceplate; Jabel's Brigader's Armet, Breastplate and Battle Boots. No values changed. Diana's, Quinn's and
+  Howard's re-confirmed pieces already carried 2026-10-22.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
