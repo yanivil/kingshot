@@ -241,6 +241,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Leatherwear (+10), Archer Health total and gear attribute totals; Helga's Stonewall Greaves (+2), Infantry Lethality
   total and gear attribute totals; Yeonwoo's Leatherwear and Archer Health total; Olive's Leatherwear and Boots and all
   her gear totals. Fahd's, Amane's and Edwin's re-confirmed pieces already carried that date. No values changed.
+- `hero.md`, Chenko (2026-10-22): Brigader's Breastplate enhanced +15 → +16 (23,400; DEF +79 / HP +396; escort DEF +26 /
+  HP +132; +8.24% Cavalry Health). Hero power 441,520 (+600), gear power 92,400, Hero Defense 1,466, Hero Health
+  12,036, Escort Health 4,012, Cavalry Health +16.48%; gear totals updated. Skill screens: exploration skills 27/50 Epic
+  Expedition Manuals, expedition skills 28/50 Epic Conquest Books (expedition rows restamped from 21 Oct).
+- `data/manual.json`: Gordon's Emergency Snack move now needs 3 more manuals (27 of 30), using Chenko's later reading of
+  the shared stock (Inferred).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
