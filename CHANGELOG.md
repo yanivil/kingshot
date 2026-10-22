@@ -51,6 +51,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `troops.md`: Infantry 30,756, Cavalry 33,127, Archers 33,045 (total 96,928; shares recomputed),
     infirmary capacity 38,600, account power 11.4M. The old "Net Change" values are cleared (not shown).
   - `profile.md`: account power 11.4M (the screen shows only the rounded figure), stamina 161 / 200.
+- `hero.md`: Jabel's shards are 17 / 40 (were 0 / 40), from her hero screens of 2026-10-22. Level, power,
+  stats, gear, widget, skills and promotion preview were re-checked and are unchanged.
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
 
