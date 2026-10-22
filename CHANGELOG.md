@@ -53,6 +53,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `profile.md`: account power 11.4M (the screen shows only the rounded figure), stamina 161 / 200.
 - `hero.md`: Jabel's shards are 17 / 40 (were 0 / 40), from her hero screens of 2026-10-22. Level, power,
   stats, gear, widget, skills and promotion preview were re-checked and are unchanged.
+- `hero.md`: Quinn from his hero screens of 2026-10-22: Lv. 52, power 485,610, troop capacity 11,140,
+  8 escorts, shards 91 / 100, new hero and escort stats, Archer Health +20.74%, chest piece +17, 22 / 50
+  manuals, and a new star-promotion preview section. The chest piece's power and conquest stats (and so the
+  gear power total, 117,610) are inferred from the same item on Diana. Roster level updated to Lv. 52.
+- `data/manual.json`: Quinn's note "No star-preview data." removed (the preview is now recorded).
 - `governor.powerRounded` (generator, `docs/index.html`, `docs/SCHEMA.md`): a rounded account power is shown
   as "11.4M" on the Overview tile instead of a precise-looking 11,400,000.
 
