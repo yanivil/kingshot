@@ -189,7 +189,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   when all its parts were re-confirmed.
 - `hero.md`: re-confirmed gear restamped to 2026-10-22: all four of Seth's pieces and his gear totals;
   Helga's helm, gloves, shroud and Infantry Health total; Saul's Berserker's Bracers; Olive's Berserker's
-  Faceplate. No values changed.
+  Faceplate; Jabel's Brigader's Armet, Breastplate and Battle Boots. No values changed. Diana's, Quinn's and
+  Howard's re-confirmed pieces already carried 2026-10-22.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

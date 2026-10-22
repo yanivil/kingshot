@@ -90,13 +90,13 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 * **Gauntlets:** **Crusader's Gauntlets (+11, Epic Purple)** — 30,750 Power _(2026-10-22)_  
   *Conquest:* Hero +109 DEF / +549 HP (Escort +36 DEF / +183 HP)  
   *Expedition:* +11.31% Cavalry Health
-* **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-21)_  
+* **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
   *Conquest:* Hero +80 ATK / +402 HP (Escort +26 ATK / +134 HP)  
   *Expedition:* +8.38% Cavalry Lethality
-* **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power _(2026-10-21)_  
+* **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
   *Conquest:* Hero +80 DEF / +402 HP (Escort +26 DEF / +134 HP)  
   *Expedition:* +8.38% Cavalry Health
-* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-21)_  
+* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-22)_  
   *Conquest:* Hero +84 ATK / +420 HP (Escort +28 ATK / +140 HP)  
   *Expedition:* +8.80% Cavalry Lethality
 
