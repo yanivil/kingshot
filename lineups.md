@@ -72,5 +72,5 @@ Reinforced across two fully upgraded Barricades guarding against Rebel Invasions
 
 | Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power | Updated |
 | :--- | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
-| **Beast Hunt** | `Be` | Diana (Lv. 54) | Gordon (Lv. 54) | Forrest (Lv. 49) | 28% Inf / 28% Cav / 44% Arc | 9,195,741 | 2026-10-22 |
+| **Beast Hunt** | `Be` | Diana (Lv. 54) | Gordon (Lv. 54) | Forrest (Lv. 54) | 28% Inf / 28% Cav / 44% Arc | 9,195,741 | 2026-10-22 |
 | **Attack** | `Att` | Howard (Lv. 54) | Jabel (Lv. 54) | Quinn (Lv. 54) | 40% Inf / 34% Cav / 26% Arc | 10,767,581 | 2026-10-22 |
