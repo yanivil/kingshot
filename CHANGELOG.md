@@ -191,6 +191,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Helga's helm, gloves, shroud and Infantry Health total; Saul's Berserker's Bracers; Olive's Berserker's
   Faceplate; Jabel's Brigader's Armet, Breastplate and Battle Boots. No values changed. Diana's, Quinn's and
   Howard's re-confirmed pieces already carried 2026-10-22.
+- `hero.md`: Saul's Windbreaker Faceplate (+16), Windbreaker Boots (+16) and Archer Lethality total re-confirmed
+  and restamped to 2026-10-22. The same upload re-confirmed Chenko's, Gordon's, Edwin's and Quinn's pieces,
+  which already carried that date. No values changed.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

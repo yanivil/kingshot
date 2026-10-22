@@ -1075,14 +1075,14 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-21 |
+| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-22 |
 | **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **Base (+0)** | 22,500 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.00% Archer Health | 2026-10-22 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health | 2026-10-21 |
-| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-21 |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-22 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots) _(2026-10-21)_
+  * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots) _(2026-10-22)_
   * **Archer Health:** **+16.40%** (+9.00% Bracers + 7.40% Leatherwear) _(2026-10-21)_
 * **Conquest Raw Attribute Increases:**
   * **Hero Attributes:** +192 Attack | +162 Defense | +1,201 Health _(2026-10-21)_
