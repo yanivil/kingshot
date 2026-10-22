@@ -69,27 +69,27 @@
     }
   },
   "drillCamp": {
-    "asOf": "2026-10-19",
+    "asOf": "2026-10-22",
     "instructors": [
       {
         "hero": "Jabel",
-        "level": 49
+        "level": 54
+      },
+      {
+        "hero": "Saul",
+        "level": 50
       },
       {
         "hero": "Chenko",
         "level": 49
       },
       {
-        "hero": "Howard",
+        "hero": "Diana",
         "level": 49
       },
       {
         "hero": "Quinn",
-        "level": 49
-      },
-      {
-        "hero": "Diana",
-        "level": 49
+        "level": 52
       }
     ],
     "slotsTotal": 15,
@@ -100,10 +100,11 @@
         "slot": 8,
         "requirement": "TC 21",
         "tcLevel": 21,
-        "note": "Screen says “requires Lv 21”, read as Town Center 21"
+        "note": "Screen shows the Town Center icon with Lv. 21"
       }
     ],
-    "testHero": "Edwin"
+    "testHero": "Edwin",
+    "_instructorNote": "Chenko identified by appearance (purple hair); the other four match their hero screens. Confirm in game."
   },
   "recommendations": [
     {
@@ -130,10 +131,10 @@
       "priority": 2,
       "type": "Drill Camp",
       "what": "Fill the 7 empty Drill Camp slots, reset the slotted heroes, and put the refunded Hero XP into the lowest instructor",
-      "why": "7 slots are open and 10 heroes are not instructors. Slotting Amane and Helga (Lv 46) would raise them to 49 at no XP cost. Saul (Lv 50) is above the instructors, so don't slot him.",
+      "why": "7 slots are open and 10 heroes are not instructors. The lowest instructor is Lv 49, so slotting Amane, Helga (Lv 46) and Fahd (Lv 48) would raise them to 49 at no XP cost.",
       "evidence": [
-        "Drill Camp screen, 19 Oct: 7 open slots, all instructors Lv 49",
-        "hero.md: Amane 46, Helga 46, Saul 50"
+        "Drill Camp screen, 22 Oct: 7 open slots, 0 filled, lowest instructor Lv 49",
+        "hero.md: Amane 46, Helga 46, Fahd 48"
       ],
       "cost": "No XP to slot (per community rule)",
       "confidence": [
@@ -143,7 +144,7 @@
       "heroes": [
         "Amane",
         "Helga",
-        "Saul",
+        "Fahd",
         "Edwin"
       ],
       "note": "Test one gathering hero (Edwin) first."
@@ -310,7 +311,7 @@
       "state": null,
       "hasData": true,
       "source": null,
-      "asOf": "2026-10-19",
+      "asOf": "2026-10-22",
       "note": null
     },
     {
@@ -479,10 +480,6 @@
       {
         "area": "Defense",
         "title": "Guard Station"
-      },
-      {
-        "area": "Drill Camp",
-        "title": "Current state (last read 19 Oct, before Saul and Helga were recorded)"
       },
       {
         "area": "Events",

@@ -344,7 +344,7 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 * **Hero Name:** Diana _(2026-10-21)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 49** (XP: 37,037 / 130,000 to Lv. 50) _(2026-10-21)_
+* **Current Level:** **Lv. 49** (XP: 2,020 / 130,000 to Lv. 50) _(2026-10-22)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 54 / 100 to 4-Star promotion) _(2026-10-21)_
 * **Total Hero Power:** **472,250** _(2026-10-21)_
 * **Troop Capacity Boost:** **+10,420 Troops** _(2026-10-21)_
@@ -397,9 +397,9 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Incendiary Arrows** | Active (Top) | **Lv. 3** | Deals **250% damage** to target and **84% AoE splash** to nearby enemies. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 270% / 91% AoE) | 2026-10-21 |
-| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: +25% Speed) | 2026-10-21 |
-| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: +16% Crit Rate) | 2026-10-21 |
+| **Incendiary Arrows** | Active (Top) | **Lv. 3** | Deals **250% damage** to target and **84% AoE splash** to nearby enemies. | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: 270% / 91% AoE) | 2026-10-22 |
+| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: +25% Speed) | 2026-10-22 |
+| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: +16% Crit Rate) | 2026-10-22 |
 
 ### 5. Expedition Skills (Army Warfare & Beast Hunting)
 

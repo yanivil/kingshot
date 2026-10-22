@@ -30,7 +30,7 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Current Level:** **Level 20** (Upgrade button active) _(2026-10-21)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-21)_
 * **Stored Food (Bread):** **94.6M** _(2026-10-21)_
-* **Free Gems:** **17,030** _(2026-10-21)_
+* **Free Gems:** **21,450** (gem counter on the Drill Camp screen) _(2026-10-22)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
