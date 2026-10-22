@@ -259,11 +259,11 @@
     {
       "name": "Research",
       "unlock": null,
-      "state": null,
+      "state": "Active",
       "hasData": false,
-      "source": null,
-      "asOf": null,
-      "note": null
+      "source": "profile.md",
+      "asOf": "2026-10-22",
+      "note": "Institute Lv 20: +2.0% research speed (Details table, 22 Oct). Research levels are not recorded yet."
     },
     {
       "name": "Heroes",
@@ -441,7 +441,7 @@
       },
       {
         "area": "City",
-        "title": "Research"
+        "title": "Research levels"
       },
       {
         "area": "City",

@@ -233,6 +233,17 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(bd.newest_date("no dates", "2026-10-01"), "2026-10-01")
         self.assertIsNone(bd.newest_date("no dates"))
 
+    def test_features_take_their_source_file_date(self) -> None:
+        """A feature sourced from a parsed file takes that file's date; others keep theirs."""
+        feats = [
+            {"name": "Troops", "source": "troops.md", "asOf": "2026-10-21"},
+            {"name": "Drill Camp", "source": None, "asOf": "2026-10-19"},
+            {"name": "Odd", "source": "elsewhere.md", "asOf": "2026-10-18"},
+            {"name": "Undated", "source": "codes.md", "asOf": "2026-10-17"},
+        ]
+        bd.date_features(feats, {"troops.md": "2026-10-22", "codes.md": None})
+        self.assertEqual([f["asOf"] for f in feats], ["2026-10-22", "2026-10-19", "2026-10-18", "2026-10-17"])
+
     def test_player_id_guard(self) -> None:
         """The build refuses to write text containing the Player ID."""
         bd.check_player_id("nothing here", "123456789")

@@ -127,6 +127,8 @@ rounded too instead of a precise-looking 11,400,000.
 `unlock` is `{type:"tc", level}`, `{type:"serverDay", day}` or `null`.
 `state` (`"Active"`, `"Locked"`, `"Coming soon"`, `"Unknown"`) wins when set; when `null`, the page
 computes it from `unlock` and labels it "(by rule)", or shows "Unknown".
+When `source` names one of the five .md files, the generator sets `asOf` to that file's newest upload date
+(the typed `asOf` is only kept for features with no such source).
 
 ### `dataHealth`
 `conflicts[{area, title, detail}]` and `missing[{area, title}]`. The page adds computed items:

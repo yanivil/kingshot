@@ -1385,10 +1385,33 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
             ks[key] = []
     if ks["dataHealth"] is None:
         ks["dataHealth"] = {"conflicts": [], "missing": []}
+    date_features(ks["features"], dates)
     check_recommendations(ks, log)
 
     check_player_id(json.dumps(ks, ensure_ascii=False), profile["playerId"])
     return ks, profile["playerId"]
+
+
+def date_features(features: List[Dict[str, Any]], dates: Dict[str, Optional[str]]) -> None:
+    """Date each feature from the file it names as its ``source``.
+
+    Why: features are hand-written in manual.json, so a typed ``asOf`` goes
+    stale as soon as the source file gets a newer upload date. A feature whose
+    ``source`` is one of the parsed .md files takes that file's newest upload
+    date instead; features with no source (or another source) keep their own.
+
+    Args:
+        features: ``ks["features"]``, changed in place.
+        dates: Newest upload date per source file name (``"profile.md"`` → ISO date or None).
+
+    Returns:
+        None.
+    """
+    for feature in features:
+        src = feature.get("source") if isinstance(feature, dict) else None
+        # Only a parsed file with a known date wins; anything else keeps the typed value.
+        if src in dates and dates[src]:
+            feature["asOf"] = dates[src]
 
 
 def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
