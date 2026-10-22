@@ -95,6 +95,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Diana from her screens of 2026-10-22: Lv. 54 (cap until Town Center 21), power 482,570, troop capacity 11,525,
+  8 escorts, Hero 1,569 ATK / 1,534 DEF / 9,579 HP, Escort 522 / 510 / 3,192, 25 / 50 manuals. Shards (54 / 100),
+  expedition bonuses, promotion preview and gear re-checked, unchanged. Her level is updated in the roster,
+  `lineups.md`, `troops.md` and the Drill Camp instructors; the Drill Camp move now names Chenko (the only Lv 49
+  instructor) as the one to level.
 - Dashboard dates now follow the per-value upload dates (`scripts/build_data.py`, new test): each hero shows the
   newest date in its roster row and profile, other sections the newest date in their file. The front-matter
   `as_of` is only a fallback, so sections updated on 2026-10-22 no longer show 21 Oct. `README.md`,

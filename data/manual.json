@@ -85,7 +85,7 @@
       },
       {
         "hero": "Diana",
-        "level": 49
+        "level": 54
       },
       {
         "hero": "Quinn",
@@ -172,8 +172,8 @@
       "id": "drill-fill",
       "priority": 2,
       "type": "Drill Camp",
-      "what": "Slot Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo; reset them; spend the XP on Chenko and Diana",
-      "why": "The camp lifts slotted heroes to the lowest instructor's level, Lv 49: Amane and Helga gain 3 levels and Fahd 1, at no cost. A level reset sets a hero to Lv 1 and refunds all their Hero XP, and a slotted hero still auto-levels to 49. Chenko and Diana are the two Lv 49 instructors, so raising both raises every slotted hero.",
+      "what": "Slot Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo; reset them; spend the XP on Chenko",
+      "why": "The camp lifts slotted heroes to the lowest instructor's level, Lv 49: Amane and Helga gain 3 levels and Fahd 1, at no cost. A level reset sets a hero to Lv 1 and refunds all their Hero XP, and a slotted hero still auto-levels to the camp level. Chenko is now the only Lv 49 instructor (Jabel, Quinn and Diana are 54, Saul 50), so every level Chenko gains up to 50 raises every slotted hero.",
       "changes": [
         {
           "where": "Drill slots 1–7",
@@ -193,15 +193,15 @@
         "Level Drills: put Amane, Helga, Fahd, Howard, Gordon, Forrest and Yeonwoo in the 7 open slots. They should all show Lv 49.",
         "Level Resets: reset Amane first. Check that she still shows Lv 49 and that your Hero XP went up. Read the confirmation screen for any cost.",
         "If that worked, reset the other six slotted heroes.",
-        "Spend the XP on Chenko and Diana, one level at a time on both (Diana needs 130,000 XP for Lv 50). With both at Lv 50, all seven slotted heroes become Lv 50.",
-        "Keep going: Chenko, Diana and Saul together, up to Lv 54 (Jabel and Quinn are already there), the cap until Town Center 21.",
+        "Spend the XP on Chenko first: at Lv 50 all seven slotted heroes become Lv 50.",
+        "Then raise Chenko and Saul together, up to Lv 54, the cap until Town Center 21.",
         "Don't reset Olive, Seth, Edwin or any instructor. They aren't slotted, so they would really drop to Lv 1."
       ],
       "evidence": [
         "Drill Camp screen, 22 Oct: “Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors”",
         "Level Resets screen, 22 Oct: “reset the hero level to Lv. 1 and refund all the Hero XP”",
-        "Instructors: Jabel 54, Quinn 54 (hero screen), Saul 50, Chenko 49, Diana 49; 7 open slots, slot 8 at Town Center 21",
-        "hero.md: Amane 46, Helga 46, Fahd 48, Diana 2,020 / 130,000 XP"
+        "Instructors: Jabel 54, Quinn 54, Diana 54 (hero screens), Saul 50, Chenko 49; 7 open slots, slot 8 at Town Center 21",
+        "hero.md: Amane 46, Helga 46, Fahd 48"
       ],
       "cost": "No XP to slot; reset cost not recorded",
       "confidence": [
@@ -216,8 +216,7 @@
         "Gordon",
         "Forrest",
         "Yeonwoo",
-        "Chenko",
-        "Diana"
+        "Chenko"
       ],
       "note": "Why these seven: Amane, Helga and Fahd gain levels now; Howard, Gordon, Forrest and Yeonwoo are combat heroes that rise with the camp later. Olive, Seth and Edwin are gathering heroes and stay at Lv 49. Not recorded: whether a slotted hero can still be deployed (check Howard after step 1), and what happens if a reset hero leaves the camp (community sources say it goes back to its own level, Lv 1)."
     },
