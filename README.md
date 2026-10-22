@@ -93,6 +93,11 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
   states and the data-health checks.
 * Game rules come from community sources and are labelled **Unverified** wherever they are used.
 * The Player ID is never displayed.
+* **Gift-code marks.** On the Codes page, tap a code to mark it redeemed or not. The page can't write to
+  `codes.md`, so marks are saved in that browser's `localStorage` (key `ks-code-marks`) and only that device
+  sees them. A mark that differs from `codes.md` shows "This device", and the page lists those marks so they
+  can be copied into `codes.md`. Once `codes.md` says the same, the mark is dropped. "Clear marks on this
+  device" removes them all.
 
 ### Updating the data
 

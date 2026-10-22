@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Codes page (`docs/index.html`): each code is now a toggle to mark it redeemed or not. Marks are saved in the
+  browser (`localStorage` key `ks-code-marks`), shown with a "This device" tag, listed as "not in codes.md yet",
+  and dropped once `codes.md` agrees; "Clear marks on this device" removes them. The lede counts active codes
+  still to redeem. Works with storage blocked (marks then last for the visit). Documented in README and SCHEMA.
 - `docs/index.html`: static, self-contained account dashboard for GitHub Pages with ten views
   (Overview, Heroes, Drill Camp, Army & marches, Defense & Arena, City, Invest, Features,
   Data health, Codes) and a hero detail drawer. Phone-first, light/dark/auto theme, no build step.
@@ -204,6 +208,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Unverified. Quinn's promotion and Gordon's skill moves are unchanged (no new shard or manual data).
 - `data/manual.json`: removed the "Hero XP readings differ" data-health conflict. All six readings it quoted were
   replaced by the 22 Oct Lv 54 hero updates, and no data file holds a Hero XP reading any more.
+- `codes.md`: `lwaL5ZKx5`, `KSGW26JP` and `KSPRAWNING` added to the expired archive (could not be redeemed when
+  tried on 2026-10-22; rewards not recorded). Kingshot888, VIP777, KS1017, VIP1017, CHALLENGE26 and IG200KS were
+  re-checked the same day and restamped to 2026-10-22.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
