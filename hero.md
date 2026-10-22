@@ -34,7 +34,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-21)_
 * **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-21)_
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 0 / 40 to next promotion) _(2026-10-21)_
+* **Star Tier:** **3-Star (Tier 3)** (Shards: 17 / 40 to next promotion) _(2026-10-22)_
 * **Total Hero Power:** **564,200** _(2026-10-21)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-21)_
 * **Escort Guards:** **8 Escorts** _(2026-10-21)_
@@ -57,7 +57,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 ### 2. Star Promotion Milestone Preview
 
-Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Shards** (currently 0/40). _(2026-10-21)_
+Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Shards** (currently 17/40). _(2026-10-22)_
 
 *Recorded at Lv. 53, before the level-up to Lv. 54; not re-read since.*
 
