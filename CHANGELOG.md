@@ -95,6 +95,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- Helga from her screens of 2026-10-22: Lv. 54 in a Drill Camp slot (was 46), power 259,615, troop capacity 11,525,
+  8 escorts, Hero 599 ATK / 743 DEF / 11,875 HP, Escort 198 / 247 / 3,958. Shards (0 / 5), bonuses, promotion preview,
+  skills and gear unchanged. All 15 heroes now carry 2026-10-22 readings.
 - Saul from his screens of 2026-10-22: Lv. 54 (was 50), power 284,550, troop capacity 11,525, Hero 1,058 ATK / 876 DEF /
   6,556 HP, Escort 352 / 292 / 2,185. Shards (1 / 15), bonuses, promotion preview, skills and gear unchanged. This confirms
   all 5 Drill Camp instructors at Lv 54 (Saul's level was the last one inferred).

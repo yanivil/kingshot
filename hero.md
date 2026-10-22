@@ -14,7 +14,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
 | **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-22 |
 | **Saul** | SSR / Mythic | Archer | Lv. 54 | 1-Star (Tier 5) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+4%) & HP (+6%) | 2026-10-22 |
-| **Helga** | SSR / Mythic | Infantry | Lv. 46 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-21 |
+| **Helga** | SSR / Mythic | Infantry | Lv. 54 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-22 |
 | **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 4) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-22 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-22 |
 | **Quinn** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
@@ -1105,44 +1105,44 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Hero Name:** Helga _(2026-10-21)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Combat Specialist / Valkyrie Tank (Shield / Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 46** (XP: 26,957 / 100,000 to Lv. 47) _(2026-10-21)_
-* **Star Tier:** **1-Star (Tier 0)** (Shards: 0 / 5 to next tier advancement) _(2026-10-21)_
-* **Total Hero Power:** **237,505** _(2026-10-21)_
-* **Troop Capacity Boost:** **+9,540 Troops** _(2026-10-21)_
-* **Escort Guards:** **7 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **92,905** _(2026-10-21)_
+* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
+* **Star Tier:** **1-Star (Tier 0)** (Shards: 0 / 5 to next tier advancement) _(2026-10-22)_
+* **Total Hero Power:** **259,615** _(2026-10-22)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
+* **Escort Guards:** **8 Escorts** _(2026-10-22)_
+* **Total Equipped Gear Power:** **92,905** _(2026-10-22)_
 * **Exclusive Widget:** Unlocked (Purple Stag/Antler Emblem) _(2026-10-21)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **559** | Spear strike and antler charge scaling | 2026-10-21 |
-| | **Hero Defense** | **695** | Solid armor rating mitigating physical damage | 2026-10-21 |
-| | **Hero Health** | **11,083** | Massive frontline tank health pool | 2026-10-21 |
-| **Conquest (Escort)** | **Escort Attack** | **183** | Attack rating of her 7 bodyguard escorts | 2026-10-21 |
-| | **Escort Defense** | **231** | Defense rating of her escort guards | 2026-10-21 |
-| | **Escort Health** | **3,694** | Health pool of escort guards | 2026-10-21 |
-| **Expedition (March)** | **Infantry Attack** | **+41.23%** | Army-wide bonus to deployed Infantry | 2026-10-21 |
-| | **Infantry Defense** | **+41.23%** | Durability bonus for infantry units | 2026-10-21 |
-| | **Infantry Lethality**| **+17.38%** | Casualty conversion rate for infantry (from gear) | 2026-10-21 |
-| | **Infantry Health** | **+18.63%** | Expanded squad durability pool for infantry (from gear) | 2026-10-21 |
+| **Conquest (Hero)** | **Hero Attack** | **599** | Spear strike and antler charge scaling | 2026-10-22 |
+| | **Hero Defense** | **743** | Solid armor rating mitigating physical damage | 2026-10-22 |
+| | **Hero Health** | **11,875** | Massive frontline tank health pool | 2026-10-22 |
+| **Conquest (Escort)** | **Escort Attack** | **198** | Attack rating of her 8 bodyguard escorts | 2026-10-22 |
+| | **Escort Defense** | **247** | Defense rating of her escort guards | 2026-10-22 |
+| | **Escort Health** | **3,958** | Health pool of escort guards | 2026-10-22 |
+| **Expedition (March)** | **Infantry Attack** | **+41.23%** | Army-wide bonus to deployed Infantry | 2026-10-22 |
+| | **Infantry Defense** | **+41.23%** | Durability bonus for infantry units | 2026-10-22 |
+| | **Infantry Lethality**| **+17.38%** | Casualty conversion rate for infantry (from gear) | 2026-10-22 |
+| | **Infantry Health** | **+18.63%** | Expanded squad durability pool for infantry (from gear) | 2026-10-22 |
 
 ### 2. Star Promotion Milestone Preview (1-Star Tier 0 ➔ Tier 1)
 
-Current Status: **0 / 5 Shards** (needs **5 shards** for next tier advancement). _(2026-10-21)_
+Current Status: **0 / 5 Shards** (needs **5 shards** for next tier advancement). _(2026-10-22)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 45,980 | **+8,140** | 54,120 | 2026-10-21 |
-| **Hero Attack** | 177 | **+25** | 202 | 2026-10-21 |
-| **Hero Defense** | 210 | **+30** | 240 | 2026-10-21 |
-| **Hero Health** | 3,465 | **+495** | 3,960 | 2026-10-21 |
-| **Escort Attack** | 58 | **+9** | 67 | 2026-10-21 |
-| **Escort Defense** | 70 | **+10** | 80 | 2026-10-21 |
-| **Escort Health** | 1,155 | **+165** | 1,320 | 2026-10-21 |
-| **Infantry Attack** | +41.23% | **+3.29%** | **+44.52%** | 2026-10-21 |
-| **Infantry Defense** | +41.23% | **+3.29%** | **+44.52%** | 2026-10-21 |
+| **Base Hero Power** | 45,980 | **+8,140** | 54,120 | 2026-10-22 |
+| **Hero Attack** | 177 | **+25** | 202 | 2026-10-22 |
+| **Hero Defense** | 210 | **+30** | 240 | 2026-10-22 |
+| **Hero Health** | 3,465 | **+495** | 3,960 | 2026-10-22 |
+| **Escort Attack** | 58 | **+9** | 67 | 2026-10-22 |
+| **Escort Defense** | 70 | **+10** | 80 | 2026-10-22 |
+| **Escort Health** | 1,155 | **+165** | 1,320 | 2026-10-22 |
+| **Infantry Attack** | +41.23% | **+3.29%** | **+44.52%** | 2026-10-22 |
+| **Infantry Defense** | +41.23% | **+3.29%** | **+44.52%** | 2026-10-22 |
 
 ### 3. Equipped Hero Gear
 
