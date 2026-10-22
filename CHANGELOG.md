@@ -211,6 +211,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `codes.md`: `lwaL5ZKx5`, `KSGW26JP` and `KSPRAWNING` added to the expired archive (could not be redeemed when
   tried on 2026-10-22; rewards not recorded). Kingshot888, VIP777, KS1017, VIP1017, CHALLENGE26 and IG200KS were
   re-checked the same day and restamped to 2026-10-22.
+- `lineups.md`: Arena defense power is now 2,452,930 (Defensive Squad Lineup screen, 2026-10-22), exactly the sum of
+  Howard's, Gordon's, Jabel's, Diana's and Quinn's recorded powers, which clears that Data-health conflict. Fresh
+  Barricade screens with all six heroes at Lv 54 re-confirm 1.5M and 1.3M; Jabel's Arena-defense and Barricade 1 rows
+  restamped.
+- `profile.md` and `troops.md` (2026-10-22): account power 11,643,259, kills 338,672, stamina 199 / 200, bread 105.1M, gems 21,570;
+  kingdom, alliance, VIP, governor gear, Town Center level and citizens re-confirmed. The governor name and Player ID
+  on the profile screen are not recorded.
+- Lineup power check (`docs/index.html`, `docs/SCHEMA.md`): a short figure such as "1.3M" is now treated as cut to one
+  decimal (1,300,000 up to 1,399,999), not rounded. Barricade 2 showed 1.3M for heroes adding up to 1,358,960, which
+  rounding would show as 1.4M. This clears the Barricade 2 conflict.
+- `profile.md`: Town Center perks now use the in-game names and descriptions from the 22 Oct perk screens (Rapid Fire,
+  Strength, Slash, Governor Health / Attack / Defense Enhancement; slot 7 locked, name not shown). The old names were
+  interpretations and are gone. Town Center stats (584 / 1,168 / 17,523) re-confirmed. `data/manual.json`:
+  `perks.namesVerified` is now true and the "Perk names look interpreted" conflict is removed, so Data health
+  lists no conflicts.
+- Data health (`docs/index.html`): the Conflicts panel says "No conflicts found." when the list is empty.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

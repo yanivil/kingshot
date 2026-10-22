@@ -130,7 +130,7 @@ computes it from `unlock` and labels it "(by rule)", or shows "Unknown".
 
 ### `dataHealth`
 `conflicts[{area, title, detail}]` and `missing[{area, title}]`. The page adds computed items:
-lineup power vs. sum of hero powers (>1% difference; for a rounded figure such as "1.3M", more than half its last digit, i.e. 50,000), Drill Camp level vs. hero level, per-field gaps
+lineup power vs. sum of hero powers (>1% difference; a short figure such as "1.3M" is cut to one decimal, not rounded, so it means 1,300,000 up to but not including 1,400,000 and only a sum outside that range is flagged; seen on 22 Oct, when Barricade 2 showed 1.3M for heroes adding up to 1,358,960), Drill Camp level vs. hero level, per-field gaps
 across the roster, and stale or undated sections.
 
 ### `codes`
