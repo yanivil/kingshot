@@ -227,6 +227,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `perks.namesVerified` is now true and the "Perk names look interpreted" conflict is removed, so Data health
   lists no conflicts.
 - Data health (`docs/index.html`): the Conflicts panel says "No conflicts found." when the list is empty.
+- `troops.md` (Troops Preview, "All" tab, 2026-10-22): Brave Infantry 30,988, Cavalry 33,903, Archer 33,518, total
+  98,409 (−321 against the earlier Deploy-screen counts); 6 injured of 38,600; March Queue shown as 2 / 4. The 150
+  Veteran Cavalry and 150 Veteran Archers (Tier IV) are no longer listed. The header's "1,278/98,409" is recorded
+  as shown; the screen does not say what 1,278 counts.
+- `profile.md`: new "Research Building (Institute)" section: Lv 20, +2.0% research speed, 94,996 building power
+  (Lv 21: +2.1%, 107,624). Research levels are still not recorded. `data/manual.json`: the Research feature is
+  Active with that note, and the Data-health gap is renamed "Research levels".
+- Generator (`scripts/build_data.py`, `date_features`): a feature whose `source` is one of the five .md files now takes
+  that file's newest upload date, so the Features page no longer shows 21 Oct for sections updated on 22 Oct. Test
+  added; README and SCHEMA updated.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

@@ -10,23 +10,23 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 ## Current Troop Inventory
 
-Standing forces are **Tier VII (Brave)** units across the three military branches. The Deploy screen of 2026-10-22 also lists 150 Veteran Cavalry and 150 Veteran Archers (Tier IV), not counted below.
+Standing forces are **Tier VII (Brave)** units across the three military branches. Counts are from the Troops Preview screen, "All" tab (in town and out of town), of 2026-10-22. That screen lists only these three units; the 150 Veteran Cavalry and 150 Veteran Archers (Tier IV) seen earlier the same day on the Deploy screen are no longer listed. Net Change is against the earlier 2026-10-22 Deploy-screen counts.
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VII | Brave Infantry | 31,858 | 32.3% | In Town / Ready | — | 2026-10-22 |
-| **Cavalry** | VII | Brave Cavalry | 33,477 | 33.9% | In Town / Ready | — | 2026-10-22 |
-| **Marksmen** | VII | Brave Archer | 33,395 | 33.8% | In Town / Ready | — | 2026-10-22 |
-| **Total Military Force** | **VII** | — | **98,730** | **100%** | **0 Injured** | — | 2026-10-22 |
+| **Infantry** | VII | Brave Infantry | 30,988 | 31.5% | All (in and out of town) | −870 | 2026-10-22 |
+| **Cavalry** | VII | Brave Cavalry | 33,903 | 34.5% | All (in and out of town) | +426 | 2026-10-22 |
+| **Marksmen** | VII | Brave Archer | 33,518 | 34.1% | All (in and out of town) | +123 | 2026-10-22 |
+| **Total Military Force** | **VII** | — | **98,409** | **100%** | **6 Injured** | −321 | 2026-10-22 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 98,730 | Tier VII counts available on the Deploy screen | 2026-10-22 |
+| **Total Standing Troops** | 98,409 | Troops Preview, "All" tab. The header reads "1,278/98,409"; the screen does not say what 1,278 counts | 2026-10-22 |
 | **Single March Capacity** | 77,785 | `Att` preset; `Be` shows 75,960, so it depends on the heroes | 2026-10-22 |
-| **Available March Queues** | 4 / 4 | All 4 dispatch queues unlocked | 2026-10-21 |
-| **Infirmary Hospital Capacity** | 38,600 | 0 / 38,600 injured (0% occupancy) | 2026-10-21 |
+| **Available March Queues** | 2 / 4 | Shown as "March Queue 2/4" on the Troops Preview screen; the screen does not say whether 2 is in use or free | 2026-10-22 |
+| **Infirmary Hospital Capacity** | 38,600 | 6 / 38,600 injured | 2026-10-22 |
 | **Overall Account Power** | 11,643,259 | VIP 3 (Kingdom #2508) | 2026-10-22 |
 | **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP | 2026-10-22 |
 

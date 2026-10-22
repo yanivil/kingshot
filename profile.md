@@ -49,3 +49,12 @@ The Town Center represents the administrative heart of the settlement, governing
 | **Slot 5** | **Unlocked** | **Governor Attack Enhancement** | "Increases Governor Attack by +300% in Rebel Invasion." | 2026-10-22 |
 | **Slot 6** | **Unlocked** | **Governor Defense Enhancement** | "Increases Governor Defense by +250% in Rebel Invasion." | 2026-10-22 |
 | **Slot 7** | **Locked** | *Name not shown* | Shown with a lock icon; its name and effect were not opened | 2026-10-22 |
+
+### 3. Research Building (Institute)
+
+The building's Details screen reads "An Institute for researching new technologies. Upgrade for access to more powerful tech."
+
+* **Institute Level:** **Level 20** (the highlighted row of the Details table) _(2026-10-22)_
+* **Research Speed Bonus:** **+2.0%** at Lv 20; Lv 21 gives +2.1% _(2026-10-22)_
+* **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628) _(2026-10-22)_
+* **Research Levels:** Not recorded (no research tree screen yet) _(2026-10-22)_

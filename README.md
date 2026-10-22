@@ -66,7 +66,7 @@ upload keep their old date.
 The dashboard dates come from these upload dates: each hero shows the newest date in its roster row and
 profile, and every other section shows the newest date in its file. So updating a value's date is enough
 to move the dashboard date forward. The `as_of:` line at the top of each file is only the fallback for a
-section with no dates.
+section with no dates. Features on the Features page take the date of the file named as their source.
 
 ## Account Dashboard
 
