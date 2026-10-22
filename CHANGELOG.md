@@ -95,6 +95,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Snack instead of Fahd's Arena skill, and move 5 no longer counts Fahd as an Arena hero.
 - `hero.md`: Jabel's shards 19 / 40 (were 17), from her screens of 2026-10-22. Power, stats, promotion
   preview, skills and gear were re-checked and are unchanged.
+- `data/manual.json`: Drill Camp slots from the 22 Oct screen: Amane, Helga, Howard, Gordon, Yeonwoo, Fahd and Forrest
+  (7 / 7 filled). The Drill Camp move is done and removed; 3 moves remain.
 - `scripts/build_data.py`: a value written as "Not recorded (…)" or "Not shown (…)" is read as missing, so a number
   in the explanation (a date, a "+19") can't become the value (new test).
 - Howard from his screens of 2026-10-22: Lv. 54 in a Drill Camp slot, promoted to 3-Star Tier 4 (9 / 40 to T5), power
