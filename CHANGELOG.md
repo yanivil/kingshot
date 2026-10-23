@@ -335,3 +335,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Defense & Arena (`docs/index.html`): a power difference whose percentage rounds to zero showed a plus sign, e.g.
   "−915 (+0%)". The sign now follows the value (+ above zero, − below, none at zero), so it reads "−915 (0%)", and an
   exact match reads "0 (0%)" instead of "+0 (+0%)".
+- Features page dates (`scripts/build_data.py`, `data/manual.json`): a feature can name a `section` of its source
+  file and then takes that section's newest date instead of the whole file's. Set for Town Center & buildings,
+  Research, Troops, Arena, Barricades, Governor Gear and Alliance. Barricades now shows 22 Oct (its last upload) instead
+  of 23 Oct, and Research 22 Oct instead of 23 Oct. Test added; documented in `docs/SCHEMA.md` and `README.md`.

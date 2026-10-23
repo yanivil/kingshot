@@ -237,6 +237,7 @@
       "state": "Active",
       "hasData": true,
       "source": "profile.md",
+      "section": "^Town Center \\(TC\\)",
       "asOf": "2026-10-21",
       "note": null
     },
@@ -246,6 +247,7 @@
       "state": "Active",
       "hasData": false,
       "source": "profile.md",
+      "section": "Research Building",
       "asOf": "2026-10-22",
       "note": "Institute Lv 20: +2.0% research speed (Details table, 22 Oct). Research levels are not recorded yet."
     },
@@ -297,6 +299,7 @@
       "state": "Active",
       "hasData": true,
       "source": "troops.md",
+      "section": "^Current Troop Inventory",
       "asOf": "2026-10-21",
       "note": null
     },
@@ -306,6 +309,7 @@
       "state": "Active",
       "hasData": true,
       "source": "lineups.md",
+      "section": "^Arena 5v5 Squads",
       "asOf": "2026-10-21",
       "note": null
     },
@@ -324,6 +328,7 @@
       "state": "Active",
       "hasData": true,
       "source": "lineups.md",
+      "section": "^Wall Guard",
       "asOf": "2026-10-21",
       "note": "Both at Lv 10 (max)."
     },
@@ -348,6 +353,7 @@
       "state": null,
       "hasData": true,
       "source": "profile.md",
+      "section": "^Governor Identity",
       "asOf": "2026-10-21",
       "note": "6 of 6 slots locked."
     },
@@ -381,6 +387,7 @@
       "state": "Active",
       "hasData": true,
       "source": "profile.md",
+      "section": "^Governor Identity",
       "asOf": "2026-10-21",
       "note": "Alliance SPQ."
     },

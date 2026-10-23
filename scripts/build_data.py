@@ -1449,24 +1449,30 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
             ks[key] = []
     if ks["dataHealth"] is None:
         ks["dataHealth"] = {"conflicts": [], "missing": []}
-    date_features(ks["features"], dates)
+    date_features(ks["features"], dates, bodies, log)
     check_recommendations(ks, log)
 
     check_player_id(json.dumps(ks, ensure_ascii=False), profile["playerId"])
     return ks, profile["playerId"]
 
 
-def date_features(features: List[Dict[str, Any]], dates: Dict[str, Optional[str]]) -> None:
-    """Date each feature from the file it names as its ``source``.
+def date_features(features: List[Dict[str, Any]], dates: Dict[str, Optional[str]],
+                  bodies: Optional[Dict[str, str]] = None, log: Optional[BuildLog] = None) -> None:
+    """Date each feature from the file (or the section of it) it names as its source.
 
     Why: features are hand-written in manual.json, so a typed ``asOf`` goes
     stale as soon as the source file gets a newer upload date. A feature whose
     ``source`` is one of the parsed .md files takes that file's newest upload
     date instead; features with no source (or another source) keep their own.
+    One file can hold parts read on different days (Arena squads and
+    barricades in lineups.md), so a feature may also name a ``section``
+    (a heading pattern) and then takes the newest date in that section.
 
     Args:
         features: ``ks["features"]``, changed in place.
         dates: Newest upload date per source file name (``"profile.md"`` → ISO date or None).
+        bodies: Source file bodies by name; needed only for ``section``.
+        log: Warning collector; a ``section`` that matches no heading is reported.
 
     Returns:
         None.
@@ -1474,8 +1480,18 @@ def date_features(features: List[Dict[str, Any]], dates: Dict[str, Optional[str]
     for feature in features:
         src = feature.get("source") if isinstance(feature, dict) else None
         # Only a parsed file with a known date wins; anything else keeps the typed value.
-        if src in dates and dates[src]:
-            feature["asOf"] = dates[src]
+        if not (src in dates and dates[src]):
+            continue
+        feature["asOf"] = dates[src]
+        pattern = feature.get("section")
+        if pattern and bodies and src in bodies:
+            sec = find_section(split_sections(bodies[src]), pattern)
+            if sec is None:
+                # Edge case: a renamed heading keeps the file date and says so.
+                if log:
+                    log.warn("data/manual.json", f"feature '{feature.get('name')}': section '{pattern}' not found in {src}")
+                continue
+            feature["asOf"] = section_date(sec, dates[src])
 
 
 def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:

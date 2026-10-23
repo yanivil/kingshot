@@ -129,12 +129,14 @@ with its own "as of" date. Missing part dates fall back to `lineups.asOf`.
 | `changes` | Optional. `[{where, before: string[], after: string[], note?}]` or, for grouped line-ups such as the Arena, `[{where, rows: [{label, before, after}], note?}]` (e.g. `Front` / `Back`). The end state of each line-up, gear set or slot group the move touches. Overview Top 5 shows `where: after` (`where: Front … · Back …` for rows) with new entries in bold; Invest shows Now (leaving entries struck out) and Suggested (joining entries highlighted), as a Now / Suggested table when there are rows. An empty `before` shows "Empty". The generator warns on a malformed entry or a hero name not in `hero.md` |
 
 ### `features[]`
-`{name, unlock, state, hasData, source, asOf, note}`.
+`{name, unlock, state, hasData, source, section?, asOf, note}`.
 `unlock` is `{type:"tc", level}`, `{type:"serverDay", day}` or `null`.
 `state` (`"Active"`, `"Locked"`, `"Coming soon"`, `"Unknown"`) wins when set; when `null`, the page
 computes it from `unlock` and labels it "(by rule)", or shows "Unknown".
 When `source` names one of the five .md files, the generator sets `asOf` to that file's newest upload date
-(the typed `asOf` is only kept for features with no such source).
+(the typed `asOf` is only kept for features with no such source). An optional `section` (a heading pattern, e.g.
+`"^Wall Guard"`) narrows this to the newest date in that section, for files whose parts are read on different
+days; a pattern that matches no heading keeps the file date and the generator warns.
 
 ### `dataHealth`
 `conflicts[{area, title, detail}]` and `missing[{area, title}]`. The page adds computed items:
