@@ -18,7 +18,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 4) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-22 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-15%) & march speed (+60%) | 2026-10-22 |
 | **Quinn** | SR / Epic | Archer | Lv. 54 | 4-Star (Tier 0) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-22 |
-| **Chenko** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-22 |
+| **Chenko** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-23 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-22 |
 | **Fahd** | SR / Epic | Cavalry | Lv. 54 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-22 |
 | **Amane** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
@@ -197,46 +197,46 @@ Gear power is 38,850 + 25,900 + 37,890 + 25,260 = 127,900. _(2026-10-22)_
 
 ## In-Depth Hero Profile: Chenko
 
-* **Hero Name:** Chenko _(2026-10-21)_
-* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
-* **Class & Role:** Cavalry Combat Specialist / Offensive Bruiser (Crossed Swords / Horse) _(2026-10-21)_
-* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-22)_
-* **Star Tier:** **3-Star (Tier 4)** (Shards: 10 / 40 to Tier 5 promotion) _(2026-10-22)_
-* **Total Hero Power:** **441,520** _(2026-10-22)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
-* **Escort Guards:** **8 Escorts** _(2026-10-22)_
-* **Total Equipped Gear Power:** **92,400** _(2026-10-22)_
+* **Hero Name:** Chenko _(2026-10-23)_
+* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-23)_
+* **Class & Role:** Cavalry Combat Specialist / Offensive Bruiser (Crossed Swords / Horse) _(2026-10-23)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-23)_
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 15 / 40 to Tier 5 promotion; Redeem shows 0) _(2026-10-23)_
+* **Total Hero Power:** **447,120** (+5,600 from the Gauntlets and Battle Boots going to +20) _(2026-10-23)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-23)_
+* **Escort Guards:** **8 Escorts** _(2026-10-23)_
+* **Total Equipped Gear Power:** **98,000** _(2026-10-23)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,202** | Solid attack value bolstered by *Weapon Upgrade* passive | 2026-10-22 |
-| | **Hero Defense** | **1,466** | Massive defensive scaling bolstered by *Defense Upgrade* (+50%) | 2026-10-22 |
-| | **Hero Health** | **12,036** | Durable cavalry bruiser health pool | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **400** | Attack output of her 8 escort cavalry | 2026-10-22 |
-| | **Escort Defense** | **488** | Defense rating of escort guards | 2026-10-22 |
-| | **Escort Health** | **4,012** | Health pool of escort guards | 2026-10-22 |
-| **Expedition (March)** | **Cavalry Attack** | **+84.49%** | Army-wide bonus to all deployed Cavalry (+4.51% tier boost) | 2026-10-22 |
-| | **Cavalry Defense**| **+84.49%** | Durability bonus for cavalry forces (+4.51% tier boost) | 2026-10-22 |
-| | **Cavalry Lethality**| **+16.20%** | Higher enemy casualty conversion (from gear) | 2026-10-22 |
-| | **Cavalry Health** | **+16.48%** | Squad health expansion for cavalry units (from gear) | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **1,208** | Solid attack value bolstered by *Weapon Upgrade* passive | 2026-10-23 |
+| | **Hero Defense** | **1,471** | Massive defensive scaling bolstered by *Defense Upgrade* (+50%) | 2026-10-23 |
+| | **Hero Health** | **12,090** | Durable cavalry bruiser health pool | 2026-10-23 |
+| **Conquest (Escort)** | **Escort Attack** | **402** | Attack output of her 8 escort cavalry | 2026-10-23 |
+| | **Escort Defense** | **490** | Defense rating of escort guards | 2026-10-23 |
+| | **Escort Health** | **4,030** | Health pool of escort guards | 2026-10-23 |
+| **Expedition (March)** | **Cavalry Attack** | **+84.49%** | Army-wide bonus to all deployed Cavalry (+4.51% tier boost) | 2026-10-23 |
+| | **Cavalry Defense**| **+84.49%** | Durability bonus for cavalry forces (+4.51% tier boost) | 2026-10-23 |
+| | **Cavalry Lethality**| **+16.90%** | Higher enemy casualty conversion (from gear) | 2026-10-23 |
+| | **Cavalry Health** | **+17.04%** | Squad health expansion for cavalry units (from gear) | 2026-10-23 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **10 / 40 Shards** (needs **30 more shards** for Tier 5 promotion). _(2026-10-22)_
+Current Status: **15 / 40 Shards** (needs **25 more shards** for Tier 5 promotion; Redeem shows 0). _(2026-10-23)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 245,280 | **+23,120** | 268,400 | 2026-10-22 |
-| **Hero Attack** | 768 | **+48** | 816 | 2026-10-22 |
-| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-22 |
-| **Hero Health** | 7,680 | **+480** | 8,160 | 2026-10-22 |
-| **Escort Attack** | 256 | **+16** | 272 | 2026-10-22 |
-| **Escort Defense** | 320 | **+20** | 340 | 2026-10-22 |
-| **Escort Health** | 2,560 | **+160** | 2,720 | 2026-10-22 |
-| **Cavalry Attack** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-22 |
-| **Cavalry Defense** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-22 |
+| **Base Hero Power** | 245,280 | **+23,120** | 268,400 | 2026-10-23 |
+| **Hero Attack** | 768 | **+48** | 816 | 2026-10-23 |
+| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-23 |
+| **Hero Health** | 7,680 | **+480** | 8,160 | 2026-10-23 |
+| **Escort Attack** | 256 | **+16** | 272 | 2026-10-23 |
+| **Escort Defense** | 320 | **+20** | 340 | 2026-10-23 |
+| **Escort Health** | 2,560 | **+160** | 2,720 | 2026-10-23 |
+| **Cavalry Attack** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-23 |
+| **Cavalry Defense** | +84.49% | **+4.51%** | **+89.00%** | 2026-10-23 |
 
 ### 3. Equipped Hero Gear
 
@@ -244,33 +244,33 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+15** | 22,800 | ATK: +78 / HP: +390 | ATK: +26 / HP: +130 | +8.10% Cavalry Lethality | 2026-10-22 |
-| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **+16** | 23,400 | DEF: +79 / HP: +396 | DEF: +26 / HP: +132 | +8.24% Cavalry Health | 2026-10-22 |
-| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **+16** | 23,400 | DEF: +79 / HP: +396 | DEF: +26 / HP: +132 | +8.24% Cavalry Health | 2026-10-22 |
-| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+15** | 22,800 | ATK: +78 / HP: +390 | ATK: +26 / HP: +130 | +8.10% Cavalry Lethality | 2026-10-22 |
+| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+15** | 22,800 | ATK: +78 / HP: +390 | ATK: +26 / HP: +130 | +8.10% Cavalry Lethality | 2026-10-23 |
+| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +420 | DEF: +28 / HP: +140 | +8.80% Cavalry Health | 2026-10-23 |
+| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **+16** | 23,400 | DEF: +79 / HP: +396 | DEF: +26 / HP: +132 | +8.24% Cavalry Health | 2026-10-23 |
+| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+20** | 25,900 | ATK: +84 / HP: +420 | ATK: +28 / HP: +140 | +8.80% Cavalry Lethality | 2026-10-23 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Cavalry Lethality:** **+16.20%** (+8.10% Armet + 8.10% Boots) _(2026-10-22)_
-  * **Cavalry Health:** **+16.48%** (+8.24% Gauntlets + 8.24% Breastplate) _(2026-10-22)_
+  * **Cavalry Lethality:** **+16.90%** (+8.10% Armet + 8.80% Boots) _(2026-10-23)_
+  * **Cavalry Health:** **+17.04%** (+8.80% Gauntlets + 8.24% Breastplate) _(2026-10-23)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +156 Attack | +158 Defense | +1,572 Health _(2026-10-22)_
-  * **Escort Squad Attributes:** +52 Attack | +52 Defense | +524 Health _(2026-10-22)_
+  * **Hero Attributes:** +162 Attack | +163 Defense | +1,626 Health _(2026-10-23)_
+  * **Escort Squad Attributes:** +54 Attack | +54 Defense | +542 Health _(2026-10-23)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Burst Fire** | Active (Top) | **Lv. 3** | Unleashes rapid barrage dealing **Attack * 65% AoE damage every 0.5s for 2s** (4 ticks = 260% total AoE). | **In Progress** (27/50 Epic Expedition Manuals to Lv. 4: 70%/tick) | 2026-10-22 |
-| **Defense Upgrade** | Passive (Mid) | **Lv. 3** | Upgrades armor, increasing personal **Defense by +50%**. | **In Progress** (27/50 Epic Expedition Manuals to Lv. 4: +62.5% DEF) | 2026-10-22 |
-| **Weapon Upgrade** | Passive (Bot) | **Lv. 3** | Upgraded weapon boosts personal **Attack by +16%**. | **In Progress** (27/50 Epic Expedition Manuals to Lv. 4: +20% ATK) | 2026-10-22 |
+| **Burst Fire** | Active (Top) | **Lv. 3** | Unleashes rapid barrage dealing **Attack * 65% AoE damage every 0.5s for 2s** (4 ticks = 260% total AoE). | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: 70%/tick) | 2026-10-23 |
+| **Defense Upgrade** | Passive (Mid) | **Lv. 3** | Upgrades armor, increasing personal **Defense by +50%**. | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: +62.5% DEF) | 2026-10-23 |
+| **Weapon Upgrade** | Passive (Bot) | **Lv. 3** | Upgraded weapon boosts personal **Attack by +16%**. | **In Progress** (22/50 Epic Expedition Manuals to Lv. 4: +20% ATK) | 2026-10-23 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Stand of Arms** | Top | **Lv. 3** | Implements advanced weaponry, increasing **total Squads' Lethality by +15%**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: +20% Lethality) | 2026-10-22 |
-| **Shield Wall** | Bot | **Lv. 3** | Enhances troop armor, **reducing damage taken by 12% for all troops**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-22 |
+| **Stand of Arms** | Top | **Lv. 3** | Implements advanced weaponry, increasing **total Squads' Lethality by +15%**. | **In Progress** (36/50 Epic Conquest Books to Lv. 4: +20% Lethality) | 2026-10-23 |
+| **Shield Wall** | Bot | **Lv. 3** | Enhances troop armor, **reducing damage taken by 12% for all troops**. | **In Progress** (36/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-23 |
 
 ## In-Depth Hero Profile: Gordon
 
