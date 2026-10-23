@@ -261,6 +261,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   (+2,646; stats and gear unchanged); shards 5 / 40 (Redeem shows 1); expedition skills show 34/50 Rare Development Books.
   Hero Stats, the promotion preview, all four gear pieces, Detonate, level, escorts and troop capacity re-confirmed; the
   whole Edwin section and his roster row are dated 2026-10-23.
+- `hero.md`, Chenko (2026-10-23): Brigader's Gauntlets +16 → +20 and Battle Boots +15 → +20 (25,900 each; +8.80% Cavalry
+  Health / Lethality). Gear power 98,000 and hero power 447,120 (both +5,600); Hero Stats 1,208 / 1,471 / 12,090, escort
+  402 / 490 / 4,030, Cavalry Lethality +16.90%, Health +17.04%; gear totals updated. Shards 15 / 40; skill rows show 22/50
+  Epic Expedition Manuals and 36/50 Epic Conquest Books. Whole section and roster row dated 2026-10-23.
+- `data/manual.json`: the promotion move notes Chenko (25 shards) as the next lineup hero after Jabel.
 - `data/manual.json`: the Gordon Emergency Snack move is done and removed; the promotion move is priority 2.
 
 ### Removed
