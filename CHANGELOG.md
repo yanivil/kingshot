@@ -299,6 +299,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `lineups.md` (2026-10-23): Arena attack power recorded, 2,502,855 (Squad Settings; was "Not recorded"), and Arena defense
   power 2,452,930 → 2,494,295 (Defensive Squad Lineup). Each equals the sum of its five heroes' current powers, so the
   Arena defense conflict in Data health is gone (0 conflicts). All ten Arena rows re-confirmed.
+- `troops.md` (2026-10-23, Troops Preview): Brave Infantry 32,811, Cavalry 34,579, Archer 34,195; total 101,585
+  (+3,176; the header shows 101.5K/101.5K); 0 injured; March Queue 4/4. The notes now say what the header's first
+  number and the queue count probably mean (inferred from the 22 and 23 Oct readings). March formations are unchanged.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

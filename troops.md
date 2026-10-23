@@ -10,23 +10,23 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 ## Current Troop Inventory
 
-Standing forces are **Tier VII (Brave)** units across the three military branches. Counts are from the Troops Preview screen, "All" tab (in town and out of town), of 2026-10-22. That screen lists only these three units; the 150 Veteran Cavalry and 150 Veteran Archers (Tier IV) seen earlier the same day on the Deploy screen are no longer listed. Net Change is against the earlier 2026-10-22 Deploy-screen counts.
+Standing forces are **Tier VII (Brave)** units across the three military branches. Counts are from the Troops Preview screen, "All" tab (in town and out of town), of 2026-10-23; that screen lists only these three units. Net Change is against the 2026-10-22 Troops Preview counts.
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VII | Brave Infantry | 30,988 | 31.5% | All (in and out of town) | −870 | 2026-10-22 |
-| **Cavalry** | VII | Brave Cavalry | 33,903 | 34.5% | All (in and out of town) | +426 | 2026-10-22 |
-| **Marksmen** | VII | Brave Archer | 33,518 | 34.1% | All (in and out of town) | +123 | 2026-10-22 |
-| **Total Military Force** | **VII** | — | **98,409** | **100%** | **6 Injured** | −321 | 2026-10-22 |
+| **Infantry** | VII | Brave Infantry | 32,811 | 32.3% | All (in and out of town) | +1,823 | 2026-10-23 |
+| **Cavalry** | VII | Brave Cavalry | 34,579 | 34.0% | All (in and out of town) | +676 | 2026-10-23 |
+| **Marksmen** | VII | Brave Archer | 34,195 | 33.7% | All (in and out of town) | +677 | 2026-10-23 |
+| **Total Military Force** | **VII** | — | **101,585** | **100%** | **0 Injured** | +3,176 | 2026-10-23 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 98,409 | Troops Preview, "All" tab. The header reads "1,278/98,409"; the screen does not say what 1,278 counts | 2026-10-22 |
+| **Total Standing Troops** | 101,585 | Troops Preview, "All" tab: the sum of the three counts. The header reads "101.5K/101.5K" (rounded). On 22 Oct it read "1,278/98,409" with March Queue 2/4; today both numbers match and the queue reads 4/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-10-23 |
 | **Single March Capacity** | 77,785 | `Att` preset; `Be` shows 75,960, so it depends on the heroes | 2026-10-22 |
-| **Available March Queues** | 2 / 4 | Shown as "March Queue 2/4" on the Troops Preview screen; the screen does not say whether 2 is in use or free | 2026-10-22 |
-| **Infirmary Hospital Capacity** | 38,600 | 6 / 38,600 injured | 2026-10-22 |
+| **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen. With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-10-23 |
+| **Infirmary Hospital Capacity** | 38,600 | 0 / 38,600 injured | 2026-10-23 |
 | **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
 | **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP | 2026-10-22 |
 
