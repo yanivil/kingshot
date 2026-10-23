@@ -73,6 +73,7 @@ section with no dates. Features on the Features page take the date of the file n
 A phone-first dashboard that answers three questions: where the account stands, where it is weak,
 and where the next resources should go. It has ten views (Overview, Heroes, Drill Camp,
 Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plus a hero detail drawer.
+The Overview opens with account power and total kills.
 
 ### Architecture
 

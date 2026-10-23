@@ -1333,6 +1333,8 @@ class Dashboard extends StateHost {
     var tiles = [
       // governor.powerRounded: the game showed a rounded figure (11.4M); don't print false precision.
       tile('Account power', gov.powerRounded === true ? self.compact(gov.power) : self.num(gov.power), gov.asOf),
+      // Total kills from the Governor Profile; also listed under Governor on the City view.
+      tile('Total kills', self.num(gov.kills), gov.asOf),
       tile('Town Center', tc != null ? 'Lv ' + tc : NR, tcObj.asOf),
       tile('Total troops', self.num(army.total), army.asOf),
       tile('March capacity', self.num(army.marchCapacity), army.asOf),
