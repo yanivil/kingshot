@@ -257,6 +257,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Epic Expedition Manuals. Brigader's Battle Boots +12 → +13 (21,630; ATK +75 / HP +378; escort ATK +25 / HP +126; +7.82%
   Cavalry Lethality; 20 / 75 toward +14, no enhancement materials left), +570 power. Hero power 438,560, gear power 89,440,
   Hero Stats 1,199 / 1,462 / 12,006, escort 399 / 487 / 4,002, Cavalry Lethality +15.92%; gear totals updated.
+- `hero.md`, Edwin (2026-10-23): Shrapnel Load Lv. 3 → Lv. 4 (Attack × 182% AoE; Lv. 5 needs 4★); hero power 345,017
+  (+2,646; stats and gear unchanged); shards 5 / 40 (Redeem shows 1); expedition skills show 34/50 Rare Development Books.
+  Hero Stats, the promotion preview, all four gear pieces, Detonate, level, escorts and troop capacity re-confirmed; the
+  whole Edwin section and his roster row are dated 2026-10-23.
 - `data/manual.json`: the Gordon Emergency Snack move is done and removed; the promotion move is priority 2.
 
 ### Removed
