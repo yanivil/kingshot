@@ -308,6 +308,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `troops.md` (2026-10-23, Troops Preview): Brave Infantry 32,811, Cavalry 34,579, Archer 34,195; total 101,585
   (+3,176; the header shows 101.5K/101.5K); 0 injured; March Queue 4/4. The notes now say what the header's first
   number and the queue count probably mean (inferred from the 22 and 23 Oct readings). March formations are unchanged.
+- `hero.md`, Fahd (2026-10-23): Brigader's Breastplate +0 → +6 (17,850; DEF +67 / HP +336; escort DEF +22 / HP +112;
+  +6.84% Cavalry Health). Hero power 310,850 and gear power 74,410 (both +2,850, all from the Breastplate). Hero Stats
+  DEF 1,111 / HP 9,246, escort DEF 370 / HP 3,082, Cavalry Health +12.84%; gear totals updated. Shards 12 / 40 (Redeem
+  shows 0). Promotion preview, all five skills, the other three gear pieces, level, escorts and troop capacity
+  re-confirmed; the whole section and roster row are dated 2026-10-23.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
