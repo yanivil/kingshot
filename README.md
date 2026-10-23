@@ -68,7 +68,8 @@ profile; troop counts, each march preset, each Arena squad and each barricade sh
 own section (and each army tile its own row's date), because they are read from different screens; every
 other section shows the newest date in its file. So updating a value's date is enough
 to move the dashboard date forward. The `as_of:` line at the top of each file is only the fallback for a
-section with no dates. Features on the Features page take the date of the file named as their source.
+section with no dates. Features on the Features page take the date of the file named as their source, or of the section named in
+their `section` field (so Barricades and Arena, both in `lineups.md`, each keep their own date).
 
 ## Account Dashboard
 

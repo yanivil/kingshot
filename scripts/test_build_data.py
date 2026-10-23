@@ -244,6 +244,20 @@ class MergeAndOutputTests(unittest.TestCase):
         bd.date_features(feats, {"troops.md": "2026-10-22", "codes.md": None})
         self.assertEqual([f["asOf"] for f in feats], ["2026-10-22", "2026-10-19", "2026-10-18", "2026-10-17"])
 
+    def test_features_can_take_a_section_date(self) -> None:
+        """A feature naming a section takes that section's date; a missing section warns and keeps the file date."""
+        body = ("## Wall Guard\n\n### Barricade 1\n* **Status:** Level 10 _(2026-10-22)_\n\n"
+                "## Arena 5v5 Squads\n\n* **Power:** 1 _(2026-10-23)_\n")
+        feats = [
+            {"name": "Barricades", "source": "lineups.md", "section": "^Wall Guard", "asOf": None},
+            {"name": "Arena", "source": "lineups.md", "section": "^Arena 5v5", "asOf": None},
+            {"name": "Gone", "source": "lineups.md", "section": "^No Such Heading", "asOf": None},
+        ]
+        log = bd.BuildLog()
+        bd.date_features(feats, {"lineups.md": "2026-10-23"}, {"lineups.md": body}, log)
+        self.assertEqual([f["asOf"] for f in feats], ["2026-10-22", "2026-10-23", "2026-10-23"])
+        self.assertTrue([w for w in log.warnings if "No Such Heading" in w])
+
     def test_troop_parts_have_their_own_dates(self) -> None:
         """Troop counts, each caps row and each march preset keep their own upload dates."""
         body = ("Standing forces are **Tier VII (Brave)** units.\n\n"
