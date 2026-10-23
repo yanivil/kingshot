@@ -1035,11 +1035,11 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-23)_
 * **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer) _(2026-10-23)_
 * **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-23)_
-* **Star Tier:** **2-Star (Tier 0)** (Shards: 0 / 15 to Tier 1 promotion; Redeem shows 1) _(2026-10-23)_
-* **Total Hero Power:** **310,975** (was 284,550: +15,400 from the 2-Star promotion and +675 from the Bracers going to +1; the other +10,350 is not itemised on screen and is presumably from the skill changes, which is inferred) _(2026-10-23)_
+* **Star Tier:** **2-Star (Tier 0)** (Shards: 0 / 15 to Tier 1 promotion; Redeem shows 6) _(2026-10-23)_
+* **Total Hero Power:** **320,245** (+9,270 from the Bracers going from +1 to +13. Before that, 284,550 → 310,975: +15,400 from the 2-Star promotion and +675 from the Bracers going to +1; the other +10,350 is not itemised on screen and is presumably from the skill changes, which is inferred) _(2026-10-23)_
 * **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-23)_
 * **Escort Guards:** **8 Escorts** _(2026-10-23)_
-* **Total Equipped Gear Power:** **89,925** (+675 from the Bracers going to +1) _(2026-10-23)_
+* **Total Equipped Gear Power:** **99,195** (+675 from the Bracers going to +1, then +9,270 from +1 to +13) _(2026-10-23)_
 * **Exclusive Widget:** Locked — Rabbitgear Cannon (Unlock 0/5; 30,000 power; ATK 72 / DEF 60 / HP 450, escort ATK 24 / DEF 20 / HP 150; +5.00% Archer Lethality and +5.00% Archer Health; exclusive skill Fearless Advance) _(2026-10-23)_
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
@@ -1047,19 +1047,19 @@ Equipped with 3 matching native **Archer** items (Chest Armor slot is vacant):
 | Category | Attribute | Total Value | Tactical & Strategic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
 | **Conquest (Hero)** | **Hero Attack** | **1,124** | Ballista bolt and projectile strike scaling | 2026-10-23 |
-| | **Hero Defense** | **931** | Base defensive rating | 2026-10-23 |
-| | **Hero Health** | **6,968** | Engineer combat health pool | 2026-10-23 |
+| | **Hero Defense** | **953** | Base defensive rating | 2026-10-23 |
+| | **Hero Health** | **7,049** | Engineer combat health pool | 2026-10-23 |
 | **Conquest (Escort)** | **Escort Attack** | **374** | Attack output of his 8 escort guards | 2026-10-23 |
-| | **Escort Defense** | **310** | Defense rating of his escort guards | 2026-10-23 |
-| | **Escort Health** | **2,322** | Health pool of escort guards | 2026-10-23 |
+| | **Escort Defense** | **317** | Defense rating of his escort guards | 2026-10-23 |
+| | **Escort Health** | **2,349** | Health pool of escort guards | 2026-10-23 |
 | **Expedition (March)** | **Archer Attack** | **+63.60%** | Army-wide bonus to deployed Archers | 2026-10-23 |
 | | **Archer Defense** | **+63.60%** | Durability bonus for archer units | 2026-10-23 |
 | | **Archer Lethality**| **+16.48%** | Casualty conversion rate for archers (from gear) | 2026-10-23 |
-| | **Archer Health** | **+16.61%** | Durability pool for deployed archer squads (from gear) | 2026-10-23 |
+| | **Archer Health** | **+19.13%** | Durability pool for deployed archer squads (from gear) | 2026-10-23 |
 
 ### 2. Star Promotion Milestone Preview (2-Star Tier 0 ➔ Tier 1)
 
-Promoted to **2-Star** between the 22 Oct and 23 Oct uploads (the promotion added +15,400 base power: 84,400 → 99,800). Current Status: **0 / 15 Shards** (needs **15 more shards** for Tier 1; Redeem shows 1). _(2026-10-23)_
+Promoted to **2-Star** between the 22 Oct and 23 Oct uploads (the promotion added +15,400 base power: 84,400 → 99,800). Current Status: **0 / 15 Shards** (needs **15 more shards** for Tier 1; Redeem shows 6). _(2026-10-23)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
@@ -1080,17 +1080,17 @@ All 4 pieces match the native **Archer** troop class synergy:
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
 | **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-23 |
-| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **+1** | 23,175 | DEF: +91 / HP: +344 | DEF: +30 / HP: +114 | +9.21% Archer Health | 2026-10-23 |
+| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **+13** | 32,445 | DEF: +113 / HP: +425 | DEF: +37 / HP: +141 | +11.73% Archer Health | 2026-10-23 |
 | **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+10** | 19,950 | DEF: +72 / HP: +270 | DEF: +24 / HP: +90 | +7.40% Archer Health | 2026-10-23 |
 | **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+16** | 23,400 | ATK: +96 / HP: +297 | ATK: +32 / HP: +99 | +8.24% Archer Lethality | 2026-10-23 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
   * **Archer Lethality:** **+16.48%** (+8.24% Faceplate + 8.24% Boots) _(2026-10-23)_
-  * **Archer Health:** **+16.61%** (+9.21% Bracers + 7.40% Leatherwear) _(2026-10-23)_
+  * **Archer Health:** **+19.13%** (+11.73% Bracers + 7.40% Leatherwear) _(2026-10-23)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +192 Attack | +163 Defense | +1,208 Health _(2026-10-23)_
-  * **Escort Squad Attributes:** +64 Attack | +54 Defense | +402 Health _(2026-10-23)_
+  * **Hero Attributes:** +192 Attack | +185 Defense | +1,289 Health _(2026-10-23)_
+  * **Escort Squad Attributes:** +64 Attack | +61 Defense | +429 Health _(2026-10-23)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 

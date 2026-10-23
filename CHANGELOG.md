@@ -287,6 +287,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   troop data as newer than it is.
 - `data/manual.json`: the promotion move now reads "Saul is 2★ and Quinn 4★" with Saul at 15 shards to Tier 1; Saul's
   hero notes show the new skill effects and that the book names are inferred.
+- `hero.md`, Saul (later on 2026-10-23): Berserker's Bracers +1 → +13 (32,445; DEF +113 / HP +425; escort DEF +37 /
+  HP +141; +11.73% Archer Health). Hero power 320,245 and gear power 99,195 (both +9,270, all from the Bracers). Hero
+  Stats DEF 953 / HP 7,049, escort DEF 317 / HP 2,349, Archer Health +19.13%; gear totals updated. Redeem shows 6.
+- `data/manual.json`: the promotion move shows Saul's Redeem count as 6.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
