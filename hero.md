@@ -22,7 +22,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Gordon** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-22 |
 | **Fahd** | SR / Epic | Cavalry | Lv. 54 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-23 |
 | **Amane** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
-| **Yeonwoo** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-22 |
+| **Yeonwoo** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-23 |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 54 | 3-Star (Tier 4) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) | 2026-10-22 |
 | **Olive** | Rare (Blue) | Archer | Lv. 54 | 3-Star (Tier 4) | Reserve / Economy | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-22 |
 | **Seth** | Rare (Blue) | Infantry | Lv. 54 | 3-Star (Tier 3) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-22 |
@@ -800,46 +800,46 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 ## In-Depth Hero Profile: Yeonwoo
 
-* **Hero Name:** Yeonwoo _(2026-10-21)_
-* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
-* **Class & Role:** Archer Development Specialist / Dual-Blade Duelist (Bow / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
-* **Star Tier:** **2-Star (Tier 5)** (Shards: 8 / 40 to next promotion) _(2026-10-22)_
-* **Total Hero Power:** **323,360** _(2026-10-22)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
-* **Escort Guards:** **8 Escorts** _(2026-10-22)_
-* **Total Equipped Gear Power:** **79,360** _(2026-10-22)_
+* **Hero Name:** Yeonwoo _(2026-10-23)_
+* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-23)_
+* **Class & Role:** Archer Development Specialist / Dual-Blade Duelist (Bow / Hammer) _(2026-10-23)_
+* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-23)_
+* **Star Tier:** **2-Star (Tier 5)** (Shards: 11 / 40 to next promotion; Redeem shows 0) _(2026-10-23)_
+* **Total Hero Power:** **324,740** (+1,380 from the Leatherwear going from +0 to +3) _(2026-10-23)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-23)_
+* **Escort Guards:** **8 Escorts** _(2026-10-23)_
+* **Total Equipped Gear Power:** **80,740** (+1,380 from the Leatherwear going to +3) _(2026-10-23)_
 
 ### 1. Overall Combat & Development Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Strategic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,132** | Dual-blade melee strike scaling boosted by *Twin Fangs* (+16%) | 2026-10-22 |
-| | **Hero Defense** | **1,122** | Solid defensive rating | 2026-10-22 |
-| | **Hero Health** | **6,974** | Agile combat health pool | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **376** | Attack output of her 8 escort guards | 2026-10-22 |
-| | **Escort Defense** | **374** | Defense rating of her escort guards | 2026-10-22 |
-| | **Escort Health** | **2,324** | Health pool of escort guards | 2026-10-22 |
-| **Expedition (March)** | **Archer Attack** | **+60.64%** | Army-wide bonus to deployed Archers | 2026-10-22 |
-| | **Archer Defense** | **+60.64%** | Durability bonus for archer units | 2026-10-22 |
-| | **Archer Lethality**| **+15.22%** | Casualty conversion rate for archers (from gear) | 2026-10-22 |
-| | **Archer Health** | **+14.10%** | Durability pool for deployed archer squads (from gear) | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **1,132** | Dual-blade melee strike scaling boosted by *Twin Fangs* (+16%) | 2026-10-23 |
+| | **Hero Defense** | **1,125** | Solid defensive rating | 2026-10-23 |
+| | **Hero Health** | **6,987** | Agile combat health pool | 2026-10-23 |
+| **Conquest (Escort)** | **Escort Attack** | **376** | Attack output of her 8 escort guards | 2026-10-23 |
+| | **Escort Defense** | **375** | Defense rating of her escort guards | 2026-10-23 |
+| | **Escort Health** | **2,328** | Health pool of escort guards | 2026-10-23 |
+| **Expedition (March)** | **Archer Attack** | **+60.64%** | Army-wide bonus to deployed Archers | 2026-10-23 |
+| | **Archer Defense** | **+60.64%** | Durability bonus for archer units | 2026-10-23 |
+| | **Archer Lethality**| **+15.22%** | Casualty conversion rate for archers (from gear) | 2026-10-23 |
+| | **Archer Health** | **+14.52%** | Durability pool for deployed archer squads (from gear) | 2026-10-23 |
 
 ### 2. Star Promotion Milestone Preview (2-Star Tier 5 ➔ 3-Star)
 
-Current Status: **8 / 40 Shards** (needs **32 more shards** for 3-Star promotion). _(2026-10-22)_
+Current Status: **11 / 40 Shards** (needs **29 more shards** for 3-Star promotion; Redeem shows 0). _(2026-10-23)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 140,160 | **+21,920** | 162,080 | 2026-10-22 |
-| **Hero Attack** | 617 | **+76** | 693 | 2026-10-22 |
-| **Hero Defense** | 636 | **+78** | 714 | 2026-10-22 |
-| **Hero Health** | 3,816 | **+468** | 4,284 | 2026-10-22 |
-| **Escort Attack** | 205 | **+26** | 231 | 2026-10-22 |
-| **Escort Defense** | 212 | **+26** | 238 | 2026-10-22 |
-| **Escort Health** | 1,272 | **+156** | 1,428 | 2026-10-22 |
-| **Archer Attack** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-22 |
-| **Archer Defense** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-22 |
+| **Base Hero Power** | 140,160 | **+21,920** | 162,080 | 2026-10-23 |
+| **Hero Attack** | 617 | **+76** | 693 | 2026-10-23 |
+| **Hero Defense** | 636 | **+78** | 714 | 2026-10-23 |
+| **Hero Health** | 3,816 | **+468** | 4,284 | 2026-10-23 |
+| **Escort Attack** | 205 | **+26** | 231 | 2026-10-23 |
+| **Escort Defense** | 212 | **+26** | 238 | 2026-10-23 |
+| **Escort Health** | 1,272 | **+156** | 1,428 | 2026-10-23 |
+| **Archer Attack** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-23 |
+| **Archer Defense** | +60.64% | **+5.80%** | **+66.44%** | 2026-10-23 |
 
 ### 3. Equipped Hero Gear
 
@@ -847,33 +847,33 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+11** | 20,500 | ATK: +88 / HP: +274 | ATK: +29 / HP: +91 | +7.54% Archer Lethality | 2026-10-21 |
-| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-22 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +225 | DEF: +20 / HP: +75 | +6.00% Archer Health | 2026-10-22 |
-| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+12** | 21,060 | ATK: +90 / HP: +279 | ATK: +30 / HP: +93 | +7.68% Archer Lethality | 2026-10-21 |
+| **Helmet** | **Windbreaker Faceplate** | Archer | **Rare** | **+11** | 20,500 | ATK: +88 / HP: +274 | ATK: +29 / HP: +91 | +7.54% Archer Lethality | 2026-10-23 |
+| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +292 | DEF: +26 / HP: +97 | +8.10% Archer Health | 2026-10-23 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+3** | 16,380 | DEF: +63 / HP: +238 | DEF: +21 / HP: +79 | +6.42% Archer Health | 2026-10-23 |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+12** | 21,060 | ATK: +90 / HP: +279 | ATK: +30 / HP: +93 | +7.68% Archer Lethality | 2026-10-23 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Archer Lethality:** **+15.22%** (+7.54% Faceplate + 7.68% Boots) _(2026-10-21)_
-  * **Archer Health:** **+14.10%** (+8.10% Bracers + 6.00% Leatherwear) _(2026-10-22)_
+  * **Archer Lethality:** **+15.22%** (+7.54% Faceplate + 7.68% Boots) _(2026-10-23)_
+  * **Archer Health:** **+14.52%** (+8.10% Bracers + 6.42% Leatherwear) _(2026-10-23)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +178 Attack | +138 Defense | +1,070 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +59 Attack | +46 Defense | +356 Health _(2026-10-21)_
+  * **Hero Attributes:** +178 Attack | +141 Defense | +1,083 Health _(2026-10-23)_
+  * **Escort Squad Attributes:** +59 Attack | +47 Defense | +360 Health _(2026-10-23)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Petalbloom** | Active (Top) | **Lv. 3** | Arcs Petalbloom outward in three waves, dealing **Attack * 100%, 150%, and 180% damage** (third wave is AoE; 430% total damage combo). | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 162.5% / 195% AoE) | 2026-10-21 |
-| **Falling Swallow** | Passive (Mid) | **Lv. 3** | Weaves confusion in enemy ranks, dealing **Attack * 120% damage** and **reducing target Attack Speed by 40% for 2s**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 130% DMG / -45% Speed) | 2026-10-21 |
-| **Twin Fangs** | Passive (Bot) | **Lv. 3** | Unusual duel form boosts personal **Attack by +16%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% ATK) | 2026-10-21 |
+| **Petalbloom** | Active (Top) | **Lv. 3** | Arcs Petalbloom outward in three waves, dealing **Attack * 100%, 150%, and 180% damage** (third wave is AoE; 430% total damage combo). | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 162.5% / 195% AoE) | 2026-10-23 |
+| **Falling Swallow** | Passive (Mid) | **Lv. 3** | Weaves confusion in enemy ranks, dealing **Attack * 120% damage** and **reducing target Attack Speed by 40% for 2s**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 130% DMG / -45% Speed) | 2026-10-23 |
+| **Twin Fangs** | Passive (Bot) | **Lv. 3** | Unusual duel form boosts personal **Attack by +16%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% ATK) | 2026-10-23 |
 
 ### 5. Expedition & Development Skills (Army Warfare & Academy Research)
 
 | Skill Name | Slot | Current Level | Squad Effect & Development Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **On Guard** | Top | **Lv. 3** | Sword skills increase **all Squads' total Lethality by +15%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% Lethality) | 2026-10-21 |
-| **Well-Traveled** | Bot | **Lv. 3** | Technological edge increases **Research Speed by +9%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +12% Speed) | 2026-10-21 |
+| **On Guard** | Top | **Lv. 3** | Sword skills increase **all Squads' total Lethality by +15%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +20% Lethality) | 2026-10-23 |
+| **Well-Traveled** | Bot | **Lv. 3** | Technological edge increases **Research Speed by +9%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +12% Speed) | 2026-10-23 |
 
 ## In-Depth Hero Profile: Fahd
 
