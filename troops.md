@@ -27,7 +27,7 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 | **Single March Capacity** | 77,785 | `Att` preset; `Be` shows 75,960, so it depends on the heroes | 2026-10-22 |
 | **Available March Queues** | 2 / 4 | Shown as "March Queue 2/4" on the Troops Preview screen; the screen does not say whether 2 is in use or free | 2026-10-22 |
 | **Infirmary Hospital Capacity** | 38,600 | 6 / 38,600 injured | 2026-10-22 |
-| **Overall Account Power** | 11,643,259 | VIP 3 (Kingdom #2508) | 2026-10-22 |
+| **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
 | **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP | 2026-10-22 |
 
 ## Saved March Formations

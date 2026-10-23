@@ -64,7 +64,8 @@
     "Saul": {
       "notes": [
         "Skill effects recorded: construction speed +6%, construction cost −6%.",
-        "Skill effects recorded: squads DEF +4% / HP +6%."
+        "Skill effects recorded: squads DEF +6% / HP +9% (Taskforce Training Lv 3), squads Lethality +5% (Positional Battler Lv 1).",
+        "Skill book names are inferred from the icons; the screens show only the counts."
       ]
     }
   },
@@ -203,17 +204,18 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Quinn is 4★. Next promotions: Helga 5 shards, Seth 11, Saul 14, Jabel 21",
-      "why": "Quinn reached 4★ on 22 Oct: power 490,460 → 528,735 (+37,360 from the promotion, +915 from his Faceplate going to +17); his next tier needs 99 more shards. The closest promotions now are Helga (5 to Tier 1), Seth (11 to Tier 4), Saul (14 to 2★) and Jabel (21 to Tier 4). Helga, Seth and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat. Next lineup hero after him: Chenko, 25 to Tier 5 (15 / 40 on 23 Oct).",
+      "what": "Saul is 2★ and Quinn 4★. Next promotions: Helga 5 shards, Seth 11, Saul 15, Jabel 21",
+      "why": "Saul reached 2★ between the 22 and 23 Oct uploads: power 284,550 → 310,975 (+15,400 from the promotion, +675 from the Bracers going to +1, and +10,350 not itemised on screen). Quinn reached 4★ on 22 Oct: power 490,460 → 528,735 (+37,360 from the promotion, +915 from his Faceplate going to +17); his next tier needs 99 more shards. The closest promotions now are Helga (5 to Tier 1), Seth (11 to Tier 4), Saul (15 to Tier 1) and Jabel (21 to Tier 4). Helga, Seth and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat. Next lineup hero after him: Chenko, 25 to Tier 5 (15 / 40 on 23 Oct).",
       "steps": [
         "Helga: 5 shards to 1★ Tier 1.",
         "Seth: 11 shards to 3★ Tier 4 (gathering hero).",
-        "Saul: 14 shards to 2★ (unlocks 2 skills).",
+        "Saul: 15 shards to 2★ Tier 1 (Redeem shows 1).",
         "Jabel: 21 shards to 3★ Tier 4 (in every combat lineup)."
       ],
       "evidence": [
-        "hero.md shard counts (22 Oct)",
-        "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0"
+        "hero.md shard counts (22–23 Oct)",
+        "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0",
+        "Saul's promotion screen of 23 Oct: 2-Star (Tier 0), 0 / 15, Redeem 1"
       ],
       "cost": "5–21 shards each; shard sources not recorded",
       "confidence": [
@@ -414,8 +416,7 @@
     }
   ],
   "dataHealth": {
-    "conflicts": [
-    ],
+    "conflicts": [],
     "missing": [
       {
         "area": "Governor",

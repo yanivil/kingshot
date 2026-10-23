@@ -270,6 +270,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   more than 3 days old (`staleAfterDays` 7 → 3). The "Older than snapshot" flag, which listed every section not refreshed
   on the newest upload day, is removed.
 - `data/manual.json`: the Gordon Emergency Snack move is done and removed; the promotion move is priority 2.
+- `hero.md`, Saul (2026-10-23): promoted 1-Star (Tier 5) → 2-Star (Tier 0) (+15,400 base power); shards 0 / 15 to Tier 1
+  (Redeem shows 1); new Tier 0 → Tier 1 preview (99,800 +13,300 power; Archer Attack / Defense +63.60% +4.60%). Berserker's
+  Bracers +0 → +1 (23,175; DEF +91 / HP +344; escort DEF +30 / HP +114; +9.21% Archer Health), gear power 89,925 (+675).
+  Hero power 284,550 → 310,975; +10,350 of that is not itemised on screen (presumably the skill changes; inferred).
+  Hero Stats 1,124 / 931 / 6,968, escort 374 / 310 / 2,322, Archer Attack / Defense +63.60%, Health +16.61%; gear totals
+  updated. Skills: Rapid Fire and Taskforce Training Lv. 3 (Lv. 4 needs 3★); Superior Techniques Lv. 2 and Positional
+  Battler Lv. 1 (unlocked); Final Prayer and Resourceful Lv. 2 no longer capped. Book counts from the Upgrade buttons
+  (0/30 and 1/30, 1/10); the book names are inferred from the icons and say so. Rabbitgear Cannon details recorded
+  (locked, Unlock 0/5, 30,000 power). Whole section and roster row dated 2026-10-23.
+- `profile.md` (2026-10-23): account power 11,942,479; bread 65.4M; gems 25,840; VIP 3, citizens 32 / 32 and the Saul
+  avatar re-confirmed. Town Center Lv. 20 is upgrading to Lv. 21 (3d 07:41:54 left on the screenshot, so around 26 Oct,
+  inferred; Finish costs 63,759 gems); building power 431,800, +57,400 at Lv. 21.
+- `troops.md`: the "Overall Account Power" row no longer repeats the power (now "Not recorded (kept in profile.md only …)").
+  The copy fell behind whenever the power changed on a day without troop screens, and updating it would have dated the
+  troop data as newer than it is.
+- `data/manual.json`: the promotion move now reads "Saul is 2★ and Quinn 4★" with Saul at 15 shards to Tier 1; Saul's
+  hero notes show the new skill effects and that the book names are inferred.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
