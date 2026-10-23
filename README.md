@@ -90,7 +90,8 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
   runs the tests and the generator and deploys `build/` to GitHub Pages. It never commits to `main`.
 * **Derived values are computed in the page**, not stored: hero level caps (from the Town Center rule
   table), assignments, lineup power checks, march conflicts, the Drill Camp placement plan, feature
-  states and the data-health checks.
+  states and the data-health checks. Data health flags a section as stale when it is more than 3 days old
+  (`staleAfterDays` in `data/manual.json`) or has no date.
 * Game rules come from community sources and are labelled **Unverified** wherever they are used.
 * The Player ID is never displayed.
 * **Gift-code marks.** On the Codes page, tap a code to mark it redeemed or not. The page can't write to

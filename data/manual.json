@@ -5,7 +5,7 @@
     "Field meanings: docs/SCHEMA.md. Keys starting with '_' are ignored."
   ],
   "meta": {
-    "staleAfterDays": 7,
+    "staleAfterDays": 3,
     "previousSnapshot": {
       "asOf": null,
       "heroes": [
