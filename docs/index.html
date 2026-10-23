@@ -748,6 +748,22 @@ class Dashboard extends StateHost {
     var recsRaw = Array.isArray(D.recommendations) ? D.recommendations : [];
     var featsRaw = Array.isArray(D.features) ? D.features : [];
     var dh = D.dataHealth || {};
+    // Per-part dates: each army tile takes its own row's date, and each march,
+    // Arena squad and barricade its own section's date, because these are read
+    // from different screens on different days. Data without these fields
+    // falls back to the section dates.
+    var armyField = army.fieldAsOf || {};
+    var armyAsOf = function (k) { return armyField[k] || army.asOf; };
+    var newestPart = function (parts, fallback) {
+      var ds = (parts || []).map(function (p) { return p && p.asOf; }).filter(Boolean).sort();
+      return ds.length ? ds[ds.length - 1] : fallback;
+    };
+    // A card older than its panel's date says so; cards as new as the panel stay quiet.
+    var olderNote = function (part, panelIso) {
+      return part && part.asOf && panelIso && part.asOf < panelIso ? ' · ' + self.asOf(part.asOf) : '';
+    };
+    var marchesAsOf = newestPart(L.marches, L.asOf);
+    var barricadesAsOf = newestPart(L.barricades, L.asOf);
     var snapshot = meta.snapshotAsOf || null;
     var staleDays = meta.staleAfterDays != null ? meta.staleAfterDays : 7;
 
@@ -1024,21 +1040,21 @@ class Dashboard extends StateHost {
       lede: (army.tier ? 'All troops ' + army.tier + '. ' : '') + 'Injured: ' + self.num(army.injured) + '.',
       asOf: self.asOf(army.asOf),
       tiles: [
-        { label: 'Total troops', value: self.num(army.total), vCls: army.total == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
-        { label: 'March capacity', value: self.num(army.marchCapacity), vCls: army.marchCapacity == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
-        { label: 'March queues', value: q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, vCls: q.current == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
-        { label: 'Infirmary', value: self.num(army.infirmary), vCls: army.infirmary == null ? 'nr' : '', asOf: self.asOf(army.asOf) },
-        { label: 'Injured', value: self.num(army.injured), vCls: army.injured == null ? 'nr' : '', asOf: self.asOf(army.asOf) }
+        { label: 'Total troops', value: self.num(army.total), vCls: army.total == null ? 'nr' : '', asOf: self.asOf(armyAsOf('total')) },
+        { label: 'March capacity', value: self.num(army.marchCapacity), vCls: army.marchCapacity == null ? 'nr' : '', asOf: self.asOf(armyAsOf('marchCapacity')) },
+        { label: 'March queues', value: q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, vCls: q.current == null ? 'nr' : '', asOf: self.asOf(armyAsOf('queues')) },
+        { label: 'Infirmary', value: self.num(army.infirmary), vCls: army.infirmary == null ? 'nr' : '', asOf: self.asOf(armyAsOf('infirmary')) },
+        { label: 'Injured', value: self.num(army.injured), vCls: army.injured == null ? 'nr' : '', asOf: self.asOf(armyAsOf('injured')) }
       ],
       split: mkSplit(armyCounts, armyPcts),
       splitAria: 'Troop split: ' + classes.map(function (c) { return c.name + ' ' + (c.pct != null ? c.pct + '%' : NR); }).join(', '),
       hasConflicts: marchConflicts.length > 0, conflicts: marchConflicts,
-      marchAsOf: self.asOf(L.asOf),
+      marchAsOf: self.asOf(marchesAsOf),
       marches: (L.marches || []).map(function (m) {
         var t = m.troops || {};
         var sum = classes.reduce(function (s, c) { return s + (t[c.key] || 0); }, 0);
         var sp = mkSplit(t, m.ratioPct);
-        return { name: m.name || NR, purpose: m.purpose || 'Purpose: ' + NR,
+        return { name: m.name || NR, purpose: (m.purpose || 'Purpose: ' + NR) + olderNote(m, marchesAsOf),
                  heroes: (m.heroes || []).map(function (x) { return { label: x.hero + (x.lead ? ' · lead' : '') + (marchUse[x.hero] && marchUse[x.hero].length > 1 ? ' · also in another march' : '') }; }),
                  split: sp, aria: 'Troop ratio ' + sp.map(function (s) { return s.name + ' ' + s.pctText; }).join(', '),
                  totalText: sum ? self.num(sum) + (army.marchCapacity ? ' of ' + self.num(army.marchCapacity) : '') : NR,
@@ -1079,7 +1095,7 @@ class Dashboard extends StateHost {
       var t = arena[p[0]];
       var names = (t.front || []).concat(t.back || []);
       var c = powerCheck(t.power, names, false);
-      return { key: p[0], name: p[1], asOf: self.asOf(L.asOf),
+      return { key: p[0], name: p[1], asOf: self.asOf(t.asOf || L.asOf),
                front: (t.front || []).map(slotVM), back: (t.back || []).map(slotVM),
                frontCls: 'form-' + Math.max(1, Math.min(3, (t.front || []).length)), backCls: 'form-' + Math.max(1, Math.min(3, (t.back || []).length)),
                statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls,
@@ -1087,7 +1103,7 @@ class Dashboard extends StateHost {
     });
     var barricades = (L.barricades || []).map(function (b) {
       var c = powerCheck(b.power, b.heroes || [], b.powerRounded);
-      return { name: b.name || NR, levelText: b.level != null ? 'Lv ' + b.level + (b.maxed ? ' (max)' : '') : 'Level: ' + NR,
+      return { name: b.name || NR, levelText: (b.level != null ? 'Lv ' + b.level + (b.maxed ? ' (max)' : '') : 'Level: ' + NR) + olderNote(b, barricadesAsOf),
                heroes: (b.heroes || []).map(function (n) { return { label: n }; }),
                statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls };
     });
@@ -1336,10 +1352,10 @@ class Dashboard extends StateHost {
       // Total kills from the Governor Profile; also listed under Governor on the City view.
       tile('Total kills', self.num(gov.kills), gov.asOf),
       tile('Town Center', tc != null ? 'Lv ' + tc : NR, tcObj.asOf),
-      tile('Total troops', self.num(army.total), army.asOf),
-      tile('March capacity', self.num(army.marchCapacity), army.asOf),
-      tile('March queues', q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, army.asOf),
-      tile('Infirmary', self.num(army.infirmary), army.asOf),
+      tile('Total troops', self.num(army.total), armyAsOf('total')),
+      tile('March capacity', self.num(army.marchCapacity), armyAsOf('marchCapacity')),
+      tile('March queues', q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, armyAsOf('queues')),
+      tile('Infirmary', self.num(army.infirmary), armyAsOf('infirmary')),
       tile('VIP', gov.vip != null ? String(gov.vip) : NR, gov.asOf),
       tile('Gems', self.num(gems), res.asOf),
       tile('Stamina', st.current != null ? st.current + '/' + (st.max != null ? st.max : '?') : NR, gov.asOf, (st.current != null && st.max != null && st.current > st.max) ? 'Above max' : '')
@@ -1382,7 +1398,7 @@ class Dashboard extends StateHost {
       filterGroups: filterGroups, heroList: heroList, heroMeta: heroMeta,
       drawer: drawer, closeHero: closeHero,
       dc: dc, army: armyVM,
-      teams: teams, barricades: barricades, noBarricades: barricades.length === 0, defAsOf: self.asOf(L.asOf), guard: guard,
+      teams: teams, barricades: barricades, noBarricades: barricades.length === 0, defAsOf: self.asOf(barricadesAsOf), guard: guard,
       city: city, invest: invest, features: features, featMeta: featMeta, health: health, codes: codes
     };
   }

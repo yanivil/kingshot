@@ -34,6 +34,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Dates (`scripts/build_data.py`, `docs/index.html`): troop counts and march presets now have separate dates. The army
+  is dated by the troop inventory and caps sections only, and each army tile by its own row (`army.fieldAsOf`), so
+  march capacity read from a preset screen keeps its day. Each march preset, Arena squad and barricade carries its
+  own `asOf`; the March presets and Barricades panels show their newest part and mark an older card with its own
+  date, and each Arena panel shows its squad's date. `lineups.asOf` (Data age) is now the oldest part's date instead
+  of the older of the two files' dates. Tests added; documented in `docs/SCHEMA.md` and `README.md`.
 - `hero.md`: Chenko promoted to 3-Star Tier 4; Gordon's Culinary Chaos and Amane's Exorcism reach Lv. 3;
   Yeonwoo and Saul equip Windbreaker Leatherwear in the empty chest slot.
 - `lineups.md`: Arena offensive squad power is now 2,383,515, and Chenko is listed at 3-Star (T4).
