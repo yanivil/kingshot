@@ -1232,16 +1232,18 @@ class Dashboard extends StateHost {
       { label: 'Lineups & marches', asOf: L.asOf },
       { label: 'Gift codes', asOf: codesD ? codesD.asOf : null }
     ];
+    // A section is flagged only when undated or older than staleAfterDays,
+    // counted from today. Being a day or two behind the newest upload is
+    // normal (uploads come in over several days), so that is not flagged.
     var staleOf = function (s) {
       var d = self.ageDays(s.asOf);
       if (d === null) return 'undated';
-      if (snapshot && s.asOf < snapshot) return 'older';
       if (d > staleDays) return 'stale';
       return '';
     };
     var ageRows = sections.map(function (s) {
       var k = staleOf(s);
-      return { label: s.label, date: s.asOf ? self.date(s.asOf, true) : NR, age: self.ageText(s.asOf) + (k === 'older' ? ' · older' : (k === 'stale' ? ' · stale' : '')), cls: k ? 'warntext' : '' };
+      return { label: s.label, date: s.asOf ? self.date(s.asOf, true) : NR, age: self.ageText(s.asOf) + (k === 'stale' ? ' · stale' : ''), cls: k ? 'warntext' : '' };
     });
     var dated = sections.filter(function (s) { return s.asOf; }).sort(function (a, b) { return a.asOf < b.asOf ? -1 : 1; });
     var oldest = dated[0] || null;
@@ -1271,11 +1273,11 @@ class Dashboard extends StateHost {
     if (noSlots) missing.push({ title: 'Slot-by-slot gear not recorded for ' + noSlots + ' of ' + heroes.length + ' heroes', area: 'Heroes' });
     var stale = sections.filter(function (s) { return staleOf(s); }).map(function (s) {
       var k = staleOf(s);
-      return { title: s.label, area: k === 'undated' ? 'Undated' : (k === 'older' ? 'Older than snapshot' : 'Stale'),
-               detail: k === 'undated' ? 'No as-of date recorded.' : 'As of ' + self.date(s.asOf) + ' (' + self.ageText(s.asOf) + ')' + (k === 'older' && snapshot ? '; the snapshot is ' + self.date(snapshot) + '.' : '.') };
+      return { title: s.label, area: k === 'undated' ? 'Undated' : 'Stale',
+               detail: k === 'undated' ? 'No as-of date recorded.' : 'As of ' + self.date(s.asOf) + ' (' + self.ageText(s.asOf) + '); the limit is ' + staleDays + ' days.' };
     });
     var health = {
-      lede: conflicts.length + ' conflicts · ' + missing.length + ' missing · ' + stale.length + ' stale or older',
+      lede: conflicts.length + ' conflicts · ' + missing.length + ' missing · ' + stale.length + ' stale or undated',
       conflicts: conflicts, missing: missing, stale: stale, noStale: stale.length === 0,
       conflictCount: conflicts.length + ' found', missingCount: missing.length + ' gaps', staleCount: stale.length + ' areas'
     };

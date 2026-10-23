@@ -266,6 +266,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   402 / 490 / 4,030, Cavalry Lethality +16.90%, Health +17.04%; gear totals updated. Shards 15 / 40; skill rows show 22/50
   Epic Expedition Manuals and 36/50 Epic Conquest Books. Whole section and roster row dated 2026-10-23.
 - `data/manual.json`: the promotion move notes Chenko (25 shards) as the next lineup hero after Jabel.
+- Data health (`docs/index.html`, `data/manual.json`, `docs/SCHEMA.md`): a section is flagged only when it is undated or
+  more than 3 days old (`staleAfterDays` 7 → 3). The "Older than snapshot" flag, which listed every section not refreshed
+  on the newest upload day, is removed.
 - `data/manual.json`: the Gordon Emergency Snack move is done and removed; the promotion move is priority 2.
 
 ### Removed
