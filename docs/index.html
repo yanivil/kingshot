@@ -1070,6 +1070,10 @@ class Dashboard extends StateHost {
       var s = names.reduce(function (acc, n) { return acc + ((byName[n] && byName[n].power) || 0); }, 0);
       return { sum: s, missing: missing };
     };
+    // Sign for a shown difference: "+" above zero, "−" below, none at zero.
+    // A percentage that rounds to 0 can be -0, which `>= 0` reads as positive,
+    // so −915 used to show "(+0%)"; it now shows "(0%)".
+    var signOf = function (n) { return n > 0 ? '+' : (n < 0 ? '−' : ''); };
     var powerCheck = function (stated, names, rounded) {
       var sp = sumPowers(names);
       var diff = stated != null ? stated - sp.sum : null;
@@ -1083,7 +1087,7 @@ class Dashboard extends StateHost {
       return {
         statedText: stated == null ? NR : (rounded ? self.compact(stated) + ' (rounded)' : self.num(stated)),
         sumText: self.num(sp.sum) + (sp.missing.length ? ' (missing: ' + sp.missing.join(', ') + ')' : ''),
-        diffText: diff == null ? NR : (diff >= 0 ? '+' : '−') + self.num(Math.abs(diff)) + (pct != null ? ' (' + (pct >= 0 ? '+' : '−') + Math.abs(pct) + '%)' : ''),
+        diffText: diff == null ? NR : signOf(diff) + self.num(Math.abs(diff)) + (pct != null ? ' (' + signOf(pct) + Math.abs(pct) + '%)' : ''),
         diffCls: flagged ? 'warn' : '', flagged: flagged, diff: diff, sum: sp.sum, pct: pct
       };
     };

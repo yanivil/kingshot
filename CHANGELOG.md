@@ -330,3 +330,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - The governor name, from `profile.md` (the "Governor Name" row, now optional for the generator),
   `troops.md`, `README.md`, the hand-written `KS_DATA` in `docs/index.html` and the design prototype.
   The dashboard header shows "Governor: Not recorded". The name remains in the git history.
+
+### Fixed
+- Defense & Arena (`docs/index.html`): a power difference whose percentage rounds to zero showed a plus sign, e.g.
+  "−915 (+0%)". The sign now follows the value (+ above zero, − below, none at zero), so it reads "−915 (0%)", and an
+  exact match reads "0 (0%)" instead of "+0 (+0%)".
