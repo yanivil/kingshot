@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Overview (`docs/index.html`): a "Total kills" tile next to Account power (kills were only on the City view).
+  Documented in `docs/SCHEMA.md` and `README.md`.
 - Codes page (`docs/index.html`): each code is now a toggle to mark it redeemed or not. Marks are saved in the
   browser (`localStorage` key `ks-code-marks`), shown with a "This device" tag, listed as "not in codes.md yet",
   and dropped once `codes.md` agrees; "Clear marks on this device" removes them. The lede counts active codes
@@ -291,6 +293,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   HP +141; +11.73% Archer Health). Hero power 320,245 and gear power 99,195 (both +9,270, all from the Bracers). Hero
   Stats DEF 953 / HP 7,049, escort DEF 317 / HP 2,349, Archer Health +19.13%; gear totals updated. Redeem shows 6.
 - `data/manual.json`: the promotion move shows Saul's Redeem count as 6.
+- `profile.md` (2026-10-23, Governor Profile): total kills 338,672 → 345,632; stamina 171 / 200; kingdom, alliance and
+  the 6 locked Governor Gear slots re-confirmed. The profile shows power as 11.9M, the same figure as the exact
+  11,942,479 already recorded.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

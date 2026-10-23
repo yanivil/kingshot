@@ -54,7 +54,8 @@ hand-written, so the file still works when opened directly.
 ### `governor`
 `name`, `kingdom`, `alliance`, `vip`, `power`, `powerRounded`, `kills`, `stamina{current,max}`, `serverDay`, `asOf`.
 `powerRounded: true` means the game showed a rounded figure (e.g. 11.4M); the Overview tile then shows it
-rounded too instead of a precise-looking 11,400,000.
+rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the first two Overview tiles;
+`kills` is also listed under Governor on the City view.
 
 ### `townCenter`
 `level`, `citizens{current,max}`, `attack`, `defense`, `health`,
