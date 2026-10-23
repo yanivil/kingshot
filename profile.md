@@ -12,13 +12,13 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **11,643,259** | Total empire strength (exact figure from the city screen's top bar) | 2026-10-22 |
+| **Overall Account Power** | **11,942,479** | Total empire strength (exact figure from the city screen's top bar) | 2026-10-23 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-22 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-22 |
 | **Total Combat Kills** | **338,672** | Total enemy unit casualties inflicted | 2026-10-22 |
-| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-22 |
+| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-23 |
 | **Stamina** | **199 / 200** | Governor hunting and expedition energy | 2026-10-22 |
-| **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-21 |
+| **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Locked** | Governor equipment slots pending unlock | 2026-10-22 |
 
 ## Town Center (TC) & Settlement Status
@@ -27,10 +27,12 @@ The Town Center represents the administrative heart of the settlement, governing
 
 ### 1. Structure Specifications & Fortification Stats
 
-* **Current Level:** **Level 20** (Upgrade button active) _(2026-10-22)_
-* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-22)_
-* **Stored Food (Bread):** **105.1M** _(2026-10-22)_
-* **Free Gems:** **21,570** (gem counter in the city screen's top bar) _(2026-10-22)_
+* **Current Level:** **Level 20** (upgrading to Lv 21, see below) _(2026-10-23)_
+* **Upgrade to Lv 21:** **In progress**: 3d 07:41:54 left on the 23 Oct screenshot, so it should finish around 26 Oct (inferred; the screen shows no finish time). "Finish" costs 63,759 gems _(2026-10-23)_
+* **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus) _(2026-10-23)_
+* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-23)_
+* **Stored Food (Bread):** **65.4M** _(2026-10-23)_
+* **Free Gems:** **25,840** (gem counter in the city screen's top bar) _(2026-10-23)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |

@@ -104,6 +104,7 @@ Army & marches, Defense & Arena, City, Invest, Features, Data health, Codes) plu
 
 1. **Game data:** edit the `.md` file and set the changed value's **Updated** date (or its _(YYYY-MM-DD)_)
    to today. Keep the bold labels as they are: they are how the generator finds each value.
+   Account power is kept in `profile.md` only; `troops.md` does not repeat it.
 2. **Judgments and rules** (recommendations, data-health notes, rules, features, Drill Camp, hero notes):
    edit `data/manual.json`. It can only add what the `.md` files don't provide. A recommendation that
    moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
