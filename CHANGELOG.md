@@ -318,6 +318,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   DEF 1,125 / HP 6,987, escort DEF 375 / HP 2,328, Archer Health +14.52%; gear totals updated. Shards 11 / 40 (Redeem
   shows 0). All five skills (Lv. 3, capped until 3★), the promotion preview and the other three gear pieces re-confirmed,
   including the Faceplate +11 and Boots +12 last seen on 21 Oct; the whole section and roster row are dated 2026-10-23.
+- `hero.md`, Diana (2026-10-23): Berserker's Boots +16 → +17 (36,015; ATK +146 / HP +452; escort ATK +48 / HP +150;
+  +12.57% Archer Lethality). Hero power 483,485 and gear power 111,245 (both +915, all from the Boots). Hero Stats
+  ATK 1,571 / HP 9,586, escort HP 3,194, Archer Lethality +20.95%. Incendiary Arrows shows 27/50 Epic Expedition
+  Manuals. Promotion preview (54 / 100, Redeem 0), the other three gear pieces, level, escorts and troop capacity
+  re-confirmed. Sharpshooter, Deadly Strike and the two expedition skills keep their dates (their panels were not opened).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
