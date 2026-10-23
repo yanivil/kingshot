@@ -13,30 +13,30 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 Your Arena configurations feature a dedicated setup for **Offensive Attacks** and **Defensive Stalls**:
 
 ### 1. Arena Offensive Squad (Attack Lineup)
-* **Offensive Squad Power:** Not recorded (Quinn replaced Amane; the new power screen wasn't shared) _(2026-10-22)_
+* **Offensive Squad Power:** **2,502,855** (Squad Settings screen; equals the sum of the five heroes' powers) _(2026-10-23)_
 * **Formation Archetype:** Dual-Frontline Tank & Aggressive Flanker with Triple-Backline DPS _(2026-10-21)_
 * **Frontline Swap:** **Chenko** replaces Fahd in the right frontline slot for higher offensive burst and rapid line-breaking. _(2026-10-21)_
 
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) | 2026-10-22 |
-| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks | 2026-10-22 |
-| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Deep flanking penetration targeting enemy backline squishies | 2026-10-21 |
-| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure | 2026-10-22 |
-| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-22 |
+| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) | 2026-10-23 |
+| **Frontline (Right)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Offensive Bruiser:** Fast frontline cavalry strike to crack opposing tanks | 2026-10-23 |
+| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Deep flanking penetration targeting enemy backline squishies | 2026-10-23 |
+| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure | 2026-10-23 |
+| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-23 |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
-* **Defensive Squad Power:** **2,452,930** _(2026-10-22)_
+* **Defensive Squad Power:** **2,494,295** (Defensive Squad Lineup screen; equals the sum of the five heroes' powers) _(2026-10-23)_
 * **Formation Archetype:** Dual-Frontline Tank & Healer with Triple-Backline DPS _(2026-10-22)_
 * **Tactical Intent:** **Gordon** holds the front-right slot: BBQ Feast heals all troops and he takes 20% less damage, keeping the backline alive. _(2026-10-22)_
 
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-10-22 |
-| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-10-22 |
-| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage | 2026-10-22 |
-| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage | 2026-10-22 |
-| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Single-target burst damage | 2026-10-22 |
+| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-10-23 |
+| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-10-23 |
+| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage | 2026-10-23 |
+| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage | 2026-10-23 |
+| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Single-target burst damage | 2026-10-23 |
 
 ## Wall Guard (City Barricade Defense)
 

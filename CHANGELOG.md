@@ -296,6 +296,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `profile.md` (2026-10-23, Governor Profile): total kills 338,672 → 345,632; stamina 171 / 200; kingdom, alliance and
   the 6 locked Governor Gear slots re-confirmed. The profile shows power as 11.9M, the same figure as the exact
   11,942,479 already recorded.
+- `lineups.md` (2026-10-23): Arena attack power recorded, 2,502,855 (Squad Settings; was "Not recorded"), and Arena defense
+  power 2,452,930 → 2,494,295 (Defensive Squad Lineup). Each equals the sum of its five heroes' current powers, so the
+  Arena defense conflict in Data health is gone (0 conflicts). All ten Arena rows re-confirmed.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
