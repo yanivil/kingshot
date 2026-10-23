@@ -74,7 +74,8 @@ rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the
 | `total`, `tier`, `injured`, `marchCapacity`, `infirmary` | Numbers / text |
 | `queues{current,max}` | March queues |
 | `classes[]` | `{ key, name, count, pct }`. `key` (`inf`/`cav`/`arc`) links to march `troops` keys and bar colours |
-| `asOf` | date |
+| `asOf` | Date: the newest upload date in the troop inventory and caps sections (not the march presets) |
+| `fieldAsOf` | `{total, injured, marchCapacity, queues, infirmary}`: each tile's own row date (the **Updated** cell), so march capacity read from a preset screen keeps its own day. Missing → the page uses `asOf` |
 
 ### `rules`
 `source`, `confidence`, `heroLevelCapByTC` (`{"20": 54, ...}`), `drillCamp` (text),
@@ -102,11 +103,15 @@ rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the
 ### `lineups`
 | Field | Notes |
 |---|---|
-| `marches[]` | `{name, purpose, heroes[{hero, lead?}], troops{inf,cav,arc}, ratioPct{inf,cav,arc}, power}` |
-| `arena.attack`, `arena.defense` | `{power, front: string[], back: string[]}` |
+| `marches[]` | `{name, purpose, heroes[{hero, lead?}], troops{inf,cav,arc}, ratioPct{inf,cav,arc}, power, asOf}` |
+| `arena.attack`, `arena.defense` | `{power, front: string[], back: string[], asOf}` |
 | `guardStation` | `{heroes: string[]}` \| null |
-| `barricades[]` | `{name, level, maxed, power, powerRounded, heroes: string[]}` |
-| `asOf` | date |
+| `barricades[]` | `{name, level, maxed, power, powerRounded, heroes: string[], asOf}` |
+| `asOf` | Date: the oldest of the parts' dates (Data age shows the stalest lineup) |
+
+Each part's `asOf` is the newest upload date in its own section. The page dates each Arena panel by its squad,
+the March presets and Barricades panels by their newest part, and marks a card that is older than its panel
+with its own "as of" date. Missing part dates fall back to `lineups.asOf`.
 
 ### `recommendations[]`
 | Field | Notes |
@@ -161,7 +166,9 @@ as_of: 2026-10-21
 
 It is now only a fallback. A section's `asOf` is the newest per-value upload date (the **Updated** table
 column and `_(YYYY-MM-DD)_` after other values) in it: for a hero, its roster row plus its
-"In-Depth Hero Profile" section; for every other section, the whole file. With no upload date, the
+"In-Depth Hero Profile" section; for the army, the troop inventory and caps sections of troops.md (each tile
+also gets its own row's date); for each march preset, Arena squad and barricade, its own section; for every
+other section, the whole file. With no upload date, the
 front-matter date is used; with neither, `null` (the page flags the section as undated) and a warning.
 
 The upload dates are removed before values are parsed, so they can never be read as a value.
@@ -187,7 +194,7 @@ when the value changes (see README "Update dates").
 | `lineups.arena` | lineups.md | "… Squad Power"; `Frontline` rows → `front`, `Backline` rows → `back` |
 | `lineups.barricades` | lineups.md, "Barricade N" sections | `Level 10 (MAX)` → level 10, `maxed: true`; Combined Hero Power (`1.4M` → rounded) |
 | `lineups.guardStation` | not recorded | `null` |
-| `lineups.asOf` | upload dates | Older of troops.md's and lineups.md's newest dates |
+| `lineups.asOf` | upload dates | Oldest of the march, Arena squad and barricade dates (each the newest stamp in its own section) |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
 | `codes` | codes.md | `[x]` = redeemed, `[ ]` = not; every row of both tables; `expiredTotal` = number of expired rows |
 

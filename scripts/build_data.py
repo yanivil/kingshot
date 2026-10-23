@@ -260,6 +260,43 @@ def newest_date(text: str, fallback: Optional[str] = None) -> Optional[str]:
     return max(found) if found else fallback
 
 
+def section_date(sec: Optional[Section], fallback: Optional[str]) -> Optional[str]:
+    """Return the newest upload date inside one section (subsections included).
+
+    Why: one .md file can hold parts read from screens uploaded on different
+    days (troop counts and march presets in troops.md; Arena squads and
+    barricades in lineups.md), so each part is dated by its own stamps rather
+    than by the newest stamp anywhere in the file.
+
+    Args:
+        sec: The section, or ``None`` when it was not found.
+        fallback: Date to return when the section is missing or has no stamp.
+
+    Returns:
+        ``YYYY-MM-DD`` or ``fallback``.
+    """
+    if sec is None:
+        return fallback
+    return newest_date("\n".join(sec.lines), fallback)
+
+
+def oldest_part_date(parts: Iterable[Optional[Dict[str, Any]]]) -> Optional[str]:
+    """Return the oldest ``asOf`` among dated parts.
+
+    Why: the "Lineups & marches" row of Data age should say how old the
+    stalest lineup is, so one fresh Arena screen does not hide an old march.
+
+    Args:
+        parts: Marches, Arena squads and barricades (``None`` entries and
+            parts without a date are skipped).
+
+    Returns:
+        ``YYYY-MM-DD``, or ``None`` when no part is dated.
+    """
+    dated = [p["asOf"] for p in parts if p and p.get("asOf")]
+    return min(dated) if dated else None
+
+
 def split_sections(body: str) -> List[Section]:
     """Split a Markdown body into heading sections.
 
@@ -714,7 +751,7 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
 
     Args:
         body: troops.md without front matter.
-        as_of: The file's date.
+        as_of: The front-matter date, used for a part without upload dates.
         log: Warning collector.
 
     Returns:
@@ -728,12 +765,14 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
         log.warn(src, "troop tier sentence ('Tier VII (Brave)') not found")
 
     classes, total, injured = [], None, None
+    total_row: Optional[Dict[str, str]] = None
     inv_sec = find_section(sections, r"^Current Troop Inventory")
     inv = find_table(inv_sec.lines, "Branch", "Headcount") if inv_sec else None
     if inv:
         for row in inv.rows:
             branch = strip_md(row["Branch"])
             if branch.startswith("Total"):
+                total_row = row
                 total = parse_number(row["Headcount"])
                 injured_match = re.search(r"(\d[\d,]*)\s+Injured", strip_md(row.get("Status", "")))
                 injured = int(injured_match.group(1).replace(",", "")) if injured_match else None
@@ -749,21 +788,40 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
         log.warn(src, "troop inventory table not found")
 
     caps: Dict[str, str] = {}
+    caps_rows: Dict[str, Dict[str, str]] = {}
     caps_sec = find_section(sections, r"^Army Statistics")
     caps_table = find_table(caps_sec.lines, "Attribute", "Value") if caps_sec else None
     if caps_table:
-        caps = {strip_md(r["Attribute"]): r["Value"] for r in caps_table.rows}
+        caps_rows = {strip_md(r["Attribute"]): r for r in caps_table.rows}
+        caps = {name: r["Value"] for name, r in caps_rows.items()}
     queues = parse_pair(label_value(caps, "Available March Queues", src, log))
     standing = parse_number(caps.get("Total Standing Troops"))
     if total is not None and standing is not None and standing != total:
         log.warn(src, f"Total Standing Troops ({standing}) differs from inventory total ({total})")
+
+    # The army is dated by the troop counts and caps only; the march presets
+    # below carry their own dates, as they come from other screens.
+    army_date = newest_date("\n".join((inv_sec.lines if inv_sec else []) + (caps_sec.lines if caps_sec else [])), as_of)
+
+    def row_date(row: Optional[Dict[str, str]]) -> Optional[str]:
+        """Date of one table row (its Updated cell), else the army date."""
+        return newest_date(" | ".join(row.values()), army_date) if row else army_date
 
     army = {
         "total": total, "tier": tier, "injured": injured, "classes": classes,
         "marchCapacity": parse_number(label_value(caps, "Single March Capacity", src, log)),
         "queues": {"current": queues[0], "max": queues[1]} if queues else None,
         "infirmary": parse_number(label_value(caps, "Infirmary Hospital Capacity", src, log)),
-        "asOf": as_of,
+        "asOf": army_date,
+        # Rows of one table can be read on different days (march capacity
+        # comes from the preset screens), so each tile gets its row's date.
+        "fieldAsOf": {
+            "total": row_date(total_row),
+            "injured": row_date(total_row),
+            "marchCapacity": row_date(caps_rows.get("Single March Capacity")),
+            "queues": row_date(caps_rows.get("Available March Queues")),
+            "infirmary": row_date(caps_rows.get("Infirmary Hospital Capacity")),
+        },
     }
 
     marches = []
@@ -788,6 +846,7 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
             "troops": troops,
             "ratioPct": ratio,
             "power": parse_number(label_value(info, "Formation Power", src, log)),
+            "asOf": section_date(sec, as_of),
         })
     if not marches:
         log.warn(src, "no saved march formations found")
@@ -803,16 +862,18 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
 # ---------------------------------------------------------------------------
 
 
-def parse_arena(sec: Optional[Section], name: str, log: BuildLog) -> Optional[Dict[str, Any]]:
+def parse_arena(sec: Optional[Section], name: str, log: BuildLog,
+                as_of: Optional[str] = None) -> Optional[Dict[str, Any]]:
     """Parse one Arena squad section.
 
     Args:
         sec: The squad's section, or ``None`` if it was not found.
         name: ``"attack"`` or ``"defense"``, for warnings.
         log: Warning collector.
+        as_of: lineups.md's front-matter date, used when the section has no stamp.
 
     Returns:
-        ``{"power", "front", "back"}`` or ``None``.
+        ``{"power", "front", "back", "asOf"}`` or ``None``.
     """
     src = "lineups.md"
     if not sec:
@@ -832,7 +893,7 @@ def parse_arena(sec: Optional[Section], name: str, log: BuildLog) -> Optional[Di
         else:
             log.warn(src, f"Arena {name}: position '{position}' is neither Frontline nor Backline")
     return {"power": parse_number(bullets(sec.lines).get(power_label)) if power_label else None,
-            "front": front, "back": back}
+            "front": front, "back": back, "asOf": section_date(sec, as_of)}
 
 
 def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
@@ -840,7 +901,7 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
 
     Args:
         body: lineups.md without front matter.
-        as_of: The file's date.
+        as_of: The front-matter date, used for a part without upload dates.
         log: Warning collector.
 
     Returns:
@@ -850,8 +911,8 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     src = "lineups.md"
     sections = split_sections(body)
     arena = {
-        "attack": parse_arena(find_section(sections, r"Arena Offensive Squad"), "attack", log),
-        "defense": parse_arena(find_section(sections, r"Arena Defensive Squad"), "defense", log),
+        "attack": parse_arena(find_section(sections, r"Arena Offensive Squad"), "attack", log, as_of),
+        "defense": parse_arena(find_section(sections, r"Arena Defensive Squad"), "defense", log, as_of),
     }
 
     barricades = []
@@ -868,6 +929,7 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
             "power": power["value"] if power else None,
             "powerRounded": power["rounded"] if power else None,
             "heroes": [strip_md(r["Hero"]) for r in table.rows] if table else [],
+            "asOf": section_date(sec, as_of),
         })
     if not barricades:
         log.warn(src, "no barricade sections found")
@@ -1331,8 +1393,10 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
         dates[name] = newest_date(bodies[name], front_dates[name])
 
     profile = parse_profile(bodies["profile.md"], dates["profile.md"], log)
-    troops = parse_troops(bodies["troops.md"], dates["troops.md"], log)
-    lineups = parse_lineups(bodies["lineups.md"], dates["lineups.md"], log)
+    # These two files are dated part by part; a part without stamps falls back
+    # to the front-matter date, never to a newer stamp elsewhere in the file.
+    troops = parse_troops(bodies["troops.md"], front_dates["troops.md"], log)
+    lineups = parse_lineups(bodies["lineups.md"], front_dates["lineups.md"], log)
     heroes = parse_heroes(bodies["hero.md"], front_dates["hero.md"], log)
     codes = parse_codes(bodies["codes.md"], dates["codes.md"], log)
     cross_check_marches(troops["marches"], lineups["presets"], log)
@@ -1344,9 +1408,9 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
         log.warn("troops.md", "Town Center level differs from profile.md (profile.md is used)")
 
     known_dates = [d for d in dates.values() if d]
-    # Marches come from troops.md and squads from lineups.md, so the section is
-    # only as fresh as the older of the two files.
-    lineup_dates = [d for d in (dates["troops.md"], dates["lineups.md"]) if d]
+    # Every march, Arena squad and barricade carries its own date; the section
+    # date is the stalest of them, so Data age shows the oldest lineup.
+    lineup_parts = list(troops["marches"]) + list(lineups["arena"].values()) + list(lineups["barricades"])
     ks: Dict[str, Any] = {key: None for key in TOP_LEVEL_KEYS}
     ks.update({
         "meta": {"schemaVersion": SCHEMA_VERSION, "snapshotAsOf": max(known_dates) if known_dates else None},
@@ -1357,7 +1421,7 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
         "army": troops["army"],
         "heroes": heroes,
         "lineups": {
-            "asOf": min(lineup_dates) if len(lineup_dates) == 2 else None,
+            "asOf": oldest_part_date(lineup_parts),
             "marches": troops["marches"],
             "arena": lineups["arena"],
             "guardStation": None,  # Not recorded in any .md file.

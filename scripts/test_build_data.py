@@ -244,6 +244,52 @@ class MergeAndOutputTests(unittest.TestCase):
         bd.date_features(feats, {"troops.md": "2026-10-22", "codes.md": None})
         self.assertEqual([f["asOf"] for f in feats], ["2026-10-22", "2026-10-19", "2026-10-18", "2026-10-17"])
 
+    def test_troop_parts_have_their_own_dates(self) -> None:
+        """Troop counts, each caps row and each march preset keep their own upload dates."""
+        body = ("Standing forces are **Tier VII (Brave)** units.\n\n"
+                "## Current Troop Inventory\n\n"
+                "| Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |\n"
+                "| :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |\n"
+                "| **Infantry** | VII | Brave Infantry | 10 | 100% | All | +1 | 2026-10-23 |\n"
+                "| **Total Military Force** | **VII** | — | **10** | **100%** | **0 Injured** | +1 | 2026-10-23 |\n\n"
+                "## Army Statistics & Facility Caps\n\n"
+                "| Attribute | Value | Status / Notes | Updated |\n| :--- | :---: | :--- | :---: |\n"
+                "| **Single March Capacity** | 77,785 | x | 2026-10-22 |\n"
+                "| **Available March Queues** | 4 / 4 | x | 2026-10-23 |\n"
+                "| **Infirmary Hospital Capacity** | 38,600 | x | 2026-10-21 |\n\n"
+                "## Saved March Formations\n\n"
+                "### Formation 1: Beast Hunting (`Be`) — PvE Preset\n"
+                "* **Formation Power:** 9,195,741 _(2026-10-22)_\n"
+                "* **Assigned Heroes:** Diana (Lv. 54, Archer Lead) _(2026-10-20)_\n")
+        troops = bd.parse_troops(body, "2026-10-01", bd.BuildLog())
+        army = troops["army"]
+        self.assertEqual(army["asOf"], "2026-10-23")
+        self.assertEqual(army["fieldAsOf"], {"total": "2026-10-23", "injured": "2026-10-23",
+                                             "marchCapacity": "2026-10-22", "queues": "2026-10-23",
+                                             "infirmary": "2026-10-21"})
+        self.assertEqual(troops["marches"][0]["asOf"], "2026-10-22")
+
+    def test_lineup_parts_have_their_own_dates(self) -> None:
+        """Each Arena squad and barricade takes the newest stamp in its own section."""
+        squad = ("* **{0} Squad Power:** 1 _({1})_\n\n"
+                 "| Grid Position | Hero | Updated |\n| :--- | :--- | :---: |\n"
+                 "| **Frontline (Left)** | **Howard** | {1} |\n\n")
+        body = ("## Arena 5v5 Squads\n\n### 1. Arena Offensive Squad (Attack Lineup)\n" + squad.format("Offensive", "2026-10-23")
+                + "### 2. Arena Defensive Squad (Defense Lineup)\n" + squad.format("Defensive", "2026-10-22")
+                + "## Wall Guard\n\n### Barricade 1 (Primary Gate)\n* **Status:** Level 10 (MAX) _(2026-10-21)_\n"
+                "* **Combined Hero Power:** 1.5M _(2026-10-21)_\n\n"
+                "| Slot | Hero | Updated |\n| :---: | :--- | :---: |\n| **Slot 1** | **Howard** | 2026-10-21 |\n")
+        lineups = bd.parse_lineups(body, "2026-10-01", bd.BuildLog())
+        self.assertEqual(lineups["arena"]["attack"]["asOf"], "2026-10-23")
+        self.assertEqual(lineups["arena"]["defense"]["asOf"], "2026-10-22")
+        self.assertEqual(lineups["barricades"][0]["asOf"], "2026-10-21")
+
+    def test_lineups_date_is_the_oldest_part(self) -> None:
+        """The Lineups & marches date is the stalest dated part; no dated part gives null."""
+        parts = [{"asOf": "2026-10-23"}, None, {"asOf": None}, {"asOf": "2026-10-22"}]
+        self.assertEqual(bd.oldest_part_date(parts), "2026-10-22")
+        self.assertIsNone(bd.oldest_part_date([None, {"asOf": None}]))
+
     def test_player_id_guard(self) -> None:
         """The build refuses to write text containing the Player ID."""
         bd.check_player_id("nothing here", "123456789")

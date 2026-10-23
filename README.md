@@ -64,7 +64,9 @@ total, takes the new date only when every value it is built from was re-confirme
 upload keep their old date.
 
 The dashboard dates come from these upload dates: each hero shows the newest date in its roster row and
-profile, and every other section shows the newest date in its file. So updating a value's date is enough
+profile; troop counts, each march preset, each Arena squad and each barricade show the newest date in their
+own section (and each army tile its own row's date), because they are read from different screens; every
+other section shows the newest date in its file. So updating a value's date is enough
 to move the dashboard date forward. The `as_of:` line at the top of each file is only the fallback for a
 section with no dates. Features on the Features page take the date of the file named as their source.
 
