@@ -313,6 +313,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   DEF 1,111 / HP 9,246, escort DEF 370 / HP 3,082, Cavalry Health +12.84%; gear totals updated. Shards 12 / 40 (Redeem
   shows 0). Promotion preview, all five skills, the other three gear pieces, level, escorts and troop capacity
   re-confirmed; the whole section and roster row are dated 2026-10-23.
+- `hero.md`, Yeonwoo (2026-10-23): Windbreaker Leatherwear +0 → +3 (16,380; DEF +63 / HP +238; escort DEF +21 / HP +79;
+  +6.42% Archer Health). Hero power 324,740 and gear power 80,740 (both +1,380, all from the Leatherwear). Hero Stats
+  DEF 1,125 / HP 6,987, escort DEF 375 / HP 2,328, Archer Health +14.52%; gear totals updated. Shards 11 / 40 (Redeem
+  shows 0). All five skills (Lv. 3, capped until 3★), the promotion preview and the other three gear pieces re-confirmed,
+  including the Faceplate +11 and Boots +12 last seen on 21 Oct; the whole section and roster row are dated 2026-10-23.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
