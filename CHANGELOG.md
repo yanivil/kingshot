@@ -323,6 +323,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   ATK 1,571 / HP 9,586, escort HP 3,194, Archer Lethality +20.95%. Incendiary Arrows shows 27/50 Epic Expedition
   Manuals. Promotion preview (54 / 100, Redeem 0), the other three gear pieces, level, escorts and troop capacity
   re-confirmed. Sharpshooter, Deadly Strike and the two expedition skills keep their dates (their panels were not opened).
+- `hero.md`, Diana (later on 2026-10-23): Windbreaker Faceplate and Leatherwear +17 → +18 (24,630 each, +8.52%) and
+  Berserker's Boots +17 → +18 (36,945, +12.78% Lethality); gear power 113,415 (+2,170). Iron Constitution Lv. 3 → Lv. 4
+  (skill icon; 18% stamina reduction from the earlier preview). Hero power 489,183: +2,170 from gear and +3,528 not
+  itemised on screen (presumably the skill; inferred). Hero Stats 1,575 / 1,535 / 9,603, escort 524 / 511 / 3,201,
+  Lethality +21.30%, Health +17.60%, each change matching the gear. Incendiary Arrows 33/50 manuals. Roster row and the
+  `Be` march note now say −18% stamina.
+- `profile.md` (Governor Profile, later on 2026-10-23): kills 345,632 → 443,382; stamina 100 / 200. Power shows 11.9M;
+  the exact 11,942,479 is kept (the profile does not show the exact figure).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

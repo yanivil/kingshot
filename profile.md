@@ -15,9 +15,9 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Overall Account Power** | **11,942,479** | Total empire strength (exact figure from the city screen's top bar; the Governor Profile shows the same power rounded to 11.9M) | 2026-10-23 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-23 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-23 |
-| **Total Combat Kills** | **345,632** | Total enemy unit casualties inflicted (Governor Profile "Kills") | 2026-10-23 |
+| **Total Combat Kills** | **443,382** | Total enemy unit casualties inflicted (Governor Profile "Kills") | 2026-10-23 |
 | **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-23 |
-| **Stamina** | **171 / 200** | Governor hunting and expedition energy | 2026-10-23 |
+| **Stamina** | **100 / 200** | Governor hunting and expedition energy | 2026-10-23 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Locked** | Governor equipment slots pending unlock | 2026-10-23 |
 
