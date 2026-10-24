@@ -160,16 +160,16 @@
           "before": [
             "Praetorian's Helm (Epic +15)",
             "Praetorian's Gloves (Epic +15)",
-            "Praetorian's Shroud (Epic +15)",
+            "Praetorian's Shroud (Epic +18)",
             "Praetorian's Greaves (Epic +16)"
           ],
           "after": [
             "Praetorian's Helm (Epic +15)",
             "Stonewall Gloves (Rare +12)",
-            "Praetorian's Shroud (Epic +15)",
+            "Praetorian's Shroud (Epic +18)",
             "Stonewall Greaves (Rare +12)"
           ],
-          "note": "Gear power 137,700 → 110,520 (-27,180); Seth is in no lineup"
+          "note": "Gear power 140,445 → 113,265 (-27,180); Seth is in no lineup"
         }
       ],
       "steps": [
@@ -180,10 +180,10 @@
         "Seth → Gear: equip Forrest's old Stonewall Gloves (+12) and Stonewall Greaves (+12)."
       ],
       "evidence": [
-        "Gear screens of 22 Oct for the 6 pieces that move and 5 of the 6 that stay (Forrest's Stonewall Helm +11 is from 21 Oct)",
+        "Gear screens of 22 Oct for the 6 pieces that move (Seth's Gloves and Greaves re-confirmed on 24 Oct) and 5 of the 6 that stay (Forrest's Stonewall Helm +11 is from 21 Oct)",
         "Gloves: 34,200 vs 25,900 power; DEF +117 vs +84; HP +877 vs +630; Infantry Health +12.15% vs +8.80%",
         "Boots: 35,100 vs 25,260 power; ATK +90 vs +63; HP +891 vs +621; Infantry Lethality +12.36% vs +8.66%",
-        "Howard keeps his helm (38,850 vs Seth's 34,200) and chest (37,890; DEF +124 / HP +931 vs Seth's 34,200; DEF +117 / HP +877)",
+        "Howard keeps his helm (38,850 vs Seth's 34,200) and chest (37,890; DEF +124 / HP +931 vs Seth's 36,945 at +18 on 24 Oct; DEF +122 / HP +918)",
         "Forrest: Stonewall Gloves +20 vs +12 (25,900 vs 21,060; Infantry Health 8.80% vs 7.68%); Greaves +19 vs +12 (25,260 vs 21,060; Infantry Lethality 8.66% vs 7.68%)",
         "Total gear power across the three heroes is unchanged (+18,140 + 9,040 - 27,180 = 0)"
       ],
@@ -204,18 +204,18 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Saul is 2★ and Quinn 4★. Next promotions: Helga 5 shards, Seth 11, Saul 15, Jabel 21",
-      "why": "Saul reached 2★ between the 22 and 23 Oct uploads: power 284,550 → 310,975 (+15,400 from the promotion, +675 from the Bracers going to +1, and +10,350 not itemised on screen). Quinn reached 4★ on 22 Oct: power 490,460 → 528,735 (+37,360 from the promotion, +915 from his Faceplate going to +17); his next tier needs 99 more shards. The closest promotions now are Helga (5 to Tier 1), Seth (11 to Tier 4), Saul (15 to Tier 1) and Jabel (21 to Tier 4). Helga, Seth and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat. Next lineup hero after him: Chenko, 25 to Tier 5 (15 / 40 on 23 Oct).",
+      "what": "Seth reached Tier 4. Next promotions: Helga 5 shards, Saul 15, Jabel 21",
+      "why": "Seth reached 3★ Tier 4 between the 22 and 24 Oct uploads (+17,940 power from the promotion); his next tier needs 40 shards. Saul reached 2★ between the 22 and 23 Oct uploads and Quinn 4★ on 22 Oct. The closest promotions now are Helga (5 to Tier 1), Saul (15 to Tier 1) and Jabel (21 to Tier 4). Helga and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat. Next lineup hero after him: Chenko, 25 to Tier 5 (15 / 40 on 23 Oct).",
       "steps": [
         "Helga: 5 shards to 1★ Tier 1.",
-        "Seth: 11 shards to 3★ Tier 4 (gathering hero).",
         "Saul: 15 shards to 2★ Tier 1 (Redeem shows 6).",
         "Jabel: 21 shards to 3★ Tier 4 (in every combat lineup)."
       ],
       "evidence": [
-        "hero.md shard counts (22–23 Oct)",
+        "hero.md shard counts (22–24 Oct)",
         "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0",
-        "Saul's promotion screen of 23 Oct: 2-Star (Tier 0), 0 / 15, Redeem 6"
+        "Saul's promotion screen of 23 Oct: 2-Star (Tier 0), 0 / 15, Redeem 6",
+        "Seth's promotion screen of 24 Oct: 3-Star (Tier 4), 0 / 40, Redeem 1"
       ],
       "cost": "5–21 shards each; shard sources not recorded",
       "confidence": [
@@ -223,7 +223,6 @@
       ],
       "heroes": [
         "Helga",
-        "Seth",
         "Saul",
         "Jabel"
       ],
