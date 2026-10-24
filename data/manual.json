@@ -64,7 +64,7 @@
     "Saul": {
       "notes": [
         "Skill effects recorded: construction speed +6%, construction cost −6%.",
-        "Skill effects recorded: squads DEF +6% / HP +9% (Taskforce Training Lv 3), squads Lethality +5% (Positional Battler Lv 1).",
+        "Skill effects recorded: squads DEF +6% / HP +9% (Taskforce Training Lv 3), squads Lethality +10% (Positional Battler Lv 2).",
         "Skill book names are inferred from the icons; the screens show only the counts."
       ]
     }
@@ -208,13 +208,13 @@
       "why": "Seth reached 3★ Tier 4 between the 22 and 24 Oct uploads (+17,940 power from the promotion); his next tier needs 40 shards. Saul reached 2★ between the 22 and 23 Oct uploads and Quinn 4★ on 22 Oct. The closest promotions now are Helga (5 to Tier 1), Saul (15 to Tier 1) and Jabel (21 to Tier 4). Helga and Saul are in no lineup; Jabel is the core carry in Arena, Barricade 1 and Att, so his shards matter most for combat. Next lineup hero after him: Chenko, 25 to Tier 5 (15 / 40 on 23 Oct).",
       "steps": [
         "Helga: 5 shards to 1★ Tier 1.",
-        "Saul: 15 shards to 2★ Tier 1 (Redeem shows 6).",
+        "Saul: 15 shards to 2★ Tier 1 (Redeem shows 11).",
         "Jabel: 21 shards to 3★ Tier 4 (in every combat lineup)."
       ],
       "evidence": [
         "hero.md shard counts (22–24 Oct)",
         "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0",
-        "Saul's promotion screen of 23 Oct: 2-Star (Tier 0), 0 / 15, Redeem 6",
+        "Saul's promotion screen of 24 Oct: 2-Star (Tier 0), 0 / 15, Redeem 11",
         "Seth's promotion screen of 24 Oct: 3-Star (Tier 4), 0 / 40, Redeem 1"
       ],
       "cost": "5–21 shards each; shard sources not recorded",

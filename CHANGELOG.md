@@ -347,6 +347,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   march (Forrest's expedition skills are wood-only). Priority 4: lead gathering marches with the hero whose skill matches
   the resource (Seth iron, Edwin stone, Forrest wood, Olive bread). Both say which parts are verified and which are not;
   the Be suggestion notes its link to the priority-1 gear move (which gives Forrest Rare gear because he is in Be).
+- `hero.md`, Saul (2026-10-24): Berserker's Bracers +13 → +14 (33,315; +11.94% Archer Health) and Windbreaker Leatherwear
+  +10 → +15 (22,800; +8.10%); gear power 102,915 (+3,720). Positional Battler Lv. 1 → Lv. 2 (+10% squad Lethality; 12/30
+  Mythic Conquest Books to Lv. 3). Hero power 326,215: +3,720 from gear, +2,250 not itemised (presumably the skill;
+  inferred). Hero Stats DEF 961 / HP 7,078, escort DEF 320 / HP 2,359, Archer Health +20.04%, each change matching the
+  gear. Redeem shows 11. Roster row and `data/manual.json` notes updated.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
