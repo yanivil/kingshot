@@ -338,6 +338,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Health +24.93%; gear totals updated. Hammer Burn Lv. 4 re-confirmed; the other skills keep their dates.
 - `data/manual.json`: the gear-swap move uses Seth's Shroud +18 (his gear power 140,445 → 113,265; the moved pieces are
   unchanged, so Howard's and Forrest's numbers stand). The promotion move drops Seth (now Tier 4, 40 shards to Tier 5).
+- `troops.md` (2026-10-24): Brave Infantry 34,151, Cavalry 36,438, Archer 35,140; total 105,729 (+4,144; header
+  105.7K/105.7K); 0 injured; queues 4/4. March capacity 79,275 (all three presets full). `Be` 9,840,959 power with
+  21,269 / 22,866 / 35,140 (27 / 29 / 44%); `Att` 11,279,258 with 32,605 / 26,446 / 20,224 (41 / 33 / 26%). New
+  Formation 3, Gathering (`Gat`): Seth (lead), Edwin, Amane; 28,813 / 36,438 / 14,024 (36 / 46 / 18%), 9,161,177 power.
+- `lineups.md`: the preset table matches (Be and Att updated, Gat added).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
