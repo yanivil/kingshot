@@ -352,6 +352,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Mythic Conquest Books to Lv. 3). Hero power 326,215: +3,720 from gear, +2,250 not itemised (presumably the skill;
   inferred). Hero Stats DEF 961 / HP 7,078, escort DEF 320 / HP 2,359, Archer Health +20.04%, each change matching the
   gear. Redeem shows 11. Roster row and `data/manual.json` notes updated.
+- `hero.md`, Howard (2026-10-24): promoted 3-Star Tier 4 → Tier 5 (+23,120 base power, as the 22 Oct preview said);
+  shards 2 / 100 to 4-Star (Redeem shows 7); new Tier 5 → 4-Star preview (268,400 +37,360). Hero power 477,020 →
+  500,140, exactly the promotion. Hero Stats 997 / 1,576 / 19,543, escort 332 / 525 / 6,514, Infantry Attack / Defense
+  +89.01% (the old preview said +89.00%; the 0.01% gap is not explained), Lethality +21.86% and Health +21.79%
+  re-confirmed. Level 54, 8 escorts and 11,525 troop capacity re-confirmed; gear and skills not shown, so they keep their
+  dates.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
