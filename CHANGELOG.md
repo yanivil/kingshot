@@ -331,6 +331,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `Be` march note now say −18% stamina.
 - `profile.md` (Governor Profile, later on 2026-10-23): kills 345,632 → 443,382; stamina 100 / 200. Power shows 11.9M;
   the exact 11,942,479 is kept (the profile does not show the exact figure).
+- `hero.md`, Seth (2026-10-24): promoted 3-Star Tier 3 → Tier 4 (+17,940 base power); shards 0 / 40 to Tier 5 (Redeem
+  shows 1); new Tier 4 → Tier 5 preview (199,290 +18,785). Praetorian's Shroud +15 → +18 (36,945; DEF +122 / HP +918;
+  escort DEF +40 / HP +306; +12.78% Infantry Health); gear power 140,445. Hero power 408,649 → 429,334, exactly the
+  promotion plus the Shroud. Hero Stats 830 / 1,547 / 16,316, escort 276 / 515 / 5,438, Infantry Attack / Defense +54.31%,
+  Health +24.93%; gear totals updated. Hammer Burn Lv. 4 re-confirmed; the other skills keep their dates.
+- `data/manual.json`: the gear-swap move uses Seth's Shroud +18 (his gear power 140,445 → 113,265; the moved pieces are
+  unchanged, so Howard's and Forrest's numbers stand). The promotion move drops Seth (now Tier 4, 40 shards to Tier 5).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
