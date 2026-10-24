@@ -343,6 +343,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   21,269 / 22,866 / 35,140 (27 / 29 / 44%); `Att` 11,279,258 with 32,605 / 26,446 / 20,224 (41 / 33 / 26%). New
   Formation 3, Gathering (`Gat`): Seth (lead), Edwin, Amane; 28,813 / 36,438 / 14,024 (36 / 46 / 18%), 9,161,177 power.
 - `lineups.md`: the preset table matches (Be and Att updated, Gat added).
+- `data/manual.json`: two new suggestions under a "Marches" group. Priority 3: test Helga instead of Forrest in the `Be`
+  march (Forrest's expedition skills are wood-only). Priority 4: lead gathering marches with the hero whose skill matches
+  the resource (Seth iron, Edwin stone, Forrest wood, Olive bread). Both say which parts are verified and which are not;
+  the Be suggestion notes its link to the priority-1 gear move (which gives Forrest Rare gear because he is in Be).
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

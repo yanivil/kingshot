@@ -227,6 +227,96 @@
         "Jabel"
       ],
       "note": "Shard counts are verified; where to get shards is not recorded."
+    },
+    {
+      "id": "be-swap-forrest",
+      "priority": 3,
+      "type": "Marches",
+      "what": "Test a combat hero instead of Forrest in the Be (beast) march",
+      "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (259,615 vs Forrest's 371,073), so test it before keeping it.",
+      "changes": [
+        {
+          "where": "Be march",
+          "before": [
+            "Diana (lead)",
+            "Gordon",
+            "Forrest"
+          ],
+          "after": [
+            "Diana (lead)",
+            "Gordon",
+            "Helga"
+          ],
+          "note": "Same classes (Archer, Cavalry, Infantry) and the same troop split"
+        }
+      ],
+      "steps": [
+        "Deploy → Be → remove Forrest → add Helga → Save.",
+        "Hit the same beast level you use now and compare troop losses with an earlier hunt.",
+        "Keep whichever loses fewer troops."
+      ],
+      "evidence": [
+        "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
+        "troops.md Be preset of 24 Oct: Diana (lead), Gordon, Forrest; 21,269 / 22,866 / 35,140",
+        "Hero power: Helga 259,615, Forrest 371,073 (hero.md)"
+      ],
+      "cost": "None (a preset change)",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Forrest",
+        "Helga",
+        "Diana",
+        "Gordon"
+      ],
+      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP, +5% Lethality; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the priority-1 gear move: that move gives Howard's freed Rare gloves (+20) and boots (+19) to Forrest because he is in Be. If Helga replaces him, Forrest would use them only for gathering; Helga already wears Epic gear (Helm +10, Gloves +0, Shroud +3 on 22 Oct), so which of the two should get the Rare pieces is not worked out yet."
+    },
+    {
+      "id": "gat-match-resource",
+      "priority": 4,
+      "type": "Marches",
+      "what": "Gathering: lead with the hero whose skill matches the resource",
+      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +15% wood, Olive +15% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
+      "changes": [
+        {
+          "where": "Gathering presets",
+          "before": [
+            "Gat: Seth (lead), Edwin, Amane"
+          ],
+          "after": [
+            "Iron: Seth (lead)",
+            "Stone: Edwin (lead)",
+            "Wood: Forrest (lead)",
+            "Bread: Olive (lead)"
+          ],
+          "note": "Forrest is also in Be; a hero can be in only one march at a time (community rule, Unverified), so don't send both at once"
+        }
+      ],
+      "steps": [
+        "Deploy → Gat: keep it for iron (Seth leads).",
+        "Save presets 4 and 5 with Edwin (stone) and Olive (bread) as leads.",
+        "For wood, put Forrest in front when the Be march is home."
+      ],
+      "evidence": [
+        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 3 (+15%), Olive Forager's Luck Lv. 3 (+15% bread)",
+        "troops.md Gat preset of 24 Oct: Seth (lead), Edwin, Amane",
+        "troops.md: March Queue 4/4 (24 Oct)"
+      ],
+      "cost": "None (preset changes)",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Seth",
+        "Edwin",
+        "Forrest",
+        "Olive",
+        "Amane"
+      ],
+      "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load."
     }
   ],
   "features": [
