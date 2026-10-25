@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 3) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-22 |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-25 |
 | **Saul** | SSR / Mythic | Archer | Lv. 54 | 2-Star (Tier 0) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+6%) & HP (+9%), squad Lethality (+10%) | 2026-10-24 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 54 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-22 |
 | **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 5) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-24 |
@@ -38,48 +38,48 @@ Heroes shown in the hero list but not recruited. They are not in the roster abov
 
 ## In-Depth Hero Profile: Jabel (Jable)
 
-* **Hero Name:** Jabel _(2026-10-21)_
-* **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-21)_
-* **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-21)_
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 19 / 40 to next promotion) _(2026-10-22)_
-* **Total Hero Power:** **567,410** _(2026-10-22)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-21)_
-* **Escort Guards:** **8 Escorts** _(2026-10-21)_
-* **Total Equipped Gear Power:** **134,670** _(2026-10-22)_
+* **Hero Name:** Jabel _(2026-10-25)_
+* **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-25)_
+* **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-25)_
+* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-25)_
+* **Star Tier:** **3-Star (Tier 4)** (Shards: 2 / 40 to Tier 5 promotion; Redeem shows 11) _(2026-10-25)_
+* **Total Hero Power:** **605,610** (+27,600 from the Tier 4 promotion and +10,600 from gear: Gauntlets +11 → +20, Armet and Breastplate +17 → +19; together exactly the +38,200 change) _(2026-10-25)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-25)_
+* **Escort Guards:** **8 Escorts** _(2026-10-25)_
+* **Total Equipped Gear Power:** **145,270** (4 pieces 115,270 + widget 30,000; the widget was not in the 25 Oct screenshots) _(2026-10-25)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,472** | Core attack scaling for exploration skills and auto-attacks | 2026-10-21 |
-| | **Hero Defense** | **1,497** | Damage mitigation against incoming enemy hero attacks | 2026-10-22 |
-| | **Hero Health** | **14,853** | Total health pool in Arena and Campaign stages | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **490** | Attack value of her 8 escort bodyguards | 2026-10-21 |
-| | **Escort Defense** | **498** | Defense value of her 8 escort bodyguards | 2026-10-22 |
-| | **Escort Health** | **4,951** | Health pool of escort bodyguards | 2026-10-22 |
-| **Expedition (March)** | **Cavalry Attack** | **+114.26%** | Massive offensive bonus applied to all deployed Cavalry | 2026-10-21 |
-| | **Cavalry Defense**| **+114.26%** | High armor rating reducing cavalry casualties in field battles | 2026-10-21 |
-| | **Cavalry Lethality**| **+22.18%** | Direct bonus to enemy casualty conversion (from gear) | 2026-10-21 |
-| | **Cavalry Health** | **+24.69%** | Expanded squad durability in open-field clashes (from gear) | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **1,534** | Core attack scaling for exploration skills and auto-attacks | 2026-10-25 |
+| | **Hero Defense** | **1,576** | Damage mitigation against incoming enemy hero attacks | 2026-10-25 |
+| | **Hero Health** | **15,558** | Total health pool in Arena and Campaign stages | 2026-10-25 |
+| **Conquest (Escort)** | **Escort Attack** | **511** | Attack value of her 8 escort bodyguards | 2026-10-25 |
+| | **Escort Defense** | **525** | Defense value of her 8 escort bodyguards | 2026-10-25 |
+| | **Escort Health** | **5,186** | Health pool of escort bodyguards | 2026-10-25 |
+| **Expedition (March)** | **Cavalry Attack** | **+120.71%** | Massive offensive bonus applied to all deployed Cavalry | 2026-10-25 |
+| | **Cavalry Defense**| **+120.71%** | High armor rating reducing cavalry casualties in field battles | 2026-10-25 |
+| | **Cavalry Lethality**| **+22.46%** | Direct bonus to enemy casualty conversion (from gear) | 2026-10-25 |
+| | **Cavalry Health** | **+26.86%** | Expanded squad durability in open-field clashes (from gear) | 2026-10-25 |
 
-### 2. Star Promotion Milestone Preview
+### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
 
-Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Shards** (currently 19/40). _(2026-10-22)_
+Promoted to **Tier 4** between the 22 Oct and 25 Oct uploads (the promotion added +27,600 base power: 279,000 → 306,600, as the 21 Oct preview said). Current Status: **2 / 40 Shards** (needs **38 more shards** for Tier 5; Redeem shows 11). _(2026-10-25)_
 
-*Recorded at Lv. 53, before the level-up to Lv. 54; not re-read since.*
+Post-promotion values below are the current value plus the increase the game shows. _(2026-10-25)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 279,000 | **+27,600** | 306,600 | 2026-10-21 |
-| **Hero Attack** | 900 | **+60** | 960 | 2026-10-21 |
-| **Hero Defense** | 900 | **+60** | 960 | 2026-10-21 |
-| **Hero Health** | 9,000 | **+600** | 9,600 | 2026-10-21 |
-| **Escort Attack** | 300 | **+20** | 320 | 2026-10-21 |
-| **Escort Defense** | 300 | **+20** | 320 | 2026-10-21 |
-| **Escort Health** | 3,000 | **+200** | 3,200 | 2026-10-21 |
-| **Cavalry Attack** | +114.26% | **+6.45%** | **+120.71%** | 2026-10-21 |
-| **Cavalry Defense** | +114.26% | **+6.45%** | **+120.71%** | 2026-10-21 |
+| **Base Hero Power** | 306,600 | **+28,900** | 335,500 | 2026-10-25 |
+| **Hero Attack** | 960 | **+60** | 1,020 | 2026-10-25 |
+| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-25 |
+| **Hero Health** | 9,600 | **+600** | 10,200 | 2026-10-25 |
+| **Escort Attack** | 320 | **+20** | 340 | 2026-10-25 |
+| **Escort Defense** | 320 | **+20** | 340 | 2026-10-25 |
+| **Escort Health** | 3,200 | **+200** | 3,400 | 2026-10-25 |
+| **Cavalry Attack** | +120.71% | **+6.45%** | **+127.16%** | 2026-10-25 |
+| **Cavalry Defense** | +120.71% | **+6.45%** | **+127.16%** | 2026-10-25 |
 
 ### 3. Equipped Hero Gear & Widget
 
@@ -87,16 +87,16 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
   *Conquest:* Hero +60 ATK / +60 DEF / +600 HP (Escort +20 / +20 / +200)  
   *Expedition:* +5.00% Cavalry Lethality & +5.00% Cavalry Health  
   *Exclusive Skill:* **Crimson Spirit Lv. 1**
-* **Gauntlets:** **Crusader's Gauntlets (+11, Epic Purple)** — 30,750 Power _(2026-10-22)_  
-  *Conquest:* Hero +109 DEF / +549 HP (Escort +36 DEF / +183 HP)  
-  *Expedition:* +11.31% Cavalry Health
-* **Helmet:** **Brigader's Armet (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
-  *Conquest:* Hero +80 ATK / +402 HP (Escort +26 ATK / +134 HP)  
-  *Expedition:* +8.38% Cavalry Lethality
-* **Armor:** **Brigader's Breastplate (+17, Rare Blue)** — 24,010 Power _(2026-10-22)_  
-  *Conquest:* Hero +80 DEF / +402 HP (Escort +26 DEF / +134 HP)  
-  *Expedition:* +8.38% Cavalry Health
-* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-22)_  
+* **Gauntlets:** **Crusader's Gauntlets (+20, Epic Purple)** — 38,850 Power _(2026-10-25)_  
+  *Conquest:* Hero +126 DEF / +630 HP (Escort +42 DEF / +210 HP)  
+  *Expedition:* +13.20% Cavalry Health
+* **Helmet:** **Brigader's Armet (+19, Rare Blue)** — 25,260 Power _(2026-10-25)_  
+  *Conquest:* Hero +82 ATK / +414 HP (Escort +27 ATK / +138 HP)  
+  *Expedition:* +8.66% Cavalry Lethality
+* **Armor:** **Brigader's Breastplate (+19, Rare Blue)** — 25,260 Power _(2026-10-25)_  
+  *Conquest:* Hero +82 DEF / +414 HP (Escort +27 DEF / +138 HP)  
+  *Expedition:* +8.66% Cavalry Health
+* **Boots:** **Brigader's Battle Boots (+20, Rare Blue)** — 25,900 Power _(2026-10-25)_  
   *Conquest:* Hero +84 ATK / +420 HP (Escort +28 ATK / +140 HP)  
   *Expedition:* +8.80% Cavalry Lethality
 
@@ -104,17 +104,17 @@ Current Status: **3-Star (Tier 3)** | Next Promotion Requirement: **40 Jabel Sha
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Gallant Throw** | Active (Top) | **Lv. 4** | Throws a spear dealing **234% AoE damage** and pins targets for 1.5s. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 252% AoE) | 2026-10-21 |
-| **Brave the Storm** | Passive (Mid) | **Lv. 4** | Strikes target enemy dealing **195% Attack damage**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 210% DMG) | 2026-10-21 |
-| **Persistence** | Passive (Bot) | **Lv. 3** | Increases Attack Speed by **40%** when Health drops below 50%. | **In Progress** (13/50 Mythic Expedition Manuals to reach Lv. 4: +50% ATK Speed) | 2026-10-21 |
+| **Gallant Throw** | Active (Top) | **Lv. 4** | Throws a spear dealing **234% AoE damage** and pins targets for 1.5s. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 252% AoE) | 2026-10-25 |
+| **Brave the Storm** | Passive (Mid) | **Lv. 4** | Strikes target enemy dealing **195% Attack damage**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 210% DMG) | 2026-10-25 |
+| **Persistence** | Passive (Bot) | **Lv. 3** | Increases Attack Speed by **40%** when Health drops below 50%. | **In Progress** (22/50 Mythic Expedition Manuals to reach Lv. 4: +50% ATK Speed) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Rally Flag** | Top | **Lv. 4** | **32% chance** of reducing incoming damage taken by **50%** for all squads. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 40% chance) | 2026-10-21 |
-| **Hero's Domain** | Mid | **Lv. 4** | **50% chance** of granting all squads **+40% more damage** when attacking. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: +50% DMG) | 2026-10-21 |
-| **Youthful Rage** | Bot | **Lv. 3** | Passively increases all squads' **Lethality by +15%**. | **In Progress** (13/50 Mythic Conquest Books to reach Lv. 4: +20% Lethality) | 2026-10-21 |
+| **Rally Flag** | Top | **Lv. 4** | **32% chance** of reducing incoming damage taken by **50%** for all squads. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 40% chance) | 2026-10-25 |
+| **Hero's Domain** | Mid | **Lv. 4** | **50% chance** of granting all squads **+40% more damage** when attacking. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: +50% DMG) | 2026-10-25 |
+| **Youthful Rage** | Bot | **Lv. 3** | Passively increases all squads' **Lethality by +15%**. | **In Progress** (17/50 Mythic Conquest Books to reach Lv. 4: +20% Lethality) | 2026-10-25 |
 
 ## In-Depth Hero Profile: Howard
 
