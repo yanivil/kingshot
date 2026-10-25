@@ -358,6 +358,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   +89.01% (the old preview said +89.00%; the 0.01% gap is not explained), Lethality +21.86% and Health +21.79%
   re-confirmed. Level 54, 8 escorts and 11,525 troop capacity re-confirmed; gear and skills not shown, so they keep their
   dates.
+- `hero.md`, Gordon (2026-10-25): promoted 3-Star Tier 4 → Tier 5 (+23,120 base power, as the 22 Oct preview said);
+  shards 4 / 100 to 4-Star (Redeem shows 11); new Tier 5 → 4-Star preview (268,400 +37,360). Brigader's Battle Boots
+  +13 → +17 (24,010; ATK +80 / HP +402; escort ATK +26 / HP +134; +8.38% Cavalry Lethality); gear power 91,820. Hero power
+  438,560 → 464,060, exactly the promotion plus the boots. Hero Stats 1,252 / 1,522 / 12,510, escort 416 / 507 / 4,170,
+  Cavalry Attack / Defense +89.01%, Lethality +16.48%, Health +16.06%, each change matching. Armet, Gauntlets and
+  Breastplate re-confirmed. BBQ Feast Lv. 3 re-confirmed with 23/50 manuals; the other skills show only their badges and
+  keep their dates.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
