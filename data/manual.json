@@ -44,7 +44,7 @@
     "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 and 25 Oct) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 and 25 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
     "oneMarchPerHero": "A hero can be in only one march at a time.",
     "skillBooks": {
-      "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill: books spent on one hero are gone for every other hero that uses the same books. Book type names are read from the icons.",
+      "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill. Each rarity has its own books: Epic heroes share Epic books, Mythic heroes share Mythic books, so books spent on one Epic hero are gone for every other Epic hero. Book type names are read from the icons.",
       "source": "You, 25 Oct",
       "confidence": "Verified"
     },
@@ -433,6 +433,16 @@
       "section": "^Current Troop Inventory",
       "asOf": "2026-10-21",
       "note": null
+    },
+    {
+      "name": "Beasts & Terror",
+      "unlock": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "troops.md",
+      "section": "^Beast & Terror",
+      "asOf": null,
+      "note": "Beasts up to Lv 21; Terror (rally only) up to Lv 4. Told by you on 25 Oct, not from a screenshot."
     },
     {
       "name": "Arena",

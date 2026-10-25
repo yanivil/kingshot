@@ -46,7 +46,7 @@ hand-written, so the file still works when opened directly.
 |---|---|---|
 | `schemaVersion` | number | Currently `1` |
 | `snapshotAsOf` | date | Date shown in the header (the newest upload date) |
-| `staleAfterDays` | number | Sections more than this many days old (counted from today) are flagged "stale" in Data health; `data/manual.json` sets 3 (default 7). Undated sections are always flagged |
+| `staleAfterDays` | number | Sections more than this many days old (counted from today) are flagged "stale" in Data health; `data/manual.json` sets 3 (default 7). Undated sections are always flagged. The Drill Camp page also uses it: its reading is called older than the hero data only when it trails `snapshotAsOf` by more than this many days |
 | `previousSnapshot.asOf` | date \| null | When the previous hero list was taken |
 | `previousSnapshot.heroes` | string[] | Hero names in the previous snapshot; heroes not in it get a "New" badge. Empty list = no badges |
 | `lockedHeroesNotInData` | number \| null | Shown as a note under the hero grid |

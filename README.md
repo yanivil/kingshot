@@ -43,7 +43,8 @@ This repository provides:
   (skill book counts are the shared stock of that book type on the date shown, not per-skill progress),
   plus heroes seen but not yet recruited (not shown on the dashboard).
 * **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (City Wall Guard), and saved March Presets (`Be` and `Att`).
-* **`troops.md`**: Tier VII standing troop inventory, march capacities, and infirmary hospital caps.
+* **`troops.md`**: Tier VII standing troop inventory, march capacities, infirmary hospital caps, and the highest
+  beast and Terror (rally-only) levels the account can take.
 * **`codes.md`**: Active promotional gift codes and expired codes archive.
 * **`docs/index.html`**: The account dashboard (see below).
 * **`docs/SCHEMA.md`**: Reference for the dashboard's data object and where each field comes from.
@@ -96,7 +97,8 @@ The Overview opens with account power and total kills.
 * **Derived values are computed in the page**, not stored: hero level caps (from the Town Center rule
   table), assignments, lineup power checks, march conflicts, the Drill Camp placement plan, feature
   states and the data-health checks. Data health flags a section as stale when it is more than 3 days old
-  (`staleAfterDays` in `data/manual.json`) or has no date.
+  (`staleAfterDays` in `data/manual.json`) or has no date; the Drill Camp page says its reading is older than
+  the hero data only when it trails it by more than the same number of days.
 * Game rules come from community sources and are labelled **Unverified** wherever they are used.
 * The Player ID is never displayed.
 * **Gift-code marks.** On the Codes page, tap a code to mark it redeemed or not. The page can't write to

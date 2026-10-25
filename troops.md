@@ -67,3 +67,10 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 | **Brave Infantry** | VII | 28,813 | 34,151 | 36% | 2026-10-24 |
 | **Brave Cavalry** | VII | 36,438 | 36,438 | 46% | 2026-10-24 |
 | **Brave Archer** | VII | 14,024 | 35,140 | 18% | 2026-10-24 |
+
+## Beast & Terror Hunting
+
+Told by the account owner on 2026-10-25 (not read from a screenshot).
+
+* **Beasts:** the highest level the account can defeat is **Lv. 21**. _(2026-10-25)_
+* **Terror:** a huge beast that can only be attacked with a **rally**; the highest level the account can take is **Lv. 4**. _(2026-10-25)_

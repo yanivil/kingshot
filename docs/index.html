@@ -998,7 +998,10 @@ class Dashboard extends StateHost {
       }
       dc = {
         has: true, missing: false,
-        lede: 'Reading from ' + self.date(DC.asOf) + ' (' + self.ageText(DC.asOf) + ')' + (snapshot && DC.asOf && DC.asOf < snapshot ? ', older than the hero data.' : '.'),
+        // Like the Data age panel, flag the reading only when it trails the hero data by more than staleAfterDays;
+        // a day or two behind is normal because uploads come in over several days.
+        lede: 'Reading from ' + self.date(DC.asOf) + ' (' + self.ageText(DC.asOf) + ')' +
+          (snapshot && DC.asOf && self.ageDays(DC.asOf) - self.ageDays(snapshot) > staleDays ? ', more than ' + staleDays + ' days older than the hero data.' : '.'),
         asOf: self.asOf(DC.asOf),
         instructors: insVM, lowestText: lowestText,
         slots: cells,
