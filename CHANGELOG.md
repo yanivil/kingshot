@@ -374,6 +374,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Youthful Rage 17/50; the four Lv. 4 skills still need 4★.
 - `data/manual.json`: the promotion suggestion drops Jabel (now 38 to Tier 5) and names Chenko (25 to Tier 5) as the
   closest lineup hero; Jabel's gear note is updated.
+- `hero.md`, Quinn (2026-10-25): shards 1 → 30 / 100 to 4★ Tier 1 (Redeem shows 12). Power 528,735, Hero Stats, Level
+  54 (Town Center 21 cap), 8 escorts, 11,525 troop capacity and the Tier 1 preview re-confirmed unchanged. All five skills
+  still Lv. 3; their book counts went down (manuals 28 → 26, Conquest Books 31 → 28), recorded as shown with the cause
+  marked unknown. All four gear pieces (Faceplate +17, Bracers +16, Leatherwear +17, Boots +17; 119,135) re-confirmed.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
