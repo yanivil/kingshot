@@ -323,6 +323,42 @@
         "Amane"
       ],
       "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load."
+    },
+    {
+      "id": "skill-books-order",
+      "priority": 5,
+      "type": "Skills",
+      "what": "Skill books: next 50 Epic Conquest Books to Howard's Defenders' Edge, next 50 Epic Expedition Manuals to Howard's Joint Defense",
+      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard leads Att and is in Barricade 1, and Defenders' Edge cuts damage taken by all troops from 12% to 16%, which lowers losses whether you attack or are attacked. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Fahd, Amane and Saul are not ranked first because none of them is in a march or Arena squad.",
+      "steps": [
+        "Epic Conquest Books (28 in stock on 25 Oct; 50 needed): 1. Howard · Defenders' Edge (all troops take 12% → 16% less damage; Att lead, Barricade 1). 2. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 3. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
+        "Epic Expedition Manuals (26 in stock on 25 Oct; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
+        "Mythic Conquest Books (17 in stock on 25 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
+        "Mythic Expedition Manuals (22 in stock on 25 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Lv. 2 skills need 30 each, but Saul is in no Arena squad."
+      ],
+      "evidence": [
+        "Book stock from the 25 Oct skill screens: 26 Epic Expedition Manuals and 28 Epic Conquest Books (same on Quinn, Howard and Diana); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books",
+        "hero.md skill texts and costs: Lv. 3 → 4 costs 50; Fahd, Amane and Saul Lv. 2 → 3 cost 30",
+        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
+        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+      ],
+      "cost": "50 books per Lv. 3 → 4 upgrade; 22–24 more Epic books of each type needed (25 Oct stock)",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Howard",
+        "Gordon",
+        "Quinn",
+        "Diana",
+        "Jabel",
+        "Saul",
+        "Fahd",
+        "Amane"
+      ],
+      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If beasts matter more to you than attacking and defending, put Gordon's Trash Talk first (Be march)."
     }
   ],
   "features": [
