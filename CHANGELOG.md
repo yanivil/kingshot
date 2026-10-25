@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `data/manual.json`: suggestion priority 5 ("Skills"): which skill each book type should go to next, ranked. Epic Conquest
+  Books → Howard's Defenders' Edge, then Gordon's Trash Talk, then Quinn's Precision Shot; Epic Expedition Manuals →
+  Howard's Joint Defense, then Quinn's Headshot, then Diana's Incendiary Arrows; Mythic books → Jabel's Youthful Rage and
+  Persistence. Uses the shared-stock rule; the order is Inferred and says what is unverified.
 - Overview (`docs/index.html`): a "Total kills" tile next to Account power (kills were only on the City view).
   Documented in `docs/SCHEMA.md` and `README.md`.
 - Codes page (`docs/index.html`): each code is now a toggle to mark it redeemed or not. Marks are saved in the
