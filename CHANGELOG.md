@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `troops.md`: new "Beast & Terror Hunting" section: beasts up to Lv 21 and Terror (a huge beast that can only be rallied)
+  up to Lv 4, as told by the account owner on 25 Oct (not from a screenshot). `data/manual.json` adds a "Beasts & Terror"
+  feature row dated from that section. README updated.
 - `data/manual.json`: suggestion priority 5 ("Skills"): which skill each book type should go to next, ranked. Epic Conquest
   Books → Howard's Defenders' Edge, then Gordon's Trash Talk, then Quinn's Precision Shot; Epic Expedition Manuals →
   Howard's Joint Defense, then Quinn's Headshot, then Diana's Incendiary Arrows; Mythic books → Jabel's Youthful Rage and
@@ -42,6 +45,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Drill Camp page (`docs/index.html`): "older than the hero data" now follows the stale rule. It shows only when the
+  reading trails the hero data by more than `staleAfterDays` (3) days, as the account owner asked on 25 Oct. README and
+  SCHEMA updated.
+- Skill book rule (`data/manual.json` `rules.skillBooks`, `hero.md`): each rarity has its own books (Epic heroes share
+  Epic books, Mythic heroes share Mythic books), confirmed by the account owner on 25 Oct.
 - Dates (`scripts/build_data.py`, `docs/index.html`): troop counts and march presets now have separate dates. The army
   is dated by the troop inventory and caps sections only, and each army tile by its own row (`army.fieldAsOf`), so
   march capacity read from a preset screen keeps its day. Each march preset, Arena squad and barricade carries its

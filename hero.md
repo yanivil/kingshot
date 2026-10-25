@@ -8,7 +8,7 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 
 Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
 
-Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: books spent on one hero are gone for every hero that uses the same books (confirmed by the account owner, 2026-10-25). Book type names are read from the icons.
+Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: each rarity has its own books (Epic heroes share Epic books, Mythic heroes share Mythic books), so books spent on one hero are gone for every hero of the same rarity (confirmed by the account owner, 2026-10-25). Book type names are read from the icons.
 
 ## Active Hero Roster
 
