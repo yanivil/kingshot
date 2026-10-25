@@ -365,6 +365,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Cavalry Attack / Defense +89.01%, Lethality +16.48%, Health +16.06%, each change matching. Armet, Gauntlets and
   Breastplate re-confirmed. BBQ Feast Lv. 3 re-confirmed with 23/50 manuals; the other skills show only their badges and
   keep their dates.
+- `hero.md`, Jabel (2026-10-25): promoted 3-Star Tier 3 → Tier 4 (+27,600 base power, as the 21 Oct preview said);
+  shards 2 / 40 to Tier 5 (Redeem shows 11); new Tier 4 → Tier 5 preview (306,600 +28,900). Crusader's Gauntlets +11 →
+  +20 (38,850; +13.20% Cavalry Health), Brigader's Armet and Breastplate +17 → +19 (25,260 each; +8.66%), Battle Boots +20
+  re-confirmed; gear power 145,270 with the widget (widget not re-shown). Hero power 567,410 → 605,610, exactly the
+  promotion plus the gear (+10,600). Hero Stats 1,534 / 1,576 / 15,558, escort 511 / 525 / 5,186, Cavalry Attack / Defense
+  +120.71%, Lethality +22.46%, Health +26.86%, each change matching. All six skills re-read: Persistence 22/50 and
+  Youthful Rage 17/50; the four Lv. 4 skills still need 4★.
+- `data/manual.json`: the promotion suggestion drops Jabel (now 38 to Tier 5) and names Chenko (25 to Tier 5) as the
+  closest lineup hero; Jabel's gear note is updated.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
