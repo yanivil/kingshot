@@ -55,15 +55,18 @@ hand-written, so the file still works when opened directly.
 `name`, `kingdom`, `alliance`, `vip`, `power`, `powerRounded`, `kills`, `stamina{current,max}`, `serverDay`, `asOf`.
 `powerRounded: true` means the game showed a rounded figure (e.g. 11.4M); the Overview tile then shows it
 rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the first two Overview tiles;
-`kills` is also listed under Governor on the City view.
+`kills` is also listed under Governor on the City view. `fieldAsOf{power, kills, vip, stamina}` gives each Overview
+tile its own row date (the **Updated** cell), since the rows are read on different days; missing → the page uses `asOf`.
 
 ### `townCenter`
 `level`, `citizens{current,max}`, `attack`, `defense`, `health`,
-`perks{unlocked,total,namesVerified}`, `asOf`. Perk names are intentionally not stored.
+`perks{unlocked,total,namesVerified}`, `asOf`, `fieldAsOf{level}` (the Current Level bullet's own date, used by the
+Overview tile). Perk names are intentionally not stored.
 
 ### `resources`
 `bread`, `wood`, `stone`, `iron`, `gems`: each `{ "value": number, "rounded": boolean }` or `null`.
-`rounded: true` means the game showed a rounded figure (e.g. 94.6M). Plus `asOf`.
+`rounded: true` means the game showed a rounded figure (e.g. 94.6M). Plus `asOf` and `fieldAsOf{bread, gems}` (each
+bullet's own date; the Gems tile uses it).
 
 ### `governorGear`
 `slotsTotal`, `slotsLocked`, `asOf`.

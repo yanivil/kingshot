@@ -438,6 +438,30 @@ def bullets(lines: List[str]) -> Dict[str, str]:
     return found
 
 
+def bullet_dates(lines: List[str], fallback: Optional[str]) -> Dict[str, Optional[str]]:
+    """Read the date of each top-level ``* **Label:** value`` bullet.
+
+    ``bullets()`` drops the ``_(YYYY-MM-DD)_`` stamp from the value; this keeps
+    it, so a tile can show the day its own value was read.
+
+    Args:
+        lines: Markdown lines.
+        fallback: Date for a bullet without a stamp (usually the section date).
+
+    Returns:
+        Label -> newest ISO date in that bullet, else ``fallback``. When a
+        label repeats, the first one wins (as in ``bullets()``).
+    """
+    found: Dict[str, Optional[str]] = {}
+    for line in lines:
+        match = BULLET_RE.match(line)
+        if match:
+            label = strip_md(match.group(1))
+            if label not in found:
+                found[label] = newest_date(match.group(2), fallback)
+    return found
+
+
 # ---------------------------------------------------------------------------
 # Value parsers
 # Why: the files mix exact numbers ("11,110,919"), rounded game figures
@@ -639,10 +663,12 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     src = "profile.md"
     sections = split_sections(body)
     identity: Dict[str, str] = {}
+    identity_rows: Dict[str, Dict[str, str]] = {}
     sec = find_section(sections, r"^Governor Identity")
     table = find_table(sec.lines, "Attribute", "Value") if sec else None
     if table:
         identity = {strip_md(r["Attribute"]): r["Value"] for r in table.rows}
+        identity_rows = {strip_md(r["Attribute"]): r for r in table.rows}
     else:
         log.warn(src, "Governor Identity table not found")
 
@@ -672,11 +698,27 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         "asOf": as_of,
     }
 
+    # Per-tile dates: rows of the identity table are read on different days
+    # (power from the city top bar, kills from the Governor Profile), so each
+    # Overview tile gets its own row's Updated date instead of the newest one.
+    def row_date(label: str) -> Optional[str]:
+        """Date of one identity row (its Updated cell), else the file date."""
+        row = identity_rows.get(label)
+        return newest_date(" | ".join(row.values()), as_of) if row else as_of
+
+    governor["fieldAsOf"] = {
+        "power": row_date("Overall Account Power"),
+        "kills": row_date("Total Combat Kills"),
+        "vip": row_date("VIP Level"),
+        "stamina": row_date("Stamina"),
+    }
+
     tc_sec = find_section(sections, r"^Town Center \(TC\)")
     tc_lines = tc_sec.lines if tc_sec else []
     if not tc_sec:
         log.warn(src, "Town Center section not found")
     tc_bullets = bullets(tc_lines)
+    tc_dates = bullet_dates(tc_lines, as_of)
     citizens = parse_pair(label_value(tc_bullets, "Citizens / Workforce Capacity", src, log))
     stats_table = find_table(tc_lines, "Attribute", "Base Value")
     stats = {strip_md(r["Attribute"]): r["Base Value"] for r in stats_table.rows} if stats_table else {}
@@ -703,12 +745,15 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         "health": parse_number(label_value(stats, "Health", src, log)),
         "perks": perks,
         "asOf": as_of,
+        # The level bullet's own date; other bullets in the section (gems) change more often.
+        "fieldAsOf": {"level": tc_dates.get("Current Level", as_of)},
     }
     resources = {
         "bread": parse_amount(label_value(tc_bullets, "Stored Food (Bread)", src, log)),
         "wood": None, "stone": None, "iron": None,  # Not recorded in any .md file.
         "gems": parse_amount(label_value(tc_bullets, "Free Gems", src, log)),
         "asOf": as_of,
+        "fieldAsOf": {"bread": tc_dates.get("Stored Food (Bread)", as_of), "gems": tc_dates.get("Free Gems", as_of)},
     }
     governor_gear = {
         "slotsTotal": gear_pair[1] if gear_pair else None,

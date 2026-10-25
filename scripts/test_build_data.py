@@ -217,6 +217,23 @@ class MergeAndOutputTests(unittest.TestCase):
             governor = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governor"]
             self.assertEqual((governor["power"], governor["powerRounded"]), (value, rounded))
 
+    def test_profile_tiles_keep_their_own_dates(self) -> None:
+        """Each identity row and Town Center bullet keeps the date it was read, not the newest one."""
+        body = ("## Governor Identity & Account Statistics\n\n"
+                "| Attribute | Value | Details | Updated |\n| :--- | :---: | :--- | :---: |\n"
+                "| **Overall Account Power** | **12,464,731** | x | 2026-10-25 |\n"
+                "| **Total Combat Kills** | **443,382** | x | 2026-10-23 |\n\n"
+                "## Town Center (TC) & Settlement Status\n\n"
+                "* **Current Level:** **Level 20** _(2026-10-23)_\n"
+                "* **Free Gems:** **24,421** _(2026-10-25)_\n")
+        out = bd.parse_profile(body, "2026-10-25", bd.BuildLog())
+        self.assertEqual(out["governor"]["fieldAsOf"]["power"], "2026-10-25")
+        self.assertEqual(out["governor"]["fieldAsOf"]["kills"], "2026-10-23")
+        self.assertEqual(out["townCenter"]["fieldAsOf"]["level"], "2026-10-23")
+        self.assertEqual(out["resources"]["fieldAsOf"]["gems"], "2026-10-25")
+        # A missing row falls back to the file date.
+        self.assertEqual(out["governor"]["fieldAsOf"]["vip"], "2026-10-25")
+
     def test_locked_widget_keeps_its_name(self) -> None:
         """A locked widget keeps the name given after the dash; a bare "Locked" has none."""
         self.assertEqual(bd.parse_widget({"Exclusive Widget": "Locked — Bands of Tyre (gear screen shows a lock)"}),

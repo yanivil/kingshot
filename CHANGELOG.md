@@ -410,6 +410,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   98,000) re-confirmed on the gear screens. All five skills still Lv. 3; shared
   book stock 26 / 28. `data/manual.json`: the promotion suggestion drops Chenko and names Jabel (38 to Tier 5) as the
   closest lineup hero.
+- World-map screens of 2026-10-25: `troops.md` "Beast & Terror Hunting" is now a table read from the screens: Lv 21 Lion
+  (attack, 10 stamina, recommended power 3,012,128, drops) and Lv 4 Alpha Black Panther Terror (rally only, 25 stamina,
+  recommended power 37,797,400, drops), confirming the owner's levels; map positions are not recorded. `profile.md`: power
+  11,942,479 → 12,464,731, bread 65.4M → 96.1M, gems 24,421, VIP 3 re-confirmed. The Features note is updated.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
@@ -419,6 +423,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   The dashboard header shows "Governor: Not recorded". The name remains in the git history.
 
 ### Fixed
+- Overview tile dates (`scripts/build_data.py`, `docs/index.html`): Account power, Total kills, VIP, Stamina, Town
+  Center and Gems took the newest date in `profile.md`'s section, so when power was read on 25 Oct, kills (read on 23
+  Oct) also showed "as of 25 Oct". `governor`, `townCenter` and `resources` now carry `fieldAsOf` from each row's or
+  bullet's own date (new `bullet_dates()` helper), and each tile uses it. Documented in SCHEMA; test added.
 - Drill Camp slot summary (`docs/index.html`, `data/manual.json`): it said "0 open · 7 filled · 15 locked · 15 total" because
   `slotsOpen` was 0 while the page reads it as unlocked slots. `slotsOpen` is now 7 (25 Oct screen), the summary counts
   empty and locked slots from it (now "0 open · 7 filled · 8 locked · 15 total"), and SCHEMA documents the field.
