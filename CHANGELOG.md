@@ -10,6 +10,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Books → Howard's Defenders' Edge, then Gordon's Trash Talk, then Quinn's Precision Shot; Epic Expedition Manuals →
   Howard's Joint Defense, then Quinn's Headshot, then Diana's Incendiary Arrows; Mythic books → Jabel's Youthful Rage and
   Persistence. Uses the shared-stock rule; the order is Inferred and says what is unverified.
+- Drill Camp screen of 2026-10-25: `data/manual.json` Drill Camp (and its feature date) is now 25 Oct. The 5 instructors are
+  Jabel, Chenko, Saul, Quinn and Diana, all Lv 54 (Saul is confirmed as an instructor; heroes are identified by portrait,
+  as the screen shows no names). Slots unchanged: Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest; slot 8 needs Town
+  Center Lv 21. The auto-level and Level Resets texts are re-confirmed. `profile.md`: gems 25,840 → 24,396.
 - Overview (`docs/index.html`): a "Total kills" tile next to Account power (kills were only on the City view).
   Documented in `docs/SCHEMA.md` and `README.md`.
 - Codes page (`docs/index.html`): each code is now a toggle to mark it redeemed or not. Marks are saved in the
@@ -400,6 +404,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   The dashboard header shows "Governor: Not recorded". The name remains in the git history.
 
 ### Fixed
+- Drill Camp slot summary (`docs/index.html`, `data/manual.json`): it said "0 open · 7 filled · 15 locked · 15 total" because
+  `slotsOpen` was 0 while the page reads it as unlocked slots. `slotsOpen` is now 7 (25 Oct screen), the summary counts
+  empty and locked slots from it (now "0 open · 7 filled · 8 locked · 15 total"), and SCHEMA documents the field.
 - Skill book counts (`scripts/build_data.py`, `docs/index.html`, `hero.md`): the a/b on a skill's Upgrade button is the
   shared stock of that book type, not progress saved on that skill (confirmed by the account owner, 25 Oct). Skill notes
   now read "a in stock / b needed · Books · read D Mon", the "In progress" status is now "Needs books", and the hero

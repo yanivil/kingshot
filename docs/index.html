@@ -1002,7 +1002,8 @@ class Dashboard extends StateHost {
         asOf: self.asOf(DC.asOf),
         instructors: insVM, lowestText: lowestText,
         slots: cells,
-        slotSummary: openN + ' open · ' + filled.length + ' filled · ' + Math.max(0, total - openN) + ' locked · ' + total + ' total',
+        // Unlocked slots = filled + empty; slotsOpen counts unlocked slots, but never fewer than the filled ones.
+        slotSummary: openEmpty + ' open · ' + filled.length + ' filled · ' + Math.max(0, total - Math.max(openN, filled.length)) + ' locked · ' + total + ' total',
         planLead: openEmpty + ' slots empty and ' + cands.length + ' non-instructor heroes. Place these heroes:',
         plan: placed.map(function (h) {
           var gain = minLvl - h.level;

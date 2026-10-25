@@ -99,8 +99,9 @@ community sources; shown under Skills in the hero drawer).
 | `asOf` | date | |
 
 ### `drillCamp`
-`asOf`, `instructors[{hero, level}]`, `slotsTotal`, `slotsOpen`, `slotted` (string[]),
-`lockedSlots[{slot, requirement, tcLevel, note}]`, `testHero`.
+`asOf`, `instructors[{hero, level}]`, `slotsTotal`, `slotsOpen` (unlocked slots, filled or empty), `slotted`
+(string[]), `lockedSlots[{slot, requirement, tcLevel, note}]`, `testHero`. Empty slots = `slotsOpen` − filled; locked
+slots = `slotsTotal` − `slotsOpen` (never counting fewer unlocked slots than filled ones).
 
 ### `lineups`
 | Field | Notes |
