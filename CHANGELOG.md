@@ -378,6 +378,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   54 (Town Center 21 cap), 8 escorts, 11,525 troop capacity and the Tier 1 preview re-confirmed unchanged. All five skills
   still Lv. 3; their book counts went down (manuals 28 → 26, Conquest Books 31 → 28), recorded as shown with the cause
   marked unknown. All four gear pieces (Faceplate +17, Bracers +16, Leatherwear +17, Boots +17; 119,135) re-confirmed.
+- `hero.md`, Howard (2026-10-25): shards 2 → 6 / 100 to 4★ (Redeem shows 12). Power 500,140, Hero Stats, Level 54
+  (Drill Camp), 8 escorts, 11,525 troop capacity, the 4★ preview and all four gear pieces (Helm +20, Gloves +20, Shroud
+  +19, Greaves +19; 127,900) re-confirmed unchanged. All five skills still Lv. 3; shared book stock 26 Epic Expedition
+  Manuals and 28 Epic Conquest Books, the same as on Quinn's screens of the same day.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

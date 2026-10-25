@@ -17,7 +17,7 @@ Book counts in skill rows ("a/b … Books") are the shared stock of that book ty
 | **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-10-25 |
 | **Saul** | SSR / Mythic | Archer | Lv. 54 | 2-Star (Tier 0) | Reserve / City Construction | **Master Engineer:** Construction speed (+6%) & cost reduction (-6%), squad DEF (+6%) & HP (+9%), squad Lethality (+10%) | 2026-10-24 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 54 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-22 |
-| **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 5) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-24 |
+| **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 5) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-25 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-10-23 |
 | **Quinn** | SR / Epic | Archer | Lv. 54 | 4-Star (Tier 0) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-25 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 4) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-23 |
@@ -120,48 +120,48 @@ Post-promotion values below are the current value plus the increase the game sho
 
 ## In-Depth Hero Profile: Howard
 
-* **Hero Name:** Howard _(2026-10-24)_
-* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-24)_
-* **Class & Role:** Infantry Combat Specialist (Crossed Swords / Shield) _(2026-10-24)_
-* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-24)_
-* **Star Tier:** **3-Star (Tier 5)** (Shards: 2 / 100 to 4-Star promotion; Redeem shows 7) _(2026-10-24)_
-* **Total Hero Power:** **500,140** (+23,120 from the Tier 5 promotion, exactly the preview) _(2026-10-24)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-24)_
-* **Escort Guards:** **8 Escorts** _(2026-10-24)_
-* **Total Equipped Gear Power:** **127,900** _(2026-10-22)_
+* **Hero Name:** Howard _(2026-10-25)_
+* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
+* **Class & Role:** Infantry Combat Specialist (Crossed Swords / Shield) _(2026-10-25)_
+* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-25)_
+* **Star Tier:** **3-Star (Tier 5)** (Shards: 6 / 100 to 4-Star promotion; Redeem shows 12) _(2026-10-25)_
+* **Total Hero Power:** **500,140** (+23,120 from the Tier 5 promotion on 24 Oct, exactly the preview; unchanged on 25 Oct) _(2026-10-25)_
+* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-25)_
+* **Escort Guards:** **8 Escorts** _(2026-10-25)_
+* **Total Equipped Gear Power:** **127,900** _(2026-10-25)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **997** | Moderate attack output focused on utility whacks | 2026-10-24 |
-| | **Hero Defense** | **1,576** | Solid frontline armor reducing physical damage | 2026-10-24 |
-| | **Hero Health** | **19,543** | **Highest health pool on the account**, anchoring the frontline | 2026-10-24 |
-| **Conquest (Escort)** | **Escort Attack** | **332** | Attack rating of his 8 bodyguard defenders | 2026-10-24 |
-| | **Escort Defense** | **525** | Defense value of bodyguard escort | 2026-10-24 |
-| | **Escort Health** | **6,514** | High escort health pool absorbing splash damage | 2026-10-24 |
-| **Expedition (March)** | **Infantry Attack** | **+89.01%** | Offensive multiplier for all deployed Infantry troops | 2026-10-24 |
-| | **Infantry Defense** | **+89.01%** | Primary mitigation stat for deployed Infantry | 2026-10-24 |
-| | **Infantry Lethality**| **+21.86%** | Casualty conversion rate for infantry (from gear) | 2026-10-24 |
-| | **Infantry Health** | **+21.79%** | Base durability multiplier for frontline troops (from gear) | 2026-10-24 |
+| **Conquest (Hero)** | **Hero Attack** | **997** | Moderate attack output focused on utility whacks | 2026-10-25 |
+| | **Hero Defense** | **1,576** | Solid frontline armor reducing physical damage | 2026-10-25 |
+| | **Hero Health** | **19,543** | **Highest health pool on the account**, anchoring the frontline | 2026-10-25 |
+| **Conquest (Escort)** | **Escort Attack** | **332** | Attack rating of his 8 bodyguard defenders | 2026-10-25 |
+| | **Escort Defense** | **525** | Defense value of bodyguard escort | 2026-10-25 |
+| | **Escort Health** | **6,514** | High escort health pool absorbing splash damage | 2026-10-25 |
+| **Expedition (March)** | **Infantry Attack** | **+89.01%** | Offensive multiplier for all deployed Infantry troops | 2026-10-25 |
+| | **Infantry Defense** | **+89.01%** | Primary mitigation stat for deployed Infantry | 2026-10-25 |
+| | **Infantry Lethality**| **+21.86%** | Casualty conversion rate for infantry (from gear) | 2026-10-25 |
+| | **Infantry Health** | **+21.79%** | Base durability multiplier for frontline troops (from gear) | 2026-10-25 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
 
-Promoted to **Tier 5** between the 22 Oct and 24 Oct uploads (the promotion added +23,120 base power: 245,280 → 268,400, as the 22 Oct preview said). Current Status: **2 / 100 Shards** (needs **98 more shards** for 4-Star; Redeem shows 7). _(2026-10-24)_
+Promoted to **Tier 5** between the 22 Oct and 24 Oct uploads (the promotion added +23,120 base power: 245,280 → 268,400, as the 22 Oct preview said). Current Status: **6 / 100 Shards** (needs **94 more shards** for 4-Star; Redeem shows 12). _(2026-10-25)_
 
-The 22 Oct preview gave Infantry Attack / Defense after Tier 5 as +89.00%; the Hero Stats screen now shows +89.01%. Why they differ by 0.01% is not shown in the game (rounding is a guess, not verified). Post-promotion values below are the current value plus the increase the game shows. _(2026-10-24)_
+The 22 Oct preview gave Infantry Attack / Defense after Tier 5 as +89.00%; the Hero Stats screen now shows +89.01%. Why they differ by 0.01% is not shown in the game (rounding is a guess, not verified). Post-promotion values below are the current value plus the increase the game shows. _(2026-10-25)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 268,400 | **+37,360** | 305,760 | 2026-10-24 |
-| **Hero Attack** | 625 | **+67** | 692 | 2026-10-24 |
-| **Hero Defense** | 1,020 | **+108** | 1,128 | 2026-10-24 |
-| **Hero Health** | 12,240 | **+1,296** | 13,536 | 2026-10-24 |
-| **Escort Attack** | 208 | **+22** | 230 | 2026-10-24 |
-| **Escort Defense** | 340 | **+36** | 376 | 2026-10-24 |
-| **Escort Health** | 4,080 | **+432** | 4,512 | 2026-10-24 |
-| **Infantry Attack** | +89.01% | **+8.12%** | **+97.13%** | 2026-10-24 |
-| **Infantry Defense** | +89.01% | **+8.12%** | **+97.13%** | 2026-10-24 |
+| **Base Hero Power** | 268,400 | **+37,360** | 305,760 | 2026-10-25 |
+| **Hero Attack** | 625 | **+67** | 692 | 2026-10-25 |
+| **Hero Defense** | 1,020 | **+108** | 1,128 | 2026-10-25 |
+| **Hero Health** | 12,240 | **+1,296** | 13,536 | 2026-10-25 |
+| **Escort Attack** | 208 | **+22** | 230 | 2026-10-25 |
+| **Escort Defense** | 340 | **+36** | 376 | 2026-10-25 |
+| **Escort Health** | 4,080 | **+432** | 4,512 | 2026-10-25 |
+| **Infantry Attack** | +89.01% | **+8.12%** | **+97.13%** | 2026-10-25 |
+| **Infantry Defense** | +89.01% | **+8.12%** | **+97.13%** | 2026-10-25 |
 
 ### 3. Equipped Hero Gear
 
@@ -169,35 +169,35 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-10-22 |
-| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +630 | DEF: +28 / HP: +210 | +8.80% Infantry Health | 2026-10-22 |
-| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+19** | 37,890 | DEF: +124 / HP: +931 | DEF: +41 / HP: +310 | +12.99% Infantry Health | 2026-10-22 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+19** | 25,260 | ATK: +63 / HP: +621 | ATK: +21 / HP: +207 | +8.66% Infantry Lethality | 2026-10-22 |
+| **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-10-25 |
+| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +630 | DEF: +28 / HP: +210 | +8.80% Infantry Health | 2026-10-25 |
+| **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+19** | 37,890 | DEF: +124 / HP: +931 | DEF: +41 / HP: +310 | +12.99% Infantry Health | 2026-10-25 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+19** | 25,260 | ATK: +63 / HP: +621 | ATK: +21 / HP: +207 | +8.66% Infantry Lethality | 2026-10-25 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+21.86%** (+13.20% Helm + 8.66% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+21.79%** (+8.80% Gloves + 12.99% Shroud) _(2026-10-22)_
+  * **Infantry Lethality:** **+21.86%** (+13.20% Helm + 8.66% Greaves) _(2026-10-25)_
+  * **Infantry Health:** **+21.79%** (+8.80% Gloves + 12.99% Shroud) _(2026-10-25)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** ATK +159 / DEF +208 / HP +3,127 (sum of the 4 pieces) _(2026-10-22)_
-  * **Escort Attributes:** ATK +53 / DEF +69 / HP +1,042 (sum of the 4 pieces) _(2026-10-22)_
+  * **Hero Attributes:** ATK +159 / DEF +208 / HP +3,127 (sum of the 4 pieces) _(2026-10-25)_
+  * **Escort Attributes:** ATK +53 / DEF +69 / HP +1,042 (sum of the 4 pieces) _(2026-10-25)_
 
-Gear power is 38,850 + 25,900 + 37,890 + 25,260 = 127,900. _(2026-10-22)_
+Gear power is 38,850 + 25,900 + 37,890 + 25,260 = 127,900. _(2026-10-25)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Shielded Strike** | Active (Top) | **Lv. 3** | Solid whack knocking target back, dealing **240% AoE damage**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 260% AoE) | 2026-10-22 |
-| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: +12.5% DEF) | 2026-10-22 |
-| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-22 |
+| **Shielded Strike** | Active (Top) | **Lv. 3** | Solid whack knocking target back, dealing **240% AoE damage**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: 260% AoE) | 2026-10-25 |
+| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +12.5% DEF) | 2026-10-25 |
+| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Garrison)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Defenders' Edge** | Top | **Lv. 3** | Guards troops with shield, **reducing damage taken by 12% for all troops**. | **In Progress** (24/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-21 |
-| **Weaken** | Bot | **Lv. 3** | Intimidating presence **reduces total Enemy Squads' Attack by 12%**. | **In Progress** (24/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-21 |
+| **Defenders' Edge** | Top | **Lv. 3** | Guards troops with shield, **reducing damage taken by 12% for all troops**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-25 |
+| **Weaken** | Bot | **Lv. 3** | Intimidating presence **reduces total Enemy Squads' Attack by 12%**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-25 |
 
 ## In-Depth Hero Profile: Chenko
 
