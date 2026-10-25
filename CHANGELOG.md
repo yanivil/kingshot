@@ -403,6 +403,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   100, Hero Stats, Level 54 (Town Center 21 cap), 8 escorts, 11,525 troop capacity, the 4★ preview and all four gear
   pieces (Faceplate +18, Bracers +22, Leatherwear +18, Boots +18; 113,415) re-confirmed unchanged. Other skills still Lv.
   3; shared book stock 26 Epic Expedition Manuals and 28 Epic Conquest Books.
+- `hero.md`, Chenko (2026-10-25): promoted 3-Star Tier 4 → Tier 5 (+23,120 base power, as the 23 Oct preview said);
+  shards 1 / 100 to 4★ (Redeem shows 12); new Tier 5 → 4★ preview (268,400 +37,360). Hero power 447,120 → 470,240, exactly
+  the promotion. Hero Stats 1,256 / 1,531 / 12,570, escort 418 / 510 / 4,190, Cavalry Attack / Defense +89.01%; Lethality
+  +16.90% and Health +17.04% unchanged; all four gear pieces (Armet +15, Gauntlets +20, Breastplate +16, Boots +20;
+  98,000) re-confirmed on the gear screens. All five skills still Lv. 3; shared
+  book stock 26 / 28. `data/manual.json`: the promotion suggestion drops Chenko and names Jabel (38 to Tier 5) as the
+  closest lineup hero.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).

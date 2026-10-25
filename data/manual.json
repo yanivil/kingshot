@@ -209,28 +209,29 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Jabel reached Tier 4. Next promotions: Helga 5 shards, Saul 15, Chenko 25",
-      "why": "Jabel reached 3★ Tier 4 between the 22 and 25 Oct uploads (+27,600 power from the promotion; 2 / 40 to Tier 5 now). Howard (24 Oct) and Gordon (25 Oct) reached Tier 5, and Seth Tier 4 (24 Oct). The closest promotions now are Helga (5 to Tier 1), Saul (15 to Tier 1) and Chenko (25 to Tier 5). Helga and Saul are in no lineup; Chenko is in Arena offense and Barricade 2, so her shards matter most for combat. Next lineup heroes after her: Jabel 38 to Tier 5, Diana 46 to 4★ (54 / 100 on 23 Oct).",
+      "what": "Chenko reached Tier 5. Next promotions: Helga 5 shards, Saul 15, Jabel 38",
+      "why": "Chenko reached 3★ Tier 5 between the 23 and 25 Oct uploads (+23,120 power from the promotion; 1 / 100 to 4★ now). Jabel reached Tier 4 and Howard and Gordon Tier 5 in the same days. The closest promotions now are Helga (5 to Tier 1), Saul (15 to Tier 1) and Jabel (38 to Tier 5). Helga and Saul are in no lineup; Jabel is in Att, both Arena squads and Barricade 1, so her shards matter most for combat. Next lineup hero after her: Diana, 46 to 4★ (54 / 100 on 25 Oct).",
       "steps": [
         "Helga: 5 shards to 1★ Tier 1.",
         "Saul: 15 shards to 2★ Tier 1 (Redeem shows 11).",
-        "Chenko: 25 shards to 3★ Tier 5 (15 / 40 on 23 Oct; Arena offense, Barricade 2)."
+        "Jabel: 38 shards to 3★ Tier 5 (2 / 40 on 25 Oct; Att, both Arena squads, Barricade 1)."
       ],
       "evidence": [
         "hero.md shard counts (22–24 Oct)",
         "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0",
         "Saul's promotion screen of 24 Oct: 2-Star (Tier 0), 0 / 15, Redeem 11",
         "Seth's promotion screen of 24 Oct: 3-Star (Tier 4), 0 / 40, Redeem 1",
-        "Jabel's promotion screen of 25 Oct: 3-Star (Tier 4), 2 / 40, Redeem 11"
+        "Jabel's promotion screen of 25 Oct: 3-Star (Tier 4), 2 / 40, Redeem 11",
+        "Chenko's promotion screen of 25 Oct: 3-Star (Tier 5), 1 / 100, Redeem 12"
       ],
-      "cost": "5–25 shards each; shard sources not recorded",
+      "cost": "5–38 shards each; shard sources not recorded",
       "confidence": [
         "Verified"
       ],
       "heroes": [
         "Helga",
         "Saul",
-        "Chenko"
+        "Jabel"
       ],
       "note": "Shard counts are verified; where to get shards is not recorded."
     },
