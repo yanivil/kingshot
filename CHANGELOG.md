@@ -382,6 +382,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   (Drill Camp), 8 escorts, 11,525 troop capacity, the 4★ preview and all four gear pieces (Helm +20, Gloves +20, Shroud
   +19, Greaves +19; 127,900) re-confirmed unchanged. All five skills still Lv. 3; shared book stock 26 Epic Expedition
   Manuals and 28 Epic Conquest Books, the same as on Quinn's screens of the same day.
+- `hero.md`, Diana (2026-10-25): Iron Constitution Lv. 4 is capped until 4★ (the panel shows 18% and "To upgrade: ascend
+  to 4-Star"; it was recorded as in progress with the cost not shown). Redeem shows 12 (was 0). Power 489,183, shards 54 /
+  100, Hero Stats, Level 54 (Town Center 21 cap), 8 escorts, 11,525 troop capacity, the 4★ preview and all four gear
+  pieces (Faceplate +18, Bracers +22, Leatherwear +18, Boots +18; 113,415) re-confirmed unchanged. Other skills still Lv.
+  3; shared book stock 26 Epic Expedition Manuals and 28 Epic Conquest Books.
 
 ### Removed
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
