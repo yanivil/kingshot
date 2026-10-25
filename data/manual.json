@@ -43,6 +43,11 @@
     },
     "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 Oct) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
     "oneMarchPerHero": "A hero can be in only one march at a time.",
+    "skillBooks": {
+      "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill: books spent on one hero are gone for every other hero that uses the same books. Book type names are read from the icons.",
+      "source": "You, 25 Oct",
+      "confidence": "Verified"
+    },
     "gen2Heroes": {
       "serverDay": 50
     }

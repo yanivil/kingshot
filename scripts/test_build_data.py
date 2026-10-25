@@ -128,10 +128,14 @@ class HeroRuleTests(unittest.TestCase):
         self.assertEqual(bd.parse_skill(row("**Lv. 4**", "**Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: x)")),
                          {"name": "S", "level": 4, "status": "capped", "needs": "4★"})
         self.assertEqual(bd.parse_skill(row("**Lv. 3**", "**In Progress** (13/50 Mythic Expedition Manuals to reach Lv. 4: y)")),
-                         {"name": "S", "level": 3, "status": "progress", "note": "13/50 Mythic Expedition Manuals"})
+                         {"name": "S", "level": 3, "status": "progress",
+                          "note": "13 in stock / 50 needed · Mythic Expedition Manuals"})
         self.assertEqual(bd.parse_skill(row("**Lv. 2**", "**In Progress** (34/30 Epic Expedition Manuals to Lv. 3: z)")),
-                         {"name": "S", "level": 2, "status": "upgradeable", "note": "34/30 Epic Expedition Manuals",
-                          "confidence": "Inferred"})
+                         {"name": "S", "level": 2, "status": "upgradeable",
+                          "note": "34 in stock / 30 needed · Epic Expedition Manuals", "confidence": "Inferred"})
+        # The book count is shared stock, so the note carries the day it was read.
+        dated = dict(row("**Lv. 3**", "**In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: y)"), Updated="2026-10-25")
+        self.assertEqual(bd.parse_skill(dated)["note"], "26 in stock / 50 needed · Epic Expedition Manuals · read 25 Oct")
         self.assertEqual(bd.parse_skill(row("**Lv. 1 (Locked)**", "**Locked** (Unlocks at 2-Star ascension; w)")),
                          {"name": "S", "level": 1, "status": "locked", "needs": "2★"})
         self.assertIsNone(bd.parse_skill(row("**Lv. 1**", "Something new"))["status"])

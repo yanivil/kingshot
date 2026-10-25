@@ -8,6 +8,8 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 
 Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
 
+Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: books spent on one hero are gone for every hero that uses the same books (confirmed by the account owner, 2026-10-25). Book type names are read from the icons.
+
 ## Active Hero Roster
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
@@ -499,8 +501,8 @@ All four pieces were read from the gear screens (the Faceplate went from +16 to 
 | **Precision Shot** | Mid | **Lv. 3** | Grants all soldiers a **50% chance of dealing 30% more damage** when attacking. | **In Progress** (28/50 Epic Conquest Books to reach Lv. 4: 40% DMG) | 2026-10-25 |
 
 The book counts on all five skills went down between the 22 Oct and 25 Oct screens (manuals 28 → 26, Conquest Books 31 → 28)
-while every skill stayed at Lv. 3. Why they fell is not shown in the game; one possible reason (not verified) is that the
-count is the shared stock of that book type and some were spent on another hero. _(2026-10-25)_
+while every skill stayed at Lv. 3. The count is the shared stock of that book type (confirmed by the account owner on 2026-10-25), so books
+of these types were spent elsewhere between the two screens; which hero they went to is not recorded. _(2026-10-25)_
 
 ## In-Depth Hero Profile: Seth
 
