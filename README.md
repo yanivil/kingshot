@@ -39,7 +39,8 @@ Mechanically, the game shares its progression framework and engine with Century 
 
 This repository provides:
 * **`profile.md`**: Governor account identity, Kingdom #2508, Town Center Lv. 20 stats & perks.
-* **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones,
+* **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones
+  (skill book counts are the shared stock of that book type on the date shown, not per-skill progress),
   plus heroes seen but not yet recruited (not shown on the dashboard).
 * **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (City Wall Guard), and saved March Presets (`Be` and `Att`).
 * **`troops.md`**: Tier VII standing troop inventory, march capacities, and infirmary hospital caps.

@@ -387,6 +387,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   The dashboard header shows "Governor: Not recorded". The name remains in the git history.
 
 ### Fixed
+- Skill book counts (`scripts/build_data.py`, `docs/index.html`, `hero.md`): the a/b on a skill's Upgrade button is the
+  shared stock of that book type, not progress saved on that skill (confirmed by the account owner, 25 Oct). Skill notes
+  now read "a in stock / b needed · Books · read D Mon", the "In progress" status is now "Needs books", and the hero
+  drawer explains the rule (`rules.skillBooks` in `data/manual.json`). `hero.md` states the rule under the date note,
+  and Quinn's falling counts are explained by it. Documented in README and SCHEMA; test updated.
 - `data/manual.json`: the promotion suggestion referred to Chenko as "he"; Chenko is female, so it now says "her".
 - Defense & Arena (`docs/index.html`): a power difference whose percentage rounds to zero showed a plus sign, e.g.
   "−915 (+0%)". The sign now follows the value (+ above zero, − below, none at zero), so it reads "−915 (0%)", and an

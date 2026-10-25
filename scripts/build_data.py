@@ -979,12 +979,38 @@ def cross_check_marches(marches: List[Dict[str, Any]], presets: Dict[str, Any], 
 # both give a value (level, stars), the profile wins and a warning is printed.
 # ---------------------------------------------------------------------------
 
+# Month names for short dates in skill notes ("25 Oct"); a fixed list so the
+# output does not depend on the machine's locale.
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def short_date(iso: str) -> str:
+    """Format an ISO date as a short day-month string.
+
+    Args:
+        iso: A date such as ``"2026-10-25"``.
+
+    Returns:
+        The date as ``"25 Oct"``.
+
+    Raises:
+        ValueError: If ``iso`` is not a valid ISO date.
+    """
+    day = dt.date.fromisoformat(iso)
+    return f"{day.day} {MONTHS[day.month - 1]}"
+
 
 def parse_skill(row: Dict[str, str]) -> Dict[str, Any]:
     """Turn one skill-table row into a dashboard skill entry.
 
+    The "a/b Books" count on an upgrade button is the player's shared stock
+    of that book type (every hero using the same books draws on it), not
+    progress saved on this skill, so the note says "in stock" and, when the
+    row has an "Updated" date, the day it was read.
+
     Args:
-        row: A row from a table with "Skill Name" and "Upgrade Status" columns.
+        row: A row from a table with "Skill Name" and "Upgrade Status" columns
+            (and usually an "Updated" column).
 
     Returns:
         ``{"name", "level"?, "status", "needs"?, "note"?, "confidence"?}``.
@@ -1008,9 +1034,16 @@ def parse_skill(row: Dict[str, str]) -> Dict[str, Any]:
         skill["status"] = "progress"
         if books:
             have, need = int(books.group(1)), int(books.group(2))
-            skill["note"] = f"{have}/{need} {books.group(3)}"
+            note = f"{have} in stock / {need} needed · {books.group(3)}"
+            # The stock changes whenever any hero spends or gains these books,
+            # so an older reading may no longer hold; show when it was read.
+            read_on = ISO_DATE_RE.search(cell(row, "Updated"))
+            if read_on:
+                note += f" · read {short_date(read_on.group(1))}"
+            skill["note"] = note
             # Edge case: more books than the next level needs (e.g. 34/30)
-            # suggests the upgrade is affordable, but the screen did not say so.
+            # suggests the upgrade was affordable when read, but the screen did
+            # not say so, and the same stock may have gone to another hero.
             if have >= need:
                 skill["status"] = "upgradeable"
                 skill["confidence"] = "Inferred"

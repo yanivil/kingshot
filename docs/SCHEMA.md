@@ -79,7 +79,9 @@ rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the
 
 ### `rules`
 `source`, `confidence`, `heroLevelCapByTC` (`{"20": 54, ...}`), `drillCamp` (text),
-`oneMarchPerHero` (text), `gen2Heroes{serverDay}`.
+`oneMarchPerHero` (text), `gen2Heroes{serverDay}`, `skillBooks{text, source, confidence}` (how skill book
+counts work; it carries its own source because it was confirmed by the account owner, not taken from
+community sources; shown under Skills in the hero drawer).
 
 ### `heroes[]`
 | Field | Type | Notes |
@@ -217,7 +219,9 @@ when the value changes (see README "Update dates").
 - **widget:** the "Exclusive Widget" line. `Unlocked (…)` gives `name: null` (the brackets describe the
   icon); `Locked — Name (…)` gives `unlocked: false` with that name; no line gives `widget: null`.
 - **skills:** one entry per row of every skill table. `Capped at …` → `capped` (`needs` from
-  "Requires N-Star"); `In Progress (a/b …)` → `progress` with note `a/b …`, or `upgradeable` with
+  "Requires N-Star"); `In Progress (a/b …)` → `progress` (shown as "Needs books") with note
+  `a in stock / b needed · Books · read D Mon` (the date from the row's Updated column, left out when the
+  row has none; `a` is the shared stock of that book type, see `rules.skillBooks`), or `upgradeable` with
   `confidence: "Inferred"` when a ≥ b; `Locked` → `locked` (`needs` from "Unlocks at N-Star").
   Effect text is not copied.
 - **gear.note, notes:** from `data/manual.json` → `heroes.<Name>.gearNote` / `notes`.

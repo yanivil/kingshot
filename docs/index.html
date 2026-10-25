@@ -807,7 +807,8 @@ class Dashboard extends StateHost {
     var openHero = function (n) { return function () { self.setState({ hero: n }); }; };
 
     /* ---------- Hero view-models ---------- */
-    var ST = { capped: 'Capped', upgradeable: 'Upgradeable now', progress: 'In progress', locked: 'Locked until next star' };
+    // 'progress' means the shared book stock was below the cost when read (rules.skillBooks), not saved progress.
+    var ST = { capped: 'Capped', upgradeable: 'Upgradeable now', progress: 'Needs books', locked: 'Locked until next star' };
     var heroVM = function (h) {
       var lvl = h.level != null ? h.level : null;
       var levelText = lvl == null ? NR : (cap != null ? lvl + ' / ' + cap : lvl + ' / cap not recorded');
@@ -927,6 +928,9 @@ class Dashboard extends StateHost {
         // gear.slotsComplete (set by scripts/build_data.py) means the list is every slot, not just the problem ones.
         slotsNote: slots === null ? 'Slot-by-slot gear: Not recorded.' : (dh0.gear.slotsComplete === true ? 'All slots recorded.' : 'Other slots: Not recorded.'),
         hasGearNote: !!(dh0.gear && dh0.gear.note), gearNote: (dh0.gear && dh0.gear.note) || '',
+        // Explains that skill book counts are a shared stock (data/manual.json → rules.skillBooks).
+        hasBookRule: !!(rules.skillBooks && rules.skillBooks.text),
+        bookRule: rules.skillBooks ? rules.skillBooks.text + ' (' + (rules.skillBooks.source || 'Source not recorded') + ', ' + (rules.skillBooks.confidence || 'Unverified') + '.)' : '',
         widgetText: !w ? NR : (w.unlocked ? 'Unlocked' + (w.name ? ' · ' + w.name : '') + ' · ' + (w.level != null ? '+' + w.level : 'level ' + NR) : 'Locked'),
         skills: (Array.isArray(dh0.skills) ? dh0.skills : []).map(function (k) {
           var name = k.name + (k.level != null ? ' · Lv ' + k.level : '');
@@ -1924,7 +1928,8 @@ function tplDrawer(v) {
         when(k.hasConf, '<span class="' + esc(k.confCls) + '">' + esc(k.conf) + '</span>') + '</span>' +
         '<span class="sk-note">' + esc(k.note) + '</span></div>';
     }) +
-    when(d.noSkills, '<p class="empty">Skills: Not recorded.</p>') + '</div>' +
+    when(d.noSkills, '<p class="empty">Skills: Not recorded.</p>') +
+    when(d.hasBookRule && !d.noSkills, '<p class="foot">' + esc(d.bookRule) + '</p>') + '</div>' +
     '<div class="dr-sec"><h3>Assignments</h3><div class="chips-s">' +
     each(d.assign, function (a) { return '<span class="chip-s">' + esc(a.label) + '</span>'; }) + '</div>' +
     when(d.noAssign, '<p class="empty">No assignments recorded.</p>') + '</div>' +
