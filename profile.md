@@ -32,7 +32,7 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus) _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-23)_
 * **Stored Food (Bread):** **65.4M** _(2026-10-23)_
-* **Free Gems:** **25,840** (gem counter in the city screen's top bar) _(2026-10-23)_
+* **Free Gems:** **24,396** (gem counter on the Drill Camp screen) _(2026-10-25)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |

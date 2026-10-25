@@ -41,7 +41,7 @@
       "22": 64,
       "25": 79
     },
-    "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 Oct) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
+    "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 and 25 Oct) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 and 25 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
     "oneMarchPerHero": "A hero can be in only one march at a time.",
     "skillBooks": {
       "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill: books spent on one hero are gone for every other hero that uses the same books. Book type names are read from the icons.",
@@ -75,7 +75,7 @@
     }
   },
   "drillCamp": {
-    "asOf": "2026-10-22",
+    "asOf": "2026-10-25",
     "instructors": [
       {
         "hero": "Jabel",
@@ -99,7 +99,7 @@
       }
     ],
     "slotsTotal": 15,
-    "slotsOpen": 0,
+    "slotsOpen": 7,
     "slotted": [
       "Amane",
       "Helga",
@@ -118,7 +118,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "Slots from the Drill Camp screen of 22 Oct (all 7 filled); that screen predates the Lv 54 hero screens. All 5 instructors (Jabel, Quinn, Diana, Chenko, Saul) show Lv 54 on their own hero screens of 22 Oct."
+    "_instructorNote": "From the Drill Camp screen of 25 Oct: the 5 instructors (left to right Jabel, Chenko, Saul, Quinn, Diana) are all Lv 54, and the 7 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd and Forrest (all Lv 54); slot 8 needs Town Center Lv 21 and the other 7 are locked. The screen shows no names, so heroes are identified by portrait and class icon (Inferred), and the list matches the 22 Oct record and the hero screens of 25 Oct (Howard and Gordon: \"cannot level up a hero within a Drill Camp\")."
   },
   "recommendations": [
     {
@@ -421,7 +421,7 @@
       "state": null,
       "hasData": true,
       "source": null,
-      "asOf": "2026-10-22",
+      "asOf": "2026-10-25",
       "note": null
     },
     {
