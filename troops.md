@@ -70,7 +70,13 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 
 ## Beast & Terror Hunting
 
-Told by the account owner on 2026-10-25 (not read from a screenshot).
+The levels were told by the account owner on 2026-10-25 and match the two world-map screens of the same day (about 14:46 UTC). Map positions are not recorded.
 
-* **Beasts:** the highest level the account can defeat is **Lv. 21**. _(2026-10-25)_
-* **Terror:** a huge beast that can only be attacked with a **rally**; the highest level the account can take is **Lv. 4**. _(2026-10-25)_
+| Target | Level | Attack type | Stamina | Recommended Power | Possible drops | Updated |
+| :--- | :---: | :--- | :---: | :---: | :--- | :---: |
+| **Lion** (beast) | **Lv. 21** (highest the account can take) | Attack (single march) | 10 | 3,012,128 | EXP ×410, bread ×78.5K, wood ×78.5K, stone ×15.7K | 2026-10-25 |
+| **Alpha Black Panther** (Terror) | **Lv. 4** (highest the account can take) | **Rally only** | 25 | 37,797,400 | Hero shard ×1 (purple puzzle icon), gems ×25, an item ×20 (scroll icon; name not shown), 5-min speedup ×4 | 2026-10-25 |
+
+* The Terror panel showed a timer of 05:54:37, read as the time before this Terror leaves the map (inferred; the screen does not say). _(2026-10-25)_
+* Whether the stamina costs shown already include Diana's −18% (Iron Constitution) is not shown. _(2026-10-25)_
+* For scale: the `Be` preset is 9,840,959 power (24 Oct) against the Lion's recommended 3,012,128; the strongest preset, `Att`, is 11,279,258 against the Terror's recommended 37,797,400, so a Terror rally needs other players' marches. _(2026-10-25)_

@@ -12,11 +12,11 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **11,942,479** | Total empire strength (exact figure from the city screen's top bar; the Governor Profile shows the same power rounded to 11.9M) | 2026-10-23 |
+| **Overall Account Power** | **12,464,731** | Total empire strength (exact figure from the top bar of the world-map screen, 25 Oct; was 11,942,479 on 23 Oct) | 2026-10-25 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-23 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-23 |
 | **Total Combat Kills** | **443,382** | Total enemy unit casualties inflicted (Governor Profile "Kills") | 2026-10-23 |
-| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-23 |
+| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-25 |
 | **Stamina** | **100 / 200** | Governor hunting and expedition energy | 2026-10-23 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Locked** | Governor equipment slots pending unlock | 2026-10-23 |
@@ -31,8 +31,8 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Upgrade to Lv 21:** **In progress**: 3d 07:41:54 left on the 23 Oct screenshot, so it should finish around 26 Oct (inferred; the screen shows no finish time). "Finish" costs 63,759 gems _(2026-10-23)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus) _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-23)_
-* **Stored Food (Bread):** **65.4M** _(2026-10-23)_
-* **Free Gems:** **24,396** (gem counter on the Drill Camp screen) _(2026-10-25)_
+* **Stored Food (Bread):** **96.1M** (top bar of the world-map screen) _(2026-10-25)_
+* **Free Gems:** **24,421** (top bar of the world-map screen; 24,396 on the Drill Camp screen earlier the same day) _(2026-10-25)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |

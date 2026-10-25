@@ -754,6 +754,10 @@ class Dashboard extends StateHost {
     // falls back to the section dates.
     var armyField = army.fieldAsOf || {};
     var armyAsOf = function (k) { return armyField[k] || army.asOf; };
+    // Same per-tile dates for the governor, Town Center and resources tiles (fieldAsOf from the generator).
+    var govAsOf = function (k) { return (gov.fieldAsOf || {})[k] || gov.asOf; };
+    var tcAsOf = function (k) { return (tcObj.fieldAsOf || {})[k] || tcObj.asOf; };
+    var resAsOfOf = function (k) { return (res.fieldAsOf || {})[k] || res.asOf; };
     var newestPart = function (parts, fallback) {
       var ds = (parts || []).map(function (p) { return p && p.asOf; }).filter(Boolean).sort();
       return ds.length ? ds[ds.length - 1] : fallback;
@@ -1360,17 +1364,17 @@ class Dashboard extends StateHost {
     var gems = res.gems && res.gems.value != null ? res.gems.value : null;
     var tiles = [
       // governor.powerRounded: the game showed a rounded figure (11.4M); don't print false precision.
-      tile('Account power', gov.powerRounded === true ? self.compact(gov.power) : self.num(gov.power), gov.asOf),
+      tile('Account power', gov.powerRounded === true ? self.compact(gov.power) : self.num(gov.power), govAsOf('power')),
       // Total kills from the Governor Profile; also listed under Governor on the City view.
-      tile('Total kills', self.num(gov.kills), gov.asOf),
-      tile('Town Center', tc != null ? 'Lv ' + tc : NR, tcObj.asOf),
+      tile('Total kills', self.num(gov.kills), govAsOf('kills')),
+      tile('Town Center', tc != null ? 'Lv ' + tc : NR, tcAsOf('level')),
       tile('Total troops', self.num(army.total), armyAsOf('total')),
       tile('March capacity', self.num(army.marchCapacity), armyAsOf('marchCapacity')),
       tile('March queues', q.current != null ? q.current + '/' + (q.max != null ? q.max : '?') : NR, armyAsOf('queues')),
       tile('Infirmary', self.num(army.infirmary), armyAsOf('infirmary')),
-      tile('VIP', gov.vip != null ? String(gov.vip) : NR, gov.asOf),
-      tile('Gems', self.num(gems), res.asOf),
-      tile('Stamina', st.current != null ? st.current + '/' + (st.max != null ? st.max : '?') : NR, gov.asOf, (st.current != null && st.max != null && st.current > st.max) ? 'Above max' : '')
+      tile('VIP', gov.vip != null ? String(gov.vip) : NR, govAsOf('vip')),
+      tile('Gems', self.num(gems), resAsOfOf('gems')),
+      tile('Stamina', st.current != null ? st.current + '/' + (st.max != null ? st.max : '?') : NR, govAsOf('stamina'), (st.current != null && st.max != null && st.current > st.max) ? 'Above max' : '')
     ];
     var go = function (view) { return function () { self.setState({ view: view }); }; };
     var belowCap = cap != null ? heroes.filter(function (h) { return h.level != null && h.level < cap; }).length : null;
