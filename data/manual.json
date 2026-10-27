@@ -254,8 +254,168 @@
       "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana as the next Epic target. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save for Quinn instead."
     },
     {
-      "id": "be-swap-forrest",
+      "id": "troops-infantry-first",
       "priority": 3,
+      "type": "Troops",
+      "what": "Troops: train Infantry next; your army is 32% Infantry, fewer than the 50% Infantry most guides use for attacks and rallies",
+      "why": "Your 105,729 Tier VII troops are split almost evenly: Infantry 34,151 (32.3%), Cavalry 36,438 (34.5%), Archers 35,140 (33.2%) on 24 Oct. Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies, and about 60 / 20 / 20 for city defense, because Infantry is the front line that takes the hits. A full march holds 79,275, so 50% would be 39,638 Infantry: 5,487 more than you own. Your Att preset is 41% / 33% / 26%. Until more Infantry is trained, the closest you can get is all 34,151 Infantry (43%), 23,783 Archers (30%) and 21,341 Cavalry (27%).",
+      "changes": [
+        {
+          "where": "Att preset troops",
+          "before": [
+            "41% Infantry (32,605)",
+            "33% Cavalry (26,446)",
+            "26% Archers (20,224)"
+          ],
+          "after": [
+            "43% Infantry (34,151)",
+            "27% Cavalry (21,341)",
+            "30% Archers (23,783)"
+          ],
+          "note": "Full march 79,275; Infantry is capped by what you own (24 Oct)"
+        }
+      ],
+      "steps": [
+        "Infantry camp: train Infantry in the next batches until you have at least about 40,000 (5,487 or more).",
+        "Deploy → Att: Infantry to the maximum, Archers about 30%, Cavalry the rest.",
+        "Send a screenshot of each troop camp (Infantry, Cavalry, Archer) with its level and the highest tier it trains, so we can check whether Tier VIII is open."
+      ],
+      "evidence": [
+        "troops.md Troops Preview of 24 Oct: 34,151 / 36,438 / 35,140; march capacity 79,275",
+        "troops.md Att preset of 24 Oct: 32,605 / 26,446 / 20,224",
+        "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense"
+      ],
+      "cost": "Training time and resources (amounts not recorded)",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Howard",
+        "Jabel",
+        "Quinn"
+      ],
+      "note": "Verified: your troop counts, preset and march size. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry). Whether Tier VIII is open depends on your troop camp levels, which are not recorded; guides disagree on the exact level (around 22)."
+    },
+    {
+      "id": "rally-join-preset",
+      "priority": 4,
+      "type": "Marches",
+      "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
+      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +15% Lethality for all squads (Lv. 3), and she leads no march today. Yeonwoo's On Guard gives the same +15% Lethality and, since her 3★ promotion on 27 Oct, can also go to Lv. 4; Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4) with three presets saved.",
+      "changes": [
+        {
+          "where": "Fourth march preset (Join)",
+          "before": [],
+          "after": [
+            "Chenko (lead)",
+            "Helga",
+            "Yeonwoo"
+          ],
+          "note": "One hero per troop type, as in your other presets; Yeonwoo can lead instead when Chenko is busy"
+        }
+      ],
+      "steps": [
+        "Deploy → the empty preset: Chenko first (lead), Helga and Yeonwoo in the other two places; name it Join.",
+        "When you join a rally (Terror, Bear), send Join; keep Att for rallies you lead.",
+        "Epic Conquest Books: if you join rallies more often than you lead them, put the next 50 into Chenko's Stand of Arms (+15% → +20% Lethality) before Gordon's Trash Talk."
+      ],
+      "evidence": [
+        "hero.md expedition skills: Chenko Stand of Arms Lv. 3, +15% Lethality (50 Epic Conquest Books to Lv. 4: +20%); Yeonwoo On Guard Lv. 3, +15% Lethality, cap lifted by 3★ on 27 Oct; Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★",
+        "troops.md: March Queue 4/4; Terror (Alpha Black Panther) is rally-only",
+        "lineups.md presets of 24 Oct: Chenko, Helga and Yeonwoo lead or join no preset",
+        "Community guides (kingshotguide.org rally guide, kingshotoptimizer.com Bear Hunt guide, topuplist.com tier list): a joiner adds only its lead hero's first expedition skill; Chenko, Amane and Yeonwoo are named as top joiners"
+      ],
+      "cost": "None (a preset); 50 Epic Conquest Books to take Stand of Arms to +20%",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Chenko",
+        "Yeonwoo",
+        "Helga",
+        "Amane"
+      ],
+      "note": "Verified: the skill texts, the free queue and that Terror is rally-only. Unverified: the joiner rule (community guides, not game text), whether a rally counts only the first few joiners' skills (one guide says four), and how strong +5% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places. If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less."
+    },
+    {
+      "id": "skill-books-order",
+      "priority": 5,
+      "type": "Skills",
+      "what": "Skill books: next 50 Epic Conquest Books to Gordon's Trash Talk, next 50 Epic Expedition Manuals to Howard's Joint Defense",
+      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: the first pick, Howard's Defenders' Edge (all troops take 16% less damage), reached Lv. 4 by 27 Oct, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Amane and Saul are not ranked first because neither is in a combat march or Arena squad. If you join other players' rallies more than you lead, Chenko's Stand of Arms (her rally-joiner skill) goes before Trash Talk: see the rally suggestion.",
+      "steps": [
+        "Epic Conquest Books (stock not read since Defenders' Edge used 50; 28 on 25 Oct; 50 needed): done: Howard · Defenders' Edge (Lv. 4 on 27 Oct). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
+        "Epic Expedition Manuals (10 in stock on 27 Oct on Quinn, Howard, Diana, Chenko and Gordon; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
+        "Mythic Conquest Books (17 in stock on 25 Oct, not re-read since Saul's Resourceful reached Lv. 3 by 27 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
+        "Mythic Expedition Manuals (22 in stock on 25 Oct, not re-read since Saul's Final Prayer reached Lv. 3 by 27 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Superior Techniques (Lv. 2) needs 30, but Saul is in no Arena squad."
+      ],
+      "evidence": [
+        "Book stock: 10 Epic Expedition Manuals on the 27 Oct skill screens of Quinn, Howard, Diana, Chenko and Gordon; 28 Epic Conquest Books on 25 Oct (not re-read since); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books on 25 Oct; Howard's Defenders' Edge icon shows Lv. 4 on 27 Oct",
+        "hero.md skill texts and costs: Lv. 3 → 4 costs 50; Amane's and Saul's Lv. 2 → 3 cost 30 (Fahd's skills reached Lv. 3 by 27 Oct)",
+        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
+        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+      ],
+      "cost": "50 books per Lv. 3 → 4 upgrade; 40 more Epic Expedition Manuals needed (27 Oct); Epic Conquest Book stock not read since Defenders' Edge reached Lv. 4",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Howard",
+        "Gordon",
+        "Quinn",
+        "Diana",
+        "Jabel",
+        "Saul",
+        "Fahd",
+        "Amane",
+        "Chenko"
+      ],
+      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If attacking matters more to you than beasts, put Quinn's Precision Shot before Gordon's Trash Talk (Att march)."
+    },
+    {
+      "id": "hero-focus-long-term",
+      "priority": 6,
+      "type": "Heroes",
+      "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
+      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she is 19 shards from Tier 5. Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive.",
+      "steps": [
+        "Mythic shards: Jabel to Tier 5 (21 / 40, needs 19) before Helga (0 / 5) or Saul (0 / 15).",
+        "Mythic books: Jabel's Youthful Rage and Persistence (see the skill-book suggestion), not Saul's.",
+        "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
+        "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
+        "Tell us your kingdom's age in days (or whether Zoe, Hilde or Marlin have appeared) so the Generation 2 timing can be checked."
+      ],
+      "evidence": [
+        "hero.md promotion screens of 27 Oct: Jabel 21 / 40 to Tier 5; Helga 0 / 5; Saul 0 / 15; Amadeus 0 / 20 to recruit (22 Oct)",
+        "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
+        "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
+        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120"
+      ],
+      "cost": "Shards and books only",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Jabel",
+        "Howard",
+        "Quinn",
+        "Diana",
+        "Chenko",
+        "Yeonwoo",
+        "Helga",
+        "Saul"
+      ],
+      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar."
+    },
+    {
+      "id": "be-swap-forrest",
+      "priority": 7,
       "type": "Marches",
       "what": "Test a combat hero instead of Forrest in the Be (beast) march",
       "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (259,615 vs Forrest's 371,073), so test it before keeping it.",
@@ -300,7 +460,7 @@
     },
     {
       "id": "gat-match-resource",
-      "priority": 4,
+      "priority": 8,
       "type": "Marches",
       "what": "Gathering: lead with the hero whose skill matches the resource",
       "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +15% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
@@ -342,42 +502,6 @@
         "Amane"
       ],
       "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load."
-    },
-    {
-      "id": "skill-books-order",
-      "priority": 5,
-      "type": "Skills",
-      "what": "Skill books: next 50 Epic Conquest Books to Gordon's Trash Talk, next 50 Epic Expedition Manuals to Howard's Joint Defense",
-      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: the first pick, Howard's Defenders' Edge (all troops take 16% less damage), reached Lv. 4 by 27 Oct, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Fahd, Amane and Saul are not ranked first because none of them is in a march or Arena squad.",
-      "steps": [
-        "Epic Conquest Books (stock not read since Defenders' Edge used 50; 28 on 25 Oct; 50 needed): done: Howard · Defenders' Edge (Lv. 4 on 27 Oct). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
-        "Epic Expedition Manuals (10 in stock on 27 Oct on Quinn, Howard, Diana, Chenko and Gordon; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
-        "Mythic Conquest Books (17 in stock on 25 Oct, not re-read since Saul's Resourceful reached Lv. 3 by 27 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
-        "Mythic Expedition Manuals (22 in stock on 25 Oct, not re-read since Saul's Final Prayer reached Lv. 3 by 27 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Superior Techniques (Lv. 2) needs 30, but Saul is in no Arena squad."
-      ],
-      "evidence": [
-        "Book stock: 10 Epic Expedition Manuals on the 27 Oct skill screens of Quinn, Howard, Diana, Chenko and Gordon; 28 Epic Conquest Books on 25 Oct (not re-read since); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books on 25 Oct; Howard's Defenders' Edge icon shows Lv. 4 on 27 Oct",
-        "hero.md skill texts and costs: Lv. 3 → 4 costs 50; Fahd, Amane and Saul Lv. 2 → 3 cost 30",
-        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
-        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
-      ],
-      "cost": "50 books per Lv. 3 → 4 upgrade; 40 more Epic Expedition Manuals needed (27 Oct); Epic Conquest Book stock not read since Defenders' Edge reached Lv. 4",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Howard",
-        "Gordon",
-        "Quinn",
-        "Diana",
-        "Jabel",
-        "Saul",
-        "Fahd",
-        "Amane"
-      ],
-      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If attacking matters more to you than beasts, put Quinn's Precision Shot before Gordon's Trash Talk (Att march)."
     }
   ],
   "features": [
