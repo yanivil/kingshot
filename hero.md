@@ -27,7 +27,7 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 | **Fahd** | SR / Epic | Cavalry | Lv. 54 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-23 |
 | **Amane** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-10-22 |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 54 | 2-Star (Tier 5) | Reserve / Development | **Research Specialist:** Research speed (+9%) & +15% squad lethality | 2026-10-23 |
-| **Forrest** | Rare (Blue) | Infantry | Lv. 54 | 3-Star (Tier 4) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+15%) | 2026-10-22 |
+| **Forrest** | Rare (Blue) | Infantry | Lv. 59 | 3-Star (Tier 5) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-10-27 |
 | **Olive** | Rare (Blue) | Archer | Lv. 59 | 3-Star (Tier 5) | Reserve / Economy / Drill instructor | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-27 |
 | **Seth** | Rare (Blue) | Infantry | Lv. 59 | 3-Star (Tier 4) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-27 |
 | **Edwin** | Rare (Blue) | Cavalry | Lv. 54 | 3-Star (Tier 3) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-10-23 |
@@ -666,46 +666,46 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 ## In-Depth Hero Profile: Forrest
 
-* **Hero Name:** Forrest _(2026-10-21)_
+* **Hero Name:** Forrest _(2026-10-27)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Economy Specialist / Wood Gathering (Shield / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 54** (Drill Camp level: the game says a hero in a Drill Camp can't be levelled up) _(2026-10-22)_
-* **Star Tier:** **3-Star (Tier 4)** (Shards: 3 / 40 to next promotion) _(2026-10-22)_
-* **Total Hero Power:** **371,073** _(2026-10-22)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-22)_
-* **Escort Guards:** **8 Escorts** _(2026-10-22)_
-* **Total Equipped Gear Power:** **84,830** _(2026-10-22)_
+* **Current Level:** **Lv. 59** (Drill Camp level: the game says "You cannot level up a hero within a Drill Camp") _(2026-10-27)_
+* **Star Tier:** **3-Star (Tier 5)** (Shards: 3 / 100 to 4-Star promotion; Redeem shows 2, Rare) _(2026-10-27)_
+* **Total Hero Power:** **401,539** (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably Lv. 54 → 59 plus Master Woodcutter reaching Lv. 4, which is inferred. Olive shows the same +30,466 with the same changes: Tier 5, Lv. 59 and one skill to Lv. 4) _(2026-10-27)_
+* **Troop Capacity Boost:** **+12,260 Troops** _(2026-10-27)_
+* **Escort Guards:** **8 Escorts** _(2026-10-27)_
+* **Total Equipped Gear Power:** **84,830** (unchanged) _(2026-10-27)_
 
 ### 1. Overall Combat & Gathering Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Economic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **764** | Basic melee attack scaling | 2026-10-22 |
-| | **Hero Defense** | **1,458** | Solid defense rating anchoring secondary infantry frontline | 2026-10-22 |
-| | **Hero Health** | **14,994** | Substantial health pool serving as tank substitute in Beast March | 2026-10-22 |
-| **Conquest (Escort)** | **Escort Attack** | **254** | Attack output of his 8 bodyguard escorts | 2026-10-22 |
-| | **Escort Defense** | **485** | Defense rating of his escort guards | 2026-10-22 |
-| | **Escort Health** | **4,998** | Health pool of escort guards | 2026-10-22 |
-| **Expedition (March)** | **Infantry Attack** | **+54.31%** | Army-wide bonus to deployed Infantry | 2026-10-22 |
-| | **Infantry Defense** | **+54.31%** | Durability bonus for infantry units | 2026-10-22 |
-| | **Infantry Lethality**| **+15.22%** | Casualty conversion rate for infantry (from gear) | 2026-10-22 |
-| | **Infantry Health** | **+15.64%** | Expanded squad durability for infantry (from gear) | 2026-10-22 |
+| **Conquest (Hero)** | **Hero Attack** | **809** | Basic melee attack scaling | 2026-10-27 |
+| | **Hero Defense** | **1,548** | Solid defense rating anchoring secondary infantry frontline | 2026-10-27 |
+| | **Hero Health** | **15,871** | Substantial health pool serving as tank substitute in Beast March | 2026-10-27 |
+| **Conquest (Escort)** | **Escort Attack** | **268** | Attack output of his 8 bodyguard escorts | 2026-10-27 |
+| | **Escort Defense** | **515** | Defense rating of his escort guards | 2026-10-27 |
+| | **Escort Health** | **5,290** | Health pool of escort guards | 2026-10-27 |
+| **Expedition (March)** | **Infantry Attack** | **+57.22%** | Army-wide bonus to deployed Infantry | 2026-10-27 |
+| | **Infantry Defense** | **+57.22%** | Durability bonus for infantry units | 2026-10-27 |
+| | **Infantry Lethality**| **+15.22%** | Casualty conversion rate for infantry (from gear) | 2026-10-27 |
+| | **Infantry Health** | **+15.64%** | Expanded squad durability for infantry (from gear) | 2026-10-27 |
 
-### 2. Star Promotion Milestone Preview (3-Star Tier 4 ➔ Tier 5)
+### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
 
-Current Status: **3 / 40 Shards** (promoted to Tier 4; needs **37 more shards** for Tier 5). _(2026-10-22)_
+Promoted to **Tier 5** between the 22 Oct and 27 Oct uploads (+18,785 base power: 199,290 → 218,075, as the 22 Oct preview said; that preview gave Infantry Attack / Defense as +57.21% and the Hero Stats screen shows +57.22%). Current Status: **3 / 100 Shards** (needs **97 more shards** for 4-Star; Redeem shows 2, Rare). _(2026-10-27)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 199,290 | **+18,785** | 218,075 | 2026-10-22 |
-| **Hero Attack** | 478 | **+30** | 508 | 2026-10-22 |
-| **Hero Defense** | 960 | **+60** | 1,020 | 2026-10-22 |
-| **Hero Health** | 9,360 | **+585** | 9,945 | 2026-10-22 |
-| **Escort Attack** | 159 | **+10** | 169 | 2026-10-22 |
-| **Escort Defense** | 320 | **+20** | 340 | 2026-10-22 |
-| **Escort Health** | 3,120 | **+195** | 3,315 | 2026-10-22 |
-| **Infantry Attack** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-22 |
-| **Infantry Defense** | +54.31% | **+2.90%** | **+57.21%** | 2026-10-22 |
+| **Base Hero Power** | 218,075 | **+30,355** | 248,430 | 2026-10-27 |
+| **Hero Attack** | 508 | **+54** | 562 | 2026-10-27 |
+| **Hero Defense** | 1,020 | **+108** | 1,128 | 2026-10-27 |
+| **Hero Health** | 9,945 | **+1,053** | 10,998 | 2026-10-27 |
+| **Escort Attack** | 169 | **+18** | 187 | 2026-10-27 |
+| **Escort Defense** | 340 | **+36** | 376 | 2026-10-27 |
+| **Escort Health** | 3,315 | **+351** | 3,666 | 2026-10-27 |
+| **Infantry Attack** | +57.22% | **+5.22%** | **+62.44%** | 2026-10-27 |
+| **Infantry Defense** | +57.22% | **+5.22%** | **+62.44%** | 2026-10-27 |
 
 ### 3. Equipped Hero Gear
 
@@ -713,24 +713,24 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Stonewall Helm** | Infantry | **Rare** | **+11** | 20,500 | ATK: +56 / HP: +549 | ATK: +18 / HP: +183 | +7.54% Infantry Lethality | 2026-10-21 |
-| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+12** | 21,060 | DEF: +74 / HP: +558 | DEF: +24 / HP: +186 | +7.68% Infantry Health | 2026-10-22 |
-| **Armor** | **Stonewall Shroud** | Infantry | **Rare** | **+14** | 22,210 | DEF: +76 / HP: +576 | DEF: +25 / HP: +192 | +7.96% Infantry Health | 2026-10-22 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+12** | 21,060 | ATK: +57 / HP: +558 | ATK: +19 / HP: +186 | +7.68% Infantry Lethality | 2026-10-22 |
+| **Helmet** | **Stonewall Helm** | Infantry | **Rare** | **+11** | 20,500 | ATK: +56 / HP: +549 | ATK: +18 / HP: +183 | +7.54% Infantry Lethality | 2026-10-27 |
+| **Gauntlets**| **Stonewall Gloves** | Infantry | **Rare** | **+12** | 21,060 | DEF: +74 / HP: +558 | DEF: +24 / HP: +186 | +7.68% Infantry Health | 2026-10-27 |
+| **Armor** | **Stonewall Shroud** | Infantry | **Rare** | **+14** | 22,210 | DEF: +76 / HP: +576 | DEF: +25 / HP: +192 | +7.96% Infantry Health | 2026-10-27 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+12** | 21,060 | ATK: +57 / HP: +558 | ATK: +19 / HP: +186 | +7.68% Infantry Lethality | 2026-10-27 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+15.22%** (+7.54% Helm + 7.68% Greaves) _(2026-10-21)_
-  * **Infantry Health:** **+15.64%** (+7.68% Gloves + 7.96% Shroud) _(2026-10-22)_
+  * **Infantry Lethality:** **+15.22%** (+7.54% Helm + 7.68% Greaves) _(2026-10-27)_
+  * **Infantry Health:** **+15.64%** (+7.68% Gloves + 7.96% Shroud) _(2026-10-27)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +113 Attack | +150 Defense | +2,241 Health _(2026-10-21)_
-  * **Escort Squad Attributes:** +37 Attack | +49 Defense | +747 Health _(2026-10-21)_
+  * **Hero Attributes:** +113 Attack | +150 Defense | +2,241 Health _(2026-10-27)_
+  * **Escort Squad Attributes:** +37 Attack | +49 Defense | +747 Health _(2026-10-27)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Axe Whirl** | Active (Top) | **Lv. 4** | Axe pirouette deals **Attack * 104% AoE damage every 0.5s for 3s** (6 ticks = 624% total AoE). | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 110%/tick) | 2026-10-21 |
+| **Axe Whirl** | Active (Top) | **Lv. 4** | Axe pirouette deals **Attack * 104% AoE damage every 0.5s for 3s** (6 ticks = 624% total AoE). | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 110%/tick; the screen says "To upgrade: ascend to 4-Star") | 2026-10-27 |
 | **Razor Sharp** | Passive (Bot) | **Lv. 4** | Sharpened axe deals **+25% more damage per second**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: +30% DMG) | 2026-10-21 |
 
 ### 5. Expedition & Economy Skills (Town Development & Wilderness Gathering)
@@ -738,7 +738,7 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | Skill Name | Slot | Current Level | Economic & Resource Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | **Woodland Inheritor** | Top | **Lv. 4** | Expert lumberjack skills increase **Town Sawmill Output by +20%**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: +25% Output) | 2026-10-21 |
-| **Master Woodcutter** | Bot | **Lv. 3** | Logging expertise increases **Wood Gathering Speed in Wilderness by +15%**. | **In Progress** (10/50 Rare Development Books to Lv. 4: +20% Speed) | 2026-10-21 |
+| **Master Woodcutter** | Bot | **Lv. 4** | Logging expertise increases **Wood Gathering Speed in Wilderness by +20%** (+20% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (reached Lv. 4 by 27 Oct, shown on the skill icon; his other Lv. 4 skills need 4-Star for Lv. 5, so this one presumably does too, which is inferred) | 2026-10-27 |
 
 ## In-Depth Hero Profile: Edwin
 

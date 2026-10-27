@@ -45,6 +45,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Forrest (2026-10-27): Lv 59 (Drill Camp level), **Tier 4 → Tier 5** (+18,785, exactly the 22 Oct preview), power
+  371,073 → 401,539 with gear unchanged (84,830); the other +11,681 is presumably levels plus Master Woodcutter reaching Lv 4
+  (inferred; Olive shows the same +30,466 for the same changes). Stats 809 / 1,548 / 15,871, escort 268 / 515 / 5,290,
+  Infantry Attack / Defense 57.22%. Shards 3 / 100 to 4★, Rare Redeem 2. New Tier 5 → 4★ preview. `data/manual.json`: the
+  gathering suggestion uses Forrest's +20% wood, the gear-swap evidence cites his 27 Oct gear screens, and the Drill Camp
+  note lists him as confirmed by his own screen.
 - Drill Camp screen of 2026-10-27 (`data/manual.json`): instructors now Lv 64 / 61 / 59 / 59 / 64, so slotted heroes run at
   **Lv 59**. Instructors: Jabel 64, Diana 61, **Olive** 59, Chenko 59, Quinn 64. **Saul left the instructors and fills the
   new slot 8**: his own screen says he cannot be levelled within a Drill Camp. Olive's own screen (green hood, Lv 59) matches
