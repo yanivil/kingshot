@@ -6,6 +6,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `data/manual.json`: three strategy suggestions, asked for by the account owner on 27 Oct ("think out of the box"), each with
+  confidence labels and the community sources it relies on:
+  - Priority 3, "Troops": train Infantry next. The army is 32% Infantry (34,151 of 105,729), while community guides mostly use
+    50 / 20 / 30 for attacks and rallies; the Att preset can reach at most 43% Infantry, so it is suggested as 43 / 27 / 30.
+  - Priority 4, "Marches": save the free fourth march preset as "Join", led by Chenko (Stand of Arms, +15% Lethality), with Helga and
+    Yeonwoo, because guides say a joining march adds only its lead hero's first expedition skill to the rally.
+  - Priority 6, "Heroes": long-term focus. Mythic shards and books to Jabel first; Epic to Diana, Quinn and Howard plus the rally
+    joiner; Helga and Saul last for combat; Generation 2 / 3 timing from community timelines, to be checked against the kingdom's age.
+  - The other suggestions move down one or two places (be-swap-forrest 7, gat-match-resource 8). The skill-book suggestion names
+    Chenko's Stand of Arms as the Conquest Book pick for players who mostly join rallies, and drops Fahd from the Lv. 2 list.
 - `troops.md`: new "Beast & Terror Hunting" section: beasts up to Lv 21 and Terror (a huge beast that can only be rallied)
   up to Lv 4, as told by the account owner on 25 Oct (not from a screenshot). `data/manual.json` adds a "Beasts & Terror"
   feature row dated from that section. README updated.
