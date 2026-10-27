@@ -45,6 +45,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Yeonwoo (2026-10-27): **promoted to 3-Star** with 25 Epic Redeem shards (the shared Epic stock went 52 → 27, told by
+  the account owner). Lv 59 (Drill Camp level), Faceplate +11 → +18 (gear 84,870), power 324,740 → 361,910: +21,920 promotion
+  (exactly the 23 Oct preview) + 4,130 Faceplate + 11,120 levels (inferred, Chenko's and Gordon's gain) add up exactly. Stats
+  1,249 / 1,233 / 7,667, escort 416 / 411 / 2,555, Archer Attack / Defense 66.44%, Lethality 16.20%. The 3-Star promotion lifts
+  her Lv. 3 skill cap: Petalbloom now shows 10 / 50 manuals; On Guard and her other skills are marked In Progress. New
+  3★ T0 → T1 preview. `data/manual.json`: the promotion suggestion now starts with Edwin (1 Rare shard) and keeps the 27 Epic
+  shards for Diana (needs 45).
 - `hero.md`, Edwin (2026-10-27): Lv 59 (not in a drill slot), 12,260 troop capacity. Power 345,017 → 354,052 (+9,035) with gear
   (79,360), skills and preview unchanged, so presumably the levels (inferred; the same +9,035 as Seth). Stats 977 / 1,416 /
   9,735, escort 324 / 472 / 3,245. Shards 5 → **39 / 40** to Tier 4, Rare Redeem 2. Olive's and Forrest's unexplained +11,681
