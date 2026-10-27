@@ -131,23 +131,23 @@
       "priority": 1,
       "type": "Gear",
       "what": "Move Seth's Epic gloves and boots to Howard, and Howard's Rare ones to Forrest",
-      "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+19) are better than Seth's, so keep those. Howard's freed Rare pieces (+20, +19) go to Forrest, the infantry hero in the Be march, instead of Seth; Seth takes Forrest's +12 pieces so no slot is left empty.",
+      "why": "Howard is the main tank in all four combat lineups but wears Rare gloves and boots. Seth is a gathering hero in no lineup, and his Epic gloves and boots beat Howard's on every stat. Howard's own Epic helmet (+20) and chest (+20) are better than Seth's, so keep those. Howard's freed Rare pieces (+20, +19) go to Forrest, the infantry hero in the Be march, instead of Seth; Seth takes Forrest's +12 pieces so no slot is left empty.",
       "changes": [
         {
           "where": "Howard's gear",
           "before": [
             "Praetorian's Helm (Epic +20)",
             "Stonewall Gloves (Rare +20)",
-            "Praetorian's Shroud (Epic +19)",
+            "Praetorian's Shroud (Epic +20)",
             "Stonewall Greaves (Rare +19)"
           ],
           "after": [
             "Praetorian's Helm (Epic +20)",
             "Praetorian's Gloves (Epic +15)",
-            "Praetorian's Shroud (Epic +19)",
+            "Praetorian's Shroud (Epic +20)",
             "Praetorian's Greaves (Epic +16)"
           ],
-          "note": "Gear power 127,900 → 146,040 (+18,140); Infantry Lethality 21.86% → 25.56%, Infantry Health 21.79% → 25.14%"
+          "note": "Gear power 128,860 → 147,000 (+18,140); Infantry Lethality 21.86% → 25.56%, Infantry Health 22.00% → 25.35%"
         },
         {
           "where": "Forrest's gear",
@@ -190,10 +190,10 @@
         "Seth → Gear: equip Forrest's old Stonewall Gloves (+12) and Stonewall Greaves (+12)."
       ],
       "evidence": [
-        "Gear screens of 22 Oct for the 6 pieces that move (Seth's Gloves and Greaves re-confirmed on 24 Oct) and 5 of the 6 that stay (Forrest's Stonewall Helm +11 is from 21 Oct)",
+        "Gear screens of 27 Oct for Howard's and Seth's pieces; Forrest's from 22 Oct (his Stonewall Helm +11 from 21 Oct)",
         "Gloves: 34,200 vs 25,900 power; DEF +117 vs +84; HP +877 vs +630; Infantry Health +12.15% vs +8.80%",
         "Boots: 35,100 vs 25,260 power; ATK +90 vs +63; HP +891 vs +621; Infantry Lethality +12.36% vs +8.66%",
-        "Howard keeps his helm (38,850 vs Seth's 34,200) and chest (37,890; DEF +124 / HP +931 vs Seth's 36,945 at +18 on 24 Oct; DEF +122 / HP +918)",
+        "Howard keeps his helm (38,850 vs Seth's 34,200) and chest (38,850 at +20; DEF +126 / HP +945 vs Seth's 36,945 at +18; DEF +122 / HP +918)",
         "Forrest: Stonewall Gloves +20 vs +12 (25,900 vs 21,060; Infantry Health 8.80% vs 7.68%); Greaves +19 vs +12 (25,260 vs 21,060; Infantry Lethality 8.66% vs 7.68%)",
         "Total gear power across the three heroes is unchanged (+18,140 + 9,040 - 27,180 = 0)"
       ],
@@ -208,25 +208,27 @@
         "Forrest",
         "Seth"
       ],
-      "note": "Stats and power are Verified from the 22 Oct gear screens. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights. Unverified: that the + level moves with the piece; the Gear Details screens show it on the item itself, which suggests it does, but check before you confirm."
+      "note": "Stats and power are Verified from the gear screens (27 Oct for Howard and Seth, 22 Oct for Forrest). Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights. Unverified: that the + level moves with the piece; the Gear Details screens show it on the item itself, which suggests it does, but check before you confirm."
     },
     {
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
       "what": "Promotions: 45 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana, Chenko and Gordon all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100), Howard (24 / 100) and Gordon (22 / 100) need 73, 76 and 78, too many for this stock. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana, Chenko and Gordon all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100), Howard (24 / 100) and Gordon (22 / 100) need 73, 76 and 78, too many for this stock. Rare: Seth needs 9 for Tier 5 (31 / 40, Redeem 2 Rare on 27 Oct; +18,785 base power), but he is in no combat lineup. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
       "steps": [
         "Diana → promotion screen: Redeem 45 Epic shards (55 / 100 on 27 Oct), then Ascend to 4★.",
         "Quinn → promotion screen: Redeem the Epic shards left (7) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
         "Jabel: new Mythic shards toward Tier 5 (21 / 40 on 27 Oct).",
-        "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct)."
+        "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct).",
+        "Seth: new Rare shards toward Tier 5 (31 / 40 on 27 Oct); the 2 Rare Redeem shards cover 2 of the 9."
       ],
       "evidence": [
         "Quinn's promotion screen of 27 Oct: 4-Star (Tier 0), 53 / 100, Redeem 52 (Epic); preview +32,560 / +6.31%",
         "Diana's promotion screen of 27 Oct: 3-Star (Tier 5), 55 / 100, Redeem 52; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
         "Chenko's, Howard's and Gordon's promotion screens of 27 Oct: 27 / 100, 24 / 100 and 22 / 100, Redeem 52",
         "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (Mythic)",
+        "Seth's promotion screen of 27 Oct: 3-Star (Tier 4), 31 / 40, Redeem 2 (Rare); preview +18,785",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
       "cost": "Shards only (52 Epic Redeem on 27 Oct; Diana needs 45)",
@@ -240,7 +242,8 @@
         "Quinn",
         "Jabel",
         "Helga",
-        "Saul"
+        "Saul",
+        "Seth"
       ],
       "note": "Verified: the shard and Redeem counts, the preview gains and that Redeem is shared per rarity. Inferred: Diana before Quinn. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), promote Quinn instead; the 52 cover either one."
     },
