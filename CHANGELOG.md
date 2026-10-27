@@ -45,6 +45,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Amane and Helga (2026-10-27):
+  - Amane: Lv 59 (Drill Camp level); the empty chest slot now holds a Windbreaker Leatherwear (+0, 15,000) and the Faceplate is
+    +11, so gear power is 65,500 and all 4 slots are filled (Archer Health 12.00%, Lethality 13.54%). Power 286,390 → 313,060:
+    +15,550 gear and +11,120 levels (inferred) add up exactly. Stats 1,144 / 1,134 / 7,033, escort 381 / 378 / 2,344. Shards 0 →
+    10 / 40 to 3★. Sakura Blossom shows 10 / 30 manuals.
+  - Helga: Lv 59 (Drill Camp level), power 259,615 → 274,905 with gear (92,905), skills and preview unchanged, so presumably the
+    levels (inferred). Stats 625 / 773 / 12,370, escort 205 / 257 / 4,123. Still 1★ Tier 0, 0 / 5; Antler Assault capped until 2★.
 - `hero.md`, Fahd (2026-10-27): Lv 59 (Drill Camp level), power 310,850 → 329,530 with gear (74,410) and preview unchanged;
   presumably +11,120 levels and +7,560 for Sandstorm, Eagle Wings and Dune General reaching Lv 3 (inferred). Sandstorm Lv 3
   is capped until 3★ ("To upgrade: ascend to 3-Star"). Stats 957 / 1,141 / 9,486, escort 318 / 380 / 3,162. Shards 12 → 21 / 40
