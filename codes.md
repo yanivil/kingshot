@@ -16,8 +16,8 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 | :---: | :--- | :--- | :--- | :---: |
 | [x] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code | 2026-10-22 |
 | [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-22 |
-| [ ] | `KS1025` | Not recorded (trackers say the rewards vary by account) | New: listed as active by kingshotmastery.com (added 25 Oct), kingshot.net and kingshotguide.org (first seen 26 Oct); not yet tried in the game, so unverified; no expiry listed | 2026-10-27 |
-| [ ] | `OFFICIALSTORE1023` | Not recorded (trackers say the rewards vary by account) | New: Official Web Store drop, listed as active by kingshotmastery.com (added 23 Oct), kingshot.net and kingshotwiki.com; not yet tried in the game, so unverified; no expiry listed | 2026-10-27 |
+| [x] | `KS1025` | Not recorded (rewards not shown to us) | Listed as active by kingshotmastery.com (added 25 Oct), kingshot.net and kingshotguide.org (first seen 26 Oct); redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
+| [x] | `OFFICIALSTORE1023` | Not recorded (rewards not shown to us) | Official Web Store drop, listed as active by kingshotmastery.com (added 23 Oct), kingshot.net and kingshotwiki.com; redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
 
 ## How to Redeem Codes
 

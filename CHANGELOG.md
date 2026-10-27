@@ -58,6 +58,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `codes.md`: `KS1025` and `OFFICIALSTORE1023` are ticked as redeemed; the account owner confirmed both worked on 27 Oct
+  (their rewards were not shown, so they stay "Not recorded").
 - `hero.md`, Amane and Helga (2026-10-27):
   - Amane: Lv 59 (Drill Camp level); the empty chest slot now holds a Windbreaker Leatherwear (+0, 15,000) and the Faceplate is
     +11, so gear power is 65,500 and all 4 slots are filled (Archer Health 12.00%, Lethality 13.54%). Power 286,390 → 313,060:
