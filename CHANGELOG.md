@@ -45,6 +45,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Fahd (2026-10-27): Lv 59 (Drill Camp level), power 310,850 → 329,530 with gear (74,410) and preview unchanged;
+  presumably +11,120 levels and +7,560 for Sandstorm, Eagle Wings and Dune General reaching Lv 3 (inferred). Sandstorm Lv 3
+  is capped until 3★ ("To upgrade: ascend to 3-Star"). Stats 957 / 1,141 / 9,486, escort 318 / 380 / 3,162. Shards 12 → 21 / 40
+  to 3★, Epic Redeem 27. `data/manual.json`: the promotion suggestion notes the 27 Epic shards could cover Fahd's 3★ (19), though
+  he is in no line-up.
 - `hero.md`, Yeonwoo (2026-10-27): **promoted to 3-Star** with 25 Epic Redeem shards (the shared Epic stock went 52 → 27, told by
   the account owner). Lv 59 (Drill Camp level), Faceplate +11 → +18 (gear 84,870), power 324,740 → 361,910: +21,920 promotion
   (exactly the 23 Oct preview) + 4,130 Faceplate + 11,120 levels (inferred, Chenko's and Gordon's gain) add up exactly. Stats
