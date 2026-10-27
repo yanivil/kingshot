@@ -215,26 +215,26 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Promotions: 45 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana, Chenko and Gordon all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100), Howard (24 / 100) and Gordon (22 / 100) need 73, 76 and 78, too many for this stock. Rare: Edwin is 1 shard from Tier 4 (39 / 40 on 27 Oct; +17,940 base power and +2.90% Cavalry Attack and Defense), so 1 of the 2 Rare Redeem shards promotes him now; Seth needs 9 for Tier 5 (31 / 40; +18,785 base power). Neither is in a combat lineup. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15 for Tier 5 (0 / 15 on 27 Oct; he went from Tier 0 to Tier 4 since 24 Oct), both in no lineup.",
+      "what": "Promotions: Edwin is 1 Rare shard from Tier 4 now; keep the 27 Epic Redeem shards for Diana's 4★ (needs 45); Jabel is 19 shards from Tier 5",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). You spent 25 Epic Redeem shards on Yeonwoo's 3★ (52 → 27, 27 Oct), which also lifted her Lv. 3 skill cap, including On Guard, her rally-joiner skill. The 27 left are not enough for any other Epic promotion: Diana needs 45 for 4★ (55 / 100), Quinn 47 for 4★ Tier 1 (53 / 100), Chenko 73, Howard 76, Gordon 78. Diana stays the next Epic target: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). Rare: Edwin is 1 shard from Tier 4 (39 / 40; +17,940 base power and +2.90% Cavalry Attack and Defense), so 1 of the 2 Rare Redeem shards promotes him now; Seth needs 9 for Tier 5 (31 / 40; +18,785 base power). Neither is in a combat lineup. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15 for Tier 5 (0 / 15 on 27 Oct), both in no lineup.",
       "steps": [
-        "Diana → promotion screen: Redeem 45 Epic shards (55 / 100 on 27 Oct), then Ascend to 4★.",
-        "Quinn → promotion screen: Redeem the Epic shards left (7) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
-        "Jabel: new Mythic shards toward Tier 5 (21 / 40 on 27 Oct).",
-        "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct).",
         "Edwin → promotion screen: Redeem 1 Rare shard (39 / 40 on 27 Oct), then Ascend to Tier 4.",
-        "Seth: the other Rare Redeem shard and new Rare shards toward Tier 5 (31 / 40 on 27 Oct)."
+        "Epic: keep the 27 Epic Redeem shards; when Diana's count plus the stock reaches 100, Redeem and Ascend her to 4★ (55 / 100 on 27 Oct, needs 45).",
+        "Jabel: new Mythic shards toward Tier 5 (21 / 40 on 27 Oct).",
+        "Seth: the other Rare Redeem shard and new Rare shards toward Tier 5 (31 / 40 on 27 Oct).",
+        "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct)."
       ],
       "evidence": [
-        "Quinn's promotion screen of 27 Oct: 4-Star (Tier 0), 53 / 100, Redeem 52 (Epic); preview +32,560 / +6.31%",
-        "Diana's promotion screen of 27 Oct: 3-Star (Tier 5), 55 / 100, Redeem 52; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
-        "Chenko's, Howard's and Gordon's promotion screens of 27 Oct: 27 / 100, 24 / 100 and 22 / 100, Redeem 52",
-        "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (Mythic)",
-        "Seth's promotion screen of 27 Oct: 3-Star (Tier 4), 31 / 40, Redeem 2 (Rare); preview +18,785",
+        "Yeonwoo's promotion screen of 27 Oct: 3-Star (Tier 0), 0 / 40, Redeem 27 (Epic); Epic Redeem 52 → 27 told by you on 27 Oct",
+        "Diana's promotion screen of 27 Oct: 3-Star (Tier 5), 55 / 100; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
+        "Quinn's promotion screen of 27 Oct: 4-Star (Tier 0), 53 / 100; preview +32,560 / +6.31%",
+        "Chenko's, Howard's and Gordon's promotion screens of 27 Oct: 27 / 100, 24 / 100 and 22 / 100",
         "Edwin's promotion screen of 27 Oct: 3-Star (Tier 3), 39 / 40, Redeem 2 (Rare); preview +17,940 / +2.90%",
+        "Seth's promotion screen of 27 Oct: 3-Star (Tier 4), 31 / 40, Redeem 2 (Rare); preview +18,785",
+        "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (Mythic)",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only (52 Epic Redeem on 27 Oct; Diana needs 45)",
+      "cost": "Shards only (27 Epic Redeem, 2 Rare Redeem and 2 Mythic Redeem on 27 Oct)",
       "confidence": [
         "Verified",
         "Inferred",
@@ -247,9 +247,10 @@
         "Helga",
         "Saul",
         "Seth",
-        "Edwin"
+        "Edwin",
+        "Yeonwoo"
       ],
-      "note": "Verified: the shard and Redeem counts, the preview gains and that Redeem is shared per rarity. Inferred: Diana before Quinn. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), promote Quinn instead; the 52 cover either one."
+      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana as the next Epic target. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save for Quinn instead."
     },
     {
       "id": "be-swap-forrest",
