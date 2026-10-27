@@ -10,6 +10,8 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: each rarity has its own books (Epic heroes share Epic books, Mythic heroes share Mythic books), so books spent on one hero are gone for every hero of the same rarity (confirmed by the account owner, 2026-10-25). Book type names are read from the icons.
 
+The **Redeem** count on a promotion screen is likewise a shared stock of shards per rarity: shards redeemed for one hero are gone for the others of the same rarity (confirmed by the account owner, 2026-10-27). How many hero shards one Redeem shard gives is not recorded.
+
 ## Active Hero Roster
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |

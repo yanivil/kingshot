@@ -84,7 +84,8 @@ bullet's own date; the Gems tile uses it).
 `source`, `confidence`, `heroLevelCapByTC` (`{"20": 54, ...}`), `drillCamp` (text),
 `oneMarchPerHero` (text), `gen2Heroes{serverDay}`, `skillBooks{text, source, confidence}` (how skill book
 counts work; it carries its own source because it was confirmed by the account owner, not taken from
-community sources; shown under Skills in the hero drawer).
+community sources; shown under Skills in the hero drawer), `redeemShards{text, source, confidence}` (Redeem
+shards are a shared stock per rarity, confirmed by the account owner; used by the promotion suggestion, not rendered).
 
 ### `heroes[]`
 | Field | Type | Notes |
