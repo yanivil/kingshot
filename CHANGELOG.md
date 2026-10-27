@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `codes.md`: two new gift codes in Active Codes, both not redeemed yet: `KS1025` (listed from 25 Oct) and `OFFICIALSTORE1023`
+  (listed from 23 Oct). Taken from community trackers (kingshotmastery.com, kingshot.net, kingshotguide.org, kingshotwiki.com) on
+  27 Oct and not yet tried in the game, so their rewards and status are unverified.
 - `data/manual.json`: three strategy suggestions, asked for by the account owner on 27 Oct ("think out of the box"), each with
   confidence labels and the community sources it relies on:
   - Priority 3, "Troops": train Infantry next. The army is 32% Infantry (34,151 of 105,729), while community guides mostly use
