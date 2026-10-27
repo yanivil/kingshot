@@ -124,7 +124,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon and Saul are confirmed by their own screens."
+    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon, Saul and Forrest are confirmed by their own screens."
   },
   "recommendations": [
     {
@@ -191,7 +191,7 @@
         "Seth → Gear: equip Forrest's old Stonewall Gloves (+12) and Stonewall Greaves (+12)."
       ],
       "evidence": [
-        "Gear screens of 27 Oct for Howard's and Seth's pieces; Forrest's from 22 Oct (his Stonewall Helm +11 from 21 Oct)",
+        "Gear screens of 27 Oct for Howard's, Seth's and Forrest's pieces",
         "Gloves: 34,200 vs 25,900 power; DEF +117 vs +84; HP +877 vs +630; Infantry Health +12.15% vs +8.80%",
         "Boots: 35,100 vs 25,260 power; ATK +90 vs +63; HP +891 vs +621; Infantry Lethality +12.36% vs +8.66%",
         "Howard keeps his helm (38,850 vs Seth's 34,200) and chest (38,850 at +20; DEF +126 / HP +945 vs Seth's 36,945 at +18; DEF +122 / HP +918)",
@@ -209,7 +209,7 @@
         "Forrest",
         "Seth"
       ],
-      "note": "Stats and power are Verified from the gear screens (27 Oct for Howard and Seth, 22 Oct for Forrest). Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights. Unverified: that the + level moves with the piece; the Gear Details screens show it on the item itself, which suggests it does, but check before you confirm."
+      "note": "Stats and power are Verified from the 27 Oct gear screens of Howard, Seth and Forrest. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights. Unverified: that the + level moves with the piece; the Gear Details screens show it on the item itself, which suggests it does, but check before you confirm."
     },
     {
       "id": "near-promo",
@@ -298,7 +298,7 @@
       "priority": 4,
       "type": "Marches",
       "what": "Gathering: lead with the hero whose skill matches the resource",
-      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +15% wood, Olive +15% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
+      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +15% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
       "changes": [
         {
           "where": "Gathering presets",
@@ -320,7 +320,7 @@
         "For wood, put Forrest in front when the Be march is home."
       ],
       "evidence": [
-        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 3 (+15%), Olive Forager's Luck Lv. 3 (+15% bread)",
+        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 27 Oct skill icon), Olive Forager's Luck Lv. 3 (+15% bread)",
         "troops.md Gat preset of 24 Oct: Seth (lead), Edwin, Amane",
         "troops.md: March Queue 4/4 (24 Oct)"
       ],
