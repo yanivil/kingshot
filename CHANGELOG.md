@@ -45,6 +45,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Quinn (2026-10-27): Lv 54 → **Lv 64** (capped until Town Center 23), 9 escorts, 12,730 troop capacity. Power
+  528,735 → 551,935 (+23,200) with all four gear pieces re-confirmed unchanged, so presumably the levels (inferred);
+  Hero Stats 1,735 / 1,734 / 10,715, escort 576 / 577 / 3,570. Shards 30 → 53 / 100 to 4★ Tier 1; **Redeem 12 → 52**
+  (Epic). Headshot shows 10 Epic Expedition Manuals in stock (26 on 25 Oct). `data/manual.json`: the promotion
+  suggestion now says 46 of the 52 Epic Redeem shards can promote Diana to 4★ (the rest to Quinn); the skill-book
+  suggestion uses the new manual stock.
 - `hero.md`, Jabel (2026-10-27): Lv 54 → **Lv 64**, capped until Town Center 23 (the game's "Requirement: Town Center Lv.
   23"; this matches the community cap of 64 at TC 22). 9 escorts, 12,730 troop capacity. Gear: Armet and Breastplate +19
   → +25 (29,250 each; +9.50%), Gauntlets +20 → +24 (42,840; +14.04% Cavalry Health), Boots +20 → +30 (32,850; +10.20%

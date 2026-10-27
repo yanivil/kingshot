@@ -214,32 +214,34 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Promotions: Jabel is 19 shards from Tier 5; Epic Redeem shards (12) to Diana's 4★",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Between 25 and 27 Oct Jabel went from 2 to 21 / 40 shards and the Mythic Redeem stock from 11 to 2, so Jabel now needs 19 for Tier 5 (+28,900 base power, +6.45% Cavalry Attack and Defense; she is in Att, both Arena squads and Barricade 1). The 2 Mythic shards left cannot finish Helga's 1★ Tier 1 (5 needed, 0 / 5 when last read on 22 Oct) or Saul's Tier 1 (15). No Epic promotion can finish with the 12 Epic Redeem shards (25 Oct); Diana is the closest Epic hero in a lineup (54 / 100 to 4★, which also lets Iron Constitution go from −18% to −20% stamina cost), so they bring her to 66 / 100.",
+      "what": "Promotions: 46 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Quinn's 27 Oct screen shows 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 46 for 4★ (54 / 100 on 25 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (93). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 6 left go to Quinn. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
       "steps": [
-        "Jabel: put new Mythic shards toward Tier 5 (21 / 40 on 27 Oct; Redeem shows 2).",
-        "Diana → promotion screen: Redeem the 12 Epic shards toward 4★ (54 / 100 on 25 Oct).",
-        "Helga: 5 shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 when last read on 22 Oct)."
+        "Diana → promotion screen: check her count (54 / 100 on 25 Oct), Redeem 46 Epic shards, then Ascend to 4★.",
+        "Quinn → promotion screen: Redeem the Epic shards left (6) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
+        "Jabel: new Mythic shards toward Tier 5 (21 / 40 on 27 Oct).",
+        "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct)."
       ],
       "evidence": [
-        "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (11 on 25 Oct)",
-        "Redeem 12 on Quinn's, Howard's, Diana's and Chenko's screens (Epic, 25 Oct); 1 on Seth's (Rare, 24 Oct)",
-        "hero.md shard counts: Helga 0 / 5 (22 Oct), Saul 0 / 15 (24 Oct), Diana 54 / 100 (25 Oct)",
+        "Quinn's promotion screen of 27 Oct: 4-Star (Tier 0), 53 / 100, Redeem 52 (Epic); preview +32,560 / +6.31%",
+        "Diana's promotion screen of 25 Oct: 3-Star (Tier 5), 54 / 100; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
+        "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (Mythic)",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only (2 Mythic and 12 Epic Redeem shards on the latest screens)",
+      "cost": "Shards only (52 Epic Redeem on 27 Oct; Diana needs 46)",
       "confidence": [
         "Verified",
         "Inferred",
         "Unverified"
       ],
       "heroes": [
-        "Jabel",
         "Diana",
+        "Quinn",
+        "Jabel",
         "Helga",
         "Saul"
       ],
-      "note": "Verified: the shard and Redeem counts and that Redeem is shared per rarity. Inferred: the order. Unverified: that one Redeem shard gives one hero shard, where the 9 Mythic Redeem shards used between 25 and 27 Oct went, and Helga's count, last read on 22 Oct."
+      "note": "Verified: the shard and Redeem counts, the preview gains and that Redeem is shared per rarity. Inferred: Diana before Quinn. Unverified: that one Redeem shard gives one hero shard, and Diana's count, last read on 25 Oct. If Quinn matters more to you (Att, both Arena squads, Barricade 1), promote Quinn instead; the 52 cover either one."
     },
     {
       "id": "be-swap-forrest",
@@ -338,18 +340,18 @@
       "what": "Skill books: next 50 Epic Conquest Books to Howard's Defenders' Edge, next 50 Epic Expedition Manuals to Howard's Joint Defense",
       "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard leads Att and is in Barricade 1, and Defenders' Edge cuts damage taken by all troops from 12% to 16%, which lowers losses whether you attack or are attacked. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Fahd, Amane and Saul are not ranked first because none of them is in a march or Arena squad.",
       "steps": [
-        "Epic Conquest Books (28 in stock on 25 Oct; 50 needed): 1. Howard · Defenders' Edge (all troops take 12% → 16% less damage; Att lead, Barricade 1). 2. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 3. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
-        "Epic Expedition Manuals (26 in stock on 25 Oct; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
+        "Epic Conquest Books (28 in stock on 25 Oct, not re-read since; 50 needed): 1. Howard · Defenders' Edge (all troops take 12% → 16% less damage; Att lead, Barricade 1). 2. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 3. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
+        "Epic Expedition Manuals (10 in stock on 27 Oct, 26 on 25 Oct; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
         "Mythic Conquest Books (17 in stock on 25 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
         "Mythic Expedition Manuals (22 in stock on 25 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Lv. 2 skills need 30 each, but Saul is in no Arena squad."
       ],
       "evidence": [
-        "Book stock from the 25 Oct skill screens: 26 Epic Expedition Manuals and 28 Epic Conquest Books (same on Quinn, Howard and Diana); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books",
+        "Book stock from the 25 Oct skill screens: 26 Epic Expedition Manuals and 28 Epic Conquest Books (same on Quinn, Howard and Diana); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books; 10 Epic Expedition Manuals on Quinn's Headshot of 27 Oct",
         "hero.md skill texts and costs: Lv. 3 → 4 costs 50; Fahd, Amane and Saul Lv. 2 → 3 cost 30",
         "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
         "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
       ],
-      "cost": "50 books per Lv. 3 → 4 upgrade; 22–24 more Epic books of each type needed (25 Oct stock)",
+      "cost": "50 books per Lv. 3 → 4 upgrade; 40 more Epic Expedition Manuals (27 Oct) and 22 more Epic Conquest Books (25 Oct) needed",
       "confidence": [
         "Verified",
         "Inferred",

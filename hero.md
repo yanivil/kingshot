@@ -21,7 +21,7 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 | **Helga** | SSR / Mythic | Infantry | Lv. 54 | 1-Star (Tier 0) | Reserve / Frontline Tank | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-10-22 |
 | **Howard** | SR / Epic | Infantry | Lv. 54 | 3-Star (Tier 5) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-10-25 |
 | **Diana** | SR / Epic | Archer | Lv. 54 | 3-Star (Tier 5) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-10-25 |
-| **Quinn** | SR / Epic | Archer | Lv. 54 | 4-Star (Tier 0) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-25 |
+| **Quinn** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 0) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-10-27 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 5) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-10-25 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 54 | 3-Star (Tier 5) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-10-25 |
 | **Fahd** | SR / Epic | Cavalry | Lv. 54 | 2-Star (Tier 5) | Reserve | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-10-23 |
@@ -435,46 +435,48 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 ## In-Depth Hero Profile: Quinn
 
-* **Hero Name:** Quinn _(2026-10-25)_
-* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
-* **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-25)_
-* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-25)_
-* **Star Tier:** **4-Star (Tier 0)** (Shards: 30 / 100 to Tier 1 promotion; Redeem shows 12) _(2026-10-25)_
-* **Total Hero Power:** **528,735** (unchanged since 22 Oct) _(2026-10-25)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-25)_
-* **Escort Guards:** **8 Escorts** _(2026-10-25)_
-* **Total Equipped Gear Power:** **119,135** _(2026-10-25)_
+* **Hero Name:** Quinn _(2026-10-27)_
+* **Rarity:** **SR / Epic** (Generation 1) _(2026-10-27)_
+* **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-27)_
+* **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; was Lv. 54 until the Town Center reached Lv. 22) _(2026-10-27)_
+* **Star Tier:** **4-Star (Tier 0)** (Shards: 53 / 100 to Tier 1 promotion; Redeem shows 52) _(2026-10-27)_
+* **Total Hero Power:** **551,935** (+23,200 since 25 Oct with the gear unchanged; not itemised on screen, presumably the ten levels 54 → 64 (inferred)) _(2026-10-27)_
+* **Troop Capacity Boost:** **+12,730 Troops** (11,525 at Lv. 54) _(2026-10-27)_
+* **Escort Guards:** **9 Escorts** (8 at Lv. 54) _(2026-10-27)_
+* **Total Equipped Gear Power:** **119,135** _(2026-10-27)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,676** | High base attack, delivering powerful burst sniper damage | 2026-10-25 |
-| | **Hero Defense** | **1,674** | High personal defense against counter-sniping | 2026-10-25 |
-| | **Hero Health** | **10,355** | Balanced ranged health pool | 2026-10-25 |
-| **Conquest (Escort)** | **Escort Attack** | **556** | Attack rating of his 8 bodyguard archers | 2026-10-25 |
-| | **Escort Defense** | **557** | Defense rating of his 8 bodyguard archers | 2026-10-25 |
-| | **Escort Health** | **3,450** | Health pool of his bodyguard squad | 2026-10-25 |
-| **Expedition (March)** | **Archer Attack** | **+97.13%** | Army-wide bonus to all deployed Marksmen/Archers | 2026-10-25 |
-| | **Archer Defense** | **+97.13%** | Defense bonus mitigating incoming enemy cavalry damage | 2026-10-25 |
-| | **Archer Lethality**| **+20.95%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-10-25 |
-| | **Archer Health** | **+20.74%** | Durability scaling for ranged backline units (from gear) | 2026-10-25 |
+| **Conquest (Hero)** | **Hero Attack** | **1,735** | High base attack, delivering powerful burst sniper damage | 2026-10-27 |
+| | **Hero Defense** | **1,734** | High personal defense against counter-sniping | 2026-10-27 |
+| | **Hero Health** | **10,715** | Balanced ranged health pool | 2026-10-27 |
+| **Conquest (Escort)** | **Escort Attack** | **576** | Attack rating of his 9 bodyguard archers | 2026-10-27 |
+| | **Escort Defense** | **577** | Defense rating of his 9 bodyguard archers | 2026-10-27 |
+| | **Escort Health** | **3,570** | Health pool of his bodyguard squad | 2026-10-27 |
+| **Expedition (March)** | **Archer Attack** | **+97.13%** | Army-wide bonus to all deployed Marksmen/Archers | 2026-10-27 |
+| | **Archer Defense** | **+97.13%** | Defense bonus mitigating incoming enemy cavalry damage | 2026-10-27 |
+| | **Archer Lethality**| **+20.95%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-10-27 |
+| | **Archer Health** | **+20.74%** | Durability scaling for ranged backline units (from gear) | 2026-10-27 |
+
+Since 25 Oct, with the gear unchanged: +59 ATK / +60 DEF / +360 HP (escort +20 / +20 / +120), presumably the level-up 54 → 64 (inferred); the Archer bonuses are unchanged. _(2026-10-27)_
 
 ### 2. Star Promotion Milestone Preview (4-Star Tier 0 ➔ Tier 1)
 
-Promoted to **4-Star** on 2026-10-22 (the promotion added +37,360 base power). Current Status: **30 / 100 Shards** (needs **70 more shards** for Tier 1; Redeem shows 12). The preview values are unchanged since 22 Oct. _(2026-10-25)_
+Promoted to **4-Star** on 2026-10-22 (the promotion added +37,360 base power). Current Status: **53 / 100 Shards** (needs **47 more shards** for Tier 1; Redeem shows 52, up from 12 on 25 Oct). The preview values are unchanged since 22 Oct. _(2026-10-27)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 305,760 | **+32,560** | 338,320 | 2026-10-25 |
-| **Hero Attack** | 1,096 | **+81** | 1,177 | 2026-10-25 |
-| **Hero Defense** | 1,128 | **+84** | 1,212 | 2026-10-25 |
-| **Hero Health** | 6,768 | **+504** | 7,272 | 2026-10-25 |
-| **Escort Attack** | 364 | **+28** | 392 | 2026-10-25 |
-| **Escort Defense** | 376 | **+28** | 404 | 2026-10-25 |
-| **Escort Health** | 2,256 | **+168** | 2,424 | 2026-10-25 |
-| **Archer Attack** | +97.13% | **+6.31%** | **+103.44%** | 2026-10-25 |
-| **Archer Defense** | +97.13% | **+6.31%** | **+103.44%** | 2026-10-25 |
+| **Base Hero Power** | 305,760 | **+32,560** | 338,320 | 2026-10-27 |
+| **Hero Attack** | 1,096 | **+81** | 1,177 | 2026-10-27 |
+| **Hero Defense** | 1,128 | **+84** | 1,212 | 2026-10-27 |
+| **Hero Health** | 6,768 | **+504** | 7,272 | 2026-10-27 |
+| **Escort Attack** | 364 | **+28** | 392 | 2026-10-27 |
+| **Escort Defense** | 376 | **+28** | 404 | 2026-10-27 |
+| **Escort Health** | 2,256 | **+168** | 2,424 | 2026-10-27 |
+| **Archer Attack** | +97.13% | **+6.31%** | **+103.44%** | 2026-10-27 |
+| **Archer Defense** | +97.13% | **+6.31%** | **+103.44%** | 2026-10-27 |
 
 ### 3. Equipped Hero Gear
 
@@ -482,20 +484,20 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+17** | 36,015 | ATK: +146 / HP: +452 | ATK: +48 / HP: +150 | +12.57% Archer Lethality | 2026-10-25 |
-| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **+16** | 35,100 | DEF: +118 / HP: +445 | DEF: +39 / HP: +148 | +12.36% Archer Health | 2026-10-25 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+17** | 24,010 | DEF: +80 / HP: +301 | DEF: +26 / HP: +100 | +8.38% Archer Health | 2026-10-25 |
-| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+17** | 24,010 | ATK: +97 / HP: +301 | ATK: +32 / HP: +100 | +8.38% Archer Lethality | 2026-10-25 |
+| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+17** | 36,015 | ATK: +146 / HP: +452 | ATK: +48 / HP: +150 | +12.57% Archer Lethality | 2026-10-27 |
+| **Gauntlets**| **Berserker's Bracers** | Archer | **Epic** | **+16** | 35,100 | DEF: +118 / HP: +445 | DEF: +39 / HP: +148 | +12.36% Archer Health | 2026-10-27 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+17** | 24,010 | DEF: +80 / HP: +301 | DEF: +26 / HP: +100 | +8.38% Archer Health | 2026-10-27 |
+| **Boots** | **Windbreaker Boots** | Archer | **Rare** | **+17** | 24,010 | ATK: +97 / HP: +301 | ATK: +32 / HP: +100 | +8.38% Archer Lethality | 2026-10-27 |
 
 All four pieces were read from the gear screens (the Faceplate went from +16 to +17 on 2026-10-22). Gear power is
 36,015 + 35,100 + 24,010 + 24,010 = 119,135, and the expedition totals match the Hero Stats screen: Archer Lethality
-+20.95% (12.57% + 8.38%) and Archer Health +20.74% (12.36% + 8.38%). All four pieces re-confirmed unchanged on 2026-10-25. _(2026-10-25)_
++20.95% (12.57% + 8.38%) and Archer Health +20.74% (12.36% + 8.38%). All four pieces re-confirmed unchanged on 2026-10-25 and 2026-10-27. _(2026-10-27)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Headshot** | Active (Top) | **Lv. 3** | Crossbow deals massive single-target damage of **Attack * 480%**. | **In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: 520%) | 2026-10-25 |
+| **Headshot** | Active (Top) | **Lv. 3** | Crossbow deals massive single-target damage of **Attack * 480%**. | **In Progress** (10/50 Epic Expedition Manuals to reach Lv. 4: 520%) | 2026-10-27 |
 | **Quick Shot** | Passive (Mid) | **Lv. 3** | Years of training increases Quinn's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: +25% Speed) | 2026-10-25 |
 | **Natural Selection** | Passive (Bot) | **Lv. 3** | Expert survival skills increase his personal **damage dealt by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: +25% DMG) | 2026-10-25 |
 
