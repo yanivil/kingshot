@@ -58,6 +58,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Saul (later on 2026-10-27): Superior Techniques Lv 2 → **Lv 3** (+20% Attack Speed; capped until 3★, "To upgrade:
+  ascend to 3-Star"). Power 412,880 → 416,030 (+3,150) with stats, gear and preview unchanged, so presumably that skill (inferred).
+  `data/manual.json`: the skill-book suggestion no longer lists Saul's Lv. 2 skills.
 - `codes.md`: `KS1025` and `OFFICIALSTORE1023` are ticked as redeemed; the account owner confirmed both worked on 27 Oct
   (their rewards were not shown, so they stay "Not recorded").
 - `hero.md`, Amane and Helga (2026-10-27):

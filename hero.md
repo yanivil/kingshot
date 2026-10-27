@@ -1054,7 +1054,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer) _(2026-10-24)_
 * **Current Level:** **Lv. 59** (Drill Camp level: the game says "You cannot level up a hero within a Drill Camp"; he is now in a drill slot, not an instructor) _(2026-10-27)_
 * **Star Tier:** **2-Star (Tier 4)** (Shards: 0 / 15 to Tier 5 promotion; Redeem shows 2, Mythic) _(2026-10-27)_
-* **Total Hero Power:** **412,880** (+86,665 since 24 Oct: +59,100 base power from Tier 0 → Tier 4 (99,800 → 158,900), +7,365 from the Bracers +14 → +20 and the Leatherwear +15 → +18, and +20,200 not itemised on screen, presumably Lv. 54 → 59 plus Final Prayer and Resourceful reaching Lv. 3, which is inferred. On 24 Oct: 326,215 ( +3,720 from the Bracers going to +14 and the Leatherwear to +15, and +2,250 not itemised on screen, presumably Positional Battler reaching Lv. 2, which is inferred. 23 Oct: 284,550 → 320,245 from the 2-Star promotion (+15,400), the Bracers +0 → +13 (+9,945) and +10,350 not itemised, presumably skills)) _(2026-10-27)_
+* **Total Hero Power:** **416,030** (+3,150 later on 27 Oct with stats, gear and the promotion preview unchanged, so presumably Superior Techniques reaching Lv. 3, which is inferred. Earlier on 27 Oct: 412,880, +86,665 since 24 Oct: +59,100 base power from Tier 0 → Tier 4 (99,800 → 158,900), +7,365 from the Bracers +14 → +20 and the Leatherwear +15 → +18, and +20,200 not itemised on screen, presumably Lv. 54 → 59 plus Final Prayer and Resourceful reaching Lv. 3, which is inferred. On 24 Oct: 326,215 ( +3,720 from the Bracers going to +14 and the Leatherwear to +15, and +2,250 not itemised on screen, presumably Positional Battler reaching Lv. 2, which is inferred. 23 Oct: 284,550 → 320,245 from the 2-Star promotion (+15,400), the Bracers +0 → +13 (+9,945) and +10,350 not itemised, presumably skills)) _(2026-10-27)_
 * **Troop Capacity Boost:** **+12,260 Troops** _(2026-10-27)_
 * **Escort Guards:** **8 Escorts** _(2026-10-27)_
 * **Total Equipped Gear Power:** **110,280** (+5,535 from the Bracers +14 → +20 and +1,830 from the Leatherwear +15 → +18) _(2026-10-27)_
@@ -1118,7 +1118,7 @@ Book counts are read from each skill's Upgrade button. The screens show no book 
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | **Rapid Fire** | Active (Top) | **Lv. 3** | Delivers multiple hits, **each dealing Attack * 65% damage and stunning target for 2s**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: 70% DMG; the screen says "To upgrade: ascend to 3-Star") | 2026-10-27 |
 | **Final Prayer** | Passive (Mid) | **Lv. 3** | When Health drops below 50%, **increases Defense by +100%** (+100% is the old Lv. 3 preview; the Lv. 3 panel was not opened). | **In Progress** (reached Lv. 3 by 27 Oct, shown on the skill icon; Rapid Fire at Lv. 3 needs 3-Star for Lv. 4, so this one presumably does too, which is inferred) | 2026-10-27 |
-| **Superior Techniques** | Passive (Bot) | **Lv. 2** | Passively **increases Attack Speed by +15%**. | **In Progress** (0/30 Mythic Expedition Manuals to Lv. 3: +20% Speed) | 2026-10-23 |
+| **Superior Techniques** | Passive (Bot) | **Lv. 3** | Passively **increases Attack Speed by +20%**. | **Capped at Lv. 3** (Requires 3-Star ascension for Lv. 4: +25% Speed; the screen says "To upgrade: ascend to 3-Star") | 2026-10-27 |
 
 ### 5. Expedition & Development Skills (Army Warfare & City Construction)
 
