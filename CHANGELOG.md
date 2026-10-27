@@ -45,6 +45,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Seth (2026-10-27): Lv 54 → **Lv 59** (not in a drill slot: the Upgrade button shows the shared hero XP), 12,260
+  troop capacity. Power 429,334 → 438,369 (+9,035) with all four Praetorian's pieces (140,445), skills and preview
+  unchanged, so presumably the levels (inferred). Stats 845 / 1,577 / 16,608, escort 280 / 525 / 5,535. Shards 0 → **31 / 40**
+  to Tier 5, Redeem 2 (Rare). Hammer Burn says "To upgrade: ascend to 4-Star". `data/manual.json`: the promotion suggestion
+  adds Seth (9 shards from Tier 5, +18,785 base power; in no combat lineup), and the Seth → Howard gear suggestion uses
+  Howard's Shroud +20 of 27 Oct (Howard 128,860 → 147,000 gear power; Infantry Health 22.00% → 25.35%).
 - `hero.md`, Gordon (2026-10-27): Lv 54 → **Lv 59** (Drill Camp level), 12,260 troop capacity. Armet +15 → **+16**
   (23,400; +8.24% Cavalry Lethality, total 16.62%); gear power 92,420. Power 464,060 → 475,780: +600 from the Armet and
   +11,120 presumably from the levels (inferred; the same gain as Chenko for Lv 54 → 59, which also backs the split of
