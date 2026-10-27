@@ -45,6 +45,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Gordon (2026-10-27): Lv 54 → **Lv 59** (Drill Camp level), 12,260 troop capacity. Armet +15 → **+16**
+  (23,400; +8.24% Cavalry Lethality, total 16.62%); gear power 92,420. Power 464,060 → 475,780: +600 from the Armet and
+  +11,120 presumably from the levels (inferred; the same gain as Chenko for Lv 54 → 59, which also backs the split of
+  Howard's gain). Stats 1,277 / 1,552 / 12,756, escort 424 / 517 / 4,252. Shards 4 → 22 / 100, Redeem 52; BBQ Feast shows
+  10 Epic Expedition Manuals. `data/manual.json`: the promotion and skill-book suggestions add Gordon's counts.
 - `hero.md`, Howard, Chenko and Diana (2026-10-27):
   - Howard: Lv 54 → **Lv 59** (Drill Camp level), 12,260 troop capacity. Shroud +19 → +20 (38,850; +13.20% Infantry
     Health, total 22.00%); gear power 128,860. Power 500,140 → 515,748: +960 from the Shroud, and the other +14,648 is
