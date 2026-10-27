@@ -214,21 +214,22 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Promotions: 46 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Quinn's 27 Oct screen shows 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 46 for 4★ (54 / 100 on 25 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (93). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 6 left go to Quinn. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
+      "what": "Promotions: 45 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana and Chenko all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100) and Howard (24 / 100) need 73 and 76, too many for this stock. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
       "steps": [
-        "Diana → promotion screen: check her count (54 / 100 on 25 Oct), Redeem 46 Epic shards, then Ascend to 4★.",
-        "Quinn → promotion screen: Redeem the Epic shards left (6) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
+        "Diana → promotion screen: Redeem 45 Epic shards (55 / 100 on 27 Oct), then Ascend to 4★.",
+        "Quinn → promotion screen: Redeem the Epic shards left (7) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
         "Jabel: new Mythic shards toward Tier 5 (21 / 40 on 27 Oct).",
         "Helga: 5 Mythic shards to 1★ Tier 1 once the Mythic stock allows it (0 / 5 on 22 Oct)."
       ],
       "evidence": [
         "Quinn's promotion screen of 27 Oct: 4-Star (Tier 0), 53 / 100, Redeem 52 (Epic); preview +32,560 / +6.31%",
-        "Diana's promotion screen of 25 Oct: 3-Star (Tier 5), 54 / 100; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
+        "Diana's promotion screen of 27 Oct: 3-Star (Tier 5), 55 / 100, Redeem 52; preview +37,360 / +6.38%; Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
+        "Chenko's and Howard's promotion screens of 27 Oct: 27 / 100 and 24 / 100, Redeem 52",
         "Jabel's promotion screen of 27 Oct: 3-Star (Tier 4), 21 / 40, Redeem 2 (Mythic)",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only (52 Epic Redeem on 27 Oct; Diana needs 46)",
+      "cost": "Shards only (52 Epic Redeem on 27 Oct; Diana needs 45)",
       "confidence": [
         "Verified",
         "Inferred",
@@ -241,7 +242,7 @@
         "Helga",
         "Saul"
       ],
-      "note": "Verified: the shard and Redeem counts, the preview gains and that Redeem is shared per rarity. Inferred: Diana before Quinn. Unverified: that one Redeem shard gives one hero shard, and Diana's count, last read on 25 Oct. If Quinn matters more to you (Att, both Arena squads, Barricade 1), promote Quinn instead; the 52 cover either one."
+      "note": "Verified: the shard and Redeem counts, the preview gains and that Redeem is shared per rarity. Inferred: Diana before Quinn. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), promote Quinn instead; the 52 cover either one."
     },
     {
       "id": "be-swap-forrest",
@@ -337,21 +338,21 @@
       "id": "skill-books-order",
       "priority": 5,
       "type": "Skills",
-      "what": "Skill books: next 50 Epic Conquest Books to Howard's Defenders' Edge, next 50 Epic Expedition Manuals to Howard's Joint Defense",
-      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard leads Att and is in Barricade 1, and Defenders' Edge cuts damage taken by all troops from 12% to 16%, which lowers losses whether you attack or are attacked. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Fahd, Amane and Saul are not ranked first because none of them is in a march or Arena squad.",
+      "what": "Skill books: next 50 Epic Conquest Books to Gordon's Trash Talk, next 50 Epic Expedition Manuals to Howard's Joint Defense",
+      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: the first pick, Howard's Defenders' Edge (all troops take 16% less damage), reached Lv. 4 by 27 Oct, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard is in the front of both Arena squads, and Joint Defense raises Defense for all heroes from 10% to 12.5%. The cheaper Lv. 2 → 3 upgrades (30 books) on Fahd, Amane and Saul are not ranked first because none of them is in a march or Arena squad.",
       "steps": [
-        "Epic Conquest Books (28 in stock on 25 Oct, not re-read since; 50 needed): 1. Howard · Defenders' Edge (all troops take 12% → 16% less damage; Att lead, Barricade 1). 2. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 3. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
-        "Epic Expedition Manuals (10 in stock on 27 Oct, 26 on 25 Oct; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
+        "Epic Conquest Books (stock not read since Defenders' Edge used 50; 28 on 25 Oct; 50 needed): done: Howard · Defenders' Edge (Lv. 4 on 27 Oct). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
+        "Epic Expedition Manuals (10 in stock on 27 Oct on Quinn, Howard, Diana and Chenko; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
         "Mythic Conquest Books (17 in stock on 25 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
         "Mythic Expedition Manuals (22 in stock on 25 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Lv. 2 skills need 30 each, but Saul is in no Arena squad."
       ],
       "evidence": [
-        "Book stock from the 25 Oct skill screens: 26 Epic Expedition Manuals and 28 Epic Conquest Books (same on Quinn, Howard and Diana); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books; 10 Epic Expedition Manuals on Quinn's Headshot of 27 Oct",
+        "Book stock: 10 Epic Expedition Manuals on the 27 Oct skill screens of Quinn, Howard, Diana and Chenko; 28 Epic Conquest Books on 25 Oct (not re-read since); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books on 25 Oct; Howard's Defenders' Edge icon shows Lv. 4 on 27 Oct",
         "hero.md skill texts and costs: Lv. 3 → 4 costs 50; Fahd, Amane and Saul Lv. 2 → 3 cost 30",
         "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
         "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
       ],
-      "cost": "50 books per Lv. 3 → 4 upgrade; 40 more Epic Expedition Manuals (27 Oct) and 22 more Epic Conquest Books (25 Oct) needed",
+      "cost": "50 books per Lv. 3 → 4 upgrade; 40 more Epic Expedition Manuals needed (27 Oct); Epic Conquest Book stock not read since Defenders' Edge reached Lv. 4",
       "confidence": [
         "Verified",
         "Inferred",
@@ -367,7 +368,7 @@
         "Fahd",
         "Amane"
       ],
-      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If beasts matter more to you than attacking and defending, put Gordon's Trash Talk first (Be march)."
+      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If attacking matters more to you than beasts, put Quinn's Precision Shot before Gordon's Trash Talk (Att march)."
     }
   ],
   "features": [
