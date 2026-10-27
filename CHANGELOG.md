@@ -45,6 +45,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Howard, Chenko and Diana (2026-10-27):
+  - Howard: Lv 54 → **Lv 59** (Drill Camp level), 12,260 troop capacity. Shroud +19 → +20 (38,850; +13.20% Infantry
+    Health, total 22.00%); gear power 128,860. Power 500,140 → 515,748: +960 from the Shroud, and the other +14,648 is
+    presumably the levels (+11,120, as Chenko) plus Defenders' Edge reaching Lv. 4 (+3,528, the same gain as Diana's Iron
+    Constitution Lv. 4); both inferred. Defenders' Edge now **Lv. 4** (from the skill icon; the panel was not opened).
+    Stats 1,016 / 1,608 / 19,917, escort 337 / 536 / 6,639. Shards 24 / 100, Redeem 52.
+  - Chenko: Lv 54 → **Lv 59** (Drill Camp instructor), 12,260 troop capacity. Power 470,240 → 481,360 (+11,120) with gear
+    (98,000), skill levels and preview unchanged, so presumably the levels (inferred). Stats 1,280 / 1,561 / 12,810,
+    escort 426 / 520 / 4,270. Shards 1 → 27 / 100, Redeem 52.
+  - Diana: Lv 54 → **Lv 61** (Drill Camp instructor), **9 escorts**, 12,470 troop capacity. Helmet swapped from
+    Windbreaker Faceplate Rare +18 (24,630) to **Berserker's Faceplate Epic** (22,500; +9.00% Archer Lethality, total
+    21.78%); gear power 111,285. Power 489,183 → 502,893: −2,130 from the swap and +15,840 presumably from the levels
+    (inferred). Stats 1,626 / 1,577 / 9,886, escort 541 / 525 / 3,295. Shards 54 → 55 / 100, Redeem 52.
+  - All three show 10 Epic Expedition Manuals in stock, as Quinn's screen did.
+  - `data/manual.json`: the promotion suggestion now says Diana needs 45 of the 52 Epic Redeem shards (7 left for
+    Quinn) and lists Chenko and Howard; the skill-book suggestion marks Howard's Defenders' Edge done, so Gordon's Trash
+    Talk is the next Epic Conquest Books pick, and says the Conquest Book stock has not been read since.
 - `hero.md`, Quinn (2026-10-27): Lv 54 → **Lv 64** (capped until Town Center 23), 9 escorts, 12,730 troop capacity. Power
   528,735 → 551,935 (+23,200) with all four gear pieces re-confirmed unchanged, so presumably the levels (inferred);
   Hero Stats 1,735 / 1,734 / 10,715, escort 576 / 577 / 3,570. Shards 30 → 53 / 100 to 4★ Tier 1; **Redeem 12 → 52**
