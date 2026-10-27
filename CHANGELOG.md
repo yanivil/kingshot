@@ -45,6 +45,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Jabel (2026-10-27): Lv 54 → **Lv 64**, capped until Town Center 23 (the game's "Requirement: Town Center Lv.
+  23"; this matches the community cap of 64 at TC 22). 9 escorts, 12,730 troop capacity. Gear: Armet and Breastplate +19
+  → +25 (29,250 each; +9.50%), Gauntlets +20 → +24 (42,840; +14.04% Cavalry Health), Boots +20 → +30 (32,850; +10.20%
+  Cavalry Lethality); gear power 164,190 with the widget. Power 605,610 → 653,530: +18,920 from gear and +29,000 not
+  itemised (presumably the levels; inferred). Hero Stats 1,614 / 1,651 / 16,326, escort 538 / 550 / 5,442, Lethality
+  +24.70%, Health +28.54%; after the gear, each stat rose by a uniform +60 / +60 / +600 (escort +20 / +20 / +200).
+  Shards 2 → 21 / 40 to Tier 5, Redeem 11 → 2. `data/manual.json`: Jabel's notes and the promotion suggestion (Jabel 19
+  to Tier 5; 2 Mythic Redeem left, not enough for Helga; 12 Epic to Diana) are updated.
 - Redeem shards (`data/manual.json`, `hero.md`): the Redeem count on a promotion screen is a shared stock of shards per
   rarity, confirmed by the account owner on 27 Oct (`rules.redeemShards`). The promotion suggestion (priority 2) now
   uses it: 5 of the 11 Mythic shards finish Helga's 1★ Tier 1 now, the other 6 go to Jabel (Tier 5), and the 12 Epic
