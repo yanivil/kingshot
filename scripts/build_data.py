@@ -675,10 +675,16 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     stamina = parse_pair(label_value(identity, "Stamina", src, log))
     gear_text = label_value(identity, "Governor Gear", src, log)
     gear_pair = parse_pair(gear_text)
-    # "6 / 6 Locked" reads as 6 locked out of 6; without the word the meaning is unclear.
-    if gear_pair and "Locked" not in strip_md(gear_text):
-        log.warn(src, "Governor Gear value does not say 'Locked'; slot counts set to null")
-        gear_pair = None
+    # The value names what it counts: "6 / 6 Locked" (6 locked of 6 slots) before
+    # Governor Gear opened, "3 / 6 Equipped" (3 pieces worn of 6) after.
+    # Without either word the meaning is unclear, so the counts are dropped.
+    gear_kind = None
+    if gear_pair:
+        plain = strip_md(gear_text)
+        gear_kind = "equipped" if "Equipped" in plain else ("locked" if "Locked" in plain else None)
+        if gear_kind is None:
+            log.warn(src, "Governor Gear value says neither 'Locked' nor 'Equipped'; slot counts set to null")
+            gear_pair = None
     player_id = identity.get("Player ID")
 
     power = parse_amount(label_value(identity, "Overall Account Power", src, log))
@@ -757,8 +763,9 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     }
     governor_gear = {
         "slotsTotal": gear_pair[1] if gear_pair else None,
-        "slotsLocked": gear_pair[0] if gear_pair else None,
-        "asOf": as_of,
+        "slotsLocked": gear_pair[0] if gear_pair and gear_kind == "locked" else None,
+        "slotsEquipped": gear_pair[0] if gear_pair and gear_kind == "equipped" else None,
+        "asOf": row_date("Governor Gear"),
     }
     return {
         "governor": governor, "townCenter": town_center, "resources": resources,

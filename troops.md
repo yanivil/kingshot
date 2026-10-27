@@ -28,7 +28,7 @@ Standing forces are **Tier VII (Brave)** units across the three military branche
 | **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen. With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-10-24 |
 | **Infirmary Hospital Capacity** | 38,600 | 0 / 38,600 injured | 2026-10-24 |
 | **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
-| **Town Center Level** | Level 20 | 32/32 Citizens, 584 ATK / 1,168 DEF / 17,523 HP | 2026-10-22 |
+| **Town Center Level** | Level 22 | 32/32 Citizens, 735 ATK / 1,470 DEF / 22,064 HP | 2026-10-27 |
 
 ## Saved March Formations
 

@@ -234,6 +234,17 @@ class MergeAndOutputTests(unittest.TestCase):
         # A missing row falls back to the file date.
         self.assertEqual(out["governor"]["fieldAsOf"]["vip"], "2026-10-25")
 
+    def test_governor_gear_counts(self) -> None:
+        """'6 / 6 Locked' fills slotsLocked; '3 / 6 Equipped' fills slotsEquipped; other text gives nulls."""
+        head = ("## Governor Identity & Account Statistics\n\n"
+                "| Attribute | Value | Details | Updated |\n| :--- | :---: | :--- | :---: |\n")
+        row = "| **Governor Gear** | **{}** | x | 2026-10-27 |\n"
+        cases = (("6 / 6 Locked", (6, 6, None)), ("3 / 6 Equipped", (6, None, 3)), ("3 / 6", (None, None, None)))
+        for text, (total, locked, equipped) in cases:
+            gear = bd.parse_profile(head + row.format(text), None, bd.BuildLog())["governorGear"]
+            self.assertEqual((gear["slotsTotal"], gear["slotsLocked"], gear["slotsEquipped"]), (total, locked, equipped))
+            self.assertEqual(gear["asOf"], "2026-10-27")
+
     def test_locked_widget_keeps_its_name(self) -> None:
         """A locked widget keeps the name given after the dash; a bare "Locked" has none."""
         self.assertEqual(bd.parse_widget({"Exclusive Widget": "Locked — Bands of Tyre (gear screen shows a lock)"}),
