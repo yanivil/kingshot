@@ -45,6 +45,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `profile.md` (later screens of 2026-10-27): power is **13,969,554**, the exact figure behind the Governor Profile's 13.9M
+  (the game cuts the digits off rather than rounding); the 13,296,354 on the first Town Center screens was earlier the
+  same day. Gems 35,666, bread 1.7M. Town Center Lv 22 and its stats, kills, stamina and Governor Gear re-confirmed.
 - Governor Profile and Town Center screens of 2026-10-27 (`profile.md`): Town Center Lv 20 → **Lv 22** (both upgrades
   done; stats 735 / 1,470 / 22,064); power **13.9M** on the Governor Profile (rounded) while the Town Center screens show
   13,296,354 in the top bar (which is later is not known); kills 443,382 → 592,690; stamina 200 / 200; gems 30,166;
