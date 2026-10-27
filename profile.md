@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **13.9M** | Total empire strength as the Governor Profile shows it (rounded) on 27 Oct. The Town Center screens of the same day show 13,296,354 in the top bar; which screens were taken later is not known. Was 12,464,731 on 25 Oct | 2026-10-27 |
+| **Overall Account Power** | **13,969,554** | Total empire strength (exact figure from the city top bar, 27 Oct). The Governor Profile shows it as 13.9M: the game cuts the digits off rather than rounding. 13,296,354 on an earlier Town Center screen the same day; 12,464,731 on 25 Oct | 2026-10-27 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-10-27 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-10-27 |
 | **Total Combat Kills** | **592,690** | Total enemy unit casualties inflicted (Governor Profile "Kills"; was 443,382 on 23 Oct) | 2026-10-27 |
@@ -47,8 +47,8 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-10-27)_
-* **Stored Food (Bread):** **1.6M** (city top bar; was 96.1M on 25 Oct) _(2026-10-27)_
-* **Free Gems:** **30,166** (city top bar) _(2026-10-27)_
+* **Stored Food (Bread):** **1.7M** (city top bar; 1.6M earlier the same day, 96.1M on 25 Oct) _(2026-10-27)_
+* **Free Gems:** **35,666** (city top bar; 30,166 earlier the same day) _(2026-10-27)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
