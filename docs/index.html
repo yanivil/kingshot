@@ -1152,7 +1152,9 @@ class Dashboard extends StateHost {
       resAsOf: self.asOf(res.asOf),
       res: [resRow('Bread', res.bread), resRow('Wood', res.wood), resRow('Stone', res.stone), resRow('Iron', res.iron), resRow('Gems', res.gems)],
       ggAsOf: self.asOf(gg && gg.asOf),
-      ggText: gg ? (gg.slotsLocked != null ? gg.slotsLocked + ' of ' + (gg.slotsTotal != null ? gg.slotsTotal : '?') + ' slots locked' : 'Slots: ' + NR) : 'Governor Gear: ' + NR,
+      // slotsEquipped once Governor Gear is open ("3 / 6 Equipped"), slotsLocked before ("6 / 6 Locked").
+      ggText: gg ? (gg.slotsEquipped != null ? gg.slotsEquipped + ' of ' + (gg.slotsTotal != null ? gg.slotsTotal : '?') + ' slots equipped'
+        : (gg.slotsLocked != null ? gg.slotsLocked + ' of ' + (gg.slotsTotal != null ? gg.slotsTotal : '?') + ' slots locked' : 'Slots: ' + NR)) : 'Governor Gear: ' + NR,
       ggUnlock: ggUnlockLvl != null ? 'Unlocks at TC ' + ggUnlockLvl + (tc != null && ggUnlockLvl > tc ? ', ' + (ggUnlockLvl - tc) + ' levels away' : '') + ' (community rule, Unverified).' : 'Unlock requirement: ' + NR,
       govAsOf: self.asOf(gov.asOf),
       gov: [

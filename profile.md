@@ -12,14 +12,30 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **12,464,731** | Total empire strength (exact figure from the top bar of the world-map screen, 25 Oct; was 11,942,479 on 23 Oct) | 2026-10-25 |
-| **Kingdom / Server** | **#2508** | Home realm state | 2026-10-23 |
-| **Alliance** | **SPQ** | Primary allied faction | 2026-10-23 |
-| **Total Combat Kills** | **443,382** | Total enemy unit casualties inflicted (Governor Profile "Kills") | 2026-10-23 |
-| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-25 |
-| **Stamina** | **100 / 200** | Governor hunting and expedition energy | 2026-10-23 |
+| **Overall Account Power** | **13.9M** | Total empire strength as the Governor Profile shows it (rounded) on 27 Oct. The Town Center screens of the same day show 13,296,354 in the top bar; which screens were taken later is not known. Was 12,464,731 on 25 Oct | 2026-10-27 |
+| **Kingdom / Server** | **#2508** | Home realm state | 2026-10-27 |
+| **Alliance** | **SPQ** | Primary allied faction | 2026-10-27 |
+| **Total Combat Kills** | **592,690** | Total enemy unit casualties inflicted (Governor Profile "Kills"; was 443,382 on 23 Oct) | 2026-10-27 |
+| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-27 |
+| **Stamina** | **200 / 200** | Governor hunting and expedition energy | 2026-10-27 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
-| **Governor Gear** | **6 / 6 Locked** | Governor equipment slots pending unlock | 2026-10-23 |
+| **Governor Gear** | **3 / 6 Equipped** | 3 Uncommon pieces worn; the other 3 slots show a grey icon (see "Governor Gear" below) | 2026-10-27 |
+
+### Governor Gear
+
+Read from the Governor Profile on 2026-10-27. The slots with a grey icon (crown, chest, ring) have no piece; whether
+they are locked or just empty is not shown.
+
+| Slot icon | Item | Rarity | Power | Gear Stats | Updated |
+| :--- | :--- | :---: | :---: | :--- | :---: |
+| **Amulet** | **Charmstone** | Uncommon | 224,400 | Cavalry Attack +9.35% / Cavalry Defense +9.35% | 2026-10-27 |
+| **Legs** | **Plain Breeches** | Uncommon | 224,400 | Infantry Attack +9.35% / Infantry Defense +9.35% | 2026-10-27 |
+| **Weapon** | **Shortstaff** | Uncommon | 224,400 | Archer Attack +9.35% / Archer Defense +9.35% | 2026-10-27 |
+| **Crown** | None | — | — | Grey icon | 2026-10-27 |
+| **Chest** | None | — | — | Grey icon | 2026-10-27 |
+| **Ring** | None | — | — | Grey icon | 2026-10-27 |
+
+Slot names are read from the icons (inferred). _(2026-10-27)_
 
 ## Town Center (TC) & Settlement Status
 
@@ -27,30 +43,30 @@ The Town Center represents the administrative heart of the settlement, governing
 
 ### 1. Structure Specifications & Fortification Stats
 
-* **Current Level:** **Level 20** (upgrading to Lv 21, see below) _(2026-10-23)_
-* **Upgrade to Lv 21:** **In progress**: 3d 07:41:54 left on the 23 Oct screenshot, so it should finish around 26 Oct (inferred; the screen shows no finish time). "Finish" costs 63,759 gems _(2026-10-23)_
-* **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus) _(2026-10-23)_
-* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity) _(2026-10-23)_
-* **Stored Food (Bread):** **96.1M** (top bar of the world-map screen) _(2026-10-25)_
-* **Free Gems:** **24,421** (top bar of the world-map screen; 24,396 on the Drill Camp screen earlier the same day) _(2026-10-25)_
+* **Current Level:** **Level 22** (Town Center screen; the Governor Profile also shows Lv. 22) _(2026-10-27)_
+* **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
+* **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
+* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-10-27)_
+* **Stored Food (Bread):** **1.6M** (city top bar; was 96.1M on 25 Oct) _(2026-10-27)_
+* **Free Gems:** **30,166** (city top bar) _(2026-10-27)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
-| **Attack** | **584** | Base defensive firepower against besiegers | 2026-10-22 |
-| **Defense** | **1,168** | Structural mitigation reducing incoming siege damage | 2026-10-22 |
-| **Health** | **17,523** | Total fortification health pool guarding the keep | 2026-10-22 |
+| **Attack** | **735** | Base defensive firepower against besiegers (584 at Lv 20) | 2026-10-27 |
+| **Defense** | **1,470** | Structural mitigation reducing incoming siege damage (1,168 at Lv 20) | 2026-10-27 |
+| **Health** | **22,064** | Total fortification health pool guarding the keep (17,523 at Lv 20) | 2026-10-27 |
 
 ### 2. Town Center Perks (6 / 7 Unlocked)
 
 | Slot | Status | Perk Name (in-game) | In-Game Description | Updated |
 | :---: | :---: | :--- | :--- | :---: |
-| **Slot 1** | **Unlocked** | **Rapid Fire** | "Rapidly fire arrows to attack enemies." | 2026-10-22 |
-| **Slot 2** | **Unlocked** | **Strength** | "Enhances physique, restoring a large amount of Health every 3s." | 2026-10-22 |
-| **Slot 3** | **Unlocked** | **Slash** | "Slashes with a short sword, dealing damage and stunning nearby enemies." | 2026-10-22 |
-| **Slot 4** | **Unlocked** | **Governor Health Enhancement** | "Increases Governor Health by +300% in Rebel Invasion." | 2026-10-22 |
-| **Slot 5** | **Unlocked** | **Governor Attack Enhancement** | "Increases Governor Attack by +300% in Rebel Invasion." | 2026-10-22 |
-| **Slot 6** | **Unlocked** | **Governor Defense Enhancement** | "Increases Governor Defense by +250% in Rebel Invasion." | 2026-10-22 |
-| **Slot 7** | **Locked** | *Name not shown* | Shown with a lock icon; its name and effect were not opened | 2026-10-22 |
+| **Slot 1** | **Unlocked** | **Rapid Fire** | "Rapidly fire arrows to attack enemies." | 2026-10-27 |
+| **Slot 2** | **Unlocked** | **Strength** | "Enhances physique, restoring a large amount of Health every 3s." | 2026-10-27 |
+| **Slot 3** | **Unlocked** | **Slash** | "Slashes with a short sword, dealing damage and stunning nearby enemies." | 2026-10-27 |
+| **Slot 4** | **Unlocked** | **Governor Health Enhancement** | "Increases Governor Health by +300% in Rebel Invasion." | 2026-10-27 |
+| **Slot 5** | **Unlocked** | **Governor Attack Enhancement** | "Increases Governor Attack by +300% in Rebel Invasion." | 2026-10-27 |
+| **Slot 6** | **Unlocked** | **Governor Defense Enhancement** | "Increases Governor Defense by +300% in Rebel Invasion." (was +250% on 22 Oct) | 2026-10-27 |
+| **Slot 7** | **Locked** | *Name not shown* | Shown with a lock icon on 22 Oct; the 27 Oct screen shows only the 6 perks above, so its state now is not known | 2026-10-22 |
 
 ### 3. Research Building (Institute)
 

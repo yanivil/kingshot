@@ -45,6 +45,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Governor Profile and Town Center screens of 2026-10-27 (`profile.md`): Town Center Lv 20 → **Lv 22** (both upgrades
+  done; stats 735 / 1,470 / 22,064); power **13.9M** on the Governor Profile (rounded) while the Town Center screens show
+  13,296,354 in the top bar (which is later is not known); kills 443,382 → 592,690; stamina 200 / 200; gems 30,166;
+  bread 1.6M; citizens 32 / 32; VIP 3. Governor Gear is open: 3 / 6 equipped (Charmstone, Plain Breeches, Shortstaff,
+  Uncommon, 224,400 power and +9.35% Attack / Defense for cavalry, infantry and archers); the crown, chest and ring
+  slots are grey. Perks: the 6 shown re-confirmed; Governor Defense Enhancement is now +300% (was +250%). The Governor
+  Name and Player ID on these screens are not stored. `data/manual.json`: Governor Gear feature Active; Jabel's
+  level note says her level has not been read since the Town Center reached Lv 22 `troops.md`'s Town Center cross-check row
+  matches (Level 22).
 - Drill Camp page (`docs/index.html`): "older than the hero data" now follows the stale rule. It shows only when the
   reading trails the hero data by more than `staleAfterDays` (3) days, as the account owner asked on 25 Oct. README and
   SCHEMA updated.
@@ -423,6 +432,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   The dashboard header shows "Governor: Not recorded". The name remains in the git history.
 
 ### Fixed
+- Governor Gear (`scripts/build_data.py`, `docs/index.html`): the generator only understood "6 / 6 Locked". It now also
+  reads "3 / 6 Equipped" (`governorGear.slotsEquipped`), dates the block by its own row, and the City view shows
+  "3 of 6 slots equipped". SCHEMA documented; test added.
 - Overview tile dates (`scripts/build_data.py`, `docs/index.html`): Account power, Total kills, VIP, Stamina, Town
   Center and Gems took the newest date in `profile.md`'s section, so when power was read on 25 Oct, kills (read on 23
   Oct) also showed "as of 25 Oct". `governor`, `townCenter` and `resources` now carry `fieldAsOf` from each row's or
