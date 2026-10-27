@@ -80,31 +80,31 @@
     }
   },
   "drillCamp": {
-    "asOf": "2026-10-25",
+    "asOf": "2026-10-27",
     "instructors": [
       {
         "hero": "Jabel",
-        "level": 54
-      },
-      {
-        "hero": "Saul",
-        "level": 54
-      },
-      {
-        "hero": "Chenko",
-        "level": 54
+        "level": 64
       },
       {
         "hero": "Diana",
-        "level": 54
+        "level": 61
+      },
+      {
+        "hero": "Olive",
+        "level": 59
+      },
+      {
+        "hero": "Chenko",
+        "level": 59
       },
       {
         "hero": "Quinn",
-        "level": 54
+        "level": 64
       }
     ],
     "slotsTotal": 15,
-    "slotsOpen": 7,
+    "slotsOpen": 8,
     "slotted": [
       "Amane",
       "Helga",
@@ -112,18 +112,19 @@
       "Gordon",
       "Yeonwoo",
       "Fahd",
-      "Forrest"
+      "Forrest",
+      "Saul"
     ],
     "lockedSlots": [
       {
-        "slot": 8,
-        "requirement": "TC 21",
-        "tcLevel": 21,
-        "note": "Screen shows the Town Center icon with Lv. 21"
+        "slot": 9,
+        "requirement": "TC 23",
+        "tcLevel": 23,
+        "note": "Screen shows the Town Center icon with Lv. 23"
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 25 Oct: the 5 instructors (left to right Jabel, Chenko, Saul, Quinn, Diana) are all Lv 54, and the 7 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd and Forrest (all Lv 54); slot 8 needs Town Center Lv 21 and the other 7 are locked. The screen shows no names, so heroes are identified by portrait and class icon (Inferred), and the list matches the 22 Oct record and the hero screens of 25 Oct (Howard and Gordon: \"cannot level up a hero within a Drill Camp\")."
+    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon and Saul are confirmed by their own screens."
   },
   "recommendations": [
     {
@@ -215,7 +216,7 @@
       "priority": 2,
       "type": "Promotion",
       "what": "Promotions: 45 of the 52 Epic Redeem shards can promote Diana to 4★ now; Jabel is 19 shards from Tier 5",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana, Chenko and Gordon all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100), Howard (24 / 100) and Gordon (22 / 100) need 73, 76 and 78, too many for this stock. Rare: Seth needs 9 for Tier 5 (31 / 40, Redeem 2 Rare on 27 Oct; +18,785 base power), but he is in no combat lineup. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15, both in no lineup.",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). The 27 Oct screens of Quinn, Howard, Diana, Chenko and Gordon all show 52 Epic Redeem shards (12 on 25 Oct). That is enough for one Epic promotion: Diana needs 45 for 4★ (55 / 100 on 27 Oct) and Quinn 47 for 4★ Tier 1 (53 / 100 on 27 Oct), not both (92). Diana first: her promotion is the bigger step (+37,360 base power and +6.38% Archer Attack and Defense, against Quinn's +32,560 and +6.31%), and 4★ lifts her Lv. 4 cap on Iron Constitution (−18% → −20% stamina cost in the Be march she leads). The 7 left go to Quinn. Chenko (27 / 100), Howard (24 / 100) and Gordon (22 / 100) need 73, 76 and 78, too many for this stock. Rare: Seth needs 9 for Tier 5 (31 / 40, Redeem 2 Rare on 27 Oct; +18,785 base power), but he is in no combat lineup. Mythic: Jabel needs 19 for Tier 5 (21 / 40, Redeem 2 on 27 Oct); Helga needs 5 (0 / 5 on 22 Oct) and Saul 15 for Tier 5 (0 / 15 on 27 Oct; he went from Tier 0 to Tier 4 since 24 Oct), both in no lineup.",
       "steps": [
         "Diana → promotion screen: Redeem 45 Epic shards (55 / 100 on 27 Oct), then Ascend to 4★.",
         "Quinn → promotion screen: Redeem the Epic shards left (7) toward 4★ Tier 1 (53 / 100 on 27 Oct).",
@@ -346,8 +347,8 @@
       "steps": [
         "Epic Conquest Books (stock not read since Defenders' Edge used 50; 28 on 25 Oct; 50 needed): done: Howard · Defenders' Edge (Lv. 4 on 27 Oct). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
         "Epic Expedition Manuals (10 in stock on 27 Oct on Quinn, Howard, Diana, Chenko and Gordon; 50 needed): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
-        "Mythic Conquest Books (17 in stock on 25 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
-        "Mythic Expedition Manuals (22 in stock on 25 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Lv. 2 skills need 30 each, but Saul is in no Arena squad."
+        "Mythic Conquest Books (17 in stock on 25 Oct, not re-read since Saul's Resourceful reached Lv. 3 by 27 Oct; 50 needed): Jabel · Youthful Rage (all squads +15% → +20% Lethality; Att, Barricade 1). Saul's Positional Battler needs only 30 for the same +5%, but Saul is in no march.",
+        "Mythic Expedition Manuals (22 in stock on 25 Oct, not re-read since Saul's Final Prayer reached Lv. 3 by 27 Oct; 50 needed): Jabel · Persistence (+40% → +50% Attack Speed below 50% Health; both Arena squads). Saul's Superior Techniques (Lv. 2) needs 30, but Saul is in no Arena squad."
       ],
       "evidence": [
         "Book stock: 10 Epic Expedition Manuals on the 27 Oct skill screens of Quinn, Howard, Diana, Chenko and Gordon; 28 Epic Conquest Books on 25 Oct (not re-read since); Jabel 22 Mythic Expedition Manuals and 17 Mythic Conquest Books on 25 Oct; Howard's Defenders' Edge icon shows Lv. 4 on 27 Oct",
@@ -434,7 +435,7 @@
       "state": null,
       "hasData": true,
       "source": null,
-      "asOf": "2026-10-25",
+      "asOf": "2026-10-27",
       "note": null
     },
     {
