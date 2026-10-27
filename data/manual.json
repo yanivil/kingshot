@@ -50,6 +50,11 @@
     },
     "gen2Heroes": {
       "serverDay": 50
+    },
+    "redeemShards": {
+      "text": "The Redeem count on a hero's promotion screen is a shared stock of shards per rarity: Epic heroes share Epic Redeem shards, Mythic heroes share Mythic ones, so shards redeemed for one hero are gone for the others of that rarity. How many hero shards one Redeem shard gives is not recorded.",
+      "source": "You, 27 Oct",
+      "confidence": "Verified"
     }
   },
   "heroes": {
@@ -209,31 +214,32 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Chenko reached Tier 5. Next promotions: Helga 5 shards, Saul 15, Jabel 38",
-      "why": "Chenko reached 3★ Tier 5 between the 23 and 25 Oct uploads (+23,120 power from the promotion; 1 / 100 to 4★ now). Jabel reached Tier 4 and Howard and Gordon Tier 5 in the same days. The closest promotions now are Helga (5 to Tier 1), Saul (15 to Tier 1) and Jabel (38 to Tier 5). Helga and Saul are in no lineup; Jabel is in Att, both Arena squads and Barricade 1, so her shards matter most for combat. Next lineup hero after her: Diana, 46 to 4★ (54 / 100 on 25 Oct).",
+      "what": "Promotions with Redeem shards: 5 Mythic finish Helga's Tier 1 now; the other Mythic go to Jabel, the Epic ones to Diana",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct): 11 Mythic and 12 Epic on the 25 Oct screens, 1 Rare on 24 Oct. Helga needs 5 shards for 1★ Tier 1 (0 / 5 on 22 Oct), the only promotion the stock can finish now; she is also the swap candidate for the Be march (suggestion 3). The other 6 Mythic shards bring Jabel, who is in Att, both Arena squads and Barricade 1, from 2 / 40 to 8 / 40 toward Tier 5 (+28,900 base power, +6.45% Cavalry Attack and Defense). No Epic promotion can finish with 12; Diana is the closest Epic hero in a lineup (54 / 100 to 4★, which also lets Iron Constitution go from −18% to −20% stamina cost), so the 12 Epic shards bring her to 66 / 100. Saul (15 to Tier 1) is in no lineup, so he is not ranked.",
       "steps": [
-        "Helga: 5 shards to 1★ Tier 1.",
-        "Saul: 15 shards to 2★ Tier 1 (Redeem shows 11).",
-        "Jabel: 38 shards to 3★ Tier 5 (2 / 40 on 25 Oct; Att, both Arena squads, Barricade 1)."
+        "Helga → promotion screen: check her shard count (0 / 5 on 22 Oct), Redeem 5 Mythic shards, then Ascend to 1★ Tier 1.",
+        "Jabel → promotion screen: Redeem the remaining Mythic shards (6 if Helga took 5) toward Tier 5 (2 / 40 on 25 Oct).",
+        "Diana → promotion screen: Redeem the 12 Epic shards toward 4★ (54 / 100 on 25 Oct)."
       ],
       "evidence": [
-        "hero.md shard counts (22–24 Oct)",
-        "Quinn's promotion screen of 22 Oct: 4-Star (Tier 0), 1 / 100, Redeem 0",
-        "Saul's promotion screen of 24 Oct: 2-Star (Tier 0), 0 / 15, Redeem 11",
-        "Seth's promotion screen of 24 Oct: 3-Star (Tier 4), 0 / 40, Redeem 1",
-        "Jabel's promotion screen of 25 Oct: 3-Star (Tier 4), 2 / 40, Redeem 11",
-        "Chenko's promotion screen of 25 Oct: 3-Star (Tier 5), 1 / 100, Redeem 12"
+        "Redeem shown on the promotion screens: 11 on Jabel's (Mythic, 25 Oct); 12 on Quinn's, Howard's, Diana's and Chenko's (Epic, 25 Oct); 1 on Seth's (Rare, 24 Oct)",
+        "hero.md shard counts: Helga 0 / 5 (22 Oct), Saul 0 / 15 (24 Oct), Jabel 2 / 40 (25 Oct), Diana 54 / 100 (25 Oct)",
+        "Jabel's 25 Oct preview: +28,900 base power, +6.45% Cavalry Attack / Defense; Diana's Iron Constitution Lv. 4 needs 4★ for Lv. 5 (−20%)",
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "5–38 shards each; shard sources not recorded",
+      "cost": "Redeem shards only (11 Mythic, 12 Epic on 25 Oct)",
       "confidence": [
-        "Verified"
+        "Verified",
+        "Inferred",
+        "Unverified"
       ],
       "heroes": [
         "Helga",
-        "Saul",
-        "Jabel"
+        "Jabel",
+        "Diana",
+        "Saul"
       ],
-      "note": "Shard counts are verified; where to get shards is not recorded."
+      "note": "Verified: the Redeem counts, the shard counts and that Redeem is shared per rarity. Inferred: the order (finish a promotion now, then the lineup hero closest to his or her next promotion). Unverified: that one Redeem shard gives one hero shard, and Helga's count, last read on 22 Oct. If you would rather keep every Mythic shard for Jabel, skip the Helga step."
     },
     {
       "id": "be-swap-forrest",

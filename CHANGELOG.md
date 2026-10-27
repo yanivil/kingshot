@@ -45,6 +45,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Redeem shards (`data/manual.json`, `hero.md`): the Redeem count on a promotion screen is a shared stock of shards per
+  rarity, confirmed by the account owner on 27 Oct (`rules.redeemShards`). The promotion suggestion (priority 2) now
+  uses it: 5 of the 11 Mythic shards finish Helga's 1★ Tier 1 now, the other 6 go to Jabel (Tier 5), and the 12 Epic
+  shards go to Diana (4★); Inferred order, with the 1-to-1 conversion and Helga's 22 Oct count marked unverified.
+  SCHEMA documents the rule.
 - `profile.md` (later screens of 2026-10-27): power is **13,969,554**, the exact figure behind the Governor Profile's 13.9M
   (the game cuts the digits off rather than rounding); the 13,296,354 on the first Town Center screens was earlier the
   same day. Gems 35,666, bread 1.7M. Town Center Lv 22 and its stats, kills, stamina and Governor Gear re-confirmed.
