@@ -30,7 +30,7 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 | **Forrest** | Rare (Blue) | Infantry | Lv. 59 | 3-Star (Tier 5) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-10-27 |
 | **Olive** | Rare (Blue) | Archer | Lv. 59 | 3-Star (Tier 5) | Reserve / Economy / Drill instructor | **Food Specialist:** Mill production (+15%) & gathering speed (+15%) | 2026-10-27 |
 | **Seth** | Rare (Blue) | Infantry | Lv. 59 | 3-Star (Tier 4) | Reserve / Economy | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-10-27 |
-| **Edwin** | Rare (Blue) | Cavalry | Lv. 54 | 3-Star (Tier 3) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-10-23 |
+| **Edwin** | Rare (Blue) | Cavalry | Lv. 59 | 3-Star (Tier 3) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-10-27 |
 
 ## Heroes Not Yet Recruited
 
@@ -595,7 +595,7 @@ All 4 pieces match the native **Infantry** troop class synergy:
 * **Class & Role:** Archer Economy Specialist / Food & Bread Gathering (Bow / Hammer) _(2026-10-21)_
 * **Current Level:** **Lv. 59** (Drill Camp instructor; the Upgrade button shows 197,228 / 300,000 hero XP, the shared XP stock) _(2026-10-27)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 20 / 100 to 4-Star promotion; Redeem shows 2, Rare) _(2026-10-27)_
-* **Total Hero Power:** **403,067** (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably Lv. 54 → 59 plus Target Lock reaching Lv. 4. Seth gained +9,035 for the same levels, but whether the gain per level is the same for Olive is not known; all of this split is inferred) _(2026-10-27)_
+* **Total Hero Power:** **403,067** (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably +9,035 for Lv. 54 → 59 (Seth and Edwin each gained exactly +9,035 for those levels) plus +2,646 for Target Lock reaching Lv. 4 (Edwin gained exactly +2,646 when Shrapnel Load reached Lv. 4 on 23 Oct); the split is inferred) _(2026-10-27)_
 * **Troop Capacity Boost:** **+12,260 Troops** _(2026-10-27)_
 * **Escort Guards:** **8 Escorts** _(2026-10-27)_
 * **Total Equipped Gear Power:** **91,650** (unchanged) _(2026-10-27)_
@@ -671,7 +671,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Class & Role:** Infantry Economy Specialist / Wood Gathering (Shield / Hammer) _(2026-10-21)_
 * **Current Level:** **Lv. 59** (Drill Camp level: the game says "You cannot level up a hero within a Drill Camp") _(2026-10-27)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 3 / 100 to 4-Star promotion; Redeem shows 2, Rare) _(2026-10-27)_
-* **Total Hero Power:** **401,539** (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably Lv. 54 → 59 plus Master Woodcutter reaching Lv. 4, which is inferred. Olive shows the same +30,466 with the same changes: Tier 5, Lv. 59 and one skill to Lv. 4) _(2026-10-27)_
+* **Total Hero Power:** **401,539** (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably +9,035 for Lv. 54 → 59 (Seth and Edwin each gained exactly +9,035 for those levels) plus +2,646 for Master Woodcutter reaching Lv. 4 (Edwin gained exactly +2,646 when Shrapnel Load reached Lv. 4 on 23 Oct); the split is inferred. Olive shows the same +30,466 with the same changes: Tier 5, Lv. 59 and one skill to Lv. 4) _(2026-10-27)_
 * **Troop Capacity Boost:** **+12,260 Troops** _(2026-10-27)_
 * **Escort Guards:** **8 Escorts** _(2026-10-27)_
 * **Total Equipped Gear Power:** **84,830** (unchanged) _(2026-10-27)_
@@ -742,46 +742,46 @@ All 4 pieces match the native **Infantry** troop class synergy:
 
 ## In-Depth Hero Profile: Edwin
 
-* **Hero Name:** Edwin _(2026-10-23)_
+* **Hero Name:** Edwin _(2026-10-27)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-23)_
 * **Class & Role:** Cavalry Economy Specialist / Stone Gathering & Quarrying (Horse / Hammer) _(2026-10-23)_
-* **Current Level:** **Lv. 54** (level cap reached — next level requires **Town Center Lv. 21**) _(2026-10-23)_
-* **Star Tier:** **3-Star (Tier 3)** (Shards: 5 / 40 to next promotion; Redeem shows 1) _(2026-10-23)_
-* **Total Hero Power:** **345,017** (+2,646 after Shrapnel Load reached Lv. 4; stats and gear unchanged) _(2026-10-23)_
-* **Troop Capacity Boost:** **+11,525 Troops** _(2026-10-23)_
-* **Escort Guards:** **8 Escorts** _(2026-10-23)_
-* **Total Equipped Gear Power:** **79,360** _(2026-10-23)_
+* **Current Level:** **Lv. 59** (not in a drill slot: the Upgrade button shows 197,228 / 300,000 hero XP, the shared XP stock) _(2026-10-27)_
+* **Star Tier:** **3-Star (Tier 3)** (Shards: 39 / 40 to next promotion; Redeem shows 2, Rare) _(2026-10-27)_
+* **Total Hero Power:** **354,052** (+9,035 since 23 Oct with gear, skill levels and the promotion preview unchanged, so presumably Lv. 54 → 59, which is inferred; Seth gained the same +9,035 for the same levels. On 23 Oct: +2,646 after Shrapnel Load reached Lv. 4, stats and gear unchanged) _(2026-10-27)_
+* **Troop Capacity Boost:** **+12,260 Troops** _(2026-10-27)_
+* **Escort Guards:** **8 Escorts** _(2026-10-27)_
+* **Total Equipped Gear Power:** **79,360** (unchanged) _(2026-10-27)_
 
 ### 1. Overall Combat & Gathering Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical & Economic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **958** | Demolition explosives damage scaling | 2026-10-23 |
-| | **Hero Defense** | **1,386** | Armor and survivability rating | 2026-10-23 |
-| | **Hero Health** | **9,540** | Bruiser health pool | 2026-10-23 |
-| **Conquest (Escort)** | **Escort Attack** | **318** | Attack output of his 8 bodyguard escorts | 2026-10-23 |
-| | **Escort Defense** | **462** | Defense rating of his escort guards | 2026-10-23 |
-| | **Escort Health** | **3,180** | Health pool of escort guards | 2026-10-23 |
-| **Expedition (March)** | **Cavalry Attack** | **+51.41%** | Army-wide bonus to deployed Cavalry | 2026-10-23 |
-| | **Cavalry Defense** | **+51.41%** | Durability bonus for cavalry units | 2026-10-23 |
-| | **Cavalry Lethality**| **+15.22%** | Casualty conversion rate for cavalry (from gear) | 2026-10-23 |
-| | **Cavalry Health** | **+14.10%** | Durability pool for deployed cavalry squads (from gear) | 2026-10-23 |
+| **Conquest (Hero)** | **Hero Attack** | **977** | Demolition explosives damage scaling | 2026-10-27 |
+| | **Hero Defense** | **1,416** | Armor and survivability rating | 2026-10-27 |
+| | **Hero Health** | **9,735** | Bruiser health pool | 2026-10-27 |
+| **Conquest (Escort)** | **Escort Attack** | **324** | Attack output of his 8 bodyguard escorts | 2026-10-27 |
+| | **Escort Defense** | **472** | Defense rating of his escort guards | 2026-10-27 |
+| | **Escort Health** | **3,245** | Health pool of escort guards | 2026-10-27 |
+| **Expedition (March)** | **Cavalry Attack** | **+51.41%** | Army-wide bonus to deployed Cavalry | 2026-10-27 |
+| | **Cavalry Defense** | **+51.41%** | Durability bonus for cavalry units | 2026-10-27 |
+| | **Cavalry Lethality**| **+15.22%** | Casualty conversion rate for cavalry (from gear) | 2026-10-27 |
+| | **Cavalry Health** | **+14.10%** | Durability pool for deployed cavalry squads (from gear) | 2026-10-27 |
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 3 ➔ Tier 4)
 
-Current Status: **5 / 40 Shards** (needs **35 more shards** for Tier 4; Redeem shows 1). _(2026-10-23)_
+Current Status: **39 / 40 Shards** (needs **1 more shard** for Tier 4; Redeem shows 2, Rare; the preview is unchanged on 27 Oct). _(2026-10-27)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 181,350 | **+17,940** | 199,290 | 2026-10-23 |
-| **Hero Attack** | 585 | **+39** | 624 | 2026-10-23 |
-| **Hero Defense** | 900 | **+60** | 960 | 2026-10-23 |
-| **Hero Health** | 5,850 | **+390** | 6,240 | 2026-10-23 |
-| **Escort Attack** | 195 | **+13** | 208 | 2026-10-23 |
-| **Escort Defense** | 300 | **+20** | 320 | 2026-10-23 |
-| **Escort Health** | 1,950 | **+130** | 2,080 | 2026-10-23 |
-| **Cavalry Attack** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-23 |
-| **Cavalry Defense** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-23 |
+| **Base Hero Power** | 181,350 | **+17,940** | 199,290 | 2026-10-27 |
+| **Hero Attack** | 585 | **+39** | 624 | 2026-10-27 |
+| **Hero Defense** | 900 | **+60** | 960 | 2026-10-27 |
+| **Hero Health** | 5,850 | **+390** | 6,240 | 2026-10-27 |
+| **Escort Attack** | 195 | **+13** | 208 | 2026-10-27 |
+| **Escort Defense** | 300 | **+20** | 320 | 2026-10-27 |
+| **Escort Health** | 1,950 | **+130** | 2,080 | 2026-10-27 |
+| **Cavalry Attack** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-27 |
+| **Cavalry Defense** | +51.41% | **+2.90%** | **+54.31%** | 2026-10-27 |
 
 ### 3. Equipped Hero Gear
 
@@ -789,24 +789,24 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+11** | 20,500 | ATK: +73 / HP: +366 | ATK: +24 / HP: +122 | +7.54% Cavalry Lethality | 2026-10-23 |
-| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +390 | DEF: +26 / HP: +130 | +8.10% Cavalry Health | 2026-10-23 |
-| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-23 |
-| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality | 2026-10-23 |
+| **Helmet** | **Brigader's Armet** | Cavalry | **Rare** | **+11** | 20,500 | ATK: +73 / HP: +366 | ATK: +24 / HP: +122 | +7.54% Cavalry Lethality | 2026-10-27 |
+| **Gauntlets**| **Brigader's Gauntlets** | Cavalry | **Rare** | **+15** | 22,800 | DEF: +78 / HP: +390 | DEF: +26 / HP: +130 | +8.10% Cavalry Health | 2026-10-27 |
+| **Armor** | **Brigader's Breastplate** | Cavalry | **Rare** | **Base (+0)** | 15,000 | DEF: +60 / HP: +300 | DEF: +20 / HP: +100 | +6.00% Cavalry Health | 2026-10-27 |
+| **Boots** | **Brigader's Battle Boots**| Cavalry | **Rare** | **+12** | 21,060 | ATK: +74 / HP: +372 | ATK: +24 / HP: +124 | +7.68% Cavalry Lethality | 2026-10-27 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Cavalry Lethality:** **+15.22%** (+7.54% Armet + 7.68% Boots) _(2026-10-23)_
-  * **Cavalry Health:** **+14.10%** (+8.10% Gauntlets + 6.00% Breastplate) _(2026-10-23)_
+  * **Cavalry Lethality:** **+15.22%** (+7.54% Armet + 7.68% Boots) _(2026-10-27)_
+  * **Cavalry Health:** **+14.10%** (+8.10% Gauntlets + 6.00% Breastplate) _(2026-10-27)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +147 Attack | +138 Defense | +1,428 Health _(2026-10-23)_
-  * **Escort Squad Attributes:** +48 Attack | +46 Defense | +476 Health _(2026-10-23)_
+  * **Hero Attributes:** +147 Attack | +138 Defense | +1,428 Health _(2026-10-27)_
+  * **Escort Squad Attributes:** +48 Attack | +46 Defense | +476 Health _(2026-10-27)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Shrapnel Load** | Active (Top) | **Lv. 4** | Throws homemade explosive, dealing **Attack * 182% AoE damage** to target and nearby enemies. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 196% AoE) | 2026-10-23 |
+| **Shrapnel Load** | Active (Top) | **Lv. 4** | Throws homemade explosive, dealing **Attack * 182% AoE damage** to target and nearby enemies. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 196% AoE; the screen says "To upgrade: ascend to 4-Star") | 2026-10-27 |
 | **Detonate** | Passive (Bot) | **Lv. 4** | Explosives have a **20% chance of stunning targets for 1s**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 20% / 1.5s stun) | 2026-10-23 |
 
 ### 5. Expedition & Economy Skills (Town Development & Wilderness Gathering)

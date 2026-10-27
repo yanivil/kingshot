@@ -45,6 +45,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Edwin (2026-10-27): Lv 59 (not in a drill slot), 12,260 troop capacity. Power 345,017 → 354,052 (+9,035) with gear
+  (79,360), skills and preview unchanged, so presumably the levels (inferred; the same +9,035 as Seth). Stats 977 / 1,416 /
+  9,735, escort 324 / 472 / 3,245. Shards 5 → **39 / 40** to Tier 4, Rare Redeem 2. Olive's and Forrest's unexplained +11,681
+  now reads as +9,035 for the levels (Seth, Edwin) plus +2,646 for a skill reaching Lv 4 (Edwin's Shrapnel Load on 23 Oct);
+  still inferred. `data/manual.json`: the promotion suggestion now says 1 of the 2 Rare Redeem shards promotes Edwin to Tier 4
+  (+17,940 base power), the other goes to Seth.
 - `hero.md`, Forrest (2026-10-27): Lv 59 (Drill Camp level), **Tier 4 → Tier 5** (+18,785, exactly the 22 Oct preview), power
   371,073 → 401,539 with gear unchanged (84,830); the other +11,681 is presumably levels plus Master Woodcutter reaching Lv 4
   (inferred; Olive shows the same +30,466 for the same changes). Stats 809 / 1,548 / 15,871, escort 268 / 515 / 5,290,
