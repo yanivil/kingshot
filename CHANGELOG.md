@@ -45,6 +45,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Drill Camp screen of 2026-10-27 (`data/manual.json`): instructors now Lv 64 / 61 / 59 / 59 / 64, so slotted heroes run at
+  **Lv 59**. Instructors: Jabel 64, Diana 61, **Olive** 59, Chenko 59, Quinn 64. **Saul left the instructors and fills the
+  new slot 8**: his own screen says he cannot be levelled within a Drill Camp. Olive's own screen (green hood, Lv 59) matches
+  the fifth instructor. 8 of 15 slots are open and filled; slot 9 needs Town Center 23. The Drill Camp feature date is 27 Oct.
+- `hero.md`, Saul (2026-10-27): Lv 59 (drill slot), **2-Star Tier 0 → Tier 4** (base power 99,800 → 158,900), Bracers
+  +14 → +20 and Leatherwear +15 → +18 (gear 110,280), power 326,215 → 412,880 (+59,100 tiers, +7,365 gear, +20,200 presumably
+  levels plus Final Prayer and Resourceful reaching Lv 3; inferred). Stats 1,372 / 1,179 / 8,662, escort 457 / 393 / 2,887,
+  Archer Attack / Defense 82.02%, Health 21.72%. Shards 0 / 15 to Tier 5, Mythic Redeem 2. New Tier 4 → 5 preview.
+- `hero.md`, Olive (2026-10-27): Lv 59 (Drill Camp instructor), **Tier 4 → Tier 5** (+18,785, exactly the 22 Oct preview),
+  power 372,601 → 403,067 with gear unchanged; the other +11,681 is presumably levels plus Target Lock reaching Lv 4
+  (inferred). Stats 1,328 / 1,536 / 8,028, escort 442 / 512 / 2,675, Archer Attack / Defense 57.22%. Shards 20 / 100 to 4★,
+  Rare Redeem 2. New Tier 5 → 4★ preview.
+- `data/manual.json` suggestions: Saul's promotion count (0 / 15 to Tier 5) and the Mythic book stock notes (not re-read since
+  Saul's Final Prayer and Resourceful reached Lv 3).
 - `hero.md`, Seth (2026-10-27): Lv 54 → **Lv 59** (not in a drill slot: the Upgrade button shows the shared hero XP), 12,260
   troop capacity. Power 429,334 → 438,369 (+9,035) with all four Praetorian's pieces (140,445), skills and preview
   unchanged, so presumably the levels (inferred). Stats 845 / 1,577 / 16,608, escort 280 / 525 / 5,535. Shards 0 → **31 / 40**
