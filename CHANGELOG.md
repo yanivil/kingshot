@@ -58,6 +58,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: the long-term hero suggestion records that the account has no Zoe, Hilde or Marlin (told by the account owner on
+  28 Oct; kingdom age unknown), so Generation 2 has presumably not arrived (inferred); its last step now says to watch the Hero
+  Roulette and Hall of Heroes events instead of asking for the kingdom age.
 - `hero.md`, Saul (later on 2026-10-27): Superior Techniques Lv 2 → **Lv 3** (+20% Attack Speed; capped until 3★, "To upgrade:
   ascend to 3-Star"). Power 412,880 → 416,030 (+3,150) with stats, gear and preview unchanged, so presumably that skill (inferred).
   `data/manual.json`: the skill-book suggestion no longer lists Saul's Lv. 2 skills.
