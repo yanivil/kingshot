@@ -382,23 +382,25 @@
       "priority": 6,
       "type": "Heroes",
       "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
-      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she is 19 shards from Tier 5. Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive.",
+      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she is 19 shards from Tier 5. Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive. You have none of the Generation 2 heroes yet (28 Oct), which suggests they have not reached your kingdom, though it is also possible they are out but not yet earned (inferred).",
       "steps": [
         "Mythic shards: Jabel to Tier 5 (21 / 40, needs 19) before Helga (0 / 5) or Saul (0 / 15).",
         "Mythic books: Jabel's Youthful Rage and Persistence (see the skill-book suggestion), not Saul's.",
         "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
         "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
-        "Tell us your kingdom's age in days (or whether Zoe, Hilde or Marlin have appeared) so the Generation 2 timing can be checked."
+        "Generation 2: you have no Zoe, Hilde or Marlin yet (28 Oct), so Generation 1 heroes are still your best options; check the Hero Roulette and Hall of Heroes events for them, and when one appears, ask for an updated plan."
       ],
       "evidence": [
         "hero.md promotion screens of 27 Oct: Jabel 21 / 40 to Tier 5; Helga 0 / 5; Saul 0 / 15; Amadeus 0 / 20 to recruit (22 Oct)",
         "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
         "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
-        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120"
+        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120",
+        "No Zoe, Hilde or Marlin in your hero list, told by you on 28 Oct (kingdom age unknown)"
       ],
       "cost": "Shards and books only",
       "confidence": [
         "Verified",
+        "Inferred",
         "Unverified"
       ],
       "heroes": [
@@ -411,7 +413,7 @@
         "Helga",
         "Saul"
       ],
-      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar."
+      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar. Inferred: Generation 2 has not reached your kingdom yet."
     },
     {
       "id": "be-swap-forrest",
