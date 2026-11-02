@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `codes.md`: two new gift codes in Active Codes, not redeemed yet: `TREAT4U` (Halloween; trackers give an expiry of 4 or 5 Nov)
+  and `KS1102` (listed only by kingshot.net). Taken from community trackers on 2 Nov and not yet tried in the game, so unverified.
 - `codes.md`: two new gift codes in Active Codes, both not redeemed yet: `KS1025` (listed from 25 Oct) and `OFFICIALSTORE1023`
   (listed from 23 Oct). Taken from community trackers (kingshotmastery.com, kingshot.net, kingshotguide.org, kingshotwiki.com) on
   27 Oct and not yet tried in the game, so their rewards and status are unverified.
