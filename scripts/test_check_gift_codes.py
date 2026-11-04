@@ -68,6 +68,20 @@ class KnownCodesTests(unittest.TestCase):
         self.assertEqual(gc.load_known_codes(md), {"vip777", "ks1017"})
 
 
+class BaselineTests(unittest.TestCase):
+    """The baseline of old codes."""
+
+    def test_comments_and_blanks_are_skipped(self) -> None:
+        """Only code lines count, case-folded."""
+        self.assertEqual(gc.load_baseline("# note\n\nXMAS2024\n  KS0803  \n"), {"xmas2024", "ks0803"})
+
+    def test_repo_baseline_loads(self) -> None:
+        """The committed baseline has codes and does not hold KS1104 (recorded in codes.md instead)."""
+        base = gc.load_baseline((ROOT / "data" / "gift_codes_baseline.txt").read_text(encoding="utf-8"))
+        self.assertIn("xmas2024", base)
+        self.assertNotIn("ks1104", base)
+
+
 class FindNewTests(unittest.TestCase):
     """Combining pages into new codes."""
 

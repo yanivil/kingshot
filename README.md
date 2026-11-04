@@ -134,17 +134,19 @@ then open `build/index.html`. `build/` is git-ignored.
 Every two days (11:23 UTC on odd days of the month; GitHub may start it a little late),
 `.github/workflows/check-gift-codes.yml` runs `scripts/check_gift_codes.py` (standard library only):
 
-1. It reads the codes already in `codes.md`, active and expired.
+1. It reads the codes already in `codes.md`, active and expired, and in `data/gift_codes_baseline.txt`:
+   old codes that trackers still list but that were never recorded (142 found on the first run, 4 Nov 2026).
 2. It downloads a few community tracker pages (listed in `SOURCES` in the script) and picks out
    code-shaped words from the places those pages put codes (`<code>`, bold text, table cells, copy buttons,
    JSON `"code"` keys).
-3. It drops codes already in `codes.md` or named in an earlier `gift-codes` issue.
+3. It drops codes already in `codes.md`, in the baseline, or named in an earlier `gift-codes` issue.
 4. If anything is left, it opens **one issue** labelled `gift-codes` that mentions the repo owner (so GitHub
    sends a notification), split into codes seen on two or more trackers and on one tracker only.
 
 It never commits: the codes are unverified until tried in the game, so `codes.md` still changes only through
 a PR. The run summary on the Actions page lists every tracker, whether it downloaded, and how many recorded
-codes it showed; a tracker showing 0 has probably changed its page and needs its entry fixed. The run fails
+codes it showed (from `codes.md` or the baseline); a tracker showing 0 has probably changed its page and needs
+its entry fixed. To stop the check reporting a code that is old or not a real code, add it to the baseline file. The run fails
 only when every tracker fails to download. To run it by hand: **Actions → Check for new gift codes →
 Run workflow** (tick "dry run" to see the report without opening an issue).
 

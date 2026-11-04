@@ -2,7 +2,8 @@
 #
 # Why GitHub Actions: it runs on GitHub's own schedule, with nothing to keep
 # running elsewhere. The script (scripts/check_gift_codes.py) reads a few
-# community tracker pages, drops codes already in codes.md or already reported,
+# community tracker pages, drops codes already in codes.md, in
+# data/gift_codes_baseline.txt (old codes trackers still list) or already reported,
 # and opens one issue labelled "gift-codes" that mentions the repo owner, so
 # GitHub sends a notification.
 #
@@ -52,5 +53,6 @@ jobs:
         run: >
           python3 scripts/check_gift_codes.py
           --codes codes.md
+          --baseline data/gift_codes_baseline.txt
           --github-repo "$REPO"
           --notify "$OWNER"
