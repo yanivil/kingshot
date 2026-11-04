@@ -1,0 +1,56 @@
+# Look for new Kingshot gift codes every two days and open an issue when there are any.
+#
+# Why GitHub Actions: it runs on GitHub's own schedule, with nothing to keep
+# running elsewhere. The script (scripts/check_gift_codes.py) reads a few
+# community tracker pages, drops codes already in codes.md or already reported,
+# and opens one issue labelled "gift-codes" that mentions the repo owner, so
+# GitHub sends a notification.
+#
+# Why an issue, not a commit: the codes come from third-party pages and are
+# unverified until tried in the game; codes.md only changes through PRs.
+#
+# Manual run: Actions tab -> "Check for new gift codes" -> Run workflow
+# (tick "dry run" to see the report without opening an issue).
+
+name: Check for new gift codes
+
+on:
+  schedule:
+    - cron: "23 11 */2 * *"   # 11:23 UTC on odd days of the month (GitHub may start it late)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Report only; do not open an issue"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read   # read codes.md; cannot commit
+  issues: write    # open the gift-codes issue and create its label
+
+concurrency:
+  group: gift-codes
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Test the checker
+        run: python3 -m unittest discover -s scripts -p "test_check_gift_codes.py"
+
+      - name: Look for new codes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+        run: >
+          python3 scripts/check_gift_codes.py
+          --codes codes.md
+          --github-repo "$REPO"
+          --notify "$OWNER"

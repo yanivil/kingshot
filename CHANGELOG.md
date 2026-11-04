@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- New gift-code check that runs on GitHub itself: `.github/workflows/check-gift-codes.yml` runs
+  `scripts/check_gift_codes.py` every two days (and by hand from the Actions tab, with a dry-run option). It reads
+  community tracker pages, drops codes already in `codes.md` or already reported, and opens one `gift-codes` issue
+  mentioning the owner when new codes appear. It never commits. Tests in `scripts/test_check_gift_codes.py` (no
+  network). README section "New gift-code check" added. It replaces the Claude scheduled task set up on 4 Nov.
 - `codes.md`: two new gift codes in Active Codes, not redeemed yet: `TREAT4U` (Halloween; trackers give an expiry of 4 or 5 Nov)
   and `KS1102` (listed only by kingshot.net). Taken from community trackers on 2 Nov and not yet tried in the game, so unverified.
 - `codes.md`: two new gift codes in Active Codes, both not redeemed yet: `KS1025` (listed from 25 Oct) and `OFFICIALSTORE1023`
