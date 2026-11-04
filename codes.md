@@ -18,6 +18,8 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 | [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-22 |
 | [x] | `KS1025` | Not recorded (rewards not shown to us) | Listed as active by kingshotmastery.com (added 25 Oct), kingshot.net and kingshotguide.org (first seen 26 Oct); redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
 | [x] | `OFFICIALSTORE1023` | Not recorded (rewards not shown to us) | Official Web Store drop, listed as active by kingshotmastery.com (added 23 Oct), kingshot.net and kingshotwiki.com; redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
+| [ ] | `TREAT4U` | Not recorded | New (Halloween drop): listed as active by kingshot.net, kingshotoptimizer.com, kingshotguide.org and others on 2 Nov; expires 4 Nov 23:59 UTC by one tracker, 5 Nov by kingshot.net; not yet tried in the game, so unverified | 2026-11-02 |
+| [ ] | `KS1102` | Not recorded | New: listed as active only by kingshot.net (2 Nov); not yet tried in the game, so unverified; no expiry listed | 2026-11-02 |
 
 ## How to Redeem Codes
 
