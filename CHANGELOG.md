@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `data/gift_codes_baseline.txt`: 142 old codes the six trackers still list but that were never in `codes.md`, found by
+  the first (dry) run of the gift-code check on 4 Nov. The check now ignores them, so it reports only codes that appear
+  later. `scripts/check_gift_codes.py` gains `--baseline` (the workflow passes it) and two tests. README updated.
+- `codes.md`: `KS1104` in Active Codes (not redeemed, unverified), found by that run on kingshot.net and kingshotmastery.com.
 - New gift-code check that runs on GitHub itself: `.github/workflows/check-gift-codes.yml` runs
   `scripts/check_gift_codes.py` every two days (and by hand from the Actions tab, with a dry-run option). It reads
   community tracker pages, drops codes already in `codes.md` or already reported, and opens one `gift-codes` issue

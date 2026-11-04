@@ -4,12 +4,13 @@
 Run by ``.github/workflows/check-gift-codes.yml`` every two days on GitHub's
 runners (standard library only, no installs). It:
 
-1. reads the codes already recorded in ``codes.md`` (active and expired);
+1. reads the codes already recorded in ``codes.md`` (active and expired) and
+   in ``data/gift_codes_baseline.txt`` (old codes trackers still list);
 2. downloads a handful of community tracker pages;
 3. picks out code-shaped words from the places those pages usually put codes
    (``<code>``, ``<strong>``, table cells, copy buttons, JSON ``"code"`` keys);
-4. drops anything already in ``codes.md`` or already reported in an earlier
-   ``gift-codes`` issue;
+4. drops anything already in ``codes.md``, in the baseline, or already reported
+   in an earlier ``gift-codes`` issue;
 5. opens one GitHub issue listing what is left, split into codes seen on two or
    more trackers (likely) and on one tracker only (less certain).
 
@@ -110,6 +111,22 @@ def load_known_codes(codes_md: str) -> Set[str]:
         active and expired alike (an expired code is not news either).
     """
     return {m.group(1).strip().casefold() for m in KNOWN_CODE_RE.finditer(codes_md)}
+
+
+def load_baseline(text: str) -> Set[str]:
+    """Return the case-folded codes in the baseline file.
+
+    Why: trackers keep listing old codes that were never recorded in
+    ``codes.md``; the baseline keeps the check from reporting them.
+
+    Args:
+        text: The file's text: one code per line, ``#`` lines are comments.
+
+    Returns:
+        Case-folded codes.
+    """
+    return {line.strip().casefold() for line in text.splitlines()
+            if line.strip() and not line.lstrip().startswith("#")}
 
 
 def looks_like_code(token: str) -> bool:
@@ -237,7 +254,7 @@ def build_report(
     Args:
         new: New code → tracker names (from ``find_new_codes``).
         status: Tracker name → "ok" or the download error.
-        known_seen: Tracker name → recorded codes it showed.
+        known_seen: Tracker name → recorded codes (codes.md or baseline) it showed.
         today: Date of the run (YYYY-MM-DD).
         notify: GitHub login to mention so the owner gets a notification.
 
@@ -262,11 +279,12 @@ def build_report(
     lines += ["", "### Trackers checked", "", "| Tracker | Download | Recorded codes seen |", "| --- | --- | :---: |"]
     for source in SOURCES:
         lines.append(f"| {source} | {status.get(source, 'not tried')} | {known_seen.get(source, '—')} |")
-    lines += ["", "A tracker that downloads but shows 0 recorded codes has probably changed its page; "
-              "codes it lists may be missed."]
+    lines += ["", "Recorded codes are those in `codes.md` or `data/gift_codes_baseline.txt`. A tracker that downloads "
+              "but shows 0 of them has probably changed its page; codes it lists may be missed."]
     if new:
         lines += ["", "Next step: try the codes in the game, then tell Claude which ones worked so `codes.md` is updated "
-                  "through a pull request. Close this issue when done."]
+                  "through a pull request. Codes that are old or not real can go into `data/gift_codes_baseline.txt`. "
+                  "Close this issue when done."]
     return "\n".join(lines) + "\n"
 
 
@@ -340,11 +358,17 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     """Run the check; see the module docstring for arguments and exit status."""
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--codes", default="codes.md", help="path to codes.md")
+    ap.add_argument("--baseline", default="data/gift_codes_baseline.txt",
+                    help="codes not to report (one per line); skipped if the file is missing")
     ap.add_argument("--github-repo", help="owner/name; open an issue there when new codes are found")
     ap.add_argument("--notify", help="GitHub login to mention in the issue")
     args = ap.parse_args(list(argv) if argv is not None else None)
 
     known = load_known_codes(Path(args.codes).read_text(encoding="utf-8"))
+    baseline_path = Path(args.baseline)
+    # Edge case: a missing baseline is not an error; the check then reports old codes too.
+    if baseline_path.is_file():
+        known |= load_baseline(baseline_path.read_text(encoding="utf-8"))
     token = os.environ.get("GITHUB_TOKEN", "")
     dry_run = os.environ.get("DRY_RUN", "").lower() == "true"
 
