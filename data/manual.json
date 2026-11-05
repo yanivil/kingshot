@@ -206,7 +206,7 @@
       "priority": 2,
       "type": "Promotion",
       "what": "Promotions: redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Rare: Olive is closest to 4★ (needs 24)",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Amane's 3★ also needs 20 (20 / 40): +21,920 base power, +5.80% Archer Attack and Defense, and it lifts her Lv. 3 caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed). The 24 shards cover only one of the two; Diana stays first because she leads the Be march and is in both Arena squads, while Amane is in no line-up (inferred). Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd reached 3★ by 5 Nov and needs 23 for Tier 1 (17 / 40; +18,880 and +4.51%), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 5 Nov) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a line-up (the Be march). Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Amane's 3★ also needs 20 (20 / 40): +21,920 base power, +5.80% Archer Attack and Defense, and it lifts her Lv. 3 caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed). The 24 shards cover only one of the two; Diana stays first because she leads the Be march and is in both Arena squads, while Amane is in no combat line-up, only the Gat gathering preset (inferred). Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd reached 3★ by 5 Nov and needs 23 for Tier 1 (17 / 40; +18,880 and +4.51%), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 5 Nov) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a combat preset (the Be march), and Seth and Edwin are in the Gat gathering preset. Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
       "steps": [
         "Diana → promotion screen: Redeem 20 Epic shards (80 / 100, 24 in stock on 5 Nov), then Ascend to 4★ Tier 2.",
         "Alternative: redeem those 20 for Amane's 3★ instead (20 / 40 on 5 Nov) if joining rallies or the infirmary matters more to you than Diana's march and Arena stats.",
@@ -308,7 +308,7 @@
       "priority": 4,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she leads no march today (24 Oct presets). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
+      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
@@ -322,14 +322,14 @@
         }
       ],
       "steps": [
-        "Deploy → the empty preset: Chenko first (lead), Helga and Yeonwoo in the other two places; name it Join.",
+        "Deploy → a free preset (4, 5 or 6): Chenko first (lead), Helga and Yeonwoo in the other two places; name it Join.",
         "When you join a rally (Terror, Bear), send Join; keep Att for rallies you lead.",
         "Done by 5 Nov: Chenko's Stand of Arms reached Lv. 4 (+15% → +20% Lethality)."
       ],
       "evidence": [
         "hero.md expedition skills: Chenko Stand of Arms Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Yeonwoo On Guard Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★ (20 / 40 shards on 5 Nov)",
-        "troops.md: March Queue 4/4; Terror (Alpha Black Panther) is rally-only",
-        "lineups.md presets of 24 Oct: Chenko, Helga and Yeonwoo lead or join no preset",
+        "troops.md: March Queue 4/4 (5 Nov); Terror (Alpha Black Panther) is rally-only (25 Oct)",
+        "troops.md presets of 5 Nov: Be (Diana, Gordon, Forrest), Att (Howard, Jabel, Quinn), Gat (Seth, Edwin, Amane); Chenko, Helga and Yeonwoo are in none of them (presets 4 to 6 not opened)",
         "Community guides (kingshotguide.org rally guide, kingshotoptimizer.com Bear Hunt guide, topuplist.com tier list): a joiner adds only its lead hero's first expedition skill; Chenko, Amane and Yeonwoo are named as top joiners"
       ],
       "cost": "None (a preset)",
@@ -354,7 +354,7 @@
       "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard's Defenders' Edge reached Lv. 4 by 27 Oct and his Weaken by 5 Nov, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard's Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75); Joint Defense is still next, because it raises Defense for all heroes from 10% to 12.5% and Howard is in the front of both Arena squads. Mythic: Jabel's Persistence and Youthful Rage reached Lv. 4 by 5 Nov and presumably wait for her 4★ (inferred), so there is no Mythic target until Jabel's 4★. Amane's three exploration skills went Lv. 2 → 3 by 5 Nov (30 books each) and now wait for her 3★. Chenko's Stand of Arms (her rally-joiner skill) also reached Lv. 4 by 5 Nov: see the rally suggestion.",
       "steps": [
         "Epic Conquest Books (stock not read since Weaken, Stand of Arms and On Guard used 50 each; 50 needed): done: Howard · Defenders' Edge (Lv. 4 by 27 Oct) and Weaken (Lv. 4 by 5 Nov); Chenko · Stand of Arms and Yeonwoo · On Guard (Lv. 4 by 5 Nov). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
-        "Epic Expedition Manuals (29 in stock on 5 Nov on Howard, Diana, Quinn and Chenko; 50 needed for Lv. 3 → 4): done: Howard · Shielded Strike (Lv. 4 by 5 Nov). 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
+        "Epic Expedition Manuals (29 in stock on 5 Nov on every Epic skill screen; 50 needed for Lv. 3 → 4): done: Howard · Shielded Strike (Lv. 4 by 5 Nov). 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
         "Mythic Conquest Books and Expedition Manuals (stock not re-read): done: Jabel · Youthful Rage and Persistence (Lv. 4 by 5 Nov); Saul · Positional Battler (Lv. 3 by 5 Nov). Both of Jabel's presumably need her 4★ for Lv. 5, and all of Saul's skills are Lv. 3 and presumably need his 3★ for Lv. 4 (Rapid Fire and Superior Techniques say so; the rest is inferred)."
       ],
       "evidence": [
@@ -363,7 +363,7 @@
         "Amane's skill screen of 5 Nov: all five skill icons show Lv. 3; Sakura Blossom says \"ascend to 3-Star\"",
         "Yeonwoo's skill screen of 5 Nov: On Guard icon shows Lv. 4; Petalbloom 29 / 50",
         "Saul's skill screen of 5 Nov: all six skill icons show Lv. 3 (Positional Battler was Lv. 2); Rapid Fire says \"ascend to 3-Star\"",
-        "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn and Chenko (29 / 50 each)",
+        "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn, Chenko, Gordon, Yeonwoo and Fahd (29 / 50 each)",
         "Jabel's skill screen of 5 Nov: Persistence and Youthful Rage icons show Lv. 4; Gallant Throw says \"ascend to 4-Star\"",
         "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
         "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
@@ -432,7 +432,7 @@
       "priority": 7,
       "type": "Marches",
       "what": "Test a combat hero instead of Forrest in the Be (beast) march",
-      "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (259,615 vs Forrest's 371,073), so test it before keeping it.",
+      "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (306,455 vs Forrest's 438,984 on 5 Nov), so test it before keeping it.",
       "changes": [
         {
           "where": "Be march",
@@ -455,8 +455,8 @@
         "Keep whichever loses fewer troops."
       ],
       "evidence": [
-        "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
-        "troops.md Be preset of 24 Oct: Diana (lead), Gordon, Forrest; 21,269 / 22,866 / 35,140",
+        "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2, both capped until her 2★; 5 Nov), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
+        "troops.md Be preset of 5 Nov: Diana (lead), Gordon, Forrest; 31,108 / 17,776 / 39,996 (35 / 20 / 45); 18,227,722 power",
         "Hero power: Helga 306,455, Forrest 438,984 (both 5 Nov, hero.md)"
       ],
       "cost": "None (a preset change)",
@@ -470,7 +470,7 @@
         "Diana",
         "Gordon"
       ],
-      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP, +5% Lethality; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the priority-1 gear move: that move gives Howard's freed Rare gloves (+20) and boots (+19) to Forrest because he is in Be. If Helga replaces him, Forrest would use them only for gathering; Helga already wears Epic gear (Helm +10, Gloves +0, Shroud +3 on 22 Oct), so which of the two should get the Rare pieces is not worked out yet."
+      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the priority-1 gear move: that move gives Howard's freed Stonewall Greaves (+24) to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
     },
     {
       "id": "gat-match-resource",
@@ -495,13 +495,13 @@
       ],
       "steps": [
         "Deploy → Gat: keep it for iron (Seth leads).",
-        "Save presets 4 and 5 with Edwin (stone) and Olive (bread) as leads.",
+        "Save two of the free presets (4, 5 or 6; their contents were not shown on 5 Nov) with Edwin (stone) and Olive (bread) as leads.",
         "For wood, put Forrest in front when the Be march is home."
       ],
       "evidence": [
-        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 27 Oct skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
-        "troops.md Gat preset of 24 Oct: Seth (lead), Edwin, Amane",
-        "troops.md: March Queue 4/4 (24 Oct)"
+        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%; Lv. 3 on his 5 Nov skill screen), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
+        "troops.md Gat preset of 5 Nov: Seth (lead), Edwin, Amane; 45,089 Infantry / 43,321 Cavalry / 0 Archers",
+        "troops.md: March Queue 4/4 (5 Nov)"
       ],
       "cost": "None (preset changes)",
       "confidence": [

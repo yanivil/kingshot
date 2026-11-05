@@ -69,6 +69,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: an audit of all eight suggestions against the 5 Nov data (asked for by the account owner) found older details
+  in five and brings them up to date:
+  - Be-march test (priority 7): hero power now Helga 306,455 / Forrest 438,984; the Be preset evidence is the 5 Nov split
+    (35 / 20 / 45); the link to the gear swap now names the Stonewall Greaves +24, which go to Helga if she replaces Forrest
+    (her own Greaves are +8); Saul's Lethality reads +15% (Positional Battler Lv 3), not +5%.
+  - Rally Join preset (priority 4) and gathering presets (priority 8): the evidence uses the 5 Nov presets and march queues, and
+    the steps point to the free preset tabs 4 to 6, whose contents were not shown.
+  - Promotions (priority 2): "no line-up" now says "no combat line-up" where the hero is in the `Gat` gathering preset.
+  - Skill books (priority 5): the Epic Expedition Manual evidence lists every 5 Nov screen that shows 29.
 - `troops.md` (2026-11-05 Troops Preview and Deploy screens):
   - All troops are now **Tier VIII (Elite)**: Infantry 45,474, Cavalry 46,298, Archers 43,180, **134,952** in all (105,729 Tier VII
     on 24 Oct). Infirmary 0 / 72,800 (38,600). March queues 4 / 4.
