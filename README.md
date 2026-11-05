@@ -105,8 +105,8 @@ The Overview opens with account power and total kills.
 * **Gift codes.** The Codes page shows three read-only lists from `codes.md`: To redeem (the Active list),
   Redeemed and Expired. Redeemed is a fact about the account, so it is recorded in `codes.md` and nowhere else;
   the per-browser "redeemed" marks of earlier versions were removed on 2026-11-05, and the page deletes their
-  old `localStorage` key (`ks-code-marks`) once. When a redeemed code becomes old, move its row to Expired and keep
-  "redeemed on this account" in its notes.
+  old `localStorage` key (`ks-code-marks`) once. When a redeemed code becomes old, move its row to Expired and put
+  ✓ in its **Redeemed** column: the page then shows ✓ next to it (every code under Redeemed shows ✓ too).
 
 ### Updating the data
 

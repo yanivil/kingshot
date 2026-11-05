@@ -400,9 +400,35 @@ class CodesParserTests(unittest.TestCase):
         codes = bd.parse_codes(self.BODY, "2026-11-05", log)
         self.assertEqual(codes["active"], [])
         self.assertEqual(codes["redeemed"], [{"code": "KS1104"}, {"code": "VIP777"}])
-        self.assertEqual(codes["expired"], [{"code": "KS1102"}])
+        # No "Redeemed" column in this Expired table: nothing is marked redeemed, and no warning.
+        self.assertEqual(codes["expired"], [{"code": "KS1102", "redeemed": False}])
         self.assertEqual(codes["expiredTotal"], 1)
         self.assertEqual(log.warnings, [])
+
+    def test_expired_redeemed_mark(self) -> None:
+        """Expired rows read the "Redeemed" column: a check mark (or V / Yes) means redeemed on this account.
+
+        Why: an old code the account redeemed belongs in Expired, but the page
+        still shows that it was redeemed. An empty cell means not recorded as
+        redeemed; any other text is a typo and warns.
+        """
+        body = (
+            "## Active Codes\n\n| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
+            "## Redeemed Codes\n\n| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
+            "## Expired Codes\n\n"
+            "| Gift Code | Redeemed | Rewards | Source / Notes | Updated |\n| :--- | :---: | :--- | :--- | :---: |\n"
+            "| `KS1104` | ✓ | Not recorded | told | 2026-11-05 |\n"
+            "| `VIP777` | V | 200 Gems | told | 2026-11-05 |\n"
+            "| `KS1025` | yes | Not recorded | told | 2026-11-05 |\n"
+            "| `KS1102` |  | Not recorded | told | 2026-11-05 |\n"
+            "| `TREAT4U` | maybe | Not recorded | told | 2026-11-05 |\n"
+        )
+        log = bd.BuildLog()
+        codes = bd.parse_codes(body, "2026-11-05", log)
+        self.assertEqual([(c["code"], c["redeemed"]) for c in codes["expired"]],
+                         [("KS1104", True), ("VIP777", True), ("KS1025", True), ("KS1102", False), ("TREAT4U", False)])
+        self.assertEqual(len(log.warnings), 1)
+        self.assertIn("TREAT4U", log.warnings[0])
 
     def test_code_in_two_lists_warns(self) -> None:
         """A code listed as both redeemed and expired is flagged, whatever its case."""
@@ -445,7 +471,11 @@ class RepositoryTests(unittest.TestCase):
         self.assertNotIn(self.player_id, page)
 
     def test_heroes_and_codes_are_well_formed(self) -> None:
-        """Each hero has a unique name; each code is a named entry in exactly one of the three lists."""
+        """Each hero has a unique name; each code is a named entry in exactly one of the three lists.
+
+        Active and Redeemed entries are ``{"code"}``; Expired entries are
+        ``{"code", "redeemed"}`` with a boolean (the account-level ✓ mark).
+        """
         names = [h["name"] for h in self.ks["heroes"]]
         self.assertTrue(names)
         self.assertEqual(len(names), len(set(names)))
@@ -453,7 +483,8 @@ class RepositoryTests(unittest.TestCase):
         listed = [c["code"].casefold() for key in ("active", "redeemed", "expired") for c in codes[key]]
         self.assertTrue(all(listed))
         self.assertEqual(len(listed), len(set(listed)))
-        self.assertTrue(all(set(c) == {"code"} for key in ("active", "redeemed", "expired") for c in codes[key]))
+        self.assertTrue(all(set(c) == {"code"} for key in ("active", "redeemed") for c in codes[key]))
+        self.assertTrue(all(set(c) == {"code", "redeemed"} and isinstance(c["redeemed"], bool) for c in codes["expired"]))
         self.assertEqual(codes["expiredTotal"], len(codes["expired"]))
 
 
