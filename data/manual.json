@@ -134,9 +134,9 @@
       "id": "formation-iron",
       "priority": 1,
       "type": "Formations",
-      "what": "Iro: remove the 43,552 Cavalry · 100% Infantry",
-      "summary": "Gathering marches should carry only the gathering hero's troop type (Seth: Infantry). Iron, Wood and Terror share your 46,160 Infantry, so send one of them at a time.",
-      "why": "Iro was saved on 5 Nov with 45,328 Infantry and 43,552 Cavalry. A guide says a gathering march should be 100% of the troop type its gathering hero buffs; another says type doesn't matter. Either way the Cavalry is better kept for Stone, which uses Cavalry only.",
+      "what": "Iro: Infantry only — set Cavalry to 0",
+      "summary": "Gathering marches should carry only the gathering hero's type (Seth: Infantry). The game will show 51%: its ratio counts against the 88,880 capacity. Send Iron, Wood or Terror one at a time.",
+      "why": "Iro was saved on 5 Nov with 45,328 Infantry and 43,552 Cavalry. A guide says a gathering march should be 100% of the troop type its gathering hero buffs; another says type doesn't matter. Either way the Cavalry is better kept for Stone, which uses Cavalry only. Note on percentages: the game's Troop Ratio is each type's share of the march capacity (88,880), so an Infantry-only march of 45,328 shows 51%, not 100%.",
       "changes": [
         {
           "where": "Iro (tab 2)",

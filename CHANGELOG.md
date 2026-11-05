@@ -76,7 +76,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   hero). Troops available: 46,160 / 46,986 / 43,865. `troops.md` formations, `lineups.md` presets and the `hero.md`
   roster follow. `scripts/build_data.py`: a "—" (or blank) slot in the lineups preset table is not a hero (new test
   `test_preset_with_empty_slot`). `data/manual.json`: the four matching formation cards are done and removed; the
-  one left is `formation-iron` (remove the 43,552 Cavalry). README preset names updated.
+  one left is `formation-iron` (remove the 43,552 Cavalry). README preset names updated. The card now says
+  "Infantry only" instead of "100% Infantry": the game's Troop Ratio counts against the march capacity, so an
+  Infantry-only march of 45,328 shows 51%, and the earlier "100%" wording was misread in the game.
 - `data/manual.json`: all previous suggestions removed at the account owner's request (2026-11-05); five short
   formation cards replace them, each with heroes and troop percentages: Terror & beasts (Diana leading, Howard,
   Jabel; 50 / 20 / 30, replacing Be), Iron (Seth, Gordon, Quinn; 100% Infantry), Stone (Edwin, Helga, Saul; 100%
