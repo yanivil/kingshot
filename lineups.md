@@ -40,33 +40,37 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 
 ## Wall Guard (Barricades, Rebel Invasions)
 
-Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is not recorded yet.
+Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). The game says so on each Barricade screen: "Assigned hero will fight alongside the governor in Rebel Invasion." _(2026-11-05)_ Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is not recorded yet.
 
 ### Barricade 1 (Primary Gate)
-* **Status:** Level 10 (MAX) _(2026-10-22)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-10-22)_
-* **Combined Hero Power:** 1.5M _(2026-10-22)_
+* **Status:** Level 10 (MAX) _(2026-11-05)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-05)_
+* **Combined Hero Power:** 1.9M (Barricade screen; 1.5M on 22 Oct. The recorded hero powers add up to 1,953,154) _(2026-11-05)_
 * **Tactical Assignment:** Core elite garrison trio. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | Primary shield wall and garrison damage reduction | 2026-10-22 |
-| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | Counter-offensive burst damage against attackers | 2026-10-22 |
-| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | Burst archery damage against attackers | 2026-10-22 |
+| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 64 | 3-Star (T5) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 64 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
 
 ### Barricade 2 (Secondary Gate)
-* **Status:** Level 10 (MAX) _(2026-10-22)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-10-22)_
-* **Combined Hero Power:** 1.3M _(2026-10-22)_
+* **Status:** Level 10 (MAX) _(2026-11-05)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-05)_
+* **Combined Hero Power:** 1.7M (Barricade screen; 1.3M on 22 Oct. The recorded hero powers add up to 1,757,581) _(2026-11-05)_
 * **Tactical Assignment:** Fast cavalry flanking and defense support. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | Team healing and garrison endurance | 2026-10-22 |
-| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | Rapid cavalry counter-strikes | 2026-10-22 |
-| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | Defensive ranged archery and splash suppressive fire | 2026-10-22 |
+| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 64 | 4-Star (T2) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
 
-* **Total City Wall Defense Hero Power:** 2.8M (1.5M + 1.3M) _(2026-10-22)_
+The 5 Nov Barricade screens show portraits, class icons, Lv. 64 and stars but no names; the heroes are identified by
+portrait and class, as on 22 Oct, and each Barricade's hero power fits the sum of the recorded hero powers. Stars are
+from the heroes' own 5 Nov screens (hero.md).
+
+* **Total Barricade Hero Power:** 3.6M (1.9M + 1.7M, each cut, not rounded; 2.8M on 22 Oct) _(2026-11-05)_
 
 ## Saved March Deployment Presets
 

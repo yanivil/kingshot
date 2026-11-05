@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **17,818,524** | City top bar, later on 5 Nov. The Governor Profile earlier that day showed 17.7M (digits cut off, so 17,700,000 to 17,799,999); the difference presumably includes Diana's Tier 2 (+36,080) and Olive's Lv. 64 (+2,015), recorded after that screen (inferred). 13,969,554 on 27 Oct; 12,464,731 on 25 Oct | 2026-11-05 |
+| **Overall Account Power** | **17,819,499** | City top bar, on the Barricade screens later on 5 Nov (17,818,524 on the Town Center screen shortly before). The Governor Profile earlier that day showed 17.7M (digits cut off, so 17,700,000 to 17,799,999); the difference presumably includes Diana's Tier 2 (+36,080) and Olive's Lv. 64 (+2,015), recorded after that screen (inferred). 13,969,554 on 27 Oct; 12,464,731 on 25 Oct | 2026-11-05 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-11-05 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-11-05 |
 | **Total Combat Kills** | **658,745** | Total enemy unit casualties inflicted (Governor Profile "Kills"; 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-05 |
@@ -47,7 +47,7 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-05)_
-* **Stored Food (Bread):** **104.1M** (city top bar, 5 Nov; 1.7M on 27 Oct, 96.1M on 25 Oct) _(2026-11-05)_
+* **Stored Food (Bread):** **106.1M** (city top bar, 5 Nov; 104.1M earlier that day, 1.7M on 27 Oct, 96.1M on 25 Oct) _(2026-11-05)_
 * **Free Gems:** **35,597** (city top bar, 5 Nov; 35,666 on 27 Oct) _(2026-11-05)_
 
 | Attribute | Base Value | Tactical Function | Updated |
