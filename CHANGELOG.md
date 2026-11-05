@@ -69,6 +69,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Gordon, Seth, Saul and Forrest (2026-11-05); all four are now Lv **64**:
+  - Gordon: **4★ Tier 0** (5 / 100). Armet is now a Brigader's Armet +25 with exactly the stats Jabel's had on 27 Oct (presumably the
+    same piece, inferred); the other three pieces +20. Power 475,780 → 539,750 = +37,360 4★ + 14,530 gear + 12,080 levels (inferred).
+  - Seth: **3★ Tier 5** (39 / 100), all four Epic Praetorian's pieces +20 (gear 155,400). Power 438,369 → 481,924 = +18,785 Tier 5
+    + 14,955 gear + 9,815 levels (inferred). He still wears his own Epic gloves, so Howard's +21 pair is a different one.
+  - Saul: **2★ Tier 5** (0 / 40 to 3★), gear +26 (Bracers +25), **Positional Battler Lv 3**. Power 416,030 → 474,025 = +16,300 Tier 5
+    + 23,445 gear + 18,250 levels and the skill (inferred). Roster role text updated (+9% construction, +15% Lethality).
+  - Forrest: 59 / 100 to 4★; an Epic Praetorian's Shroud +19 replaced the Stonewall Shroud, and the other pieces went up (gear
+    84,830 → 112,460). Power 401,539 → 438,984 = +27,630 gear + 9,815 levels (inferred, the same as Seth's).
+  - The stat changes of all four split the same way; new previews where they changed.
+- `data/manual.json`, same date: the gear swap now uses Seth's Greaves +20 and Forrest's 5 Nov gear (Howard +10,290, Forrest
+  +4,550, Seth −14,840); promotions add Gordon (4★), Seth (Tier 5, Rare stock 4), Saul (Tier 5) and Forrest (59 / 100); skill books
+  mark Saul's Positional Battler done; the long-term focus and the Be-march evidence use the new numbers; Saul's hand-written skill
+  notes were out of date (+6% / +10%) and are fixed; the Drill Camp note lists the 5 Nov Lv 64 drill screens.
 - `hero.md`, Chenko (2026-11-05): Lv 59 → **64** (cap, "Requirement: Town Center Lv. 23"), **4★ Tier 0** (8 / 100). The Rare
   Brigader's Armet +15 was replaced by the Mythic **Judicator's Armet +22** (68,025; +22.70% Cavalry Lethality) and the Breastplate is
   +20, so gear is 98,000 → 145,725. **Stand of Arms reached Lv 4.** Power 481,360 → 582,053: +37,360 4★ (the preview), +47,725

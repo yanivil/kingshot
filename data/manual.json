@@ -73,8 +73,8 @@
     },
     "Saul": {
       "notes": [
-        "Skill effects recorded: construction speed +6%, construction cost −6%.",
-        "Skill effects recorded: squads DEF +6% / HP +9% (Taskforce Training Lv 3), squads Lethality +10% (Positional Battler Lv 2).",
+        "Skill effects recorded: construction speed +9%, construction cost −9% (Resourceful Lv 3, old preview; 27 Oct).",
+        "Skill effects recorded: squads DEF +6% / HP +9% (Taskforce Training Lv 3), squads Lethality +15% (Positional Battler Lv 3, old preview; 5 Nov).",
         "Skill book names are inferred from the icons; the screens show only the counts."
       ]
     }
@@ -124,15 +124,15 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon, Saul and Forrest are confirmed by their own screens. Update 5 Nov: Diana's own screen shows Lv 64. Howard's own 5 Nov screen shows Lv 64 and still says he cannot be levelled within a Drill Camp; since slotted heroes take the lowest instructor level (rules.drillCamp), all five instructors are presumably Lv 64 now, so Olive and Chenko are presumably Lv 64 too (inferred). Chenko's own 5 Nov screen confirms Lv 64 (cap; \"Requirement: Town Center Lv. 23\"). Olive's screen and the Drill Camp screen were not re-sent, so Olive stays at 59 here."
+    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon, Saul and Forrest are confirmed by their own screens. Update 5 Nov: Diana's own screen shows Lv 64. Howard's own 5 Nov screen shows Lv 64 and still says he cannot be levelled within a Drill Camp; since slotted heroes take the lowest instructor level (rules.drillCamp), all five instructors are presumably Lv 64 now, so Olive and Chenko are presumably Lv 64 too (inferred). Chenko's own 5 Nov screen confirms Lv 64 (cap; \"Requirement: Town Center Lv. 23\"). Olive's screen and the Drill Camp screen were not re-sent, so Olive stays at 59 here. Gordon's own 5 Nov screen also shows Lv 64 and the Drill Camp message, which fits the same inference. Saul's own 5 Nov screen (drill slot 8) also shows Lv 64 and the Drill Camp message. Forrest's own 5 Nov screen also shows Lv 64 and the Drill Camp message."
   },
   "recommendations": [
     {
       "id": "seth-gear-to-howard",
       "priority": 1,
       "type": "Gear",
-      "what": "Howard: swap the Rare Stonewall Greaves (+24) for Seth's Epic Praetorian's Greaves (+16); the gloves are done",
-      "why": "Howard is the main tank in all four combat line-ups. By 5 Nov he wears Epic Praetorian's Gloves (+21) instead of the Rare Stonewall Gloves, so the gloves half of this suggestion is done. His boots are still the Rare Stonewall Greaves, now +24 (28,560 power; ATK +68, HP +666; Infantry Lethality +9.36%). Seth's Epic Praetorian's Greaves at +16 (27 Oct) beat them on every stat (35,100; ATK +90, HP +891; +12.36%), and Seth is a gathering hero in no line-up. Howard's freed Greaves (+24) then go to Forrest, the infantry hero in the Be march, in place of his +12 pair, and Seth takes Forrest's +12 pair so no slot is left empty. Seth's and Forrest's gear was not re-checked after 27 Oct, so check that Seth still wears the +16 Greaves first.",
+      "what": "Howard: swap the Rare Stonewall Greaves (+24) for Seth's Epic Praetorian's Greaves (+20)",
+      "why": "Howard is the main tank in all four combat line-ups. His boots are the Rare Stonewall Greaves +24 (28,560 power; ATK +68, HP +666; Infantry Lethality +9.36%). Seth's Epic Praetorian's Greaves, now +20 (5 Nov), beat them on every stat (38,850; ATK +96, HP +945; +13.20%), and Seth is a gathering hero in no line-up. Howard's other three pieces (Epic +21) already beat Seth's (+20), so only the boots move. Howard's Epic gloves since 5 Nov are a separate pair: Seth still wears his own. Howard's freed Greaves (+24) then go to Forrest, the infantry hero in the Be march, in place of his +17 pair, and Seth takes Forrest's +17 pair so no slot is left empty.",
       "changes": [
         {
           "where": "Howard's gear",
@@ -146,49 +146,47 @@
             "Praetorian's Helm (Epic +21)",
             "Praetorian's Gloves (Epic +21)",
             "Praetorian's Shroud (Epic +21)",
-            "Praetorian's Greaves (Epic +16)"
+            "Praetorian's Greaves (Epic +20)"
           ],
-          "note": "Gear power 148,035 → 154,575 (+6,540); Infantry Lethality 22.77% → 25.77%; boots ATK +68 → +90, HP +666 → +891"
+          "note": "Gear power 148,035 → 158,325 (+10,290); Infantry Lethality 22.77% → 26.61%; boots ATK +68 → +96, HP +666 → +945"
         },
         {
           "where": "Forrest's gear",
           "before": [
-            "Stonewall Helm (Rare +11)",
-            "Stonewall Gloves (Rare +12)",
-            "Stonewall Shroud (Rare +14)",
-            "Stonewall Greaves (Rare +12)"
+            "Stonewall Helm (Rare +17)",
+            "Stonewall Gloves (Rare +21)",
+            "Praetorian's Shroud (Epic +19)",
+            "Stonewall Greaves (Rare +17)"
           ],
           "after": [
-            "Stonewall Helm (Rare +11)",
-            "Stonewall Gloves (Rare +12)",
-            "Stonewall Shroud (Rare +14)",
+            "Stonewall Helm (Rare +17)",
+            "Stonewall Gloves (Rare +21)",
+            "Praetorian's Shroud (Epic +19)",
             "Stonewall Greaves (Rare +24)"
           ],
-          "note": "27 Oct gear. Gear power 84,830 → 92,330 (+7,500); Infantry Lethality 15.22% → 16.90%"
+          "note": "Gear power 112,460 → 117,010 (+4,550); Infantry Lethality 16.76% → 17.74%"
         },
         {
           "where": "Seth's boots",
           "before": [
-            "Praetorian's Greaves (Epic +16)"
+            "Praetorian's Greaves (Epic +20)"
           ],
           "after": [
-            "Stonewall Greaves (Rare +12)"
+            "Stonewall Greaves (Rare +17)"
           ],
-          "note": "27 Oct gear. Boots power 35,100 → 21,060 (−14,040); Seth is in no line-up. His gloves were not re-checked after Howard got Epic gloves"
+          "note": "Gear power 155,400 → 140,560 (−14,840); Infantry Lethality 26.40% → 21.58%; Seth is in no line-up"
         }
       ],
       "steps": [
-        "Done by 5 Nov: Howard wears Epic Praetorian's Gloves (+21).",
-        "Seth → Gear: check that he still wears Praetorian's Greaves (+16).",
-        "Howard → Gear → Boots → Swap: pick Seth's Praetorian's Greaves (+16).",
+        "Howard → Gear → Boots → Swap: pick Seth's Praetorian's Greaves (+20).",
         "Forrest → Gear → Boots → Swap: pick Howard's old Stonewall Greaves (+24).",
-        "Seth → Gear → Boots: equip Forrest's old Stonewall Greaves (+12)."
+        "Seth → Gear → Boots: equip Forrest's old Stonewall Greaves (+17)."
       ],
       "evidence": [
-        "Howard's gear screens of 5 Nov: Helm, Gloves and Shroud Epic +21 (39,825 each; Gloves and Shroud DEF +127 / HP +958 / +13.41% Infantry Health); Stonewall Greaves Rare +24 (28,560; ATK +68 / HP +666; +9.36% Infantry Lethality)",
-        "Seth's gear screens of 27 Oct: Praetorian's Greaves Epic +16 (35,100; ATK +90 / HP +891; +12.36% Infantry Lethality)",
-        "Forrest's gear screens of 27 Oct: Stonewall Greaves Rare +12 (21,060; +7.68% Infantry Lethality); gear power 84,830",
-        "The gear swap is power-neutral across the three heroes (+6,540 + 7,500 − 14,040 = 0)"
+        "Howard's gear screens of 5 Nov: Helm, Gloves and Shroud Epic +21 (39,825 each); Stonewall Greaves Rare +24 (28,560; ATK +68 / HP +666; +9.36% Infantry Lethality)",
+        "Seth's gear screens of 5 Nov: Praetorian's Helm, Gloves, Shroud and Greaves all Epic +20 (38,850 each; Greaves ATK +96 / HP +945; +13.20% Infantry Lethality)",
+        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460",
+        "The swap is power-neutral across the three heroes (+10,290 + 4,550 − 14,840 = 0)"
       ],
       "cost": "None (a swap)",
       "confidence": [
@@ -201,21 +199,21 @@
         "Forrest",
         "Seth"
       ],
-      "note": "Verified: Howard's gear from the 5 Nov screens; Seth's and Forrest's from 27 Oct. Unverified: that Seth still has the +16 Greaves (his gear was not re-sent after Howard got Epic gloves, and the screens do not show where those gloves came from), and that the + level moves with the piece. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights."
+      "note": "Verified: Howard's, Seth's and Forrest's gear from the 5 Nov screens. Unverified: that the + level moves with the piece (the Gear Details screens show it on the item itself, which suggests it does). Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights; Seth's hero power drops by 17,790, which changes no line-up."
     },
     {
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
       "what": "Promotions: redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Edwin is 1 Rare shard from Tier 4",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard and Chenko 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%) Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%) and Chenko 92 (8 / 100; same gain), so none of them fits the stock. Fahd's 3★ needs 19 (21 / 40 on 27 Oct), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 22 Oct) or Saul (0 / 15 on 27 Oct), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare (not re-read since 27 Oct): Edwin is 1 shard from Tier 4 (39 / 40; +17,940 base power and +2.90% Cavalry Attack and Defense) and Seth needs 9 for Tier 5 (31 / 40; +18,785); neither is in a combat line-up.",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%) Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%) Chenko 92 (8 / 100) and Gordon 95 (5 / 100), both for the same gain, so none of them fits the stock. Fahd's 3★ needs 19 (21 / 40 on 27 Oct), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 22 Oct) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (Seth's 5 Nov screen). Edwin is 1 shard from Tier 4 (39 / 40 on 27 Oct, not re-read; +17,940 base power and +2.90% Cavalry Attack and Defense), so 1 of the 4 promotes him; Seth reached Tier 5 by 5 Nov and needs 61 for 4★ (39 / 100; +30,355 and +5.22% Infantry Attack and Defense), and Forrest needs 41 for the same step (59 / 100). None of them is in a combat line-up except Forrest in the Be march.",
       "steps": [
         "Diana → promotion screen: Redeem 20 Epic shards (80 / 100, 24 in stock on 5 Nov), then Ascend to 4★ Tier 2.",
         "Epic: the 4 left and new Epic shards go toward Quinn's Tier 2 (32 / 100 on 5 Nov, needs 68).",
         "Mythic: keep the 36 Mythic Redeem shards; when Jabel's count plus the stock reaches 100, Redeem and Ascend her to 4★ (36 / 100 on 5 Nov, needs 64).",
-        "Edwin → promotion screen: Redeem 1 Rare shard (39 / 40 on 27 Oct), then Ascend to Tier 4.",
-        "Seth: the other Rare Redeem shard and new Rare shards toward Tier 5 (31 / 40 on 27 Oct).",
-        "Helga (0 / 5) and Saul (0 / 15): only after Jabel's 4★."
+        "Edwin → promotion screen: Redeem 1 Rare shard (39 / 40 on 27 Oct; 4 Rare in stock on 5 Nov), then Ascend to Tier 4.",
+        "Seth: the other Rare Redeem shards and new Rare shards toward 4★ (39 / 100 on 5 Nov, needs 61).",
+        "Helga (0 / 5) and Saul (0 / 40 to 3★): only after Jabel's 4★."
       ],
       "evidence": [
         "Diana's promotion screen of 5 Nov: 4-Star (Tier 1), 80 / 100, Redeem 24 (Epic); preview +36,080 / +4.96%",
@@ -223,13 +221,15 @@
         "Howard's promotion screen of 5 Nov: 4-Star (Tier 0), 2 / 100, Redeem 24; preview +32,560 / +6.31%",
         "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
         "Chenko's promotion screen of 5 Nov: 4-Star (Tier 0), 8 / 100, Redeem 24; preview +32,560 / +6.31%",
-        "Gordon's promotion screen of 27 Oct (not re-read): 22 / 100",
+        "Gordon's promotion screen of 5 Nov: 4-Star (Tier 0), 5 / 100, Redeem 24; preview +32,560 / +6.31%",
         "Fahd's promotion screen of 27 Oct: 2-Star (Tier 5), 21 / 40; preview +21,920 / +5.80%",
         "Edwin's promotion screen of 27 Oct: 3-Star (Tier 3), 39 / 40, Redeem 2 (Rare); preview +17,940 / +2.90%",
-        "Seth's promotion screen of 27 Oct: 3-Star (Tier 4), 31 / 40, Redeem 2 (Rare); preview +18,785",
+        "Seth's promotion screen of 5 Nov: 3-Star (Tier 5), 39 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Forrest's promotion screen of 5 Nov: 3-Star (Tier 5), 59 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only: 20 of the 24 Epic Redeem shards now (5 Nov); the 36 Mythic Redeem shards kept for Jabel; 1 of 2 Rare Redeem (27 Oct)",
+      "cost": "Shards only: 20 of the 24 Epic Redeem shards now (5 Nov); the 36 Mythic Redeem shards kept for Jabel; 1 of the 4 Rare Redeem shards (5 Nov)",
       "confidence": [
         "Verified",
         "Inferred",
@@ -240,12 +240,14 @@
         "Quinn",
         "Howard",
         "Chenko",
+        "Gordon",
         "Jabel",
         "Fahd",
         "Helga",
         "Saul",
         "Seth",
-        "Edwin"
+        "Edwin",
+        "Forrest"
       ],
       "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana's Tier 2 as the next Epic step, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
     },
@@ -345,11 +347,12 @@
       "steps": [
         "Epic Conquest Books (stock not read since Weaken and Stand of Arms used 50 each; 50 needed): done: Howard · Defenders' Edge (Lv. 4 by 27 Oct) and Weaken (Lv. 4 by 5 Nov); Chenko · Stand of Arms (Lv. 4 by 5 Nov). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
         "Epic Expedition Manuals (29 in stock on 5 Nov on Howard, Diana, Quinn and Chenko; 50 needed for Lv. 3 → 4): done: Howard · Shielded Strike (Lv. 4 by 5 Nov). 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
-        "Mythic Conquest Books and Expedition Manuals (stock not re-read): done: Jabel · Youthful Rage and Persistence (Lv. 4 by 5 Nov). Both presumably need Jabel's 4★ for Lv. 5 (inferred). Saul's Positional Battler needs only 30 for +5%, but Saul is in no march."
+        "Mythic Conquest Books and Expedition Manuals (stock not re-read): done: Jabel · Youthful Rage and Persistence (Lv. 4 by 5 Nov); Saul · Positional Battler (Lv. 3 by 5 Nov). Both of Jabel's presumably need her 4★ for Lv. 5, and all of Saul's skills are Lv. 3 and presumably need his 3★ for Lv. 4 (Rapid Fire and Superior Techniques say so; the rest is inferred)."
       ],
       "evidence": [
         "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
         "Chenko's skill screen of 5 Nov: Stand of Arms icon shows Lv. 4; Burst Fire, Defense Upgrade, Weapon Upgrade and Shield Wall Lv. 3",
+        "Saul's skill screen of 5 Nov: all six skill icons show Lv. 3 (Positional Battler was Lv. 2); Rapid Fire says \"ascend to 3-Star\"",
         "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn and Chenko (29 / 50 each)",
         "Jabel's skill screen of 5 Nov: Persistence and Youthful Rage icons show Lv. 4; Gallant Throw says \"ascend to 4-Star\"",
         "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
@@ -382,14 +385,14 @@
       "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
       "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she reached Tier 5 by 5 Nov and is 64 shards from 4★ (36 / 100). Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive. You have none of the Generation 2 heroes yet (28 Oct), which suggests they have not reached your kingdom, though it is also possible they are out but not yet earned (inferred).",
       "steps": [
-        "Mythic shards: Jabel to 4★ (36 / 100 on 5 Nov, needs 64; 36 Mythic Redeem in stock) before Helga (0 / 5) or Saul (0 / 15).",
+        "Mythic shards: Jabel to 4★ (36 / 100 on 5 Nov, needs 64; 36 Mythic Redeem in stock) before Helga (0 / 5) or Saul (0 / 40 to 3★).",
         "Mythic books: Jabel's Youthful Rage and Persistence reached Lv. 4 by 5 Nov; their next level presumably waits for her 4★ (inferred). Not Saul's.",
         "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
         "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
         "Generation 2: you have no Zoe, Hilde or Marlin yet (28 Oct), so Generation 1 heroes are still your best options; check the Hero Roulette and Hall of Heroes events for them, and when one appears, ask for an updated plan."
       ],
       "evidence": [
-        "hero.md promotion screens: Jabel 3★ Tier 5, 36 / 100 to 4★ (5 Nov); Helga 0 / 5 (22 Oct); Saul 0 / 15 (27 Oct); Amadeus 0 / 20 to recruit (22 Oct)",
+        "hero.md promotion screens: Jabel 3★ Tier 5, 36 / 100 to 4★ (5 Nov); Helga 0 / 5 (22 Oct); Saul 2★ Tier 5, 0 / 40 to 3★ (5 Nov); Amadeus 0 / 20 to recruit (22 Oct)",
         "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
         "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
         "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120",
@@ -443,7 +446,7 @@
       "evidence": [
         "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
         "troops.md Be preset of 24 Oct: Diana (lead), Gordon, Forrest; 21,269 / 22,866 / 35,140",
-        "Hero power: Helga 259,615, Forrest 371,073 (hero.md)"
+        "Hero power: Helga 274,905 (27 Oct), Forrest 438,984 (5 Nov) (hero.md)"
       ],
       "cost": "None (a preset change)",
       "confidence": [
