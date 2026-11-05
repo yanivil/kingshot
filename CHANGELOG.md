@@ -69,6 +69,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Amane and Helga (2026-11-05), the last two heroes still on 27 Oct data:
+  - Amane: Lv 64 (drill slot), 20 / 40 to 3★, gear unchanged, **all three exploration skills Lv 2 → 3** (Sakura Blossom now capped
+    until 3★). Power 313,060 → 332,700 = +12,080 levels + 7,560 skills (both inferred), exactly.
+  - Helga: Lv 64 (drill slot), 1★ (0 / 5), Gloves +0 → +10, Shroud +3 → +9, Greaves +2 → +8 (gear 92,905 → 107,845). Power
+    274,905 → 306,455 = +14,940 gear + 16,610 levels (inferred), exactly. She still wears her own Praetorian's Gloves and Shroud, so
+    Howard's Epic gloves and Forrest's Epic Shroud are other pieces; their notes now say so.
+  - Seth's and Olive's level notes and roster rows record that Seth replaced Olive as a Drill Camp instructor.
+- `data/manual.json`, same date:
+  - Drill Camp: new reading from the 5 Nov Drill Camp screen. The instructors are Jabel, Chenko, Seth, Quinn and Diana, all Lv 64
+    (identified by portrait and confirmed as the only five heroes at Lv 64 outside a drill slot). The same 8 slotted heroes are all
+    Lv 64, and the screen text again states the lowest-instructor rule. This replaces the 27 Oct reading and the inference about Olive.
+  - Promotions: Amane's 3★ also needs 20 Epic shards, the same as Diana's Tier 2. The 24 in stock cover one of the two; Diana stays
+    first (in line-ups) with Amane as the stated alternative (her 3★ lifts Tri-Phalanx, a rally-joiner skill, and Exorcism).
+  - Skill books, rally, long-term and Be-march suggestions use the new Amane and Helga numbers.
 - `hero.md`, Gordon, Seth, Saul, Forrest, Edwin, Olive, Yeonwoo and Fahd (2026-11-05):
   - Gordon: **4★ Tier 0** (5 / 100). Armet is now a Brigader's Armet +25 with exactly the stats Jabel's had on 27 Oct (presumably the
     same piece, inferred); the other three pieces +20. Power 475,780 → 539,750 = +37,360 4★ + 14,530 gear + 12,080 levels (inferred).
