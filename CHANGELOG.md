@@ -69,6 +69,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Deploy screens, latest on 2026-11-05: the five suggested presets are saved and replace `Be`, `Att`, `Gat` and
+  `Joi`: `Ter` (Diana, Howard, Jabel; 44,440 / 17,776 / 26,664), `Iro` (Seth, Gordon, Quinn; 45,328 Infantry +
+  43,552 Cavalry), `Sto` (Edwin, Helga, Saul; 46,857 Cavalry), `Woo` (Forrest, Chenko, Yeonwoo; 45,328 Infantry)
+  and `Bre` (Olive, Fahd; 43,405 Archers of 76,150, which confirms that a march holds 50,690 plus 12,730 per Lv. 64
+  hero). Troops available: 46,160 / 46,986 / 43,865. `troops.md` formations, `lineups.md` presets and the `hero.md`
+  roster follow. `scripts/build_data.py`: a "—" (or blank) slot in the lineups preset table is not a hero (new test
+  `test_preset_with_empty_slot`). `data/manual.json`: the four matching formation cards are done and removed; the
+  one left is `formation-iron` (remove the 43,552 Cavalry). README preset names updated.
 - `data/manual.json`: all previous suggestions removed at the account owner's request (2026-11-05); five short
   formation cards replace them, each with heroes and troop percentages: Terror & beasts (Diana leading, Howard,
   Jabel; 50 / 20 / 30, replacing Be), Iron (Seth, Gordon, Quinn; 100% Infantry), Stone (Edwin, Helga, Saul; 100%

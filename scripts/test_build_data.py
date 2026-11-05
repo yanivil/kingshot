@@ -358,6 +358,21 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(len(log.warnings), 4)
         self.assertTrue(all("'bad'" in w for w in log.warnings))
 
+    def test_preset_with_empty_slot(self) -> None:
+        """A preset with two heroes lists only those two; "—" marks the empty slot, not a hero.
+
+        Why: the Bread preset of 5 Nov 2026 has only Olive and Fahd, and the
+        cross-check against troops.md must not see "—" as a third hero.
+        """
+        body = (
+            "## Saved March Deployment Presets\n\n"
+            "| Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power | Updated |\n"
+            "| :--- | :---: | :--- | :--- | :--- | :---: | :---: | :---: |\n"
+            "| **Bread Gathering** | `Bre` | Olive (Lv. 64) | Fahd (Lv. 64) | — | 0% Inf / 0% Cav / 57% Arc | 8,158,542 | 2026-11-05 |\n"
+        )
+        presets = bd.parse_lineups(body, "2026-11-05", bd.BuildLog())["presets"]
+        self.assertEqual(presets["Bre"]["heroes"], ["Olive", "Fahd"])
+
     def test_short_card_checks(self) -> None:
         """Titles and summaries must stay short; a summary must be text.
 

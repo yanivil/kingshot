@@ -948,6 +948,10 @@ def parse_arena(sec: Optional[Section], name: str, log: BuildLog,
             "front": front, "back": back, "asOf": section_date(sec, as_of)}
 
 
+#: Cell values in the lineups.md preset table that mean "no hero in this slot".
+EMPTY_SLOT_MARKS = {"", "—", "–", "-"}
+
+
 def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
     """Parse Arena squads, barricades and the march preset summary.
 
@@ -992,7 +996,11 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     for row in preset_table.rows if preset_table else []:
         ratios = re.findall(r"(\d+)%\s*(Inf|Cav|Arc)", strip_md(row.get("Troop Allocation", "")))
         presets[strip_md(row["Tag"])] = {
-            "heroes": [drop_parenthetical(strip_md(cell(row, c))) for c in ("Primary Lead", "Deputy 1", "Deputy 2")],
+            # A march may hold fewer than three heroes (the Bread preset of 5 Nov 2026 has
+            # two); an empty slot is written "—" (or left blank) and is not a hero.
+            "heroes": [name for name in (drop_parenthetical(strip_md(cell(row, c)))
+                                         for c in ("Primary Lead", "Deputy 1", "Deputy 2"))
+                       if name not in EMPTY_SLOT_MARKS],
             "ratioPct": {k.lower(): int(v) for v, k in ratios},
             "power": parse_number(row.get("Combat Power")),
         }
