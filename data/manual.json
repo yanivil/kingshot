@@ -129,7 +129,81 @@
     "testHero": "Edwin",
     "_instructorNote": "From the Drill Camp screen of 5 Nov: the 5 instructors all show Lv 64. The screen shows no names; left to right they look like Jabel, Chenko, Seth, Quinn and Diana, and these are exactly the five heroes whose own 5 Nov screens show Lv 64 without the Drill Camp message (Olive showed Lv 63 then, reaching Lv 64 later on 5 Nov, and Edwin Lv 59), so the identification is firm. Seth took Olive's place since 27 Oct. The screen text says \"Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors\". The 8 slots hold, by portrait and class icon, Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 64, and each of them shows Lv 64 with the Drill Camp message on their own 5 Nov screen. Slot 9 needs Town Center Lv 23 and slots 10-15 are locked. On 27 Oct the instructors were Jabel 64, Diana 61, Olive 59, Chenko 59 and Quinn 64, so slotted heroes ran at Lv 59."
   },
-  "recommendations": [],
+  "recommendations": [
+    {
+      "id": "tc-23",
+      "priority": 1,
+      "type": "City",
+      "what": "Town Center 23: heroes up to Lv. 69",
+      "summary": "All your heroes are at Lv. 64, the cap for Town Center 22. Lv. 23 raises the cap to 69 and opens Drill Camp slot 9. It needs Embassy 22 and Stable 22 first.",
+      "why": "Every hero you use is Lv. 64, the most Town Center 22 allows, so hero XP can't raise them further. A guide's Town Center table (whose Lv. 20 and 21 figures match your own screens) gives Lv. 23: Embassy 22 and Stable 22 first, 44M Bread, 44M Wood, 8.9M Stone, 2.2M Iron, 9d 8h 40m base time, max hero level 69. Your Drill Camp screen shows slot 9 locked until Town Center 23.",
+      "changes": [
+        {
+          "where": "Town Center",
+          "before": [
+            "Lv. 22",
+            "heroes capped at Lv. 64"
+          ],
+          "after": [
+            "Lv. 23",
+            "heroes up to Lv. 69",
+            "Drill slot 9"
+          ],
+          "note": "Cost: 44M Bread, 44M Wood, 8.9M Stone, 2.2M Iron; 9d 8h 40m before speed-ups"
+        }
+      ],
+      "steps": [
+        "Check that the Embassy and the Stable are Lv. 22; upgrade them first if not.",
+        "Upgrade the Town Center to Lv. 23."
+      ],
+      "evidence": [
+        "heaven-guardian.com Town Center requirements (2026-10-10): \"| 23 | Embassy Level 22 and Stable Level 22 | 44M | 44M | 8.9M | 2.2M | 9d 8h 40m | 661,400 | 69 |\" (Bread, Wood, Stone, Iron, base time, power, max hero level)",
+        "The same table gives 431,800 power at Lv. 20 and 489,200 at Lv. 21, as on your Town Center screens (profile.md)",
+        "profile.md: Town Center Lv. 22 (5 Nov); hero.md: every hero Lv. 64 except Edwin (59)",
+        "Drill Camp screen of 5 Nov: slot 9 shows the Town Center icon with Lv. 23"
+      ],
+      "cost": "44M Bread, 44M Wood, 8.9M Stone, 2.2M Iron; 9d 8h 40m base time",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [],
+      "note": "Verified: your Town Center level, hero levels and the Drill Camp lock. Unverified: the cost and the Lv. 69 cap (a guide's table). Not recorded: your Embassy and Stable levels, and your Wood, Stone and Iron stock."
+    },
+    {
+      "id": "train-infantry",
+      "priority": 2,
+      "type": "Troops",
+      "what": "Train about 44,500 more Infantry",
+      "summary": "Iron, Wood and Terror each use about 45,000 of your 46,162 Infantry, so only one can be out at a time. About 44,500 more lets two go out together.",
+      "why": "Iro and Woo each carry 45,328 Infantry and Ter 44,440, while you have 46,162. Two Infantry-only gathering marches need 90,656, about 44,500 more than you have. Stone (Cavalry) and Bread (Archers) already fit beside any one of them.",
+      "changes": [
+        {
+          "where": "Elite Infantry",
+          "before": [
+            "46,162"
+          ],
+          "after": [
+            "about 90,700"
+          ],
+          "note": "Enough for Iron and Wood together (45,328 each)"
+        }
+      ],
+      "steps": [
+        "Train Elite Infantry in the Barracks when the queue is free."
+      ],
+      "evidence": [
+        "troops.md, Deploy screens of 5 Nov: Iro 45,328 Infantry, Woo 45,328 Infantry, Ter 44,440 Infantry; available 46,162 / 46,986 / 43,868"
+      ],
+      "cost": "Training time and resources (not recorded)",
+      "confidence": [
+        "Verified",
+        "Inferred"
+      ],
+      "heroes": [],
+      "note": "Verified: your preset troops and troop counts. Inferred: that more Infantry is worth the training cost (training costs and times are not recorded)."
+    }
+  ],
   "features": [
     {
       "name": "Town Center & buildings",

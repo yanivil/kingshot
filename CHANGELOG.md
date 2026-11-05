@@ -69,6 +69,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: two new suggestions (asked for by the account owner on 2026-11-05, "Any more suggestions?"):
+  `tc-23` (Town Center 23 raises the hero cap from 64 to 69 and opens Drill slot 9; cost from heaven-guardian.com's
+  table) and `train-infantry` (about 44,500 more Infantry so Iron and Wood can go out together).
 - `Iro` now carries Infantry only (45,328; Cavalry removed; power 8,781,121; Deploy screen, later on 2026-11-05),
   so all five presets match and `formation-iron` is done and removed; no suggestions are left. Troops available:
   46,162 / 46,986 / 43,868.
