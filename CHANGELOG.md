@@ -69,6 +69,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Later on 2026-11-05 (Gear and promotion screens):
+  - `hero.md`, Howard and Seth: they swapped boots. Howard now wears Seth's Epic Praetorian's Greaves +20 (gear 148,035 →
+    158,325; Infantry Lethality 22.77% → 26.61%) and Seth Howard's Rare Stonewall Greaves +24 (gear 155,400 → 145,110). Each
+    piece kept its + level, which settles that the level moves with the piece. Hero Stats and power were not re-read; the
+    expected changes (±10,290 power) are noted as inferred.
+  - `hero.md`, Diana: **4★ Tier 2** with 20 Epic Redeem shards (24 → 4). Power 599,698 → 635,778 and stats up by exactly the
+    preview; Archer Attack / Defense +86.25%. New preview to Tier 3 (+36,080, +4.96%); roster row updated.
+  - `hero.md`, Jabel: a stray closing parenthesis in her power line (from the 5 Nov update) is removed.
+  - `data/manual.json`: the gear swap (priority 1) is marked done for Howard, with one optional step left (Seth's +24
+    Greaves to Forrest, or to Helga if she replaces Forrest); the promotion suggestion (priority 2) marks Diana's Tier 2
+    done and points the next Epic shards at Amane's 3★ (needs 20) or Quinn's Tier 2; Seth's gear note no longer says
+    "Full Epic set".
 - Gift codes restarted (asked for by the account owner on 2026-11-05):
   - `codes.md` now holds only the owner's current codes, in three lists with no checkbox column: **Active** (not redeemed
     yet; empty for now; new codes go here), **Redeemed** (`KS1104`, `VIP777`) and **Expired** (`KS1102`, `TREAT4U`,
