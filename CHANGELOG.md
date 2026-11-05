@@ -6,6 +6,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Guard Station recorded (screen of 5 Nov): `lineups.md` gains a "Guard Station (City Defense)" section with Jabel,
+  Diana and Howard (hero power 2.0M; 764.2K / 639.3K / 601.7K), Status Intact with City Defense 15,000 / 15,000, and
+  "Garrisoned heroes cannot be deployed" unticked, so the guards can leave on marches (all three are in `Ter`).
+  - `scripts/build_data.py`: new `parse_guard_station()` fills `lineups.guardStation` (`heroes`, `power`,
+    `powerRounded`, `status`, `defense`, `defenseMax`, `heroesLocked`, `asOf`) instead of always `null`, and its date
+    counts toward `lineups.asOf`. Test `test_guard_station`.
+  - `docs/index.html`: the Defense page shows the guards as chips, City Defense, the stated-vs-summed power check, and
+    whether the guards are locked in the city.
+  - `data/manual.json`: the Guard Station feature is Active with data; "Guard Station" leaves the Data health missing list.
+  - `hero.md`: Guard Station added to Jabel's, Howard's and Diana's assignments. Howard's and Diana's power notes
+    record the screen's 601.7K and 639.3K. The Conquest Squad Settings total of 5 Nov (3,184,803 for Jabel, Diana,
+    Howard, Quinn and Chenko) equals their recorded powers plus +10,290 (Howard's boots) and +3,528 (an Epic skill to
+    Lv. 4, Diana) exactly. The recorded powers stay the last values read on each hero's own screen (inferred change).
+- `data/manual.json`: waiting card `conquest-306-swap`. The Conquest squad at stage 306 (front Jabel, Howard; back
+  Chenko, Diana, Quinn; 3,184,803 against the enemy's 3,361,565) is the five strongest heroes with a tank front-right.
+  If the stage is a clear loss, swap Jabel and Chenko (heaven-guardian.com Conquest guide; unverified at 306).
 - `data/gift_codes_baseline.txt`: 142 old codes the six trackers still list but that were never in `codes.md`, found by
   the first (dry) run of the gift-code check on 4 Nov. The check now ignores them, so it reports only codes that appear
   later. `scripts/check_gift_codes.py` gains `--baseline` (the workflow passes it) and two tests. README updated.

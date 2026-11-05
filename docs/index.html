@@ -1094,9 +1094,26 @@ class Dashboard extends StateHost {
                heroes: (b.heroes || []).map(function (n) { return { label: n }; }),
                statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls };
     });
-    var guard = L.guardStation
-      ? { text: (L.guardStation.heroes || []).join(', ') || 'Heroes: ' + NR, cls: '', asOf: self.asOf(L.asOf) }
-      : { text: 'Guard Station: Not recorded.', cls: 'empty', asOf: self.asOf(null) };
+    // Guard Station: shown like a barricade (hero chips + stated vs summed power),
+    // plus its City Defense and whether its heroes may leave on marches. The
+    // "Garrisoned heroes cannot be deployed" box decides that: unticked
+    // (heroesLocked false) means the city can be left without its guards.
+    var guard = (function (g) {
+      if (!g) return { recorded: false, text: 'Guard Station: Not recorded.', cls: 'empty', asOf: self.asOf(null) };
+      var c = powerCheck(g.power, g.heroes || [], g.powerRounded);
+      var defense = g.defense != null && g.defenseMax != null ? self.num(g.defense) + ' / ' + self.num(g.defenseMax) : NR;
+      var lock = g.heroesLocked === false ? 'No: these heroes can leave on marches, and the city is then unguarded.'
+        : g.heroesLocked === true ? 'Yes: these heroes stay in the city.' : NR;
+      return { recorded: true, cls: '', asOf: self.asOf(g.asOf || L.asOf),
+               heroes: (g.heroes || []).map(function (n) { return { label: n }; }),
+               text: (g.heroes || []).length ? '' : 'Heroes: ' + NR,
+               statusText: (g.status || NR) + ' · City Defense ' + defense, lockText: lock,
+               statedText: c.statedText, sumText: c.sumText, diffText: c.diffText, diffCls: c.diffCls,
+               hasNote: c.flagged,
+               // Edge case: a rounded screen figure above the sum means some hero
+               // was upgraded after its own screen was read (Inferred cause).
+               note: 'Stated power is not the same as today’s hero powers added up. Possible cause: some heroes were upgraded after their own screens were read (Inferred).' };
+    })(L.guardStation);
 
     /* ---------- City ---------- */
     var perks = tcObj.perks || {};
@@ -1733,7 +1750,15 @@ function tplDefense(v) {
     }) + '</div>' +
     when(v.noBarricades, '<p class="empty">Barricades: Not recorded.</p>') + '</section>' +
     '<section class="panel"><div class="panel-h"><h3>Guard Station</h3><span class="asof">' + esc(v.guard.asOf) + '</span></div>' +
-    '<p class="' + esc(v.guard.cls) + '" style="margin:0">' + esc(v.guard.text) + '</p></section>' +
+    (v.guard.recorded
+      ? '<div class="march"><div class="march-h"><h4>City defense</h4><span class="mini">' + esc(v.guard.statusText) + '</span></div>' +
+        '<div class="chips-s">' + each(v.guard.heroes, function (h) { return '<span class="chip-s">' + esc(h.label) + '</span>'; }) + '</div>' +
+        when(!!v.guard.text, '<p class="empty" style="margin:0">' + esc(v.guard.text) + '</p>') +
+        tplCheck(v.guard, true) +
+        '<p class="foot" style="margin-top:8px">Guards locked in the city: ' + esc(v.guard.lockText) + '</p>' +
+        when(v.guard.hasNote, '<p class="foot" style="margin-top:4px">' + esc(v.guard.note) + '</p>') + '</div>'
+      : '<p class="' + esc(v.guard.cls) + '" style="margin:0">' + esc(v.guard.text) + '</p>') +
+    '</section>' +
     '</div>';
 }
 

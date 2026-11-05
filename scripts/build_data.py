@@ -953,7 +953,7 @@ EMPTY_SLOT_MARKS = {"", "—", "–", "-"}
 
 
 def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
-    """Parse Arena squads, barricades and the march preset summary.
+    """Parse Arena squads, barricades, the Guard Station and the march preset summary.
 
     Args:
         body: lineups.md without front matter.
@@ -961,8 +961,9 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         log: Warning collector.
 
     Returns:
-        ``{"arena", "barricades", "presets"}``; ``presets`` is only used to
-        cross-check troops.md.
+        ``{"arena", "barricades", "guardStation", "presets"}``; ``guardStation``
+        is ``None`` when there is no "Guard Station" section, and ``presets`` is
+        only used to cross-check troops.md.
     """
     src = "lineups.md"
     sections = split_sections(body)
@@ -990,6 +991,8 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     if not barricades:
         log.warn(src, "no barricade sections found")
 
+    guard_station = parse_guard_station(find_section(sections, r"^Guard Station"), as_of, log)
+
     presets = {}
     preset_sec = find_section(sections, r"^Saved March Deployment Presets")
     preset_table = find_table(preset_sec.lines, "Preset Name", "Tag") if preset_sec else None
@@ -1004,7 +1007,74 @@ def parse_lineups(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
             "ratioPct": {k.lower(): int(v) for v, k in ratios},
             "power": parse_number(row.get("Combat Power")),
         }
-    return {"arena": arena, "barricades": barricades, "presets": presets}
+    return {"arena": arena, "barricades": barricades, "guardStation": guard_station, "presets": presets}
+
+
+# ---------------------------------------------------------------------------
+# Guard Station (city defense)
+# Why a separate parser: the Guard Station's three heroes defend the city
+# against other players, which the Barricades (Rebel Invasions only) do not.
+# Its screen also has a "Garrisoned heroes cannot be deployed" box: when it is
+# unticked the guards may leave on marches, so the page needs that flag to say
+# whether the city can be left without its guards. Until 5 Nov 2026 no file
+# recorded it and the dashboard showed "Not recorded"; a missing section still
+# gives None, not a warning.
+# ---------------------------------------------------------------------------
+
+# Values of the "Guards Locked" bullet that mean the box is ticked / unticked.
+TICKED_MARKS = {"yes", "ticked", "on", "✓", "✔"}
+UNTICKED_MARKS = {"no", "unticked", "off"}
+
+
+def parse_guard_station(sec: Optional[Section], as_of: Optional[str], log: BuildLog) -> Optional[Dict[str, Any]]:
+    """Parse the "Guard Station" section of lineups.md.
+
+    Args:
+        sec: The section, or ``None`` when lineups.md has none.
+        as_of: The front-matter date, used when the section has no upload dates.
+        log: Warning collector.
+
+    Returns:
+        ``None`` when the section is missing; otherwise ``{"heroes", "power",
+        "powerRounded", "status", "defense", "defenseMax", "heroesLocked",
+        "asOf"}``. ``heroesLocked`` is ``True`` when "Garrisoned heroes cannot
+        be deployed" is ticked, ``False`` when unticked and ``None`` when the
+        value is not one of the known marks (a warning is logged).
+    """
+    if sec is None:
+        return None
+    src = "lineups.md"
+    info = bullets(sec.lines)
+    power = parse_amount(label_value(info, "Combined Hero Power", src, log))
+    status_text = strip_md(label_value(info, "Status", src, log))
+    # "Intact, City Defense 15,000 / 15,000 (maxed)": the first word is the
+    # state the screen names; the two numbers are current and maximum defense.
+    state = re.match(r"([A-Za-z]+)", status_text or "")
+    defense = re.search(r"([\d,]+)\s*/\s*([\d,]+)", status_text or "")
+    locked_text = strip_md(label_value(info, "Guards Locked", src, log)).lower()
+    first_word = locked_text.split(" ")[0].strip(",;:.") if locked_text else ""
+    if first_word in TICKED_MARKS:
+        locked: Optional[bool] = True
+    elif first_word in UNTICKED_MARKS:
+        locked = False
+    else:
+        locked = None
+        if locked_text:
+            log.warn(src, f"Guard Station: 'Guards Locked' value '{locked_text}' is not yes/no; set to null")
+    table = find_table(sec.lines, "Slot", "Hero")
+    heroes = [drop_parenthetical(strip_md(r["Hero"])) for r in table.rows] if table else []
+    if not heroes:
+        log.warn(src, "Guard Station: no hero table found")
+    return {
+        "heroes": heroes,
+        "power": power["value"] if power else None,
+        "powerRounded": power["rounded"] if power else None,
+        "status": state.group(1) if state else None,
+        "defense": int(defense.group(1).replace(",", "")) if defense else None,
+        "defenseMax": int(defense.group(2).replace(",", "")) if defense else None,
+        "heroesLocked": locked,
+        "asOf": section_date(sec, as_of),
+    }
 
 
 def cross_check_marches(marches: List[Dict[str, Any]], presets: Dict[str, Any], log: BuildLog) -> None:
@@ -1558,9 +1628,11 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
         log.warn("troops.md", "Town Center level differs from profile.md (profile.md is used)")
 
     known_dates = [d for d in dates.values() if d]
-    # Every march, Arena squad and barricade carries its own date; the section
-    # date is the stalest of them, so Data age shows the oldest lineup.
-    lineup_parts = list(troops["marches"]) + list(lineups["arena"].values()) + list(lineups["barricades"])
+    # Every march, Arena squad, barricade and the Guard Station carries its own
+    # date; the section date is the stalest of them, so Data age shows the
+    # oldest lineup. A missing Guard Station (None) is skipped by oldest_part_date.
+    lineup_parts = (list(troops["marches"]) + list(lineups["arena"].values()) + list(lineups["barricades"])
+                    + [lineups["guardStation"]])
     ks: Dict[str, Any] = {key: None for key in TOP_LEVEL_KEYS}
     ks.update({
         "meta": {"schemaVersion": SCHEMA_VERSION, "snapshotAsOf": max(known_dates) if known_dates else None},
@@ -1574,7 +1646,7 @@ def build_ks_data(root: Path, log: BuildLog) -> Tuple[Dict[str, Any], Optional[s
             "asOf": oldest_part_date(lineup_parts),
             "marches": troops["marches"],
             "arena": lineups["arena"],
-            "guardStation": None,  # Not recorded in any .md file.
+            "guardStation": lineups["guardStation"],  # None when lineups.md has no Guard Station section.
             "barricades": lineups["barricades"],
         },
         "codes": codes,

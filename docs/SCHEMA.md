@@ -113,7 +113,7 @@ slots = `slotsTotal` − `slotsOpen` (never counting fewer unlocked slots than f
 |---|---|
 | `marches[]` | `{name, purpose, heroes[{hero, lead?}], troops{inf,cav,arc}, ratioPct{inf,cav,arc}, power, asOf}` |
 | `arena.attack`, `arena.defense` | `{power, front: string[], back: string[], asOf}` |
-| `guardStation` | `{heroes: string[]}` \| null |
+| `guardStation` | `{heroes: string[], power, powerRounded, status, defense, defenseMax, heroesLocked, asOf}` \| null. `heroesLocked`: `true` when "Garrisoned heroes cannot be deployed" is ticked, `false` when unticked (the guards can leave on marches), `null` when not recorded |
 | `barricades[]` | `{name, level, maxed, power, powerRounded, heroes: string[], asOf}` |
 | `asOf` | Date: the oldest of the parts' dates (Data age shows the stalest lineup) |
 
@@ -217,8 +217,8 @@ when the value changes (see README "Update dates").
 | `lineups.marches` | troops.md, "Formation N: Purpose (`Tag`)" sections | Heroes (`Lead` marks the lead), deployed counts, ratios, power. lineups.md's preset table is only a cross-check |
 | `lineups.arena` | lineups.md | "… Squad Power"; `Frontline` rows → `front`, `Backline` rows → `back` |
 | `lineups.barricades` | lineups.md, "Barricade N" sections | `Level 10 (MAX)` → level 10, `maxed: true`; Combined Hero Power (`1.4M` → rounded) |
-| `lineups.guardStation` | not recorded | `null` |
-| `lineups.asOf` | upload dates | Oldest of the march, Arena squad and barricade dates (each the newest stamp in its own section) |
+| `lineups.guardStation` | lineups.md, "Guard Station" section | Combined Hero Power (`2.0M` → rounded); Status `Intact, City Defense 15,000 / 15,000` → `status` "Intact", `defense` 15000, `defenseMax` 15000; Guards Locked `Yes` / `No` → `heroesLocked` (other text → `null` with a warning); the `Slot` / `Hero` table → `heroes`. No section → `null` |
+| `lineups.asOf` | upload dates | Oldest of the march, Arena squad, barricade and Guard Station dates (each the newest stamp in its own section) |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
 | `codes` | codes.md | The `Gift Code` column of the "Active Codes" and "Expired Codes" tables (an empty table is fine; leftover "Redeemed Codes" rows count as Expired with ✓ and warn); `expired[].redeemed` from the Expired table's `Redeemed` column (✓ or empty); `expiredTotal` = number of expired rows |
 
