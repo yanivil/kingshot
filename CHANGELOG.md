@@ -69,7 +69,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
-- `hero.md`, Gordon, Seth, Saul and Forrest (2026-11-05); all four are now Lv **64**:
+- `hero.md`, Gordon, Seth, Saul, Forrest, Edwin, Olive, Yeonwoo and Fahd (2026-11-05):
   - Gordon: **4★ Tier 0** (5 / 100). Armet is now a Brigader's Armet +25 with exactly the stats Jabel's had on 27 Oct (presumably the
     same piece, inferred); the other three pieces +20. Power 475,780 → 539,750 = +37,360 4★ + 14,530 gear + 12,080 levels (inferred).
   - Seth: **3★ Tier 5** (39 / 100), all four Epic Praetorian's pieces +20 (gear 155,400). Power 438,369 → 481,924 = +18,785 Tier 5
@@ -84,6 +84,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
     Forager's Luck Lv 4** (+20%). Power 403,067 → 416,159 (+13,092, levels and the two skills, inferred). Roster role text updated.
   - Yeonwoo: Lv 64 (drill slot), 13 / 40 to Tier 1, Leatherwear +3 → +9, **On Guard Lv 4** (+20% Lethality). Power 361,910 → 380,548
     = +3,030 gear + 12,080 levels + 3,528 the skill (the last two inferred), exactly. Roster role text updated.
+  - Fahd: Lv 64 (drill slot), **2★ Tier 5 → 3★** (17 / 40), Armet +11 → +20. Power 329,530 → 368,930 = +21,920 3★ (the preview)
+    + 5,400 gear + 12,080 levels (inferred), exactly. The 3★ lifts his Lv 3 skill caps (Sandstorm now shows 29 / 50).
   - The stat changes split the same way; new previews where they changed.
 - `data/manual.json`, same date: the gear swap now uses Seth's Greaves +20 and Forrest's 5 Nov gear (Howard +10,290, Forrest
   +4,550, Seth −14,840); promotions add Gordon (4★), Seth, Edwin and Olive (all Rare heroes are now Tier 5; Olive is closest to 4★,
