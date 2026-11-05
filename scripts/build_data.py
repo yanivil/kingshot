@@ -1636,6 +1636,12 @@ def date_features(features: List[Dict[str, Any]], dates: Dict[str, Optional[str]
             feature["asOf"] = section_date(sec, dates[src])
 
 
+#: Longest recommendation title ("what") and summary before the build warns: a card
+#: should read at a glance (the full reasoning goes in "why", shown under Details).
+MAX_TITLE_CHARS = 60
+MAX_SUMMARY_CHARS = 200
+
+
 def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
     """Warn about recommendations the page would show wrongly.
 
@@ -1661,6 +1667,18 @@ def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
         steps = rec.get("steps")
         if steps is not None and not (isinstance(steps, list) and all(isinstance(s, str) for s in steps)):
             log.warn("data/manual.json", f"recommendation '{rid}': 'steps' must be a list of strings")
+        # Short cards (asked for by the account owner, 2026-11-05): the title and
+        # the summary are what a card shows first; the rest sits under Details.
+        what = rec.get("what")
+        if isinstance(what, str) and len(what) > MAX_TITLE_CHARS:
+            log.warn("data/manual.json",
+                     f"recommendation '{rid}': 'what' is {len(what)} characters; keep it under {MAX_TITLE_CHARS}")
+        summary = rec.get("summary")
+        if summary is not None and not isinstance(summary, str):
+            log.warn("data/manual.json", f"recommendation '{rid}': 'summary' must be text")
+        elif isinstance(summary, str) and len(summary) > MAX_SUMMARY_CHARS:
+            log.warn("data/manual.json",
+                     f"recommendation '{rid}': 'summary' is {len(summary)} characters; keep it under {MAX_SUMMARY_CHARS}")
         # "ready": false keeps a move out of the Top 5 ("moves now") and shows
         # its "waitingFor" text on Invest. The page treats anything but the
         # boolean false as ready, so a string "false" would put a move the

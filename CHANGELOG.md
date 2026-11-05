@@ -69,6 +69,17 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Short suggestion cards (asked for by the account owner on 2026-11-05: "too many wording … start with the suggestion,
+  then the current, and then some explanation but short"). Each card now shows a short title, the Suggested line,
+  the Now line and a one- or two-sentence `summary`; the full reasoning, steps, cost, heroes, sources and notes are
+  folded under Details on Invest. The Top 5 drops the cost line. New field `summary`; `scripts/build_data.py` warns
+  when a title passes 60 characters or a summary 200 (new test `test_short_card_checks`). `docs/SCHEMA.md` and
+  README updated.
+  - Data: all 12 cards rewritten short. `att-troop-split` is removed (the owner is removing the Att preset); the
+    march-skill books now go to Chenko's Stand of Arms first (`expedition-manuals-chenko`), since Quinn is in no
+    march without Att. The gathering and Terror cards add the troop limit: 136,941 troops fill about 1.5 full
+    marches, a full Gat (88,410) leaves about 48,500, and Terror needs 44,440 Infantry, so call it while Gat is
+    home. The Be check card loses its Suggested / Now block (the swap is done).
 - Deploy screens later on 2026-11-05: the **Join preset is saved** in tab 4 (`Joi`: Chenko leading, Helga, Yeonwoo;
   50 / 20 / 30; 88,880, which confirms the inferred march size; power 17,132,030), and **Helga replaced Forrest in
   Be**, whose troops changed from 35 / 20 / 45 to 50 / 20 / 30 (power 17,573,191). Att and Gat are unchanged (powers

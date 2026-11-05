@@ -229,8 +229,18 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .tok{overflow-wrap:anywhere}
 .tok-out{text-decoration:line-through;color:var(--muted)}
 .tok-new{font-weight:700;color:var(--good)}
-.move-c{font-size:13.5px;color:var(--ink);overflow-wrap:anywhere}
+.move-c{font-size:13.5px;color:var(--ink);overflow-wrap:anywhere;display:flex;flex-direction:column;gap:1px}
 .move-c b{color:var(--good)}
+/* Short cards: Suggested line, then Now (muted), then a one-line reason. */
+.move-cw{font-size:12.5px;font-weight:600;color:var(--muted)}
+.move-k{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.move-now{color:var(--muted)}
+.move-s{font-size:13.5px;color:var(--muted);line-height:1.4}
+.rec-sum{margin:0;font-size:14.5px;line-height:1.45}
+.rec-needs{margin:0;font-size:14px;display:flex;flex-wrap:wrap;gap:2px 6px;align-items:baseline}
+.rec-more{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:8px}
+.rec-more>summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--accent)}
+.rec-more>*+*{margin-top:8px}
 .grp{display:flex;flex-direction:column;gap:10px}
 .grp-h{display:flex;align-items:baseline;gap:10px}
 .grp-h h3{font-size:22px;font-weight:700}
@@ -1162,6 +1172,10 @@ class Dashboard extends StateHost {
       var hs = Array.isArray(r.heroes) ? r.heroes : [];
       var chg = chgVM(r.changes);
       return { rank: i + 1, what: r.what || NR, why: r.why || NR, cost: r.cost || 'Not known',
+               // Short card (owner's request, 5 Nov): the summary is the reason shown up front; the
+               // full "why" moves under Details. Data without a summary falls back to the full why,
+               // which is then not repeated under Details.
+               summary: r.summary || r.why || NR, showWhy: !!(r.summary && r.why),
                confs: confVM(r.confidence), type: r.type || 'Other',
                heroes: hs.map(function (n) { return { name: n, open: openHero(n) }; }), noHeroes: hs.length === 0,
                evidence: (r.evidence || []).map(function (e) { return { text: e }; }), hasEvidence: (r.evidence || []).length > 0,
@@ -1177,7 +1191,7 @@ class Dashboard extends StateHost {
     var waiting = ranked.filter(function (r) { return !r.ready; }).length;
     // Ready moves come first (see the sort above), so this takes the five best of them.
     var moves = ranked.filter(function (r) { return r.ready; }).slice(0, 5).map(function (r) {
-      return { n: r.rank, what: r.what, confs: r.confs, cost: r.cost, changes: r.changes,
+      return { n: r.rank, what: r.what, confs: r.confs, summary: r.summary, changes: r.changes,
                go: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); } };
     });
     var types = []; recs.forEach(function (r) { var t = r.type || 'Other'; if (types.indexOf(t) < 0) types.push(t); });
@@ -1546,15 +1560,23 @@ function tplOverview(v) {
     '<ol class="moves">' + each(v.moves, function (m) {
       return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
         '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
+        // Order asked for by the owner: the suggestion, then what is there now, then a short reason.
+        // Grouped changes read "Front a, b · Back c, d".
         each(m.changes, function (c) {
-          // Final state only; grouped changes read "Front a, b · Back c, d".
-          return '<span class="move-c">' + esc(c.where) + ': ' +
+          return '<span class="move-c"><span class="move-cw">' + esc(c.where) + '</span>' +
+            '<span class="move-cl"><span class="move-k">Suggested</span>' +
             each(c.rows, function (r, j) {
               return (j ? ' · ' : '') + (r.label ? esc(r.label) + ' ' : '') +
                 each(r.after, function (a, k) { return (k ? ', ' : '') + (a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); });
-            }) + '</span>';
+            }) + '</span>' +
+            '<span class="move-cl move-now"><span class="move-k">Now</span>' +
+            each(c.rows, function (r, j) {
+              return (j ? ' · ' : '') + (r.label ? esc(r.label) + ' ' : '') +
+                (r.beforeEmpty ? 'none' : each(r.before, function (a, k) { return (k ? ', ' : '') + esc(a.text); }));
+            }) + '</span></span>';
         }) +
-        '<span class="move-m">' + tplConfs(m.confs) + '<span>Cost: ' + esc(m.cost) + '</span></span></span></button></li>';
+        '<span class="move-s">' + esc(m.summary) + '</span>' +
+        '<span class="move-m">' + tplConfs(m.confs) + '</span></span></button></li>';
     }) + '</ol>' +
     when(v.movesEmpty, '<p class="empty">' + esc(v.movesEmptyText) + '</p>') +
     when(v.hasWaiting, '<button class="linkish foot"' + on(v.goInvest, 'moves:waiting') + '>' + esc(v.waitingText) + '</button>') +
@@ -1761,34 +1783,41 @@ function tplToks(toks, empty) {
 function tplInvest(v) {
   var iv = v.invest;
   return '<div class="view">' +
-    '<div class="view-h"><h2>Invest</h2><p class="lede">Every move with what to do, why, cost and how sure we are. "Not yet" moves wait for shards, books or a reading and are not in the Top 5.</p></div>' +
+    '<div class="view-h"><h2>Invest</h2><p class="lede">Each move: the suggestion, what you have now, and a short reason; tap Details for steps and sources. "Not yet" moves wait for shards, books or a reading and are not in the Top 5.</p></div>' +
     '<section class="panel"><div class="fbar">' + tplChipGroup('Type', iv.typeChips, 'itype') + tplChipGroup('Hero', iv.heroChips, 'ihero') + '</div></section>' +
     each(iv.groups, function (g) {
       return '<div class="grp"><div class="grp-h"><h3>' + esc(g.type) + '</h3><span class="mini">' + esc(g.countText) + '</span></div>' +
         each(g.recs, function (r) {
+          // Short card, in the order the owner asked for: 1) the suggestion (title, then the
+          // Suggested line), 2) what is there now, 3) a short reason. The full reasoning,
+          // steps, cost, heroes, sources and caveats are folded under "Details".
           return '<section class="panel rec">' +
             '<div class="item-h"><span class="rec-what">' + esc(r.rank) + '. ' + esc(r.what) + '</span><span class="move-m">' +
             when(!r.ready, '<span class="rec-wait">Not yet</span>') + tplConfs(r.confs) + '</span></div>' +
-            // A "Not yet" move says first what it is waiting for.
-            '<dl class="kv">' + when(!r.ready, '<dt>Needs</dt><dd>' + esc(r.waitingFor) + '</dd>') +
-            '<dt>Why</dt><dd>' + esc(r.why) + '</dd><dt>Cost</dt><dd>' + esc(r.cost) + '</dd>' +
-            '<dt>Heroes</dt><dd><span class="rec-heroes">' +
-            each(r.heroes, function (h) { return '<button class="linkish"' + on(h.open, 'rec:' + r.rank + ':' + h.name) + '>' + esc(h.name) + '</button>'; }) +
-            when(r.noHeroes, '<span class="mini">None named</span>') + '</span></dd></dl>' +
-            when(r.hasSteps, '<ol class="rec-steps">' + each(r.steps, function (t) { return '<li>' + esc(t.text) + '</li>'; }) + '</ol>') +
             when(r.hasChanges, '<div class="chgs">' + each(r.changes, function (c) {
               return '<div class="chg"><span class="chg-w">' + esc(c.where) + '</span>' +
                 (c.tabular
-                  ? '<table class="chg-t"><thead><tr><th scope="col"><span class="sr">Group</span></th><th scope="col">Now</th><th scope="col">Suggested</th></tr></thead><tbody>' +
+                  ? '<table class="chg-t"><thead><tr><th scope="col"><span class="sr">Group</span></th><th scope="col">Suggested</th><th scope="col">Now</th></tr></thead><tbody>' +
                     each(c.rows, function (row) {
-                      return '<tr><th scope="row">' + esc(row.label) + '</th><td>' + tplToks(row.before, row.beforeEmpty) + '</td><td>' + tplToks(row.after, false) + '</td></tr>';
+                      return '<tr><th scope="row">' + esc(row.label) + '</th><td>' + tplToks(row.after, false) + '</td><td>' + tplToks(row.before, row.beforeEmpty) + '</td></tr>';
                     }) + '</tbody></table>'
-                  : '<div class="chg-r"><span class="chg-l">Now</span>' + tplToks(c.rows[0].before, c.rows[0].beforeEmpty) + '</div>' +
-                    '<div class="chg-r"><span class="chg-l">Suggested</span>' + tplToks(c.rows[0].after, false) + '</div>') +
+                  : '<div class="chg-r"><span class="chg-l">Suggested</span>' + tplToks(c.rows[0].after, false) + '</div>' +
+                    '<div class="chg-r"><span class="chg-l">Now</span>' + tplToks(c.rows[0].before, c.rows[0].beforeEmpty) + '</div>') +
                 when(c.hasNote, '<span class="foot">' + esc(c.note) + '</span>') + '</div>';
             }) + '</div>') +
-            when(r.hasEvidence, '<ul class="rec-ev">' + each(r.evidence, function (e) { return '<li>' + esc(e.text) + '</li>'; }) + '</ul>') +
-            when(r.hasNote, '<p class="foot">' + esc(r.note) + '</p>') +
+            // A "Not yet" move says what it is waiting for.
+            when(!r.ready, '<p class="rec-needs"><span class="chg-l">Needs</span>' + esc(r.waitingFor) + '</p>') +
+            '<p class="rec-sum">' + esc(r.summary) + '</p>' +
+            '<details class="rec-more"><summary>Details</summary>' +
+              '<dl class="kv">' + when(r.showWhy, '<dt>Why</dt><dd>' + esc(r.why) + '</dd>') +
+              '<dt>Cost</dt><dd>' + esc(r.cost) + '</dd>' +
+              '<dt>Heroes</dt><dd><span class="rec-heroes">' +
+              each(r.heroes, function (h) { return '<button class="linkish"' + on(h.open, 'rec:' + r.rank + ':' + h.name) + '>' + esc(h.name) + '</button>'; }) +
+              when(r.noHeroes, '<span class="mini">None named</span>') + '</span></dd></dl>' +
+              when(r.hasSteps, '<ol class="rec-steps">' + each(r.steps, function (t) { return '<li>' + esc(t.text) + '</li>'; }) + '</ol>') +
+              when(r.hasEvidence, '<ul class="rec-ev">' + each(r.evidence, function (e) { return '<li>' + esc(e.text) + '</li>'; }) + '</ul>') +
+              when(r.hasNote, '<p class="foot">' + esc(r.note) + '</p>') +
+            '</details>' +
             '</section>';
         }) + '</div>';
     }) +

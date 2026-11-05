@@ -358,6 +358,26 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(len(log.warnings), 4)
         self.assertTrue(all("'bad'" in w for w in log.warnings))
 
+    def test_short_card_checks(self) -> None:
+        """Titles and summaries must stay short; a summary must be text.
+
+        Why: the account owner asked for short cards (suggestion, then the
+        current state, then a short reason), so a long title or summary is
+        flagged at build time instead of silently making a card wordy again.
+        """
+        ks = {"heroes": [], "recommendations": [
+            {"id": "ok", "what": "Att troops: 50 / 20 / 30", "summary": "No guide backs 50 / 30 / 20."},
+            {"id": "no-summary", "what": "Short title"},
+            {"id": "long-title", "what": "x" * (bd.MAX_TITLE_CHARS + 1), "summary": "Fine."},
+            {"id": "long-summary", "what": "Short", "summary": "y" * (bd.MAX_SUMMARY_CHARS + 1)},
+            {"id": "bad-summary", "what": "Short", "summary": ["not", "text"]},
+        ]}
+        log = bd.BuildLog()
+        bd.check_recommendations(ks, log)
+        self.assertEqual(len(log.warnings), 3)
+        for rid in ("'long-title'", "'long-summary'", "'bad-summary'"):
+            self.assertTrue(any(rid in w for w in log.warnings), rid)
+
     def test_ready_flag_checks(self) -> None:
         """A move that can't be done yet must say what it waits for; 'ready' must be a boolean.
 
