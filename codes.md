@@ -1,26 +1,45 @@
 ---
 # Date the values below were read in the game (YYYY-MM-DD). Used by scripts/build_data.py.
-as_of: 2026-10-21
+as_of: 2026-11-05
 ---
 # Kingshot Gift & Redeem Codes Tracker
 
-A complete tracker for all active and recent promotional gift codes for [Kingshot](https://www.centurygames.com/games/kingshot/) discovered across official announcements, community milestones, and social media channels (Discord, Facebook, and Instagram).
+Gift codes for [Kingshot](https://www.centurygames.com/games/kingshot/). The list was restarted on 2026-11-05 from the account
+owner's own list: it keeps only the codes below and codes found from now on. Older codes that community trackers still
+list are kept in `data/gift_codes_baseline.txt`, so the automated gift-code check does not report them again.
 
-Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
+Each code is in exactly one of the three lists below. Whether a code was redeemed is recorded here for the account, as
+told by the account owner; it is not stored in a browser.
 
-Use the **Redeemed?** column to track which codes you have already claimed on your account.
+Dates in the **Updated** column show when each row was last changed in this repository.
 
 ## Active Codes
 
-| Redeemed? | Gift Code | Rewards & Free Items | Source / Notes | Updated |
-| :---: | :--- | :--- | :--- | :---: |
-| [x] | `Kingshot888` | 200 Gems (2x 100), 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent launch / starter promo code | 2026-10-22 |
-| [x] | `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Permanent starter gift code | 2026-10-22 |
-| [x] | `KS1025` | Not recorded (rewards not shown to us) | Listed as active by kingshotmastery.com (added 25 Oct), kingshot.net and kingshotguide.org (first seen 26 Oct); redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
-| [x] | `OFFICIALSTORE1023` | Not recorded (rewards not shown to us) | Official Web Store drop, listed as active by kingshotmastery.com (added 23 Oct), kingshot.net and kingshotwiki.com; redeemed successfully, confirmed by the account owner on 27 Oct; no expiry listed | 2026-10-27 |
-| [ ] | `TREAT4U` | Not recorded | New (Halloween drop): listed as active by kingshot.net, kingshotoptimizer.com, kingshotguide.org and others on 2 Nov; expires 4 Nov 23:59 UTC by one tracker, 5 Nov by kingshot.net; not yet tried in the game, so unverified | 2026-11-02 |
-| [ ] | `KS1102` | Not recorded | New: listed as active only by kingshot.net (2 Nov); not yet tried in the game, so unverified; no expiry listed | 2026-11-02 |
-| [x] | `KS1104` | Not recorded (rewards not shown to us) | Found by the automated gift-code check on 4 Nov on kingshot.net and kingshotmastery.com; redeemed, told by the account owner on 5 Nov; no expiry listed | 2026-11-05 |
+Codes that are still listed as working and have not been redeemed on this account. New codes found by the automated check
+are added here, and stay unverified until they are tried in the game. None right now (2026-11-05).
+
+| Gift Code | Rewards | Source / Notes | Updated |
+| :--- | :--- | :--- | :---: |
+
+## Redeemed Codes
+
+| Gift Code | Rewards | Source / Notes | Updated |
+| :--- | :--- | :--- | :---: |
+| `KS1104` | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed, told by the account owner on 5 Nov | 2026-11-05 |
+| `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed, told by the account owner on 5 Nov | 2026-11-05 |
+
+## Expired Codes
+
+| Gift Code | Rewards | Source / Notes | Updated |
+| :--- | :--- | :--- | :---: |
+| `KS1102` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `TREAT4U` | Not recorded | Halloween code; expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `OFFICIALSTORE1023` | Not recorded | Web Store code; expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KS1025` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `Kingshot888` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Launch code; expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `lwaL5ZKx5` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KSPRAWNING` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KS1017` | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov | 2026-11-05 |
 
 ## How to Redeem Codes
 
@@ -37,38 +56,6 @@ Use the **Redeemed?** column to track which codes you have already claimed on yo
 3. Visit the official Century Games Gift Code Center in your mobile or desktop browser.
 4. Enter your Player ID and paste the code into the text field.
 5. Tap **Confirm**; items will be delivered immediately to your in-game mailbox.
-
-## Recently Expired Codes Archive
-
-These promotional codes have recently concluded their redemption period or reached their global redemption cap. They are archived below for reference in case Century Games re-activates them during future seasonal celebrations.
-
-| Redeemed? | Gift Code | Channel / Milestone Event | Recorded Rewards | Updated |
-| :---: | :--- | :--- | :--- | :---: |
-| [ ] | `lwaL5ZKx5` | Listed as active on Kingshot.net (2026-10-21); could not be redeemed when tried on 2026-10-22 | Not recorded | 2026-10-22 |
-| [ ] | `KSGW26JP` | Listed on older community code lists; could not be redeemed when tried on 2026-10-22 | Not recorded | 2026-10-22 |
-| [ ] | `KSPRAWNING` | Listed on older community code lists; could not be redeemed when tried on 2026-10-22 | Not recorded | 2026-10-22 |
-| [ ] | `KS1017` | Community Event Code (Expired October 20, 2026) | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | 2026-10-22 |
-| [ ] | `VIP1017` | Governor Concierge VIP Code (Expired October 20, 2026) | 2,000 Gems (2x 1K), 5x Mystery Chests, 5x Charm Designs, 5x Charm Guides, 1x 8h General Speedup | 2026-10-22 |
-| [ ] | `IG200KS` | Official Instagram 200K Followers | 1,000 Gems, 2x Mythic Hero Shards, 10x 1h Speedups, Resources | 2026-10-22 |
-| [ ] | `CHALLENGE26` | Community Challenge Event | 1,000 Gems, Skill Manuals, Charm Guides, 3x 1h Speedups | 2026-10-22 |
-| [x] | `Hangul2026` | Regional Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, 50 Stamina, Food/Wood/Stone | 2026-10-21 |
-| [x] | `WELLDONE` | Weekend Community Boost | 1,000 Gems, 20K Hero XP, 4x 1h Speedups, City Resources | 2026-10-21 |
-| [x] | `KS1005` | October Weekend Drop | 500 Gems, 10x 5m Speedups, 200 Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `EXPLORETHEWORLD` | World Exploration Promo | 1,000 Gems, Skill Books, Charm Materials, Artisan's Vision | 2026-10-21 |
-| [ ] | `MIDAUTUMN26` | Mid-Autumn Festival 2026 | 1,000 Gems, 300 VIP XP, 20x 5m Speedups, 50 Stamina | 2026-10-21 |
-| [ ] | `JPHolidaySEP` | Regional Celebration Drop | 1,000 Gems, Skill Manuals, 3x 1h Speedups, Charm Materials | 2026-10-21 |
-| [ ] | `KS0919` | September Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `KS0909` | Flash Weekend Gift | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `KS0907` | Community Milestone Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `OFFICIALSTORE0904` | Official Web Store Launch Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
-| [ ] | `CHILLWEEKEND` | Community Discord Event | 1,000 Gems, 5x Gold Keys, 2x Platinum Keys, Charm Guides | 2026-10-21 |
-| [ ] | `FB2500KT` | Official Facebook Milestone | 2,000 Gems, 3x Mythic Hero Shards, 10x 1h Training Speedups | 2026-10-21 |
-| [ ] | `VIP0822` | Governor Concierge VIP Drop | 2,000 Gems, 5x Mystery Chests, Charm Guides, 8h Speedup | 2026-10-21 |
-| [ ] | `KS0822` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `JP26SUMMER` | Summer Holiday Event | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
-| [ ] | `OFFICIALSTORE08011` | Web Store Anniversary Drop | 1,000 Gems, 1x Mythic Hero Shard, Speedups, Resources | 2026-10-21 |
-| [ ] | `KS0810` | August Drop | 500 Gems, Speedups, Hero XP, Avatar Frame | 2026-10-21 |
-| [ ] | `HAPPYCATDAY` | International Cat Day Event | 1,000 Gems, 2x Lucky Hero Gear Chests, Enhancement XP | 2026-10-21 |
 
 ## Official Channels to Monitor for New Codes
 

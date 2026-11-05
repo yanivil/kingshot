@@ -69,6 +69,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Gift codes restarted (asked for by the account owner on 2026-11-05):
+  - `codes.md` now holds only the owner's current codes, in three lists with no checkbox column: **Active** (not redeemed
+    yet; empty for now; new codes go here), **Redeemed** (`KS1104`, `VIP777`) and **Expired** (`KS1102`, `TREAT4U`,
+    `OFFICIALSTORE1023`, `KS1025`, `Kingshot888`, `lwaL5ZKx5`, `KSPRAWNING`, `KS1017`). Known rewards are kept.
+  - The 22 older codes dropped from `codes.md` (e.g. `HAPPYCATDAY`, `WELLDONE`, `KS1005`) were added to
+    `data/gift_codes_baseline.txt`, so the gift-code check does not report them as new.
+  - Dashboard: the per-browser "tap to mark redeemed" feature is removed, because redeemed is a fact about the account,
+    not a browser. The Codes page shows three read-only lists (To redeem, Redeemed, Expired) and deletes the old
+    `ks-code-marks` browser key once.
+  - `scripts/build_data.py`: `codes` is now `{asOf, active, redeemed, expired, expiredTotal}` with `{code}` entries; it
+    warns when a code is in two lists. `scripts/check_gift_codes.py` reads rows whose first cell is a backticked code
+    (and still the old checkbox rows). Tests: three parser tests, two checker tests (old layout, dropped codes stay
+    ignored); 53 tests in all.
+  - README and `docs/SCHEMA.md` describe the three lists.
 - `codes.md`: `KS1104` is ticked as redeemed (told by the account owner on 5 Nov; rewards not shown, so "Not recorded").
 - `data/manual.json`: an audit of all eight suggestions against the 5 Nov data (asked for by the account owner) found older details
   in five and brings them up to date:
