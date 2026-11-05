@@ -69,6 +69,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Formation cards (asked for by the account owner on 2026-11-05: "for each formation give me how it should look
+  like"): the march suggestions become one card per preset tab, each a Heroes / Troops table with exact numbers,
+  Suggested next to what the tab holds now. `formation-terror` (tab 2, replacing Att: Howard, Jabel, Diana;
+  44,440 / 17,776 / 26,664), `formation-gat` (tab 3: Seth, Edwin, Olive; 45,089 / 43,321 / 0), `formation-wood`
+  (tab 5: Forrest, Fahd, Amane; 1,048 / 3,640 / 43,843, exactly what a full Gat leaves) and `formation-bear-join`
+  (tab 6: Chenko, Helga, Yeonwoo; 8,888 / 36,149 / 43,843) replace `gat-match-resource`, `terror-call-diana` and
+  `join-bear-troops`. The Top 5 puts each group (Heroes, Troops) on its own line. SCHEMA and README mention the
+  Heroes / Troops rows.
 - Short suggestion cards (asked for by the account owner on 2026-11-05: "too many wording … start with the suggestion,
   then the current, and then some explanation but short"). Each card now shows a short title, the Suggested line,
   the Now line and a one- or two-sentence `summary`; the full reasoning, steps, cost, heroes, sources and notes are
