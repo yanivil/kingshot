@@ -132,7 +132,7 @@
       "priority": 1,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
+      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known. Troops: for Bear Hunt, guides give a joiner an Archer-heavy march (10% Infantry, 10% Cavalry, 80% Archers in two guides; 10 / 30 / 60 for Generation 1 heroes in a third) and say a full march matters more than the exact ratio. A full Join march holds 88,880 (Chenko, Helga and Yeonwoo add 12,730 each, like your other presets), but you have 43,180 Archers (5 Nov), less than 60%, so the suggestion keeps 10% Infantry, sends every Archer and fills the rest with Cavalry. For Terror, a rally guide gives 50 / 20 / 30.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
@@ -143,10 +143,35 @@
             "Yeonwoo"
           ],
           "note": "One hero per troop type, as in your other presets; Yeonwoo can lead instead when Chenko is busy"
+        },
+        {
+          "where": "Join preset troops (88,880)",
+          "rows": [
+            {
+              "label": "Bear Hunt",
+              "before": [],
+              "after": [
+                "Infantry 8,888 (10%)",
+                "Cavalry 36,812 (41%)",
+                "Archers 43,180 (49%)"
+              ]
+            },
+            {
+              "label": "Terror",
+              "before": [],
+              "after": [
+                "Infantry 44,440 (50%)",
+                "Cavalry 17,776 (20%)",
+                "Archers 26,664 (30%)"
+              ]
+            }
+          ],
+          "note": "Save the Bear Hunt split in the preset and change it on the Deploy screen before a Terror join (or the other way round if you join Terror more often). The numbers assume no other march is out: if one is, keep 10% Infantry, send every free Archer and fill the rest with Cavalry"
         }
       ],
       "steps": [
-        "Deploy → a free preset (4, 5 or 6): Chenko first (lead), Helga and Yeonwoo in the other two places; name it Join.",
+        "Deploy → a free preset (4, 5 or 6): Chenko first (lead), Helga and Yeonwoo in the other two places; troops 8,888 Infantry, 36,812 Cavalry and 43,180 Archers (all your Archers) = 88,880; name it Join.",
+        "Before joining a Terror rally, change the troops to 44,440 Infantry, 17,776 Cavalry and 26,664 Archers (50 / 20 / 30).",
         "When you join a rally (Terror, Bear), send Join; keep Att for rallies you lead."
       ],
       "evidence": [
@@ -157,7 +182,11 @@
         "kingshotworld.com Bear Hunt teams (updated 2026-07-30): \"The second and third heroes mainly increase the joiner's deployment capacity. Their skills do not become rally-wide buffs.\"",
         "kingshotguides.com advanced rally guide (updated 2025-11-16): \"the Rally Captain can contribute up to nine skills—three from each hero\"; the author's comment (2025-07-02): \"Chance-based skills don't stack for joiners, so having 4 Jabels will still only count as one.\"",
         "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Best S+ joiner pool: Chenko, Amadeus, Yeonwoo, Amane…\"; \"Chenko, Amadeus, and Yeonwoo's skills share the same internal buff category, so they add together\"",
-        "Official Kingshot X post (about May 2026; x.com is not reachable here, so read only as a search excerpt): rally leaders get all three heroes' skills; joiners only the 4 highest-levelled first skills of the captains"
+        "Official Kingshot X post (about May 2026; x.com is not reachable here, so read only as a search excerpt): rally leaders get all three heroes' skills; joiners only the 4 highest-levelled first skills of the captains",
+        "kingshotworld.com Bear Hunt teams (updated 2026-07-30), Recommended Joiner Troop Formation: \"Infantry: 10% Cavalry: 10% Archers: 80%\"; \"a full march, and fast rally timing usually matter more than making small changes to the troop ratio\"",
+        "kingshotguides.com troop setup guide (2025-08-19): \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"; \"players who send 100% Archers often do less damage than players who send 80% Archers but keep at least 10% Infantry and 10% Cavalry\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1 | 10% | 30% | 60% | Cavalry heroes have the strongest stats at this stage\"",
+        "troops.md of 5 Nov: Elite (VIII) Infantry 45,474, Cavalry 46,298, Archers 43,180; Be and Att hold 88,880 with three Lv. 64 heroes; hero.md: Chenko, Helga and Yeonwoo +12,730 troop capacity each"
       ],
       "cost": "None (a preset)",
       "confidence": [
@@ -171,7 +200,7 @@
         "Helga",
         "Amane"
       ],
-      "note": "Verified: the skill texts, the free queue, that Terror is rally-only, and the guides' text (pages read on 5 Nov). Unverified: how the 4 counted joiner skills are picked (highest level or the first 4 joiners; sources differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places (they only add troops). If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less."
+      "note": "Verified: the skill texts, the free queue, that Terror is rally-only, and the guides' text (pages read on 5 Nov). Unverified: how the 4 counted joiner skills are picked (highest level or the first 4 joiners; sources differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places (they only add troops). If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less. Troops: Verified: your troop stock and hero capacities. Inferred: that the Join march holds 88,880 (not yet seen on its Deploy screen) and the Bear split (Cavalry fills what the Archers can't). Unverified: the ratios (guides differ: 10 / 10 / 80 or 10 / 30 / 60 for Bear) and whether the rally leader's per-joiner cap lets a full 88,880 in."
     },
     {
       "id": "arena-defense-chenko",

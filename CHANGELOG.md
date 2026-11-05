@@ -69,6 +69,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`, `rally-join-preset`: troop numbers for the Join preset (asked for by the account owner on
+  2026-11-05). Bear Hunt: 8,888 Infantry / 36,812 Cavalry / 43,180 Archers = 88,880 (10 / 41 / 49%). The guides give a
+  joiner 10 / 10 / 80 (kingshotworld.com, kingshotguides.com) or 10 / 30 / 60 for Generation 1 heroes
+  (kingshotmastery.com), but the account has 43,180 Archers, so every Archer goes and Cavalry fills the rest; the
+  guides say a full march matters more than the exact ratio. Terror: 44,440 / 17,776 / 26,664 (50 / 20 / 30,
+  kingshotguides.com). The 88,880 march size is inferred from the other presets; the per-joiner cap a rally leader sets
+  is not known. Shown as a second Now / Suggested block and in the Top 5.
 - Formation advice checked against the full guide pages (the account owner allowed the guide sites on 2026-11-05; the
   pages were downloaded, stripped to text and every quote checked). Search-excerpt evidence is replaced by dated
   quotes. Corrections:
