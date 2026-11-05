@@ -69,6 +69,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `profile.md` (Town Center screen, later on 2026-11-05): account power **17,818,524** exact from the city top bar
+  (the Governor Profile showed 17.7M earlier that day), **VIP 4** (VIP 3 on 27 Oct), free gems 35,597, bread 104.1M;
+  Town Center Lv. 22, citizens 32 / 32 and TC Attack / Defense / Health 735 / 1,470 / 22,064 re-confirmed; the same
+  six perk icons (names not shown, dates kept).
 - Stale notes fixed, found while validating the suggestions on 2026-11-05: the Governor Gear feature note in
   `data/manual.json` said 3 of 6 slots equipped (now 6 of 6 since 5 Nov, as `profile.md` shows), and README described
   `profile.md` as Town Center Lv. 20 (Lv. 22 since 27 Oct).
