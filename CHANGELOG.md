@@ -69,6 +69,30 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Jabel, Diana, Quinn and Howard (2026-11-05 screenshots):
+  - Jabel: **3★ Tier 5** (36 / 100 to 4★; Mythic Redeem 36). Power 653,530 → 764,215: +28,900 Tier 5 (the 27 Oct preview),
+    +72,965 gear (Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23; Gauntlets +25; Breastplate +30), and
+    +8,820 presumably Persistence and Youthful Rage reaching Lv 4 (inferred). Gear 237,155. Gallant Throw is capped until 4★.
+  - Diana: Lv 61 → **64**, **4★ Tier 1** (80 / 100 to Tier 2). Power 502,893 → 599,698: +69,920 base (4★ and Tier 1, both
+    previews), +19,525 gear (Faceplate +0 → +20, Leatherwear and Boots +20), +7,360 presumably the levels (inferred). Iron
+    Constitution's Lv 4 cap is lifted.
+  - Quinn: **4★ Tier 1** (32 / 100 to Tier 2). Power 551,935 → 597,520: +32,560 Tier 1 (the preview) and +13,025 gear (Faceplate
+    and Bracers Epic +20, Leatherwear +20, Boots +24) add up exactly. Archer Attack / Defense +103.45% (the preview said +103.44%).
+  - Howard: Lv 59 → **64** (still drill-locked), **4★ Tier 0** (2 / 100). Rare Stonewall Gloves +20 replaced by Epic Praetorian's
+    Gloves +21; Helm and Shroud +21; Greaves +24 (gear 128,860 → 148,035). Shielded Strike and Weaken reached **Lv 4** (Shielded
+    Strike Lv 5 costs 75 Epic Expedition Manuals). Power 515,748 → 591,419: +37,360 4★ (the preview), +19,175 gear, +12,080
+    presumably the levels and +7,056 presumably the two skills (inferred); the stat changes split the same way.
+  - New promotion previews for all four; roster rows updated.
+- `data/manual.json`, same date:
+  - Gear swap (priority 1): the gloves half is done; the suggestion now covers only the boots (Seth's Epic Greaves +16 for
+    Howard's Rare +24). Seth's and Forrest's gear was not re-checked.
+  - Promotions (priority 2): redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★
+    (needs 64).
+  - Skill books (priority 5): Howard's Weaken and Shielded Strike and Jabel's Persistence and Youthful Rage are marked done;
+    Epic Expedition Manual stock 29.
+  - Long-term focus (priority 6): Jabel's next step is 4★, not Tier 5.
+  - Drill Camp: Diana's instructor level is 64; the note records that Howard at Lv 64 implies all instructors are presumably 64
+    (inferred; Olive and Chenko stay at 59 until their screens are re-sent).
 - `data/manual.json`: the long-term hero suggestion records that the account has no Zoe, Hilde or Marlin (told by the account owner on
   28 Oct; kingdom age unknown), so Generation 2 has presumably not arrived (inferred); its last step now says to watch the Hero
   Roulette and Hall of Heroes events instead of asking for the kingdom age.
