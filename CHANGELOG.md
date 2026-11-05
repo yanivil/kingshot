@@ -69,6 +69,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Stale notes fixed, found while validating the suggestions on 2026-11-05: the Governor Gear feature note in
+  `data/manual.json` said 3 of 6 slots equipped (now 6 of 6 since 5 Nov, as `profile.md` shows), and README described
+  `profile.md` as Town Center Lv. 20 (Lv. 22 since 27 Oct).
 - `data/manual.json`, `rally-join-preset`: troop numbers for the Join preset (asked for by the account owner on
   2026-11-05). Bear Hunt: 8,888 Infantry / 36,812 Cavalry / 43,180 Archers = 88,880 (10 / 41 / 49%). The guides give a
   joiner 10 / 10 / 80 (kingshotworld.com, kingshotguides.com) or 10 / 30 / 60 for Generation 1 heroes
