@@ -116,7 +116,8 @@ The Overview opens with account power and total kills.
 2. **Judgments and rules** (recommendations, data-health notes, rules, features, Drill Camp, hero notes):
    edit `data/manual.json`. It can only add what the `.md` files don't provide. A recommendation that
    moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
-   state in `changes` (`where`, `before`, `after`, or `rows` with `Front` / `Back` groups for the Arena).
+   state in `changes` (`where`, `before`, `after`, or `rows` with `Front` / `Back` groups for the Arena, or
+   `Heroes` / `Troops` rows for a march formation, with exact troop numbers).
    The dashboard shows the final line-up in the Top 5 and a Now / Suggested comparison on the Invest page.
    Keep cards short: a short title (`what`, the suggestion itself) and a one- or two-sentence `summary`; the full
    reasoning goes in `why`, `steps`, `evidence` and `note`, which the page folds under Details.

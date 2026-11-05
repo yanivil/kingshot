@@ -235,6 +235,10 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .move-cw{font-size:12.5px;font-weight:600;color:var(--muted)}
 .move-k{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-right:6px}
 .move-now{color:var(--muted)}
+.move-cl{display:block}
+.move-row{display:block}
+.move-row-i{display:inline}
+.move-rl{display:inline-block;min-width:58px;font-weight:600;color:var(--muted)}
 .move-s{font-size:13.5px;color:var(--muted);line-height:1.4}
 .rec-sum{margin:0;font-size:14.5px;line-height:1.45}
 .rec-needs{margin:0;font-size:14px;display:flex;flex-wrap:wrap;gap:2px 6px;align-items:baseline}
@@ -1561,19 +1565,19 @@ function tplOverview(v) {
       return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
         '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
         // Order asked for by the owner: the suggestion, then what is there now, then a short reason.
-        // Grouped changes read "Front a, b · Back c, d".
+        // A grouped change (e.g. a formation's Heroes and Troops) puts each group on its own line.
         each(m.changes, function (c) {
+          var side = function (key) {
+            return each(c.rows, function (r) {
+              var toks = r[key];
+              var text = (key === 'before' && r.beforeEmpty) ? 'none'
+                : each(toks, function (a, k) { return (k ? ', ' : '') + (key === 'after' && a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); });
+              return '<span class="' + (r.label ? 'move-row' : 'move-row-i') + '">' + (r.label ? '<span class="move-rl">' + esc(r.label) + '</span>' : '') + text + '</span>';
+            });
+          };
           return '<span class="move-c"><span class="move-cw">' + esc(c.where) + '</span>' +
-            '<span class="move-cl"><span class="move-k">Suggested</span>' +
-            each(c.rows, function (r, j) {
-              return (j ? ' · ' : '') + (r.label ? esc(r.label) + ' ' : '') +
-                each(r.after, function (a, k) { return (k ? ', ' : '') + (a.isNew ? '<b>' + esc(a.text) + '</b>' : esc(a.text)); });
-            }) + '</span>' +
-            '<span class="move-cl move-now"><span class="move-k">Now</span>' +
-            each(c.rows, function (r, j) {
-              return (j ? ' · ' : '') + (r.label ? esc(r.label) + ' ' : '') +
-                (r.beforeEmpty ? 'none' : each(r.before, function (a, k) { return (k ? ', ' : '') + esc(a.text); }));
-            }) + '</span></span>';
+            '<span class="move-cl"><span class="move-k">Suggested</span>' + side('after') + '</span>' +
+            '<span class="move-cl move-now"><span class="move-k">Now</span>' + side('before') + '</span></span>';
         }) +
         '<span class="move-s">' + esc(m.summary) + '</span>' +
         '<span class="move-m">' + tplConfs(m.confs) + '</span></span></button></li>';
