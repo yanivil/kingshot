@@ -128,64 +128,8 @@
   },
   "recommendations": [
     {
-      "id": "near-promo",
-      "priority": 1,
-      "type": "Promotion",
-      "what": "Promotions: next Epic shards to Amane's 3★ (needs 20) or Quinn's Tier 2 (needs 68); keep the 36 Mythic shards for Jabel's 4★ (needs 64); Rare: Olive first (needs 24)",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Epic: the Redeem stock is 4 (5 Nov). The nearest Epic steps: Amane's 3★ needs 20 (20 / 40): +21,920 base power, +5.80% Archer Attack and Defense, and it lifts her Lv. 3 caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed); she is in no combat line-up, only the Gat gathering preset. Diana's Tier 3 needs 100 (0 / 100; +36,080 and +4.96%). Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd reached 3★ by 5 Nov and needs 23 for Tier 1 (17 / 40; +18,880 and +4.51%), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 5 Nov) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a combat preset (the Be march), and Seth and Edwin are in the Gat gathering preset. Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
-      "steps": [
-        "Epic next: Amane's 3★ (20 / 40, needs 20) when the stock allows, if joining rallies or the infirmary matters to you; otherwise Quinn's Tier 2 (needs 68).",
-        "Keep the 4 Epic Redeem shards and new ones until one of those steps is in reach.",
-        "Mythic: keep the 36 Mythic Redeem shards; when Jabel's count plus the stock reaches 100, Redeem and Ascend her to 4★ (36 / 100 on 5 Nov, needs 64).",
-        "Rare: the 4 Rare Redeem shards and new Rare shards toward Olive's 4★ (76 / 100 on 5 Nov, needs 24), the closest; choose Forrest (59 / 100, Be march) instead if the Be march matters more to you.",
-        "Then Forrest (needs 41), Seth (needs 61) and Edwin (needs 93), all on 5 Nov.",
-        "Helga (0 / 5) and Saul (0 / 40 to 3★): only after Jabel's 4★."
-      ],
-      "evidence": [
-        "Diana's promotion screen later on 5 Nov: 4-Star (Tier 2), 0 / 100, Redeem 4 (Epic); preview +36,080 / +4.96%; power 599,698 → 635,778",
-        "Quinn's promotion screen of 5 Nov: 4-Star (Tier 1), 32 / 100, Redeem 24; preview +36,080 / +6.32%",
-        "Howard's promotion screen of 5 Nov: 4-Star (Tier 0), 2 / 100, Redeem 24; preview +32,560 / +6.31%",
-        "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
-        "Chenko's promotion screen of 5 Nov: 4-Star (Tier 0), 8 / 100, Redeem 24; preview +32,560 / +6.31%",
-        "Gordon's promotion screen of 5 Nov: 4-Star (Tier 0), 5 / 100, Redeem 24; preview +32,560 / +6.31%",
-        "Yeonwoo's promotion screen of 5 Nov: 3-Star (Tier 0), 13 / 40, Redeem 24; preview +18,880 / +4.51%",
-        "Fahd's promotion screen of 5 Nov: 3-Star (Tier 0), 17 / 40, Redeem 24; preview +18,880 / +4.51%",
-        "Amane's promotion screen of 5 Nov: 2-Star (Tier 5), 20 / 40, Redeem 24; preview +21,920 / +5.80%; Tri-Phalanx and Exorcism need 3★ for Lv. 4 (hero.md)",
-        "Edwin's promotion screen of 5 Nov: 3-Star (Tier 5), 7 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
-        "Olive's promotion screen of 5 Nov: 3-Star (Tier 5), 76 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
-        "Seth's promotion screen of 5 Nov: 3-Star (Tier 5), 39 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
-        "Forrest's promotion screen of 5 Nov: 3-Star (Tier 5), 59 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
-        "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
-        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
-      ],
-      "cost": "Shards only: Epic Redeem 4, Mythic Redeem 36 kept for Jabel, Rare Redeem 4 toward Olive (5 Nov)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Diana",
-        "Amane",
-        "Quinn",
-        "Howard",
-        "Chenko",
-        "Gordon",
-        "Yeonwoo",
-        "Jabel",
-        "Fahd",
-        "Helga",
-        "Saul",
-        "Seth",
-        "Edwin",
-        "Forrest",
-        "Olive"
-      ],
-      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Amane's 3★ or Quinn's Tier 2 as the next Epic step, Olive as the first Rare one, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
-    },
-    {
       "id": "rally-join-preset",
-      "priority": 2,
+      "priority": 1,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
       "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
@@ -226,89 +170,8 @@
       "note": "Verified: the skill texts, the free queue and that Terror is rally-only. Unverified: the joiner rule (community guides, not game text), whether a rally counts only the first few joiners' skills (one guide says four), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places. If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less."
     },
     {
-      "id": "skill-books-order",
-      "priority": 3,
-      "type": "Skills",
-      "what": "Skill books: next 50 Epic Conquest Books to Gordon's Trash Talk, next 50 Epic Expedition Manuals to Howard's Joint Defense",
-      "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard's Defenders' Edge reached Lv. 4 by 27 Oct and his Weaken by 5 Nov, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard's Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75); Joint Defense is still next, because it raises Defense for all heroes from 10% to 12.5% and Howard is in the front of both Arena squads. Mythic: Jabel's Persistence and Youthful Rage reached Lv. 4 by 5 Nov and presumably wait for her 4★ (inferred), so there is no Mythic target until Jabel's 4★. Amane's three exploration skills went Lv. 2 → 3 by 5 Nov (30 books each) and now wait for her 3★. Chenko's Stand of Arms (her rally-joiner skill) also reached Lv. 4 by 5 Nov: see the rally suggestion.",
-      "steps": [
-        "Epic Conquest Books (stock not read since Weaken, Stand of Arms and On Guard used 50 each; 50 needed): 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
-        "Epic Expedition Manuals (29 in stock on 5 Nov on every Epic skill screen; 50 needed for Lv. 3 → 4): 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
-        "Mythic Conquest Books and Expedition Manuals (stock not re-read): no target until Jabel's 4★ or Saul's 3★. Jabel's Lv. 4 skills and all of Saul's Lv. 3 skills presumably wait for those promotions (Gallant Throw, Rapid Fire and Superior Techniques say so; the rest is inferred)."
-      ],
-      "evidence": [
-        "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
-        "Chenko's skill screen of 5 Nov: Stand of Arms icon shows Lv. 4; Burst Fire, Defense Upgrade, Weapon Upgrade and Shield Wall Lv. 3",
-        "Amane's skill screen of 5 Nov: all five skill icons show Lv. 3; Sakura Blossom says \"ascend to 3-Star\"",
-        "Yeonwoo's skill screen of 5 Nov: On Guard icon shows Lv. 4; Petalbloom 29 / 50",
-        "Saul's skill screen of 5 Nov: all six skill icons show Lv. 3 (Positional Battler was Lv. 2); Rapid Fire says \"ascend to 3-Star\"",
-        "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn, Chenko, Gordon, Yeonwoo and Fahd (29 / 50 each)",
-        "Jabel's skill screen of 5 Nov: Persistence and Youthful Rage icons show Lv. 4; Gallant Throw says \"ascend to 4-Star\"",
-        "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
-        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
-        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
-      ],
-      "cost": "50 books per Lv. 3 → 4 upgrade; 21 more Epic Expedition Manuals needed (5 Nov); Epic Conquest Book stock not read since Weaken, Stand of Arms and On Guard reached Lv. 4",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Howard",
-        "Gordon",
-        "Quinn",
-        "Diana",
-        "Jabel",
-        "Saul",
-        "Fahd",
-        "Amane",
-        "Chenko",
-        "Yeonwoo"
-      ],
-      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If attacking matters more to you than beasts, put Quinn's Precision Shot before Gordon's Trash Talk (Att march)."
-    },
-    {
-      "id": "hero-focus-long-term",
-      "priority": 4,
-      "type": "Heroes",
-      "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
-      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she reached Tier 5 by 5 Nov and is 64 shards from 4★ (36 / 100). Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive. You have none of the Generation 2 heroes yet (28 Oct), which suggests they have not reached your kingdom, though it is also possible they are out but not yet earned (inferred).",
-      "steps": [
-        "Mythic shards: Jabel to 4★ (36 / 100 on 5 Nov, needs 64; 36 Mythic Redeem in stock) before Helga (0 / 5) or Saul (0 / 40 to 3★).",
-        "Mythic books: Jabel's Youthful Rage and Persistence reached Lv. 4 by 5 Nov; their next level presumably waits for her 4★ (inferred). Not Saul's.",
-        "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
-        "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
-        "Generation 2: you have no Zoe, Hilde or Marlin yet (28 Oct), so Generation 1 heroes are still your best options; check the Hero Roulette and Hall of Heroes events for them, and when one appears, ask for an updated plan."
-      ],
-      "evidence": [
-        "hero.md promotion screens: Jabel 3★ Tier 5, 36 / 100 to 4★ (5 Nov); Helga 0 / 5 (5 Nov); Saul 2★ Tier 5, 0 / 40 to 3★ (5 Nov); Amadeus 0 / 20 to recruit (22 Oct)",
-        "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
-        "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
-        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120",
-        "No Zoe, Hilde or Marlin in your hero list, told by you on 28 Oct (kingdom age unknown)"
-      ],
-      "cost": "Shards and books only",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Jabel",
-        "Howard",
-        "Quinn",
-        "Diana",
-        "Chenko",
-        "Yeonwoo",
-        "Helga",
-        "Saul"
-      ],
-      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar. Inferred: Generation 2 has not reached your kingdom yet."
-    },
-    {
       "id": "be-swap-forrest",
-      "priority": 5,
+      "priority": 2,
       "type": "Marches",
       "what": "Test a combat hero instead of Forrest in the Be (beast) march",
       "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (306,455 vs Forrest's 438,984 on 5 Nov), so test it before keeping it.",
@@ -349,11 +212,11 @@
         "Diana",
         "Gordon"
       ],
-      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the gear suggestion (ranked last): Howard's old Stonewall Greaves (+24) are on Seth since 5 Nov, and that suggestion moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
+      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the gear move: Howard's old Stonewall Greaves (+24) are on Seth since 5 Nov, and that suggestion moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
     },
     {
       "id": "gat-match-resource",
-      "priority": 6,
+      "priority": 3,
       "type": "Marches",
       "what": "Gathering: lead with the hero whose skill matches the resource",
       "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +20% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
@@ -394,58 +257,14 @@
         "Olive",
         "Amane"
       ],
-      "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load."
-    },
-    {
-      "id": "att-troop-mix-test",
-      "priority": 7,
-      "type": "Troops",
-      "what": "Troops: optionally test the guides' 50 / 20 / 30 in a copy of the Att preset",
-      "why": "By 5 Nov all troops are Tier VIII (Elite): Infantry 45,474 (33.7%), Cavalry 46,298 (34.3%), Archers 43,180 (32.0%), 134,952 in all. A full march holds 88,880; your Att preset is 44,440 Infantry, 26,664 Cavalry and 17,776 Archers (50 / 30 / 20). Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies (some say 45 / 25 / 30). Your 30% Cavalry may suit Att, because Jabel, a Cavalry hero, is its strongest hero (inferred); the guides' mix would move 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. Neither choice is shown to be better in the game.",
-      "changes": [
-        {
-          "where": "Att preset troops (optional test)",
-          "before": [
-            "50% Infantry (44,440)",
-            "30% Cavalry (26,664)",
-            "20% Archers (17,776)"
-          ],
-          "after": [
-            "50% Infantry (44,440)",
-            "20% Cavalry (17,776)",
-            "30% Archers (26,664)"
-          ],
-          "note": "Full march 88,880 (5 Nov); Infantry unchanged"
-        }
-      ],
-      "steps": [
-        "Optional: save a copy of Att with 50 / 20 / 30 in a free preset (4, 5 or 6) and compare results in similar fights.",
-        "Keep training the three types evenly so a 50% Infantry march stays possible as the march size grows."
-      ],
-      "evidence": [
-        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
-        "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
-        "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense"
-      ],
-      "cost": "None for the test (a preset); training time and resources for more troops (amounts not recorded)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Howard",
-        "Jabel",
-        "Quinn"
-      ],
-      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry)."
+      "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load. With the Join preset (see the rally move) this fills all three spare tabs (4, 5 and 6), if they are free; they were not opened on 5 Nov."
     },
     {
       "id": "greaves-to-forrest",
-      "priority": 8,
+      "priority": 4,
       "type": "Gear",
       "what": "Gear: give the Stonewall Greaves +24 (now on Seth) to Forrest for the Be march, or to Helga if she replaces Forrest",
-      "why": "Howard took Seth's Epic Praetorian's Greaves on 5 Nov, so Howard's old Rare Stonewall Greaves +24 now sit on Seth, a gathering hero in no combat line-up. Forrest, the infantry hero in the Be march, wears a +17 pair; swapping the two pairs moves +4,550 gear power and +0.98% Infantry Lethality to a hero who fights. If Helga replaces Forrest in Be (see that suggestion), give the +24 pair to Helga instead (her Stonewall Greaves are +8). A small gain, so it is ranked last.",
+      "why": "Howard took Seth's Epic Praetorian's Greaves on 5 Nov, so Howard's old Rare Stonewall Greaves +24 now sit on Seth, a gathering hero in no combat line-up. Forrest, the infantry hero in the Be march, wears a +17 pair; swapping the two pairs moves +4,550 gear power and +0.98% Infantry Lethality to a hero who fights. If Helga replaces Forrest in Be (see that suggestion), give the +24 pair to Helga instead (her Stonewall Greaves are +8). A small gain, but it costs nothing.",
       "changes": [
         {
           "where": "Forrest's boots",
@@ -488,6 +307,268 @@
         "Seth"
       ],
       "note": "Verified: the pieces and their + levels on the 5 Nov Gear screens; the + level stays with a piece when it is moved. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights."
+    },
+    {
+      "id": "att-troop-mix-test",
+      "priority": 5,
+      "type": "Troops",
+      "what": "Troops: optionally test the guides' 50 / 20 / 30 in the Att preset",
+      "why": "By 5 Nov all troops are Tier VIII (Elite): Infantry 45,474 (33.7%), Cavalry 46,298 (34.3%), Archers 43,180 (32.0%), 134,952 in all. A full march holds 88,880; your Att preset is 44,440 Infantry, 26,664 Cavalry and 17,776 Archers (50 / 30 / 20). Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies (some say 45 / 25 / 30). Your 30% Cavalry may suit Att, because Jabel, a Cavalry hero, is its strongest hero (inferred); the guides' mix would move 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. Neither choice is shown to be better in the game.",
+      "changes": [
+        {
+          "where": "Att preset troops (optional test)",
+          "before": [
+            "50% Infantry (44,440)",
+            "30% Cavalry (26,664)",
+            "20% Archers (17,776)"
+          ],
+          "after": [
+            "50% Infantry (44,440)",
+            "20% Cavalry (17,776)",
+            "30% Archers (26,664)"
+          ],
+          "note": "Full march 88,880 (5 Nov); Infantry unchanged"
+        }
+      ],
+      "steps": [
+        "Optional: set Att to 50 / 20 / 30 for a few similar fights, compare troop losses, and set it back to 50 / 30 / 20 if it does worse (the spare tabs 4–6 would hold the Join, Stone and Bread presets).",
+        "Keep training the three types evenly so a 50% Infantry march stays possible as the march size grows."
+      ],
+      "evidence": [
+        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
+        "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
+        "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense"
+      ],
+      "cost": "None for the test (a preset change); training time and resources for more troops (amounts not recorded)",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Howard",
+        "Jabel",
+        "Quinn"
+      ],
+      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry)."
+    },
+    {
+      "id": "epic-shards-amane",
+      "priority": 6,
+      "type": "Promotion",
+      "what": "Epic shards: save them for Amane's 3★",
+      "ready": false,
+      "waitingFor": "Amane needs 20 more shards (20 / 40); you have 4 Epic Redeem shards (5 Nov)",
+      "why": "Amane's 3★ is the nearest Epic promotion: 20 shards for +21,920 base power and +5.80% Archer Attack and Defense, and it lifts her Lv. 3 skill caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed). Every other Epic step needs more: Fahd 23 and Yeonwoo 27 (3★ Tier 1), Quinn 68 (Tier 2), Chenko 92, Gordon 95 and Howard 98 (Tier 1), Diana 100 (Tier 3). Epic Redeem shards are one shared stock (4 on 5 Nov, after Diana's Tier 2 used 20), so they can go to only one of these.",
+      "steps": [
+        "Keep the 4 Epic Redeem shards and new ones; don't spend them on another Epic hero.",
+        "When Amane's shards plus the Redeem stock reach 40, Redeem and Ascend her to 3★.",
+        "Next after Amane: Quinn's Tier 2 (32 / 100 on 5 Nov, needs 68)."
+      ],
+      "evidence": [
+        "Diana's promotion screen later on 5 Nov: 4-Star (Tier 2), 0 / 100, Redeem 4 (Epic); preview +36,080 / +4.96%; power 599,698 → 635,778",
+        "Quinn's promotion screen of 5 Nov: 4-Star (Tier 1), 32 / 100, Redeem 24; preview +36,080 / +6.32%",
+        "Howard's promotion screen of 5 Nov: 4-Star (Tier 0), 2 / 100, Redeem 24; preview +32,560 / +6.31%",
+        "Chenko's promotion screen of 5 Nov: 4-Star (Tier 0), 8 / 100, Redeem 24; preview +32,560 / +6.31%",
+        "Gordon's promotion screen of 5 Nov: 4-Star (Tier 0), 5 / 100, Redeem 24; preview +32,560 / +6.31%",
+        "Yeonwoo's promotion screen of 5 Nov: 3-Star (Tier 0), 13 / 40, Redeem 24; preview +18,880 / +4.51%",
+        "Fahd's promotion screen of 5 Nov: 3-Star (Tier 0), 17 / 40, Redeem 24; preview +18,880 / +4.51%",
+        "Amane's promotion screen of 5 Nov: 2-Star (Tier 5), 20 / 40, Redeem 24; preview +21,920 / +5.80%; Tri-Phalanx and Exorcism need 3★ for Lv. 4 (hero.md)",
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+      ],
+      "cost": "Epic shards only",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Amane",
+        "Quinn",
+        "Fahd",
+        "Yeonwoo",
+        "Chenko",
+        "Gordon",
+        "Howard",
+        "Diana"
+      ],
+      "note": "Verified: the shard counts, the Redeem stock and the preview gains. Inferred: Amane first because she is the nearest step. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save for her instead: she needs 68."
+    },
+    {
+      "id": "mythic-shards-jabel",
+      "priority": 7,
+      "type": "Promotion",
+      "what": "Mythic shards: save them for Jabel's 4★",
+      "ready": false,
+      "waitingFor": "Jabel needs 64 more shards (36 / 100); you have 36 Mythic Redeem shards (5 Nov)",
+      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1). Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). The 36 Mythic Redeem shards are not enough yet, so keep them for her rather than Helga (0 / 5) or Saul (2★ Tier 5, 0 / 40 to 3★), who are in no line-up.",
+      "steps": [
+        "Keep the 36 Mythic Redeem shards and new ones; don't spend them on Helga or Saul.",
+        "When Jabel's shards plus the Redeem stock reach 100, Redeem and Ascend her to 4★.",
+        "Helga (0 / 5) and Saul (0 / 40 to 3★) only after Jabel's 4★."
+      ],
+      "evidence": [
+        "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
+        "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
+        "hero.md: Helga 0 / 5 shards (5 Nov)",
+        "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+      ],
+      "cost": "Mythic shards only",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Jabel",
+        "Helga",
+        "Saul"
+      ],
+      "note": "Verified: the shard counts, the Redeem stock and the +46,700 preview. Inferred: that her 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard."
+    },
+    {
+      "id": "rare-shards-olive",
+      "priority": 8,
+      "type": "Promotion",
+      "what": "Rare shards: save them for Olive's 4★",
+      "ready": false,
+      "waitingFor": "Olive needs 24 more shards (76 / 100); you have 4 Rare Redeem shards (5 Nov)",
+      "why": "All four Rare heroes are 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type. Olive is the closest (needs 24); Forrest needs 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100). Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
+      "steps": [
+        "Put the 4 Rare Redeem shards and new Rare shards toward Olive.",
+        "When she reaches 100, Ascend her to 4★.",
+        "Then Forrest (needs 41), Seth (needs 61) and Edwin (needs 93)."
+      ],
+      "evidence": [
+        "Edwin's promotion screen of 5 Nov: 3-Star (Tier 5), 7 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Olive's promotion screen of 5 Nov: 3-Star (Tier 5), 76 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Seth's promotion screen of 5 Nov: 3-Star (Tier 5), 39 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Forrest's promotion screen of 5 Nov: 3-Star (Tier 5), 59 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+      ],
+      "cost": "Rare shards only",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Olive",
+        "Forrest",
+        "Seth",
+        "Edwin"
+      ],
+      "note": "Verified: the shard counts, the Redeem stock and the preview gains. Inferred: Olive first because she is the closest. Unverified: that one Redeem shard gives one hero shard. Choose Forrest (59 / 100) instead if the Be march matters more to you; if Helga replaces him in Be, that reason goes away."
+    },
+    {
+      "id": "expedition-manuals-howard",
+      "priority": 9,
+      "type": "Skills",
+      "what": "Epic Expedition Manuals: save 50 for Howard's Joint Defense (Lv. 3 → 4)",
+      "ready": false,
+      "waitingFor": "21 more Epic Expedition Manuals: 50 needed, 29 in stock (5 Nov)",
+      "why": "Expedition Manuals upgrade Arena (exploration) skills and are one shared stock, so each 50 buys one Lv. 3 → 4 upgrade for one hero. Joint Defense raises Defense for all heroes from 10% to 12.5%, and Howard is in the front of both Arena squads. His Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75).",
+      "steps": [
+        "Keep the 29 Epic Expedition Manuals until you have 50.",
+        "Then Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads).",
+        "After that: Quinn · Headshot (Attack × 480% → 520%), then Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%); both are in the back of both Arena squads."
+      ],
+      "evidence": [
+        "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
+        "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn, Chenko, Gordon, Yeonwoo and Fahd (29 / 50 each)",
+        "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
+        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
+        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+      ],
+      "cost": "50 Epic Expedition Manuals",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Howard",
+        "Quinn",
+        "Diana"
+      ],
+      "note": "Verified: the stock, the cost, the skill texts and the line-ups. Inferred: the order (skills that help every hero, on heroes in the most line-ups, first). Unverified: how much each percentage changes a fight."
+    },
+    {
+      "id": "conquest-books-gordon",
+      "priority": 10,
+      "type": "Skills",
+      "what": "Epic Conquest Books: next 50 to Gordon's Trash Talk (Lv. 3 → 4)",
+      "ready": false,
+      "waitingFor": "50 Epic Conquest Books; your stock was not read after Weaken, Stand of Arms and On Guard used 50 each (5 Nov), so whether you have them is not known",
+      "why": "Conquest Books upgrade march (expedition) skills and are one shared stock, so each 50 buys one Lv. 3 → 4 upgrade. Howard's Defenders' Edge and Weaken, Chenko's Stand of Arms and Yeonwoo's On Guard are already Lv. 4, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2.",
+      "steps": [
+        "Check the Epic Conquest Book count on any Epic hero's skill screen.",
+        "With 50: Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2).",
+        "Next 50: Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1)."
+      ],
+      "evidence": [
+        "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
+        "Chenko's skill screen of 5 Nov: Stand of Arms icon shows Lv. 4; Burst Fire, Defense Upgrade, Weapon Upgrade and Shield Wall Lv. 3",
+        "Yeonwoo's skill screen of 5 Nov: On Guard icon shows Lv. 4; Petalbloom 29 / 50",
+        "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
+        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
+        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+      ],
+      "cost": "50 Epic Conquest Books",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Gordon",
+        "Quinn",
+        "Howard",
+        "Chenko",
+        "Yeonwoo"
+      ],
+      "note": "Verified: the cost, the skill texts and the line-ups. Not known: your current stock. Inferred: the order. Unverified: whether all three heroes' expedition skills apply in a march and whether Barricades use expedition skills. If attacking matters more to you than beasts, put Quinn's Precision Shot first (Att march)."
+    },
+    {
+      "id": "hero-focus-long-term",
+      "priority": 11,
+      "type": "Heroes",
+      "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
+      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she reached Tier 5 by 5 Nov and is 64 shards from 4★ (36 / 100). Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive. You have none of the Generation 2 heroes yet (28 Oct), which suggests they have not reached your kingdom, though it is also possible they are out but not yet earned (inferred).",
+      "steps": [
+        "Mythic shards: Jabel to 4★ (36 / 100 on 5 Nov, needs 64; 36 Mythic Redeem in stock) before Helga (0 / 5) or Saul (0 / 40 to 3★).",
+        "Mythic books: Jabel's Youthful Rage and Persistence reached Lv. 4 by 5 Nov; their next level presumably waits for her 4★ (inferred). Not Saul's.",
+        "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
+        "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
+        "Generation 2: you have no Zoe, Hilde or Marlin yet (28 Oct), so Generation 1 heroes are still your best options; check the Hero Roulette and Hall of Heroes events for them, and when one appears, ask for an updated plan."
+      ],
+      "evidence": [
+        "hero.md promotion screens: Jabel 3★ Tier 5, 36 / 100 to 4★ (5 Nov); Helga 0 / 5 (5 Nov); Saul 2★ Tier 5, 0 / 40 to 3★ (5 Nov); Amadeus 0 / 20 to recruit (22 Oct)",
+        "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
+        "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
+        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120",
+        "No Zoe, Hilde or Marlin in your hero list, told by you on 28 Oct (kingdom age unknown)"
+      ],
+      "cost": "Shards and books only",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Jabel",
+        "Howard",
+        "Quinn",
+        "Diana",
+        "Chenko",
+        "Yeonwoo",
+        "Helga",
+        "Saul"
+      ],
+      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar. Inferred: Generation 2 has not reached your kingdom yet.",
+      "ready": false,
+      "waitingFor": "Nothing to do today: it is the plan for future shards and books"
     }
   ],
   "features": [
