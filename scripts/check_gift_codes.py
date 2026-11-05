@@ -4,7 +4,7 @@
 Run by ``.github/workflows/check-gift-codes.yml`` every two days on GitHub's
 runners (standard library only, no installs). It:
 
-1. reads the codes already recorded in ``codes.md`` (active and expired) and
+1. reads the codes already recorded in ``codes.md`` (active, redeemed and expired) and
    in ``data/gift_codes_baseline.txt`` (old codes trackers still list);
 2. downloads a handful of community tracker pages;
 3. picks out code-shaped words from the places those pages usually put codes
@@ -77,8 +77,10 @@ TOKEN_RE = re.compile(r"[A-Za-z0-9]{4,24}")
 QUANTITY_RE = re.compile(r"^\d+(x|k|m|b|h|hr|hrs|min|mins|d|day|days|st|nd|rd|th|pcs)$", re.IGNORECASE)
 # Next.js / Nuxt pages often ship their data as JSON: {"code":"TREAT4U", ...}.
 JSON_CODE_RE = re.compile(r'"(?:code|giftCode|gift_code|redeemCode|redeem_code)"\s*:\s*"([A-Za-z0-9]{4,24})"')
-# Codes already recorded: the backticked code after the checkbox in a table row.
-KNOWN_CODE_RE = re.compile(r"^\|\s*\[[ xX]\]\s*\|\s*`([^`]+)`", re.MULTILINE)
+# Codes already recorded: the backticked code in the first cell of a table row ("| `CODE` | ...").
+# The older layout with a checkbox cell first ("| [x] | `CODE` | ...", used until 2026-11-05) is
+# still read, so an old copy of codes.md cannot make the check report recorded codes as new.
+KNOWN_CODE_RE = re.compile(r"^\|\s*(?:\[[ xX]\]\s*\|\s*)?`([^`]+)`", re.MULTILINE)
 
 # All-capital words of six or more letters that trackers print but that are
 # not codes (lower-case page text never qualifies without a digit).
@@ -107,8 +109,9 @@ def load_known_codes(codes_md: str) -> Set[str]:
         codes_md: The text of ``codes.md``.
 
     Returns:
-        Case-folded codes from every table row that starts with a checkbox,
-        active and expired alike (an expired code is not news either).
+        Case-folded codes from every table row whose first cell is a
+        backticked code: the Active, Redeemed and Expired lists alike (an
+        expired or redeemed code is not news either).
     """
     return {m.group(1).strip().casefold() for m in KNOWN_CODE_RE.finditer(codes_md)}
 

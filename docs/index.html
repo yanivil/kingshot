@@ -234,15 +234,8 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .grp-h h3{font-size:22px;font-weight:700}
 .codes{display:flex;flex-direction:column;font-size:15px}
 /* One row per code: tap target is the whole row (≥44px), state on the right. */
-.code-row{display:grid;grid-template-columns:24px 1fr auto;align-items:center;gap:10px;min-height:44px;padding:8px 2px;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;font:inherit;text-align:left;width:100%}
-button.code-row{cursor:pointer}
-button.code-row:hover .cbox{border-color:var(--accent)}
-.cbox{width:22px;height:22px;border:2px solid var(--muted);border-radius:5px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;line-height:1}
-.code-row[aria-pressed=true] .cbox{background:var(--good);border-color:var(--good);color:var(--surface)}
+.code-row{display:flex;align-items:center;min-height:40px;padding:8px 2px;border-bottom:1px solid var(--line)}
 .code{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px;overflow-wrap:anywhere}
-.code-st{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
-.code-local{font-size:11.5px;font-weight:600;color:var(--accent)}
-.code-pend{margin-top:6px;color:var(--ink)}
 .ok{color:var(--good);font-weight:700}
 @media (max-width:760px){
 .top-in{padding:12px}
@@ -545,9 +538,10 @@ var KS_DATA = {
   },
   "codes": {
     "asOf": "2026-10-21",
-    "active": [ { "code": "Kingshot888", "redeemed": true }, { "code": "VIP777", "redeemed": true } ],
-    "expired": [ { "code": "KS1005", "redeemed": true }, { "code": "WELLDONE", "redeemed": true }, { "code": "Hangul2026", "redeemed": true } ],
-    "expiredTotal": 22
+    "active": [],
+    "redeemed": [ { "code": "KS1104" }, { "code": "VIP777" } ],
+    "expired": [ { "code": "KS1102" }, { "code": "TREAT4U" }, { "code": "KS1017" } ],
+    "expiredTotal": 3
   }
 };
 /* KS_DATA:END */
@@ -596,49 +590,9 @@ class Dashboard extends StateHost {
   constructor() {
     super();
     // UI state only. Data never lives in state, so a regenerated KS_DATA always wins.
-    // The one exception is `codeMarks`: the viewer's own "redeemed" marks, kept in this
-    // browser and laid over codes.md until codes.md catches up (see codeBase/pruneCodeMarks).
-    this.state = { view: 'overview', theme: 'auto', fCls: 'all', fRar: 'all', fGen: 'all', fRole: 'all', sort: 'power', hero: null, iType: 'all', iHero: 'all', codeMarks: {} };
-  }
-
-  /* ------------------------------------------------------------------
-   * Gift-code marks.
-   * Why: the page is static (GitHub Pages) and can't write to codes.md, so
-   * a code the viewer marks here is stored in this browser only. A mark is
-   * kept only while it differs from codes.md; once codes.md says the same,
-   * the mark is dropped and the file is the source again.
-   * ------------------------------------------------------------------ */
-
-  /**
-   * Redeemed state of every listed code, as recorded in codes.md.
-   * @returns {Object<string, ?boolean>} Code → true / false / null (not recorded).
-   */
-  codeBase() {
-    var c = (typeof KS_DATA === 'object' && KS_DATA && KS_DATA.codes) ? KS_DATA.codes : null;
-    var base = {};
-    if (!c) return base;
-    (c.active || []).concat(c.expired || []).forEach(function (x) {
-      // A code listed twice keeps its first (active) row.
-      if (x && x.code && !Object.prototype.hasOwnProperty.call(base, x.code)) {
-        base[x.code] = x.redeemed === true ? true : (x.redeemed === false ? false : null);
-      }
-    });
-    return base;
-  }
-
-  /**
-   * Keep only marks that are booleans, name a listed code and differ from codes.md.
-   * @param {*} marks Saved marks (may come from storage, so any shape).
-   * @returns {Object<string, boolean>} Clean marks.
-   */
-  pruneCodeMarks(marks) {
-    var base = this.codeBase();
-    var out = {};
-    if (!marks || typeof marks !== 'object') return out;
-    Object.keys(marks).forEach(function (k) {
-      if (Object.prototype.hasOwnProperty.call(base, k) && typeof marks[k] === 'boolean' && marks[k] !== base[k]) out[k] = marks[k];
-    });
-    return out;
+    // Gift-code state (active / redeemed / expired) comes from codes.md alone: it is a fact
+    // about the account, so the page keeps no per-browser marks (removed 2026-11-05).
+    this.state = { view: 'overview', theme: 'auto', fCls: 'all', fRar: 'all', fGen: 'all', fRole: 'all', sort: 'power', hero: null, iType: 'all', iHero: 'all' };
   }
 
   /* ------------------------------------------------------------------
@@ -1317,47 +1271,19 @@ class Dashboard extends StateHost {
     };
 
     /* ---------- Codes ----------
-     * Each row is a toggle. The shown state is the viewer's mark when there is
-     * one (stored in this browser), else the codes.md value. */
-    var codeBase = self.codeBase();
-    var marks = S.codeMarks || {};
-    var hasMark = function (code) { return Object.prototype.hasOwnProperty.call(marks, code); };
-    var redeemedOf = function (code) { return hasMark(code) ? marks[code] : codeBase[code]; };
-    var stateText = function (r) { return r === true ? 'Redeemed' : (r === false ? 'Not redeemed' : NR); };
-    var toggleCode = function (code) {
-      return function () {
-        // "Not recorded" counts as not redeemed, so the first tap marks it redeemed.
-        var next = redeemedOf(code) !== true;
-        var m = Object.assign({}, marks);
-        if (next === codeBase[code]) delete m[code]; else m[code] = next;
-        self.setState({ codeMarks: m });
-      };
-    };
-    var codeRow = function (c) {
-      var code = c.code || NR;
-      var r = c.code ? redeemedOf(c.code) : null;
-      return {
-        code: code, state: stateText(r), cls: r === true ? 'ok' : (r === false ? 'warntext' : 'empty'),
-        pressed: r === true ? 'true' : 'false', local: !!c.code && hasMark(c.code),
-        label: (r === true ? 'Mark ' + code + ' as not redeemed' : 'Mark ' + code + ' as redeemed'),
-        toggle: c.code ? toggleCode(c.code) : null
-      };
-    };
-    var pendingCodes = Object.keys(marks).filter(function (k) { return Object.prototype.hasOwnProperty.call(codeBase, k); });
-    var activeRows = codesD ? (codesD.active || []).map(codeRow) : [];
-    var toRedeem = activeRows.filter(function (r) { return r.pressed !== 'true'; }).length;
+     * Three lists straight from codes.md (Active = not redeemed yet, Redeemed, Expired).
+     * Read-only: to change a code's list, codes.md is edited. */
+    var codeRows = function (list) { return (list || []).filter(function (x) { return x && x.code; }).map(function (x) { return { code: x.code }; }); };
     var codes = codesD ? {
       asOf: self.asOf(codesD.asOf),
-      lede: activeRows.length + ' active (' + toRedeem + ' to redeem) · ' + (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' expired',
-      active: activeRows, noActive: !activeRows.length,
-      expired: (codesD.expired || []).map(codeRow),
+      lede: codeRows(codesD.active).length + ' to redeem · ' + codeRows(codesD.redeemed).length + ' redeemed · ' +
+        (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' expired',
+      active: codeRows(codesD.active), noActive: !codeRows(codesD.active).length,
+      redeemed: codeRows(codesD.redeemed), noRedeemed: !codeRows(codesD.redeemed).length,
+      expired: codeRows(codesD.expired), noExpired: !codeRows(codesD.expired).length,
       expiredCount: (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' total',
-      unlistedText: codesD.expiredTotal != null && codesD.expiredTotal > (codesD.expired || []).length ? (codesD.expiredTotal - (codesD.expired || []).length) + ' more expired codes are not listed by name.' : '',
-      hasPending: pendingCodes.length > 0,
-      pendingText: pendingCodes.length + (pendingCodes.length === 1 ? ' mark is' : ' marks are') + ' not in codes.md yet: ' +
-        pendingCodes.map(function (k) { return k + ' → ' + stateText(marks[k]); }).join(', ') + '.',
-      clearMarks: function () { self.setState({ codeMarks: {} }); }
-    } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, expired: [], expiredCount: NR, unlistedText: '', hasPending: false, pendingText: '', clearMarks: null };
+      unlistedText: codesD.expiredTotal != null && codesD.expiredTotal > (codesD.expired || []).length ? (codesD.expiredTotal - (codesD.expired || []).length) + ' more expired codes are not listed by name.' : ''
+    } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, redeemed: [], noRedeemed: true, expired: [], noExpired: true, expiredCount: NR, unlistedText: '' };
 
     /* ---------- Overview ---------- */
     var tile = function (label, value, asOfIso, note) {
@@ -1882,27 +1808,22 @@ function tplHealth(v) {
  */
 function tplCodes(v) {
   var c = v.codes;
-  // Each code is a toggle button (aria-pressed = redeemed). Rows without a code name stay plain text.
-  var row = function (x) {
-    var inner = '<span class="cbox" aria-hidden="true">' + (x.pressed === 'true' ? '✓' : '') + '</span>' +
-      '<span class="code">' + esc(x.code) + '</span>' +
-      '<span class="code-st"><span class="' + esc(x.cls) + '">' + esc(x.state) + '</span>' +
-      when(x.local, '<span class="code-local">This device</span>') + '</span>';
-    if (!x.toggle) return '<div class="code-row">' + inner + '</div>';
-    return '<button class="code-row" aria-pressed="' + esc(x.pressed) + '" aria-label="' + esc(x.label) + '"' + on(x.toggle, 'code:' + x.code) + '>' + inner + '</button>';
-  };
+  // Plain rows: a code's state is the list it is in (codes.md), not something the viewer toggles.
+  var row = function (x) { return '<div class="code-row"><span class="code">' + esc(x.code) + '</span></div>'; };
   return '<div class="view">' +
     '<div class="view-h"><h2>Gift codes</h2><p class="lede">' + esc(c.lede) + '</p></div>' +
-    '<section class="panel"><p class="foot">Tap a code to mark it redeemed or not. Marks are saved in this browser only, so other devices won\'t see them until codes.md is updated.</p>' +
-    when(c.hasPending, '<p class="foot code-pend">' + esc(c.pendingText) + '</p>' +
-      '<button class="linkish"' + on(c.clearMarks, 'code-clear') + '>Clear marks on this device</button>') +
-    '</section>' +
+    '<section class="panel"><p class="foot">The three lists come from codes.md and apply to the account, not to this browser. ' +
+    'New codes found by the automated check appear under "To redeem" once they are added to codes.md.</p></section>' +
     '<div class="grid2">' +
-    '<section class="panel"><div class="panel-h"><h3>Active</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
+    '<section class="panel"><div class="panel-h"><h3>To redeem</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
     '<div class="codes">' + each(c.active, row) + '</div>' +
-    when(c.noActive, '<p class="empty">No active codes recorded.</p>') + '</section>' +
+    when(c.noActive, '<p class="empty">No codes to redeem right now.</p>') + '</section>' +
+    '<section class="panel"><div class="panel-h"><h3>Redeemed</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
+    '<div class="codes">' + each(c.redeemed, row) + '</div>' +
+    when(c.noRedeemed, '<p class="empty">No redeemed codes recorded.</p>') + '</section>' +
     '<section class="panel"><div class="panel-h"><h3>Expired</h3><span class="asof">' + esc(c.expiredCount) + '</span></div>' +
     '<div class="codes">' + each(c.expired, row) + '</div>' +
+    when(c.noExpired, '<p class="empty">No expired codes recorded.</p>') +
     when(c.unlistedText, '<p class="foot" style="margin-top:10px">' + esc(c.unlistedText) + '</p>') + '</section>' +
     '</div></div>';
 }
@@ -1968,14 +1889,13 @@ try {
   if (savedTheme === 'light' || savedTheme === 'dark' || savedTheme === 'auto') app.state.theme = savedTheme;
 } catch (err) { /* storage unavailable: keep default */ }
 
-// Restore the viewer's gift-code marks. Bad JSON or blocked storage leaves codes.md as the only source.
-try {
-  app.state.codeMarks = app.pruneCodeMarks(JSON.parse(window.localStorage.getItem('ks-code-marks') || '{}'));
-} catch (err) { app.state.codeMarks = {}; }
+// Older versions kept per-browser gift-code marks under 'ks-code-marks'. The page no longer
+// reads them (codes.md is the only source), so the stale key is removed once. Storage can be blocked.
+try { window.localStorage.removeItem('ks-code-marks'); } catch (err) { /* storage unavailable: nothing to clean */ }
 
 /**
  * Side effects of a state change that the logic class should not know about:
- * theme and gift-code-mark persistence, scroll reset on view change, drawer focus management.
+ * theme persistence, scroll reset on view change, drawer focus management.
  * @param {object} prev State before the change.
  * @param {object} next State after the change.
  * @returns {void}
@@ -1983,13 +1903,6 @@ try {
 function afterStateChange(prev, next) {
   if (prev.theme !== next.theme) {
     try { window.localStorage.setItem('ks-theme', next.theme); } catch (err) { /* ignore */ }
-  }
-  if (prev.codeMarks !== next.codeMarks) {
-    // Storage can be full or blocked; the marks then last until the page is closed.
-    try {
-      if (Object.keys(next.codeMarks).length) window.localStorage.setItem('ks-code-marks', JSON.stringify(next.codeMarks));
-      else window.localStorage.removeItem('ks-code-marks');
-    } catch (err) { /* ignore */ }
   }
   if (prev.view !== next.view) window.scrollTo(0, 0);
   if (!prev.hero && next.hero) { drawerOpener = lastClickKey; pendingFocus = 'drawer-close'; }

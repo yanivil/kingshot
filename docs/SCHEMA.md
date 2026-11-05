@@ -151,11 +151,11 @@ lineup power vs. sum of hero powers (>1% difference; a short figure such as "1.3
 across the roster, and stale or undated sections.
 
 ### `codes`
-`asOf`, `active[{code, redeemed}]`, `expired[{code, redeemed}]`, `expiredTotal`.
+`asOf`, `active[{code}]`, `redeemed[{code}]`, `expired[{code}]`, `expiredTotal`.
 
-The page lays the viewer's own marks over `redeemed`: they live in the browser's `localStorage` under
-`ks-code-marks` as `{"<code>": true|false}`, never in `KS_DATA`. On load, a mark is dropped when it is not a
-boolean, names a code that isn't listed, or already equals the `codes.md` value.
+Each code is in exactly one list; the list is its state (Active = not redeemed yet). The build warns when a code
+appears in two lists. Until 2026-11-05 each row carried `redeemed` (from a `[x]` / `[ ]` column) and the page laid
+per-browser marks over it; both were removed because redeemed is a fact about the account, not a browser.
 
 ## Where each field comes from
 
@@ -205,7 +205,7 @@ when the value changes (see README "Update dates").
 | `lineups.guardStation` | not recorded | `null` |
 | `lineups.asOf` | upload dates | Oldest of the march, Arena squad and barricade dates (each the newest stamp in its own section) |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
-| `codes` | codes.md | `[x]` = redeemed, `[ ]` = not; every row of both tables; `expiredTotal` = number of expired rows |
+| `codes` | codes.md | The `Gift Code` column of the "Active Codes", "Redeemed Codes" and "Expired Codes" tables (an empty table is fine); `expiredTotal` = number of expired rows |
 
 ### Hero rules (hero.md)
 

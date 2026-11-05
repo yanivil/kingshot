@@ -359,6 +359,44 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertTrue(all("'bad'" in w for w in log.warnings))
 
 
+class CodesParserTests(unittest.TestCase):
+    """codes.md -> codes: three lists (Active, Redeemed, Expired), no checkbox column."""
+
+    BODY = (
+        "## Active Codes\n\nNone right now.\n\n"
+        "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
+        "## Redeemed Codes\n\n"
+        "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n"
+        "| `KS1104` | Not recorded | told | 2026-11-05 |\n| `VIP777` | 200 Gems | told | 2026-11-05 |\n\n"
+        "## Expired Codes\n\n"
+        "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n"
+        "| `KS1102` | Not recorded | told | 2026-11-05 |\n"
+    )
+
+    def test_three_lists_and_empty_active(self) -> None:
+        """An empty Active table is a normal state: no warning, an empty list."""
+        log = bd.BuildLog()
+        codes = bd.parse_codes(self.BODY, "2026-11-05", log)
+        self.assertEqual(codes["active"], [])
+        self.assertEqual(codes["redeemed"], [{"code": "KS1104"}, {"code": "VIP777"}])
+        self.assertEqual(codes["expired"], [{"code": "KS1102"}])
+        self.assertEqual(codes["expiredTotal"], 1)
+        self.assertEqual(log.warnings, [])
+
+    def test_code_in_two_lists_warns(self) -> None:
+        """A code listed as both redeemed and expired is flagged, whatever its case."""
+        log = bd.BuildLog()
+        bd.parse_codes(self.BODY.replace("`KS1102`", "`vip777`"), None, log)
+        self.assertTrue([w for w in log.warnings if "VIP777" in w or "vip777" in w])
+
+    def test_missing_list_warns(self) -> None:
+        """A missing list heading is a warning and an empty list, not a crash."""
+        log = bd.BuildLog()
+        codes = bd.parse_codes(self.BODY.split("## Expired Codes")[0], None, log)
+        self.assertEqual(codes["expired"], [])
+        self.assertTrue([w for w in log.warnings if "Expired Codes" in w])
+
+
 class RepositoryTests(unittest.TestCase):
     """End-to-end run on the real files: structure and privacy, not values."""
 
@@ -386,13 +424,16 @@ class RepositoryTests(unittest.TestCase):
         self.assertNotIn(self.player_id, page)
 
     def test_heroes_and_codes_are_well_formed(self) -> None:
-        """Each hero has a unique name; each code has a boolean or null redeemed."""
+        """Each hero has a unique name; each code is a named entry in exactly one of the three lists."""
         names = [h["name"] for h in self.ks["heroes"]]
         self.assertTrue(names)
         self.assertEqual(len(names), len(set(names)))
-        for code in self.ks["codes"]["active"] + self.ks["codes"]["expired"]:
-            self.assertIn(code["redeemed"], (True, False, None))
-        self.assertEqual(self.ks["codes"]["expiredTotal"], len(self.ks["codes"]["expired"]))
+        codes = self.ks["codes"]
+        listed = [c["code"].casefold() for key in ("active", "redeemed", "expired") for c in codes[key]]
+        self.assertTrue(all(listed))
+        self.assertEqual(len(listed), len(set(listed)))
+        self.assertTrue(all(set(c) == {"code"} for key in ("active", "redeemed", "expired") for c in codes[key]))
+        self.assertEqual(codes["expiredTotal"], len(codes["expired"]))
 
 
 if __name__ == "__main__":

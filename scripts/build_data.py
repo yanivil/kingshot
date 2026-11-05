@@ -1327,36 +1327,44 @@ def parse_heroes(body: str, as_of: Optional[str], log: BuildLog) -> List[Dict[st
 
 # ---------------------------------------------------------------------------
 # codes.md -> codes
+# Why three lists and no checkbox: whether a code was redeemed is a fact about
+# the account, told by its owner, so it lives in codes.md (one list per state:
+# Active, Redeemed, Expired). A per-browser "redeemed" mark on the page could
+# disagree between devices, so the page no longer has one (removed 2026-11-05).
 # ---------------------------------------------------------------------------
+
+#: codes.md list headings -> the key each list gets in KS_DATA.codes.
+CODE_LISTS = (("active", r"^Active Codes"), ("redeemed", r"^Redeemed Codes"), ("expired", r"^Expired Codes"))
 
 
 def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Dict[str, Any]]:
-    """Read ``| [x] | `CODE` | ...`` rows.
+    """Read the ``| `CODE` | rewards | notes | date |`` rows of one codes list.
 
     Args:
-        table: The codes table, or ``None``.
-        area: ``"active"`` or ``"expired"``, for warnings.
+        table: The list's table, or ``None`` when it is missing.
+        area: ``"active"``, ``"redeemed"`` or ``"expired"``, for warnings.
         log: Warning collector.
 
     Returns:
-        ``[{"code", "redeemed"}]``; ``redeemed`` is ``None`` when the box is
-        neither ``[ ]`` nor ``[x]``.
+        ``[{"code"}]`` in table order. An empty table (header only) is a
+        normal state, e.g. no active codes, and gives ``[]`` without a warning.
     """
-    if not table:
+    if table is None:
         log.warn("codes.md", f"{area} codes table not found")
         return []
     rows = []
     for row in table.rows:
-        box = strip_md(cell(row, "Redeemed")).lower()
-        redeemed = True if box == "[x]" else False if box == "[ ]" else None
-        if redeemed is None:
-            log.warn("codes.md", f"{area} code '{strip_md(cell(row, 'Gift Code'))}': checkbox '{box}' not understood")
-        rows.append({"code": strip_md(cell(row, "Gift Code")) or None, "redeemed": redeemed})
+        code = strip_md(cell(row, "Gift Code"))
+        if not code:
+            # Edge case: a row without a code would show as a blank entry on the page.
+            log.warn("codes.md", f"{area} codes: a row has no code")
+            continue
+        rows.append({"code": code})
     return rows
 
 
 def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
-    """Parse active and expired gift codes.
+    """Parse the Active, Redeemed and Expired gift-code lists.
 
     Args:
         body: codes.md without front matter.
@@ -1364,14 +1372,29 @@ def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any
         log: Warning collector.
 
     Returns:
-        The ``codes`` object.
+        ``{"asOf", "active", "redeemed", "expired", "expiredTotal"}``; each
+        list holds ``{"code"}`` objects.
+
+    Raises:
+        Nothing; a missing list is a warning and an empty list.
     """
     sections = split_sections(body)
-    active_sec = find_section(sections, r"^Active Codes")
-    expired_sec = find_section(sections, r"Expired Codes")
-    active = parse_code_rows(find_table(active_sec.lines, "Redeemed") if active_sec else None, "active", log)
-    expired = parse_code_rows(find_table(expired_sec.lines, "Redeemed") if expired_sec else None, "expired", log)
-    return {"asOf": as_of, "active": active, "expired": expired, "expiredTotal": len(expired)}
+    out: Dict[str, Any] = {"asOf": as_of}
+    for key, pattern in CODE_LISTS:
+        sec = find_section(sections, pattern)
+        if sec is None:
+            log.warn("codes.md", f"section '{pattern.lstrip('^')}' not found")
+        out[key] = parse_code_rows(find_table(sec.lines, "Gift Code") if sec else None, key, log)
+    # A code should sit in one list only; two lists would show it twice with different states.
+    seen: Dict[str, str] = {}
+    for key, _ in CODE_LISTS:
+        for item in out[key]:
+            folded = item["code"].casefold()
+            if folded in seen:
+                log.warn("codes.md", f"code '{item['code']}' is in both the {seen[folded]} and the {key} list")
+            seen.setdefault(folded, key)
+    out["expiredTotal"] = len(out["expired"])
+    return out
 
 
 # ---------------------------------------------------------------------------

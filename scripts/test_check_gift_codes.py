@@ -56,16 +56,29 @@ class ExtractTests(unittest.TestCase):
 class KnownCodesTests(unittest.TestCase):
     """Reading codes.md."""
 
-    def test_reads_active_and_expired(self) -> None:
-        """Both tables are read, case-folded."""
+    def test_reads_every_list(self) -> None:
+        """The Redeemed and Expired lists of the repo's codes.md are read, case-folded."""
         known = gc.load_known_codes((ROOT / "codes.md").read_text(encoding="utf-8"))
-        for code in ("kingshot888", "vip777", "ks1017", "happycatday"):
+        for code in ("ks1104", "vip777", "kingshot888", "ks1017", "treat4u"):
             self.assertIn(code, known)
 
     def test_sample(self) -> None:
-        """Checked and unchecked rows both count."""
-        md = "| [x] | `VIP777` | 200 Gems |\n| [ ] | `KS1017` | x |\n| Code | other |"
+        """Rows whose first cell is a backticked code count; the header row does not."""
+        md = "| Gift Code | Rewards |\n| `VIP777` | 200 Gems |\n| `KS1017` | x |\n| Code | other |"
         self.assertEqual(gc.load_known_codes(md), {"vip777", "ks1017"})
+
+    def test_old_checkbox_layout(self) -> None:
+        """The layout used until 2026-11-05 ("| [x] | `CODE` |") is still read."""
+        md = "| [x] | `VIP777` | 200 Gems |\n| [ ] | `KS1017` | x |"
+        self.assertEqual(gc.load_known_codes(md), {"vip777", "ks1017"})
+
+    def test_dropped_codes_stay_ignored(self) -> None:
+        """Codes dropped from codes.md on 2026-11-05 are in the baseline, so the check does not report them again."""
+        known = gc.load_known_codes((ROOT / "codes.md").read_text(encoding="utf-8"))
+        base = gc.load_baseline((ROOT / "data" / "gift_codes_baseline.txt").read_text(encoding="utf-8"))
+        for code in ("happycatday", "welldone", "hangul2026", "ks1005", "ksgw26jp"):
+            self.assertNotIn(code, known)
+            self.assertIn(code, base)
 
 
 class BaselineTests(unittest.TestCase):
