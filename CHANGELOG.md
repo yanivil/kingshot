@@ -69,6 +69,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: the Top 5 shows only open moves (asked for by the account owner on 2026-11-05). Every suggestion now
+  describes only what is left; "done" steps and "(done)" changes are removed (the history stays in this changelog and in
+  hero.md). The two suggestions whose main move is finished keep only a small optional step and move to the bottom:
+  the gear swap becomes `greaves-to-forrest` (priority 8: Seth's Stonewall Greaves +24 to Forrest) and the troop
+  suggestion becomes `att-troop-mix-test` (priority 7: optional 50 / 20 / 30 test). New order: promotions, rally Join
+  preset, skill books, long-term focus, Be-march test, gathering presets, troop test, Forrest's greaves.
 - Later on 2026-11-05 (Gear and promotion screens):
   - `hero.md`, Howard and Seth: they swapped boots. Howard now wears Seth's Epic Praetorian's Greaves +20 (gear 148,035 →
     158,325; Infantry Lethality 22.77% → 26.61%) and Seth Howard's Rare Stonewall Greaves +24 (gear 155,400 → 145,110). Each
