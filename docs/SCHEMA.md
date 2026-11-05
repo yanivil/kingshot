@@ -153,17 +153,21 @@ lineup power vs. sum of hero powers (>1% difference; a short figure such as "1.3
 across the roster, and stale or undated sections.
 
 ### `codes`
-`asOf`, `active[{code}]`, `redeemed[{code}]`, `expired[{code, redeemed}]`, `expiredTotal`.
+`asOf`, `active[{code}]`, `expired[{code, redeemed}]`, `expiredTotal`.
 
-Each code is in exactly one list; the list is its state (Active = not redeemed yet, Redeemed = redeemed and still
-current, Expired = old). A redeemed code that becomes old moves to Expired with a ✓ in the Expired table's
-**Redeemed** column, which gives `expired[].redeemed: true` (an empty cell or no column gives `false`; ✓, ✔, V and Yes
-are accepted, any other text warns). The page shows ✓ on every Redeemed code and on Expired codes with
-`redeemed: true`, and counts the latter in the Expired panel heading. The build warns when a code appears in two lists.
+Each code is in exactly one list; the list is its state (Active = still to redeem, Expired = done with: redeemed on
+this account, or old). The account owner's rule (2026-11-05): every redeemed code goes to Expired with a ✓ in the
+Expired table's **Redeemed** column, which gives `expired[].redeemed: true` (an empty cell or no column gives `false`;
+✓, ✔, V and Yes are accepted, any other text warns). The page shows ✓ on those codes and counts them in the lede and
+the Expired panel heading. The build warns when a code appears in two lists.
+
+There is no `redeemed` list any more. Rows left under an old "Redeemed Codes" heading in `codes.md` are added to
+`expired` with `redeemed: true`, each with a warning; the page does the same with a `redeemed` list in older data.
 
 History: until the morning of 2026-11-05 every row carried `redeemed` (from a `[x]` / `[ ]` column) and the page laid
 per-browser marks over it that a viewer could toggle. The toggles were removed because redeemed is a fact about the
-account, not a browser; the same day the read-only ✓ came back for Expired rows, set only in `codes.md`.
+account, not a browser; the same day the read-only ✓ came back for Expired rows, set only in `codes.md`, and the
+separate Redeemed list was folded into Expired.
 
 ## Where each field comes from
 
@@ -213,7 +217,7 @@ when the value changes (see README "Update dates").
 | `lineups.guardStation` | not recorded | `null` |
 | `lineups.asOf` | upload dates | Oldest of the march, Arena squad and barricade dates (each the newest stamp in its own section) |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
-| `codes` | codes.md | The `Gift Code` column of the "Active Codes", "Redeemed Codes" and "Expired Codes" tables (an empty table is fine); `expired[].redeemed` from the Expired table's `Redeemed` column (✓ or empty); `expiredTotal` = number of expired rows |
+| `codes` | codes.md | The `Gift Code` column of the "Active Codes" and "Expired Codes" tables (an empty table is fine; leftover "Redeemed Codes" rows count as Expired with ✓ and warn); `expired[].redeemed` from the Expired table's `Redeemed` column (✓ or empty); `expiredTotal` = number of expired rows |
 
 ### Hero rules (hero.md)
 

@@ -1327,17 +1327,21 @@ def parse_heroes(body: str, as_of: Optional[str], log: BuildLog) -> List[Dict[st
 
 # ---------------------------------------------------------------------------
 # codes.md -> codes
-# Why three lists and no checkbox: whether a code was redeemed is a fact about
-# the account, told by its owner, so it lives in codes.md (one list per state:
-# Active, Redeemed, Expired). A per-browser "redeemed" mark on the page could
-# disagree between devices, so the page no longer has one (removed 2026-11-05).
-# An old code the account did redeem goes to Expired (the list is about the
-# code), and the Expired table's "Redeemed" column keeps the account fact, so
-# the page can still mark it (added 2026-11-05, asked for by the account owner).
+# Why two lists and a read-only mark: whether a code was redeemed is a fact
+# about the account, told by its owner, so it lives in codes.md. A per-browser
+# "redeemed" toggle on the page could disagree between devices, so the page no
+# longer has one (removed 2026-11-05). The owner's rule (2026-11-05): a code is
+# either still to redeem (Active) or done with (Expired), and every redeemed
+# code goes to Expired with a check mark in the Expired table's "Redeemed"
+# column, so the page shows it there.
 # ---------------------------------------------------------------------------
 
 #: codes.md list headings -> the key each list gets in KS_DATA.codes.
-CODE_LISTS = (("active", r"^Active Codes"), ("redeemed", r"^Redeemed Codes"), ("expired", r"^Expired Codes"))
+CODE_LISTS = (("active", r"^Active Codes"), ("expired", r"^Expired Codes"))
+
+#: The separate Redeemed list codes.md had until 2026-11-05. Rows left under it
+#: are read as Expired with the mark, and each one warns (see parse_codes).
+OLD_REDEEMED_LIST = r"^Redeemed Codes"
 
 #: "Redeemed" cell values that mean "redeemed on this account" (compared case-insensitively).
 #: The owner calls the mark a "V", so V and Yes are accepted next to the check marks.
@@ -1349,7 +1353,8 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
 
     Args:
         table: The list's table, or ``None`` when it is missing.
-        area: ``"active"``, ``"redeemed"`` or ``"expired"``, for warnings.
+        area: ``"active"``, ``"expired"`` or (for a leftover old list)
+            ``"redeemed"``, for warnings.
         log: Warning collector.
 
     Returns:
@@ -1382,7 +1387,7 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
 
 
 def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
-    """Parse the Active, Redeemed and Expired gift-code lists.
+    """Parse the Active and Expired gift-code lists.
 
     Args:
         body: codes.md without front matter.
@@ -1390,8 +1395,10 @@ def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any
         log: Warning collector.
 
     Returns:
-        ``{"asOf", "active", "redeemed", "expired", "expiredTotal"}``; each
-        list holds ``{"code"}`` objects, and Expired ones also ``"redeemed"``.
+        ``{"asOf", "active", "expired", "expiredTotal"}``; Active holds
+        ``{"code"}`` objects and Expired ``{"code", "redeemed"}``. Rows left
+        under an old "Redeemed Codes" heading are appended to Expired with
+        ``redeemed: True``, each with a warning.
 
     Raises:
         Nothing; a missing list is a warning and an empty list.
@@ -1403,6 +1410,15 @@ def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any
         if sec is None:
             log.warn("codes.md", f"section '{pattern.lstrip('^')}' not found")
         out[key] = parse_code_rows(find_table(sec.lines, "Gift Code") if sec else None, key, log)
+    # Fallback for the pre-5 Nov layout: a code left in a Redeemed list must
+    # not disappear from the page, so it is shown as Expired + mark, and the
+    # warning says where it belongs. An empty leftover table is harmless.
+    old = find_section(sections, OLD_REDEEMED_LIST)
+    old_table = find_table(old.lines, "Gift Code") if old else None
+    for item in parse_code_rows(old_table, "redeemed", log) if old_table else []:
+        log.warn("codes.md", f"code '{item['code']}' is under 'Redeemed Codes'; redeemed codes go to "
+                             f"'Expired Codes' with ✓ in the Redeemed column (shown there for now)")
+        out["expired"].append({"code": item["code"], "redeemed": True})
     # A code should sit in one list only; two lists would show it twice with different states.
     seen: Dict[str, str] = {}
     for key, _ in CODE_LISTS:

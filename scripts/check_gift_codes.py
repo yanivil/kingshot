@@ -4,8 +4,9 @@
 Run by ``.github/workflows/check-gift-codes.yml`` every two days on GitHub's
 runners (standard library only, no installs). It:
 
-1. reads the codes already recorded in ``codes.md`` (active, redeemed and expired) and
-   in ``data/gift_codes_baseline.txt`` (old codes trackers still list);
+1. reads the codes already recorded in ``codes.md`` (Active, and Expired, which
+   also holds the redeemed ones) and in ``data/gift_codes_baseline.txt`` (old
+   codes trackers still list);
 2. downloads a handful of community tracker pages;
 3. picks out code-shaped words from the places those pages usually put codes
    (``<code>``, ``<strong>``, table cells, copy buttons, JSON ``"code"`` keys);
@@ -110,8 +111,8 @@ def load_known_codes(codes_md: str) -> Set[str]:
 
     Returns:
         Case-folded codes from every table row whose first cell is a
-        backticked code: the Active, Redeemed and Expired lists alike (an
-        expired or redeemed code is not news either).
+        backticked code: the Active and Expired lists alike, and any older
+        list such as Redeemed (an expired or redeemed code is not news either).
     """
     return {m.group(1).strip().casefold() for m in KNOWN_CODE_RE.finditer(codes_md)}
 

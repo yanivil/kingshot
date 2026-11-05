@@ -45,7 +45,7 @@ This repository provides:
 * **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (City Wall Guard), and saved March Presets (`Be`, `Att` and `Gat`).
 * **`troops.md`**: standing troop inventory (Tier VIII Elite since 5 Nov), march capacities, infirmary hospital caps, the
   `Be` / `Att` / `Gat` presets, and the highest beast and Terror (rally-only) levels the account can take.
-* **`codes.md`**: gift codes in three lists: Active (not redeemed yet), Redeemed and Expired. Restarted on 2026-11-05
+* **`codes.md`**: gift codes in two lists: Active (still to redeem) and Expired (redeemed, marked ✓, or old). Restarted on 2026-11-05
   with only the account owner's current codes; older tracker codes are in `data/gift_codes_baseline.txt`.
 * **`docs/index.html`**: The account dashboard (see below).
 * **`docs/SCHEMA.md`**: Reference for the dashboard's data object and where each field comes from.
@@ -102,11 +102,11 @@ The Overview opens with account power and total kills.
   the hero data only when it trails it by more than the same number of days.
 * Game rules come from community sources and are labelled **Unverified** wherever they are used.
 * The Player ID is never displayed.
-* **Gift codes.** The Codes page shows three read-only lists from `codes.md`: To redeem (the Active list),
-  Redeemed and Expired. Redeemed is a fact about the account, so it is recorded in `codes.md` and nowhere else;
-  the per-browser "redeemed" marks of earlier versions were removed on 2026-11-05, and the page deletes their
-  old `localStorage` key (`ks-code-marks`) once. When a redeemed code becomes old, move its row to Expired and put
-  ✓ in its **Redeemed** column: the page then shows ✓ next to it (every code under Redeemed shows ✓ too).
+* **Gift codes.** The Codes page shows two read-only lists from `codes.md`: To redeem (the Active list) and
+  Expired. Every redeemed code goes to Expired with ✓ in its **Redeemed** column (the account owner's rule,
+  2026-11-05), and the page shows the ✓ next to it. Redeemed is a fact about the account, so it is recorded in
+  `codes.md` and nowhere else; the per-browser "redeemed" marks of earlier versions were removed on 2026-11-05, and
+  the page deletes their old `localStorage` key (`ks-code-marks`) once.
 
 ### Updating the data
 
@@ -138,7 +138,7 @@ then open `build/index.html`. `build/` is git-ignored.
 Every two days (11:23 UTC on odd days of the month; GitHub may start it a little late),
 `.github/workflows/check-gift-codes.yml` runs `scripts/check_gift_codes.py` (standard library only):
 
-1. It reads the codes already in `codes.md` (Active, Redeemed and Expired lists) and in `data/gift_codes_baseline.txt`:
+1. It reads the codes already in `codes.md` (Active and Expired lists) and in `data/gift_codes_baseline.txt`:
    old codes that trackers still list but that were never recorded (142 found on the first run, 4 Nov 2026).
 2. It downloads a few community tracker pages (listed in `SOURCES` in the script) and picks out
    code-shaped words from the places those pages put codes (`<code>`, bold text, table cells, copy buttons,

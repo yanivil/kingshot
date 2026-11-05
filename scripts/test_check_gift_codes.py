@@ -57,9 +57,9 @@ class KnownCodesTests(unittest.TestCase):
     """Reading codes.md."""
 
     def test_reads_every_list(self) -> None:
-        """The Redeemed and Expired lists of the repo's codes.md are read, case-folded."""
+        """The Expired list of the repo's codes.md (redeemed and old codes) is read, case-folded."""
         known = gc.load_known_codes((ROOT / "codes.md").read_text(encoding="utf-8"))
-        for code in ("ks1104", "vip777", "kingshot888", "ks1017", "treat4u"):
+        for code in ("forthekingdom", "ks1104", "vip777", "kingshot888", "ks1017", "treat4u"):
             self.assertIn(code, known)
 
     def test_sample(self) -> None:

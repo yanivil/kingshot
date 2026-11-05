@@ -69,6 +69,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Gift codes: every redeemed code goes to Expired with ✓ (the account owner's rule, 2026-11-05), so the separate
+  Redeemed list is gone. `codes.md`: `FORTHEKINGDOM` moves to Expired with ✓; the file now has Active and Expired only.
+  `scripts/build_data.py`: `codes` is `{asOf, active, expired, expiredTotal}`; rows left under an old "Redeemed Codes"
+  heading are shown as Expired with ✓ and warn (new tests `test_leftover_redeemed_list`,
+  `test_expired_without_redeemed_column`). Page: two panels (To redeem, Expired); the lede reads
+  "0 to redeem · 11 expired (6 ✓ redeemed)"; older data with a `redeemed` list is folded into Expired the same way.
+  `scripts/check_gift_codes.py` docstrings and its test, README and `docs/SCHEMA.md` updated.
 - `hero.md`, Olive (Stats screens, later on 2026-11-05): Lv. 63 → **Lv. 64**, power 416,159 → **418,174** (+2,015,
   presumably the level; inferred), troop capacity 12,650 → 12,730, Hero ATK / DEF / HP 1,351 / 1,566 / 8,175 and
   escort 450 / 522 / 2,724; the Archer bonuses are unchanged. The next level needs Town Center Lv. 23. Her +15,107 since
