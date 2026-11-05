@@ -69,6 +69,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: community formation advice, asked for by the account owner on 2026-11-05 ("based on the
+  community, which heroes should be in my formations?"). The guide pages could be read only as search-result excerpts
+  (the sites are not on the session's network allow-list), so every guide claim is labelled Unverified.
+  - New ready move `arena-defense-chenko` (priority 2): Arena defense = the guides' Generation 1 F2P team, the same five
+    as the attack squad, so Chenko takes Gordon's front-right place.
+  - New waiting move `guard-station-heroes`: Jabel, Howard and Quinn for city defense, waiting for a screenshot of the
+    Guard Station (its heroes are not recorded).
+  - More evidence on `rally-join-preset` (the official Kingshot X account: rally leaders get all three heroes'
+    skills, joiners only the 4 highest-levelled first skills; chance-based skills do not stack), `be-swap-forrest`,
+    `gat-match-resource` and `att-troop-mix-test`.
+  - Unchanged because the guides agree with them: the Arena attack squad, the Att rally team (Howard, Jabel, Quinn),
+    the Chenko-led Join preset and Barricade 1 (Howard, Jabel, Quinn).
 - Gift codes: every redeemed code goes to Expired with ✓ (the account owner's rule, 2026-11-05), so the separate
   Redeemed list is gone. `codes.md`: `FORTHEKINGDOM` moves to Expired with ✓; the file now has Active and Expired only.
   `scripts/build_data.py`: `codes` is `{asOf, active, expired, expiredTotal}`; rows left under an old "Redeemed Codes"
