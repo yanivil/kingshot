@@ -69,6 +69,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Chenko (2026-11-05): Lv 59 → **64** (cap, "Requirement: Town Center Lv. 23"), **4★ Tier 0** (8 / 100). The Rare
+  Brigader's Armet +15 was replaced by the Mythic **Judicator's Armet +22** (68,025; +22.70% Cavalry Lethality) and the Breastplate is
+  +20, so gear is 98,000 → 145,725. **Stand of Arms reached Lv 4.** Power 481,360 → 582,053: +37,360 4★ (the preview), +47,725
+  gear, +12,080 presumably the levels and +3,528 presumably the skill (inferred); the stat changes split the same way. New
+  promotion preview (T0 → T1: +32,560, +6.31%); roster row updated. Jabel's 5 Nov screens also show a Judicator's Armet (+23);
+  whether there are two is not shown.
+- `data/manual.json`, same date: Chenko is a 4★ in the promotion suggestion; the rally suggestion and the skill-book suggestion
+  mark Stand of Arms Lv 4 as done; the Drill Camp instructor level for Chenko is 64. Two hand-written gear notes were out of date
+  and are fixed: Chenko's said "All Rare gear.", and Jabel's still listed her 27 Oct gear (missed in the 5 Nov Jabel update).
 - `hero.md`, Jabel, Diana, Quinn and Howard (2026-11-05 screenshots):
   - Jabel: **3★ Tier 5** (36 / 100 to 4★; Mythic Redeem 36). Power 653,530 → 764,215: +28,900 Tier 5 (the 27 Oct preview),
     +72,965 gear (Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23; Gauntlets +25; Breastplate +30), and
