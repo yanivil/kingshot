@@ -543,9 +543,8 @@ var KS_DATA = {
   "codes": {
     "asOf": "2026-10-21",
     "active": [],
-    "redeemed": [ { "code": "FORTHEKINGDOM" } ],
-    "expired": [ { "code": "KS1104", "redeemed": true }, { "code": "VIP777", "redeemed": true }, { "code": "KS1102", "redeemed": false }, { "code": "TREAT4U", "redeemed": false }, { "code": "KS1017", "redeemed": false } ],
-    "expiredTotal": 5
+    "expired": [ { "code": "FORTHEKINGDOM", "redeemed": true }, { "code": "KS1104", "redeemed": true }, { "code": "VIP777", "redeemed": true }, { "code": "KS1102", "redeemed": false }, { "code": "TREAT4U", "redeemed": false }, { "code": "KS1017", "redeemed": false } ],
+    "expiredTotal": 6
   }
 };
 /* KS_DATA:END */
@@ -594,7 +593,7 @@ class Dashboard extends StateHost {
   constructor() {
     super();
     // UI state only. Data never lives in state, so a regenerated KS_DATA always wins.
-    // Gift-code state (active / redeemed / expired) comes from codes.md alone: it is a fact
+    // Gift-code state (active / expired, with ✓ for redeemed) comes from codes.md alone: it is a fact
     // about the account, so the page keeps no per-browser marks (removed 2026-11-05).
     this.state = { view: 'overview', theme: 'auto', fCls: 'all', fRar: 'all', fGen: 'all', fRole: 'all', sort: 'power', hero: null, iType: 'all', iHero: 'all' };
   }
@@ -1289,28 +1288,30 @@ class Dashboard extends StateHost {
     };
 
     /* ---------- Codes ----------
-     * Three lists straight from codes.md (Active = not redeemed yet, Redeemed, Expired).
+     * Two lists straight from codes.md: Active (still to redeem) and Expired (done with).
      * Read-only: to change a code's list, codes.md is edited.
-     * The ✓ means "redeemed on this account": every Redeemed row has it, and an
-     * Expired row has it when codes.md marks it (an old code the account used). */
+     * The account owner's rule (5 Nov): every redeemed code goes to Expired, and
+     * the ✓ ("redeemed on this account") comes from codes.md's Redeemed column. */
     var codeRows = function (list, allRedeemed) {
       return (list || []).filter(function (x) { return x && x.code; }).map(function (x) {
         // Only the boolean true marks an expired code; a missing field means not recorded as redeemed.
         return { code: x.code, redeemed: allRedeemed || x.redeemed === true };
       });
     };
-    var expiredRedeemed = codesD ? codeRows(codesD.expired).filter(function (x) { return x.redeemed; }).length : 0;
+    // Fallback for data built before 5 Nov, which had a separate Redeemed list:
+    // show those codes first in Expired, with ✓, as the generator now does.
+    var expiredList = codesD ? codeRows(codesD.redeemed, true).concat(codeRows(codesD.expired)) : [];
+    var expiredRedeemed = expiredList.filter(function (x) { return x.redeemed; }).length;
+    var expiredTotal = codesD ? Math.max(codesD.expiredTotal != null ? codesD.expiredTotal : 0, expiredList.length) : 0;
     var codes = codesD ? {
       asOf: self.asOf(codesD.asOf),
-      lede: codeRows(codesD.active).length + ' to redeem · ' + codeRows(codesD.redeemed).length + ' redeemed · ' +
-        (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' expired',
+      lede: codeRows(codesD.active).length + ' to redeem · ' + expiredTotal + ' expired' +
+        (expiredRedeemed ? ' (' + expiredRedeemed + ' ✓ redeemed)' : ''),
       active: codeRows(codesD.active), noActive: !codeRows(codesD.active).length,
-      redeemed: codeRows(codesD.redeemed, true), noRedeemed: !codeRows(codesD.redeemed).length,
-      expired: codeRows(codesD.expired), noExpired: !codeRows(codesD.expired).length,
-      expiredCount: (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' total' +
-        (expiredRedeemed ? ' · ' + expiredRedeemed + ' ✓ redeemed' : ''),
-      unlistedText: codesD.expiredTotal != null && codesD.expiredTotal > (codesD.expired || []).length ? (codesD.expiredTotal - (codesD.expired || []).length) + ' more expired codes are not listed by name.' : ''
-    } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, redeemed: [], noRedeemed: true, expired: [], noExpired: true, expiredCount: NR, unlistedText: '' };
+      expired: expiredList, noExpired: !expiredList.length,
+      expiredCount: expiredTotal + ' total' + (expiredRedeemed ? ' · ' + expiredRedeemed + ' ✓ redeemed' : ''),
+      unlistedText: expiredTotal > expiredList.length ? (expiredTotal - expiredList.length) + ' more expired codes are not listed by name.' : ''
+    } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, expired: [], noExpired: true, expiredCount: NR, unlistedText: '' };
 
     /* ---------- Overview ---------- */
     var tile = function (label, value, asOfIso, note) {
@@ -1853,16 +1854,13 @@ function tplCodes(v) {
   };
   return '<div class="view">' +
     '<div class="view-h"><h2>Gift codes</h2><p class="lede">' + esc(c.lede) + '</p></div>' +
-    '<section class="panel"><p class="foot">The three lists come from codes.md and apply to the account, not to this browser. ' +
-    '✓ = redeemed on this account, also on expired codes that were used before they became old. ' +
+    '<section class="panel"><p class="foot">Both lists come from codes.md and apply to the account, not to this browser. ' +
+    'A redeemed code moves to Expired with ✓ (redeemed on this account). ' +
     'New codes found by the automated check appear under "To redeem" once they are added to codes.md.</p></section>' +
     '<div class="grid2">' +
     '<section class="panel"><div class="panel-h"><h3>To redeem</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
     '<div class="codes">' + each(c.active, row) + '</div>' +
     when(c.noActive, '<p class="empty">No codes to redeem right now.</p>') + '</section>' +
-    '<section class="panel"><div class="panel-h"><h3>Redeemed</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +
-    '<div class="codes">' + each(c.redeemed, row) + '</div>' +
-    when(c.noRedeemed, '<p class="empty">No redeemed codes recorded.</p>') + '</section>' +
     '<section class="panel"><div class="panel-h"><h3>Expired</h3><span class="asof">' + esc(c.expiredCount) + '</span></div>' +
     '<div class="codes">' + each(c.expired, row) + '</div>' +
     when(c.noExpired, '<p class="empty">No expired codes recorded.</p>') +

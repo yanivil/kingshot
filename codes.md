@@ -8,31 +8,29 @@ Gift codes for [Kingshot](https://www.centurygames.com/games/kingshot/). The lis
 owner's own list: it keeps only the codes below and codes found from now on. Older codes that community trackers still
 list are kept in `data/gift_codes_baseline.txt`, so the automated gift-code check does not report them again.
 
-Each code is in exactly one of the three lists below. Whether a code was redeemed is recorded here for the account, as
-told by the account owner; it is not stored in a browser.
+Each code is in exactly one of the two lists below: Active (still to redeem) or Expired (done with). The account owner's
+rule (2026-11-05): **every redeemed code goes to Expired with ✓** in its **Redeemed** column. Whether a code was redeemed
+is recorded here for the account, as told by the account owner; it is not stored in a browser.
 
 Dates in the **Updated** column show when each row was last changed in this repository.
 
 ## Active Codes
 
 Codes that are still listed as working and have not been redeemed on this account. New codes found by the automated check
-are added here, and stay unverified until they are tried in the game. None right now (2026-11-05).
+are added here, and stay unverified until they are tried in the game. When one is redeemed, move its row to Expired Codes
+with ✓. None right now (2026-11-05).
 
 | Gift Code | Rewards | Source / Notes | Updated |
 | :--- | :--- | :--- | :---: |
-
-## Redeemed Codes
-
-| Gift Code | Rewards | Source / Notes | Updated |
-| :--- | :--- | :--- | :---: |
-| `FORTHEKINGDOM` | Not recorded | Redeemed, told by the account owner on 5 Nov | 2026-11-05 |
 
 ## Expired Codes
 
-Codes that no longer need redeeming. **Redeemed** ✓ = redeemed on this account before the code became old (empty = not recorded as redeemed); the dashboard shows the ✓ next to the code.
+Codes that no longer need redeeming: redeemed on this account, or old. **Redeemed** ✓ = redeemed on this account (empty =
+not recorded as redeemed); the dashboard shows the ✓ next to the code.
 
 | Gift Code | Redeemed | Rewards | Source / Notes | Updated |
 | :--- | :---: | :--- | :--- | :---: |
+| `FORTHEKINGDOM` | ✓ | Not recorded | Redeemed, told by the account owner on 5 Nov; moved here from the old Redeemed list on 5 Nov (every redeemed code goes to Expired with ✓) | 2026-11-05 |
 | `KS1104` | ✓ | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
 | `VIP777` | ✓ | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
 | `KS1102` |  | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov | 2026-11-05 |

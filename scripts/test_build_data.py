@@ -381,40 +381,46 @@ class MergeAndOutputTests(unittest.TestCase):
 
 
 class CodesParserTests(unittest.TestCase):
-    """codes.md -> codes: three lists (Active, Redeemed, Expired), no checkbox column."""
+    """codes.md -> codes: two lists (Active, Expired); a redeemed code is an Expired row with a check mark."""
 
     BODY = (
         "## Active Codes\n\nNone right now.\n\n"
         "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
-        "## Redeemed Codes\n\n"
-        "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n"
-        "| `KS1104` | Not recorded | told | 2026-11-05 |\n| `VIP777` | 200 Gems | told | 2026-11-05 |\n\n"
         "## Expired Codes\n\n"
-        "| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n"
-        "| `KS1102` | Not recorded | told | 2026-11-05 |\n"
+        "| Gift Code | Redeemed | Rewards | Source / Notes | Updated |\n| :--- | :---: | :--- | :--- | :---: |\n"
+        "| `FORTHEKINGDOM` | ✓ | Not recorded | told | 2026-11-05 |\n"
+        "| `KS1102` |  | Not recorded | told | 2026-11-05 |\n"
     )
 
-    def test_three_lists_and_empty_active(self) -> None:
-        """An empty Active table is a normal state: no warning, an empty list."""
+    def test_two_lists_and_empty_active(self) -> None:
+        """An empty Active table is a normal state; there is no separate Redeemed list any more."""
         log = bd.BuildLog()
         codes = bd.parse_codes(self.BODY, "2026-11-05", log)
         self.assertEqual(codes["active"], [])
-        self.assertEqual(codes["redeemed"], [{"code": "KS1104"}, {"code": "VIP777"}])
-        # No "Redeemed" column in this Expired table: nothing is marked redeemed, and no warning.
-        self.assertEqual(codes["expired"], [{"code": "KS1102", "redeemed": False}])
-        self.assertEqual(codes["expiredTotal"], 1)
+        self.assertNotIn("redeemed", codes)
+        self.assertEqual(codes["expired"], [{"code": "FORTHEKINGDOM", "redeemed": True},
+                                            {"code": "KS1102", "redeemed": False}])
+        self.assertEqual(codes["expiredTotal"], 2)
+        self.assertEqual(log.warnings, [])
+
+    def test_expired_without_redeemed_column(self) -> None:
+        """An Expired table with no "Redeemed" column marks nothing and does not warn."""
+        body = self.BODY.replace("| Gift Code | Redeemed |", "| Gift Code |").replace("| :--- | :---: |", "| :--- |")
+        body = body.replace("`FORTHEKINGDOM` | ✓ |", "`FORTHEKINGDOM` |").replace("`KS1102` |  |", "`KS1102` |")
+        log = bd.BuildLog()
+        codes = bd.parse_codes(body, None, log)
+        self.assertEqual([c["redeemed"] for c in codes["expired"]], [False, False])
         self.assertEqual(log.warnings, [])
 
     def test_expired_redeemed_mark(self) -> None:
         """Expired rows read the "Redeemed" column: a check mark (or V / Yes) means redeemed on this account.
 
-        Why: an old code the account redeemed belongs in Expired, but the page
-        still shows that it was redeemed. An empty cell means not recorded as
-        redeemed; any other text is a typo and warns.
+        Why: every redeemed code goes to Expired, and the page shows that it
+        was redeemed. An empty cell means not recorded as redeemed; any other
+        text is a typo and warns.
         """
         body = (
             "## Active Codes\n\n| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
-            "## Redeemed Codes\n\n| Gift Code | Rewards | Source / Notes | Updated |\n| :--- | :--- | :--- | :---: |\n\n"
             "## Expired Codes\n\n"
             "| Gift Code | Redeemed | Rewards | Source / Notes | Updated |\n| :--- | :---: | :--- | :--- | :---: |\n"
             "| `KS1104` | ✓ | Not recorded | told | 2026-11-05 |\n"
@@ -430,11 +436,33 @@ class CodesParserTests(unittest.TestCase):
         self.assertEqual(len(log.warnings), 1)
         self.assertIn("TREAT4U", log.warnings[0])
 
-    def test_code_in_two_lists_warns(self) -> None:
-        """A code listed as both redeemed and expired is flagged, whatever its case."""
+    def test_leftover_redeemed_list(self) -> None:
+        """Rows under an old "Redeemed Codes" heading are shown as Expired with a check mark, and warn.
+
+        Why: until 5 Nov 2026 codes.md had a Redeemed list. A row left there
+        must not vanish from the page; the warning says where it belongs.
+        An empty leftover table is harmless and does not warn.
+        """
+        leftover = ("## Redeemed Codes\n\n| Gift Code | Rewards | Source / Notes | Updated |\n"
+                    "| :--- | :--- | :--- | :---: |\n| `VIP777` | 200 Gems | told | 2026-11-05 |\n\n")
         log = bd.BuildLog()
-        bd.parse_codes(self.BODY.replace("`KS1102`", "`vip777`"), None, log)
-        self.assertTrue([w for w in log.warnings if "VIP777" in w or "vip777" in w])
+        codes = bd.parse_codes(self.BODY.replace("## Expired Codes", leftover + "## Expired Codes"), None, log)
+        self.assertIn({"code": "VIP777", "redeemed": True}, codes["expired"])
+        self.assertEqual(codes["expiredTotal"], 3)
+        self.assertEqual(len(log.warnings), 1)
+        self.assertIn("VIP777", log.warnings[0])
+        empty = leftover.split("| `VIP777`")[0] + "\n"
+        log2 = bd.BuildLog()
+        bd.parse_codes(self.BODY.replace("## Expired Codes", empty + "## Expired Codes"), None, log2)
+        self.assertEqual(log2.warnings, [])
+
+    def test_code_in_two_lists_warns(self) -> None:
+        """A code listed as both active and expired is flagged, whatever its case."""
+        log = bd.BuildLog()
+        body = self.BODY.replace("None right now.\n\n", "").replace(
+            "| :--- | :--- | :--- | :---: |\n\n## Expired", "| :--- | :--- | :--- | :---: |\n| `ks1102` | x | y | z |\n\n## Expired", 1)
+        bd.parse_codes(body, None, log)
+        self.assertTrue([w for w in log.warnings if "ks1102" in w.casefold()])
 
     def test_missing_list_warns(self) -> None:
         """A missing list heading is a warning and an empty list, not a crash."""
@@ -473,17 +501,19 @@ class RepositoryTests(unittest.TestCase):
     def test_heroes_and_codes_are_well_formed(self) -> None:
         """Each hero has a unique name; each code is a named entry in exactly one of the three lists.
 
-        Active and Redeemed entries are ``{"code"}``; Expired entries are
+        Active entries are ``{"code"}``; Expired entries are
         ``{"code", "redeemed"}`` with a boolean (the account-level ✓ mark).
+        There is no separate Redeemed list: a redeemed code is an Expired row.
         """
         names = [h["name"] for h in self.ks["heroes"]]
         self.assertTrue(names)
         self.assertEqual(len(names), len(set(names)))
         codes = self.ks["codes"]
-        listed = [c["code"].casefold() for key in ("active", "redeemed", "expired") for c in codes[key]]
+        listed = [c["code"].casefold() for key in ("active", "expired") for c in codes[key]]
         self.assertTrue(all(listed))
         self.assertEqual(len(listed), len(set(listed)))
-        self.assertTrue(all(set(c) == {"code"} for key in ("active", "redeemed") for c in codes[key]))
+        self.assertNotIn("redeemed", codes)
+        self.assertTrue(all(set(c) == {"code"} for c in codes["active"]))
         self.assertTrue(all(set(c) == {"code", "redeemed"} and isinstance(c["redeemed"], bool) for c in codes["expired"]))
         self.assertEqual(codes["expiredTotal"], len(codes["expired"]))
 
