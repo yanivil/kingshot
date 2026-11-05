@@ -69,6 +69,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Codes page: ✓ marks the codes redeemed on this account, also in the Expired list (asked for by the account owner on
+  2026-11-05). The Expired table in `codes.md` gains a **Redeemed** column. The ✓ is set for `KS1104` and `VIP777`
+  (told on 5 Nov) and for `Kingshot888`, `KS1025` and `OFFICIALSTORE1023`, which the list marked redeemed before the
+  5 Nov restart (confirmed by the owner on 5 Nov). `scripts/build_data.py` reads it into `codes.expired[].redeemed` and
+  warns on any text other than ✓ / V / Yes (new test `test_expired_redeemed_mark`). The page shows ✓ on every Redeemed
+  code and on marked Expired codes ("10 total · 5 ✓ redeemed"); README and `docs/SCHEMA.md` updated.
 - `codes.md` (told by the account owner on 2026-11-05): `FORTHEKINGDOM` added to Redeemed (rewards not recorded).
   `VIP777` and `KS1104` move from Redeemed to Expired because the owner thinks they are old; their notes keep that
   they were redeemed on this account. `KS1102` was already Expired. The page's sample data matches. README and

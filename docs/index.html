@@ -238,6 +238,8 @@ a{color:#1D57B5}a:hover{color:#123E85}
 /* One row per code: tap target is the whole row (≥44px), state on the right. */
 .code-row{display:flex;align-items:center;min-height:40px;padding:8px 2px;border-bottom:1px solid var(--line)}
 .code{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px;overflow-wrap:anywhere}
+/* ✓ = redeemed on this account (from codes.md); read-only, not a control. */
+.code-ok{margin-left:auto;padding-left:12px;font-weight:700;font-size:16px;color:var(--good);white-space:nowrap}
 .ok{color:var(--good);font-weight:700}
 @media (max-width:760px){
 .top-in{padding:12px}
@@ -542,7 +544,7 @@ var KS_DATA = {
     "asOf": "2026-10-21",
     "active": [],
     "redeemed": [ { "code": "FORTHEKINGDOM" } ],
-    "expired": [ { "code": "KS1104" }, { "code": "VIP777" }, { "code": "KS1102" }, { "code": "TREAT4U" }, { "code": "KS1017" } ],
+    "expired": [ { "code": "KS1104", "redeemed": true }, { "code": "VIP777", "redeemed": true }, { "code": "KS1102", "redeemed": false }, { "code": "TREAT4U", "redeemed": false }, { "code": "KS1017", "redeemed": false } ],
     "expiredTotal": 5
   }
 };
@@ -1288,16 +1290,25 @@ class Dashboard extends StateHost {
 
     /* ---------- Codes ----------
      * Three lists straight from codes.md (Active = not redeemed yet, Redeemed, Expired).
-     * Read-only: to change a code's list, codes.md is edited. */
-    var codeRows = function (list) { return (list || []).filter(function (x) { return x && x.code; }).map(function (x) { return { code: x.code }; }); };
+     * Read-only: to change a code's list, codes.md is edited.
+     * The ✓ means "redeemed on this account": every Redeemed row has it, and an
+     * Expired row has it when codes.md marks it (an old code the account used). */
+    var codeRows = function (list, allRedeemed) {
+      return (list || []).filter(function (x) { return x && x.code; }).map(function (x) {
+        // Only the boolean true marks an expired code; a missing field means not recorded as redeemed.
+        return { code: x.code, redeemed: allRedeemed || x.redeemed === true };
+      });
+    };
+    var expiredRedeemed = codesD ? codeRows(codesD.expired).filter(function (x) { return x.redeemed; }).length : 0;
     var codes = codesD ? {
       asOf: self.asOf(codesD.asOf),
       lede: codeRows(codesD.active).length + ' to redeem · ' + codeRows(codesD.redeemed).length + ' redeemed · ' +
         (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' expired',
       active: codeRows(codesD.active), noActive: !codeRows(codesD.active).length,
-      redeemed: codeRows(codesD.redeemed), noRedeemed: !codeRows(codesD.redeemed).length,
+      redeemed: codeRows(codesD.redeemed, true), noRedeemed: !codeRows(codesD.redeemed).length,
       expired: codeRows(codesD.expired), noExpired: !codeRows(codesD.expired).length,
-      expiredCount: (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' total',
+      expiredCount: (codesD.expiredTotal != null ? codesD.expiredTotal : (codesD.expired || []).length) + ' total' +
+        (expiredRedeemed ? ' · ' + expiredRedeemed + ' ✓ redeemed' : ''),
       unlistedText: codesD.expiredTotal != null && codesD.expiredTotal > (codesD.expired || []).length ? (codesD.expiredTotal - (codesD.expired || []).length) + ' more expired codes are not listed by name.' : ''
     } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, redeemed: [], noRedeemed: true, expired: [], noExpired: true, expiredCount: NR, unlistedText: '' };
 
@@ -1834,10 +1845,16 @@ function tplHealth(v) {
 function tplCodes(v) {
   var c = v.codes;
   // Plain rows: a code's state is the list it is in (codes.md), not something the viewer toggles.
-  var row = function (x) { return '<div class="code-row"><span class="code">' + esc(x.code) + '</span></div>'; };
+  // A redeemed code ends with ✓; screen readers hear "redeemed" instead of the symbol.
+  var row = function (x) {
+    return '<div class="code-row"><span class="code">' + esc(x.code) + '</span>' +
+      when(x.redeemed, '<span class="code-ok" title="Redeemed on this account"><span aria-hidden="true">✓</span><span class="sr">redeemed</span></span>') +
+      '</div>';
+  };
   return '<div class="view">' +
     '<div class="view-h"><h2>Gift codes</h2><p class="lede">' + esc(c.lede) + '</p></div>' +
     '<section class="panel"><p class="foot">The three lists come from codes.md and apply to the account, not to this browser. ' +
+    '✓ = redeemed on this account, also on expired codes that were used before they became old. ' +
     'New codes found by the automated check appear under "To redeem" once they are added to codes.md.</p></section>' +
     '<div class="grid2">' +
     '<section class="panel"><div class="panel-h"><h3>To redeem</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +

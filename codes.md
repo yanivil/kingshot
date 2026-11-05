@@ -29,20 +29,20 @@ are added here, and stay unverified until they are tried in the game. None right
 
 ## Expired Codes
 
-Codes that no longer need redeeming. A code that was redeemed on this account before it became old says so in its notes.
+Codes that no longer need redeeming. **Redeemed** ✓ = redeemed on this account before the code became old (empty = not recorded as redeemed); the dashboard shows the ✓ next to the code.
 
-| Gift Code | Rewards | Source / Notes | Updated |
-| :--- | :--- | :--- | :---: |
-| `KS1104` | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
-| `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
-| `KS1102` | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov | 2026-11-05 |
-| `TREAT4U` | Not recorded | Halloween code; expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `OFFICIALSTORE1023` | Not recorded | Web Store code; expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `KS1025` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `Kingshot888` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Launch code; expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `lwaL5ZKx5` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `KSPRAWNING` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `KS1017` | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| Gift Code | Redeemed | Rewards | Source / Notes | Updated |
+| :--- | :---: | :--- | :--- | :---: |
+| `KS1104` | ✓ | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
+| `VIP777` | ✓ | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
+| `KS1102` |  | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov | 2026-11-05 |
+| `TREAT4U` |  | Not recorded | Halloween code; expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `OFFICIALSTORE1023` | ✓ | Not recorded | Web Store code; expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
+| `KS1025` | ✓ | Not recorded | Expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
+| `Kingshot888` | ✓ | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Launch code; expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
+| `lwaL5ZKx5` |  | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KSPRAWNING` |  | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KS1017` |  | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov | 2026-11-05 |
 
 ## How to Redeem Codes
 

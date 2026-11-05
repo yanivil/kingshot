@@ -1331,14 +1331,21 @@ def parse_heroes(body: str, as_of: Optional[str], log: BuildLog) -> List[Dict[st
 # the account, told by its owner, so it lives in codes.md (one list per state:
 # Active, Redeemed, Expired). A per-browser "redeemed" mark on the page could
 # disagree between devices, so the page no longer has one (removed 2026-11-05).
+# An old code the account did redeem goes to Expired (the list is about the
+# code), and the Expired table's "Redeemed" column keeps the account fact, so
+# the page can still mark it (added 2026-11-05, asked for by the account owner).
 # ---------------------------------------------------------------------------
 
 #: codes.md list headings -> the key each list gets in KS_DATA.codes.
 CODE_LISTS = (("active", r"^Active Codes"), ("redeemed", r"^Redeemed Codes"), ("expired", r"^Expired Codes"))
 
+#: "Redeemed" cell values that mean "redeemed on this account" (compared case-insensitively).
+#: The owner calls the mark a "V", so V and Yes are accepted next to the check marks.
+REDEEMED_MARKS = {"✓", "✔", "v", "yes"}
+
 
 def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Dict[str, Any]]:
-    """Read the ``| `CODE` | rewards | notes | date |`` rows of one codes list.
+    """Read the ``| `CODE` | (Redeemed |) rewards | notes | date |`` rows of one codes list.
 
     Args:
         table: The list's table, or ``None`` when it is missing.
@@ -1346,8 +1353,12 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
         log: Warning collector.
 
     Returns:
-        ``[{"code"}]`` in table order. An empty table (header only) is a
-        normal state, e.g. no active codes, and gives ``[]`` without a warning.
+        ``[{"code"}]`` in table order; Expired rows also get ``"redeemed"``
+        (bool) from the table's "Redeemed" column: a mark in
+        ``REDEEMED_MARKS`` is ``True``, an empty cell (or no such column) is
+        ``False``, and any other text is ``False`` with a warning. An empty
+        table (header only) is a normal state, e.g. no active codes, and gives
+        ``[]`` without a warning.
     """
     if table is None:
         log.warn("codes.md", f"{area} codes table not found")
@@ -1359,7 +1370,14 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
             # Edge case: a row without a code would show as a blank entry on the page.
             log.warn("codes.md", f"{area} codes: a row has no code")
             continue
-        rows.append({"code": code})
+        item: Dict[str, Any] = {"code": code}
+        if area == "expired":
+            mark = strip_md(cell(row, "Redeemed")).strip()
+            item["redeemed"] = mark.casefold() in REDEEMED_MARKS
+            if mark and not item["redeemed"]:
+                # A typo must not silently drop the mark, nor turn into one.
+                log.warn("codes.md", f"expired code '{code}': 'Redeemed' is '{mark}'; use ✓ or leave it empty")
+        rows.append(item)
     return rows
 
 
@@ -1373,7 +1391,7 @@ def parse_codes(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any
 
     Returns:
         ``{"asOf", "active", "redeemed", "expired", "expiredTotal"}``; each
-        list holds ``{"code"}`` objects.
+        list holds ``{"code"}`` objects, and Expired ones also ``"redeemed"``.
 
     Raises:
         Nothing; a missing list is a warning and an empty list.
