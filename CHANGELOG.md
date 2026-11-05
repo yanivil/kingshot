@@ -78,11 +78,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
     + 23,445 gear + 18,250 levels and the skill (inferred). Roster role text updated (+9% construction, +15% Lethality).
   - Forrest: 59 / 100 to 4★; an Epic Praetorian's Shroud +19 replaced the Stonewall Shroud, and the other pieces went up (gear
     84,830 → 112,460). Power 401,539 → 438,984 = +27,630 gear + 9,815 levels (inferred, the same as Seth's).
-  - The stat changes of all four split the same way; new previews where they changed.
+  - Edwin: still Lv 59 (not in a drill slot; the hero XP stock of 414,898 covers the next level), **3★ Tier 3 → Tier 5** (7 / 100),
+    Armet +11 → +20. Power 354,052 → 396,177 = +36,725 base (two promotions) + 5,400 gear, exactly.
+  - Olive: Lv 59 → **63** with a working Upgrade button (412,898 / 420,000 XP), 76 / 100 to 4★, gear unchanged, **Green Thumb and
+    Forager's Luck Lv 4** (+20%). Power 403,067 → 416,159 (+13,092, levels and the two skills, inferred). Roster role text updated.
+  - Yeonwoo: Lv 64 (drill slot), 13 / 40 to Tier 1, Leatherwear +3 → +9, **On Guard Lv 4** (+20% Lethality). Power 361,910 → 380,548
+    = +3,030 gear + 12,080 levels + 3,528 the skill (the last two inferred), exactly. Roster role text updated.
+  - The stat changes split the same way; new previews where they changed.
 - `data/manual.json`, same date: the gear swap now uses Seth's Greaves +20 and Forrest's 5 Nov gear (Howard +10,290, Forrest
-  +4,550, Seth −14,840); promotions add Gordon (4★), Seth (Tier 5, Rare stock 4), Saul (Tier 5) and Forrest (59 / 100); skill books
-  mark Saul's Positional Battler done; the long-term focus and the Be-march evidence use the new numbers; Saul's hand-written skill
-  notes were out of date (+6% / +10%) and are fixed; the Drill Camp note lists the 5 Nov Lv 64 drill screens.
+  +4,550, Seth −14,840); promotions add Gordon (4★), Seth, Edwin and Olive (all Rare heroes are now Tier 5; Olive is closest to 4★,
+  needs 24), Saul (Tier 5), Forrest and Yeonwoo; skill books mark Saul's Positional Battler and Yeonwoo's On Guard done; the rally,
+  gathering, long-term and Be-march suggestions use the new numbers; Saul's hand-written skill notes were out of date (+6% / +10%)
+  and are fixed; a sentence in the promotion suggestion had lost its commas in the Chenko update and is rewritten.
+- `data/manual.json` Drill Camp: the instructor levels go back to the 27 Oct reading (Diana 61, Chenko 59). The Diana and Chenko
+  updates had put their 5 Nov levels into a reading dated 27 Oct, mixing two dates; the page already flags each instructor whose
+  own screen shows a different level and asks for a re-read. The note now records the 5 Nov evidence: the drill-slot heroes show
+  Lv 64 while Olive shows Lv 63 and can be levelled, so she is presumably no longer an instructor (Seth, Lv 64, is the likeliest
+  replacement; inferred). A new Drill Camp screenshot would settle it.
 - `hero.md`, Chenko (2026-11-05): Lv 59 → **64** (cap, "Requirement: Town Center Lv. 23"), **4★ Tier 0** (8 / 100). The Rare
   Brigader's Armet +15 was replaced by the Mythic **Judicator's Armet +22** (68,025; +22.70% Cavalry Lethality) and the Breastplate is
   +20, so gear is 98,000 → 145,725. **Stand of Arms reached Lv 4.** Power 481,360 → 582,053: +37,360 4★ (the preview), +47,725

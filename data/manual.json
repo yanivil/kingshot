@@ -88,7 +88,7 @@
       },
       {
         "hero": "Diana",
-        "level": 64
+        "level": 61
       },
       {
         "hero": "Olive",
@@ -96,7 +96,7 @@
       },
       {
         "hero": "Chenko",
-        "level": 64
+        "level": 59
       },
       {
         "hero": "Quinn",
@@ -124,7 +124,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon, Saul and Forrest are confirmed by their own screens. Update 5 Nov: Diana's own screen shows Lv 64. Howard's own 5 Nov screen shows Lv 64 and still says he cannot be levelled within a Drill Camp; since slotted heroes take the lowest instructor level (rules.drillCamp), all five instructors are presumably Lv 64 now, so Olive and Chenko are presumably Lv 64 too (inferred). Chenko's own 5 Nov screen confirms Lv 64 (cap; \"Requirement: Town Center Lv. 23\"). Olive's screen and the Drill Camp screen were not re-sent, so Olive stays at 59 here. Gordon's own 5 Nov screen also shows Lv 64 and the Drill Camp message, which fits the same inference. Saul's own 5 Nov screen (drill slot 8) also shows Lv 64 and the Drill Camp message. Forrest's own 5 Nov screen also shows Lv 64 and the Drill Camp message."
+    "_instructorNote": "From the Drill Camp screen of 27 Oct: the 5 instructors show Lv 64, 61, 59, 59 and 64, so slotted heroes run at Lv 59. Jabel (64), Quinn (64), Diana (61) and Chenko (59) match their own 27 Oct screens. The fifth (green hood, Lv 59) matches Olive's own 27 Oct screen (green hood, Lv 59, not drill-locked). Saul, the instructor recorded on 25 Oct, is now in drill slot 8 (his own 27 Oct screen says he cannot be levelled within a Drill Camp, and the slot-8 portrait matches his). The 8 slots hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 59; slot 9 needs Town Center Lv 23 and slots 10-15 are locked. The screen shows no names; slots 1-7 are identified by portrait and class icon as on 25 Oct (Inferred), and Howard, Gordon, Saul and Forrest are confirmed by their own screens. Update 5 Nov: the Drill Camp screen was not re-sent, so the instructor list and levels above stay as read on 27 Oct (an earlier edit had put Diana's and Chenko's 5 Nov levels into this 27 Oct reading; that was undone because it mixed two dates). On their own 5 Nov screens, Howard, Gordon, Saul, Forrest and Yeonwoo (drill slots) show Lv 64 with the Drill Camp message; Jabel, Quinn, Diana and Chenko show Lv 64; Olive shows Lv 63 with a working Upgrade button. Since slotted heroes take the lowest instructor's level (rules.drillCamp), Olive at 63 cannot still be an instructor, so the instructor set has presumably changed since 27 Oct; Seth (Lv 64, not drill-locked) is the likeliest fifth instructor (inferred). A new Drill Camp screenshot would settle it."
   },
   "recommendations": [
     {
@@ -205,14 +205,14 @@
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Promotions: redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Edwin is 1 Rare shard from Tier 4",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%) Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%) Chenko 92 (8 / 100) and Gordon 95 (5 / 100), both for the same gain, so none of them fits the stock. Fahd's 3★ needs 19 (21 / 40 on 27 Oct), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 22 Oct) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (Seth's 5 Nov screen). Edwin is 1 shard from Tier 4 (39 / 40 on 27 Oct, not re-read; +17,940 base power and +2.90% Cavalry Attack and Defense), so 1 of the 4 promotes him; Seth reached Tier 5 by 5 Nov and needs 61 for 4★ (39 / 100; +30,355 and +5.22% Infantry Attack and Defense), and Forrest needs 41 for the same step (59 / 100). None of them is in a combat line-up except Forrest in the Be march.",
+      "what": "Promotions: redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Rare: Olive is closest to 4★ (needs 24)",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd's 3★ needs 19 (21 / 40 on 27 Oct), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 22 Oct) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a line-up (the Be march). Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
       "steps": [
         "Diana → promotion screen: Redeem 20 Epic shards (80 / 100, 24 in stock on 5 Nov), then Ascend to 4★ Tier 2.",
         "Epic: the 4 left and new Epic shards go toward Quinn's Tier 2 (32 / 100 on 5 Nov, needs 68).",
         "Mythic: keep the 36 Mythic Redeem shards; when Jabel's count plus the stock reaches 100, Redeem and Ascend her to 4★ (36 / 100 on 5 Nov, needs 64).",
-        "Edwin → promotion screen: Redeem 1 Rare shard (39 / 40 on 27 Oct; 4 Rare in stock on 5 Nov), then Ascend to Tier 4.",
-        "Seth: the other Rare Redeem shards and new Rare shards toward 4★ (39 / 100 on 5 Nov, needs 61).",
+        "Rare: the 4 Rare Redeem shards and new Rare shards toward Olive's 4★ (76 / 100 on 5 Nov, needs 24), the closest; choose Forrest (59 / 100, Be march) instead if the Be march matters more to you.",
+        "Then Forrest (needs 41), Seth (needs 61) and Edwin (needs 93), all on 5 Nov.",
         "Helga (0 / 5) and Saul (0 / 40 to 3★): only after Jabel's 4★."
       ],
       "evidence": [
@@ -222,14 +222,16 @@
         "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
         "Chenko's promotion screen of 5 Nov: 4-Star (Tier 0), 8 / 100, Redeem 24; preview +32,560 / +6.31%",
         "Gordon's promotion screen of 5 Nov: 4-Star (Tier 0), 5 / 100, Redeem 24; preview +32,560 / +6.31%",
+        "Yeonwoo's promotion screen of 5 Nov: 3-Star (Tier 0), 13 / 40, Redeem 24; preview +18,880 / +4.51%",
         "Fahd's promotion screen of 27 Oct: 2-Star (Tier 5), 21 / 40; preview +21,920 / +5.80%",
-        "Edwin's promotion screen of 27 Oct: 3-Star (Tier 3), 39 / 40, Redeem 2 (Rare); preview +17,940 / +2.90%",
+        "Edwin's promotion screen of 5 Nov: 3-Star (Tier 5), 7 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
+        "Olive's promotion screen of 5 Nov: 3-Star (Tier 5), 76 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
         "Seth's promotion screen of 5 Nov: 3-Star (Tier 5), 39 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
         "Forrest's promotion screen of 5 Nov: 3-Star (Tier 5), 59 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
         "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only: 20 of the 24 Epic Redeem shards now (5 Nov); the 36 Mythic Redeem shards kept for Jabel; 1 of the 4 Rare Redeem shards (5 Nov)",
+      "cost": "Shards only: 20 of the 24 Epic Redeem shards now (5 Nov); the 36 Mythic Redeem shards kept for Jabel; the 4 Rare Redeem shards toward Olive (5 Nov)",
       "confidence": [
         "Verified",
         "Inferred",
@@ -241,15 +243,17 @@
         "Howard",
         "Chenko",
         "Gordon",
+        "Yeonwoo",
         "Jabel",
         "Fahd",
         "Helga",
         "Saul",
         "Seth",
         "Edwin",
-        "Forrest"
+        "Forrest",
+        "Olive"
       ],
-      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana's Tier 2 as the next Epic step, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
+      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana's Tier 2 as the next Epic step, Olive as the first Rare one, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
     },
     {
       "id": "troops-infantry-first",
@@ -300,7 +304,7 @@
       "priority": 4,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she leads no march today (24 Oct presets). Yeonwoo's On Guard gives +15% Lethality (Lv. 3) and, since her 3★ promotion on 27 Oct, can also go to Lv. 4; Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4) with three presets saved.",
+      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she leads no march today (24 Oct presets). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4) with three presets saved.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
@@ -319,7 +323,7 @@
         "Done by 5 Nov: Chenko's Stand of Arms reached Lv. 4 (+15% → +20% Lethality)."
       ],
       "evidence": [
-        "hero.md expedition skills: Chenko Stand of Arms Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Yeonwoo On Guard Lv. 3, +15% Lethality, cap lifted by 3★ on 27 Oct; Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★",
+        "hero.md expedition skills: Chenko Stand of Arms Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Yeonwoo On Guard Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★",
         "troops.md: March Queue 4/4; Terror (Alpha Black Panther) is rally-only",
         "lineups.md presets of 24 Oct: Chenko, Helga and Yeonwoo lead or join no preset",
         "Community guides (kingshotguide.org rally guide, kingshotoptimizer.com Bear Hunt guide, topuplist.com tier list): a joiner adds only its lead hero's first expedition skill; Chenko, Amane and Yeonwoo are named as top joiners"
@@ -345,13 +349,14 @@
       "what": "Skill books: next 50 Epic Conquest Books to Gordon's Trash Talk, next 50 Epic Expedition Manuals to Howard's Joint Defense",
       "why": "Skill books are a shared stock per type, so each 50 books buys one Lv. 3 → 4 upgrade for one hero. The ranking puts first the skills that help every troop or hero (not just the hero himself) on heroes used in the most line-ups. Conquest Books upgrade march (expedition) skills: Howard's Defenders' Edge reached Lv. 4 by 27 Oct and his Weaken by 5 Nov, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2. Expedition Manuals upgrade Arena (exploration) skills: Howard's Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75); Joint Defense is still next, because it raises Defense for all heroes from 10% to 12.5% and Howard is in the front of both Arena squads. Mythic: Jabel's Persistence and Youthful Rage reached Lv. 4 by 5 Nov and presumably wait for her 4★ (inferred), so there is no Mythic target until Jabel's 4★. The cheaper Lv. 2 → 3 upgrades (30 books) on Amane are not ranked first because she is in no combat march or Arena squad. Chenko's Stand of Arms (her rally-joiner skill) also reached Lv. 4 by 5 Nov: see the rally suggestion.",
       "steps": [
-        "Epic Conquest Books (stock not read since Weaken and Stand of Arms used 50 each; 50 needed): done: Howard · Defenders' Edge (Lv. 4 by 27 Oct) and Weaken (Lv. 4 by 5 Nov); Chenko · Stand of Arms (Lv. 4 by 5 Nov). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
+        "Epic Conquest Books (stock not read since Weaken, Stand of Arms and On Guard used 50 each; 50 needed): done: Howard · Defenders' Edge (Lv. 4 by 27 Oct) and Weaken (Lv. 4 by 5 Nov); Chenko · Stand of Arms and Yeonwoo · On Guard (Lv. 4 by 5 Nov). 1. Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2). 2. Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1).",
         "Epic Expedition Manuals (29 in stock on 5 Nov on Howard, Diana, Quinn and Chenko; 50 needed for Lv. 3 → 4): done: Howard · Shielded Strike (Lv. 4 by 5 Nov). 1. Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads). 2. Quinn · Headshot (Attack × 480% → 520%; back of both Arena squads). 3. Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%; back of both Arena squads).",
         "Mythic Conquest Books and Expedition Manuals (stock not re-read): done: Jabel · Youthful Rage and Persistence (Lv. 4 by 5 Nov); Saul · Positional Battler (Lv. 3 by 5 Nov). Both of Jabel's presumably need her 4★ for Lv. 5, and all of Saul's skills are Lv. 3 and presumably need his 3★ for Lv. 4 (Rapid Fire and Superior Techniques say so; the rest is inferred)."
       ],
       "evidence": [
         "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
         "Chenko's skill screen of 5 Nov: Stand of Arms icon shows Lv. 4; Burst Fire, Defense Upgrade, Weapon Upgrade and Shield Wall Lv. 3",
+        "Yeonwoo's skill screen of 5 Nov: On Guard icon shows Lv. 4; Petalbloom 29 / 50",
         "Saul's skill screen of 5 Nov: all six skill icons show Lv. 3 (Positional Battler was Lv. 2); Rapid Fire says \"ascend to 3-Star\"",
         "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn and Chenko (29 / 50 each)",
         "Jabel's skill screen of 5 Nov: Persistence and Youthful Rage icons show Lv. 4; Gallant Throw says \"ascend to 4-Star\"",
@@ -359,7 +364,7 @@
         "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
         "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
       ],
-      "cost": "50 books per Lv. 3 → 4 upgrade; 21 more Epic Expedition Manuals needed (5 Nov); Epic Conquest Book stock not read since Weaken and Stand of Arms reached Lv. 4",
+      "cost": "50 books per Lv. 3 → 4 upgrade; 21 more Epic Expedition Manuals needed (5 Nov); Epic Conquest Book stock not read since Weaken, Stand of Arms and On Guard reached Lv. 4",
       "confidence": [
         "Verified",
         "Inferred",
@@ -374,7 +379,8 @@
         "Saul",
         "Fahd",
         "Amane",
-        "Chenko"
+        "Chenko",
+        "Yeonwoo"
       ],
       "note": "Verified: the stock, the costs, the skill texts and the line-ups. Inferred: the order, from how many line-ups use the hero and whether the effect covers all troops or heroes. Unverified: whether all three heroes' expedition skills apply in a march, whether Barricades use expedition skills, and how much each percentage changes a fight. If attacking matters more to you than beasts, put Quinn's Precision Shot before Gordon's Trash Talk (Att march)."
     },
@@ -466,7 +472,7 @@
       "priority": 8,
       "type": "Marches",
       "what": "Gathering: lead with the hero whose skill matches the resource",
-      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +15% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
+      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +20% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
       "changes": [
         {
           "where": "Gathering presets",
@@ -488,7 +494,7 @@
         "For wood, put Forrest in front when the Be march is home."
       ],
       "evidence": [
-        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 27 Oct skill icon), Olive Forager's Luck Lv. 3 (+15% bread)",
+        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 27 Oct skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
         "troops.md Gat preset of 24 Oct: Seth (lead), Edwin, Amane",
         "troops.md: March Queue 4/4 (24 Oct)"
       ],
