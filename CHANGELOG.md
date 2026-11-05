@@ -69,6 +69,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `Iro` now carries Infantry only (45,328; Cavalry removed; power 8,781,121; Deploy screen, later on 2026-11-05),
+  so all five presets match and `formation-iron` is done and removed; no suggestions are left. Troops available:
+  46,162 / 46,986 / 43,868.
 - Deploy screens, latest on 2026-11-05: the five suggested presets are saved and replace `Be`, `Att`, `Gat` and
   `Joi`: `Ter` (Diana, Howard, Jabel; 44,440 / 17,776 / 26,664), `Iro` (Seth, Gordon, Quinn; 45,328 Infantry +
   43,552 Cavalry), `Sto` (Edwin, Helga, Saul; 46,857 Cavalry), `Woo` (Forrest, Chenko, Yeonwoo; 45,328 Infantry)

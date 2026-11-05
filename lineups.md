@@ -77,7 +77,7 @@ from the heroes' own 5 Nov screens (hero.md).
 | Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power | Updated |
 | :--- | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
 | **Terror & Beasts** | `Ter` | Diana (Lv. 64) | Howard (Lv. 64) | Jabel (Lv. 64) | 50% Inf / 20% Cav / 30% Arc | 20,367,212 | 2026-11-05 |
-| **Iron Gathering** | `Iro` | Seth (Lv. 64) | Gordon (Lv. 64) | Quinn (Lv. 64) | 51% Inf / 49% Cav / 0% Arc | 18,435,589 | 2026-11-05 |
+| **Iron Gathering** | `Iro` | Seth (Lv. 64) | Gordon (Lv. 64) | Quinn (Lv. 64) | 51% Inf / 0% Cav / 0% Arc | 8,781,121 | 2026-11-05 |
 | **Stone Gathering** | `Sto` | Edwin (Lv. 59) | Helga (Lv. 64) | Saul (Lv. 64) | 0% Inf / 53% Cav / 0% Arc | 8,871,135 | 2026-11-05 |
 | **Wood Gathering** | `Woo` | Forrest (Lv. 64) | Chenko (Lv. 64) | Yeonwoo (Lv. 64) | 51% Inf / 0% Cav / 0% Arc | 8,604,224 | 2026-11-05 |
 | **Bread Gathering** | `Bre` | Olive (Lv. 64) | Fahd (Lv. 64) | — | 0% Inf / 0% Cav / 57% Arc | 8,158,542 | 2026-11-05 |

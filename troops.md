@@ -14,16 +14,16 @@ Standing forces are **Tier VIII (Elite)** units across the three military branch
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VIII | Elite Infantry | 46,160 | 33.7% | Available on the Deploy screen | +12,009 | 2026-11-05 |
+| **Infantry** | VIII | Elite Infantry | 46,162 | 33.7% | Available on the Deploy screen | +12,011 | 2026-11-05 |
 | **Cavalry** | VIII | Elite Cavalry | 46,986 | 34.3% | Available on the Deploy screen | +10,548 | 2026-11-05 |
-| **Marksmen** | VIII | Elite Archer | 43,865 | 32.0% | Available on the Deploy screen | +8,725 | 2026-11-05 |
-| **Total Military Force** | **VIII** | — | **137,011** | **100%** | **0 Injured** (Troops Preview, earlier on 5 Nov) | +31,282 | 2026-11-05 |
+| **Marksmen** | VIII | Elite Archer | 43,868 | 32.0% | Available on the Deploy screen | +8,728 | 2026-11-05 |
+| **Total Military Force** | **VIII** | — | **137,016** | **100%** | **0 Injured** (Troops Preview, earlier on 5 Nov) | +31,287 | 2026-11-05 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 137,011 | The sum of the three counts on the latest Deploy screens of 5 Nov (136,941 a little earlier; 663 more of each type than the morning). Earlier that day, Troops Preview, "All" tab: 134,952, the sum of its three counts. The header reads "134.9K/134.9K" (5 Nov; 105.7K/105.7K on 24 Oct). On 22 Oct it read "1,278/98,409" with March Queue 2/4; on 23 and 24 Oct both numbers match and the queue reads 4/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-05 |
+| **Total Standing Troops** | 137,016 | The sum of the three counts on the latest Deploy screen of 5 Nov (137,011 and 136,941 a little earlier; 663 more of each type than the morning). Earlier that day, Troops Preview, "All" tab: 134,952, the sum of its three counts. The header reads "134.9K/134.9K" (5 Nov; 105.7K/105.7K on 24 Oct). On 22 Oct it read "1,278/98,409" with March Queue 2/4; on 23 and 24 Oct both numbers match and the queue reads 4/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-05 |
 | **Single March Capacity** | 88,880 | Three Lv. 64 heroes give 88,880 (`Ter`, `Iro`, `Woo`; 5 Nov); `Bre`, with two heroes, shows 76,150, which confirms that a march holds 50,690 plus each hero's Troop Capacity (12,730 at Lv. 64); `Gat` shows 88,410 / 88,410. The 470 difference equals Edwin's lower Troop Capacity (12,260 at Lv. 59 against 12,730 at Lv. 64), which suggests that a march holds a base amount plus its three heroes' Troop Capacity (inferred; the base would be 50,690). 79,275 for all three presets on 24 Oct | 2026-11-05 |
 | **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen (5 Nov, as on 24 Oct). With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-11-05 |
 | **Infirmary Hospital Capacity** | 72,800 | 0 / 72,800 injured (38,600 on 24 Oct) | 2026-11-05 |
@@ -45,16 +45,16 @@ Standing forces are **Tier VIII (Elite)** units across the three military branch
 | **Elite Archer** | VIII | 26,664 | 43,865 | 30% | 2026-11-05 |
 
 ### Formation 2: Iron Gathering (`Iro`) — Resource Preset
-* **Formation Power:** 18,435,589 _(2026-11-05)_
-* **Total Troops:** 88,880 / 88,880 (Full March) _(2026-11-05)_
+* **Formation Power:** 8,781,121 (18,435,589 with 43,552 Cavalry earlier on 5 Nov) _(2026-11-05)_
+* **Total Troops:** 45,328 / 88,880 _(2026-11-05)_
 * **Assigned Heroes:** Seth (Lv. 64, Infantry Lead), Gordon (Lv. 64, Cavalry), Quinn (Lv. 64, Archer) _(2026-11-05)_
-* **Tactical Objective:** Iron gathering with Seth (+20% iron). Tab 2, which held `Att` until 5 Nov. _(2026-11-05)_
+* **Tactical Objective:** Iron gathering with Seth (+20% iron), Infantry only (the Cavalry was removed later on 5 Nov). Tab 2, which held `Att` until 5 Nov. _(2026-11-05)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Elite Infantry** | VIII | 45,328 | 46,160 | 51% | 2026-11-05 |
-| **Elite Cavalry** | VIII | 43,552 | 46,986 | 49% | 2026-11-05 |
-| **Elite Archer** | VIII | 0 | 43,865 | 0% | 2026-11-05 |
+| **Elite Infantry** | VIII | 45,328 | 46,162 | 51% | 2026-11-05 |
+| **Elite Cavalry** | VIII | 0 | 46,986 | 0% | 2026-11-05 |
+| **Elite Archer** | VIII | 0 | 43,868 | 0% | 2026-11-05 |
 
 ### Formation 3: Stone Gathering (`Sto`) — Resource Preset
 * **Formation Power:** 8,871,135 _(2026-11-05)_
