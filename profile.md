@@ -12,30 +12,30 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **13,969,554** | Total empire strength (exact figure from the city top bar, 27 Oct). The Governor Profile shows it as 13.9M: the game cuts the digits off rather than rounding. 13,296,354 on an earlier Town Center screen the same day; 12,464,731 on 25 Oct | 2026-10-27 |
-| **Kingdom / Server** | **#2508** | Home realm state | 2026-10-27 |
-| **Alliance** | **SPQ** | Primary allied faction | 2026-10-27 |
-| **Total Combat Kills** | **592,690** | Total enemy unit casualties inflicted (Governor Profile "Kills"; was 443,382 on 23 Oct) | 2026-10-27 |
+| **Overall Account Power** | **17.7M** | Governor Profile, 5 Nov. The profile cuts the digits off rather than rounding, so the exact figure is between 17,700,000 and 17,799,999 (the city top bar was not sent). 13,969,554 exact on 27 Oct; 12,464,731 on 25 Oct | 2026-11-05 |
+| **Kingdom / Server** | **#2508** | Home realm state | 2026-11-05 |
+| **Alliance** | **SPQ** | Primary allied faction | 2026-11-05 |
+| **Total Combat Kills** | **658,745** | Total enemy unit casualties inflicted (Governor Profile "Kills"; 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-05 |
 | **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-27 |
-| **Stamina** | **200 / 200** | Governor hunting and expedition energy | 2026-10-27 |
+| **Stamina** | **124 / 200** | Governor hunting and expedition energy (the bar under the portrait, drumstick icon; 200 / 200 on 27 Oct) | 2026-11-05 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
-| **Governor Gear** | **3 / 6 Equipped** | 3 Uncommon pieces worn; the other 3 slots show a grey icon (see "Governor Gear" below) | 2026-10-27 |
+| **Governor Gear** | **6 / 6 Equipped** | 6 Uncommon pieces worn, one of them 1-Star (see "Governor Gear" below); 3 / 6 on 27 Oct | 2026-11-05 |
 
 ### Governor Gear
 
-Read from the Governor Profile on 2026-10-27. The slots with a grey icon (crown, chest, ring) have no piece; whether
-they are locked or just empty is not shown.
+Read from the Governor Profile on 2026-11-05: all six slots now hold a piece. On 2026-10-27 the crown, chest and ring
+slots showed a grey icon and no piece.
 
 | Slot icon | Item | Rarity | Power | Gear Stats | Updated |
 | :--- | :--- | :---: | :---: | :--- | :---: |
-| **Amulet** | **Charmstone** | Uncommon | 224,400 | Cavalry Attack +9.35% / Cavalry Defense +9.35% | 2026-10-27 |
-| **Legs** | **Plain Breeches** | Uncommon | 224,400 | Infantry Attack +9.35% / Infantry Defense +9.35% | 2026-10-27 |
-| **Weapon** | **Shortstaff** | Uncommon | 224,400 | Archer Attack +9.35% / Archer Defense +9.35% | 2026-10-27 |
-| **Crown** | None | — | — | Grey icon | 2026-10-27 |
-| **Chest** | None | — | — | Grey icon | 2026-10-27 |
-| **Ring** | None | — | — | Grey icon | 2026-10-27 |
+| **Crown** | **Plain Hood** | Uncommon (1-Star) | 306,000 | Cavalry Attack +12.75% / Cavalry Defense +12.75% | 2026-11-05 |
+| **Chest** | **Modest Cloak** | Uncommon | 224,400 | Infantry Attack +9.35% / Infantry Defense +9.35% | 2026-11-05 |
+| **Ring** | **Oakheart Ring** | Uncommon | 224,400 | Archer Attack +9.35% / Archer Defense +9.35% | 2026-11-05 |
+| **Amulet** | **Charmstone** | Uncommon | 224,400 | Cavalry Attack +9.35% / Cavalry Defense +9.35% | 2026-11-05 |
+| **Legs** | **Plain Breeches** | Uncommon | 224,400 | Infantry Attack +9.35% / Infantry Defense +9.35% | 2026-11-05 |
+| **Weapon** | **Shortstaff** | Uncommon | 224,400 | Archer Attack +9.35% / Archer Defense +9.35% | 2026-11-05 |
 
-Slot names are read from the icons (inferred). _(2026-10-27)_
+Slot names are read from the icons (inferred). Totals: gear power 1,428,000 (306,000 + 5 × 224,400); Cavalry Attack and Defense +22.10% (12.75% + 9.35%), Infantry +18.70% and Archer +18.70% (9.35% + 9.35% each). The 1-Star Plain Hood shows a star on its icon; the others show none. _(2026-11-05)_
 
 ## Town Center (TC) & Settlement Status
 
