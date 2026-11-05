@@ -69,6 +69,21 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `troops.md` (2026-11-05 Troops Preview and Deploy screens):
+  - All troops are now **Tier VIII (Elite)**: Infantry 45,474, Cavalry 46,298, Archers 43,180, **134,952** in all (105,729 Tier VII
+    on 24 Oct). Infirmary 0 / 72,800 (38,600). March queues 4 / 4.
+  - March size **88,880** for `Be` and `Att`, 88,410 for `Gat`; the 470 gap equals Edwin's lower Troop Capacity at Lv 59, which
+    suggests a base plus the three heroes' Troop Capacity (inferred).
+  - Presets: `Be` 18,227,722 power, 35 / 20 / 45; `Att` 20,910,710, **50 / 30 / 20**; `Gat` 16,968,707, 51 / 49 / 0; heroes now
+    Lv 64 (Edwin 59). Preset tabs 4, 5 and 6 exist but were not opened. `lineups.md`'s preset table updated to match.
+- `profile.md` (2026-11-05 Governor Profile): power **17.7M** (the profile truncates; 13,969,554 exact on 27 Oct), kills 658,745,
+  stamina 124 / 200, Kingdom #2508 and Alliance SPQ re-read. Governor Gear is now **6 / 6**: Plain Hood (Uncommon 1-Star, 306,000,
+  Cavalry +12.75%), Modest Cloak (Infantry +9.35%) and Oakheart Ring (Archer +9.35%) fill the three empty slots; totals Cavalry
+  +22.10%, Infantry and Archer +18.70% Attack and Defense, 1,428,000 gear power. The governor name and Player ID shown on the
+  screen are not recorded.
+- `data/manual.json`: the troop suggestion (priority 3) records that the Infantry goal is met (Att 50% Infantry on Tier VIII) and
+  now offers the guides' 50 / 20 / 30 in Att only as an optional test; the rally suggestion notes the preset tabs 4 to 6.
+- README and `docs/SCHEMA.md`: troop tier wording updated (Tier VIII Elite; `Gat` listed among the presets).
 - `hero.md`, Amane and Helga (2026-11-05), the last two heroes still on 27 Oct data:
   - Amane: Lv 64 (drill slot), 20 / 40 to 3★, gear unchanged, **all three exploration skills Lv 2 → 3** (Sakura Blossom now capped
     until 3★). Power 313,060 → 332,700 = +12,080 levels + 7,560 skills (both inferred), exactly.

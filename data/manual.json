@@ -262,37 +262,38 @@
       "id": "troops-infantry-first",
       "priority": 3,
       "type": "Troops",
-      "what": "Troops: train Infantry next; your army is 32% Infantry, fewer than the 50% Infantry most guides use for attacks and rallies",
-      "why": "Your 105,729 Tier VII troops are split almost evenly: Infantry 34,151 (32.3%), Cavalry 36,438 (34.5%), Archers 35,140 (33.2%) on 24 Oct. Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies, and about 60 / 20 / 20 for city defense, because Infantry is the front line that takes the hits. A full march holds 79,275, so 50% would be 39,638 Infantry: 5,487 more than you own. Your Att preset is 41% / 33% / 26%. Until more Infantry is trained, the closest you can get is all 34,151 Infantry (43%), 23,783 Archers (30%) and 21,341 Cavalry (27%).",
+      "what": "Troops: the Infantry goal is met (Att is 50% Infantry on Tier VIII); optionally test the guides' 50 / 20 / 30 in Att",
+      "why": "By 5 Nov all troops are Tier VIII (Elite): Infantry 45,474 (33.7%), Cavalry 46,298 (34.3%), Archers 43,180 (32.0%), 134,952 in all. A full march now holds 88,880, so 50% is 44,440, and your Att preset uses exactly that: 44,440 Infantry, 26,664 Cavalry and 17,776 Archers (50 / 30 / 20). Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies (some say 45 / 25 / 30). Your 30% Cavalry may suit Att, because Jabel, a Cavalry hero, is its strongest hero (inferred); the guides' mix would move 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. Neither choice is shown to be better in the game.",
       "changes": [
         {
-          "where": "Att preset troops",
+          "where": "Att preset troops (optional test)",
           "before": [
-            "41% Infantry (32,605)",
-            "33% Cavalry (26,446)",
-            "26% Archers (20,224)"
+            "50% Infantry (44,440)",
+            "30% Cavalry (26,664)",
+            "20% Archers (17,776)"
           ],
           "after": [
-            "43% Infantry (34,151)",
-            "27% Cavalry (21,341)",
-            "30% Archers (23,783)"
+            "50% Infantry (44,440)",
+            "20% Cavalry (17,776)",
+            "30% Archers (26,664)"
           ],
-          "note": "Full march 79,275; Infantry is capped by what you own (24 Oct)"
+          "note": "Full march 88,880 (5 Nov); Infantry unchanged"
         }
       ],
       "steps": [
-        "Infantry camp: train Infantry in the next batches until you have at least about 40,000 (5,487 or more).",
-        "Deploy → Att: Infantry to the maximum, Archers about 30%, Cavalry the rest.",
-        "Send a screenshot of each troop camp (Infantry, Cavalry, Archer) with its level and the highest tier it trains, so we can check whether Tier VIII is open."
+        "Done by 5 Nov: Infantry trained to 45,474 (more than the 44,440 a 50% Att march needs), all troops at Tier VIII.",
+        "Optional: save a copy of Att with 50 / 20 / 30 in a free preset (4, 5 or 6) and compare results in similar fights.",
+        "Keep training the three types evenly so a 50% Infantry march stays possible as the march size grows."
       ],
       "evidence": [
-        "troops.md Troops Preview of 24 Oct: 34,151 / 36,438 / 35,140; march capacity 79,275",
-        "troops.md Att preset of 24 Oct: 32,605 / 26,446 / 20,224",
+        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
+        "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
         "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense"
       ],
-      "cost": "Training time and resources (amounts not recorded)",
+      "cost": "None for the test (a preset); training time and resources for more troops (amounts not recorded)",
       "confidence": [
         "Verified",
+        "Inferred",
         "Unverified"
       ],
       "heroes": [
@@ -300,14 +301,14 @@
         "Jabel",
         "Quinn"
       ],
-      "note": "Verified: your troop counts, preset and march size. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry). Whether Tier VIII is open depends on your troop camp levels, which are not recorded; guides disagree on the exact level (around 22)."
+      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry)."
     },
     {
       "id": "rally-join-preset",
       "priority": 4,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she leads no march today (24 Oct presets). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4) with three presets saved.",
+      "why": "Community guides agree that a march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she leads no march today (24 Oct presets). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
