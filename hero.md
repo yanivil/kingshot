@@ -28,7 +28,7 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 | **Amane** | SR / Epic | Archer | Lv. 64 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) / Drill slot | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-11-05 |
 | **Yeonwoo** | SR / Epic | Archer | Lv. 64 | 3-Star (Tier 0) | Reserve / Development / Drill slot | **Research Specialist:** Research speed (+9%) & +20% squad lethality | 2026-11-05 |
 | **Forrest** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Beast March (`Be` Slot 3) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-11-05 |
-| **Olive** | Rare (Blue) | Archer | Lv. 63 | 3-Star (Tier 5) | Reserve / Economy (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-05 |
+| **Olive** | Rare (Blue) | Archer | Lv. 64 | 3-Star (Tier 5) | Reserve / Economy (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-05 |
 | **Seth** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Reserve / Economy / Drill instructor | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-11-05 |
 | **Edwin** | Rare (Blue) | Cavalry | Lv. 59 | 3-Star (Tier 5) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-11-05 |
 
@@ -613,10 +613,10 @@ Seth still wore all four Epic Praetorian's pieces earlier on 5 Nov, so the Epic 
 * **Hero Name:** Olive _(2026-11-05)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer Economy Specialist / Food & Bread Gathering (Bow / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 63** (the Upgrade button shows 412,898 / 420,000 hero XP, the shared XP stock, not enough for Lv. 64; Lv. 59 and a Drill Camp instructor on 27 Oct; the 5 Nov Drill Camp screen shows Seth in her place) _(2026-11-05)_
+* **Current Level:** **Lv. 64** (the next level needs Town Center Lv. 23, shown in red on her Stats screen. Earlier on 5 Nov she was Lv. 63, with 412,898 / 420,000 hero XP on the Upgrade button, the shared XP stock; how the rest was earned was not shown. Lv. 59 and a Drill Camp instructor on 27 Oct; the 5 Nov Drill Camp screen shows Seth in her place) _(2026-11-05)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 76 / 100 to 4-Star promotion; Redeem shows 4, Rare) _(2026-11-05)_
-* **Total Hero Power:** **416,159** (+13,092 since 27 Oct with gear and stars unchanged; not itemised on screen, presumably Lv. 59 → 63 plus Green Thumb and Forager's Luck reaching Lv. 4. If each skill added the +2,646 seen for Rare Lv. 3 → 4 skills, the four levels added +7,800; the split is inferred. On 27 Oct: 403,067 (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably +9,035 for Lv. 54 → 59 (Seth and Edwin each gained exactly +9,035 for those levels) plus +2,646 for Target Lock reaching Lv. 4 (Edwin gained exactly +2,646 when Shrapnel Load reached Lv. 4 on 23 Oct); the split is inferred)) _(2026-11-05)_
-* **Troop Capacity Boost:** **+12,650 Troops** (12,260 at Lv. 59) _(2026-11-05)_
+* **Total Hero Power:** **418,174** (+2,015 since the earlier 5 Nov reading of 416,159, with gear and stars unchanged; presumably Lv. 63 → 64 (inferred). Since 27 Oct: +15,107, not itemised on screen. That is exactly +9,815 for Lv. 59 → 64 (the gain inferred for Seth and Forrest) plus 2 × +2,646 for Green Thumb and Forager's Luck reaching Lv. 4 (the gain seen for Rare Lv. 3 → 4 skills), so the earlier split (+7,800 for Lv. 59 → 63) fits; still inferred. On 27 Oct: 403,067 (+30,466 since 22 Oct: +18,785 from the Tier 5 promotion, exactly the 22 Oct preview, with gear unchanged; the other +11,681 is not itemised on screen and is presumably +9,035 for Lv. 54 → 59 (Seth and Edwin each gained exactly +9,035 for those levels) plus +2,646 for Target Lock reaching Lv. 4 (Edwin gained exactly +2,646 when Shrapnel Load reached Lv. 4 on 23 Oct); the split is inferred)) _(2026-11-05)_
+* **Troop Capacity Boost:** **+12,730 Troops** (12,650 at Lv. 63 earlier on 5 Nov; 12,260 at Lv. 59) _(2026-11-05)_
 * **Escort Guards:** **9 Escorts** (8 at Lv. 59) _(2026-11-05)_
 * **Total Equipped Gear Power:** **91,650** (unchanged) _(2026-11-05)_
 
@@ -624,18 +624,18 @@ Seth still wore all four Epic Praetorian's pieces earlier on 5 Nov, so the Epic 
 
 | Category | Attribute | Total Value | Tactical & Economic Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,347** | Ranged damage scaling | 2026-11-05 |
-| | **Hero Defense** | **1,560** | Solid defense rating against incoming enemy fire | 2026-11-05 |
-| | **Hero Health** | **8,145** | Ranged survivor health pool | 2026-11-05 |
-| **Conquest (Escort)** | **Escort Attack** | **448** | Attack output of her 9 escort marksmen | 2026-11-05 |
-| | **Escort Defense** | **520** | Defense value of her escort guards | 2026-11-05 |
-| | **Escort Health** | **2,714** | Health pool of escort guards | 2026-11-05 |
+| **Conquest (Hero)** | **Hero Attack** | **1,351** | Ranged damage scaling | 2026-11-05 |
+| | **Hero Defense** | **1,566** | Solid defense rating against incoming enemy fire | 2026-11-05 |
+| | **Hero Health** | **8,175** | Ranged survivor health pool | 2026-11-05 |
+| **Conquest (Escort)** | **Escort Attack** | **450** | Attack output of her 9 escort marksmen | 2026-11-05 |
+| | **Escort Defense** | **522** | Defense value of her escort guards | 2026-11-05 |
+| | **Escort Health** | **2,724** | Health pool of escort guards | 2026-11-05 |
 | **Expedition (March)** | **Archer Attack** | **+57.22%** | Army-wide bonus to deployed Archers | 2026-11-05 |
 | | **Archer Defense** | **+57.22%** | Durability bonus for archer units | 2026-11-05 |
 | | **Archer Lethality**| **+19.20%** | Higher enemy casualty conversion rate for archers (from gear) | 2026-11-05 |
 | | **Archer Health** | **+14.10%** | Durability pool for deployed archer squads (from gear) | 2026-11-05 |
 
-Since 27 Oct, with gear and stars unchanged: +19 ATK / +24 DEF / +117 HP (escort +6 / +8 / +39), presumably the four levels 59 → 63 (inferred); the Archer bonuses are unchanged. _(2026-11-05)_
+Since 27 Oct, with gear and stars unchanged: +23 ATK / +30 DEF / +147 HP (escort +8 / +10 / +49), presumably the five levels 59 → 64 (inferred): +19 / +24 / +117 (escort +6 / +8 / +39) by Lv. 63 earlier on 5 Nov, then +4 / +6 / +30 (escort +2 / +2 / +10) for Lv. 63 → 64. The +30 DEF (escort +10) matches every other hero whose five levels 59 → 64 are recorded here; the Archer bonuses are unchanged. _(2026-11-05)_
 
 ### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
 
