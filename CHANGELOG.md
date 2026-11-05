@@ -69,6 +69,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `lineups.md` (Barricade screens, later on 2026-11-05): both Barricades still hold the same heroes (Howard, Jabel,
+  Quinn; Gordon, Chenko, Diana), now all Lv. 64 with their 5 Nov stars; hero power 1.9M and 1.7M (1.5M and 1.3M on
+  22 Oct), each within the cut-off range of the recorded hero powers; Lv 10, Defense 150, Health 2,400 re-confirmed.
+  The game text "Assigned hero will fight alongside the governor in Rebel Invasion." is quoted; the total line is
+  renamed "Total Barricade Hero Power" (3.6M). `profile.md`: power 17,819,499 and bread 106.1M from the same screens.
 - Every suggestion and game rule validated against the full guide pages (asked for by the account owner on 2026-11-05;
   quotes checked against the downloaded page text). Corrections:
   - **Skill-book names were swapped** (they were read from icons): Conquest Skill Books upgrade Conquest (Arena)
