@@ -69,7 +69,7 @@
       "gearNote": "Mythic Judicator's Armet +22; the other three pieces are Rare +20 (5 Nov)."
     },
     "Seth": {
-      "gearNote": "Full Epic set."
+      "gearNote": "Epic Praetorian's Helm, Gloves and Shroud +20; Rare Stonewall Greaves +24 (from Howard, 5 Nov)."
     },
     "Saul": {
       "notes": [
@@ -131,11 +131,11 @@
       "id": "seth-gear-to-howard",
       "priority": 1,
       "type": "Gear",
-      "what": "Howard: swap the Rare Stonewall Greaves (+24) for Seth's Epic Praetorian's Greaves (+20)",
-      "why": "Howard is the main tank in all four combat line-ups. His boots are the Rare Stonewall Greaves +24 (28,560 power; ATK +68, HP +666; Infantry Lethality +9.36%). Seth's Epic Praetorian's Greaves, now +20 (5 Nov), beat them on every stat (38,850; ATK +96, HP +945; +13.20%), and Seth is a gathering hero in no line-up. Howard's other three pieces (Epic +21) already beat Seth's (+20), so only the boots move. Howard's Epic gloves since 5 Nov are a separate pair: Seth still wears his own. Howard's freed Greaves (+24) then go to Forrest, the infantry hero in the Be march, in place of his +17 pair, and Seth takes Forrest's +17 pair so no slot is left empty.",
+      "what": "Done: Howard wears Seth's Epic Praetorian's Greaves (+20). Optional: give the Stonewall Greaves +24, now on Seth, to Forrest",
+      "why": "Later on 5 Nov Howard took Seth's Epic Praetorian's Greaves (+20) and Seth took Howard's Rare Stonewall Greaves (+24), so Howard, the main tank in all four combat line-ups, now wears four Epic pieces (gear 148,035 → 158,325; Infantry Lethality 22.77% → 26.61%). The + level stayed with each piece. One optional step is left: Forrest, the infantry hero in the Be march, wears Stonewall Greaves +17; swapping them with Seth's +24 pair moves +4,550 gear power from Seth, a gathering hero in no combat line-up, to Forrest. If Helga replaces Forrest in Be (see that suggestion), give the +24 pair to Helga instead (her Stonewall Greaves are +8).",
       "changes": [
         {
-          "where": "Howard's gear",
+          "where": "Howard's gear (done)",
           "before": [
             "Praetorian's Helm (Epic +21)",
             "Praetorian's Gloves (Epic +21)",
@@ -148,45 +148,37 @@
             "Praetorian's Shroud (Epic +21)",
             "Praetorian's Greaves (Epic +20)"
           ],
-          "note": "Gear power 148,035 → 158,325 (+10,290); Infantry Lethality 22.77% → 26.61%; boots ATK +68 → +96, HP +666 → +945"
+          "note": "Done later on 5 Nov. Gear power 148,035 → 158,325 (+10,290); Infantry Lethality 22.77% → 26.61%"
         },
         {
-          "where": "Forrest's gear",
+          "where": "Forrest's boots (optional)",
           "before": [
-            "Stonewall Helm (Rare +17)",
-            "Stonewall Gloves (Rare +21)",
-            "Praetorian's Shroud (Epic +19)",
             "Stonewall Greaves (Rare +17)"
           ],
           "after": [
-            "Stonewall Helm (Rare +17)",
-            "Stonewall Gloves (Rare +21)",
-            "Praetorian's Shroud (Epic +19)",
             "Stonewall Greaves (Rare +24)"
           ],
           "note": "Gear power 112,460 → 117,010 (+4,550); Infantry Lethality 16.76% → 17.74%"
         },
         {
-          "where": "Seth's boots",
+          "where": "Seth's boots (optional)",
           "before": [
-            "Praetorian's Greaves (Epic +20)"
+            "Stonewall Greaves (Rare +24)"
           ],
           "after": [
             "Stonewall Greaves (Rare +17)"
           ],
-          "note": "Gear power 155,400 → 140,560 (−14,840); Infantry Lethality 26.40% → 21.58%; Seth is in no line-up"
+          "note": "Gear power 145,110 → 140,560 (−4,550); Seth is in no combat line-up"
         }
       ],
       "steps": [
-        "Howard → Gear → Boots → Swap: pick Seth's Praetorian's Greaves (+20).",
-        "Forrest → Gear → Boots → Swap: pick Howard's old Stonewall Greaves (+24).",
-        "Seth → Gear → Boots: equip Forrest's old Stonewall Greaves (+17)."
+        "Done later on 5 Nov: Howard ↔ Seth boots (Praetorian's Greaves +20 to Howard, Stonewall Greaves +24 to Seth).",
+        "Optional: Forrest → Gear → Boots → Swap: pick Seth's Stonewall Greaves (+24); Seth takes Forrest's +17 pair."
       ],
       "evidence": [
-        "Howard's gear screens of 5 Nov: Helm, Gloves and Shroud Epic +21 (39,825 each); Stonewall Greaves Rare +24 (28,560; ATK +68 / HP +666; +9.36% Infantry Lethality)",
-        "Seth's gear screens of 5 Nov: Praetorian's Helm, Gloves, Shroud and Greaves all Epic +20 (38,850 each; Greaves ATK +96 / HP +945; +13.20% Infantry Lethality)",
-        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460",
-        "The swap is power-neutral across the three heroes (+10,290 + 4,550 − 14,840 = 0)"
+        "Gear screens later on 5 Nov: Howard Helm, Gloves, Shroud +21 and Praetorian's Greaves +20 (Epic); Seth Helm, Gloves, Shroud +20 (Epic) and Stonewall Greaves +24 (Rare)",
+        "Piece stats from the earlier 5 Nov gear screens: Praetorian's Greaves +20 38,850 (ATK +96 / HP +945; +13.20%); Stonewall Greaves +24 28,560 (ATK +68 / HP +666; +9.36%)",
+        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460"
       ],
       "cost": "None (a swap)",
       "confidence": [
@@ -199,25 +191,25 @@
         "Forrest",
         "Seth"
       ],
-      "note": "Verified: Howard's, Seth's and Forrest's gear from the 5 Nov screens. Unverified: that the + level moves with the piece (the Gear Details screens show it on the item itself, which suggests it does). Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights; Seth's hero power drops by 17,790, which changes no line-up."
+      "note": "Verified: the pieces and their + levels on the 5 Nov Gear screens; the + level stays with a piece when it is moved. Inferred: Howard's and Seth's hero power after the swap (+10,290 / −10,290; not re-read), and that gear on a gathering hero (Seth) matters less than on a hero who fights."
     },
     {
       "id": "near-promo",
       "priority": 2,
       "type": "Promotion",
-      "what": "Promotions: redeem 20 of the 24 Epic shards for Diana's Tier 2 now; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Rare: Olive is closest to 4★ (needs 24)",
-      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: the stock is 24. Diana needs 20 for Tier 2 (80 / 100), so the stock covers it now: +36,080 base power and Archer Attack and Defense +81.28% → +86.24%. Amane's 3★ also needs 20 (20 / 40): +21,920 base power, +5.80% Archer Attack and Defense, and it lifts her Lv. 3 caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed). The 24 shards cover only one of the two; Diana stays first because she leads the Be march and is in both Arena squads, while Amane is in no combat line-up, only the Gat gathering preset (inferred). Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd reached 3★ by 5 Nov and needs 23 for Tier 1 (17 / 40; +18,880 and +4.51%), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 5 Nov) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a combat preset (the Be march), and Seth and Edwin are in the Gat gathering preset. Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
+      "what": "Promotions: done, Diana's Tier 2 (5 Nov); Epic stock is 4, so new Epic shards go to Amane's 3★ (needs 20) or Quinn's Tier 2; keep the 36 Mythic shards for Jabel's 4★ (needs 64); Rare: Olive is closest to 4★ (needs 24)",
+      "why": "Redeem shards are a shared stock per rarity (confirmed by you on 27 Oct). Since 27 Oct, Diana reached 4★ Tier 1, Quinn 4★ Tier 1, Howard, Chenko and Gordon 4★, and Jabel 3★ Tier 5 (5 Nov screens). Epic: Diana reached Tier 2 later on 5 Nov with 20 of the 24 Redeem shards (+36,080 base power; Archer Attack and Defense +86.25%), so the stock is 4. The nearest Epic steps now: Amane's 3★ needs 20 (20 / 40): +21,920 base power, +5.80% Archer Attack and Defense, and it lifts her Lv. 3 caps (Tri-Phalanx +15% → +20% squad Attack, a rally-joiner skill; Exorcism +30% → +40% infirmary healing speed); she is in no combat line-up, only the Gat gathering preset. Diana's Tier 3 needs 100 (0 / 100; +36,080 and +4.96%). Quinn needs 68 for Tier 2 (32 / 100; +36,080 and +6.32%), Howard 98 for Tier 1 (2 / 100; +32,560 and +6.31%), Chenko 92 and Gordon 95 for the same step (8 / 100 and 5 / 100), and Yeonwoo 27 for 3★ Tier 1 (13 / 40; +18,880 and +4.51%), so none of them fits the stock. Fahd reached 3★ by 5 Nov and needs 23 for Tier 1 (17 / 40; +18,880 and +4.51%), but he is in no line-up. Mythic: Jabel needs 64 for 4★ (36 / 100) and the stock is 36, so she cannot promote yet; keep the Mythic shards for her rather than Helga (0 / 5 on 5 Nov) or Saul (2★ Tier 5 by 5 Nov, 0 / 40 to 3★), who are in no line-up. Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). Rare: the stock is 4 (5 Nov screens). All four Rare heroes are now 3★ Tier 5, and each 4★ gives +30,355 base power and +5.22% Attack and Defense for its troop type: Olive needs 24 (76 / 100), Forrest 41 (59 / 100), Seth 61 (39 / 100) and Edwin 93 (7 / 100; he reached Tier 5 by 5 Nov). Olive is the closest; Forrest is the only one in a combat preset (the Be march), and Seth and Edwin are in the Gat gathering preset. Their gathering skills at Lv. 4 presumably need 4★ for Lv. 5 (Forrest's and Seth's say so).",
       "steps": [
-        "Diana → promotion screen: Redeem 20 Epic shards (80 / 100, 24 in stock on 5 Nov), then Ascend to 4★ Tier 2.",
-        "Alternative: redeem those 20 for Amane's 3★ instead (20 / 40 on 5 Nov) if joining rallies or the infirmary matters more to you than Diana's march and Arena stats.",
-        "Epic: the 4 left and new Epic shards go toward Quinn's Tier 2 (32 / 100 on 5 Nov, needs 68).",
+        "Done later on 5 Nov: Diana 4★ Tier 2 (20 Epic Redeem shards; 4 left).",
+        "Epic next: Amane's 3★ (20 / 40, needs 20) when the stock allows, if joining rallies or the infirmary matters to you; otherwise Quinn's Tier 2 (needs 68).",
+        "Keep the 4 Epic Redeem shards and new ones until one of those steps is in reach.",
         "Mythic: keep the 36 Mythic Redeem shards; when Jabel's count plus the stock reaches 100, Redeem and Ascend her to 4★ (36 / 100 on 5 Nov, needs 64).",
         "Rare: the 4 Rare Redeem shards and new Rare shards toward Olive's 4★ (76 / 100 on 5 Nov, needs 24), the closest; choose Forrest (59 / 100, Be march) instead if the Be march matters more to you.",
         "Then Forrest (needs 41), Seth (needs 61) and Edwin (needs 93), all on 5 Nov.",
         "Helga (0 / 5) and Saul (0 / 40 to 3★): only after Jabel's 4★."
       ],
       "evidence": [
-        "Diana's promotion screen of 5 Nov: 4-Star (Tier 1), 80 / 100, Redeem 24 (Epic); preview +36,080 / +4.96%",
+        "Diana's promotion screen later on 5 Nov: 4-Star (Tier 2), 0 / 100, Redeem 4 (Epic); preview +36,080 / +4.96%; power 599,698 → 635,778",
         "Quinn's promotion screen of 5 Nov: 4-Star (Tier 1), 32 / 100, Redeem 24; preview +36,080 / +6.32%",
         "Howard's promotion screen of 5 Nov: 4-Star (Tier 0), 2 / 100, Redeem 24; preview +32,560 / +6.31%",
         "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
@@ -233,7 +225,7 @@
         "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
         "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
       ],
-      "cost": "Shards only: 20 of the 24 Epic Redeem shards now (5 Nov); the 36 Mythic Redeem shards kept for Jabel; the 4 Rare Redeem shards toward Olive (5 Nov)",
+      "cost": "Shards only: 20 Epic Redeem shards used for Diana (5 Nov; 4 left); the 36 Mythic Redeem shards kept for Jabel; the 4 Rare Redeem shards toward Olive (5 Nov)",
       "confidence": [
         "Verified",
         "Inferred",
@@ -256,7 +248,7 @@
         "Forrest",
         "Olive"
       ],
-      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Diana's Tier 2 before Amane's 3★ as the next Epic step, Olive as the first Rare one, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
+      "note": "Verified: the shard and Redeem counts and the preview gains. Inferred: Amane's 3★ or Quinn's Tier 2 as the next Epic step, Olive as the first Rare one, and that Jabel's 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save the Epic shards for Quinn instead."
     },
     {
       "id": "troops-infantry-first",
@@ -470,7 +462,7 @@
         "Diana",
         "Gordon"
       ],
-      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the priority-1 gear move: that move gives Howard's freed Stonewall Greaves (+24) to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
+      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the priority-1 gear suggestion: Howard's old Stonewall Greaves (+24) went to Seth on 5 Nov, and the suggestion's optional step moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
     },
     {
       "id": "gat-match-resource",

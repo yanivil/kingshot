@@ -20,7 +20,7 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 | **Saul** | SSR / Mythic | Archer | Lv. 64 | 2-Star (Tier 5) | Reserve / City Construction / Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+6%) & HP (+9%), squad Lethality (+15%) | 2026-11-05 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 64 | 1-Star (Tier 0) | Reserve / Frontline Tank / Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-05 |
 | **Howard** | SR / Epic | Infantry | Lv. 64 | 4-Star (Tier 0) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-05 |
-| **Diana** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 1) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-11-05 |
+| **Diana** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 2) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-11-05 |
 | **Quinn** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 1) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-05 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Offense (Front-R), Barricade 2 (Slot 2) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-11-05 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-05 |
@@ -47,7 +47,7 @@ Heroes shown in the hero list but not recruited. They are not in the roster abov
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-27)_
 * **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; was Lv. 54 until the Town Center reached Lv. 22) _(2026-11-05)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 36 / 100 to 4-Star promotion; Redeem shows 36, Mythic) _(2026-11-05)_
-* **Total Hero Power:** **764,215** (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred))) _(2026-11-05)_
+* **Total Hero Power:** **764,215** (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred)) _(2026-11-05)_
 * **Troop Capacity Boost:** **+12,730 Troops** (11,525 at Lv. 54) _(2026-11-05)_
 * **Escort Guards:** **9 Escorts** (8 at Lv. 54) _(2026-11-05)_
 * **Total Equipped Gear Power:** **237,155** (4 pieces 207,155 + widget 30,000; the widget was not in the 25 Oct, 27 Oct or 5 Nov screenshots) _(2026-11-05)_
@@ -130,10 +130,10 @@ Post-promotion values below are the current value plus the increase the game sho
 * **Class & Role:** Infantry Combat Specialist (Crossed Swords / Shield) _(2026-10-25)_
 * **Current Level:** **Lv. 64** (Drill Camp level: the game still says "You cannot level up a hero within a Drill Camp!"; Lv. 59 on 27 Oct) _(2026-11-05)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 2 / 100 to Tier 1 promotion; Redeem shows 24, Epic) _(2026-11-05)_
-* **Total Hero Power:** **591,419** (+75,671 since 27 Oct: +37,360 base power from 3-Star Tier 5 → 4-Star (exactly the 27 Oct preview); +19,175 from gear (Helm and Shroud +20 → +21, Rare Stonewall Gloves +20 replaced by Epic Praetorian's Gloves +21, Greaves +19 → +24); +12,080 presumably from Lv. 59 → 64 (Quinn gained +23,200 for Lv. 54 → 64 and Chenko +11,120 for Lv. 54 → 59; inferred); and +7,056 = 2 × 3,528, presumably Shielded Strike and Weaken reaching Lv. 4 (inferred). Cross-check: after removing star base power and gear, Howard has 137,624 left and Quinn (also Epic, Lv. 64, all skills Lv. 3) 127,040; the 10,584 difference is exactly 3 × 3,528, and Howard has three skills at Lv. 4. On 27 Oct: 515,748 (+15,608 since 25 Oct: +960 from the Shroud going +19 → +20; the other +14,648 is not itemised on screen. Chenko gained +11,120 for the same Lv. 54 → 59 with nothing else changed, and the remaining +3,528 equals the unexplained gain when Diana's Iron Constitution reached Lv. 4, so it is presumably Defenders' Edge reaching Lv. 4; both parts are inferred. Earlier: +23,120 from the Tier 5 promotion on 24 Oct)) _(2026-11-05)_
+* **Total Hero Power:** **591,419** (before the boots swap later on 5 Nov, which presumably added +10,290, not re-read; +75,671 since 27 Oct: +37,360 base power from 3-Star Tier 5 → 4-Star (exactly the 27 Oct preview); +19,175 from gear (Helm and Shroud +20 → +21, Rare Stonewall Gloves +20 replaced by Epic Praetorian's Gloves +21, Greaves +19 → +24); +12,080 presumably from Lv. 59 → 64 (Quinn gained +23,200 for Lv. 54 → 64 and Chenko +11,120 for Lv. 54 → 59; inferred); and +7,056 = 2 × 3,528, presumably Shielded Strike and Weaken reaching Lv. 4 (inferred). Cross-check: after removing star base power and gear, Howard has 137,624 left and Quinn (also Epic, Lv. 64, all skills Lv. 3) 127,040; the 10,584 difference is exactly 3 × 3,528, and Howard has three skills at Lv. 4. On 27 Oct: 515,748 (+15,608 since 25 Oct: +960 from the Shroud going +19 → +20; the other +14,648 is not itemised on screen. Chenko gained +11,120 for the same Lv. 54 → 59 with nothing else changed, and the remaining +3,528 equals the unexplained gain when Diana's Iron Constitution reached Lv. 4, so it is presumably Defenders' Edge reaching Lv. 4; both parts are inferred. Earlier: +23,120 from the Tier 5 promotion on 24 Oct)) _(2026-11-05)_
 * **Troop Capacity Boost:** **+12,730 Troops** (12,260 at Lv. 59) _(2026-11-05)_
 * **Escort Guards:** **9 Escorts** (8 at Lv. 59) _(2026-11-05)_
-* **Total Equipped Gear Power:** **148,035** (39,825 × 3 + 28,560; +19,175 since 27 Oct) _(2026-11-05)_
+* **Total Equipped Gear Power:** **158,325** (39,825 × 3 + 38,850, after taking Seth's Praetorian's Greaves later on 5 Nov; 148,035 with the Stonewall Greaves +24 earlier that day) _(2026-11-05)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
@@ -179,17 +179,19 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+21** | 39,825 | ATK: +97 / HP: +958 | ATK: +32 / HP: +319 | +13.41% Infantry Lethality | 2026-11-05 |
 | **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **+21** | 39,825 | DEF: +127 / HP: +958 | DEF: +42 / HP: +319 | +13.41% Infantry Health | 2026-11-05 |
 | **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+21** | 39,825 | DEF: +127 / HP: +958 | DEF: +42 / HP: +319 | +13.41% Infantry Health | 2026-11-05 |
-| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+24** | 28,560 | ATK: +68 / HP: +666 | ATK: +22 / HP: +222 | +9.36% Infantry Lethality | 2026-11-05 |
+| **Boots** | **Praetorian's Greaves** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-11-05 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+22.77%** (+13.41% Helm + 9.36% Greaves) _(2026-11-05)_
+  * **Infantry Lethality:** **+26.61%** (+13.41% Helm + 13.20% Greaves) _(2026-11-05)_
   * **Infantry Health:** **+26.82%** (+13.41% Gloves + 13.41% Shroud) _(2026-11-05)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** ATK +165 / DEF +254 / HP +3,540 (sum of the 4 pieces) _(2026-11-05)_
-  * **Escort Attributes:** ATK +54 / DEF +84 / HP +1,179 (sum of the 4 pieces) _(2026-11-05)_
+  * **Hero Attributes:** ATK +193 / DEF +254 / HP +3,819 (sum of the 4 pieces) _(2026-11-05)_
+  * **Escort Attributes:** ATK +64 / DEF +84 / HP +1,272 (sum of the 4 pieces) _(2026-11-05)_
 
 Gear power is 39,825 + 39,825 + 39,825 + 28,560 = 148,035 (128,860 on 27 Oct). The Rare Stonewall Gloves (+20) were replaced by Epic Praetorian's Gloves (+21), as the gear-swap suggestion proposed; the screens do not show where the Epic gloves came from: Seth and Helga both still wear their own Praetorian's Gloves on 5 Nov, so this is another pair. Where the Stonewall Gloves went is not shown either. Howard kept the Rare Stonewall Greaves and raised them to +24. _(2026-11-05)_
+
+Later on 5 Nov, Howard took Seth's Epic Praetorian's Greaves (+20) and Seth took Howard's Stonewall Greaves (+24), as the gear-swap suggestion proposed. Both Gear screens show each piece at the same + level as before, so the + level stays with the piece. Gear power is now 39,825 × 3 + 38,850 = 158,325. The Hero Stats and power screens were not re-read after the swap: from the two pieces' own screens, the swap adds ATK +28 / HP +279 (escort ATK +10 / HP +93) and Infantry Lethality +3.84% (to +26.61%), and presumably +10,290 power (to about 601,709), which is inferred. _(2026-11-05)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
@@ -382,8 +384,8 @@ went to +16 by 27 Oct. _(2026-11-05)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-25)_
 * **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; Drill Camp instructor) _(2026-11-05)_
-* **Star Tier:** **4-Star (Tier 1)** (Shards: 80 / 100 to Tier 2 promotion; Redeem shows 24, Epic) _(2026-11-05)_
-* **Total Hero Power:** **599,698** (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17))) _(2026-11-05)_
+* **Star Tier:** **4-Star (Tier 2)** (Shards: 0 / 100 to Tier 3 promotion; Redeem shows 4, Epic) _(2026-11-05)_
+* **Total Hero Power:** **635,778** (+36,080 later on 5 Nov from Tier 1 → Tier 2, exactly the preview; the stats rose by exactly the preview too. Earlier on 5 Nov: 599,698 (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17)))) _(2026-11-05)_
 * **Troop Capacity Boost:** **+12,730 Troops** _(2026-11-05)_
 * **Escort Guards:** **9 Escorts** _(2026-11-05)_
 * **Total Equipped Gear Power:** **130,810** (38,850 + 27,210 + 25,900 + 38,850) _(2026-11-05)_
@@ -392,32 +394,32 @@ went to +16 by 27 Oct. _(2026-11-05)_
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,879** | High base attack scaling, delivering top-tier ranged damage | 2026-11-05 |
-| | **Hero Defense** | **1,790** | Solid defense rating against enemy return fire | 2026-11-05 |
-| | **Hero Health** | **11,303** | Ranged survivor health pool | 2026-11-05 |
-| **Conquest (Escort)** | **Escort Attack** | **626** | Attack output of her 9 escort marksmen | 2026-11-05 |
-| | **Escort Defense** | **596** | Defense value of her escort guards | 2026-11-05 |
-| | **Escort Health** | **3,767** | Health pool of escort guards | 2026-11-05 |
-| **Expedition (March)** | **Archer Attack** | **+81.28%** | Troop-wide attack bonus for all deployed Archers | 2026-11-05 |
-| | **Archer Defense** | **+81.28%** | Troop-wide defense bonus for all deployed Archers | 2026-11-05 |
+| **Conquest (Hero)** | **Hero Attack** | **1,967** | High base attack scaling, delivering top-tier ranged damage | 2026-11-05 |
+| | **Hero Defense** | **1,880** | Solid defense rating against enemy return fire | 2026-11-05 |
+| | **Hero Health** | **11,843** | Ranged survivor health pool | 2026-11-05 |
+| **Conquest (Escort)** | **Escort Attack** | **655** | Attack output of her 9 escort marksmen | 2026-11-05 |
+| | **Escort Defense** | **626** | Defense value of her escort guards | 2026-11-05 |
+| | **Escort Health** | **3,947** | Health pool of escort guards | 2026-11-05 |
+| **Expedition (March)** | **Archer Attack** | **+86.25%** | Troop-wide attack bonus for all deployed Archers | 2026-11-05 |
+| | **Archer Defense** | **+86.25%** | Troop-wide defense bonus for all deployed Archers | 2026-11-05 |
 | | **Archer Lethality**| **+26.40%** | Enemy casualty rate scaling for archers (from gear) | 2026-11-05 |
 | | **Archer Health** | **+17.88%** | Durability pool for deployed archer squads (from gear) | 2026-11-05 |
 
-### 2. Star Promotion Milestone Preview (4-Star Tier 1 ➔ Tier 2)
+### 2. Star Promotion Milestone Preview (4-Star Tier 2 ➔ Tier 3)
 
-Promoted to **4-Star** and then to **Tier 1** between the 27 Oct and 5 Nov uploads (base power 268,400 → 305,760 → 338,320; Archer Attack / Defense +69.93% → +81.28%). Current Status: **80 / 100 Shards** (needs **20 more shards** for Tier 2; Redeem shows 24, Epic). _(2026-11-05)_
+Promoted to **4-Star** and then to **Tier 1** between the 27 Oct and 5 Nov uploads (base power 268,400 → 305,760 → 338,320), and to **Tier 2** later on 5 Nov with 20 Epic Redeem shards (base power 374,400, +36,080 as the preview said; the Epic Redeem stock went 24 → 4). The preview gave Archer Attack / Defense after Tier 2 as +86.24%; the Hero Stats screen shows +86.25%, the same 0.01% gap seen on other heroes. Current Status: **0 / 100 Shards** (needs **100 shards** for Tier 3; Redeem shows 4, Epic). _(2026-11-05)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 338,320 | **+36,080** | 374,400 | 2026-11-05 |
-| **Hero Attack** | 1,177 | **+88** | 1,265 | 2026-11-05 |
-| **Hero Defense** | 1,212 | **+90** | 1,302 | 2026-11-05 |
-| **Hero Health** | 7,272 | **+540** | 7,812 | 2026-11-05 |
-| **Escort Attack** | 392 | **+29** | 421 | 2026-11-05 |
-| **Escort Defense** | 404 | **+30** | 434 | 2026-11-05 |
-| **Escort Health** | 2,424 | **+180** | 2,604 | 2026-11-05 |
-| **Archer Attack** | +81.28% | **+4.96%** | **+86.24%** | 2026-11-05 |
-| **Archer Defense** | +81.28% | **+4.96%** | **+86.24%** | 2026-11-05 |
+| **Base Hero Power** | 374,400 | **+36,080** | 410,480 | 2026-11-05 |
+| **Hero Attack** | 1,265 | **+82** | 1,347 | 2026-11-05 |
+| **Hero Defense** | 1,302 | **+84** | 1,386 | 2026-11-05 |
+| **Hero Health** | 7,812 | **+504** | 8,316 | 2026-11-05 |
+| **Escort Attack** | 421 | **+27** | 448 | 2026-11-05 |
+| **Escort Defense** | 434 | **+28** | 462 | 2026-11-05 |
+| **Escort Health** | 2,604 | **+168** | 2,772 | 2026-11-05 |
+| **Archer Attack** | +86.25% | **+4.96%** | **+91.21%** | 2026-11-05 |
+| **Archer Defense** | +86.25% | **+4.96%** | **+91.21%** | 2026-11-05 |
 
 ### 3. Equipped Hero Gear
 
@@ -533,10 +535,10 @@ of these types were spent elsewhere between the two screens; which hero they wen
 * **Class & Role:** Infantry Economy Specialist / Iron Gathering (Shield / Hammer) _(2026-10-24)_
 * **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; a Drill Camp instructor on the 5 Nov Drill Camp screen; Lv. 59 on 27 Oct) _(2026-11-05)_
 * **Star Tier:** **3-Star (Tier 5)** (Shards: 39 / 100 to 4-Star promotion; Redeem shows 4, Rare) _(2026-11-05)_
-* **Total Hero Power:** **481,924** (+43,555 since 27 Oct: +18,785 base power from Tier 4 → Tier 5 (exactly the 27 Oct preview); +14,955 from gear (Helm and Gloves +15 → +20, Shroud +18 → +20, Greaves +16 → +20); and +9,815 presumably from Lv. 59 → 64 (inferred: Epic heroes gained 12,080 for these levels after 11,120 for Lv. 54 → 59, and 9,035 × 12,080 / 11,120 = 9,815). All four skills were already Lv. 4 and capped. On 27 Oct: 438,369 (+9,035 since 24 Oct with all four gear pieces, skill levels and the promotion preview unchanged, so presumably from Lv. 54 → 59, which is inferred; Epic heroes gained +11,120 for the same levels. Earlier: +17,940 from the promotion to Tier 4 and +2,745 from the Shroud going from +15 to +18)) _(2026-11-05)_
+* **Total Hero Power:** **481,924** (before the boots swap later on 5 Nov, which presumably removed 10,290, not re-read; +43,555 since 27 Oct: +18,785 base power from Tier 4 → Tier 5 (exactly the 27 Oct preview); +14,955 from gear (Helm and Gloves +15 → +20, Shroud +18 → +20, Greaves +16 → +20); and +9,815 presumably from Lv. 59 → 64 (inferred: Epic heroes gained 12,080 for these levels after 11,120 for Lv. 54 → 59, and 9,035 × 12,080 / 11,120 = 9,815). All four skills were already Lv. 4 and capped. On 27 Oct: 438,369 (+9,035 since 24 Oct with all four gear pieces, skill levels and the promotion preview unchanged, so presumably from Lv. 54 → 59, which is inferred; Epic heroes gained +11,120 for the same levels. Earlier: +17,940 from the promotion to Tier 4 and +2,745 from the Shroud going from +15 to +18)) _(2026-11-05)_
 * **Troop Capacity Boost:** **+12,730 Troops** (12,260 at Lv. 59) _(2026-11-05)_
 * **Escort Guards:** **9 Escorts** (8 at Lv. 59) _(2026-11-05)_
-* **Total Equipped Gear Power:** **155,400** (38,850 × 4; 140,445 on 27 Oct) _(2026-11-05)_
+* **Total Equipped Gear Power:** **145,110** (38,850 × 3 + 28,560, after giving his Praetorian's Greaves to Howard later on 5 Nov; 155,400 earlier that day) _(2026-11-05)_
 
 ### 1. Overall Combat & Gathering Attributes (Base + Gear)
 
@@ -580,17 +582,17 @@ All 4 pieces match the native **Infantry** troop class synergy:
 | **Helmet** | **Praetorian's Helm** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-11-05 |
 | **Gauntlets**| **Praetorian's Gloves** | Infantry | **Epic** | **+20** | 38,850 | DEF: +126 / HP: +945 | DEF: +42 / HP: +315 | +13.20% Infantry Health | 2026-11-05 |
 | **Armor** | **Praetorian's Shroud** | Infantry | **Epic** | **+20** | 38,850 | DEF: +126 / HP: +945 | DEF: +42 / HP: +315 | +13.20% Infantry Health | 2026-11-05 |
-| **Boots** | **Praetorian's Greaves** | Infantry | **Epic** | **+20** | 38,850 | ATK: +96 / HP: +945 | ATK: +32 / HP: +315 | +13.20% Infantry Lethality | 2026-11-05 |
+| **Boots** | **Stonewall Greaves** | Infantry | **Rare** | **+24** | 28,560 | ATK: +68 / HP: +666 | ATK: +22 / HP: +222 | +9.36% Infantry Lethality | 2026-11-05 |
 
 #### Aggregate Stat Bonuses from Gear
 * **Expedition Troop Multipliers:**
-  * **Infantry Lethality:** **+26.40%** (+13.20% Helm + 13.20% Greaves) _(2026-11-05)_
+  * **Infantry Lethality:** **+22.56%** (+13.20% Helm + 9.36% Greaves) _(2026-11-05)_
   * **Infantry Health:** **+26.40%** (+13.20% Gloves + 13.20% Shroud) _(2026-11-05)_
 * **Conquest Raw Attribute Increases:**
-  * **Hero Attributes:** +192 Attack | +252 Defense | +3,780 Health _(2026-11-05)_
-  * **Escort Squad Attributes:** +64 Attack | +84 Defense | +1,260 Health _(2026-11-05)_
+  * **Hero Attributes:** +164 Attack | +252 Defense | +3,501 Health _(2026-11-05)_
+  * **Escort Squad Attributes:** +54 Attack | +84 Defense | +1,167 Health _(2026-11-05)_
 
-Seth still wears all four Epic Praetorian's pieces on 5 Nov, so the Epic Praetorian's Gloves (+21) Howard wears since 5 Nov are a different pair, not Seth's. _(2026-11-05)_
+Seth still wore all four Epic Praetorian's pieces earlier on 5 Nov, so the Epic Praetorian's Gloves (+21) Howard wears since 5 Nov are a different pair, not Seth's. Later on 5 Nov Seth gave his Praetorian's Greaves (+20) to Howard and took Howard's Stonewall Greaves (+24). The Hero Stats and power screens were not re-read after the swap: it presumably removed 10,290 power (to about 471,634; inferred). _(2026-11-05)_
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
