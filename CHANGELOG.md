@@ -69,6 +69,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `hero.md`, Olive (Stats screens, later on 2026-11-05): Lv. 63 → **Lv. 64**, power 416,159 → **418,174** (+2,015,
+  presumably the level; inferred), troop capacity 12,650 → 12,730, Hero ATK / DEF / HP 1,351 / 1,566 / 8,175 and
+  escort 450 / 522 / 2,724; the Archer bonuses are unchanged. The next level needs Town Center Lv. 23. Her +15,107 since
+  27 Oct is exactly +9,815 for Lv. 59 → 64 (as inferred for Seth and Forrest) plus two Rare skill upgrades of +2,646, so
+  the earlier inferred split fits. The Drill Camp note in `data/manual.json` now says she showed Lv. 63 at the time.
 - Codes page: ✓ marks the codes redeemed on this account, also in the Expired list (asked for by the account owner on
   2026-11-05). The Expired table in `codes.md` gains a **Redeemed** column. The ✓ is set for `KS1104` and `VIP777`
   (told on 5 Nov) and for `Kingshot888`, `KS1025` and `OFFICIALSTORE1023`, which the list marked redeemed before the
