@@ -42,7 +42,7 @@ This repository provides:
 * **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones
   (skill book counts are the shared stock of that book type on the date shown, not per-skill progress),
   plus heroes seen but not yet recruited (not shown on the dashboard).
-* **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (City Wall Guard), and saved March Presets (`Be`, `Att` and `Gat`).
+* **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (Wall Guard, against Rebel Invasions), and saved March Presets (`Be`, `Att` and `Gat`).
 * **`troops.md`**: standing troop inventory (Tier VIII Elite since 5 Nov), march capacities, infirmary hospital caps, the
   `Be` / `Att` / `Gat` presets, and the highest beast and Terror (rally-only) levels the account can take.
 * **`codes.md`**: gift codes in two lists: Active (still to redeem) and Expired (redeemed, marked ✓, or old). Restarted on 2026-11-05

@@ -4,7 +4,7 @@ as_of: 2026-10-21
 ---
 # Arena & Wall Guard Lineups
 
-Deployment configurations for 5v5 Arena offense and defense, city barricade defense (Wall Guard), and saved march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
+Deployment configurations for 5v5 Arena offense and defense, the Barricade heroes (Wall Guard, against Rebel Invasions), and saved march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
 
 Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
 
@@ -38,9 +38,9 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage | 2026-10-23 |
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Single-target burst damage | 2026-10-23 |
 
-## Wall Guard (City Barricade Defense)
+## Wall Guard (Barricades, Rebel Invasions)
 
-Reinforced across two fully upgraded Barricades guarding against Rebel Invasions and enemy sieges.
+Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is not recorded yet.
 
 ### Barricade 1 (Primary Gate)
 * **Status:** Level 10 (MAX) _(2026-10-22)_

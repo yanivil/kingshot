@@ -132,7 +132,7 @@
       "priority": 1,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero. The official Kingshot X account says so too (rally leaders get all three heroes' skills; joiners only the 4 highest-levelled first skills count), and guides add that chance-based skills such as Jabel's Rally Flag do not stack, while flat ones such as Chenko's Stand of Arms do. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
+      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
@@ -153,9 +153,11 @@
         "hero.md expedition skills: Chenko Stand of Arms Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Yeonwoo On Guard Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★ (20 / 40 shards on 5 Nov)",
         "troops.md: March Queue 4/4 (5 Nov); Terror (Alpha Black Panther) is rally-only (25 Oct)",
         "troops.md presets of 5 Nov: Be (Diana, Gordon, Forrest), Att (Howard, Jabel, Quinn), Gat (Seth, Edwin, Amane); Chenko, Helga and Yeonwoo are in none of them (presets 4 to 6 not opened)",
-        "Community guides (kingshotguide.org rally guide, kingshotoptimizer.com Bear Hunt guide, topuplist.com tier list): a joiner adds only its lead hero's first expedition skill; Chenko, Amane and Yeonwoo are named as top joiners",
-        "Official Kingshot X account (about May 2026): \"For Rally Leaders: All three heroes in your team will have their Expedition Skills fully activated. For Rally Members: Only the 4 highest-levelled first skills of the Hero Captains will be [counted]\" (search-result excerpt; page not opened)",
-        "kingshotguides.com advanced rally guide and kingshotguide.org rally guide: chance-based skills (Jabel's Rally Flag) do not stack; flat ones (Chenko's Stand of Arms) do; slots 2 and 3 of a joining march add troops only (search-result excerpt; page not opened)"
+        "kingshot.net Bear rally joiner tier list (no date): \"A joining hero adds only their first Expedition skill.\"",
+        "kingshotworld.com Bear Hunt teams (updated 2026-07-30): \"The second and third heroes mainly increase the joiner's deployment capacity. Their skills do not become rally-wide buffs.\"",
+        "kingshotguides.com advanced rally guide (updated 2025-11-16): \"the Rally Captain can contribute up to nine skills—three from each hero\"; the author's comment (2025-07-02): \"Chance-based skills don't stack for joiners, so having 4 Jabels will still only count as one.\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Best S+ joiner pool: Chenko, Amadeus, Yeonwoo, Amane…\"; \"Chenko, Amadeus, and Yeonwoo's skills share the same internal buff category, so they add together\"",
+        "Official Kingshot X post (about May 2026; x.com is not reachable here, so read only as a search excerpt): rally leaders get all three heroes' skills; joiners only the 4 highest-levelled first skills of the captains"
       ],
       "cost": "None (a preset)",
       "confidence": [
@@ -169,7 +171,7 @@
         "Helga",
         "Amane"
       ],
-      "note": "Verified: the skill texts, the free queue and that Terror is rally-only. The joiner rule is now also stated by the official Kingshot X account (read as a search excerpt, not opened). Unverified: how the 4 counted skills are picked (highest level, or the first 4 joiners; guides differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places. If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less."
+      "note": "Verified: the skill texts, the free queue, that Terror is rally-only, and the guides' text (pages read on 5 Nov). Unverified: how the 4 counted joiner skills are picked (highest level or the first 4 joiners; sources differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places (they only add troops). If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less."
     },
     {
       "id": "arena-defense-chenko",
@@ -214,9 +216,10 @@
         "After a few days, compare the defense record with the days before; if it is worse, put Gordon back."
       ],
       "evidence": [
-        "heaven-guardian.com Arena guide (2026): \"Accessible / F2P-Oriented Formation: Howard, Chenko / Diana, Jabel, Quinn\" (search-result excerpt; page not opened)",
-        "kingshotguides.com early-game Arena guide (indexed about May 2026): the same five heroes; the main damage dealer goes in the middle of the back row, ideally an Archer (search-result excerpt; page not opened)",
-        "allclash.com Arena teams (no date): a different F2P team, Howard, Edwin, Diana, Jabel, Chenko (search-result excerpt; page not opened)",
+        "heaven-guardian.com Arena guide (2026-09-10): \"Gen 1 | Howard, Chenko / Diana, Jabel, Quinn\"; \"The first two heroes listed belong in the front row, followed by three back-row heroes.\"",
+        "kingshotguides.com early-game Arena guide (published 2025-04-03, updated 2026-05-09): the same five heroes as the F2P team; the main damage dealer goes in \"the middle spot in the backline. Ideally, this should be an Archer hero\"",
+        "allclash.com Arena teams (updated 2026-08-23): \"the best team to run in arena without spending money\" is Howard, Edwin, Diana, Jabel, Chenko (positions shown only as images)",
+        "heaven-guardian.com Jabel guide (2026-10-06): \"Jabel should usually be protected rather than used as your primary front-row tank.\"",
         "lineups.md Arena squads of 23 Oct: attack Howard, Chenko / Jabel, Diana, Quinn; defense Howard, Gordon / Jabel, Diana, Quinn",
         "hero.md powers of 5 Nov: Chenko 582,053, Gordon 539,750"
       ],
@@ -233,7 +236,7 @@
         "Diana",
         "Quinn"
       ],
-      "note": "Verified: your squads (23 Oct) and the hero powers (5 Nov). Unverified: the guides were read only as search-result excerpts, most without a date, and one (AllClash) suggests a different team. Gordon was put there on 22 Oct for his healing (BBQ Feast); the game fights Arena defense for you, so the defense record is the only way to check the swap."
+      "note": "Verified: your squads (23 Oct), the hero powers (5 Nov) and the guides' text (pages read on 5 Nov). Unverified: that the guides' team really wins more often; AllClash puts Edwin where the others put Quinn. Gordon was put there on 22 Oct for his healing (BBQ Feast); the game fights Arena defense for you, so the defense record is the only way to check the swap."
     },
     {
       "id": "be-swap-forrest",
@@ -266,7 +269,7 @@
         "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2, both capped until her 2★; 5 Nov), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
         "troops.md Be preset of 5 Nov: Diana (lead), Gordon, Forrest; 31,108 / 17,776 / 39,996 (35 / 20 / 45); 18,227,722 power",
         "Hero power: Helga 306,455, Forrest 438,984 (both 5 Nov, hero.md)",
-        "heaven-guardian.com Diana guide: her stamina and hunting-speed skills work when she is in the march (the lead place is not said to be needed); no guide found gives a reason to bring Forrest, a wood-gathering hero, on beast hunts (search-result excerpt; page not opened)"
+        "heaven-guardian.com Diana guide (2026-10-03): \"Diana must be part of the march for the skill to apply\" (the lead place is not said to be needed); none of the guides read on 5 Nov gives a reason to bring Forrest, a wood-gathering hero, on beast hunts"
       ],
       "cost": "None (a preset change)",
       "confidence": [
@@ -311,7 +314,7 @@
         "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%; Lv. 3 on his 5 Nov skill screen), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
         "troops.md Gat preset of 5 Nov: Seth (lead), Edwin, Amane; 45,089 Infantry / 43,321 Cavalry / 0 Archers",
         "troops.md: March Queue 4/4 (5 Nov)",
-        "heaven-guardian.com Seth and wood-gathering guides: each Rare gatherer boosts one resource only (Seth iron, Edwin stone, Forrest wood, Olive bread); \"Amane is not a gathering hero\"; no slot requirement mentioned (search-result excerpt; page not opened)"
+        "heaven-guardian.com Seth guide (updated 2026-10-10): \"Each Rare Growth hero specializes in one resource\"; \"Include Seth in the formation sent to the Iron tile\" (no slot requirement given)"
       ],
       "cost": "None (preset changes)",
       "confidence": [
@@ -406,7 +409,8 @@
         "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
         "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
         "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense",
-        "kingshotguides.com troop setup guide: \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\" (search-result excerpt; page not opened)"
+        "kingshotguides.com troop setup guide (2025-08-19): \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"; \"The 50:20:30 setup works really well up until Gen 3\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1: 10/30/60 (Infantry/Cavalry/Archers)\"; F2P host \"Howard · Jabel · Quinn\""
       ],
       "cost": "None for the test (a preset change); training time and resources for more troops (amounts not recorded)",
       "confidence": [
@@ -419,7 +423,7 @@
         "Jabel",
         "Quinn"
       ],
-      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry)."
+      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry). Bear Hunt is different: kingshotmastery.com gives 10 / 30 / 60 for a Generation 1 rally host, with Howard, Jabel and Quinn (your Att heroes) as the host team for players who don't spend."
     },
     {
       "id": "guard-station-heroes",
@@ -427,16 +431,17 @@
       "type": "Defense",
       "what": "City defense (Guard Station): Jabel, Howard and Quinn",
       "ready": false,
-      "waitingFor": "A screenshot of the Guard Station (the guides' name for it; it may be the Barricades screen): which heroes defend your city is not recorded here",
-      "why": "Guides say the Guard Station's heroes buff every troop defending your city, allied reinforcements included, and that your three strongest belong there. Garrison guides name Jabel as the Generation 1 garrison hero (Rally Flag: 32% chance to halve damage taken for all squads), and a Viking Vengeance guide names Howard, Quinn and Saul. Your Howard (Defenders' Edge −16% damage taken, Weaken −16% enemy Attack) and Quinn (Sixth Sense −12% damage taken, Precision Shot) have combat march skills. Diana is your second-strongest hero, but her march skills only help beast hunts (stamina, hunting speed), so she adds little there (inferred). Saul (2★) may fit later.",
+      "waitingFor": "A screenshot of the Guard Station: which heroes defend your city is not recorded (the Defense & Arena page shows it as Not recorded)",
+      "why": "The Guard Station's three heroes are the ones that defend your city against other players and in Viking Vengeance; the Barricades only fight Rebel Invasions (computer-controlled attacks), according to the author of a Viking Vengeance guide. One guide says to put your three strongest heroes in the Guard Station, and another tells players who don't spend to \"leave Jabel, Howard, and Quinn at home\" during Viking Vengeance. A garrison guide names Jabel and Saul as the Generation 1 garrison heroes. Your Howard (Defenders' Edge −16% damage taken, Weaken −16% enemy Attack) and Quinn (Sixth Sense −12% damage taken, Precision Shot) have combat march skills. Diana is your second-strongest hero, but her march skills only help beast hunts (stamina, hunting speed), so she adds little there (inferred). Saul (2★) may fit later.",
       "steps": [
-        "Send a screenshot of the Guard Station (or say if it is the Barricades screen) so it can be recorded and checked.",
+        "Send a screenshot of the Guard Station so it can be recorded and checked.",
         "If it holds other heroes: Jabel, Howard and Quinn."
       ],
       "evidence": [
-        "kingshotguide.org Viking Vengeance guide: \"assign your three strongest heroes. Their… skills provide crucial buffs to all troops garrisoned in your city\" (search-result excerpt; page not opened)",
-        "heaven-guardian.com garrison and Jabel guides: Jabel and Saul as Gen 1 garrison heroes; Rally Flag first for a defensive Jabel (search-result excerpt; page not opened)",
-        "kingshotguides.com Viking Vengeance expert guide: Howard, Quinn and Saul as Guard Station defenders (search-result excerpt; page not opened)",
+        "kingshotguide.org Viking Vengeance guide (2025-09-21): \"Go to your city's 'Guard Station' and assign your three strongest heroes.\"",
+        "kingshotguides.com Viking Vengeance expert guide (updated 2026-07-25): \"For F2P players: Leave Jabel, Howard, and Quinn at home.\" (Saul appears only in its pay-to-win list)",
+        "Same page, the author's reply (2025-09-03): \"Barricades aren't used in Viking's Vengeance or PvP; they're only for tower defense against NPCs… what really matters are the heroes you place in the Guard Station.\"",
+        "heaven-guardian.com garrison guide (2026-09-14): \"Gen 1 | Jabel, Saul\"",
         "hero.md expedition skills: Jabel Rally Flag Lv. 4; Howard Defenders' Edge and Weaken Lv. 4; Quinn Sixth Sense and Precision Shot Lv. 3; Diana Iron Constitution and Quick Paced (beast hunts only)",
         "hero.md powers of 5 Nov: Jabel 764,215, Diana 635,778, Quinn 597,520, Howard 591,419 (before the boots swap)"
       ],
@@ -453,7 +458,7 @@
         "Diana",
         "Saul"
       ],
-      "note": "Verified: the skill texts and powers. Inferred: that Diana adds little to city defense. Unverified: the guide advice (search-result excerpts), the name of the screen, and whether heroes out on a march still defend the city (Jabel, Howard and Quinn are also your Att rally team)."
+      "note": "Verified: the skill texts, the powers and the guides' text (pages read on 5 Nov). Inferred: that Diana adds little to city defense. Unverified: whether heroes out on a march still defend the city (Jabel, Howard and Quinn are also your Att rally team)."
     },
     {
       "id": "epic-shards-amane",
