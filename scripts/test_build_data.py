@@ -373,6 +373,36 @@ class MergeAndOutputTests(unittest.TestCase):
         presets = bd.parse_lineups(body, "2026-11-05", bd.BuildLog())["presets"]
         self.assertEqual(presets["Bre"]["heroes"], ["Olive", "Fahd"])
 
+    def test_guard_station(self) -> None:
+        """The Guard Station gives its heroes, rounded power, defense and the deploy lock.
+
+        Why: until 5 Nov 2026 the dashboard always showed "Not recorded"; the
+        unticked "Garrisoned heroes cannot be deployed" box matters because the
+        guards can then leave the city on marches.
+        """
+        body = (
+            "## Guard Station (City Defense)\n\n"
+            "* **Combined Hero Power:** 2.0M (Guard Station screen) _(2026-11-05)_\n"
+            "* **Status:** Intact, City Defense 15,000 / 15,000 (maxed) _(2026-11-05)_\n"
+            "* **Guards Locked:** No (the box is unticked) _(2026-11-05)_\n\n"
+            "| Slot | Hero | Class | Updated |\n| :---: | :--- | :---: | :---: |\n"
+            "| **Slot 1** | **Jabel (Jable)** | Cavalry | 2026-11-05 |\n"
+            "| **Slot 2** | **Diana** | Archer | 2026-11-05 |\n"
+            "| **Slot 3** | **Howard** | Infantry | 2026-11-05 |\n"
+        )
+        log = bd.BuildLog()
+        guard = bd.parse_lineups(body, "2026-10-01", log)["guardStation"]
+        self.assertEqual(guard, {"heroes": ["Jabel", "Diana", "Howard"], "power": 2000000, "powerRounded": True,
+                                 "status": "Intact", "defense": 15000, "defenseMax": 15000,
+                                 "heroesLocked": False, "asOf": "2026-11-05"})
+        # No section: None, and no Guard Station warning.
+        self.assertIsNone(bd.parse_lineups("## Wall Guard\n", "2026-10-01", log)["guardStation"])
+        self.assertFalse([w for w in log.warnings if "Guard Station" in w])
+        # An unknown lock value is null and warns.
+        odd = bd.parse_lineups(body.replace("No (the box", "Maybe (the box"), "2026-10-01", log)["guardStation"]
+        self.assertIsNone(odd["heroesLocked"])
+        self.assertTrue([w for w in log.warnings if "Guards Locked" in w])
+
     def test_short_card_checks(self) -> None:
         """Titles and summaries must stay short; a summary must be text.
 

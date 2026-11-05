@@ -4,7 +4,7 @@ as_of: 2026-10-21
 ---
 # Arena & Wall Guard Lineups
 
-Deployment configurations for 5v5 Arena offense and defense, the Barricade heroes (Wall Guard, against Rebel Invasions), and saved march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
+Deployment configurations for 5v5 Arena offense and defense, the Barricade heroes (Wall Guard, against Rebel Invasions), the Guard Station (city defense), and saved march formations in [Kingshot](https://www.centurygames.com/games/kingshot/).
 
 Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
 
@@ -40,7 +40,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 
 ## Wall Guard (Barricades, Rebel Invasions)
 
-Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). The game says so on each Barricade screen: "Assigned hero will fight alongside the governor in Rebel Invasion." _(2026-11-05)_ Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is not recorded yet.
+Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). The game says so on each Barricade screen: "Assigned hero will fight alongside the governor in Rebel Invasion." _(2026-11-05)_ Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is recorded below.
 
 ### Barricade 1 (Primary Gate)
 * **Status:** Level 10 (MAX) _(2026-11-05)_
@@ -71,6 +71,24 @@ portrait and class, as on 22 Oct, and each Barricade's hero power fits the sum o
 from the heroes' own 5 Nov screens (hero.md).
 
 * **Total Barricade Hero Power:** 3.6M (1.9M + 1.7M, each cut, not rounded; 2.8M on 22 Oct) _(2026-11-05)_
+
+## Guard Station (City Defense)
+
+The three heroes who defend the city. The screen says: "Your City will burn for 30 minutes if defeated by attackers. Your City will also automatically Teleport to a random location on the map if City Defense ever reaches 0." _(2026-11-05)_
+
+* **Combined Hero Power:** 2.0M (Guard Station screen; the three hero powers it shows add up to 2,005.2K) _(2026-11-05)_
+* **Status:** Intact, City Defense 15,000 / 15,000 (the screen says "City Defense maxed") _(2026-11-05)_
+* **Guards Locked:** No (the box "Garrisoned heroes cannot be deployed" is unticked, so these heroes can leave on marches; all three are in `Ter`) _(2026-11-05)_
+
+| Slot | Hero | Class | Rarity | Level | Hero Power (screen) | Updated |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Slot 1** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 64 | 764.2K | 2026-11-05 |
+| **Slot 2** | **Diana** | Archer | Epic (Purple) | Lv. 64 | 639.3K | 2026-11-05 |
+| **Slot 3** | **Howard** | Infantry | Epic (Purple) | Lv. 64 | 601.7K | 2026-11-05 |
+
+The screen shows portraits, class icons, levels, stars and powers but no names; the heroes are identified by portrait and
+class, and Jabel's 764.2K matches her recorded 764,215. Howard's 601.7K and Diana's 639.3K are above their recorded
+powers (hero.md explains the likely changes).
 
 ## Saved March Deployment Presets
 
