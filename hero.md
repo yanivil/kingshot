@@ -16,21 +16,21 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 64 | 3-Star (Tier 5) | Arena (Back-L), Barricade 1, Attack March (`Att`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-05 |
-| **Saul** | SSR / Mythic | Archer | Lv. 64 | 2-Star (Tier 5) | Reserve / City Construction / Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+6%) & HP (+9%), squad Lethality (+15%) | 2026-11-05 |
-| **Helga** | SSR / Mythic | Infantry | Lv. 64 | 1-Star (Tier 0) | Beast March (`Be` Slot 3, since 5 Nov), Rally Join (`Joi`), Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-05 |
-| **Howard** | SR / Epic | Infantry | Lv. 64 | 4-Star (Tier 0) | Arena (Front-L), Barricade 1, Attack March (`Att` Lead) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-05 |
-| **Diana** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 2) | Arena (Back-C), Barricade 2, Beast March (`Be` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-11-05 |
-| **Quinn** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 1) | Arena (Back-R), Barricade 1, Attack March (`Att`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-05 |
-| **Chenko** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Offense (Front-R), Barricade 2 (Slot 2), Rally Join (`Joi` Lead) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-11-05 |
-| **Gordon** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Defense (Front-R), Barricade 2 (Slot 1), Beast March (`Be`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-05 |
-| **Fahd** | SR / Epic | Cavalry | Lv. 64 | 3-Star (Tier 0) | Reserve / Drill slot | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-11-05 |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 64 | 3-Star (Tier 5) | Arena (Back-L), Barricade 1, Terror & Beasts (`Ter`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-05 |
+| **Saul** | SSR / Mythic | Archer | Lv. 64 | 2-Star (Tier 5) | Stone (`Sto`), City Construction, Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+6%) & HP (+9%), squad Lethality (+15%) | 2026-11-05 |
+| **Helga** | SSR / Mythic | Infantry | Lv. 64 | 1-Star (Tier 0) | Stone (`Sto`), Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-05 |
+| **Howard** | SR / Epic | Infantry | Lv. 64 | 4-Star (Tier 0) | Arena (Front-L), Barricade 1, Terror & Beasts (`Ter`) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-05 |
+| **Diana** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 2) | Arena (Back-C), Barricade 2, Terror & Beasts (`Ter` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-11-05 |
+| **Quinn** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 1) | Arena (Back-R), Barricade 1, Iron (`Iro`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-05 |
+| **Chenko** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Offense (Front-R), Barricade 2 (Slot 2), Wood (`Woo`) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-11-05 |
+| **Gordon** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Defense (Front-R), Barricade 2 (Slot 1), Iron (`Iro`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-05 |
+| **Fahd** | SR / Epic | Cavalry | Lv. 64 | 3-Star (Tier 0) | Bread (`Bre`), Drill slot | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-11-05 |
 | **Amane** | SR / Epic | Archer | Lv. 64 | 2-Star (Tier 5) | Reserve / Infirmary (Exorcism) / Drill slot | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-11-05 |
-| **Yeonwoo** | SR / Epic | Archer | Lv. 64 | 3-Star (Tier 0) | Rally Join (`Joi` Slot 3), Development, Drill slot | **Research Specialist:** Research speed (+9%) & +20% squad lethality | 2026-11-05 |
-| **Forrest** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Reserve / Economy (Beast March `Be` until 5 Nov; Helga took his place) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-11-05 |
-| **Olive** | Rare (Blue) | Archer | Lv. 64 | 3-Star (Tier 5) | Reserve / Economy (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-05 |
-| **Seth** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Reserve / Economy / Drill instructor | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-11-05 |
-| **Edwin** | Rare (Blue) | Cavalry | Lv. 59 | 3-Star (Tier 5) | Reserve / Economy | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-11-05 |
+| **Yeonwoo** | SR / Epic | Archer | Lv. 64 | 3-Star (Tier 0) | Wood (`Woo`), Development, Drill slot | **Research Specialist:** Research speed (+9%) & +20% squad lethality | 2026-11-05 |
+| **Forrest** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Wood (`Woo` Lead) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-11-05 |
+| **Olive** | Rare (Blue) | Archer | Lv. 64 | 3-Star (Tier 5) | Bread (`Bre` Lead) (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-05 |
+| **Seth** | Rare (Blue) | Infantry | Lv. 64 | 3-Star (Tier 5) | Iron (`Iro` Lead), Drill instructor | **Iron Specialist:** Mine production (+20%) & gathering speed (+20%) | 2026-11-05 |
+| **Edwin** | Rare (Blue) | Cavalry | Lv. 59 | 3-Star (Tier 5) | Stone (`Sto` Lead) | **Stone Specialist:** Quarry production (+15%) & gathering speed (+15%) | 2026-11-05 |
 
 ## Heroes Not Yet Recruited
 

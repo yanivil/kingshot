@@ -131,86 +131,22 @@
   },
   "recommendations": [
     {
-      "id": "formation-terror-beasts",
+      "id": "formation-iron",
       "priority": 1,
       "type": "Formations",
-      "what": "Terror & beasts: Diana, Howard, Jabel · 50 / 20 / 30",
-      "summary": "Diana cuts the stamina you pay for beasts and Terror calls by 18%; Howard and Jabel are your strongest fighters. 50 / 20 / 30 is the guides' split for Terror and PvE.",
-      "why": "One preset for both: the player who calls a rally or hunts pays the stamina, and Diana's Iron Constitution (Lv. 4) cuts it by 18%. Howard (Infantry) and Jabel (Cavalry) are your strongest heroes of their types. For Bear Hunt rallies, guides say not to use Diana.",
+      "what": "Iro: Infantry only — set Cavalry to 0",
+      "summary": "Gathering marches should carry only the gathering hero's type (Seth: Infantry). The game will show 51%: its ratio counts against the 88,880 capacity. Send Iron, Wood or Terror one at a time.",
+      "why": "Iro was saved on 5 Nov with 45,328 Infantry and 43,552 Cavalry. A guide says a gathering march should be 100% of the troop type its gathering hero buffs; another says type doesn't matter. Either way the Cavalry is better kept for Stone, which uses Cavalry only. Note on percentages: the game's Troop Ratio is each type's share of the march capacity (88,880), so an Infantry-only march of 45,328 shows 51%, not 100%.",
       "changes": [
         {
-          "where": "Terror & beasts formation (replaces Be)",
-          "rows": [
-            {
-              "label": "Heroes",
-              "before": [
-                "Diana (lead)",
-                "Gordon",
-                "Helga"
-              ],
-              "after": [
-                "Diana (lead)",
-                "Howard",
-                "Jabel"
-              ]
-            },
-            {
-              "label": "Troops",
-              "before": [
-                "Infantry 50%",
-                "Cavalry 20%",
-                "Archers 30%"
-              ],
-              "after": [
-                "Infantry 50%",
-                "Cavalry 20%",
-                "Archers 30%"
-              ]
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "Deploy → Be → replace Gordon and Helga with Howard and Jabel; keep 50 / 20 / 30 → Save."
-      ],
-      "evidence": [
-        "heaven-guardian.com beast-hunting event guide (2026-10-03): \"Add Diana to the hunting or rally-calling formation.\"; \"Keep Diana in the caller formation The rally caller pays the stamina and needs the reduction.\"",
-        "kingshotguides.com troop setup guide (2025-08-19): \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"",
-        "heaven-guardian.com troop formation guide (2026-09-10): \"General PvE Rally | 50/20/30\"",
-        "hero.md: Diana Iron Constitution Lv. 4, \"Reduces Governor Stamina Cost by 18% on beast hunts\"; hero powers (5 Nov): Jabel 764,215, Howard 591,419",
-        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"don't use Diana even if she looks strong on paper\"",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\""
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Diana",
-        "Howard",
-        "Jabel"
-      ],
-      "note": "Verified: the skill text and the guides' text. Unverified: that Diana's cut applies to Terror calls (her skill says beast hunts) and the troop split. Inferred: Diana as lead, so her skill counts even if a solo march only uses the lead's skills."
-    },
-    {
-      "id": "formation-iron",
-      "priority": 2,
-      "type": "Formations",
-      "what": "Iron: Seth, Gordon, Quinn · 100% Infantry",
-      "summary": "Seth adds +20% iron gathering and is Infantry; a guide says to send 100% of your gathering hero's troop type.",
-      "why": "Seth adds +20% iron gathering and is Infantry; a guide says to send 100% of your gathering hero's troop type.",
-      "changes": [
-        {
-          "where": "Iron formation",
+          "where": "Iro (tab 2)",
           "rows": [
             {
               "label": "Heroes",
               "before": [
                 "Seth (lead)",
-                "Edwin",
-                "Amane"
+                "Gordon",
+                "Quinn"
               ],
               "after": [
                 "Seth (lead)",
@@ -221,30 +157,29 @@
             {
               "label": "Troops",
               "before": [
-                "Infantry 51%",
-                "Cavalry 49%"
+                "Infantry 45,328",
+                "Cavalry 43,552"
               ],
               "after": [
-                "Infantry 100%"
+                "Infantry 45,328",
+                "Cavalry 0"
               ]
             }
           ]
         }
       ],
       "steps": [
-        "Deploy → a preset tab → Seth (lead), Gordon, Quinn → Infantry 100% → Save."
+        "Deploy → Iro → Cavalry to 0 → Save."
       ],
       "evidence": [
+        "troops.md Iro preset (5 Nov): Seth (lead), Gordon, Quinn; 45,328 Infantry / 43,552 Cavalry / 0 Archers; 88,880",
         "hero.md: Seth Craftsmanship Lv. 4, +20% Iron Mining Speed in the Wilderness; Seth is Infantry",
         "kingshotmastery.com troop formations guide (2026-10-29): \"Match your troop type to the hero carrying your highest gathering bonus for that resource.\"; \"Gathering — 100% of whichever troop type your gathering heroes buff\"",
-        "heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\"",
-        "kingshotmastery.com resource-gathering guide (2026-06-30): \"The hero must travel with the march for that bonus to apply.\"",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\""
+        "heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\""
       ],
-      "cost": "None (a preset)",
+      "cost": "None (a preset change)",
       "confidence": [
         "Verified",
-        "Inferred",
         "Unverified"
       ],
       "heroes": [
@@ -252,164 +187,7 @@
         "Gordon",
         "Quinn"
       ],
-      "note": "Verified: the gathering skill and hero classes. Unverified: the troop rule (one guide says match the gathering hero's type, another says type doesn't matter). Inferred: the other heroes, chosen so no hero is in two formations; they only add troop capacity. Now: the Gat preset, used for iron and stone."
-    },
-    {
-      "id": "formation-stone",
-      "priority": 3,
-      "type": "Formations",
-      "what": "Stone: Edwin, Helga, Saul · 100% Cavalry",
-      "summary": "Edwin adds +15% stone gathering and is Cavalry, so 100% Cavalry.",
-      "why": "Edwin adds +15% stone gathering and is Cavalry, so 100% Cavalry.",
-      "changes": [
-        {
-          "where": "Stone formation",
-          "rows": [
-            {
-              "label": "Heroes",
-              "before": [],
-              "after": [
-                "Edwin (lead)",
-                "Helga",
-                "Saul"
-              ]
-            },
-            {
-              "label": "Troops",
-              "before": [],
-              "after": [
-                "Cavalry 100%"
-              ]
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "Deploy → a preset tab → Edwin (lead), Helga, Saul → Cavalry 100% → Save."
-      ],
-      "evidence": [
-        "hero.md: Edwin Stone Mining Lv. 3, +15% Stone Mining Speed in the Wilderness; Edwin is Cavalry",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"Match your troop type to the hero carrying your highest gathering bonus for that resource.\"; \"Gathering — 100% of whichever troop type your gathering heroes buff\"",
-        "heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\"",
-        "kingshotmastery.com resource-gathering guide (2026-06-30): \"The hero must travel with the march for that bonus to apply.\"",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\""
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Edwin",
-        "Helga",
-        "Saul"
-      ],
-      "note": "Verified: the gathering skill and hero classes. Unverified: the troop rule (one guide says match the gathering hero's type, another says type doesn't matter). Inferred: the other heroes, chosen so no hero is in two formations; they only add troop capacity."
-    },
-    {
-      "id": "formation-wood",
-      "priority": 4,
-      "type": "Formations",
-      "what": "Wood: Forrest, Chenko, Yeonwoo · 100% Infantry",
-      "summary": "Forrest adds +20% wood gathering and is Infantry, so 100% Infantry.",
-      "why": "Forrest adds +20% wood gathering and is Infantry, so 100% Infantry.",
-      "changes": [
-        {
-          "where": "Wood formation",
-          "rows": [
-            {
-              "label": "Heroes",
-              "before": [],
-              "after": [
-                "Forrest (lead)",
-                "Chenko",
-                "Yeonwoo"
-              ]
-            },
-            {
-              "label": "Troops",
-              "before": [],
-              "after": [
-                "Infantry 100%"
-              ]
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "Deploy → a preset tab → Forrest (lead), Chenko, Yeonwoo → Infantry 100% → Save."
-      ],
-      "evidence": [
-        "hero.md: Forrest Master Woodcutter Lv. 4, +20% Wood Gathering Speed in the Wilderness; Forrest is Infantry",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"Match your troop type to the hero carrying your highest gathering bonus for that resource.\"; \"Gathering — 100% of whichever troop type your gathering heroes buff\"",
-        "heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\"",
-        "kingshotmastery.com resource-gathering guide (2026-06-30): \"The hero must travel with the march for that bonus to apply.\"",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\""
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Forrest",
-        "Chenko",
-        "Yeonwoo"
-      ],
-      "note": "Verified: the gathering skill and hero classes. Unverified: the troop rule (one guide says match the gathering hero's type, another says type doesn't matter). Inferred: the other heroes, chosen so no hero is in two formations; they only add troop capacity."
-    },
-    {
-      "id": "formation-bread",
-      "priority": 5,
-      "type": "Formations",
-      "what": "Bread: Olive, Fahd · 100% Archers",
-      "summary": "Olive adds +20% bread gathering and is an Archer, so 100% Archers. No Infantry hero is free (Howard is in Terror), so the third place stays empty.",
-      "why": "Olive adds +20% bread gathering and is an Archer, so 100% Archers. No Infantry hero is free (Howard is in Terror), so the third place stays empty.",
-      "changes": [
-        {
-          "where": "Bread formation",
-          "rows": [
-            {
-              "label": "Heroes",
-              "before": [],
-              "after": [
-                "Olive (lead)",
-                "Fahd"
-              ]
-            },
-            {
-              "label": "Troops",
-              "before": [],
-              "after": [
-                "Archers 100%"
-              ]
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "Deploy → a preset tab → Olive (lead), Fahd → Archers 100% → Save."
-      ],
-      "evidence": [
-        "hero.md: Olive Forager's Luck Lv. 4, +20% Bread Gathering Speed in the Wilderness; Olive is an Archer",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"Match your troop type to the hero carrying your highest gathering bonus for that resource.\"; \"Gathering — 100% of whichever troop type your gathering heroes buff\"",
-        "heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\"",
-        "kingshotmastery.com resource-gathering guide (2026-06-30): \"The hero must travel with the march for that bonus to apply.\"",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\""
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Olive",
-        "Fahd"
-      ],
-      "note": "Verified: the gathering skill and hero classes. Unverified: the troop rule (one guide says match the gathering hero's type, another says type doesn't matter). Inferred: the other heroes, chosen so no hero is in two formations; they only add troop capacity. If the game needs a third hero, add Howard when Terror is home."
+      "note": "Verified: the preset and your troop counts (46,160 / 46,986 / 43,865). Unverified: the troop-type rule for gathering (the guides disagree). The other four presets (Ter, Sto, Woo, Bre) already match the suggestions."
     }
   ],
   "features": [
