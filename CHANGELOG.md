@@ -69,6 +69,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `data/manual.json`: all previous suggestions removed at the account owner's request (2026-11-05); five short
+  formation cards replace them, each with heroes and troop percentages: Terror & beasts (Diana leading, Howard,
+  Jabel; 50 / 20 / 30, replacing Be), Iron (Seth, Gordon, Quinn; 100% Infantry), Stone (Edwin, Helga, Saul; 100%
+  Cavalry), Wood (Forrest, Chenko, Yeonwoo; 100% Infantry) and Bread (Olive, Fahd; 100% Archers). Gathering troops
+  follow kingshotmastery.com ("100% of whichever troop type your gathering heroes buff"; another guide says type
+  does not matter, so Unverified). No hero is in two formations. The removed cards (shards, skill books, Guard
+  Station, gear, Join, long term) remain in the git history and in the entries below.
 - Formation cards (asked for by the account owner on 2026-11-05: "for each formation give me how it should look
   like"): the march suggestions become one card per preset tab, each a Heroes / Troops table with exact numbers,
   Suggested next to what the tab holds now. `formation-terror` (tab 2, replacing Att: Howard, Jabel, Diana;
