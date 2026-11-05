@@ -69,6 +69,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Deploy screens later on 2026-11-05: the **Join preset is saved** in tab 4 (`Joi`: Chenko leading, Helga, Yeonwoo;
+  50 / 20 / 30; 88,880, which confirms the inferred march size; power 17,132,030), and **Helga replaced Forrest in
+  Be**, whose troops changed from 35 / 20 / 45 to 50 / 20 / 30 (power 17,573,191). Att and Gat are unchanged (powers
+  21,009,331 and 16,936,509). Troops available: 46,137 / 46,961 / 43,843 (663 more of each). `troops.md` gains
+  Formation 4 and the new counts; `lineups.md` the `Joi` row; `hero.md` roster assignments follow.
+  `data/manual.json`: the done parts leave the suggestions. The Join card becomes `join-bear-troops` (switch to
+  8,888 / 36,149 / 43,843 before a Bear Hunt join), the Be card `be-helga-check` (compare losses; the troop change
+  happened at the same time), the gear card `greaves-to-helga` (+9,680 gear power for Helga); the gathering card
+  notes that Forrest is free for the Wood preset; Bear Hunt numbers use 43,843 Archers.
 - `lineups.md` (Barricade screens, later on 2026-11-05): both Barricades still hold the same heroes (Howard, Jabel,
   Quinn; Gordon, Chenko, Diana), now all Lv. 64 with their 5 Nov stars; hero power 1.9M and 1.7M (1.5M and 1.3M on
   22 Oct), each within the cut-off range of the recorded hero powers; Lv 10, Defense 150, Health 2,400 re-confirmed.

@@ -10,21 +10,21 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 ## Current Troop Inventory
 
-Standing forces are **Tier VIII (Elite)** units across the three military branches (Tier VII Brave on 24 Oct). Counts are from the Troops Preview screen, "All" tab (in town and out of town), of 2026-11-05; that screen lists only these three units, each with a "VIII" badge. Net Change is against the 2026-10-24 counts of the Tier VII units; the screens do not show whether the Tier VII troops were promoted to Tier VIII or trained new.
+Standing forces are **Tier VIII (Elite)** units across the three military branches (Tier VII Brave on 24 Oct). Counts are the maximums on the Deploy screens later on 2026-11-05, 663 more of each type than the Troops Preview ("All" tab, in and out of town) showed earlier that day (45,474 / 46,298 / 43,180); the Troops Preview was not re-read, so whether any troops were out of town is not known. Both screens show only these three units, each with a "VIII" badge. Net Change is against the 2026-10-24 counts of the Tier VII units; the screens do not show whether the Tier VII troops were promoted to Tier VIII or trained new.
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VIII | Elite Infantry | 45,474 | 33.7% | All (in and out of town) | +11,323 | 2026-11-05 |
-| **Cavalry** | VIII | Elite Cavalry | 46,298 | 34.3% | All (in and out of town) | +9,860 | 2026-11-05 |
-| **Marksmen** | VIII | Elite Archer | 43,180 | 32.0% | All (in and out of town) | +8,040 | 2026-11-05 |
-| **Total Military Force** | **VIII** | — | **134,952** | **100%** | **0 Injured** | +29,223 | 2026-11-05 |
+| **Infantry** | VIII | Elite Infantry | 46,137 | 33.7% | Available on the Deploy screen | +11,986 | 2026-11-05 |
+| **Cavalry** | VIII | Elite Cavalry | 46,961 | 34.3% | Available on the Deploy screen | +10,523 | 2026-11-05 |
+| **Marksmen** | VIII | Elite Archer | 43,843 | 32.0% | Available on the Deploy screen | +8,703 | 2026-11-05 |
+| **Total Military Force** | **VIII** | — | **136,941** | **100%** | **0 Injured** (Troops Preview, earlier on 5 Nov) | +31,212 | 2026-11-05 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 134,952 | Troops Preview, "All" tab: the sum of the three counts. The header reads "134.9K/134.9K" (5 Nov; 105.7K/105.7K on 24 Oct). On 22 Oct it read "1,278/98,409" with March Queue 2/4; on 23 and 24 Oct both numbers match and the queue reads 4/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-05 |
-| **Single March Capacity** | 88,880 | `Be` and `Att` show 88,880 / 88,880 on the Deploy screen; `Gat` shows 88,410 / 88,410. The 470 difference equals Edwin's lower Troop Capacity (12,260 at Lv. 59 against 12,730 at Lv. 64), which suggests that a march holds a base amount plus its three heroes' Troop Capacity (inferred; the base would be 50,690). 79,275 for all three presets on 24 Oct | 2026-11-05 |
+| **Total Standing Troops** | 136,941 | The sum of the three counts on the Deploy screens later on 5 Nov (663 more of each type). Earlier that day, Troops Preview, "All" tab: 134,952, the sum of its three counts. The header reads "134.9K/134.9K" (5 Nov; 105.7K/105.7K on 24 Oct). On 22 Oct it read "1,278/98,409" with March Queue 2/4; on 23 and 24 Oct both numbers match and the queue reads 4/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-05 |
+| **Single March Capacity** | 88,880 | `Be`, `Att` and `Joi` show 88,880 / 88,880 on the Deploy screen (5 Nov); `Gat` shows 88,410 / 88,410. The 470 difference equals Edwin's lower Troop Capacity (12,260 at Lv. 59 against 12,730 at Lv. 64), which suggests that a march holds a base amount plus its three heroes' Troop Capacity (inferred; the base would be 50,690). 79,275 for all three presets on 24 Oct | 2026-11-05 |
 | **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen (5 Nov, as on 24 Oct). With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-11-05 |
 | **Infirmary Hospital Capacity** | 72,800 | 0 / 72,800 injured (38,600 on 24 Oct) | 2026-11-05 |
 | **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
@@ -33,42 +33,54 @@ Standing forces are **Tier VIII (Elite)** units across the three military branch
 ## Saved March Formations
 
 ### Formation 1: Beast Hunting (`Be`) — PvE Preset
-* **Formation Power:** 18,227,722 (9,840,959 on 24 Oct) _(2026-11-05)_
+* **Formation Power:** 17,573,191 (with Helga and 50 / 20 / 30, latest on 5 Nov; 18,412,570 with Forrest and 35 / 20 / 45 earlier that day; 9,840,959 on 24 Oct) _(2026-11-05)_
 * **Total Troops:** 88,880 / 88,880 (Full March) _(2026-11-05)_
-* **Assigned Heroes:** Diana (Lv. 64, Archer Lead), Gordon (Lv. 64, Cavalry), Forrest (Lv. 64, Infantry) _(2026-11-05)_
-* **Tactical Objective:** High archer burst to eliminate map beasts and wandering monsters with minimal casualties, boosted by Diana's -18% Stamina Cost (Iron Constitution Lv. 4) and +60% Hunting March Speed. _(2026-10-21)_
+* **Assigned Heroes:** Diana (Lv. 64, Archer Lead), Gordon (Lv. 64, Cavalry), Helga (Lv. 64, Infantry; she took Forrest's place later on 5 Nov) _(2026-11-05)_
+* **Tactical Objective:** Beast hunting, helped by Diana's -18% Stamina Cost (Iron Constitution Lv. 4) and +60% Hunting March Speed. The troops changed from 35 / 20 / 45 to 50 / 20 / 30 at the same time as the hero swap. _(2026-11-05)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Elite Infantry** | VIII | 31,108 | 45,474 | 35% | 2026-11-05 |
-| **Elite Cavalry** | VIII | 17,776 | 46,298 | 20% | 2026-11-05 |
-| **Elite Archer** | VIII | 39,996 | 43,180 | 45% | 2026-11-05 |
+| **Elite Infantry** | VIII | 44,440 | 46,137 | 50% | 2026-11-05 |
+| **Elite Cavalry** | VIII | 17,776 | 46,961 | 20% | 2026-11-05 |
+| **Elite Archer** | VIII | 26,664 | 43,843 | 30% | 2026-11-05 |
 
 ### Formation 2: Attack (`Att`) — PvP / Open-Field Preset
-* **Formation Power:** 20,910,710 (11,279,258 on 24 Oct) _(2026-11-05)_
+* **Formation Power:** 21,009,331 (20,910,710 earlier on 5 Nov; 11,279,258 on 24 Oct) _(2026-11-05)_
 * **Total Troops:** 88,880 / 88,880 (Full March) _(2026-11-05)_
 * **Assigned Heroes:** Howard (Lv. 64, Infantry Lead), Jabel (Lv. 64, Cavalry), Quinn (Lv. 64, Archer) _(2026-11-05)_
 * **Tactical Objective:** Balanced frontline absorption and cavalry hammer for player battles and rally strikes. _(2026-10-21)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Elite Infantry** | VIII | 44,440 | 45,474 | 50% | 2026-11-05 |
-| **Elite Cavalry** | VIII | 26,664 | 46,298 | 30% | 2026-11-05 |
-| **Elite Archer** | VIII | 17,776 | 43,180 | 20% | 2026-11-05 |
+| **Elite Infantry** | VIII | 44,440 | 46,137 | 50% | 2026-11-05 |
+| **Elite Cavalry** | VIII | 26,664 | 46,961 | 30% | 2026-11-05 |
+| **Elite Archer** | VIII | 17,776 | 43,843 | 20% | 2026-11-05 |
 
 ### Formation 3: Gathering (`Gat`) — Resource Preset
-* **Formation Power:** 16,968,707 (9,161,177 on 24 Oct) _(2026-11-05)_
+* **Formation Power:** 16,936,509 (16,968,707 earlier on 5 Nov, before Seth gave his Epic boots to Howard; 9,161,177 on 24 Oct) _(2026-11-05)_
 * **Total Troops:** 88,410 / 88,410 (Full March; 470 less than the other presets, see Single March Capacity) _(2026-11-05)_
 * **Assigned Heroes:** Seth (Lv. 64, Infantry Lead), Edwin (Lv. 59, Cavalry), Amane (Lv. 64, Archer) _(2026-11-05)_
 * **Tactical Objective:** Wilderness gathering. Only two of the three heroes have a gathering skill, each for one resource: Seth (Craftsmanship, +20% Iron Mining Speed) and Edwin (Stone Mining, +15%). Amane's expedition skills are Tri-Phalanx (+15% squad Attack) and Exorcism (infirmary). _(2026-10-24)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Elite Infantry** | VIII | 45,089 | 45,474 | 51% | 2026-11-05 |
-| **Elite Cavalry** | VIII | 43,321 | 46,298 | 49% | 2026-11-05 |
-| **Elite Archer** | VIII | 0 | 43,180 | 0% | 2026-11-05 |
+| **Elite Infantry** | VIII | 45,089 | 46,137 | 51% | 2026-11-05 |
+| **Elite Cavalry** | VIII | 43,321 | 46,961 | 49% | 2026-11-05 |
+| **Elite Archer** | VIII | 0 | 43,843 | 0% | 2026-11-05 |
 
-The Deploy screen shows preset tabs `Be`, `Att`, `Gat`, `4`, `5` and `6`, then locked tabs; `4` and `5` carry a flag icon like the named presets and `6` shows only its number. Presets 4 to 6 were not opened, so their heroes and troops are not recorded. _(2026-11-05)_
+### Formation 4: Rally Join (`Joi`) — Joiner Preset
+* **Formation Power:** 17,132,030 _(2026-11-05)_
+* **Total Troops:** 88,880 / 88,880 (Full March) _(2026-11-05)_
+* **Assigned Heroes:** Chenko (Lv. 64, Cavalry Lead), Helga (Lv. 64, Infantry), Yeonwoo (Lv. 64, Archer) _(2026-11-05)_
+* **Tactical Objective:** Joining other players' rallies. A joining march adds only its lead hero's first Expedition skill (Chenko's Stand of Arms); the other two heroes add troop capacity. Saved on 5 Nov in tab 4, named "Joi" on the tab. _(2026-11-05)_
+
+| Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Elite Infantry** | VIII | 44,440 | 46,137 | 50% | 2026-11-05 |
+| **Elite Cavalry** | VIII | 17,776 | 46,961 | 20% | 2026-11-05 |
+| **Elite Archer** | VIII | 26,664 | 43,843 | 30% | 2026-11-05 |
+
+The Deploy screen shows preset tabs `Be`, `Att`, `Gat`, `Joi`, `5` and `6`, then three locked tabs; `5` carries a flag icon like the saved presets and `6` shows only its number. Presets 5 and 6 were not opened, so their heroes and troops are not recorded. _(2026-11-05)_
 
 ## Beast & Terror Hunting
 

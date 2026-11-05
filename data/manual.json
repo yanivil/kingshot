@@ -131,87 +131,11 @@
   },
   "recommendations": [
     {
-      "id": "rally-join-preset",
-      "priority": 1,
-      "type": "Marches",
-      "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. A joiner's skill reaches its maximum Lv. 5 only once the hero is 4★: Chenko is, while Yeonwoo is 3★ and Amane 2★. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known. Troops: for Bear Hunt, guides give a joiner an Archer-heavy march (10% Infantry, 10% Cavalry, 80% Archers in two guides; 10 / 30 / 60 for Generation 1 heroes in a third) and say a full march matters more than the exact ratio. A full Join march holds 88,880 (Chenko, Helga and Yeonwoo add 12,730 each, like your other presets), but you have 43,180 Archers (5 Nov), less than 60%, so the suggestion keeps 10% Infantry, sends every Archer and fills the rest with Cavalry. For Terror, a rally guide gives 50 / 20 / 30.",
-      "changes": [
-        {
-          "where": "Fourth march preset (Join)",
-          "before": [],
-          "after": [
-            "Chenko (lead)",
-            "Helga",
-            "Yeonwoo"
-          ],
-          "note": "One hero per troop type, as in your other presets; Yeonwoo can lead instead when Chenko is busy"
-        },
-        {
-          "where": "Join preset troops (88,880)",
-          "rows": [
-            {
-              "label": "Bear Hunt",
-              "before": [],
-              "after": [
-                "Infantry 8,888 (10%)",
-                "Cavalry 36,812 (41%)",
-                "Archers 43,180 (49%)"
-              ]
-            },
-            {
-              "label": "Terror",
-              "before": [],
-              "after": [
-                "Infantry 44,440 (50%)",
-                "Cavalry 17,776 (20%)",
-                "Archers 26,664 (30%)"
-              ]
-            }
-          ],
-          "note": "Save the Bear Hunt split in the preset and change it on the Deploy screen before a Terror join (or the other way round if you join Terror more often). The numbers assume no other march is out: if one is, keep 10% Infantry, send every free Archer and fill the rest with Cavalry"
-        }
-      ],
-      "steps": [
-        "Deploy → a free preset (4, 5 or 6): Chenko first (lead), Helga and Yeonwoo in the other two places; troops 8,888 Infantry, 36,812 Cavalry and 43,180 Archers (all your Archers) = 88,880; name it Join.",
-        "Before joining a Terror rally, change the troops to 44,440 Infantry, 17,776 Cavalry and 26,664 Archers (50 / 20 / 30).",
-        "When you join a rally (Terror, Bear), send Join; keep Att for rallies you lead."
-      ],
-      "evidence": [
-        "hero.md expedition skills: Chenko Stand of Arms Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Yeonwoo On Guard Lv. 4 on her 5 Nov skill screen (+20% Lethality, old Lv. 4 preview); Amane Tri-Phalanx Lv. 3, +15% Attack, capped until 3★ (20 / 40 shards on 5 Nov)",
-        "troops.md: March Queue 4/4 (5 Nov); Terror (Alpha Black Panther) is rally-only (25 Oct)",
-        "troops.md presets of 5 Nov: Be (Diana, Gordon, Forrest), Att (Howard, Jabel, Quinn), Gat (Seth, Edwin, Amane); Chenko, Helga and Yeonwoo are in none of them (presets 4 to 6 not opened)",
-        "kingshot.net Bear rally joiner tier list (no date): \"A joining hero adds only their first Expedition skill.\"",
-        "kingshotworld.com Bear Hunt teams (updated 2026-07-30): \"The second and third heroes mainly increase the joiner's deployment capacity. Their skills do not become rally-wide buffs.\"",
-        "kingshotguides.com advanced rally guide (updated 2025-11-16): \"the Rally Captain can contribute up to nine skills—three from each hero\"; the author's comment (2025-07-02): \"Chance-based skills don't stack for joiners, so having 4 Jabels will still only count as one.\"",
-        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Best S+ joiner pool: Chenko, Amadeus, Yeonwoo, Amane…\"; \"Chenko, Amadeus, and Yeonwoo's skills share the same internal buff category, so they add together\"",
-        "Official Kingshot X post (about May 2026; x.com is not reachable here, so read only as a search excerpt): rally leaders get all three heroes' skills; joiners only the 4 highest-levelled first skills of the captains",
-        "kingshotworld.com Bear Hunt teams (updated 2026-07-30), Recommended Joiner Troop Formation: \"Infantry: 10% Cavalry: 10% Archers: 80%\"; \"a full march, and fast rally timing usually matter more than making small changes to the troop ratio\"",
-        "kingshotguides.com troop setup guide (2025-08-19): \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"; \"players who send 100% Archers often do less damage than players who send 80% Archers but keep at least 10% Infantry and 10% Cavalry\"",
-        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1 | 10% | 30% | 60% | Cavalry heroes have the strongest stats at this stage\"",
-        "troops.md of 5 Nov: Elite (VIII) Infantry 45,474, Cavalry 46,298, Archers 43,180; Be and Att hold 88,880 with three Lv. 64 heroes; hero.md: Chenko, Helga and Yeonwoo +12,730 troop capacity each",
-        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"that skill only reaches level 5 — its maximum — once the hero is 4★\"; \"The second and third heroes only add march capacity; their skills do nothing for the rally\""
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Chenko",
-        "Yeonwoo",
-        "Helga",
-        "Amane"
-      ],
-      "note": "Verified: the skill texts, the free queue, that Terror is rally-only, and the guides' text (pages read on 5 Nov). Unverified: how the 4 counted joiner skills are picked (highest level or the first 4 joiners; sources differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places (they only add troops). If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less. Troops: Verified: your troop stock and hero capacities. Inferred: that the Join march holds 88,880 (not yet seen on its Deploy screen) and the Bear split (Cavalry fills what the Archers can't). Unverified: the ratios (guides differ: 10 / 10 / 80 or 10 / 30 / 60 for Bear) and whether the rally leader's per-joiner cap lets a full 88,880 in."
-    },
-    {
       "id": "att-troop-split",
-      "priority": 2,
+      "priority": 1,
       "type": "Troops",
       "what": "Troops: set Att to 50 / 20 / 30, the guides' split for PvP and rallies",
-      "why": "No guide read on 5 Nov supports your Att split of 50 / 30 / 20. For PvP battles and rallies such as Terror, the guides give 50% Infantry / 20% Cavalry / 30% Archers; that moves 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. For Bear Hunt rallies you lead they want mostly Archers: 10 / 30 / 60 for Generation 1 heroes in one guide, 10 / 10 / 80 in two others (one adds that early players with weaker Archers may do better with a more balanced split). You have 43,180 Archers, less than 60% of 88,880, so the Bear Hunt row keeps 10% Infantry, sends every Archer and fills the rest with Cavalry; it is the same split as the Join preset's, so the two cannot both go at full strength.",
+      "why": "No guide read on 5 Nov supports your Att split of 50 / 30 / 20. For PvP battles and rallies such as Terror, the guides give 50% Infantry / 20% Cavalry / 30% Archers; that moves 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. For Bear Hunt rallies you lead they want mostly Archers: 10 / 30 / 60 for Generation 1 heroes in one guide, 10 / 10 / 80 in two others (one adds that early players with weaker Archers may do better with a more balanced split). You have 43,843 Archers, less than 60% of 88,880, so the Bear Hunt row keeps 10% Infantry, sends every Archer and fills the rest with Cavalry; it is the same as the Join preset's Bear Hunt split, so the two cannot both go at full strength.",
       "changes": [
         {
           "where": "Att preset troops (88,880)",
@@ -234,8 +158,8 @@
               "before": [],
               "after": [
                 "Infantry 8,888 (10%)",
-                "Cavalry 36,812 (41%)",
-                "Archers 43,180 (49%)"
+                "Cavalry 36,149 (41%)",
+                "Archers 43,843 (49%)"
               ]
             }
           ],
@@ -244,11 +168,11 @@
       ],
       "steps": [
         "Deploy → Att → troops 44,440 Infantry, 17,776 Cavalry and 26,664 Archers → Save.",
-        "Before leading a Bear Hunt rally, change them to 8,888 / 36,812 / 43,180 (all your Archers); change back after.",
+        "Before leading a Bear Hunt rally, change them to 8,888 / 36,149 / 43,843 (all your Archers); change back after.",
         "Keep training the three types evenly; more Archers would bring Bear Hunt marches closer to the guides' 60–80%."
       ],
       "evidence": [
-        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
+        "troops.md, later on 5 Nov: Elite (VIII) 46,137 / 46,961 / 43,843 available on the Deploy screens; march capacity 88,880",
         "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
         "kingshotguides.com troop setup guide (2025-08-19): \"PvP Battles → 50% Infantry, 20% Cavalry, 30% Archers\"; \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"; \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"",
         "heaven-guardian.com troop formation guide (2026-09-10): \"General PvE Rally | 50/20/30\"",
@@ -270,7 +194,7 @@
     },
     {
       "id": "gat-match-resource",
-      "priority": 3,
+      "priority": 2,
       "type": "Marches",
       "what": "Gathering: Olive instead of Amane in Gat, and a Wood preset with Forrest",
       "why": "A gathering hero's bonus works from any place in the march: guides only say the matching hero must travel with it. A march takes one Infantry, one Cavalry and one Archer hero. Your Gat preset (Seth Infantry, Edwin Cavalry, Amane Archer) already covers iron (Seth +20%) and stone (Edwin +15%), but Amane has no gathering skill. Olive is also an Archer and adds +20% bread, so Gat then covers iron, stone and bread. Wood needs Forrest (+20%), an Infantry hero like Seth, so it needs its own preset with heroes not in Gat.",
@@ -297,13 +221,13 @@
             "Fahd",
             "Amane"
           ],
-          "note": "Any Cavalry and Archer heroes not in Gat would do; Forrest is also in Be"
+          "note": "Any Cavalry and Archer heroes not in Gat would do; Forrest left Be on 5 Nov, so Wood can go out alongside it"
         }
       ],
       "steps": [
         "Deploy → Gat → replace Amane with Olive → Save; send Gat to iron, stone or bread tiles.",
-        "Save a free preset as Wood: Forrest, Fahd and Amane; send it to wood tiles.",
-        "Forrest is also in Be, so Wood cannot go while Be is out (one march per hero), unless Helga replaces him there (see that move)."
+        "Save tab 5 or 6 as Wood: Forrest, Fahd and Amane; send it to wood tiles.",
+        "Forrest is no longer in Be (Helga took his place on 5 Nov), so Wood can go out at the same time as Be."
       ],
       "evidence": [
         "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%; Lv. 3 on his 5 Nov skill screen), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
@@ -328,61 +252,11 @@
         "Amane",
         "Fahd"
       ],
-      "note": "Verified: the skill texts and hero classes, and the guides' text. Unverified: whether troop type matters for gathering (the guides disagree), so Gat's troops (51% Infantry / 49% Cavalry) stay as they are. Inferred: Fahd and Amane in the Wood preset. With Join, Wood and the Terror preset (see those moves), the three spare tabs (4, 5 and 6) are used, if they are free; they were not opened on 5 Nov."
-    },
-    {
-      "id": "be-swap-forrest",
-      "priority": 4,
-      "type": "Marches",
-      "what": "Test a combat hero instead of Forrest in the Be (beast) march",
-      "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (306,455 vs Forrest's 438,984 on 5 Nov), so test it before keeping it.",
-      "changes": [
-        {
-          "where": "Be march",
-          "before": [
-            "Diana (lead)",
-            "Gordon",
-            "Forrest"
-          ],
-          "after": [
-            "Diana (lead)",
-            "Gordon",
-            "Helga"
-          ],
-          "note": "Same classes (Archer, Cavalry, Infantry) and the same troop split"
-        }
-      ],
-      "steps": [
-        "Deploy → Be → remove Forrest → add Helga → Save.",
-        "Hit the same beast level you use now and compare troop losses with an earlier hunt.",
-        "Keep whichever loses fewer troops."
-      ],
-      "evidence": [
-        "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2, both capped until her 2★; 5 Nov), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
-        "troops.md Be preset of 5 Nov: Diana (lead), Gordon, Forrest; 31,108 / 17,776 / 39,996 (35 / 20 / 45); 18,227,722 power",
-        "Hero power: Helga 306,455, Forrest 438,984 (both 5 Nov, hero.md)",
-        "heaven-guardian.com Diana guide (2026-10-03): \"Diana must be part of the march for the skill to apply\" (the lead place is not said to be needed); none of the guides read on 5 Nov gives a reason to bring Forrest, a wood-gathering hero, on beast hunts",
-        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\"",
-        "heaven-guardian.com beast-hunting event guide (2026-10-03): \"Add Diana to the hunting or rally-calling formation.\"",
-        "heaven-guardian.com Helga guide (2026-10-03): \"Helga's Expedition skills affect the squads in her march.\"",
-        "heaven-guardian.com Fahd guide (2026-10-03): \"Solo hunting is Fahd’s strongest long-term specialist role.\""
-      ],
-      "cost": "None (a preset change)",
-      "confidence": [
-        "Verified",
-        "Unverified"
-      ],
-      "heroes": [
-        "Forrest",
-        "Helga",
-        "Diana",
-        "Gordon"
-      ],
-      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. A march takes one Infantry, one Cavalry and one Archer hero, so Helga is your only free Infantry combat hero for Forrest's place (Howard is in Att). Fahd (Cavalry; a guide calls solo hunting his best role) could only replace Gordon, and Saul (Archer) cannot go with Diana. No guide read on 5 Nov says whether Gordon helps on beast hunts. Link to the gear move: Howard's old Stonewall Greaves (+24) are on Seth since 5 Nov, and that suggestion moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9). One guide says Gordon's Trash Talk only counts when he leads; Diana leads Be, so only his other skill may apply there (unverified)."
+      "note": "Verified: the skill texts and hero classes, and the guides' text. Unverified: whether troop type matters for gathering (the guides disagree), so Gat's troops (51% Infantry / 49% Cavalry) stay as they are. Inferred: Fahd and Amane in the Wood preset. Join now uses tab 4 (saved 5 Nov); Wood and Terror would use tabs 5 and 6 (tab 5 shows a flag icon, so check it is not already in use)."
     },
     {
       "id": "terror-call-diana",
-      "priority": 5,
+      "priority": 3,
       "type": "Marches",
       "what": "Terror rallies you call: a Terror preset with Howard, Jabel and Diana (50 / 20 / 30)",
       "why": "The player who calls a rally pays its stamina, and a beast-hunting guide says to keep Diana in the caller's formation for her stamina cut (Iron Constitution, −18% at Lv. 4). A march takes one hero per troop type, so Diana (Archer) takes Quinn's place: as the leader you keep Howard's and Jabel's skills but lose Quinn's Sixth Sense (−12% damage taken) and Precision Shot. Troops: 50 / 20 / 30, the guides' split for Terror rallies. For Bear Hunt, keep Att: a Bear Hunt guide says not to use Diana there.",
@@ -399,7 +273,7 @@
         }
       ],
       "steps": [
-        "Deploy → a free preset: Howard (lead), Jabel and Diana; troops 44,440 / 17,776 / 26,664; name it Terror.",
+        "Deploy → tab 5 or 6: Howard (lead), Jabel and Diana; troops 44,440 / 17,776 / 26,664; name it Terror.",
         "Call Terror rallies with it and check the stamina cost shown before confirming.",
         "Diana is also in Be, so Be cannot be out at the same time."
       ],
@@ -426,21 +300,21 @@
       "note": "Verified: Diana's skill text and the guides' text. Unverified: that her stamina cut applies to Terror rallies (her skill says \"on beast hunts\"; the guide is about a beast-hunting event), and how much Quinn's skills matter against a Terror. Inferred: Howard as lead, as in Att."
     },
     {
-      "id": "greaves-to-forrest",
-      "priority": 6,
+      "id": "greaves-to-helga",
+      "priority": 4,
       "type": "Gear",
-      "what": "Gear: give the Stonewall Greaves +24 (now on Seth) to Forrest for the Be march, or to Helga if she replaces Forrest",
-      "why": "Howard took Seth's Epic Praetorian's Greaves on 5 Nov, so Howard's old Rare Stonewall Greaves +24 now sit on Seth, a gathering hero in no combat line-up. Forrest, the infantry hero in the Be march, wears a +17 pair; swapping the two pairs moves +4,550 gear power and +0.98% Infantry Lethality to a hero who fights. If Helga replaces Forrest in Be (see that suggestion), give the +24 pair to Helga instead (her Stonewall Greaves are +8). A small gain, but it costs nothing.",
+      "what": "Gear: give the Stonewall Greaves +24 (now on Seth) to Helga, who took Forrest's place in Be",
+      "why": "Howard took Seth's Epic Praetorian's Greaves on 5 Nov, so Howard's old Rare Stonewall Greaves +24 sit on Seth, a gathering hero in no combat line-up. Helga, the Infantry hero in Be since 5 Nov, wears a Stonewall Greaves +8 pair; swapping the two pairs moves +9,680 gear power and +2.24% Infantry Lethality to a hero who fights. A small gain, but it costs nothing.",
       "changes": [
         {
-          "where": "Forrest's boots",
+          "where": "Helga's boots",
           "before": [
-            "Stonewall Greaves (Rare +17)"
+            "Stonewall Greaves (Rare +8)"
           ],
           "after": [
             "Stonewall Greaves (Rare +24)"
           ],
-          "note": "Gear power 112,460 → 117,010 (+4,550); Infantry Lethality 16.76% → 17.74%"
+          "note": "Gear power 107,845 → 117,525 (+9,680); Infantry Lethality 18.22% → 20.46%"
         },
         {
           "where": "Seth's boots",
@@ -448,19 +322,18 @@
             "Stonewall Greaves (Rare +24)"
           ],
           "after": [
-            "Stonewall Greaves (Rare +17)"
+            "Stonewall Greaves (Rare +8)"
           ],
-          "note": "Gear power 145,110 → 140,560 (−4,550); Seth is in no combat line-up"
+          "note": "Gear power 145,110 → 135,430 (−9,680); Seth is in no combat line-up"
         }
       ],
       "steps": [
-        "Forrest → Gear → Boots → Swap: pick Seth's Stonewall Greaves (+24); Seth takes Forrest's +17 pair."
+        "Helga → Gear → Boots → Swap: pick Seth's Stonewall Greaves (+24); Seth takes Helga's +8 pair."
       ],
       "evidence": [
         "Gear screens later on 5 Nov: Howard Helm, Gloves, Shroud +21 and Praetorian's Greaves +20 (Epic); Seth Helm, Gloves, Shroud +20 (Epic) and Stonewall Greaves +24 (Rare)",
-        "Stonewall Greaves +24: 28,560 power, ATK +68 / HP +666, +9.36% Infantry Lethality (Howard's 5 Nov gear screen); +17: 24,010, +8.38% (Forrest's)",
-        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460",
-        "kingshotmastery.com reforge guide (2026-10-29): \"Hero Gear belongs to a troop type… Its Enhancement and Mastery stay on the item.\" (the Stonewall Greaves are Infantry gear; Seth, Forrest and Helga are Infantry)"
+        "hero.md Helga's gear of 5 Nov: Stonewall Greaves Rare +8 (18,880; +7.12% Infantry Lethality); gear power 107,845; Infantry Lethality +18.22%",
+        "troops.md Be preset, latest on 5 Nov: Diana, Gordon, Helga"
       ],
       "cost": "None (a swap)",
       "confidence": [
@@ -469,11 +342,109 @@
         "Unverified"
       ],
       "heroes": [
-        "Howard",
-        "Forrest",
-        "Seth"
+        "Helga",
+        "Seth",
+        "Howard"
       ],
-      "note": "Verified: the pieces and their + levels on the 5 Nov Gear screens; the + level stays with a piece when it is moved. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights."
+      "note": "Verified: the pieces and their + levels on the 5 Nov Gear screens; the + level stays with a piece when it is moved (also a guide: \"Its Enhancement and Mastery stay on the item\"). Inferred: gear on a gathering hero matters less than on a hero who fights. Unverified: how much gear on a non-lead hero counts in a solo march."
+    },
+    {
+      "id": "join-bear-troops",
+      "priority": 5,
+      "type": "Marches",
+      "what": "Join preset: before a Bear Hunt join, switch the troops to mostly Archers",
+      "why": "Your Join preset (Chenko leading, Helga, Yeonwoo) was saved on 5 Nov with 50 / 20 / 30, the guides' split for Terror and other rallies, so it is ready for those. For Bear Hunt, guides give a joiner an Archer-heavy march (10 / 10 / 80 in two guides, 10 / 30 / 60 for Generation 1 heroes in a third) and say a full march matters more than the exact ratio. You have 43,843 Archers, less than 60% of 88,880, so the Bear Hunt split keeps 10% Infantry, sends every Archer and fills the rest with Cavalry.",
+      "changes": [
+        {
+          "where": "Join troops for a Bear Hunt join (88,880)",
+          "before": [
+            "Infantry 44,440 (50%)",
+            "Cavalry 17,776 (20%)",
+            "Archers 26,664 (30%)"
+          ],
+          "after": [
+            "Infantry 8,888 (10%)",
+            "Cavalry 36,149 (41%)",
+            "Archers 43,843 (49%)"
+          ],
+          "note": "Keep the saved 50 / 20 / 30 for Terror joins; change it on the Deploy screen before a Bear Hunt join, or save the Bear version in tab 5 or 6"
+        }
+      ],
+      "steps": [
+        "Before joining a Bear Hunt rally: Deploy → Joi → 8,888 Infantry, 36,149 Cavalry and 43,843 Archers (all your Archers) → send.",
+        "For Terror and other rallies, keep the saved 50 / 20 / 30.",
+        "If another march is out, keep about 10% Infantry, send every free Archer and fill the rest with Cavalry."
+      ],
+      "evidence": [
+        "troops.md Join preset (later on 5 Nov): Chenko (lead), Helga, Yeonwoo; 44,440 / 17,776 / 26,664 (50 / 20 / 30); 88,880 / 88,880; power 17,132,030",
+        "troops.md, Deploy screens later on 5 Nov: 46,137 Infantry, 46,961 Cavalry and 43,843 Archers available",
+        "kingshotworld.com Bear Hunt teams (updated 2026-07-30), Recommended Joiner Troop Formation: \"Infantry: 10% Cavalry: 10% Archers: 80%\"; \"a full march, and fast rally timing usually matter more than making small changes to the troop ratio\"",
+        "kingshotguides.com troop setup guide (2025-08-19): \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"; \"players who send 100% Archers often do less damage than players who send 80% Archers but keep at least 10% Infantry and 10% Cavalry\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1 | 10% | 30% | 60% | Cavalry heroes have the strongest stats at this stage\""
+      ],
+      "cost": "None (a troop change)",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Chenko",
+        "Helga",
+        "Yeonwoo"
+      ],
+      "note": "Verified: your Join preset, its troops and your troop counts (5 Nov). Inferred: the Bear Hunt split (Cavalry fills what the Archers cannot). Unverified: the ratios (the guides differ for Bear Hunt) and whether the rally leader's per-joiner cap lets a full 88,880 in. Helga is also in Be since 5 Nov: when Be is out, put Forrest in Join's Infantry place (a joiner's second and third heroes only add troops)."
+    },
+    {
+      "id": "be-helga-check",
+      "priority": 6,
+      "type": "Marches",
+      "what": "Be march: check beast-hunt losses with Helga against your earlier hunts with Forrest",
+      "why": "Helga took Forrest's place in Be on 5 Nov, as suggested: Forrest's skills only help wood, while Helga adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (306,455 against 438,984), so the swap still needs checking in real hunts. The Be troops changed at the same time, from 35 / 20 / 45 to 50 / 20 / 30; no guide read on 5 Nov gives a troop split for solo beast hunts, so if losses change it is not clear which change caused it.",
+      "changes": [
+        {
+          "where": "Be march (5 Nov)",
+          "before": [
+            "Diana (lead)",
+            "Gordon",
+            "Forrest"
+          ],
+          "after": [
+            "Diana (lead)",
+            "Gordon",
+            "Helga"
+          ],
+          "note": "Troops 35 / 20 / 45 before, 50 / 20 / 30 now"
+        }
+      ],
+      "steps": [
+        "Hunt the same beast level as before and note the troops lost.",
+        "Compare with earlier hunts; if losses are higher, change one thing back at a time (first the troops, then the hero).",
+        "Helga is also in Join: when Be is out, put Forrest (now free) in Join's Infantry place."
+      ],
+      "evidence": [
+        "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2, both capped until her 2★; 5 Nov), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
+        "Hero power: Helga 306,455, Forrest 438,984 (both 5 Nov, hero.md)",
+        "heaven-guardian.com Diana guide (2026-10-03): \"Diana must be part of the march for the skill to apply\" (the lead place is not said to be needed); none of the guides read on 5 Nov gives a reason to bring Forrest, a wood-gathering hero, on beast hunts",
+        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\"",
+        "heaven-guardian.com beast-hunting event guide (2026-10-03): \"Add Diana to the hunting or rally-calling formation.\"",
+        "heaven-guardian.com Helga guide (2026-10-03): \"Helga's Expedition skills affect the squads in her march.\"",
+        "heaven-guardian.com Fahd guide (2026-10-03): \"Solo hunting is Fahd’s strongest long-term specialist role.\"",
+        "troops.md Be preset, latest on 5 Nov: Diana (lead), Gordon, Helga; 44,440 / 17,776 / 26,664 (50 / 20 / 30); 88,880; power 17,573,191 (18,412,570 with Forrest and 35 / 20 / 45 earlier that day)"
+      ],
+      "cost": "None (a check)",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Helga",
+        "Forrest",
+        "Diana",
+        "Gordon"
+      ],
+      "note": "Verified: the preset and the skill texts. Unverified: whether a hero's skills or raw power matter more against beasts, and the best troop split for solo beast hunts (no guide found). Inferred: changing one thing back at a time to find the cause. One guide says Gordon's Trash Talk only counts when he leads; Diana leads Be."
     },
     {
       "id": "guard-station-heroes",
