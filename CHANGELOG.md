@@ -856,6 +856,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   11,942,479 → 12,464,731, bread 65.4M → 96.1M, gems 24,421, VIP 3 re-confirmed. The Features note is updated.
 
 ### Removed
+- `data/manual.json`: card `conquest-306-swap`, done. The Squad Settings screen at Conquest stage 317 (5 Nov) shows
+  Chenko and Howard in front and Jabel, Diana and Quinn behind (3,184,803 against the enemy's 3,681,511).
 - The Player ID, from `README.md` (the `profile.md` description) and from `profile.md` (the "Player ID" row).
   It remains in the git history of earlier commits.
 - The governor name, from `profile.md` (the "Governor Name" row, now optional for the generator),
