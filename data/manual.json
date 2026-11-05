@@ -39,14 +39,17 @@
       "20": 54,
       "21": 59,
       "22": 64,
-      "25": 79
+      "23": 69,
+      "24": 74,
+      "25": 79,
+      "26": 80
     },
-    "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 and 25 Oct and 5 Nov) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 and 25 Oct). A hero removed from Drill Camp returns to its own level (community sources).",
+    "drillCamp": "Slotted heroes auto-level to the lowest of the 5 instructors' levels (in-game text, 22 and 25 Oct and 5 Nov) and use no XP. Level Resets set a hero to Lv 1 and refund all their Hero XP (in-game text, 22 and 25 Oct). A hero removed from Drill Camp returns to its own level (kingshotguides.com Drill Camp guide, 2025-03-25).",
     "oneMarchPerHero": "A hero can be in only one march at a time.",
     "skillBooks": {
-      "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill. Each rarity has its own books: Epic heroes share Epic books, Mythic heroes share Mythic books, so books spent on one Epic hero are gone for every other Epic hero. Book type names are read from the icons.",
-      "source": "You, 25 Oct",
-      "confidence": "Verified"
+      "text": "Skill book counts (a/b on a skill's Upgrade button) are your shared stock of that book type, not progress saved on that skill. Each rarity has its own books: Epic heroes share Epic books, Mythic heroes share Mythic books, so books spent on one Epic hero are gone for every other Epic hero. Book type names are read from the icons. Which book upgrades which skills comes from a guide, because the screens show only icons: Conquest Skill Books upgrade Conquest skills (Arena and Conquest stages) and Expedition Skill Manuals upgrade Expedition skills (marches and rallies); until 5 Nov the names were swapped here. A skill's level is capped by stars: your screens show the cap is one more than the stars (1★ → Lv 2 … 3★ → Lv 4), and a guide confirms Lv 5 needs 4★.",
+      "source": "You, 25 Oct (shared stock); heaven-guardian.com and kingshotmastery.com, read 5 Nov (book names, Lv 5)",
+      "confidence": "Verified (shared stock, star caps on your screens); Unverified (book names)"
     },
     "gen2Heroes": {
       "serverDay": 50
@@ -132,7 +135,7 @@
       "priority": 1,
       "type": "Marches",
       "what": "Rallies: save the free fourth march preset as \"Join\", led by Chenko, for joining other players' rallies (Terror, Bear)",
-      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known. Troops: for Bear Hunt, guides give a joiner an Archer-heavy march (10% Infantry, 10% Cavalry, 80% Archers in two guides; 10 / 30 / 60 for Generation 1 heroes in a third) and say a full march matters more than the exact ratio. A full Join march holds 88,880 (Chenko, Helga and Yeonwoo add 12,730 each, like your other presets), but you have 43,180 Archers (5 Nov), less than 60%, so the suggestion keeps 10% Infantry, sends every Archer and fills the rest with Cavalry. For Terror, a rally guide gives 50 / 20 / 30.",
+      "why": "A march joining someone else's rally adds only one skill to it: the first (top) expedition skill of its lead hero; its second and third heroes only add troops. The rally leader gets all three skills of each of their heroes. Guides rank Chenko, Yeonwoo and Amane among the best joiners and say Chenko's and Yeonwoo's skills add together when both join the same rally. A joiner's skill reaches its maximum Lv. 5 only once the hero is 4★: Chenko is, while Yeonwoo is 3★ and Amane 2★. Jabel is a poor joiner: her Rally Flag is chance-based, and several Jabels count only once. Chenko's top expedition skill is Stand of Arms, +20% Lethality for all squads since it reached Lv. 4 by 5 Nov (+20% is the old Lv. 4 preview), and she is in none of the Be, Att or Gat presets (5 Nov). Yeonwoo's On Guard gives the same +20% Lethality since it also reached Lv. 4 by 5 Nov (old Lv. 4 preview); Amane's Tri-Phalanx (+15% Attack) stays capped until her 3★. Terror is rally-only, and you have a fourth march queue (4 / 4 on 5 Nov). The Deploy screen shows preset tabs 4, 5 and 6 after Be, Att and Gat; they were not opened, so whether a Join preset already exists is not known. Troops: for Bear Hunt, guides give a joiner an Archer-heavy march (10% Infantry, 10% Cavalry, 80% Archers in two guides; 10 / 30 / 60 for Generation 1 heroes in a third) and say a full march matters more than the exact ratio. A full Join march holds 88,880 (Chenko, Helga and Yeonwoo add 12,730 each, like your other presets), but you have 43,180 Archers (5 Nov), less than 60%, so the suggestion keeps 10% Infantry, sends every Archer and fills the rest with Cavalry. For Terror, a rally guide gives 50 / 20 / 30.",
       "changes": [
         {
           "where": "Fourth march preset (Join)",
@@ -186,7 +189,8 @@
         "kingshotworld.com Bear Hunt teams (updated 2026-07-30), Recommended Joiner Troop Formation: \"Infantry: 10% Cavalry: 10% Archers: 80%\"; \"a full march, and fast rally timing usually matter more than making small changes to the troop ratio\"",
         "kingshotguides.com troop setup guide (2025-08-19): \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"; \"players who send 100% Archers often do less damage than players who send 80% Archers but keep at least 10% Infantry and 10% Cavalry\"",
         "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1 | 10% | 30% | 60% | Cavalry heroes have the strongest stats at this stage\"",
-        "troops.md of 5 Nov: Elite (VIII) Infantry 45,474, Cavalry 46,298, Archers 43,180; Be and Att hold 88,880 with three Lv. 64 heroes; hero.md: Chenko, Helga and Yeonwoo +12,730 troop capacity each"
+        "troops.md of 5 Nov: Elite (VIII) Infantry 45,474, Cavalry 46,298, Archers 43,180; Be and Att hold 88,880 with three Lv. 64 heroes; hero.md: Chenko, Helga and Yeonwoo +12,730 troop capacity each",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"that skill only reaches level 5 — its maximum — once the hero is 4★\"; \"The second and third heroes only add march capacity; their skills do nothing for the rally\""
       ],
       "cost": "None (a preset)",
       "confidence": [
@@ -203,73 +207,132 @@
       "note": "Verified: the skill texts, the free queue, that Terror is rally-only, and the guides' text (pages read on 5 Nov). Unverified: how the 4 counted joiner skills are picked (highest level or the first 4 joiners; sources differ), and how strong +20% Lethality is in a real fight. Inferred: Helga and Yeonwoo in the other two places (they only add troops). If you usually lead the rallies yourself, your Att preset's skills count instead and this matters less. Troops: Verified: your troop stock and hero capacities. Inferred: that the Join march holds 88,880 (not yet seen on its Deploy screen) and the Bear split (Cavalry fills what the Archers can't). Unverified: the ratios (guides differ: 10 / 10 / 80 or 10 / 30 / 60 for Bear) and whether the rally leader's per-joiner cap lets a full 88,880 in."
     },
     {
-      "id": "arena-defense-chenko",
+      "id": "att-troop-split",
       "priority": 2,
-      "type": "Arena",
-      "what": "Arena defense: Chenko in Gordon's front-right place (the same five as your attack squad)",
-      "why": "Community guides give one Generation 1 free-to-play Arena team: Howard and Chenko in front; Diana, Jabel and Quinn behind. That is exactly your attack squad. Your defense squad (recorded 23 Oct) differs in one place: Gordon instead of Chenko. No guide found recommends Gordon for the Arena, and Chenko also has more hero power (582,053 against 539,750 on 5 Nov). The guides also put the main damage dealer in the middle of the back row, ideally an Archer; Diana is already there.",
+      "type": "Troops",
+      "what": "Troops: set Att to 50 / 20 / 30, the guides' split for PvP and rallies",
+      "why": "No guide read on 5 Nov supports your Att split of 50 / 30 / 20. For PvP battles and rallies such as Terror, the guides give 50% Infantry / 20% Cavalry / 30% Archers; that moves 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. For Bear Hunt rallies you lead they want mostly Archers: 10 / 30 / 60 for Generation 1 heroes in one guide, 10 / 10 / 80 in two others (one adds that early players with weaker Archers may do better with a more balanced split). You have 43,180 Archers, less than 60% of 88,880, so the Bear Hunt row keeps 10% Infantry, sends every Archer and fills the rest with Cavalry; it is the same split as the Join preset's, so the two cannot both go at full strength.",
       "changes": [
         {
-          "where": "Arena defense squad",
+          "where": "Att preset troops (88,880)",
           "rows": [
             {
-              "label": "Front",
+              "label": "PvP and rallies",
               "before": [
-                "Howard",
-                "Gordon"
+                "Infantry 44,440 (50%)",
+                "Cavalry 26,664 (30%)",
+                "Archers 17,776 (20%)"
               ],
               "after": [
-                "Howard",
-                "Chenko"
+                "Infantry 44,440 (50%)",
+                "Cavalry 17,776 (20%)",
+                "Archers 26,664 (30%)"
               ]
             },
             {
-              "label": "Back",
-              "before": [
-                "Jabel",
-                "Diana",
-                "Quinn"
-              ],
+              "label": "Bear Hunt (you lead)",
+              "before": [],
               "after": [
-                "Jabel",
-                "Diana",
-                "Quinn"
+                "Infantry 8,888 (10%)",
+                "Cavalry 36,812 (41%)",
+                "Archers 43,180 (49%)"
               ]
             }
           ],
-          "note": "Only the front-right place changes; the squad was last recorded on 23 Oct"
+          "note": "Save the PvP split; change to the Bear Hunt split on the Deploy screen before leading a Bear rally"
         }
       ],
       "steps": [
-        "Arena → Defense line-up → replace Gordon with Chenko (front right) → Save.",
-        "After a few days, compare the defense record with the days before; if it is worse, put Gordon back."
+        "Deploy → Att → troops 44,440 Infantry, 17,776 Cavalry and 26,664 Archers → Save.",
+        "Before leading a Bear Hunt rally, change them to 8,888 / 36,812 / 43,180 (all your Archers); change back after.",
+        "Keep training the three types evenly; more Archers would bring Bear Hunt marches closer to the guides' 60–80%."
       ],
       "evidence": [
-        "heaven-guardian.com Arena guide (2026-09-10): \"Gen 1 | Howard, Chenko / Diana, Jabel, Quinn\"; \"The first two heroes listed belong in the front row, followed by three back-row heroes.\"",
-        "kingshotguides.com early-game Arena guide (published 2025-04-03, updated 2026-05-09): the same five heroes as the F2P team; the main damage dealer goes in \"the middle spot in the backline. Ideally, this should be an Archer hero\"",
-        "allclash.com Arena teams (updated 2026-08-23): \"the best team to run in arena without spending money\" is Howard, Edwin, Diana, Jabel, Chenko (positions shown only as images)",
-        "heaven-guardian.com Jabel guide (2026-10-06): \"Jabel should usually be protected rather than used as your primary front-row tank.\"",
-        "lineups.md Arena squads of 23 Oct: attack Howard, Chenko / Jabel, Diana, Quinn; defense Howard, Gordon / Jabel, Diana, Quinn",
-        "hero.md powers of 5 Nov: Chenko 582,053, Gordon 539,750"
+        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
+        "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
+        "kingshotguides.com troop setup guide (2025-08-19): \"PvP Battles → 50% Infantry, 20% Cavalry, 30% Archers\"; \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"; \"Bear Hunt → 10% Infantry, 10% Cavalry, 80% Archers\"",
+        "heaven-guardian.com troop formation guide (2026-09-10): \"General PvE Rally | 50/20/30\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1: 10/30/60 (Infantry/Cavalry/Archers)\"; F2P host \"Howard · Jabel · Quinn\"",
+        "kingshotworld.com Bear Hunt teams (2026-07-30): \"Early-generation players with weaker Archers may perform better with a more balanced formation.\""
       ],
-      "cost": "None (a line-up change)",
+      "cost": "None for the test (a preset change); training time and resources for more troops (amounts not recorded)",
       "confidence": [
         "Verified",
+        "Inferred",
         "Unverified"
       ],
       "heroes": [
-        "Chenko",
-        "Gordon",
         "Howard",
         "Jabel",
-        "Diana",
         "Quinn"
       ],
-      "note": "Verified: your squads (23 Oct), the hero powers (5 Nov) and the guides' text (pages read on 5 Nov). Unverified: that the guides' team really wins more often; AllClash puts Edwin where the others put Quinn. Gordon was put there on 22 Oct for his healing (BBQ Feast); the game fights Arena defense for you, so the defense record is the only way to check the swap."
+      "note": "Verified: your troop counts, presets and march size (5 Nov), and the guides' text. Inferred: the Bear Hunt row (Cavalry fills what the Archers cannot). Unverified: the ratios are community advice (the guides differ for Bear Hunt), and the best mix depends on the enemy (Infantry beats Cavalry, Cavalry beats Archers, Archers beat Infantry)."
+    },
+    {
+      "id": "gat-match-resource",
+      "priority": 3,
+      "type": "Marches",
+      "what": "Gathering: Olive instead of Amane in Gat, and a Wood preset with Forrest",
+      "why": "A gathering hero's bonus works from any place in the march: guides only say the matching hero must travel with it. A march takes one Infantry, one Cavalry and one Archer hero. Your Gat preset (Seth Infantry, Edwin Cavalry, Amane Archer) already covers iron (Seth +20%) and stone (Edwin +15%), but Amane has no gathering skill. Olive is also an Archer and adds +20% bread, so Gat then covers iron, stone and bread. Wood needs Forrest (+20%), an Infantry hero like Seth, so it needs its own preset with heroes not in Gat.",
+      "changes": [
+        {
+          "where": "Gat preset",
+          "before": [
+            "Seth (lead)",
+            "Edwin",
+            "Amane"
+          ],
+          "after": [
+            "Seth (lead)",
+            "Edwin",
+            "Olive"
+          ],
+          "note": "Send it to iron, stone or bread tiles; same troops and size (Olive and Amane both add 12,730)"
+        },
+        {
+          "where": "Wood preset (new)",
+          "before": [],
+          "after": [
+            "Forrest (lead)",
+            "Fahd",
+            "Amane"
+          ],
+          "note": "Any Cavalry and Archer heroes not in Gat would do; Forrest is also in Be"
+        }
+      ],
+      "steps": [
+        "Deploy → Gat → replace Amane with Olive → Save; send Gat to iron, stone or bread tiles.",
+        "Save a free preset as Wood: Forrest, Fahd and Amane; send it to wood tiles.",
+        "Forrest is also in Be, so Wood cannot go while Be is out (one march per hero), unless Helga replaces him there (see that move)."
+      ],
+      "evidence": [
+        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%; Lv. 3 on his 5 Nov skill screen), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
+        "troops.md Gat preset of 5 Nov: Seth (lead), Edwin, Amane; 45,089 Infantry / 43,321 Cavalry / 0 Archers",
+        "heaven-guardian.com Seth guide (updated 2026-10-10): \"Each Rare Growth hero specializes in one resource\"; \"Include Seth in the formation sent to the Iron tile\" (no slot requirement given)",
+        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\"",
+        "heaven-guardian.com Great Mill guide (2026-10-05): \"The matching hero must be included in the march sent to that resource node.\"",
+        "kingshotmastery.com resource-gathering guide (2026-06-30): \"The hero must travel with the march for that bonus to apply.\"",
+        "Troop type, guides differ: kingshotmastery.com troop formations guide (2026-10-29): \"Hero gathering bonuses are troop-type specific, so sending mismatched troops wastes their stat contribution entirely\"; heaven-guardian.com wood-gathering guide (2026-10-03): \"No troop class has a universal gathering-speed advantage.\""
+      ],
+      "cost": "None (preset changes)",
+      "confidence": [
+        "Verified",
+        "Inferred",
+        "Unverified"
+      ],
+      "heroes": [
+        "Seth",
+        "Edwin",
+        "Olive",
+        "Forrest",
+        "Amane",
+        "Fahd"
+      ],
+      "note": "Verified: the skill texts and hero classes, and the guides' text. Unverified: whether troop type matters for gathering (the guides disagree), so Gat's troops (51% Infantry / 49% Cavalry) stay as they are. Inferred: Fahd and Amane in the Wood preset. With Join, Wood and the Terror preset (see those moves), the three spare tabs (4, 5 and 6) are used, if they are free; they were not opened on 5 Nov."
     },
     {
       "id": "be-swap-forrest",
-      "priority": 3,
+      "priority": 4,
       "type": "Marches",
       "what": "Test a combat hero instead of Forrest in the Be (beast) march",
       "why": "Forrest's two expedition skills only help wood (Woodland Inheritor: sawmill output; Master Woodcutter: wood gathering), so they do nothing in a beast fight. Diana (lead: -18% stamina, +60% hunting march speed) and Gordon (+15% squad Attack and Health) stay. Helga is the closest swap: she is also infantry, so the troop mix stays the same, and she adds Echoes of Valhalla (+10% squad Attack) and Oath of Guardian (16% chance to halve damage taken). Her hero power is lower (306,455 vs Forrest's 438,984 on 5 Nov), so test it before keeping it.",
@@ -298,7 +361,11 @@
         "hero.md expedition skills: Forrest (wood only), Helga (Echoes of Valhalla Lv. 2, Oath of Guardian Lv. 2, both capped until her 2★; 5 Nov), Gordon (Trash Talk, Super Nutrients), Diana (Iron Constitution Lv. 4, Quick Paced)",
         "troops.md Be preset of 5 Nov: Diana (lead), Gordon, Forrest; 31,108 / 17,776 / 39,996 (35 / 20 / 45); 18,227,722 power",
         "Hero power: Helga 306,455, Forrest 438,984 (both 5 Nov, hero.md)",
-        "heaven-guardian.com Diana guide (2026-10-03): \"Diana must be part of the march for the skill to apply\" (the lead place is not said to be needed); none of the guides read on 5 Nov gives a reason to bring Forrest, a wood-gathering hero, on beast hunts"
+        "heaven-guardian.com Diana guide (2026-10-03): \"Diana must be part of the march for the skill to apply\" (the lead place is not said to be needed); none of the guides read on 5 Nov gives a reason to bring Forrest, a wood-gathering hero, on beast hunts",
+        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\"",
+        "heaven-guardian.com beast-hunting event guide (2026-10-03): \"Add Diana to the hunting or rally-calling formation.\"",
+        "heaven-guardian.com Helga guide (2026-10-03): \"Helga's Expedition skills affect the squads in her march.\"",
+        "heaven-guardian.com Fahd guide (2026-10-03): \"Solo hunting is Fahd’s strongest long-term specialist role.\""
       ],
       "cost": "None (a preset change)",
       "confidence": [
@@ -311,57 +378,56 @@
         "Diana",
         "Gordon"
       ],
-      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. Other options if Helga does worse: Fahd (-12% enemy damage dealt; Cavalry like Gordon) or Saul (+6% DEF, +9% HP and +15% Lethality since Positional Battler reached Lv. 3 by 5 Nov; Archer like Diana); whether two heroes of the same class can share a march is not recorded. Link to the gear move: Howard's old Stonewall Greaves (+24) are on Seth since 5 Nov, and that suggestion moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9)."
+      "note": "Verified: the skill texts and the preset. Unverified: whether a hero's skills or raw power matter more against beasts, and whether all three heroes' expedition skills apply in a march. A march takes one Infantry, one Cavalry and one Archer hero, so Helga is your only free Infantry combat hero for Forrest's place (Howard is in Att). Fahd (Cavalry; a guide calls solo hunting his best role) could only replace Gordon, and Saul (Archer) cannot go with Diana. No guide read on 5 Nov says whether Gordon helps on beast hunts. Link to the gear move: Howard's old Stonewall Greaves (+24) are on Seth since 5 Nov, and that suggestion moves them to Forrest because he is in Be. If Helga replaces him, give them to Helga instead: her own Stonewall Greaves are +8 (18,880 power against 28,560; Infantry Lethality 7.12% against 9.36%; 5 Nov), and her other three pieces are Epic (Helm +10, Gloves +10, Shroud +9). One guide says Gordon's Trash Talk only counts when he leads; Diana leads Be, so only his other skill may apply there (unverified)."
     },
     {
-      "id": "gat-match-resource",
-      "priority": 4,
+      "id": "terror-call-diana",
+      "priority": 5,
       "type": "Marches",
-      "what": "Gathering: lead with the hero whose skill matches the resource",
-      "why": "Each gathering skill names one resource: Seth +20% iron, Edwin +15% stone, Forrest +20% wood, Olive +20% bread (wilderness gathering speed). The Gat preset (Seth lead, Edwin, Amane) only helps iron and stone, and Amane has no gathering skill (her expedition skills are Tri-Phalanx and Exorcism). With 4 march queues, one preset per resource would cover every tile type.",
+      "what": "Terror rallies you call: a Terror preset with Howard, Jabel and Diana (50 / 20 / 30)",
+      "why": "The player who calls a rally pays its stamina, and a beast-hunting guide says to keep Diana in the caller's formation for her stamina cut (Iron Constitution, −18% at Lv. 4). A march takes one hero per troop type, so Diana (Archer) takes Quinn's place: as the leader you keep Howard's and Jabel's skills but lose Quinn's Sixth Sense (−12% damage taken) and Precision Shot. Troops: 50 / 20 / 30, the guides' split for Terror rallies. For Bear Hunt, keep Att: a Bear Hunt guide says not to use Diana there.",
       "changes": [
         {
-          "where": "Gathering presets",
-          "before": [
-            "Gat: Seth (lead), Edwin, Amane"
-          ],
+          "where": "Terror preset (new)",
+          "before": [],
           "after": [
-            "Iron: Seth (lead)",
-            "Stone: Edwin (lead)",
-            "Wood: Forrest (lead)",
-            "Bread: Olive (lead)"
+            "Howard (lead)",
+            "Jabel",
+            "Diana"
           ],
-          "note": "Forrest is also in Be; a hero can be in only one march at a time (community rule, Unverified), so don't send both at once"
+          "note": "Troops 44,440 Infantry / 17,776 Cavalry / 26,664 Archers (88,880)"
         }
       ],
       "steps": [
-        "Deploy → Gat: keep it for iron (Seth leads).",
-        "Save two of the free presets (4, 5 or 6; their contents were not shown on 5 Nov) with Edwin (stone) and Olive (bread) as leads.",
-        "For wood, put Forrest in front when the Be march is home."
+        "Deploy → a free preset: Howard (lead), Jabel and Diana; troops 44,440 / 17,776 / 26,664; name it Terror.",
+        "Call Terror rallies with it and check the stamina cost shown before confirming.",
+        "Diana is also in Be, so Be cannot be out at the same time."
       ],
       "evidence": [
-        "hero.md expedition skills: Seth Craftsmanship Lv. 4 (+20% iron), Edwin Stone Mining Lv. 3 (+15%; Lv. 3 on his 5 Nov skill screen), Forrest Master Woodcutter Lv. 4 (+20%, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon), Olive Forager's Luck Lv. 4 (+20% bread, the old Lv. 4 preview; Lv. 4 on the 5 Nov skill icon)",
-        "troops.md Gat preset of 5 Nov: Seth (lead), Edwin, Amane; 45,089 Infantry / 43,321 Cavalry / 0 Archers",
-        "troops.md: March Queue 4/4 (5 Nov)",
-        "heaven-guardian.com Seth guide (updated 2026-10-10): \"Each Rare Growth hero specializes in one resource\"; \"Include Seth in the formation sent to the Iron tile\" (no slot requirement given)"
+        "heaven-guardian.com beast-hunting event guide (2026-10-03): \"Keep Diana in the caller formation The rally caller pays the stamina and needs the reduction.\"",
+        "hero.md: Diana's Iron Constitution Lv. 4, \"Reduces Governor Stamina Cost by 18% on beast hunts\"; Quinn's Sixth Sense and Precision Shot Lv. 3",
+        "kingshotmastery.com troop formations guide (2026-10-29): \"A map march accepts one Infantry, one Cavalry, and one Archer hero.\"",
+        "kingshotguides.com troop setup guide (2025-08-19): \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"don't use Diana even if she looks strong on paper\"",
+        "troops.md: Terror (Alpha Black Panther) is rally-only; the highest Terror the account can take is Lv 4"
       ],
-      "cost": "None (preset changes)",
+      "cost": "None (a preset)",
       "confidence": [
         "Verified",
+        "Inferred",
         "Unverified"
       ],
       "heroes": [
-        "Seth",
-        "Edwin",
-        "Forrest",
-        "Olive",
-        "Amane"
+        "Diana",
+        "Howard",
+        "Jabel",
+        "Quinn"
       ],
-      "note": "Verified: the skill texts name one resource each. Unverified: whether only the lead hero's gathering skill applies or all three, and how much troop count changes gathering speed or load. With the Join preset (see the rally move) this fills all three spare tabs (4, 5 and 6), if they are free; they were not opened on 5 Nov."
+      "note": "Verified: Diana's skill text and the guides' text. Unverified: that her stamina cut applies to Terror rallies (her skill says \"on beast hunts\"; the guide is about a beast-hunting event), and how much Quinn's skills matter against a Terror. Inferred: Howard as lead, as in Att."
     },
     {
       "id": "greaves-to-forrest",
-      "priority": 5,
+      "priority": 6,
       "type": "Gear",
       "what": "Gear: give the Stonewall Greaves +24 (now on Seth) to Forrest for the Be march, or to Helga if she replaces Forrest",
       "why": "Howard took Seth's Epic Praetorian's Greaves on 5 Nov, so Howard's old Rare Stonewall Greaves +24 now sit on Seth, a gathering hero in no combat line-up. Forrest, the infantry hero in the Be march, wears a +17 pair; swapping the two pairs moves +4,550 gear power and +0.98% Infantry Lethality to a hero who fights. If Helga replaces Forrest in Be (see that suggestion), give the +24 pair to Helga instead (her Stonewall Greaves are +8). A small gain, but it costs nothing.",
@@ -393,7 +459,8 @@
       "evidence": [
         "Gear screens later on 5 Nov: Howard Helm, Gloves, Shroud +21 and Praetorian's Greaves +20 (Epic); Seth Helm, Gloves, Shroud +20 (Epic) and Stonewall Greaves +24 (Rare)",
         "Stonewall Greaves +24: 28,560 power, ATK +68 / HP +666, +9.36% Infantry Lethality (Howard's 5 Nov gear screen); +17: 24,010, +8.38% (Forrest's)",
-        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460"
+        "Forrest's gear screens of 5 Nov: Stonewall Greaves Rare +17 (24,010; +8.38% Infantry Lethality); gear power 112,460",
+        "kingshotmastery.com reforge guide (2026-10-29): \"Hero Gear belongs to a troop type… Its Enhancement and Mastery stay on the item.\" (the Stonewall Greaves are Infantry gear; Seth, Forrest and Helga are Infantry)"
       ],
       "cost": "None (a swap)",
       "confidence": [
@@ -407,52 +474,6 @@
         "Seth"
       ],
       "note": "Verified: the pieces and their + levels on the 5 Nov Gear screens; the + level stays with a piece when it is moved. Inferred: gear on a gathering hero (Seth) matters less than on a hero who fights."
-    },
-    {
-      "id": "att-troop-mix-test",
-      "priority": 6,
-      "type": "Troops",
-      "what": "Troops: optionally test the guides' 50 / 20 / 30 in the Att preset",
-      "why": "By 5 Nov all troops are Tier VIII (Elite): Infantry 45,474 (33.7%), Cavalry 46,298 (34.3%), Archers 43,180 (32.0%), 134,952 in all. A full march holds 88,880; your Att preset is 44,440 Infantry, 26,664 Cavalry and 17,776 Archers (50 / 30 / 20). Community guides most often give 50% Infantry / 20% Cavalry / 30% Archers for attacks and rallies (some say 45 / 25 / 30). Your 30% Cavalry may suit Att, because Jabel, a Cavalry hero, is its strongest hero (inferred); the guides' mix would move 8,888 from Cavalry to Archers, where Quinn's Archer bonuses apply. Neither choice is shown to be better in the game.",
-      "changes": [
-        {
-          "where": "Att preset troops (optional test)",
-          "before": [
-            "50% Infantry (44,440)",
-            "30% Cavalry (26,664)",
-            "20% Archers (17,776)"
-          ],
-          "after": [
-            "50% Infantry (44,440)",
-            "20% Cavalry (17,776)",
-            "30% Archers (26,664)"
-          ],
-          "note": "Full march 88,880 (5 Nov); Infantry unchanged"
-        }
-      ],
-      "steps": [
-        "Optional: set Att to 50 / 20 / 30 for a few similar fights, compare troop losses, and set it back to 50 / 30 / 20 if it does worse (the spare tabs 4–6 would hold the Join, Stone and Bread presets).",
-        "Keep training the three types evenly so a 50% Infantry march stays possible as the march size grows."
-      ],
-      "evidence": [
-        "troops.md Troops Preview of 5 Nov: Elite (VIII) 45,474 / 46,298 / 43,180; march capacity 88,880",
-        "troops.md Att preset of 5 Nov: 44,440 / 26,664 / 17,776 (50 / 30 / 20); Howard (lead), Jabel, Quinn",
-        "Community formation guides (kingshotmastery.com, kingshot.net, kingshotguide.org): 50 / 20 / 30 for attacks and rallies (some say 45 / 25 / 30), about 60 / 20 / 20 for city defense",
-        "kingshotguides.com troop setup guide (2025-08-19): \"Rallies (Terrors, Desert Trial, Cesare's Fury) → 50% Infantry, 20% Cavalry, 30% Archers\"; \"The 50:20:30 setup works really well up until Gen 3\"",
-        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Gen 1: 10/30/60 (Infantry/Cavalry/Archers)\"; F2P host \"Howard · Jabel · Quinn\""
-      ],
-      "cost": "None for the test (a preset change); training time and resources for more troops (amounts not recorded)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Howard",
-        "Jabel",
-        "Quinn"
-      ],
-      "note": "Verified: your troop counts, tier, preset and march size (5 Nov). Inferred: that Jabel's Cavalry bonuses favour more Cavalry in Att. Unverified: the ratios are community guidance, not game text, and the best mix depends on the enemy (guides say Infantry beats Cavalry, Cavalry beats Archers and Archers beat Infantry). Bear Hunt is different: kingshotmastery.com gives 10 / 30 / 60 for a Generation 1 rally host, with Howard, Jabel and Quinn (your Att heroes) as the host team for players who don't spend."
     },
     {
       "id": "guard-station-heroes",
@@ -472,7 +493,8 @@
         "Same page, the author's reply (2025-09-03): \"Barricades aren't used in Viking's Vengeance or PvP; they're only for tower defense against NPCs… what really matters are the heroes you place in the Guard Station.\"",
         "heaven-guardian.com garrison guide (2026-09-14): \"Gen 1 | Jabel, Saul\"",
         "hero.md expedition skills: Jabel Rally Flag Lv. 4; Howard Defenders' Edge and Weaken Lv. 4; Quinn Sixth Sense and Precision Shot Lv. 3; Diana Iron Constitution and Quick Paced (beast hunts only)",
-        "hero.md powers of 5 Nov: Jabel 764,215, Diana 635,778, Quinn 597,520, Howard 591,419 (before the boots swap)"
+        "hero.md powers of 5 Nov: Jabel 764,215, Diana 635,778, Quinn 597,520, Howard 591,419 (before the boots swap)",
+        "heaven-guardian.com Guard Station guide (2026-10-03): \"Early kingdoms can use: Jabel: Defender Lethality through her exclusive Expedition skill\" (its other early picks, Hilde and Saul: Hilde is not owned)"
       ],
       "cost": "None (a line-up change)",
       "confidence": [
@@ -487,7 +509,7 @@
         "Diana",
         "Saul"
       ],
-      "note": "Verified: the skill texts, the powers and the guides' text (pages read on 5 Nov). Inferred: that Diana adds little to city defense. Unverified: whether heroes out on a march still defend the city (Jabel, Howard and Quinn are also your Att rally team)."
+      "note": "Verified: the skill texts, the powers and the guides' text (pages read on 5 Nov). Inferred: that Diana adds little to city defense. Unverified: whether heroes out on a march still defend the city (guides say to keep them at home; no page read says what happens otherwise) (Jabel, Howard and Quinn are also your Att rally team)."
     },
     {
       "id": "epic-shards-amane",
@@ -511,7 +533,9 @@
         "Yeonwoo's promotion screen of 5 Nov: 3-Star (Tier 0), 13 / 40, Redeem 24; preview +18,880 / +4.51%",
         "Fahd's promotion screen of 5 Nov: 3-Star (Tier 0), 17 / 40, Redeem 24; preview +18,880 / +4.51%",
         "Amane's promotion screen of 5 Nov: 2-Star (Tier 5), 20 / 40, Redeem 24; preview +21,920 / +5.80%; Tri-Phalanx and Exorcism need 3★ for Lv. 4 (hero.md)",
-        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"Best S+ joiner pool: Chenko, Amadeus, Yeonwoo, Amane…\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"that skill only reaches level 5 — its maximum — once the hero is 4★\"; Amane's skills are capped at Lv. 3 until her 3★ (her 5 Nov skill screen)"
       ],
       "cost": "Epic shards only",
       "confidence": [
@@ -529,27 +553,30 @@
         "Howard",
         "Diana"
       ],
-      "note": "Verified: the shard counts, the Redeem stock and the preview gains. Inferred: Amane first because she is the nearest step. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save for her instead: she needs 68."
+      "note": "Verified: the shard counts, the Redeem stock and the preview gains. Inferred: Amane first because she is the nearest step. Unverified: that one Redeem shard gives one hero shard. If Quinn matters more to you (Att, both Arena squads, Barricade 1), save for her instead: she needs 68. No guide found compares Amane's 3★ with Quinn's Tier 2 directly."
     },
     {
       "id": "mythic-shards-jabel",
       "priority": 9,
       "type": "Promotion",
-      "what": "Mythic shards: save them for Jabel's 4★",
+      "what": "Mythic shards: Jabel's 4★ from her own shards; save the general Mythic shards for a Generation 2 hero",
       "ready": false,
-      "waitingFor": "Jabel needs 64 more shards (36 / 100); you have 36 Mythic Redeem shards (5 Nov)",
-      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1). Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap (\"ascend to 4-Star\"), and presumably the caps on Persistence and Youthful Rage too (inferred). The 36 Mythic Redeem shards are not enough yet, so keep them for her rather than Helga (0 / 5) or Saul (2★ Tier 5, 0 / 40 to 3★), who are in no line-up.",
+      "waitingFor": "Jabel needs 64 more of her own shards (36 / 100); general Mythic shards: 36 of the 465 the guide says to save (5 Nov)",
+      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and a guide calls her \"the only Generation 1 mythic a free-to-play player can fully build\". Her 4★ adds +46,700 base power and lifts Gallant Throw's Lv. 4 cap. A 2025 guide says to save all general Mythic shards until you have 465, enough to take a Generation 2 Mythic from the Hall of Heroes to 4★ (it names Marlin), so this plan builds Jabel from her own shards. General Mythic shards cannot be used on Helga at all.",
       "steps": [
-        "Keep the 36 Mythic Redeem shards and new ones; don't spend them on Helga or Saul.",
-        "When Jabel's shards plus the Redeem stock reach 100, Redeem and Ascend her to 4★.",
-        "Helga (0 / 5) and Saul (0 / 40 to 3★) only after Jabel's 4★."
+        "Put Jabel's own shards toward her 4★ and Ascend her at 100.",
+        "Keep the 36 general Mythic (Redeem) shards; when a Generation 2 Mythic appears in the Hall of Heroes, spend them there.",
+        "If you want Jabel's 4★ sooner instead, the 36 general shards would cover 36 of her 64 (one-for-one is not confirmed)."
       ],
       "evidence": [
         "Jabel's promotion screen of 5 Nov: 3-Star (Tier 5), 36 / 100, Redeem 36 (Mythic); preview +46,700; Gallant Throw says \"ascend to 4-Star\"",
         "Saul's promotion screen of 5 Nov: 2-Star (Tier 5), 0 / 40, Redeem 36 (Mythic); preview +27,400 / +8.29%",
         "hero.md: Helga 0 / 5 shards (5 Nov)",
         "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
-        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)",
+        "kingshot.net Jabel page (no date): \"Jabel is the only Generation 1 mythic a free-to-play player can fully build\"",
+        "kingshotguides.com F2P march and rally guide (May 2025): \"You should save all your Mythic General Shards until you have at least 465. That’s enough to take a hero from Hall of Heroes to 4 stars—and the best choice for that is Marlin in Gen 2.\"",
+        "heaven-guardian.com hero shards guide (2026-11-05): \"Mythic General Hero Shards cannot be converted for Helga.\""
       ],
       "cost": "Mythic shards only",
       "confidence": [
@@ -562,7 +589,7 @@
         "Helga",
         "Saul"
       ],
-      "note": "Verified: the shard counts, the Redeem stock and the +46,700 preview. Inferred: that her 4★ also lifts the Persistence and Youthful Rage caps. Unverified: that one Redeem shard gives one hero shard."
+      "note": "Verified: your shard counts and the guides' text. Unverified: the advice to save general shards (one guide from 2025, older than most sources) and that one general shard gives one hero shard. Inferred: following it on your account; Generation 2 had not reached your kingdom by 28 Oct."
     },
     {
       "id": "rare-shards-olive",
@@ -582,7 +609,9 @@
         "Olive's promotion screen of 5 Nov: 3-Star (Tier 5), 76 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
         "Seth's promotion screen of 5 Nov: 3-Star (Tier 5), 39 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
         "Forrest's promotion screen of 5 Nov: 3-Star (Tier 5), 59 / 100, Redeem 4 (Rare); preview +30,355 / +5.22%",
-        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)"
+        "Shared Redeem stock per rarity confirmed by you on 27 Oct (rules.redeemShards)",
+        "kingshot.net Olive page (no date): \"Green Thumb raises your Town's Mill Output whether or not she is deployed, so her stars keep paying off\"",
+        "kingshotguides.com early expedition skills guide (2026-05-07): \"focus on upgrading Forrest and Olive first\""
       ],
       "cost": "Rare shards only",
       "confidence": [
@@ -599,26 +628,29 @@
       "note": "Verified: the shard counts, the Redeem stock and the preview gains. Inferred: Olive first because she is the closest. Unverified: that one Redeem shard gives one hero shard. Choose Forrest (59 / 100) instead if the Be march matters more to you; if Helga replaces him in Be, that reason goes away."
     },
     {
-      "id": "expedition-manuals-howard",
+      "id": "conquest-books-howard",
       "priority": 11,
       "type": "Skills",
-      "what": "Epic Expedition Manuals: save 50 for Howard's Joint Defense (Lv. 3 → 4)",
+      "what": "Epic Conquest Books (Arena skills): save 50 for Howard's Joint Defense (Lv. 3 → 4)",
       "ready": false,
-      "waitingFor": "21 more Epic Expedition Manuals: 50 needed, 29 in stock (5 Nov)",
-      "why": "Expedition Manuals upgrade Arena (exploration) skills and are one shared stock, so each 50 buys one Lv. 3 → 4 upgrade for one hero. Joint Defense raises Defense for all heroes from 10% to 12.5%, and Howard is in the front of both Arena squads. His Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75).",
+      "waitingFor": "21 more Epic Conquest Books: 50 needed, 29 in stock (5 Nov)",
+      "why": "Conquest Skill Books upgrade Conquest skills, the ones used in Arena battles and Conquest stages. They are one shared stock, so each 50 buys one Lv. 3 → 4 upgrade for one hero. (These were called Expedition Manuals here until 5 Nov: your screens show only icons, and a guide gives the names the other way round.) Joint Defense raises Defense for all heroes from 10% to 12.5%, and Howard is in the front of both Arena squads; his Shielded Strike reached Lv. 4 by 5 Nov (Lv. 5 costs 75). Guides give Quinn's Arena order as Headshot first and Diana's as Incendiary Arrows first, so those come next.",
       "steps": [
-        "Keep the 29 Epic Expedition Manuals until you have 50.",
+        "Keep the 29 Epic Conquest Books until you have 50.",
         "Then Howard · Joint Defense (all heroes +10% → +12.5% Defense; front of both Arena squads).",
         "After that: Quinn · Headshot (Attack × 480% → 520%), then Diana · Incendiary Arrows (250% → 270%, AoE 84% → 91%); both are in the back of both Arena squads."
       ],
       "evidence": [
         "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
-        "Epic Expedition Manuals 29 on the 5 Nov skill screens of Howard (29 / 75), Diana, Quinn, Chenko, Gordon, Yeonwoo and Fahd (29 / 50 each)",
+        "The Epic book stock (29) on the 5 Nov Arena skill screens of Howard (29 / 75), Diana, Quinn, Chenko, Gordon, Yeonwoo and Fahd (29 / 50 each)",
         "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
         "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
-        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)",
+        "heaven-guardian.com Quinn guide (2026-10-03): \"Epic Conquest Skill Books: Upgrade Headshot, Quick Shot, and Natural Selection. Epic Expedition Skill Manuals: Upgrade Sixth Sense and Precision Shot.\"; \"Conquest skills are used in Conquest stages and Arena battles. Expedition skills affect marches, rallies, wilderness battles, and other troop-based combat.\"",
+        "heaven-guardian.com Quinn guide (2026-10-03): \"Conquest: Headshot → Natural Selection → Quick Shot\"",
+        "heaven-guardian.com Diana guide (2026-10-03): \"Incendiary Arrows first\""
       ],
-      "cost": "50 Epic Expedition Manuals",
+      "cost": "50 Epic Conquest Books",
       "confidence": [
         "Verified",
         "Inferred",
@@ -629,63 +661,67 @@
         "Quinn",
         "Diana"
       ],
-      "note": "Verified: the stock, the cost, the skill texts and the line-ups. Inferred: the order (skills that help every hero, on heroes in the most line-ups, first). Unverified: how much each percentage changes a fight."
+      "note": "Verified: the stock, the costs, the skill texts and the line-ups. Unverified: the book names (from a guide; your screens show only icons) and the guides' skill orders. Inferred: Joint Defense first, because it helps every hero (no guide found compares it with Howard's Shielded Strike)."
     },
     {
-      "id": "conquest-books-gordon",
+      "id": "expedition-manuals-quinn",
       "priority": 12,
       "type": "Skills",
-      "what": "Epic Conquest Books: next 50 to Gordon's Trash Talk (Lv. 3 → 4)",
+      "what": "Epic Expedition Manuals (march skills): next 50 to Quinn's Precision Shot (Lv. 3 → 4)",
       "ready": false,
-      "waitingFor": "50 Epic Conquest Books; your stock was not read after Weaken, Stand of Arms and On Guard used 50 each (5 Nov), so whether you have them is not known",
-      "why": "Conquest Books upgrade march (expedition) skills and are one shared stock, so each 50 buys one Lv. 3 → 4 upgrade. Howard's Defenders' Edge and Weaken, Chenko's Stand of Arms and Yeonwoo's On Guard are already Lv. 4, so Gordon's Trash Talk is next: it raises every squad's Attack from 15% to 20% in the Be march and Barricade 2.",
+      "waitingFor": "50 Epic Expedition Manuals; your stock was not read after Weaken, Stand of Arms and On Guard used 50 each (5 Nov), so whether you have them is not known",
+      "why": "Expedition Skill Manuals upgrade Expedition skills, the ones that work in marches and rallies (called Conquest Books here until 5 Nov; see the Arena books move). Howard's Defenders' Edge and Weaken, Chenko's Stand of Arms and Yeonwoo's On Guard are already Lv. 4. A guide gives Quinn's offensive order as Precision Shot first (50% chance of +30% → +40% damage), and Quinn is in Att, where as rally leader all three heroes' skills count. Next: Chenko's Stand of Arms Lv. 4 → 5, the skill she adds when joining rallies; only 4★ heroes can reach Lv. 5, and Chenko is 4★. Gordon's Trash Talk, suggested here before, is dropped: a guide says its Attack bonus only counts when he leads, and he leads none of your marches.",
       "steps": [
-        "Check the Epic Conquest Book count on any Epic hero's skill screen.",
-        "With 50: Gordon · Trash Talk (all squads +15% → +20% Attack; Be march, Barricade 2).",
-        "Next 50: Quinn · Precision Shot (50% chance of +30% → +40% damage; Att, Barricade 1)."
+        "Check the Epic Expedition Manual count on a march (Expedition) skill's Upgrade button.",
+        "With 50: Quinn · Precision Shot (Lv. 3 → 4).",
+        "Next: Chenko · Stand of Arms (Lv. 4 → 5; 75 if it costs the same as Howard's Lv. 5)."
       ],
       "evidence": [
-        "Howard's skill screen of 5 Nov: Shielded Strike Lv. 4 (260%), Upgrade 29 / 75; Weaken and Defenders' Edge icons show Lv. 4; Joint Defense and Shield Block Lv. 3",
-        "Chenko's skill screen of 5 Nov: Stand of Arms icon shows Lv. 4; Burst Fire, Defense Upgrade, Weapon Upgrade and Shield Wall Lv. 3",
-        "Yeonwoo's skill screen of 5 Nov: On Guard icon shows Lv. 4; Petalbloom 29 / 50",
-        "hero.md skill texts and costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Shielded Strike); Amane's Lv. 2 → 3 cost 30",
-        "hero.md roster assignments: Howard Arena Front-L, Barricade 1, Att lead; Gordon Arena Defense, Barricade 2, Be; Quinn Arena Back-R, Barricade 1, Att; Jabel Arena Back-L, Barricade 1, Att; Saul, Fahd, Amane reserve",
-        "Shared-stock rule confirmed by you on 25 Oct (rules.skillBooks)"
+        "hero.md expedition skills: Quinn Precision Shot Lv. 3 (50% chance of +30% damage) and Sixth Sense Lv. 3; Chenko Stand of Arms Lv. 4 (+20% Lethality, old Lv. 4 preview); Howard Defenders' Edge and Weaken, Yeonwoo On Guard Lv. 4 (5 Nov)",
+        "heaven-guardian.com Quinn guide (2026-10-03): \"Epic Conquest Skill Books: Upgrade Headshot, Quick Shot, and Natural Selection. Epic Expedition Skill Manuals: Upgrade Sixth Sense and Precision Shot.\"; \"Conquest skills are used in Conquest stages and Arena battles. Expedition skills affect marches, rallies, wilderness battles, and other troop-based combat.\"",
+        "heaven-guardian.com Quinn guide (2026-10-03): \"Offensive Expedition: Precision Shot → Sixth Sense\"",
+        "kingshotmastery.com Bear Hunt guide (2026-09-13): \"that skill only reaches level 5 — its maximum — once the hero is 4★\"",
+        "kingshot.net Gordon page (no date): \"Trash Talk's Attack bonus only counts when he leads.\"",
+        "heaven-guardian.com Gordon guide (2026-10-03): \"Super Nutrients is Gordon’s first Expedition skill\" (your screen shows Trash Talk on top; not resolved)",
+        "hero.md skill costs: Lv. 3 → 4 costs 50, Lv. 4 → 5 costs 75 (Howard's Shielded Strike)"
       ],
-      "cost": "50 Epic Conquest Books",
+      "cost": "50 Epic Expedition Manuals (Stand of Arms Lv. 5: presumably 75)",
       "confidence": [
         "Verified",
         "Inferred",
         "Unverified"
       ],
       "heroes": [
-        "Gordon",
         "Quinn",
-        "Howard",
         "Chenko",
+        "Gordon",
+        "Howard",
         "Yeonwoo"
       ],
-      "note": "Verified: the cost, the skill texts and the line-ups. Not known: your current stock. Inferred: the order. Unverified: whether all three heroes' expedition skills apply in a march and whether Barricades use expedition skills. If attacking matters more to you than beasts, put Quinn's Precision Shot first (Att march)."
+      "note": "Verified: the skill levels and texts. Unverified: the book names (from a guide), the guides' skill orders, and that Trash Talk only counts when Gordon leads (one undated page). Inferred: Precision Shot before Stand of Arms (it is cheaper and helps the rallies you lead), and the 75 for Stand of Arms Lv. 5. Not known: your manual stock."
     },
     {
       "id": "hero-focus-long-term",
       "priority": 13,
       "type": "Heroes",
-      "what": "Long term: Mythic shards and books to Jabel first; Epic investment to Howard, Quinn and Diana, plus Chenko or Yeonwoo as the rally joiner; Helga and Saul last for combat",
-      "why": "Jabel is your only Mythic hero in the combat line-ups (Att, both Arena squads, Barricade 1), and community guides call her the easiest Generation 1 Mythic to build without paying; she reached Tier 5 by 5 Nov and is 64 shards from 4★ (36 / 100). Guides rank Amadeus as the strongest Generation 1 hero, but he is not recruited (0 / 20) and they say he mostly comes from paid packs. Guides call Helga pay-to-win and rank Saul lowest of the Generation 1 Mythics in combat; Saul's value to you is Resourceful (now Lv. 3: +9% construction speed, −9% cost). Among your Epic heroes, a 2026 list rates Howard and Quinn highest and Diana for beast hunting. Guides also say Generation 2 heroes (Zoe infantry, Hilde cavalry, Marlin archer) arrive around kingdom day 37–50 and Generation 3 around day 105–120; one guide advises building Jabel until Generation 3 rally heroes arrive. You have none of the Generation 2 heroes yet (28 Oct), which suggests they have not reached your kingdom, though it is also possible they are out but not yet earned (inferred).",
+      "what": "Long term: Jabel first among Mythics; Howard and Quinn for combat and Chenko for joining among Epics; Helga only if you spend",
+      "why": "A guide calls Jabel \"the only Generation 1 mythic a free-to-play player can fully build\", and she is your only Mythic in the combat line-ups. Guides put Amadeus at the top of Generation 1 (not recruited, 0 / 20; he comes from VIP packs) and tell free-to-play players to skip Helga; general Mythic shards cannot be used on her. Saul is not the weakest: one guide says he has the highest Attack of the launch heroes in Arena, but he is in no line-up of yours, and his value to you now is Resourceful (+9% construction speed, −9% cost). Among Epics, guides call Howard \"the best infantry a free-to-play player has at launch\" and Quinn \"the only farmable epic archer with two combat Expedition skills\"; Diana is rated for PvE, and her stamina cut keeps her useful. Generation 2 heroes arrive around kingdom day 40–50 and Generation 3 around day 105–120; you have none of the Generation 2 heroes yet.",
       "steps": [
-        "Mythic shards: Jabel to 4★ (36 / 100 on 5 Nov, needs 64; 36 Mythic Redeem in stock) before Helga (0 / 5) or Saul (0 / 40 to 3★).",
-        "Mythic books: Jabel's Youthful Rage and Persistence reached Lv. 4 by 5 Nov; their next level presumably waits for her 4★ (inferred). Not Saul's.",
+        "Mythic: Jabel's 4★ from her own shards; keep general Mythic shards for a Generation 2 hero (see the Mythic shards move).",
+        "Mythic books: Jabel's Youthful Rage and Persistence are Lv. 4; Lv. 5 needs her 4★. Not Saul's.",
         "Amadeus: collect his shards from free events when offered (0 / 20 on 22 Oct); buying him only makes sense if you plan to spend.",
-        "Epic shards and books: Diana, Quinn and Howard first, then the rally joiner (Chenko or Yeonwoo); Fahd and Amane are in no combat line-up.",
-        "Generation 2: you have no Zoe, Hilde or Marlin yet (28 Oct), so Generation 1 heroes are still your best options; check the Hero Roulette and Hall of Heroes events for them, and when one appears, ask for an updated plan."
+        "Epic shards and books: Howard and Quinn first for combat, Chenko for joining rallies; Diana for beast hunting and the Arena.",
+        "Generation 2: when Zoe, Hilde or Marlin appear (Hero Roulette, Hall of Heroes), ask for an updated plan."
       ],
       "evidence": [
         "hero.md promotion screens: Jabel 3★ Tier 5, 36 / 100 to 4★ (5 Nov); Helga 0 / 5 (5 Nov); Saul 2★ Tier 5, 0 / 40 to 3★ (5 Nov); Amadeus 0 / 20 to recruit (22 Oct)",
         "lineups.md: Jabel in Att, both Arena squads and Barricade 1; Helga and Saul in no line-up",
-        "Community tier lists (destructoid.com, progameguides.com 2025; topuplist.com 2026; kingshotmastery.com): Amadeus strongest Gen 1, Jabel best free Mythic, Helga pay-to-win, Saul lowest for combat; Howard and Quinn A tier among Epics",
-        "Community server timelines (kingshotmastery.com, kingshotoptimizer.com): Gen 2 around day 37–50, Gen 3 around day 105–120",
-        "No Zoe, Hilde or Marlin in your hero list, told by you on 28 Oct (kingdom age unknown)"
+        "No Zoe, Hilde or Marlin in your hero list, told by you on 28 Oct (kingdom age unknown)",
+        "kingshot.net hero pages (no date): Jabel \"the only Generation 1 mythic a free-to-play player can fully build\"; Helga \"free-to-play players should skip her\"; Amadeus \"Only if you spend. Amadeus comes from VIP packs\"; Saul \"In Conquest and Arena he has the highest Attack among the launch heroes\"; Howard \"the best infantry a free-to-play player has at launch\"; Quinn \"the only farmable epic archer with two combat Expedition skills\"",
+        "kingshotguides.com tier list (2026-01-17): \"Amadeus is at the top because he has the best skills in the game\"",
+        "kingshotguide.org tier list (2025-09-25): \"Diana: An excellent SR hero for PvE\"",
+        "heaven-guardian.com hero shards guide (2026-11-05): \"Mythic General Hero Shards cannot be converted for Helga.\"",
+        "kingshotmastery.com server timeline (2026-10-31): \"Day 50 — Gen 2 heroes\"; kingshotguide.org event calendar (2026-10-06): \"Day 40–50 (Gen 2 Heroes Release)\", \"Day 105–120 (Gen 3 Heroes Release)\""
       ],
       "cost": "Shards and books only",
       "confidence": [
@@ -697,13 +733,12 @@
         "Jabel",
         "Howard",
         "Quinn",
-        "Diana",
         "Chenko",
-        "Yeonwoo",
+        "Diana",
         "Helga",
         "Saul"
       ],
-      "note": "Verified: your shard counts and line-ups. Unverified: all rankings and the Generation 2 / 3 timing come from community guides (some from 2025) that disagree with each other; check your kingdom's in-game event calendar. Inferred: Generation 2 has not reached your kingdom yet.",
+      "note": "Verified: your shard counts and line-ups, and the guides' text (read on 5 Nov). Unverified: the rankings and the Generation 2 / 3 timing (community guides; check your kingdom's event calendar). Inferred: Generation 2 has not reached your kingdom yet.",
       "ready": false,
       "waitingFor": "Nothing to do today: it is the plan for future shards and books"
     }
@@ -843,7 +878,7 @@
       "source": "profile.md",
       "section": "^Governor Gear$",
       "asOf": "2026-10-21",
-      "note": "3 of 6 slots equipped (Uncommon Charmstone, Plain Breeches, Shortstaff; +9.35% Attack and Defense for one troop type each)."
+      "note": "6 of 6 slots equipped since 5 Nov, all Uncommon (the Plain Hood is 1-Star): Cavalry Attack and Defense +22.10%, Infantry and Archers +18.70% each; gear power 1,428,000 (profile.md)."
     },
     {
       "name": "Governor Charms",
@@ -898,7 +933,7 @@
       "hasData": false,
       "source": null,
       "asOf": null,
-      "note": null
+      "note": "Guides: Truegold at Town Center 30; the War Academy also needs server day 225 (kingshotmastery.com server timeline, 2026-10-31)."
     },
     {
       "name": "Gift codes",
