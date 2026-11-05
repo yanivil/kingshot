@@ -69,6 +69,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `codes.md` (told by the account owner on 2026-11-05): `FORTHEKINGDOM` added to Redeemed (rewards not recorded).
+  `VIP777` and `KS1104` move from Redeemed to Expired because the owner thinks they are old; their notes keep that
+  they were redeemed on this account. `KS1102` was already Expired. The page's sample data matches. README and
+  `docs/SCHEMA.md` now say that a redeemed code that becomes old moves to Expired.
 - "Top 5 moves now" lists only moves the account can do today, one move per card (the account owner pointed out on
   2026-11-05 that card 1 bundled three shard plans and none of them had enough shards: Amane needs 20 more with 4 Epic
   Redeem shards, Jabel 64 with 36 Mythic, Olive 24 with 4 Rare).

@@ -155,8 +155,9 @@ across the roster, and stale or undated sections.
 ### `codes`
 `asOf`, `active[{code}]`, `redeemed[{code}]`, `expired[{code}]`, `expiredTotal`.
 
-Each code is in exactly one list; the list is its state (Active = not redeemed yet). The build warns when a code
-appears in two lists. Until 2026-11-05 each row carried `redeemed` (from a `[x]` / `[ ]` column) and the page laid
+Each code is in exactly one list; the list is its state (Active = not redeemed yet, Redeemed = redeemed and still
+current, Expired = old). A redeemed code that becomes old moves to Expired, and its notes in `codes.md` keep the fact
+that it was redeemed (the page shows only the code). The build warns when a code appears in two lists. Until 2026-11-05 each row carried `redeemed` (from a `[x]` / `[ ]` column) and the page laid
 per-browser marks over it; both were removed because redeemed is a fact about the account, not a browser.
 
 ## Where each field comes from

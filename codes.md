@@ -25,14 +25,17 @@ are added here, and stay unverified until they are tried in the game. None right
 
 | Gift Code | Rewards | Source / Notes | Updated |
 | :--- | :--- | :--- | :---: |
-| `KS1104` | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed, told by the account owner on 5 Nov | 2026-11-05 |
-| `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed, told by the account owner on 5 Nov | 2026-11-05 |
+| `FORTHEKINGDOM` | Not recorded | Redeemed, told by the account owner on 5 Nov | 2026-11-05 |
 
 ## Expired Codes
 
+Codes that no longer need redeeming. A code that was redeemed on this account before it became old says so in its notes.
+
 | Gift Code | Rewards | Source / Notes | Updated |
 | :--- | :--- | :--- | :---: |
-| `KS1102` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KS1104` | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
+| `VIP777` | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
+| `KS1102` | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov | 2026-11-05 |
 | `TREAT4U` | Not recorded | Halloween code; expired, told by the account owner on 5 Nov | 2026-11-05 |
 | `OFFICIALSTORE1023` | Not recorded | Web Store code; expired, told by the account owner on 5 Nov | 2026-11-05 |
 | `KS1025` | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
