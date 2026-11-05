@@ -69,6 +69,31 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Every suggestion and game rule validated against the full guide pages (asked for by the account owner on 2026-11-05;
+  quotes checked against the downloaded page text). Corrections:
+  - **Skill-book names were swapped** (they were read from icons): Conquest Skill Books upgrade Conquest (Arena)
+    skills, Expedition Skill Manuals upgrade Expedition (march) skills. `hero.md` (22 skill rows and the header
+    note), `rules.skillBooks` and the two book moves now use the right names. The Arena-skill move is
+    `conquest-books-howard` (29 of 50); the march-skill move is `expedition-manuals-quinn` (Quinn's Precision Shot,
+    then Chenko's Stand of Arms Lv. 5). Gordon's Trash Talk is dropped as a target: a guide says it only counts when
+    he leads.
+  - **Arena defense:** the suggestion to put Chenko in Gordon's place is withdrawn; the guide that covers defense
+    says it wants healing and lists Gordon, and no guide requires the swap.
+  - **One hero per troop type in a march** (kingshotmastery.com): in Be only Helga can replace Forrest (Fahd and
+    Saul cannot). Gathering heroes work from any place in the march, so the gathering move is now Olive instead
+    of Amane in Gat (iron, stone and bread) plus a Wood preset with Forrest.
+  - **Att troops:** no guide supports 50 / 30 / 20; `att-troop-split` sets 50 / 20 / 30 for PvP and rallies and an
+    Archer-heavy split for Bear Hunt rallies the account leads. New `terror-call-diana`: a Terror preset with Howard,
+    Jabel and Diana (the caller pays the stamina).
+  - **Mythic shards:** a 2025 guide says to save general Mythic shards (465) for a Generation 2 Mythic, so Jabel's
+    4★ now comes from her own shards; general Mythic shards cannot be used on Helga.
+  - **Long term:** Saul is not the weakest Generation 1 Mythic in combat (a guide gives him the highest Arena
+    Attack of the launch heroes); Generation 2 at day 40–50, not 37–50; verified quotes throughout.
+  - Rules: hero level caps add TC 23 → 69, TC 24 → 74 and TC 26 → 80 (heaven-guardian.com table, which also matches
+    the account's TC 20 and 21 building power); the Drill Camp and War Academy (day 225) rules cite their guides.
+  - Still unverified: whether heroes out on a march still defend the city, whether all three heroes' skills apply
+    on a solo march, Gordon's first skill (guides: Super Nutrients; the account's screen shows Trash Talk on top),
+    and whether one general shard gives one hero shard.
 - `profile.md` (Town Center screen, later on 2026-11-05): account power **17,818,524** exact from the city top bar
   (the Governor Profile showed 17.7M earlier that day), **VIP 4** (VIP 3 on 27 Oct), free gems 35,597, bread 104.1M;
   Town Center Lv. 22, citizens 32 / 32 and TC Attack / Defense / Health 735 / 1,470 / 22,064 re-confirmed; the same

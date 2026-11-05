@@ -8,7 +8,7 @@ Documentation of hero progression, skill levels, star ascensions, and equipped g
 
 Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show when each value was last uploaded to this repository.
 
-Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: each rarity has its own books (Epic heroes share Epic books, Mythic heroes share Mythic books), so books spent on one hero are gone for every hero of the same rarity (confirmed by the account owner, 2026-10-25). Book type names are read from the icons.
+Book counts in skill rows ("a/b … Books") are the shared stock of that book type on the date shown, not progress saved on that skill: each rarity has its own books (Epic heroes share Epic books, Mythic heroes share Mythic books), so books spent on one hero are gone for every hero of the same rarity (confirmed by the account owner, 2026-10-25). Book type names are read from the icons. Until 5 Nov the two Epic book names were swapped in this file; guides say Conquest Skill Books upgrade Conquest skills (Arena and Conquest stages, section 4) and Expedition Skill Manuals upgrade Expedition skills (marches and rallies, section 5) (heaven-guardian.com Quinn guide, 2026-10-03), and the names below follow that.
 
 The **Redeem** count on a promotion screen is likewise a shared stock of shards per rarity: shards redeemed for one hero are gone for the others of the same rarity (confirmed by the account owner, 2026-10-27). How many hero shards one Redeem shard gives is not recorded.
 
@@ -197,9 +197,9 @@ Later on 5 Nov, Howard took Seth's Epic Praetorian's Greaves (+20) and Seth took
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Shielded Strike** | Active (Top) | **Lv. 4** | Solid whack knocking target back, dealing **260% AoE damage** (levels: 200% / 220% / 240% / 260% / 280%). | **In Progress** (29/75 Epic Expedition Manuals to Lv. 5: 280% AoE; reached Lv. 4 by 5 Nov) | 2026-11-05 |
-| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +12.5% DEF) | 2026-10-25 |
-| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-25 |
+| **Shielded Strike** | Active (Top) | **Lv. 4** | Solid whack knocking target back, dealing **260% AoE damage** (levels: 200% / 220% / 240% / 260% / 280%). | **In Progress** (29/75 Epic Conquest Books to Lv. 5: 280% AoE; reached Lv. 4 by 5 Nov) | 2026-11-05 |
+| **Joint Defense** | Passive (Mid) | **Lv. 3** | Leads fortifying effort, increasing **Defense by 10% for ALL heroes**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +12.5% DEF) | 2026-10-25 |
+| **Shield Block** | Passive (Bot) | **Lv. 3** | Trades in shield, **reducing personal damage taken by 20%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: 25% reduction) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Garrison)
 
@@ -280,16 +280,16 @@ Gear power is 68,025 + 25,900 + 25,900 + 25,900 = 145,725 (98,000 on 27 Oct). Ja
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Burst Fire** | Active (Top) | **Lv. 3** | Unleashes rapid barrage dealing **Attack * 65% AoE damage every 0.5s for 2s** (4 ticks = 260% total AoE). | **In Progress** (29/50 Epic Expedition Manuals to Lv. 4: 70%/tick; levels 55% / 60% / 65% / 70% / 75%) | 2026-11-05 |
-| **Defense Upgrade** | Passive (Mid) | **Lv. 3** | Upgrades armor, increasing personal **Defense by +50%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +62.5% DEF) | 2026-10-25 |
-| **Weapon Upgrade** | Passive (Bot) | **Lv. 3** | Upgraded weapon boosts personal **Attack by +16%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +20% ATK) | 2026-10-25 |
+| **Burst Fire** | Active (Top) | **Lv. 3** | Unleashes rapid barrage dealing **Attack * 65% AoE damage every 0.5s for 2s** (4 ticks = 260% total AoE). | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 70%/tick; levels 55% / 60% / 65% / 70% / 75%) | 2026-11-05 |
+| **Defense Upgrade** | Passive (Mid) | **Lv. 3** | Upgrades armor, increasing personal **Defense by +50%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +62.5% DEF) | 2026-10-25 |
+| **Weapon Upgrade** | Passive (Bot) | **Lv. 3** | Upgraded weapon boosts personal **Attack by +16%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +20% ATK) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | **Stand of Arms** | Top | **Lv. 4** | Implements advanced weaponry, increasing **total Squads' Lethality by +20%** (+20% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (reached Lv. 4 by 5 Nov, shown on the skill icon; the cost to Lv. 5 was not shown) | 2026-11-05 |
-| **Shield Wall** | Bot | **Lv. 3** | Enhances troop armor, **reducing damage taken by 12% for all troops**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: 16% reduction) | 2026-10-25 |
+| **Shield Wall** | Bot | **Lv. 3** | Enhances troop armor, **reducing damage taken by 12% for all troops**. | **In Progress** (28/50 Epic Expedition Manuals to Lv. 4: 16% reduction) | 2026-10-25 |
 
 ## In-Depth Hero Profile: Gordon
 
@@ -367,16 +367,16 @@ went to +16 by 27 Oct. _(2026-11-05)_
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **BBQ Feast** | Active (Top) | **Lv. 3** | Restores Health by **Attack * 240% to all troops** and grants **+6% Attack for 4s**. | **In Progress** (29/50 Epic Expedition Manuals to Lv. 4: 260% Heal / +6.5% ATK) | 2026-11-05 |
-| **Culinary Chaos** | Passive (Mid) | **Lv. 3** | Chaotic kitchen life **reduces personal damage taken by 20%**. | **In Progress** (25/50 Epic Expedition Manuals to Lv. 4: 25% reduction) | 2026-10-22 |
+| **BBQ Feast** | Active (Top) | **Lv. 3** | Restores Health by **Attack * 240% to all troops** and grants **+6% Attack for 4s**. | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 260% Heal / +6.5% ATK) | 2026-11-05 |
+| **Culinary Chaos** | Passive (Mid) | **Lv. 3** | Chaotic kitchen life **reduces personal damage taken by 20%**. | **In Progress** (25/50 Epic Conquest Books to Lv. 4: 25% reduction) | 2026-10-22 |
 | **Emergency Snack** | Passive (Bot) | **Lv. 3** | Regular snacking **restores Health equal to Attack * 60% every 5s** (60% from the Lv. 2 screen's upgrade preview). | **In Progress** (upgraded from Lv. 2 on 22 Oct; the cost to Lv. 4 was not shown) | 2026-10-22 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Trash Talk** | Top | **Lv. 3** | Inspires allies by increasing **total Squads' Attack by +15%**. | **In Progress** (24/50 Epic Conquest Books to Lv. 4: +20% ATK) | 2026-10-21 |
-| **Super Nutrients** | Bot | **Lv. 3** | Invigorates soldiers by increasing **total Squads' Health by +15%**. | **In Progress** (24/50 Epic Conquest Books to Lv. 4: +20% HP) | 2026-10-21 |
+| **Trash Talk** | Top | **Lv. 3** | Inspires allies by increasing **total Squads' Attack by +15%**. | **In Progress** (24/50 Epic Expedition Manuals to Lv. 4: +20% ATK) | 2026-10-21 |
+| **Super Nutrients** | Bot | **Lv. 3** | Invigorates soldiers by increasing **total Squads' Health by +15%**. | **In Progress** (24/50 Epic Expedition Manuals to Lv. 4: +20% HP) | 2026-10-21 |
 
 ## In-Depth Hero Profile: Diana
 
@@ -436,16 +436,16 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Incendiary Arrows** | Active (Top) | **Lv. 3** | Deals **250% damage** to target and **84% AoE splash** to nearby enemies. | **In Progress** (29/50 Epic Expedition Manuals to Lv. 4: 270% / 91% AoE) | 2026-11-05 |
-| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +25% Speed) | 2026-10-25 |
-| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (26/50 Epic Expedition Manuals to Lv. 4: +16% Crit Rate) | 2026-10-25 |
+| **Incendiary Arrows** | Active (Top) | **Lv. 3** | Deals **250% damage** to target and **84% AoE splash** to nearby enemies. | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 270% / 91% AoE) | 2026-11-05 |
+| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +25% Speed) | 2026-10-25 |
+| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +16% Crit Rate) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Beast Hunting)
 
 | Skill Name | Slot | Current Level | Strategic & March Utility | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | **Iron Constitution** | Top | **Lv. 4** | Reduces Governor **Stamina Cost by 18%** on beast hunts. | **In Progress** (the 4-Star promotion lifted the Lv. 4 cap by 5 Nov; Lv. 5: 20% (old preview); the cost to Lv. 5 was not shown; reached Lv. 4 on 23 Oct) | 2026-11-05 |
-| **Quick Paced** | Bot | **Lv. 3** | Increases **Hunting March Speed by 60%**. | **In Progress** (28/50 Epic Conquest Books to Lv. 4: +80% Speed) | 2026-10-25 |
+| **Quick Paced** | Bot | **Lv. 3** | Increases **Hunting March Speed by 60%**. | **In Progress** (28/50 Epic Expedition Manuals to Lv. 4: +80% Speed) | 2026-10-25 |
 
 ## In-Depth Hero Profile: Quinn
 
@@ -513,18 +513,18 @@ the Hero Stats screen: Archer Lethality +22.56% (13.20% + 9.36%) and Archer Heal
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Headshot** | Active (Top) | **Lv. 3** | Crossbow deals massive single-target damage of **Attack * 480%**. | **In Progress** (29/50 Epic Expedition Manuals to reach Lv. 4: 520%) | 2026-11-05 |
-| **Quick Shot** | Passive (Mid) | **Lv. 3** | Years of training increases Quinn's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: +25% Speed) | 2026-10-25 |
-| **Natural Selection** | Passive (Bot) | **Lv. 3** | Expert survival skills increase his personal **damage dealt by 20%**. | **In Progress** (26/50 Epic Expedition Manuals to reach Lv. 4: +25% DMG) | 2026-10-25 |
+| **Headshot** | Active (Top) | **Lv. 3** | Crossbow deals massive single-target damage of **Attack * 480%**. | **In Progress** (29/50 Epic Conquest Books to reach Lv. 4: 520%) | 2026-11-05 |
+| **Quick Shot** | Passive (Mid) | **Lv. 3** | Years of training increases Quinn's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Conquest Books to reach Lv. 4: +25% Speed) | 2026-10-25 |
+| **Natural Selection** | Passive (Bot) | **Lv. 3** | Expert survival skills increase his personal **damage dealt by 20%**. | **In Progress** (26/50 Epic Conquest Books to reach Lv. 4: +25% DMG) | 2026-10-25 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Sixth Sense** | Top | **Lv. 3** | Senses danger ahead, **reducing damage taken by 12%** for all troops. | **In Progress** (28/50 Epic Conquest Books to reach Lv. 4: 16% reduction) | 2026-10-25 |
-| **Precision Shot** | Mid | **Lv. 3** | Grants all soldiers a **50% chance of dealing 30% more damage** when attacking. | **In Progress** (28/50 Epic Conquest Books to reach Lv. 4: 40% DMG) | 2026-10-25 |
+| **Sixth Sense** | Top | **Lv. 3** | Senses danger ahead, **reducing damage taken by 12%** for all troops. | **In Progress** (28/50 Epic Expedition Manuals to reach Lv. 4: 16% reduction) | 2026-10-25 |
+| **Precision Shot** | Mid | **Lv. 3** | Grants all soldiers a **50% chance of dealing 30% more damage** when attacking. | **In Progress** (28/50 Epic Expedition Manuals to reach Lv. 4: 40% DMG) | 2026-10-25 |
 
-The book counts on all five skills went down between the 22 Oct and 25 Oct screens (manuals 28 → 26, Conquest Books 31 → 28)
+The book counts on all five skills went down between the 22 Oct and 25 Oct screens (manuals 28 → 26, Expedition Manuals 31 → 28)
 while every skill stayed at Lv. 3. The count is the shared stock of that book type (confirmed by the account owner on 2026-10-25), so books
 of these types were spent elsewhere between the two screens; which hero they went to is not recorded. _(2026-10-25)_
 
@@ -912,7 +912,7 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Petalbloom** | Active (Top) | **Lv. 3** | Arcs Petalbloom outward in three waves, dealing **Attack * 100%, 150%, and 180% damage** (third wave is AoE; 430% total damage combo). | **In Progress** (29/50 Epic Expedition Manuals to Lv. 4: 162.5% / 195% AoE; the 3-Star promotion lifted the Lv. 3 cap) | 2026-11-05 |
+| **Petalbloom** | Active (Top) | **Lv. 3** | Arcs Petalbloom outward in three waves, dealing **Attack * 100%, 150%, and 180% damage** (third wave is AoE; 430% total damage combo). | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 162.5% / 195% AoE; the 3-Star promotion lifted the Lv. 3 cap) | 2026-11-05 |
 | **Falling Swallow** | Passive (Mid) | **Lv. 3** | Weaves confusion in enemy ranks, dealing **Attack * 120% damage** and **reducing target Attack Speed by 40% for 2s**. | **In Progress** (the Lv. 3 cap was lifted by the 3-Star promotion of 27 Oct; this skill's cost to Lv. 4 was not shown, presumably 50 books as on other Lv. 3 skills, which is inferred; Lv. 4: 130% DMG / -45% Speed) | 2026-10-27 |
 | **Twin Fangs** | Passive (Bot) | **Lv. 3** | Unusual duel form boosts personal **Attack by +16%**. | **In Progress** (the Lv. 3 cap was lifted by the 3-Star promotion of 27 Oct; this skill's cost to Lv. 4 was not shown, presumably 50 books as on other Lv. 3 skills, which is inferred; Lv. 4: +20% ATK) | 2026-10-27 |
 
@@ -991,7 +991,7 @@ All 4 pieces match the native **Cavalry** troop class synergy:
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Sandstorm** | Active (Top) | **Lv. 3** | Blinding sandstorm **reduces all Enemy Squads' Attack by 3% for 2s**. | **In Progress** (29/50 Epic Expedition Manuals to Lv. 4: 4% reduction; the 3-Star promotion lifted the Lv. 3 cap) | 2026-11-05 |
+| **Sandstorm** | Active (Top) | **Lv. 3** | Blinding sandstorm **reduces all Enemy Squads' Attack by 3% for 2s**. | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 4% reduction; the 3-Star promotion lifted the Lv. 3 cap) | 2026-11-05 |
 | **Eagle Wings** | Passive (Mid) | **Lv. 3** | After Sandstorm, Fahd's eagle directs attacks, **increasing personal & nearby friendly Squads' Attack by 25% for 2s** (+25% is the old Lv. 3 preview; the Lv. 3 panel was not opened). | **In Progress** (reached Lv. 3 by 27 Oct; the 3-Star promotion by 5 Nov presumably lifted its Lv. 3 cap as it did Sandstorm's, which is inferred; the cost to Lv. 4 was not shown) | 2026-11-05 |
 | **Dune General** | Passive (Bot) | **Lv. 3** | Harsh desert instincts **increase his personal Attack Speed by 20%** (+20% is the old Lv. 3 preview; the Lv. 3 panel was not opened). | **In Progress** (reached Lv. 3 by 27 Oct; the 3-Star promotion by 5 Nov presumably lifted its Lv. 3 cap as it did Sandstorm's, which is inferred; the cost to Lv. 4 was not shown) | 2026-11-05 |
 
