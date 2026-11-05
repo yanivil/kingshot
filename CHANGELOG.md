@@ -69,6 +69,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Formation advice checked against the full guide pages (the account owner allowed the guide sites on 2026-11-05; the
+  pages were downloaded, stripped to text and every quote checked). Search-excerpt evidence is replaced by dated
+  quotes. Corrections:
+  - Barricades only fight Rebel Invasions; the Guard Station's heroes defend the city against players and in Viking
+    Vengeance (a guide author's reply). `lineups.md` and README no longer call the Barricades city defense, and the
+    Guard Station card no longer says it may be the Barricades screen.
+  - The Viking Vengeance guide's home team for players who don't spend is Jabel, Howard and Quinn; Saul is only in its
+    pay-to-win list (the earlier "Howard, Quinn and Saul" was wrong).
+  - "Amane is not a gathering hero" is not on the cited page; removed (her own skills show no gathering skill).
+  - Two rally pages cited before are gone (404); the joiner rules now cite kingshot.net, kingshotworld.com,
+    kingshotguides.com and kingshotmastery.com. That Chenko's and Yeonwoo's skills add together is from
+    kingshotmastery.com. The official X post is still read only as a search excerpt (x.com is not reachable).
+  - The troop-mix card notes the Bear Hunt ratio for a Generation 1 host (10 / 30 / 60, kingshotmastery.com).
+  - Unchanged: the suggestions themselves (Chenko in Arena defense; Jabel, Howard and Quinn for the Guard Station).
 - `data/manual.json`: community formation advice, asked for by the account owner on 2026-11-05 ("based on the
   community, which heroes should be in my formations?"). The guide pages could be read only as search-result excerpts
   (the sites are not on the session's network allow-list), so every guide claim is labelled Unverified.
