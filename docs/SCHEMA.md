@@ -129,14 +129,16 @@ with its own "as of" date. Missing part dates fall back to `lineups.asOf`.
 | `ready` | Optional boolean, default `true`. `false` = the move can't be done with the stock the account has (shards, books) or depends on a value not read yet; it stays out of the Top 5 and Invest marks it "Not yet". The generator warns when it is not a boolean |
 | `waitingFor` | Required when `ready` is `false`: what is missing, e.g. "Amane needs 20 more shards (20 / 40); you have 4 Epic Redeem shards (5 Nov)". Shown first on the Invest card as "Needs". The generator warns when it is missing or blank |
 | `type` | Invest group heading (groups are built from the values present) |
-| `what`, `why` | Required text |
+| `what` | Required. The card title: the suggestion itself, short (the build warns above 60 characters) |
+| `summary` | One or two short sentences: the reason shown on the card (the build warns above 200 characters or when it is not text). Without it the page shows `why` instead |
+| `why` | Required. The full reasoning, shown under the card's Details fold when a `summary` exists |
 | `cost` | Text or `null` ("Not known") |
 | `confidence` | Array of `"Verified"`, `"Inferred"`, `"Unverified"` |
 | `heroes` | Hero names (clickable, also the Invest hero filter) |
 | `evidence` | Strings citing the source data |
 | `note` | Optional caveat |
-| `steps` | Optional. Strings, one in-game action each; shown as a numbered list on Invest |
-| `changes` | Optional. `[{where, before: string[], after: string[], note?}]` or, for grouped line-ups such as the Arena, `[{where, rows: [{label, before, after}], note?}]` (e.g. `Front` / `Back`). The end state of each line-up, gear set or slot group the move touches. Overview Top 5 shows `where: after` (`where: Front … · Back …` for rows) with new entries in bold; Invest shows Now (leaving entries struck out) and Suggested (joining entries highlighted), as a Now / Suggested table when there are rows. An empty `before` shows "Empty". The generator warns on a malformed entry or a hero name not in `hero.md` |
+| `steps` | Optional. Strings, one in-game action each; shown as a numbered list under Details on Invest |
+| `changes` | Optional. `[{where, before: string[], after: string[], note?}]` or, for grouped line-ups such as the Arena, `[{where, rows: [{label, before, after}], note?}]` (e.g. `Front` / `Back`). The end state of each line-up, gear set or slot group the move touches. Cards show the suggestion first, then what is there now: the Overview Top 5 shows a Suggested line (new entries in bold) and a Now line under `where` (`Front … · Back …` for rows); Invest shows Suggested (joining entries highlighted) above Now (leaving entries struck out), as a Suggested / Now table when there are rows. An empty `before` shows "Empty". The generator warns on a malformed entry or a hero name not in `hero.md` |
 
 ### `features[]`
 `{name, unlock, state, hasData, source, section?, asOf, note}`.
