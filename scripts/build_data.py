@@ -1606,8 +1606,10 @@ def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
     """Warn about recommendations the page would show wrongly.
 
     Why: recommendations are hand-written in manual.json, so a misspelled hero
-    name or a malformed ``changes`` entry would otherwise reach the page
-    silently (an unclickable hero, an empty before/after row).
+    name, a malformed ``changes`` entry or a ``ready`` flag that is not a
+    boolean (or is false with no ``waitingFor`` reason) would otherwise reach
+    the page silently (an unclickable hero, an empty before/after row, a move
+    the player cannot do yet shown in the Top 5).
 
     Args:
         ks: KS_DATA after manual.json was applied.
@@ -1625,6 +1627,18 @@ def check_recommendations(ks: Dict[str, Any], log: BuildLog) -> None:
         steps = rec.get("steps")
         if steps is not None and not (isinstance(steps, list) and all(isinstance(s, str) for s in steps)):
             log.warn("data/manual.json", f"recommendation '{rid}': 'steps' must be a list of strings")
+        # "ready": false keeps a move out of the Top 5 ("moves now") and shows
+        # its "waitingFor" text on Invest. The page treats anything but the
+        # boolean false as ready, so a string "false" would put a move the
+        # player cannot do yet back into the Top 5: warn on it.
+        ready = rec.get("ready", True)
+        if not isinstance(ready, bool):
+            log.warn("data/manual.json", f"recommendation '{rid}': 'ready' must be true or false")
+        elif not ready:
+            waiting = rec.get("waitingFor")
+            if not (isinstance(waiting, str) and waiting.strip()):
+                log.warn("data/manual.json",
+                         f"recommendation '{rid}': 'ready': false needs a 'waitingFor' text (what is missing)")
         for change in rec.get("changes") or []:
             # Each change needs a label and either two string lists ("before"
             # may be empty, e.g. filling empty Drill Camp slots) or "rows":

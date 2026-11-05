@@ -69,6 +69,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- "Top 5 moves now" lists only moves the account can do today, one move per card (the account owner pointed out on
+  2026-11-05 that card 1 bundled three shard plans and none of them had enough shards: Amane needs 20 more with 4 Epic
+  Redeem shards, Jabel 64 with 36 Mythic, Olive 24 with 4 Rare).
+  - New optional recommendation fields `ready` (boolean) and `waitingFor` (text). A move with `ready: false` ranks after
+    every ready move, stays out of the Top 5, and shows "Not yet" plus a "Needs" line on Invest. Under the Top 5 a line
+    counts the waiting moves and opens Invest. `scripts/build_data.py` warns when `ready` is not a boolean or when a
+    waiting move has no `waitingFor`; new test `test_ready_flag_checks`. `docs/SCHEMA.md` and README updated.
+  - `data/manual.json`: `near-promo` is split into `epic-shards-amane`, `mythic-shards-jabel` and `rare-shards-olive`;
+    `skill-books-order` into `expedition-manuals-howard` (21 more manuals needed: 29 of 50) and `conquest-books-gordon`
+    (stock not read). These five and `hero-focus-long-term` are marked `ready: false`.
+  - New Top 5: the rally Join preset, the Be-march test with Helga, gathering presets per resource, the Stonewall
+    Greaves +24 to Forrest, and the optional 50 / 20 / 30 test, now in the Att preset itself, because the Join, Stone
+    and Bread presets would fill the three spare tabs.
 - `data/manual.json`: the Top 5 shows only open moves (asked for by the account owner on 2026-11-05). Every suggestion now
   describes only what is left; "done" steps and "(done)" changes are removed (the history stays in this changelog and in
   hero.md). The two suggestions whose main move is finished keep only a small optional step and move to the bottom:

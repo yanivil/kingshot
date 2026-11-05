@@ -117,6 +117,9 @@ The Overview opens with account power and total kills.
    moves a hero or a gear piece should say what replaces it: list the actions in `steps` and the end
    state in `changes` (`where`, `before`, `after`, or `rows` with `Front` / `Back` groups for the Arena).
    The dashboard shows the final line-up in the Top 5 and a Now / Suggested comparison on the Invest page.
+   Give each recommendation one move only. When the account can't do it yet (not enough shards or books, or a
+   stock not read), set `"ready": false` and say what is missing in `waitingFor`: the move then stays out of
+   "Top 5 moves now" (which lists only moves that can be done today) and shows as "Not yet" on Invest.
 3. Merge to `main`. The workflow rebuilds and republishes the dashboard; warnings (e.g. a renamed label)
    appear as annotations on the Actions run.
 

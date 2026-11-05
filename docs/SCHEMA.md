@@ -124,7 +124,9 @@ with its own "as of" date. Missing part dates fall back to `lineups.asOf`.
 | Field | Notes |
 |---|---|
 | `id` | Unique string |
-| `priority` | Lower = higher; the first five feed "Top 5 moves now" |
+| `priority` | Lower = higher. Moves with `ready: false` rank after every ready move, whatever their priority; the first five ready moves feed "Top 5 moves now" |
+| `ready` | Optional boolean, default `true`. `false` = the move can't be done with the stock the account has (shards, books) or depends on a value not read yet; it stays out of the Top 5 and Invest marks it "Not yet". The generator warns when it is not a boolean |
+| `waitingFor` | Required when `ready` is `false`: what is missing, e.g. "Amane needs 20 more shards (20 / 40); you have 4 Epic Redeem shards (5 Nov)". Shown first on the Invest card as "Needs". The generator warns when it is missing or blank |
 | `type` | Invest group heading (groups are built from the values present) |
 | `what`, `why` | Required text |
 | `cost` | Text or `null` ("Not known") |

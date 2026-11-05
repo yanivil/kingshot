@@ -211,6 +211,8 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .item p{margin:0;font-size:14px}
 .rec{display:flex;flex-direction:column;gap:10px}
 .rec-what{font-weight:700;font-size:16.5px;line-height:1.35}
+/* "Not yet": a move that waits for shards, books or a reading (ready: false); kept out of the Top 5. */
+.rec-wait{display:inline-flex;align-items:center;font-size:12px;font-weight:700;letter-spacing:.02em;padding:1px 8px;border-radius:99px;border:1.5px dashed var(--muted);color:var(--muted);white-space:nowrap}
 .rec-heroes{display:flex;flex-wrap:wrap;gap:4px 10px}
 .rec-ev{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted)}
 .rec-steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px;font-size:14.5px}
@@ -1119,8 +1121,17 @@ class Dashboard extends StateHost {
       ]
     };
 
-    /* ---------- Recommendations (Invest + Top 5) ---------- */
-    var recs = recsRaw.slice().sort(function (a, b) { return (a.priority == null ? 1e9 : a.priority) - (b.priority == null ? 1e9 : b.priority); });
+    /* ---------- Recommendations (Invest + Top 5) ----------
+       "Top 5 moves now" must hold only moves the player can do today, so a
+       move marked ready: false (waiting for shards, books or a reading) ranks
+       after every ready move, whatever its priority. Ranks therefore match
+       between the Top 5 and Invest. Only the boolean false means "not yet";
+       a missing flag means ready (the generator warns on any other value). */
+    var notReady = function (r) { return r.ready === false ? 1 : 0; };
+    var recs = recsRaw.slice().sort(function (a, b) {
+      return (notReady(a) - notReady(b)) ||
+        ((a.priority == null ? 1e9 : a.priority) - (b.priority == null ? 1e9 : b.priority));
+    });
     var confVM = function (list) {
       var l = Array.isArray(list) && list.length ? list : ['Not recorded'];
       return l.map(function (c) { return { label: c === 'Not recorded' ? 'Confidence: Not recorded' : c, cls: 'conf conf-' + String(c).toLowerCase().replace(/\s+/g, '-') }; });
@@ -1156,10 +1167,15 @@ class Dashboard extends StateHost {
                note: r.note || '', hasNote: !!r.note,
                steps: (Array.isArray(r.steps) ? r.steps : []).map(function (t) { return { text: t }; }),
                hasSteps: Array.isArray(r.steps) && r.steps.length > 0,
-               changes: chg, hasChanges: chg.length > 0 };
+               changes: chg, hasChanges: chg.length > 0,
+               ready: r.ready !== false,
+               // Fallback text so a "Not yet" card never shows an empty reason.
+               waitingFor: r.waitingFor || 'Not recorded' };
     };
     var ranked = recs.map(recVM);
-    var moves = ranked.slice(0, 5).map(function (r) {
+    var waiting = ranked.filter(function (r) { return !r.ready; }).length;
+    // Ready moves come first (see the sort above), so this takes the five best of them.
+    var moves = ranked.filter(function (r) { return r.ready; }).slice(0, 5).map(function (r) {
       return { n: r.rank, what: r.what, confs: r.confs, cost: r.cost, changes: r.changes,
                go: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); } };
     });
@@ -1339,6 +1355,11 @@ class Dashboard extends StateHost {
              subCls: anyStale ? 'warn' : '', staleDays: staleDays },
       nav: nav, v: vflags,
       tiles: tiles, moves: moves, movesEmpty: moves.length === 0, watch: watch, ageRows: ageRows,
+      // Moves left out of the Top 5 because they can't be done yet; the line points to Invest.
+      movesEmptyText: waiting ? 'No move can be done right now.' : 'No recommendations recorded.',
+      hasWaiting: waiting > 0,
+      waitingText: (waiting === 1 ? '1 more move waits' : waiting + ' more moves wait') + ' for shards, books or a reading (marked Not yet on Invest).',
+      goInvest: function () { self.setState({ view: 'invest', iType: 'all', iHero: 'all' }); },
       filterGroups: filterGroups, heroList: heroList, heroMeta: heroMeta,
       drawer: drawer, closeHero: closeHero,
       dc: dc, army: armyVM,
@@ -1509,7 +1530,7 @@ function tplOverview(v) {
         '<span class="tile-s">' + esc(t.asOf) + '</span></div>';
     }) + '</div>' +
     '<div class="grid2">' +
-    '<section class="panel"><div class="panel-h"><h3>Top 5 moves now</h3><span class="asof">Ranked from Invest</span></div>' +
+    '<section class="panel"><div class="panel-h"><h3>Top 5 moves now</h3><span class="asof">Can be done now · ranked from Invest</span></div>' +
     '<ol class="moves">' + each(v.moves, function (m) {
       return '<li><button class="move"' + on(m.go, 'move:' + m.n) + '><span class="move-n">' + esc(m.n) + '</span>' +
         '<span class="move-b"><span class="move-t">' + esc(m.what) + '</span>' +
@@ -1523,7 +1544,8 @@ function tplOverview(v) {
         }) +
         '<span class="move-m">' + tplConfs(m.confs) + '<span>Cost: ' + esc(m.cost) + '</span></span></span></button></li>';
     }) + '</ol>' +
-    when(v.movesEmpty, '<p class="empty">No recommendations recorded.</p>') +
+    when(v.movesEmpty, '<p class="empty">' + esc(v.movesEmptyText) + '</p>') +
+    when(v.hasWaiting, '<button class="linkish foot"' + on(v.goInvest, 'moves:waiting') + '>' + esc(v.waitingText) + '</button>') +
     '</section>' +
     '<div class="col">' +
     '<section class="panel"><div class="panel-h"><h3>Weak spots</h3><span class="asof">Counted from the data</span></div><div class="rows">' +
@@ -1727,14 +1749,17 @@ function tplToks(toks, empty) {
 function tplInvest(v) {
   var iv = v.invest;
   return '<div class="view">' +
-    '<div class="view-h"><h2>Invest</h2><p class="lede">Every move with what to do, why, cost and how sure we are.</p></div>' +
+    '<div class="view-h"><h2>Invest</h2><p class="lede">Every move with what to do, why, cost and how sure we are. "Not yet" moves wait for shards, books or a reading and are not in the Top 5.</p></div>' +
     '<section class="panel"><div class="fbar">' + tplChipGroup('Type', iv.typeChips, 'itype') + tplChipGroup('Hero', iv.heroChips, 'ihero') + '</div></section>' +
     each(iv.groups, function (g) {
       return '<div class="grp"><div class="grp-h"><h3>' + esc(g.type) + '</h3><span class="mini">' + esc(g.countText) + '</span></div>' +
         each(g.recs, function (r) {
           return '<section class="panel rec">' +
-            '<div class="item-h"><span class="rec-what">' + esc(r.rank) + '. ' + esc(r.what) + '</span><span class="move-m">' + tplConfs(r.confs) + '</span></div>' +
-            '<dl class="kv"><dt>Why</dt><dd>' + esc(r.why) + '</dd><dt>Cost</dt><dd>' + esc(r.cost) + '</dd>' +
+            '<div class="item-h"><span class="rec-what">' + esc(r.rank) + '. ' + esc(r.what) + '</span><span class="move-m">' +
+            when(!r.ready, '<span class="rec-wait">Not yet</span>') + tplConfs(r.confs) + '</span></div>' +
+            // A "Not yet" move says first what it is waiting for.
+            '<dl class="kv">' + when(!r.ready, '<dt>Needs</dt><dd>' + esc(r.waitingFor) + '</dd>') +
+            '<dt>Why</dt><dd>' + esc(r.why) + '</dd><dt>Cost</dt><dd>' + esc(r.cost) + '</dd>' +
             '<dt>Heroes</dt><dd><span class="rec-heroes">' +
             each(r.heroes, function (h) { return '<button class="linkish"' + on(h.open, 'rec:' + r.rank + ':' + h.name) + '>' + esc(h.name) + '</button>'; }) +
             when(r.noHeroes, '<span class="mini">None named</span>') + '</span></dd></dl>' +

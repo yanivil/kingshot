@@ -358,6 +358,27 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(len(log.warnings), 4)
         self.assertTrue(all("'bad'" in w for w in log.warnings))
 
+    def test_ready_flag_checks(self) -> None:
+        """A move that can't be done yet must say what it waits for; 'ready' must be a boolean.
+
+        Why: the page leaves ``ready: false`` moves out of the Top 5 and shows
+        their ``waitingFor`` text on Invest, so a missing reason or a string
+        "false" (which the page would treat as ready) must not pass silently.
+        """
+        ks = {"heroes": [{"name": "Amane"}], "recommendations": [
+            {"id": "now", "heroes": ["Amane"]},
+            {"id": "now2", "ready": True},
+            {"id": "wait", "ready": False, "waitingFor": "16 more Epic shards"},
+            {"id": "no-reason", "ready": False},
+            {"id": "blank-reason", "ready": False, "waitingFor": "  "},
+            {"id": "string-flag", "ready": "false", "waitingFor": "x"},
+        ]}
+        log = bd.BuildLog()
+        bd.check_recommendations(ks, log)
+        self.assertEqual(len(log.warnings), 3)
+        for rid in ("'no-reason'", "'blank-reason'", "'string-flag'"):
+            self.assertTrue(any(rid in w for w in log.warnings), rid)
+
 
 class CodesParserTests(unittest.TestCase):
     """codes.md -> codes: three lists (Active, Redeemed, Expired), no checkbox column."""
