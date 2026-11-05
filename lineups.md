@@ -76,6 +76,7 @@ from the heroes' own 5 Nov screens (hero.md).
 
 | Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power | Updated |
 | :--- | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
-| **Beast Hunt** | `Be` | Diana (Lv. 64) | Gordon (Lv. 64) | Forrest (Lv. 64) | 35% Inf / 20% Cav / 45% Arc | 18,227,722 | 2026-11-05 |
-| **Attack** | `Att` | Howard (Lv. 64) | Jabel (Lv. 64) | Quinn (Lv. 64) | 50% Inf / 30% Cav / 20% Arc | 20,910,710 | 2026-11-05 |
-| **Gathering** | `Gat` | Seth (Lv. 64) | Edwin (Lv. 59) | Amane (Lv. 64) | 51% Inf / 49% Cav / 0% Arc | 16,968,707 | 2026-11-05 |
+| **Beast Hunt** | `Be` | Diana (Lv. 64) | Gordon (Lv. 64) | Helga (Lv. 64) | 50% Inf / 20% Cav / 30% Arc | 17,573,191 | 2026-11-05 |
+| **Attack** | `Att` | Howard (Lv. 64) | Jabel (Lv. 64) | Quinn (Lv. 64) | 50% Inf / 30% Cav / 20% Arc | 21,009,331 | 2026-11-05 |
+| **Gathering** | `Gat` | Seth (Lv. 64) | Edwin (Lv. 59) | Amane (Lv. 64) | 51% Inf / 49% Cav / 0% Arc | 16,936,509 | 2026-11-05 |
+| **Rally Join** | `Joi` | Chenko (Lv. 64) | Helga (Lv. 64) | Yeonwoo (Lv. 64) | 50% Inf / 20% Cav / 30% Arc | 17,132,030 | 2026-11-05 |
