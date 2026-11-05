@@ -69,6 +69,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- `codes.md`: `KS1104` is ticked as redeemed (told by the account owner on 5 Nov; rewards not shown, so "Not recorded").
 - `data/manual.json`: an audit of all eight suggestions against the 5 Nov data (asked for by the account owner) found older details
   in five and brings them up to date:
   - Be-march test (priority 7): hero power now Helga 306,455 / Forrest 438,984; the Be preset evidence is the 5 Nov split
