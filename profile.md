@@ -12,11 +12,11 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **17.7M** | Governor Profile, 5 Nov. The profile cuts the digits off rather than rounding, so the exact figure is between 17,700,000 and 17,799,999 (the city top bar was not sent). 13,969,554 exact on 27 Oct; 12,464,731 on 25 Oct | 2026-11-05 |
+| **Overall Account Power** | **17,818,524** | City top bar, later on 5 Nov. The Governor Profile earlier that day showed 17.7M (digits cut off, so 17,700,000 to 17,799,999); the difference presumably includes Diana's Tier 2 (+36,080) and Olive's Lv. 64 (+2,015), recorded after that screen (inferred). 13,969,554 on 27 Oct; 12,464,731 on 25 Oct | 2026-11-05 |
 | **Kingdom / Server** | **#2508** | Home realm state | 2026-11-05 |
 | **Alliance** | **SPQ** | Primary allied faction | 2026-11-05 |
 | **Total Combat Kills** | **658,745** | Total enemy unit casualties inflicted (Governor Profile "Kills"; 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-05 |
-| **VIP Level** | **VIP 3** | Active Governor concierge tier | 2026-10-27 |
+| **VIP Level** | **VIP 4** | Active Governor concierge tier (city top bar, 5 Nov; VIP 3 on 27 Oct) | 2026-11-05 |
 | **Stamina** | **124 / 200** | Governor hunting and expedition energy (the bar under the portrait, drumstick icon; 200 / 200 on 27 Oct) | 2026-11-05 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Equipped** | 6 Uncommon pieces worn, one of them 1-Star (see "Governor Gear" below); 3 / 6 on 27 Oct | 2026-11-05 |
@@ -43,18 +43,18 @@ The Town Center represents the administrative heart of the settlement, governing
 
 ### 1. Structure Specifications & Fortification Stats
 
-* **Current Level:** **Level 22** (Town Center screen; the Governor Profile also shows Lv. 22) _(2026-10-27)_
+* **Current Level:** **Level 22** (Town Center screen, 27 Oct and 5 Nov; the Governor Profile also shows Lv. 22) _(2026-11-05)_
 * **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
-* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-10-27)_
-* **Stored Food (Bread):** **1.7M** (city top bar; 1.6M earlier the same day, 96.1M on 25 Oct) _(2026-10-27)_
-* **Free Gems:** **35,666** (city top bar; 30,166 earlier the same day) _(2026-10-27)_
+* **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-05)_
+* **Stored Food (Bread):** **104.1M** (city top bar, 5 Nov; 1.7M on 27 Oct, 96.1M on 25 Oct) _(2026-11-05)_
+* **Free Gems:** **35,597** (city top bar, 5 Nov; 35,666 on 27 Oct) _(2026-11-05)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
-| **Attack** | **735** | Base defensive firepower against besiegers (584 at Lv 20) | 2026-10-27 |
-| **Defense** | **1,470** | Structural mitigation reducing incoming siege damage (1,168 at Lv 20) | 2026-10-27 |
-| **Health** | **22,064** | Total fortification health pool guarding the keep (17,523 at Lv 20) | 2026-10-27 |
+| **Attack** | **735** | Base defensive firepower against besiegers (584 at Lv 20) | 2026-11-05 |
+| **Defense** | **1,470** | Structural mitigation reducing incoming siege damage (1,168 at Lv 20) | 2026-11-05 |
+| **Health** | **22,064** | Total fortification health pool guarding the keep (17,523 at Lv 20) | 2026-11-05 |
 
 ### 2. Town Center Perks (6 / 7 Unlocked)
 
@@ -67,6 +67,8 @@ The Town Center represents the administrative heart of the settlement, governing
 | **Slot 5** | **Unlocked** | **Governor Attack Enhancement** | "Increases Governor Attack by +300% in Rebel Invasion." | 2026-10-27 |
 | **Slot 6** | **Unlocked** | **Governor Defense Enhancement** | "Increases Governor Defense by +300% in Rebel Invasion." (was +250% on 22 Oct) | 2026-10-27 |
 | **Slot 7** | **Locked** | *Name not shown* | Shown with a lock icon on 22 Oct; the 27 Oct screen shows only the 6 perks above, so its state now is not known | 2026-10-22 |
+
+The Town Center screen of 5 Nov shows the same six perk icons in the same order, without names or descriptions, and no seventh slot. _(2026-11-05)_
 
 ### 3. Research Building (Institute)
 
