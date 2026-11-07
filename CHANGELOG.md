@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `data/manual.json`: card `formation-attack` (priority 1) for attacking a governor: tab 6 with Jabel, Howard and
+  Quinn, 44,440 / 17,776 / 26,664 (50 / 20 / 30), and the guides' counters sized to the troop stock. Chosen by
+  the heroes' recorded march bonuses and skills; the ratios come from guides (unverified). The other cards move
+  down one place.
 - Guard Station recorded (screen of 5 Nov): `lineups.md` gains a "Guard Station (City Defense)" section with Jabel,
   Diana and Howard (hero power 2.0M; 764.2K / 639.3K / 601.7K), Status Intact with City Defense 15,000 / 15,000, and
   "Garrisoned heroes cannot be deployed" unticked, so the guards can leave on marches (all three are in `Ter`).
