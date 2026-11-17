@@ -501,6 +501,22 @@ class CodesParserTests(unittest.TestCase):
         self.assertEqual(len(log.warnings), 1)
         self.assertIn("TREAT4U", log.warnings[0])
 
+    def test_expired_missed_mark(self) -> None:
+        """A cross (✗ or X) in "Redeemed" means missed: expired before it was redeemed on this account.
+
+        Why: the owner checks old codes in the game and wants the ones that ran
+        out unredeemed told apart from the ones not checked (empty cell). The
+        ``missed`` key is only present when set, so other rows are unchanged.
+        """
+        body = self.BODY + "| `KS1017` | ✗ | 500 Gems | tried | 2026-11-18 |\n| `TREAT4U` | X | Not recorded | tried | 2026-11-18 |\n"
+        log = bd.BuildLog()
+        codes = bd.parse_codes(body, "2026-11-18", log)
+        self.assertEqual(codes["expired"], [{"code": "FORTHEKINGDOM", "redeemed": True},
+                                            {"code": "KS1102", "redeemed": False},
+                                            {"code": "KS1017", "redeemed": False, "missed": True},
+                                            {"code": "TREAT4U", "redeemed": False, "missed": True}])
+        self.assertEqual(log.warnings, [])
+
     def test_leftover_redeemed_list(self) -> None:
         """Rows under an old "Redeemed Codes" heading are shown as Expired with a check mark, and warn.
 
@@ -567,7 +583,8 @@ class RepositoryTests(unittest.TestCase):
         """Each hero has a unique name; each code is a named entry in exactly one of the three lists.
 
         Active entries are ``{"code"}``; Expired entries are
-        ``{"code", "redeemed"}`` with a boolean (the account-level ✓ mark).
+        ``{"code", "redeemed"}`` with a boolean (the account-level ✓ mark),
+        plus ``"missed": True`` on a code marked ✗.
         There is no separate Redeemed list: a redeemed code is an Expired row.
         """
         names = [h["name"] for h in self.ks["heroes"]]
@@ -579,7 +596,8 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(len(listed), len(set(listed)))
         self.assertNotIn("redeemed", codes)
         self.assertTrue(all(set(c) == {"code"} for c in codes["active"]))
-        self.assertTrue(all(set(c) == {"code", "redeemed"} and isinstance(c["redeemed"], bool) for c in codes["expired"]))
+        self.assertTrue(all(set(c) - {"missed"} == {"code", "redeemed"} and isinstance(c["redeemed"], bool)
+                            and c.get("missed", True) is True for c in codes["expired"]))
         self.assertEqual(codes["expiredTotal"], len(codes["expired"]))
 
 

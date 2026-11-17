@@ -254,6 +254,8 @@ a{color:#1D57B5}a:hover{color:#123E85}
 .code{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px;overflow-wrap:anywhere}
 /* ✓ = redeemed on this account (from codes.md); read-only, not a control. */
 .code-ok{margin-left:auto;padding-left:12px;font-weight:700;font-size:16px;color:var(--good);white-space:nowrap}
+/* ✗ = missed: expired before it was redeemed (from codes.md, after trying it in the game); read-only. */
+.code-missed{margin-left:auto;padding-left:12px;font-weight:700;font-size:16px;color:var(--warn);white-space:nowrap}
 .ok{color:var(--good);font-weight:700}
 @media (max-width:760px){
 .top-in{padding:12px}
@@ -1330,21 +1332,27 @@ class Dashboard extends StateHost {
     var codeRows = function (list, allRedeemed) {
       return (list || []).filter(function (x) { return x && x.code; }).map(function (x) {
         // Only the boolean true marks an expired code; a missing field means not recorded as redeemed.
-        return { code: x.code, redeemed: allRedeemed || x.redeemed === true };
+        // missed (✗) = expired before it was redeemed; absent in older data, which reads as "not checked".
+        var redeemed = allRedeemed || x.redeemed === true;
+        return { code: x.code, redeemed: redeemed, missed: !redeemed && x.missed === true };
       });
     };
     // Fallback for data built before 5 Nov, which had a separate Redeemed list:
     // show those codes first in Expired, with ✓, as the generator now does.
     var expiredList = codesD ? codeRows(codesD.redeemed, true).concat(codeRows(codesD.expired)) : [];
     var expiredRedeemed = expiredList.filter(function (x) { return x.redeemed; }).length;
+    var expiredMissed = expiredList.filter(function (x) { return x.missed; }).length;
+    var markParts = [];
+    if (expiredRedeemed) markParts.push(expiredRedeemed + ' ✓ redeemed');
+    if (expiredMissed) markParts.push(expiredMissed + ' ✗ missed');
     var expiredTotal = codesD ? Math.max(codesD.expiredTotal != null ? codesD.expiredTotal : 0, expiredList.length) : 0;
     var codes = codesD ? {
       asOf: self.asOf(codesD.asOf),
       lede: codeRows(codesD.active).length + ' to redeem · ' + expiredTotal + ' expired' +
-        (expiredRedeemed ? ' (' + expiredRedeemed + ' ✓ redeemed)' : ''),
+        (markParts.length ? ' (' + markParts.join(', ') + ')' : ''),
       active: codeRows(codesD.active), noActive: !codeRows(codesD.active).length,
       expired: expiredList, noExpired: !expiredList.length,
-      expiredCount: expiredTotal + ' total' + (expiredRedeemed ? ' · ' + expiredRedeemed + ' ✓ redeemed' : ''),
+      expiredCount: [expiredTotal + ' total'].concat(markParts).join(' · '),
       unlistedText: expiredTotal > expiredList.length ? (expiredTotal - expiredList.length) + ' more expired codes are not listed by name.' : ''
     } : { asOf: self.asOf(null), lede: 'Gift codes: Not recorded.', active: [], noActive: true, expired: [], noExpired: true, expiredCount: NR, unlistedText: '' };
 
@@ -1904,16 +1912,17 @@ function tplHealth(v) {
 function tplCodes(v) {
   var c = v.codes;
   // Plain rows: a code's state is the list it is in (codes.md), not something the viewer toggles.
-  // A redeemed code ends with ✓; screen readers hear "redeemed" instead of the symbol.
+  // A redeemed code ends with ✓ and a missed one with ✗; screen readers hear the word instead of the symbol.
   var row = function (x) {
     return '<div class="code-row"><span class="code">' + esc(x.code) + '</span>' +
       when(x.redeemed, '<span class="code-ok" title="Redeemed on this account"><span aria-hidden="true">✓</span><span class="sr">redeemed</span></span>') +
+      when(x.missed, '<span class="code-missed" title="Missed: expired before it was redeemed"><span aria-hidden="true">✗</span><span class="sr">missed</span></span>') +
       '</div>';
   };
   return '<div class="view">' +
     '<div class="view-h"><h2>Gift codes</h2><p class="lede">' + esc(c.lede) + '</p></div>' +
     '<section class="panel"><p class="foot">Both lists come from codes.md and apply to the account, not to this browser. ' +
-    'A redeemed code moves to Expired with ✓ (redeemed on this account). ' +
+    'A redeemed code moves to Expired with ✓ (redeemed on this account); ✗ marks a code that expired before it was redeemed. ' +
     'New codes found by the automated check appear under "To redeem" once they are added to codes.md.</p></section>' +
     '<div class="grid2">' +
     '<section class="panel"><div class="panel-h"><h3>To redeem</h3><span class="asof">' + esc(c.asOf) + '</span></div>' +

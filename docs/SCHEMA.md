@@ -156,13 +156,16 @@ lineup power vs. sum of hero powers (>1% difference; a short figure such as "1.3
 across the roster, and stale or undated sections.
 
 ### `codes`
-`asOf`, `active[{code}]`, `expired[{code, redeemed}]`, `expiredTotal`.
+`asOf`, `active[{code}]`, `expired[{code, redeemed, missed?}]`, `expiredTotal`.
 
 Each code is in exactly one list; the list is its state (Active = still to redeem, Expired = done with: redeemed on
 this account, or old). The account owner's rule (2026-11-05): every redeemed code goes to Expired with a ✓ in the
 Expired table's **Redeemed** column, which gives `expired[].redeemed: true` (an empty cell or no column gives `false`;
-✓, ✔, V and Yes are accepted, any other text warns). The page shows ✓ on those codes and counts them in the lede and
-the Expired panel heading. The build warns when a code appears in two lists.
+✓, ✔, V and Yes are accepted, any other text warns). A cross (✗, ✘ or X; the owner's "X", 2026-11-18) means missed:
+the code expired before it was redeemed on this account, found by trying it in the game; it gives `redeemed: false` and
+`missed: true` (the key is left out otherwise, so an empty cell still means "not checked"). The page shows ✓ or ✗ on
+those codes and counts both in the lede and the Expired panel heading. The build warns when a code appears in two
+lists.
 
 There is no `redeemed` list any more. Rows left under an old "Redeemed Codes" heading in `codes.md` are added to
 `expired` with `redeemed: true`, each with a warning; the page does the same with a `redeemed` list in older data.
@@ -220,7 +223,7 @@ when the value changes (see README "Update dates").
 | `lineups.guardStation` | lineups.md, "Guard Station" section | Combined Hero Power (`2.0M` → rounded); Status `Intact, City Defense 15,000 / 15,000` → `status` "Intact", `defense` 15000, `defenseMax` 15000; Guards Locked `Yes` / `No` → `heroesLocked` (other text → `null` with a warning); the `Slot` / `Hero` table → `heroes`. No section → `null` |
 | `lineups.asOf` | upload dates | Oldest of the march, Arena squad, barricade and Guard Station dates (each the newest stamp in its own section) |
 | `recommendations`, `features`, `dataHealth` | `data/manual.json` | |
-| `codes` | codes.md | The `Gift Code` column of the "Active Codes" and "Expired Codes" tables (an empty table is fine; leftover "Redeemed Codes" rows count as Expired with ✓ and warn); `expired[].redeemed` from the Expired table's `Redeemed` column (✓ or empty); `expiredTotal` = number of expired rows |
+| `codes` | codes.md | The `Gift Code` column of the "Active Codes" and "Expired Codes" tables (an empty table is fine; leftover "Redeemed Codes" rows count as Expired with ✓ and warn); `expired[].redeemed` and `expired[].missed` from the Expired table's `Redeemed` column (✓, ✗ or empty); `expiredTotal` = number of expired rows |
 
 ### Hero rules (hero.md)
 

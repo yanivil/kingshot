@@ -1425,6 +1425,11 @@ OLD_REDEEMED_LIST = r"^Redeemed Codes"
 #: The owner calls the mark a "V", so V and Yes are accepted next to the check marks.
 REDEEMED_MARKS = {"✓", "✔", "v", "yes"}
 
+#: "Redeemed" cell values that mean "missed": the code expired before it was redeemed on this account. The owner
+#: calls this mark an "X" (2026-11-18); it is set after trying the code in the game, which then answers
+#: "Cannot be redeemed outside of redemption period!". Kept apart from an empty cell, which means "not checked".
+MISSED_MARKS = {"✗", "✘", "x"}
+
 
 def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Dict[str, Any]]:
     """Read the ``| `CODE` | (Redeemed |) rewards | notes | date |`` rows of one codes list.
@@ -1439,7 +1444,9 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
         ``[{"code"}]`` in table order; Expired rows also get ``"redeemed"``
         (bool) from the table's "Redeemed" column: a mark in
         ``REDEEMED_MARKS`` is ``True``, an empty cell (or no such column) is
-        ``False``, and any other text is ``False`` with a warning. An empty
+        ``False``, and any other text is ``False`` with a warning. A mark in
+        ``MISSED_MARKS`` gives ``redeemed: False`` plus ``missed: True`` (the
+        key is left out otherwise, so older data reads the same). An empty
         table (header only) is a normal state, e.g. no active codes, and gives
         ``[]`` without a warning.
     """
@@ -1457,9 +1464,11 @@ def parse_code_rows(table: Optional[Table], area: str, log: BuildLog) -> List[Di
         if area == "expired":
             mark = strip_md(cell(row, "Redeemed")).strip()
             item["redeemed"] = mark.casefold() in REDEEMED_MARKS
-            if mark and not item["redeemed"]:
+            if mark.casefold() in MISSED_MARKS:
+                item["missed"] = True
+            elif mark and not item["redeemed"]:
                 # A typo must not silently drop the mark, nor turn into one.
-                log.warn("codes.md", f"expired code '{code}': 'Redeemed' is '{mark}'; use ✓ or leave it empty")
+                log.warn("codes.md", f"expired code '{code}': 'Redeemed' is '{mark}'; use ✓, ✗ or leave it empty")
         rows.append(item)
     return rows
 

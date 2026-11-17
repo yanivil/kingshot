@@ -25,22 +25,26 @@ with ✓. None right now (2026-11-05).
 
 ## Expired Codes
 
-Codes that no longer need redeeming: redeemed on this account, or old. **Redeemed** ✓ = redeemed on this account (empty =
-not recorded as redeemed); the dashboard shows the ✓ next to the code.
+Codes that no longer need redeeming: redeemed on this account, or old. **Redeemed** ✓ = redeemed on this account;
+✗ = missed: the code expired before it was redeemed (the account owner calls the marks V and X); empty = not checked.
+The dashboard shows ✓ or ✗ next to the code. Codes can be checked in the game's Gift Code screen (Profile → Settings
+→ Gift Code), which has no history list: a code is typed and Redeem pressed, and the game answers "Cannot be redeemed
+outside of redemption period!" for an expired code or "Redemption limit reached!" for one this account already used.
 
 | Gift Code | Redeemed | Rewards | Source / Notes | Updated |
 | :--- | :---: | :--- | :--- | :---: |
 | `FORTHEKINGDOM` | ✓ | Not recorded | Redeemed, told by the account owner on 5 Nov; moved here from the old Redeemed list on 5 Nov (every redeemed code goes to Expired with ✓) | 2026-11-05 |
 | `KS1104` | ✓ | Not recorded | Found by the automated gift-code check on 4 Nov (kingshot.net, kingshotmastery.com); redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
 | `VIP777` | ✓ | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Starter gift code; redeemed on this account (told by the account owner on 5 Nov); moved here on 5 Nov because the account owner thinks it is old | 2026-11-05 |
-| `KS1102` |  | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov | 2026-11-05 |
-| `TREAT4U` |  | Not recorded | Halloween code; expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `KS1102` | ✗ | Not recorded | Expired, told by the account owner on 5 Nov; again called old by the account owner later on 5 Nov. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
+| `TREAT4U` | ✗ | Not recorded | Halloween code; expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
 | `OFFICIALSTORE1023` | ✓ | Not recorded | Web Store code; expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
 | `KS1025` | ✓ | Not recorded | Expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
 | `Kingshot888` | ✓ | 200 Gems, 2x Gold Key, 2x Mythic Conquest Skill Book, 2x Mythic Expedition Skill Manual | Launch code; expired, told by the account owner on 5 Nov; marked redeemed in this list before the 5 Nov restart, confirmed by the account owner on 5 Nov | 2026-11-05 |
-| `lwaL5ZKx5` |  | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `KSPRAWNING` |  | Not recorded | Expired, told by the account owner on 5 Nov | 2026-11-05 |
-| `KS1017` |  | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov | 2026-11-05 |
+| `lwaL5ZKx5` | ✓ | Not recorded | Expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Redemption limit reached!", which presumably means this account already redeemed it (inferred: expired codes give the "outside of redemption period" answer instead) | 2026-11-18 |
+| `KSPRAWNING` | ✓ | Not recorded | Expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Redemption limit reached!", which presumably means this account already redeemed it (inferred: expired codes give the "outside of redemption period" answer instead) | 2026-11-18 |
+| `KS1017` | ✗ | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
+| `11OFFICIALSTORE08` | ✗ | Not recorded | Found by the automated gift-code check on 9 Nov (boostbot.org, kingshot.net, kingshotguide.org, kingshotmastery.com, kingshotoptimizer.com; issue #122) but not added here then. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
 
 ## How to Redeem Codes
 

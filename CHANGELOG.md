@@ -23,6 +23,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Heroes Not Yet Recruited: Zoe (Infantry, 3 / 10 shards), Hilde (Cavalry, 0 / 10) and Marlin (Archer, 0 / 10),
     SSR, 19,800 power each, read on 18 Nov. They were not in the hero list on 28 Oct, so Generation 2 has reached the
     kingdom (inferred; guides name these three as Generation 2, Unverified).
+- Gift codes checked in the game on 18 Nov (Profile → Settings → Gift Code, with the owner's approval to press Redeem;
+  the screen has no history list, so each unmarked code was typed and tried):
+  - `codes.md`: `11OFFICIALSTORE08` added to Expired. The automated check found it on 9 Nov (issue #122) but it was
+    never added, which is why the dashboard showed no new codes; the game says "Cannot be redeemed outside of
+    redemption period!", so it is marked ✗ (missed). `KS1102`, `TREAT4U` and `KS1017` gave the same answer (✗).
+    `lwaL5ZKx5` and `KSPRAWNING` answered "Redemption limit reached!", so ✓ (inferred: used on this account).
+  - New mark ✗ ("missed", the owner's X) in the Expired table's Redeemed column: `scripts/build_data.py` reads ✗ / ✘ /
+    X as `missed: true` (test `test_expired_missed_mark`), and `docs/index.html` shows ✗ next to the code and counts
+    missed codes in the lede and the Expired heading. README and SCHEMA describe the mark.
 - `data/manual.json`: the attack card quotes the 17 Nov march bonuses (Howard Infantry +103.45%, Quinn Archers
   +109.77%, Saul +94.92%) and Quinn's Sixth Sense at −16%; the hero choice is unchanged.
 - `CLAUDE.md`: standing instructions for Claude sessions, so a session on the owner's iMac follows the same rules:
