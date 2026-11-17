@@ -94,8 +94,9 @@ powers (hero.md explains the likely changes).
 
 | Preset Name | Tag | Primary Lead | Deputy 1 | Deputy 2 | Troop Allocation | Combat Power | Updated |
 | :--- | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
-| **Terror & Beasts** | `Ter` | Diana (Lv. 64) | Howard (Lv. 64) | Jabel (Lv. 64) | 50% Inf / 20% Cav / 30% Arc | 20,367,212 | 2026-11-05 |
-| **Iron Gathering** | `Iro` | Seth (Lv. 64) | Gordon (Lv. 64) | Quinn (Lv. 64) | 51% Inf / 0% Cav / 0% Arc | 8,781,121 | 2026-11-05 |
-| **Stone Gathering** | `Sto` | Edwin (Lv. 59) | Helga (Lv. 64) | Saul (Lv. 64) | 0% Inf / 53% Cav / 0% Arc | 8,871,135 | 2026-11-05 |
-| **Wood Gathering** | `Woo` | Forrest (Lv. 64) | Chenko (Lv. 64) | Yeonwoo (Lv. 64) | 51% Inf / 0% Cav / 0% Arc | 8,604,224 | 2026-11-05 |
-| **Bread Gathering** | `Bre` | Olive (Lv. 64) | Fahd (Lv. 64) | — | 0% Inf / 0% Cav / 57% Arc | 8,158,542 | 2026-11-05 |
+| **Terror & Beasts** | `Ter` | Diana (Lv. 68) | Howard (Lv. 67) | Jabel (Lv. 69) | 50% Inf / 20% Cav / 30% Arc | 25,591,208 | 2026-11-18 |
+| **Iron Gathering** | `Iro` | Seth (Lv. 67) | Gordon (Lv. 67) | Quinn (Lv. 67) | 55% Inf / 0% Cav / 0% Arc | 12,072,922 | 2026-11-18 |
+| **Stone Gathering** | `Sto` | Edwin (Lv. 67) | Helga (Lv. 67) | Saul (Lv. 67) | 0% Inf / 55% Cav / 0% Arc | 11,604,595 | 2026-11-18 |
+| **Wood Gathering** | `Woo` | Forrest (Lv. 67) | Chenko (Lv. 68) | Yeonwoo (Lv. 67) | 55% Inf / 0% Cav / 0% Arc | 11,872,580 | 2026-11-18 |
+| **Bread Gathering** | `Bre` | Olive (Lv. 67) | Fahd (Lv. 67) | — | 0% Inf / 0% Cav / 61% Arc | 11,220,936 | 2026-11-18 |
+| **Attack** | `Att` | Jabel (Lv. 69) | Howard (Lv. 67) | Quinn (Lv. 67) | 50% Inf / 20% Cav / 30% Arc | 25,865,174 | 2026-11-18 |

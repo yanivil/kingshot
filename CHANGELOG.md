@@ -11,6 +11,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
     kills 700,694, stamina 103 / 200, VIP 4, gems 13,447, bread 147.8M. Governor Gear: the Modest Cloak, Oakheart Ring and
     Plain Breeches reached 1-Star (306,000 power and +12.75% each); gear power 1,672,800. The Town Center screen now
     confirms Level 23 (it was deduced on 17 Nov): Attack 797, Defense 1,595, Health 23,929, the same six perks.
+  - Troops and marches (`troops.md`, `lineups.md` preset table): Troops Preview 70,976 Infantry, 62,714 Cavalry,
+    60,796 Archers (194,486, all in town; +57,470 since 5 Nov), March Queue 4/4, Infirmary 0 / 75,800. All six presets
+    re-read on the Deploy screen, including the new `Att` in tab 6 (Jabel, Howard, Quinn at 50 / 20 / 30, 94,490 troops).
+    Every preset's capacity is 55,600 plus its heroes' Troop Capacity, so the base rose from 50,690 (inferred).
+  - `data/manual.json`: the attack-formation card is removed because the owner saved it as `Att`; the Infantry card
+    now uses the 18 Nov numbers (Iron and Wood together need 103,856 Infantry, about 32,900 more than the 70,976 owned).
 - 13 heroes recorded from the phone on 17 Nov (`hero.md`), read with `adb` screenshots of each hero's Stats, Hero
   Stats panel, promotion preview, Skills and Gear screens: Chenko, Howard, Quinn, Gordon, Saul, Seth, Olive, Forrest,
   Edwin, Yeonwoo, Fahd, Amane and Helga. Diana was re-read and matches; Jabel was not re-read.
