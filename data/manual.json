@@ -136,7 +136,7 @@
       "type": "Formations",
       "what": "Tab 6 · Attack: Jabel, Howard, Quinn",
       "summary": "For attacking a governor: your three strongest march heroes, 50 / 20 / 30. Scout first; if they are mostly one troop type, use the counter in Details.",
-      "why": "Jabel, Howard and Quinn have your highest march bonuses for their troop types (Cavalry +139%, Infantry +97%, Archers +103%) and all their march skills work in battle. Diana's only cut stamina and speed up hunting. Guides use 50 / 20 / 30 when the enemy is unknown. If a scout shows mostly Infantry, use 26,664 / 18,348 / 43,868 (all your Archers). If mostly Cavalry, use 46,162 / 8,888 / 33,830 (all your Infantry). If mostly Archers, use 26,664 / 44,440 / 17,776.",
+      "why": "Jabel, Howard and Quinn have your highest march bonuses for their troop types (Cavalry +139%, Infantry +103%, Archers +110%) and all their march skills work in battle. Diana's only cut stamina and speed up hunting. Guides use 50 / 20 / 30 when the enemy is unknown. If a scout shows mostly Infantry, use 26,664 / 18,348 / 43,868 (all your Archers). If mostly Cavalry, use 46,162 / 8,888 / 33,830 (all your Infantry). If mostly Archers, use 26,664 / 44,440 / 17,776.",
       "changes": [
         {
           "where": "Tab 6 (looks empty) → Attack",
@@ -177,8 +177,8 @@
         "kingshotguides.com hero lineup guide: \"When you're launching your solo attack or rally, the order of heroes in the slots doesn't matter.\"",
         "kingshotguides.com troop guide: \"PvP Battles → 50% Infantry, 20% Cavalry, 30% Archers\"",
         "kingshotmastery.com troop formations: \"Counter Heavy Infantry: 30/20/50\", \"Counter Heavy Cavalry: 60/10/30\", \"Counter Heavy Archers: 30/50/20\"",
-        "hero.md march bonuses: Jabel Cavalry Attack +138.77% (17 Nov); Howard Infantry +97.13% (Helga +41.23%); Quinn Archers +103.45% (Saul +86.63%; Diana +96.18% on 17 Nov); the others were read on 5 Nov",
-        "hero.md march skills: Howard −16% damage taken and −16% enemy Attack; Quinn −12% damage taken and a 50% chance of +30% damage; Jabel Rally Flag, Hero's Domain, +20% Lethality; Diana stamina and hunting speed only",
+        "hero.md march bonuses: Jabel Cavalry Attack +138.77% (17 Nov); Howard Infantry +103.45% (Helga +41.23%); Quinn Archers +109.77% (Saul +94.92%; Diana +96.18%), all read on 17 Nov",
+        "hero.md march skills: Howard −16% damage taken and −16% enemy Attack; Quinn −16% damage taken and a 50% chance of +30% damage; Jabel Rally Flag, Hero's Domain, +20% Lethality; Diana stamina and hunting speed only",
         "troops.md: 46,162 Infantry, 46,986 Cavalry, 43,868 Archers; march capacity 88,880"
       ],
       "cost": "None (a preset)",
@@ -195,7 +195,7 @@
         "Saul",
         "Diana"
       ],
-      "note": "Verified: your heroes' march bonuses and skills, and your troop counts. Inferred: the hero choice, from those numbers. kingshot.net's solo-march tier list ranks Helga and Saul above Howard and Quinn, but rates fully built heroes; your Helga (1-Star) and Saul (2-Star) give less today. Unverified: the guides' troop ratios. Counters are capped by your stock (you have fewer than 50% Archers or 60% Infantry of a full march)."
+      "note": "Verified: your heroes' march bonuses and skills, and your troop counts. Inferred: the hero choice, from those numbers. kingshot.net's solo-march tier list ranks Helga and Saul above Howard and Quinn, but rates fully built heroes; your Helga (1-Star) and Saul (3-Star) give less today. Unverified: the guides' troop ratios. Counters are capped by your stock (you have fewer than 50% Archers or 60% Infantry of a full march)."
     },
     {
       "id": "train-infantry",

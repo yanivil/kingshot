@@ -6,6 +6,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- 13 heroes recorded from the phone on 17 Nov (`hero.md`), read with `adb` screenshots of each hero's Stats, Hero
+  Stats panel, promotion preview, Skills and Gear screens: Chenko, Howard, Quinn, Gordon, Saul, Seth, Olive, Forrest,
+  Edwin, Yeonwoo, Fahd, Amane and Helga. Diana was re-read and matches; Jabel was not re-read.
+  - Levels 64 → 67 (Chenko 68; Edwin 59 → 67). Promotions: Chenko, Howard and Gordon to 4-Star Tier 1, Quinn to
+    4-Star Tier 2, Seth, Olive, Forrest and Edwin to 4-Star, Saul and Amane to 3-Star, Yeonwoo and Fahd to 3-Star
+    Tier 1. Helga is still 1-Star.
+  - Every hero's power change is split into the promotion (base power, exactly the 5 Nov preview each time), gear,
+    and a remainder labelled inferred (levels and skills). The stat changes split the same way, and the remainder
+    is +6 Defense per level gained for every hero.
+  - Gear, skill levels and book stock (Epic Conquest 38, Epic Expedition 43, Mythic 49 / 41, Rare 10 / 12) are
+    current. Seth's Hammer Burn and Burnished Iron and Olive's Rain of Arrows and Target Lock are at Lv. 5, the highest.
+  - The old step-by-step derivations of earlier changes were replaced by the 17 Nov ones; they remain in git history.
+  - Roster: stale skill values in the role column updated (Saul, Chenko, Yeonwoo, Seth, Edwin); Amadeus seen again
+    with the same values.
+- `data/manual.json`: the attack card quotes the 17 Nov march bonuses (Howard Infantry +103.45%, Quinn Archers
+  +109.77%, Saul +94.92%) and Quinn's Sixth Sense at −16%; the hero choice is unchanged.
 - `CLAUDE.md`: standing instructions for Claude sessions, so a session on the owner's iMac follows the same rules:
   privacy (never the Player ID or governor name), reading the game from the Android phone with `adb` (read-only:
   never spend, upgrade, buy or send), recording and date rules, suggestion cards, git workflow, reply format.
