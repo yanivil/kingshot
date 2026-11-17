@@ -11,24 +11,30 @@ runners (standard library only, no installs). It:
 3. picks out code-shaped words from the places those pages usually put codes
    (``<code>``, ``<strong>``, table cells, copy buttons, JSON ``"code"`` keys);
 4. drops anything already in ``codes.md``, in the baseline, or already reported
-   in an earlier ``gift-codes`` issue;
-5. opens one GitHub issue listing what is left, split into codes seen on two or
-   more trackers (likely) and on one tracker only (less certain).
+   in an earlier ``gift-codes`` issue or pull request;
+5. writes a report of what is left, split into codes seen on two or more
+   trackers (likely) and on one tracker only (less certain);
+6. with ``--add-to-codes``, adds those codes to the Active table of
+   ``codes.md`` as unverified rows.
 
-Why an issue and not a pull request: tracker pages are written by third
-parties and change without notice, so whatever this finds is unverified. A
-person (or Claude, when asked) tries the codes in the game and then records
-them in ``codes.md`` through the usual pull request.
+The workflow then commits ``codes.md`` to a ``gift-codes/...`` branch and opens
+a pull request with the report as its body; merging it puts the codes on the
+dashboard's "To redeem" list. Why a pull request: on 9 Nov the check reported
+11OFFICIALSTORE08 in an issue only, nothing copied it into ``codes.md``, and it
+expired before anyone tried it. The codes are still unverified (tracker pages
+are written by third parties), so they reach ``main`` only when the owner
+merges, and each row says so until the code is tried in the game.
 
 Usage::
 
     python3 scripts/check_gift_codes.py --codes codes.md            # report only
-    python3 scripts/check_gift_codes.py --codes codes.md \\
-        --github-repo owner/name --notify owner                     # also open an issue
+    python3 scripts/check_gift_codes.py --codes codes.md --add-to-codes \\
+        --github-repo owner/name --notify owner --report-file report.md
 
-Environment: ``GITHUB_TOKEN`` (needed to read and open issues),
-``GITHUB_STEP_SUMMARY`` (optional; the report is appended there),
-``DRY_RUN=true`` (optional; report but do not open an issue).
+Environment: ``GITHUB_TOKEN`` (optional; reads earlier gift-code issues and
+pull requests so their codes are not reported twice), ``GITHUB_STEP_SUMMARY``
+(optional; the report is appended there), ``GITHUB_OUTPUT`` (optional;
+``new_codes=<count>`` is written there for the workflow's next steps).
 
 Exit status: 0 normally; 1 when every tracker failed to download, so a broken
 check shows up as a failed workflow run instead of silently finding nothing.
@@ -237,8 +243,77 @@ def find_new_codes(
 
 
 def codes_in_text(text: str) -> Set[str]:
-    """Return the case-folded backticked words in ``text`` (used for issue bodies)."""
+    """Return the case-folded backticked words in ``text`` (used for issue and pull request bodies)."""
     return {m.casefold() for m in re.findall(r"`([A-Za-z0-9]{4,24})`", text or "")}
+
+
+def split_by_certainty(new: Dict[str, List[str]]) -> Tuple[List[str], List[str]]:
+    """Return ``(likely, single)``: codes on two or more trackers, then on one, each sorted."""
+    likely = sorted((c for c, s in new.items() if len(s) >= 2), key=str.casefold)
+    single = sorted((c for c, s in new.items() if len(s) == 1), key=str.casefold)
+    return likely, single
+
+
+# ---------------------------------------------------------------------------
+# codes.md update
+# ---------------------------------------------------------------------------
+
+# The "## Active Codes" heading, and the sentence its paragraph carries while the list is empty.
+ACTIVE_HEADING_RE = re.compile(r"^##\s+Active Codes\b", re.MULTILINE)
+NONE_RIGHT_NOW_RE = re.compile(r"\s*None right now \(\d{4}-\d{2}-\d{2}\)\.")
+
+
+def add_to_active(codes_md: str, new: Dict[str, List[str]], today: str) -> str:
+    """Add new codes as unverified rows at the end of the Active table of ``codes.md``.
+
+    Why here and not only in an issue: the dashboard's "To redeem" list is built
+    from this table, so a code that is only in an issue never shows there.
+
+    Args:
+        codes_md: The text of ``codes.md``.
+        new: New code → tracker names (from ``find_new_codes``).
+        today: Date of the run (YYYY-MM-DD); it goes in the Updated column.
+
+    Returns:
+        The new text. Rows follow the Active table's columns (Gift Code,
+        Rewards, Source / Notes, Updated); two-tracker codes come first. The
+        paragraph's "None right now (date)." is dropped, since the list is no
+        longer empty. With nothing new the text is returned unchanged.
+
+    Raises:
+        ValueError: When there is no Active Codes table, so the run fails
+            loudly instead of losing the codes.
+    """
+    if not new:
+        return codes_md
+    lines = codes_md.splitlines(keepends=True)
+    heading = next((i for i, line in enumerate(lines) if ACTIVE_HEADING_RE.match(line)), None)
+    if heading is None:
+        raise ValueError("codes.md has no '## Active Codes' heading")
+    # The section ends at the next heading of the same or a higher level.
+    end = next((i for i in range(heading + 1, len(lines)) if re.match(r"^#{1,2}\s", lines[i])), len(lines))
+    header = next((i for i in range(heading + 1, end) if lines[i].startswith("| Gift Code")), None)
+    if header is None or header + 1 >= end or not lines[header + 1].startswith("|"):
+        raise ValueError("codes.md has no Active Codes table")
+    last = header + 1  # the | :--- | separator row
+    while last + 1 < end and lines[last + 1].startswith("|"):
+        last += 1
+
+    day = dt.date.fromisoformat(today)
+    when = f"{day.day} {day:%b}"  # "18 Nov", as in the notes already in codes.md
+    rows = []
+    likely, single = split_by_certainty(new)
+    for code in likely + single:
+        sources = new[code]
+        seen = (f"listed on {len(sources)} trackers ({', '.join(sources)})" if len(sources) >= 2
+                else f"listed on one tracker only ({sources[0]}), so less certain")
+        rows.append(f"| `{code}` | Not recorded | Unverified: found by the automated gift-code check on {when}, "
+                    f"{seen}; not tried in the game yet | {today} |\n")
+    # Edge case: a file without a final newline must not glue the first new row to the last old one.
+    if not lines[last].endswith("\n"):
+        lines[last] += "\n"
+    intro = [NONE_RIGHT_NOW_RE.sub("", line) for line in lines[heading:header]]
+    return "".join(lines[:heading] + intro + lines[header:last + 1] + rows + lines[last + 1:])
 
 
 # ---------------------------------------------------------------------------
@@ -265,8 +340,7 @@ def build_report(
     Returns:
         Markdown text.
     """
-    likely = sorted((c for c, s in new.items() if len(s) >= 2), key=str.casefold)
-    single = sorted((c for c, s in new.items() if len(s) == 1), key=str.casefold)
+    likely, single = split_by_certainty(new)
     lines = []
     if notify:
         lines.append(f"@{notify}")
@@ -286,9 +360,10 @@ def build_report(
     lines += ["", "Recorded codes are those in `codes.md` or `data/gift_codes_baseline.txt`. A tracker that downloads "
               "but shows 0 of them has probably changed its page; codes it lists may be missed."]
     if new:
-        lines += ["", "Next step: try the codes in the game, then tell Claude which ones worked so `codes.md` is updated "
-                  "through a pull request. Codes that are old or not real can go into `data/gift_codes_baseline.txt`. "
-                  "Close this issue when done."]
+        lines += ["", "Next step: merge the pull request that adds these codes to the Active list in `codes.md` "
+                  "(marked unverified), so the dashboard shows them under To redeem. Then try them in the game and "
+                  "tell Claude how each one went, so its row is moved to Expired. A code that is old or not real: "
+                  "delete its row and add it to `data/gift_codes_baseline.txt`."]
     return "\n".join(lines) + "\n"
 
 
@@ -335,7 +410,12 @@ def _github(method: str, path: str, token: str, body: Optional[dict] = None) -> 
 
 
 def reported_codes(repo: str, token: str) -> Set[str]:
-    """Codes named in any earlier issue with the gift-codes label (open or closed)."""
+    """Codes named in any earlier issue or pull request with the gift-codes label (open, closed or merged).
+
+    Why pull requests count too: the issues endpoint lists pull requests as
+    well, so a code the owner turned down by closing its pull request is not
+    proposed again on the next run.
+    """
     status, issues = _github("GET", f"/repos/{repo}/issues?labels={ISSUE_LABEL}&state=all&per_page=100", token)
     if status != 200 or not isinstance(issues, list):
         return set()
@@ -343,14 +423,6 @@ def reported_codes(repo: str, token: str) -> Set[str]:
     for issue in issues:
         found |= codes_in_text(issue.get("body") or "")
     return found
-
-
-def open_issue(repo: str, token: str, title: str, body: str) -> Optional[str]:
-    """Open the issue (creating the label first if needed); return its URL."""
-    _github("POST", f"/repos/{repo}/labels", token,
-            {"name": ISSUE_LABEL, "color": "d4a72c", "description": "New Kingshot gift codes found by the scheduled check"})
-    status, issue = _github("POST", f"/repos/{repo}/issues", token, {"title": title, "body": body, "labels": [ISSUE_LABEL]})
-    return issue.get("html_url") if status == 201 and isinstance(issue, dict) else None
 
 
 # ---------------------------------------------------------------------------
@@ -364,17 +436,21 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     ap.add_argument("--codes", default="codes.md", help="path to codes.md")
     ap.add_argument("--baseline", default="data/gift_codes_baseline.txt",
                     help="codes not to report (one per line); skipped if the file is missing")
-    ap.add_argument("--github-repo", help="owner/name; open an issue there when new codes are found")
-    ap.add_argument("--notify", help="GitHub login to mention in the issue")
+    ap.add_argument("--github-repo", help="owner/name; skip codes named in its earlier gift-codes issues and PRs")
+    ap.add_argument("--notify", help="GitHub login to mention in the report")
+    ap.add_argument("--add-to-codes", action="store_true",
+                    help="add the new codes to the Active table of the --codes file, marked unverified")
+    ap.add_argument("--report-file", help="also write the report here (the workflow uses it as the PR body)")
     args = ap.parse_args(list(argv) if argv is not None else None)
 
-    known = load_known_codes(Path(args.codes).read_text(encoding="utf-8"))
+    codes_path = Path(args.codes)
+    codes_md = codes_path.read_text(encoding="utf-8")
+    known = load_known_codes(codes_md)
     baseline_path = Path(args.baseline)
     # Edge case: a missing baseline is not an error; the check then reports old codes too.
     if baseline_path.is_file():
         known |= load_baseline(baseline_path.read_text(encoding="utf-8"))
     token = os.environ.get("GITHUB_TOKEN", "")
-    dry_run = os.environ.get("DRY_RUN", "").lower() == "true"
 
     pages: Dict[str, str] = {}
     status: Dict[str, str] = {}
@@ -385,7 +461,8 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
     already = reported_codes(args.github_repo, token) if args.github_repo and token else set()
     new, known_seen = find_new_codes(pages, known, already)
-    today = dt.date.today().isoformat()
+    # UTC, like the runner and the workflow's `date -u`, so the row date and the commit message agree.
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
     report = build_report(new, status, known_seen, today, args.notify if new else None)
 
     print(report)
@@ -393,15 +470,21 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     if summary:
         with open(summary, "a", encoding="utf-8") as fh:
             fh.write(report)
+    if args.report_file:
+        Path(args.report_file).write_text(report, encoding="utf-8")
+    # Why the file is written even on a dry run: it only changes the runner's
+    # checkout, and the workflow shows the diff; only the push needs a real run.
+    if args.add_to_codes and new:
+        codes_path.write_text(add_to_active(codes_md, new, today), encoding="utf-8")
+        print(f"Added {len(new)} code(s) to the Active table of {codes_path}.")
+    output = os.environ.get("GITHUB_OUTPUT")
+    if output:
+        with open(output, "a", encoding="utf-8") as fh:
+            fh.write(f"new_codes={len(new)}\n")
 
     if not pages:
         print("Every tracker failed to download.", file=sys.stderr)
         return 1
-    if new and args.github_repo and token and not dry_run:
-        url = open_issue(args.github_repo, token, f"New Kingshot gift codes ({today})", report)
-        print(f"Opened issue: {url}" if url else "Could not open the issue.")
-    elif new and dry_run:
-        print("Dry run: no issue opened.")
     return 0
 
 
