@@ -6,6 +6,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Jabel and Diana recorded from their hero screens of 17 Nov (`hero.md`).
+  - Jabel: Lv. 69, 4-Star (Tier 0), power 884,890 (764,215 on 5 Nov), Troop Capacity 13,030. Armet +32, Gauntlets +30,
+    the Epic Crusader's Breastplate +30 in place of the Rare Brigader's one, Boots +31. Brave the Storm and Rally Flag
+    Lv. 5. Gallant Throw needs 49 / 75 Mythic Conquest Books. Stat changes add up exactly; the level part is inferred.
+  - Diana: Lv. 68, 4-Star (Tier 4), power 747,524 (635,778 on 5 Nov), Troop Capacity 12,980. Faceplate and Boots +27,
+    Bracers +26, Leatherwear +25. Incendiary Arrows and Quick Paced Lv. 4. Stat changes add up exactly; the level part
+    is inferred.
+- `profile.md`: Town Center Level 23, deduced from Jabel's Lv. 69 and her next level needing Town Center 24 (the Town
+  Center screen was not read). `troops.md`: note that heroes above Lv. 64 add more Troop Capacity.
+- `data/manual.json`: card `tc-23` removed (done). The attack card's figures use Jabel's and Diana's 17 Nov bonuses.
 - `data/manual.json`: card `formation-attack` (priority 1) for attacking a governor: tab 6 with Jabel, Howard and
   Quinn, 44,440 / 17,776 / 26,664 (50 / 20 / 30), and the guides' counters sized to the troop stock. Chosen by
   the heroes' recorded march bonuses and skills; the ratios come from guides (unverified). The other cards move

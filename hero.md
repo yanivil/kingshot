@@ -16,11 +16,11 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 64 | 3-Star (Tier 5) | Arena (Back-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-05 |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 69 | 4-Star (Tier 0) | Arena (Back-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-17 |
 | **Saul** | SSR / Mythic | Archer | Lv. 64 | 2-Star (Tier 5) | Stone (`Sto`), City Construction, Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+6%) & HP (+9%), squad Lethality (+15%) | 2026-11-05 |
 | **Helga** | SSR / Mythic | Infantry | Lv. 64 | 1-Star (Tier 0) | Stone (`Sto`), Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-05 |
 | **Howard** | SR / Epic | Infantry | Lv. 64 | 4-Star (Tier 0) | Arena (Front-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-05 |
-| **Diana** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 2) | Arena (Back-C), Barricade 2, Guard Station, Terror & Beasts (`Ter` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & march speed (+60%) | 2026-11-05 |
+| **Diana** | SR / Epic | Archer | Lv. 68 | 4-Star (Tier 4) | Arena (Back-C), Barricade 2, Guard Station, Terror & Beasts (`Ter` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & hunting march speed (+80%) | 2026-11-17 |
 | **Quinn** | SR / Epic | Archer | Lv. 64 | 4-Star (Tier 1) | Arena (Back-R), Barricade 1, Iron (`Iro`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-05 |
 | **Chenko** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Offense (Front-R), Barricade 2 (Slot 2), Wood (`Woo`) | **Offensive Bruiser:** Frontline defense (+50%), +15% squad lethality & -12% dmg | 2026-11-05 |
 | **Gordon** | SR / Epic | Cavalry | Lv. 64 | 4-Star (Tier 0) | Arena Defense (Front-R), Barricade 2 (Slot 1), Iron (`Iro`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-05 |
@@ -42,50 +42,52 @@ Heroes shown in the hero list but not recruited. They are not in the roster abov
 
 ## In-Depth Hero Profile: Jabel (Jable)
 
-* **Hero Name:** Jabel _(2026-11-05)_
+* **Hero Name:** Jabel _(2026-11-17)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-27)_
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-27)_
-* **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; was Lv. 54 until the Town Center reached Lv. 22) _(2026-11-05)_
-* **Star Tier:** **3-Star (Tier 5)** (Shards: 36 / 100 to 4-Star promotion; Redeem shows 36, Mythic) _(2026-11-05)_
-* **Total Hero Power:** **764,215** (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred)) _(2026-11-05)_
-* **Troop Capacity Boost:** **+12,730 Troops** (11,525 at Lv. 54) _(2026-11-05)_
-* **Escort Guards:** **9 Escorts** (8 at Lv. 54) _(2026-11-05)_
-* **Total Equipped Gear Power:** **237,155** (4 pieces 207,155 + widget 30,000; the widget was not in the 25 Oct, 27 Oct or 5 Nov screenshots) _(2026-11-05)_
+* **Current Level:** **Lv. 69** (level cap reached — next level requires **Town Center Lv. 24**; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Lv. 54 until the Town Center reached Lv. 22) _(2026-11-17)_
+* **Star Tier:** **4-Star (Tier 0)** (Shards: 52 / 100 to Tier 1 promotion; Redeem shows 24, Mythic) _(2026-11-17)_
+* **Total Hero Power:** **884,890** (+120,675 since 5 Nov: +46,700 base power from 3-Star Tier 5 → 4-Star (exactly the 5 Nov preview); +45,255 from gear (Armet +23 → +32, +22,680; Gauntlets +25 → +30, +5,400; the Rare Brigader's Breastplate +30 replaced by the Epic Crusader's Breastplate +30, +16,425; Boots +30 → +31, +750); and +28,720 not itemised on screen, presumably the five levels 64 → 69 plus Brave the Storm and Rally Flag reaching Lv. 5 (inferred; the split is not shown). On 5 Nov: 764,215 (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred))) _(2026-11-17)_
+* **Troop Capacity Boost:** **+13,030 Troops** (12,730 at Lv. 64, 11,525 at Lv. 54) _(2026-11-17)_
+* **Escort Guards:** **9 Escorts** (8 at Lv. 54) _(2026-11-17)_
+* **Total Equipped Gear Power:** **282,410** (4 pieces 252,410 + widget 30,000; the widget was not in the 25 Oct, 27 Oct, 5 Nov or 17 Nov screenshots; 237,155 on 5 Nov) _(2026-11-17)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,890** | Core attack scaling for exploration skills and auto-attacks | 2026-11-05 |
-| | **Hero Defense** | **1,719** | Damage mitigation against incoming enemy hero attacks | 2026-11-05 |
-| | **Hero Health** | **18,048** | Total health pool in Arena and Campaign stages | 2026-11-05 |
-| **Conquest (Escort)** | **Escort Attack** | **630** | Attack value of her 9 escort bodyguards | 2026-11-05 |
-| | **Escort Defense** | **573** | Defense value of her 9 escort bodyguards | 2026-11-05 |
-| | **Escort Health** | **6,016** | Health pool of escort bodyguards | 2026-11-05 |
-| **Expedition (March)** | **Cavalry Attack** | **+127.16%** | Massive offensive bonus applied to all deployed Cavalry | 2026-11-05 |
-| | **Cavalry Defense**| **+127.16%** | High armor rating reducing cavalry casualties in field battles | 2026-11-05 |
-| | **Cavalry Lethality**| **+47.47%** | Direct bonus to enemy casualty conversion (from gear and widget: 32.27% + 10.20% + 5.00%) | 2026-11-05 |
-| | **Cavalry Health** | **+29.45%** | Expanded squad durability in open-field clashes (from gear and widget: 14.25% + 10.20% + 5.00%) | 2026-11-05 |
+| **Conquest (Hero)** | **Hero Attack** | **2,067** | Core attack scaling for exploration skills and auto-attacks (1,890 on 5 Nov) | 2026-11-17 |
+| | **Hero Defense** | **1,914** | Damage mitigation against incoming enemy hero attacks (1,719 on 5 Nov) | 2026-11-17 |
+| | **Hero Health** | **19,908** | Total health pool in Arena and Campaign stages (18,048 on 5 Nov) | 2026-11-17 |
+| **Conquest (Escort)** | **Escort Attack** | **688** | Attack value of her 9 escort bodyguards (630 on 5 Nov) | 2026-11-17 |
+| | **Escort Defense** | **638** | Defense value of her 9 escort bodyguards (573 on 5 Nov) | 2026-11-17 |
+| | **Escort Health** | **6,636** | Health pool of escort bodyguards (6,016 on 5 Nov) | 2026-11-17 |
+| **Expedition (March)** | **Cavalry Attack** | **+138.77%** | Massive offensive bonus applied to all deployed Cavalry (+127.16% on 5 Nov) | 2026-11-17 |
+| | **Cavalry Defense**| **+138.77%** | High armor rating reducing cavalry casualties in field battles (+127.16% on 5 Nov) | 2026-11-17 |
+| | **Cavalry Lethality**| **+52.02%** | Direct bonus to enemy casualty conversion (from gear and widget: 36.68% + 10.34% + 5.00%; +47.47% on 5 Nov) | 2026-11-17 |
+| | **Cavalry Health** | **+35.60%** | Expanded squad durability in open-field clashes (from gear and widget: 15.30% + 15.30% + 5.00%; +29.45% on 5 Nov) | 2026-11-17 |
 
-Since 27 Oct the changes add up exactly: the Tier 5 promotion gives +60 ATK / +60 DEF / +600 HP (escort +20 / +20 / +200) and Cavalry Attack / Defense +6.45%, as its preview said; the new helmet gives +216 ATK / +1,083 HP (escort +72 / +361) and Lethality +22.77%; the Gauntlets +2 DEF / +9 HP (escort +1 / +3) and Health +0.21%; the Breastplate +6 DEF / +30 HP (escort +2 / +10) and Health +0.70%. _(2026-11-05)_
+Since 5 Nov the changes add up exactly: the 4-Star promotion gives +108 ATK / +108 DEF / +1,080 HP (escort +36 / +36 / +360) and Cavalry Attack / Defense +11.61%, as its preview said; the Armet +38 ATK / +189 HP (escort +12 / +63) and Lethality +4.41%; the Gauntlets +9 DEF / +45 HP (escort +3 / +15) and Health +1.05%; the new Breastplate +48 DEF / +240 HP (escort +16 / +80) and Health +5.10%; the Boots +1 ATK / +6 HP (escort +0 / +2) and Lethality +0.14%; and +30 ATK / +30 DEF / +300 HP (escort +10 / +10 / +100) not itemised on screen, presumably the five levels 64 → 69 (inferred). _(2026-11-17)_
 
-### 2. Star Promotion Milestone Preview (3-Star Tier 5 ➔ 4-Star)
+Between 27 Oct and 5 Nov the changes added up exactly: the Tier 5 promotion gives +60 ATK / +60 DEF / +600 HP (escort +20 / +20 / +200) and Cavalry Attack / Defense +6.45%, as its preview said; the new helmet gives +216 ATK / +1,083 HP (escort +72 / +361) and Lethality +22.77%; the Gauntlets +2 DEF / +9 HP (escort +1 / +3) and Health +0.21%; the Breastplate +6 DEF / +30 HP (escort +2 / +10) and Health +0.70%. _(2026-11-05)_
 
-Promoted to **Tier 5** between the 27 Oct and 5 Nov uploads (+28,900 base power: 306,600 → 335,500, and Cavalry Attack / Defense +120.71% → +127.16%, exactly the 27 Oct preview). Earlier promoted to **Tier 4** between the 22 Oct and 25 Oct uploads (+27,600: 279,000 → 306,600). Current Status: **36 / 100 Shards** (needs **64 more shards** for 4-Star; Redeem shows 36, Mythic). _(2026-11-05)_
+### 2. Star Promotion Milestone Preview (4-Star Tier 0 ➔ Tier 1)
 
-Post-promotion values below are the current value plus the increase the game shows. _(2026-11-05)_
+Promoted to **4-Star** between the 5 Nov and 17 Nov uploads (+46,700 base power: 335,500 → 382,200, and Cavalry Attack / Defense +127.16% → +138.77%, exactly the 5 Nov preview). On 5 Nov she had 36 / 100 shards and Redeem showed 36; where the other shards came from was not shown. Earlier promoted to **Tier 5** between the 27 Oct and 5 Nov uploads (+28,900: 306,600 → 335,500) and to **Tier 4** between the 22 Oct and 25 Oct uploads (+27,600: 279,000 → 306,600). Current Status: **52 / 100 Shards** (needs **48 more shards** for Tier 1; Redeem shows 24, Mythic). _(2026-11-17)_
+
+Post-promotion values below are the current value plus the increase the game shows; the screen was cut off after Cavalry Defense. _(2026-11-17)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 335,500 | **+46,700** | 382,200 | 2026-11-05 |
-| **Hero Attack** | 1,020 | **+108** | 1,128 | 2026-11-05 |
-| **Hero Defense** | 1,020 | **+108** | 1,128 | 2026-11-05 |
-| **Hero Health** | 10,200 | **+1,080** | 11,280 | 2026-11-05 |
-| **Escort Attack** | 340 | **+36** | 376 | 2026-11-05 |
-| **Escort Defense** | 340 | **+36** | 376 | 2026-11-05 |
-| **Escort Health** | 3,400 | **+360** | 3,760 | 2026-11-05 |
-| **Cavalry Attack** | +127.16% | **+11.61%** | **+138.77%** | 2026-11-05 |
-| **Cavalry Defense** | +127.16% | **+11.61%** | **+138.77%** | 2026-11-05 |
+| **Base Hero Power** | 382,200 | **+40,700** | 422,900 | 2026-11-17 |
+| **Hero Attack** | 1,128 | **+84** | 1,212 | 2026-11-17 |
+| **Hero Defense** | 1,128 | **+84** | 1,212 | 2026-11-17 |
+| **Hero Health** | 11,280 | **+840** | 12,120 | 2026-11-17 |
+| **Escort Attack** | 376 | **+28** | 404 | 2026-11-17 |
+| **Escort Defense** | 376 | **+28** | 404 | 2026-11-17 |
+| **Escort Health** | 3,760 | **+280** | 4,040 | 2026-11-17 |
+| **Cavalry Attack** | +138.77% | **+9.02%** | **+147.79%** | 2026-11-17 |
+| **Cavalry Defense** | +138.77% | **+9.02%** | **+147.79%** | 2026-11-17 |
 
 ### 3. Equipped Hero Gear & Widget
 
@@ -93,35 +95,36 @@ Post-promotion values below are the current value plus the increase the game sho
   *Conquest:* Hero +60 ATK / +60 DEF / +600 HP (Escort +20 / +20 / +200)  
   *Expedition:* +5.00% Cavalry Lethality & +5.00% Cavalry Health  
   *Exclusive Skill:* **Crimson Spirit Lv. 1**
-* **Gauntlets:** **Crusader's Gauntlets (+25, Epic Purple)** — 43,875 Power _(2026-11-05)_  
-  *Conquest:* Hero +135 DEF / +675 HP (Escort +45 DEF / +225 HP)  
-  *Expedition:* +14.25% Cavalry Health
-* **Helmet:** **Judicator's Armet (+23, Mythic Orange)** — 97,580 Power _(2026-11-05)_  
-  *Conquest:* Hero +306 ATK / +1,533 HP (Escort +102 ATK / +511 HP)  
-  *Expedition:* +32.27% Cavalry Lethality  
-  *Mastery:* the icon shows **Lv. 4**, and the piece has a "Troop Mastery" section and a "Mastery Forging" button; the mastery effect was cut off in the screenshot. It replaced the Brigader's Armet (+25, Rare, 29,250) worn on 27 Oct.
-* **Armor:** **Brigader's Breastplate (+30, Rare Blue)** — 32,850 Power _(2026-11-05)_  
-  *Conquest:* Hero +96 DEF / +480 HP (Escort +32 DEF / +160 HP)  
-  *Expedition:* +10.20% Cavalry Health
-* **Boots:** **Brigader's Battle Boots (+30, Rare Blue)** — 32,850 Power _(2026-11-05)_  
-  *Conquest:* Hero +96 ATK / +480 HP (Escort +32 ATK / +160 HP)  
-  *Expedition:* +10.20% Cavalry Lethality
+* **Gauntlets:** **Crusader's Gauntlets (+30, Epic Purple)** — 49,275 Power (+25 and 43,875 on 5 Nov) _(2026-11-17)_  
+  *Conquest:* Hero +144 DEF / +720 HP (Escort +48 DEF / +240 HP)  
+  *Expedition:* +15.30% Cavalry Health
+* **Helmet:** **Judicator's Armet (+32, Mythic Orange)** — 120,260 Power (+23 and 97,580 on 5 Nov) _(2026-11-17)_  
+  *Conquest:* Hero +344 ATK / +1,722 HP (Escort +114 ATK / +574 HP)  
+  *Expedition:* +36.68% Cavalry Lethality  
+  *Mastery:* the icon still shows **Lv. 4**, and the piece has a "Troop Mastery" section and a "Mastery Forging" button; the mastery effect was cut off in the 5 Nov and 17 Nov screenshots. It replaced the Brigader's Armet (+25, Rare, 29,250) worn on 27 Oct.
+* **Armor:** **Crusader's Breastplate (+30, Epic Purple)** — 49,275 Power _(2026-11-17)_  
+  *Conquest:* Hero +144 DEF / +720 HP (Escort +48 DEF / +240 HP)  
+  *Expedition:* +15.30% Cavalry Health  
+  It replaced the Brigader's Breastplate (+30, Rare, 32,850) worn on 5 Nov; where the new piece came from was not shown.
+* **Boots:** **Brigader's Battle Boots (+31, Rare Blue)** — 33,600 Power (+30 and 32,850 on 5 Nov) _(2026-11-17)_  
+  *Conquest:* Hero +97 ATK / +486 HP (Escort +32 ATK / +162 HP)  
+  *Expedition:* +10.34% Cavalry Lethality
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Gallant Throw** | Active (Top) | **Lv. 4** | Throws a spear dealing **234% AoE damage** and pins targets for 1.5s. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 252% AoE; the screen says "To upgrade: ascend to 4-Star") | 2026-11-05 |
-| **Brave the Storm** | Passive (Mid) | **Lv. 4** | Strikes target enemy dealing **195% Attack damage**. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 210% DMG) | 2026-10-25 |
-| **Persistence** | Passive (Bot) | **Lv. 4** | Increases Attack Speed by **50%** when Health drops below 50% (+50% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (reached Lv. 4 by 5 Nov, shown on the skill icon; Gallant Throw at Lv. 4 needs 4-Star for Lv. 5, so this one presumably does too, which is inferred) | 2026-11-05 |
+| **Gallant Throw** | Active (Top) | **Lv. 4** | Throws a spear that pierces defenses, dealing **Attack * 234% AoE damage** and pinning the targets for 1.5s (levels: 180% / 198% / 216% / 234% / 252%). | **In Progress** (49/75 Mythic Conquest Books to Lv. 5: 252% AoE; the 4-Star promotion lifted the Lv. 4 cap) | 2026-11-17 |
+| **Brave the Storm** | Passive (Mid) | **Lv. 5** | Strikes target enemy dealing **210% Attack damage** (210% is the 25 Oct preview for Lv. 5; the Lv. 5 panel was not opened). | **Capped at Lv. 5** (the highest level: Gallant Throw's preview lists five levels; Lv. 5 on the skill icon) | 2026-11-17 |
+| **Persistence** | Passive (Bot) | **Lv. 4** | Increases Attack Speed by **50%** when Health drops below 50% (+50% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (Lv. 4 on the skill icon; the 4-Star promotion presumably lifted its cap too; the cost to Lv. 5 was not shown) | 2026-11-17 |
 
 ### 5. Expedition Skills (Army Warfare & Rallies)
 
 | Skill Name | Slot | Current Level | Squad Effect & Buffs | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Rally Flag** | Top | **Lv. 4** | **32% chance** of reducing incoming damage taken by **50%** for all squads. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: 40% chance) | 2026-10-25 |
-| **Hero's Domain** | Mid | **Lv. 4** | **50% chance** of granting all squads **+40% more damage** when attacking. | **Capped at Lv. 4** (Requires 4-Star ascension for Lv. 5: +50% DMG) | 2026-10-25 |
-| **Youthful Rage** | Bot | **Lv. 4** | Passively increases all squads' **Lethality by +20%** (+20% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (reached Lv. 4 by 5 Nov, shown on the skill icon; her other Lv. 4 skills need 4-Star for Lv. 5, so this one presumably does too, which is inferred) | 2026-11-05 |
+| **Rally Flag** | Top | **Lv. 5** | **40% chance** of reducing incoming damage taken by **50%** for all squads (40% is the 25 Oct preview for Lv. 5; the Lv. 5 panel was not opened). | **Capped at Lv. 5** (the highest level, as for Brave the Storm; Lv. 5 on the skill icon) | 2026-11-17 |
+| **Hero's Domain** | Mid | **Lv. 4** | **50% chance** of granting all squads **+40% more damage** when attacking. | **In Progress** (Lv. 4 on the skill icon; the 4-Star promotion lifted the cap; Lv. 5: +50% DMG; the cost was not shown) | 2026-11-17 |
+| **Youthful Rage** | Bot | **Lv. 4** | Passively increases all squads' **Lethality by +20%** (+20% is the old Lv. 4 preview; the Lv. 4 panel was not opened). | **In Progress** (Lv. 4 on the skill icon; the 4-Star promotion presumably lifted its cap too; the cost to Lv. 5 was not shown) | 2026-11-17 |
 
 ## In-Depth Hero Profile: Howard
 
@@ -380,46 +383,50 @@ went to +16 by 27 Oct. _(2026-11-05)_
 
 ## In-Depth Hero Profile: Diana
 
-* **Hero Name:** Diana _(2026-11-05)_
+* **Hero Name:** Diana _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-25)_
-* **Current Level:** **Lv. 64** (level cap reached — next level requires **Town Center Lv. 23**; Drill Camp instructor) _(2026-11-05)_
-* **Star Tier:** **4-Star (Tier 2)** (Shards: 0 / 100 to Tier 3 promotion; Redeem shows 4, Epic) _(2026-11-05)_
-* **Total Hero Power:** **635,778** (the Guard Station screen later on 5 Nov shows 639.3K, not re-read on her own screen: +3,528, the gain seen when an Epic skill reaches Lv. 4, gives 639,306, which also makes the Conquest squad total exact (see Howard); inferred. Before that: +36,080 later on 5 Nov from Tier 1 → Tier 2, exactly the preview; the stats rose by exactly the preview too. Earlier on 5 Nov: 599,698 (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17)))) _(2026-11-05)_
-* **Troop Capacity Boost:** **+12,730 Troops** _(2026-11-05)_
-* **Escort Guards:** **9 Escorts** _(2026-11-05)_
-* **Total Equipped Gear Power:** **130,810** (38,850 + 27,210 + 25,900 + 38,850) _(2026-11-05)_
+* **Current Level:** **Lv. 68** (the Upgrade button shows 200,457 / 670,000 in red, so not enough for Lv. 69 yet; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Drill Camp instructor on 5 Nov) _(2026-11-17)_
+* **Star Tier:** **4-Star (Tier 4)** (Shards: 10 / 100 to Tier 5 promotion; Redeem shows 6, Epic) _(2026-11-17)_
+* **Total Hero Power:** **747,524** (+111,746 since the 635,778 read on her own screen on 5 Nov: +74,000 base power from Tier 2 → Tier 4 (+36,080, exactly the 5 Nov preview, then +37,920); +20,370 from gear (Faceplate and Boots +20 → +27, +7,140 each; Bracers +22 → +26, +2,740; Leatherwear +20 → +25, +3,350); and +17,376 not itemised on screen, presumably Incendiary Arrows and Quick Paced reaching Lv. 4 (+3,528 each, the gain seen for Epic skills; Incendiary Arrows reaching Lv. 4 would also explain the Guard Station's 639.3K on 5 Nov) and the four levels 64 → 68 (about 10,320); inferred, the split is not shown. On 5 Nov: 635,778 (the Guard Station screen later on 5 Nov shows 639.3K, not re-read on her own screen: +3,528, the gain seen when an Epic skill reaches Lv. 4, gives 639,306, which also makes the Conquest squad total exact (see Howard); inferred. Before that: +36,080 later on 5 Nov from Tier 1 → Tier 2, exactly the preview; the stats rose by exactly the preview too. Earlier on 5 Nov: 599,698 (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17))))) _(2026-11-17)_
+* **Troop Capacity Boost:** **+12,980 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Escort Guards:** **9 Escorts** _(2026-11-17)_
+* **Total Equipped Gear Power:** **151,180** (45,990 + 29,950 + 29,250 + 45,990; 130,810 on 5 Nov) _(2026-11-17)_
 
 ### 1. Overall Combat Attributes (Base + Gear)
 
 | Category | Attribute | Total Value | Tactical Effect | Updated |
 | :--- | :--- | :---: | :--- | :---: |
-| **Conquest (Hero)** | **Hero Attack** | **1,967** | High base attack scaling, delivering top-tier ranged damage | 2026-11-05 |
-| | **Hero Defense** | **1,880** | Solid defense rating against enemy return fire | 2026-11-05 |
-| | **Hero Health** | **11,843** | Ranged survivor health pool | 2026-11-05 |
-| **Conquest (Escort)** | **Escort Attack** | **655** | Attack output of her 9 escort marksmen | 2026-11-05 |
-| | **Escort Defense** | **626** | Defense value of her escort guards | 2026-11-05 |
-| | **Escort Health** | **3,947** | Health pool of escort guards | 2026-11-05 |
-| **Expedition (March)** | **Archer Attack** | **+86.25%** | Troop-wide attack bonus for all deployed Archers | 2026-11-05 |
-| | **Archer Defense** | **+86.25%** | Troop-wide defense bonus for all deployed Archers | 2026-11-05 |
-| | **Archer Lethality**| **+26.40%** | Enemy casualty rate scaling for archers (from gear) | 2026-11-05 |
-| | **Archer Health** | **+17.88%** | Durability pool for deployed archer squads (from gear) | 2026-11-05 |
+| **Conquest (Hero)** | **Hero Attack** | **2,183** | High base attack scaling, delivering top-tier ranged damage (1,967 on 5 Nov) | 2026-11-17 |
+| | **Hero Defense** | **2,083** | Solid defense rating against enemy return fire (1,880 on 5 Nov) | 2026-11-17 |
+| | **Hero Health** | **13,129** | Ranged survivor health pool (11,843 on 5 Nov) | 2026-11-17 |
+| **Conquest (Escort)** | **Escort Attack** | **727** | Attack output of her 9 escort marksmen (655 on 5 Nov) | 2026-11-17 |
+| | **Escort Defense** | **694** | Defense value of her escort guards (626 on 5 Nov) | 2026-11-17 |
+| | **Escort Health** | **4,376** | Health pool of escort guards (3,947 on 5 Nov) | 2026-11-17 |
+| **Expedition (March)** | **Archer Attack** | **+96.18%** | Troop-wide attack bonus for all deployed Archers (+86.25% on 5 Nov) | 2026-11-17 |
+| | **Archer Defense** | **+96.18%** | Troop-wide defense bonus for all deployed Archers (+86.25% on 5 Nov) | 2026-11-17 |
+| | **Archer Lethality**| **+29.34%** | Enemy casualty rate scaling for archers (from gear: 14.67% + 14.67%; +26.40% on 5 Nov) | 2026-11-17 |
+| | **Archer Health** | **+19.14%** | Durability pool for deployed archer squads (from gear: 9.64% + 9.50%; +17.88% on 5 Nov) | 2026-11-17 |
 
-### 2. Star Promotion Milestone Preview (4-Star Tier 2 ➔ Tier 3)
+Since 5 Nov the changes add up exactly: Tier 2 → Tier 4 gives +163 ATK / +168 DEF / +1,008 HP (escort +55 / +56 / +336) and Archer Attack / Defense +9.93% (the Tier 3 preview of 5 Nov, then +81 / +84 / +504, escort +28 / +28 / +168 and +4.97% for Tier 4, read from the base values); gear +30 ATK / +11 DEF / +134 HP (escort +10 / +4 / +45), Lethality +2.94% and Health +1.26%; and +23 ATK / +24 DEF / +144 HP (escort +7 / +8 / +48) not itemised on screen, presumably the four levels 64 → 68 (inferred). _(2026-11-17)_
 
-Promoted to **4-Star** and then to **Tier 1** between the 27 Oct and 5 Nov uploads (base power 268,400 → 305,760 → 338,320), and to **Tier 2** later on 5 Nov with 20 Epic Redeem shards (base power 374,400, +36,080 as the preview said; the Epic Redeem stock went 24 → 4). The preview gave Archer Attack / Defense after Tier 2 as +86.24%; the Hero Stats screen shows +86.25%, the same 0.01% gap seen on other heroes. Current Status: **0 / 100 Shards** (needs **100 shards** for Tier 3; Redeem shows 4, Epic). _(2026-11-05)_
+### 2. Star Promotion Milestone Preview (4-Star Tier 4 ➔ Tier 5)
+
+Promoted to **Tier 3** and **Tier 4** between the 5 Nov and 17 Nov uploads (base power 374,400 → 410,480 → 448,400: +36,080 as the 5 Nov preview said, then +37,920). On 5 Nov she had 0 / 100 shards and Redeem showed 4, so the two promotions and today's 10 took 210 shards; where they came from was not shown. Current Status: **10 / 100 Shards** (needs **90 more shards** for Tier 5; Redeem shows 6, Epic). _(2026-11-17)_
+
+Earlier: Promoted to **4-Star** and then to **Tier 1** between the 27 Oct and 5 Nov uploads (base power 268,400 → 305,760 → 338,320), and to **Tier 2** later on 5 Nov with 20 Epic Redeem shards (base power 374,400, +36,080 as the preview said; the Epic Redeem stock went 24 → 4). The preview gave Archer Attack / Defense after Tier 2 as +86.24%; the Hero Stats screen shows +86.25%, the same 0.01% gap seen on other heroes. Current Status: **0 / 100 Shards** (needs **100 shards** for Tier 3; Redeem shows 4, Epic). _(2026-11-05)_
 
 | Attribute | Current Base Value | Next Tier Increase | Post-Promotion Value | Updated |
 | :--- | :---: | :---: | :---: | :---: |
-| **Base Hero Power** | 374,400 | **+36,080** | 410,480 | 2026-11-05 |
-| **Hero Attack** | 1,265 | **+82** | 1,347 | 2026-11-05 |
-| **Hero Defense** | 1,302 | **+84** | 1,386 | 2026-11-05 |
-| **Hero Health** | 7,812 | **+504** | 8,316 | 2026-11-05 |
-| **Escort Attack** | 421 | **+27** | 448 | 2026-11-05 |
-| **Escort Defense** | 434 | **+28** | 462 | 2026-11-05 |
-| **Escort Health** | 2,604 | **+168** | 2,772 | 2026-11-05 |
-| **Archer Attack** | +86.25% | **+4.96%** | **+91.21%** | 2026-11-05 |
-| **Archer Defense** | +86.25% | **+4.96%** | **+91.21%** | 2026-11-05 |
+| **Base Hero Power** | 448,400 | **+39,920** | 488,320 | 2026-11-17 |
+| **Hero Attack** | 1,428 | **+82** | 1,510 | 2026-11-17 |
+| **Hero Defense** | 1,470 | **+84** | 1,554 | 2026-11-17 |
+| **Hero Health** | 8,820 | **+504** | 9,324 | 2026-11-17 |
+| **Escort Attack** | 476 | **+27** | 503 | 2026-11-17 |
+| **Escort Defense** | 490 | **+28** | 518 | 2026-11-17 |
+| **Escort Health** | 2,940 | **+168** | 3,108 | 2026-11-17 |
+| **Archer Attack** | +96.18% | **+4.96%** | **+101.14%** | 2026-11-17 |
+| **Archer Defense** | +96.18% | **+4.96%** | **+101.14%** | 2026-11-17 |
 
 ### 3. Equipped Hero Gear
 
@@ -427,25 +434,25 @@ All 4 pieces match the native **Archer** troop class synergy:
 
 | Slot | Item Name | Class Synergy | Rarity / Tier | Level | Item Power | Hero Stats (Conquest) | Escort Stats (Conquest) | Expedition Bonus | Updated |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- | :---: |
-| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-11-05 |
-| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+22** | 27,210 | DEF: +86 / HP: +324 | DEF: +28 / HP: +108 | +9.08% Archer Health | 2026-11-05 |
-| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+20** | 25,900 | DEF: +84 / HP: +315 | DEF: +28 / HP: +105 | +8.80% Archer Health | 2026-11-05 |
-| **Boots** | **Berserker's Boots** | Archer | **Epic** | **+20** | 38,850 | ATK: +153 / HP: +472 | ATK: +51 / HP: +157 | +13.20% Archer Lethality | 2026-11-05 |
+| **Helmet** | **Berserker's Faceplate** | Archer | **Epic** | **+27** | 45,990 | ATK: +168 / HP: +519 | ATK: +56 / HP: +173 | +14.67% Archer Lethality | 2026-11-17 |
+| **Gauntlets**| **Windbreaker Bracers** | Archer | **Rare** | **+26** | 29,950 | DEF: +91 / HP: +342 | DEF: +30 / HP: +114 | +9.64% Archer Health | 2026-11-17 |
+| **Armor** | **Windbreaker Leatherwear**| Archer | **Rare** | **+25** | 29,250 | DEF: +90 / HP: +337 | DEF: +30 / HP: +112 | +9.50% Archer Health | 2026-11-17 |
+| **Boots** | **Berserker's Boots** | Archer | **Epic** | **+27** | 45,990 | ATK: +168 / HP: +519 | ATK: +56 / HP: +173 | +14.67% Archer Lethality | 2026-11-17 |
 
 ### 4. Exploration Skills (PvP, Arena & Campaign)
 
 | Skill Name | Slot | Current Level | Skill Effect & Multipliers | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Incendiary Arrows** | Active (Top) | **Lv. 3** | Deals **250% damage** to target and **84% AoE splash** to nearby enemies. | **In Progress** (29/50 Epic Conquest Books to Lv. 4: 270% / 91% AoE) | 2026-11-05 |
-| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +25% Speed) | 2026-10-25 |
-| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (26/50 Epic Conquest Books to Lv. 4: +16% Crit Rate) | 2026-10-25 |
+| **Incendiary Arrows** | Active (Top) | **Lv. 4** | Fires an Incendiary Shot dealing **Attack * 270% damage** to the target and **Attack * 91%** to nearby enemies (levels: 210% / 230% / 250% / 270% / 290%; area 70% / 77% / 84% / 91% / 98%). | **In Progress** (38/75 Epic Conquest Books to Lv. 5: 290% / 98%) | 2026-11-17 |
+| **Sharpshooter** | Passive (Mid) | **Lv. 3** | Increases Diana's **Attack Speed by 20%**. | **In Progress** (Lv. 3 on the skill icon; 50 Epic Conquest Books to Lv. 4 (old preview), 38 in stock: +25% Speed) | 2026-11-17 |
+| **Deadly Strike** | Passive (Bot) | **Lv. 3** | Increases Diana's **Crit Rate by 13%**. | **In Progress** (Lv. 3 on the skill icon; 50 Epic Conquest Books to Lv. 4 (old preview), 38 in stock: +16% Crit Rate) | 2026-11-17 |
 
 ### 5. Expedition Skills (Army Warfare & Beast Hunting)
 
 | Skill Name | Slot | Current Level | Strategic & March Utility | Upgrade Status & Next Rank | Updated |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| **Iron Constitution** | Top | **Lv. 4** | Reduces Governor **Stamina Cost by 18%** on beast hunts. | **In Progress** (the 4-Star promotion lifted the Lv. 4 cap by 5 Nov; Lv. 5: 20% (old preview); the cost to Lv. 5 was not shown; reached Lv. 4 on 23 Oct) | 2026-11-05 |
-| **Quick Paced** | Bot | **Lv. 3** | Increases **Hunting March Speed by 60%**. | **In Progress** (28/50 Epic Expedition Manuals to Lv. 4: +80% Speed) | 2026-10-25 |
+| **Iron Constitution** | Top | **Lv. 4** | Reduces Governor **Stamina Cost by 18%** on beast hunts. | **In Progress** (Lv. 4 on the skill icon; Lv. 5: 20% (old preview); the cost to Lv. 5 was not shown; reached Lv. 4 on 23 Oct) | 2026-11-17 |
+| **Quick Paced** | Bot | **Lv. 4** | Increases **Hunting March Speed by 80%** (+80% is the 25 Oct preview for Lv. 4; the Lv. 4 panel was not opened). | **In Progress** (Lv. 4 on the skill icon on 17 Nov, Lv. 3 on 5 Nov; the cost to Lv. 5 was not shown) | 2026-11-17 |
 
 ## In-Depth Hero Profile: Quinn
 
