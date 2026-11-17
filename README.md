@@ -45,7 +45,7 @@ This repository provides:
 * **`lineups.md`**: Arena 5v5 Offense & Defense squads, Barricades 1 & 2 (Wall Guard, against Rebel Invasions), the Guard Station (the three heroes who defend the city, since 5 Nov), and saved March Presets (`Ter`, `Iro`, `Sto`, `Woo` and `Bre` since 5 Nov).
 * **`troops.md`**: standing troop inventory (Tier VIII Elite since 5 Nov), march capacities, infirmary hospital caps, the
   `Ter` / `Iro` / `Sto` / `Woo` / `Bre` presets, and the highest beast and Terror (rally-only) levels the account can take.
-* **`codes.md`**: gift codes in two lists: Active (still to redeem) and Expired (redeemed, marked ✓, or old). Restarted on 2026-11-05
+* **`codes.md`**: gift codes in two lists: Active (still to redeem) and Expired (redeemed, marked ✓; missed, marked ✗; or old). Restarted on 2026-11-05
   with only the account owner's current codes; older tracker codes are in `data/gift_codes_baseline.txt`.
 * **`docs/index.html`**: The account dashboard (see below).
 * **`docs/SCHEMA.md`**: Reference for the dashboard's data object and where each field comes from.
@@ -105,7 +105,8 @@ The Overview opens with account power and total kills.
 * The Player ID is never displayed.
 * **Gift codes.** The Codes page shows two read-only lists from `codes.md`: To redeem (the Active list) and
   Expired. Every redeemed code goes to Expired with ✓ in its **Redeemed** column (the account owner's rule,
-  2026-11-05), and the page shows the ✓ next to it. Redeemed is a fact about the account, so it is recorded in
+  2026-11-05), and the page shows the ✓ next to it. A code that expired before it was redeemed gets ✗ ("missed",
+  the owner's X, 2026-11-18), found by trying it in the game's Gift Code screen. Redeemed is a fact about the account, so it is recorded in
   `codes.md` and nowhere else; the per-browser "redeemed" marks of earlier versions were removed on 2026-11-05, and
   the page deletes their old `localStorage` key (`ks-code-marks`) once.
 
