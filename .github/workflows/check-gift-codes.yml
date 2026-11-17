@@ -1,17 +1,27 @@
-# Look for new Kingshot gift codes every two days and open an issue when there are any.
+# Look for new Kingshot gift codes every two days and propose them in a pull request.
 #
 # Why GitHub Actions: it runs on GitHub's own schedule, with nothing to keep
 # running elsewhere. The script (scripts/check_gift_codes.py) reads a few
 # community tracker pages, drops codes already in codes.md, in
-# data/gift_codes_baseline.txt (old codes trackers still list) or already reported,
-# and opens one issue labelled "gift-codes" that mentions the repo owner, so
-# GitHub sends a notification.
+# data/gift_codes_baseline.txt (old codes trackers still list) or already named
+# in a gift-codes issue or pull request, and adds the rest to the Active table
+# of codes.md as unverified rows. This workflow commits that change to a
+# gift-codes/... branch (never to main) and opens a pull request labelled
+# "gift-codes" that mentions the repo owner. Merging it is a push to main, so
+# the dashboard workflow rebuilds and the codes show under "To redeem".
 #
-# Why an issue, not a commit: the codes come from third-party pages and are
-# unverified until tried in the game; codes.md only changes through PRs.
+# Why a pull request and not only an issue: on 9 Nov the check reported
+# 11OFFICIALSTORE08 in an issue; nothing copied it into codes.md, the dashboard
+# kept showing no codes, and it expired unused. The codes are still unverified
+# (third-party pages), so they reach main only when the owner merges.
+#
+# One-time setting: Settings -> Actions -> General -> Workflow permissions ->
+# tick "Allow GitHub Actions to create and approve pull requests". Without it
+# GitHub refuses the pull request; the run then opens a gift-codes issue whose
+# link opens the pull request from the pushed branch.
 #
 # Manual run: Actions tab -> "Check for new gift codes" -> Run workflow
-# (tick "dry run" to see the report without opening an issue).
+# (tick "dry run" to see the report and the codes.md change without pushing).
 
 name: Check for new gift codes
 
@@ -21,13 +31,14 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Report only; do not open an issue"
+        description: "Report and show the codes.md change only; do not push or open anything"
         type: boolean
         default: false
 
 permissions:
-  contents: read   # read codes.md; cannot commit
-  issues: write    # open the gift-codes issue and create its label
+  contents: write        # push the gift-codes/... branch; main changes only when the owner merges
+  pull-requests: write   # open or update the gift-codes pull request
+  issues: write          # create the label; fallback issue when the pull request is refused
 
 concurrency:
   group: gift-codes
@@ -37,6 +48,10 @@ jobs:
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      REPO: ${{ github.repository }}
+      OWNER: ${{ github.repository_owner }}
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
@@ -44,15 +59,93 @@ jobs:
       - name: Test the checker
         run: python3 -m unittest discover -s scripts -p "test_check_gift_codes.py"
 
+      - name: Pick the branch for new codes
+        id: target
+        # Why reuse an open gift-codes pull request: a second one made from main
+        # would add rows at the same place in codes.md and conflict with the
+        # first once that is merged. Only this workflow's own branches
+        # (gift-codes/..., not from a fork) are reused. $RUNNER_TEMP/target is a
+        # second checkout, of the branch the codes go to.
+        run: |
+          pr=$(gh pr list --repo "$REPO" --label gift-codes --state open --json number,headRefName,isCrossRepository \
+            --jq '[.[] | select((.isCrossRepository | not) and (.headRefName | startswith("gift-codes/")))][0].number // empty')
+          if [ -n "$pr" ]; then
+            branch=$(gh pr view "$pr" --repo "$REPO" --json headRefName --jq .headRefName)
+            git fetch --depth=1 origin "refs/heads/$branch"
+            git worktree add -B "$branch" "$RUNNER_TEMP/target" FETCH_HEAD
+          else
+            # Based on main even when the run was started from another branch.
+            branch="gift-codes/$(date -u +%F)-run$GITHUB_RUN_NUMBER"
+            git fetch --depth=1 origin refs/heads/main
+            git worktree add -b "$branch" "$RUNNER_TEMP/target" FETCH_HEAD
+          fi
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
       - name: Look for new codes
+        id: check
+        # The script comes from this checkout; codes.md from the target branch,
+        # so codes already proposed in an open pull request count as recorded.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DRY_RUN: ${{ inputs.dry_run }}
-          REPO: ${{ github.repository }}
-          OWNER: ${{ github.repository_owner }}
         run: >
           python3 scripts/check_gift_codes.py
-          --codes codes.md
+          --codes "$RUNNER_TEMP/target/codes.md"
           --baseline data/gift_codes_baseline.txt
           --github-repo "$REPO"
           --notify "$OWNER"
+          --add-to-codes
+          --report-file "$RUNNER_TEMP/report.md"
+
+      - name: Show the codes.md change
+        if: steps.check.outputs.new_codes != '0'
+        working-directory: ${{ runner.temp }}/target
+        env:
+          BRANCH: ${{ steps.target.outputs.branch }}
+        run: |
+          {
+            echo "### Change to codes.md (branch $BRANCH)"
+            echo
+            echo '```diff'
+            git diff codes.md
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Propose the codes in a pull request
+        if: steps.check.outputs.new_codes != '0' && inputs.dry_run != true
+        working-directory: ${{ runner.temp }}/target
+        env:
+          BRANCH: ${{ steps.target.outputs.branch }}
+          PR: ${{ steps.target.outputs.pr }}
+        run: |
+          today=$(date -u +%F)
+          report="$RUNNER_TEMP/report.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add codes.md
+          git commit -m "Add new gift codes to codes.md, unverified ($today)"
+          git push origin "HEAD:refs/heads/$BRANCH"
+          gh label create gift-codes --repo "$REPO" --color d4a72c \
+            --description "New Kingshot gift codes found by the scheduled check" 2>/dev/null || true
+          if [ -n "$PR" ]; then
+            # The body keeps every code the pull request adds: the next run skips
+            # codes named there, also after the pull request is closed unmerged.
+            { gh pr view "$PR" --repo "$REPO" --json body --jq .body; printf '\n---\n\n'; cat "$report"; } > "$RUNNER_TEMP/body.md"
+            gh pr edit "$PR" --repo "$REPO" --body-file "$RUNNER_TEMP/body.md"
+            gh pr comment "$PR" --repo "$REPO" \
+              --body "@$OWNER the check on $today added more codes to this pull request; see the description."
+          elif ! gh pr create --repo "$REPO" --base main --head "$BRANCH" --label gift-codes \
+              --title "New Kingshot gift codes ($today)" --body-file "$report"; then
+            # GitHub refuses while "Allow GitHub Actions to create and approve pull
+            # requests" is off; the codes are pushed, so link to them instead.
+            {
+              cat "$report"
+              echo
+              echo "GitHub did not let this workflow open the pull request (Settings -> Actions -> General ->" \
+                "Workflow permissions -> \"Allow GitHub Actions to create and approve pull requests\" is off)." \
+                "The codes are on branch \`$BRANCH\`: open the pull request at" \
+                "https://github.com/$REPO/compare/main...$BRANCH?expand=1 and merge it."
+            } > "$RUNNER_TEMP/issue.md"
+            gh issue create --repo "$REPO" --label gift-codes \
+              --title "New Kingshot gift codes ($today)" --body-file "$RUNNER_TEMP/issue.md"
+          fi

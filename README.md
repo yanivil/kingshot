@@ -148,16 +148,32 @@ Every two days (11:23 UTC on odd days of the month; GitHub may start it a little
 2. It downloads a few community tracker pages (listed in `SOURCES` in the script) and picks out
    code-shaped words from the places those pages put codes (`<code>`, bold text, table cells, copy buttons,
    JSON `"code"` keys).
-3. It drops codes already in `codes.md`, in the baseline, or named in an earlier `gift-codes` issue.
-4. If anything is left, it opens **one issue** labelled `gift-codes` that mentions the repo owner (so GitHub
-   sends a notification), split into codes seen on two or more trackers and on one tracker only.
+3. It drops codes already in `codes.md`, in the baseline, or named in an earlier `gift-codes` issue or pull
+   request (open, closed or merged, so a code turned down by closing its pull request is not proposed again).
+4. If anything is left, it adds the codes to the **Active** table of `codes.md` as unverified rows ("Unverified:
+   found by the automated gift-code check on 18 Nov, listed on 2 trackers (...); not tried in the game yet";
+   codes seen on one tracker only also say "so less certain"), pushes that to a `gift-codes/<date>-run<n>`
+   branch and opens **one pull request** labelled `gift-codes` that mentions the repo owner (so GitHub sends a
+   notification). If a `gift-codes` pull request is still open, the new codes are added to it instead (a second
+   one would conflict with it in `codes.md`), with a comment that mentions the owner.
 
-It never commits: the codes are unverified until tried in the game, so `codes.md` still changes only through
-a PR. The run summary on the Actions page lists every tracker, whether it downloaded, and how many recorded
-codes it showed (from `codes.md` or the baseline); a tracker showing 0 has probably changed its page and needs
-its entry fixed. To stop the check reporting a code that is old or not a real code, add it to the baseline file. The run fails
-only when every tracker fails to download. To run it by hand: **Actions → Check for new gift codes →
-Run workflow** (tick "dry run" to see the report without opening an issue).
+**Merging the pull request puts the codes on the dashboard's To redeem list.** The workflow never pushes to
+`main`; codes reach it only when the owner merges. Why a pull request (since 2026-11-18): until then the check only
+opened an issue, nothing copied its codes into `codes.md`, and `11OFFICIALSTORE08` (issue #122, 9 Nov) expired
+before anyone tried it. After trying a code in the game, move its row to Expired; a code that is old or not real
+is deleted from Active and added to the baseline file.
+
+**One-time setting:** GitHub lets the workflow open pull requests only with **Settings → Actions → General →
+Workflow permissions → Allow GitHub Actions to create and approve pull requests** ticked (it was off on
+2026-11-18). While it is off, the run still pushes the branch and then opens a `gift-codes` issue with a link that
+opens the pull request.
+
+The run summary on the Actions page lists every tracker, whether it downloaded, and how many recorded
+codes it showed (from `codes.md` or the baseline), and shows the change to `codes.md`; a tracker showing 0 has
+probably changed its page and needs its entry fixed. To stop the check reporting a code that is old or not a real
+code, add it to the baseline file. The run fails only when every tracker fails to download. To run it by hand:
+**Actions → Check for new gift codes → Run workflow** (tick "dry run" to see the report and the `codes.md` change
+without pushing or opening anything).
 
 ### Viewing it
 

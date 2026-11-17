@@ -131,6 +131,25 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.gitignore` for `build/` and Python bytecode.
 
 ### Changed
+- Gift-code check: new codes now reach the dashboard's To redeem list through a pull request instead of only an
+  issue. Until now the check opened a `gift-codes` issue and nothing copied its codes into `codes.md`, so the
+  dashboard kept showing "No codes to redeem"; `11OFFICIALSTORE08` sat in issue #122 for 9 days and expired.
+  - `scripts/check_gift_codes.py`: `add_to_active()` adds new codes to the Active table of `codes.md` as unverified
+    rows ("Unverified: found by the automated gift-code check on <day>, listed on N trackers (...); not tried in the
+    game yet", single-tracker codes "so less certain") and drops the "None right now" sentence. New options
+    `--add-to-codes` and `--report-file`; the run writes `new_codes=<count>` to `GITHUB_OUTPUT`. Codes named in
+    earlier `gift-codes` pull requests are skipped like those in issues. Opening issues moved to the workflow. The
+    report's next step now says to merge the pull request. Run dates are UTC.
+  - `.github/workflows/check-gift-codes.yml`: permissions `contents: write` and `pull-requests: write` (plus
+    `issues: write`). The workflow commits `codes.md` to a `gift-codes/<date>-run<n>` branch (never `main`) and opens
+    a pull request labelled `gift-codes` that mentions the owner; while one is open, new codes go onto its branch,
+    with a comment. If GitHub refuses the pull request ("Allow GitHub Actions to create and approve pull requests" is
+    off in the repository settings, as on 2026-11-18), it opens a `gift-codes` issue that links to the pushed branch.
+    A dry run shows the `codes.md` change in the run summary and pushes nothing.
+  - Tests (`scripts/test_check_gift_codes.py`): rows go into the Active table only, after any existing rows;
+    the repo's `codes.md` plus a fake code builds with the code in `codes.active` and no new warnings; a full
+    `main()` run with a fake tracker page writes the rows, the report and `new_codes`.
+  - README "New gift-code check" and `docs/SCHEMA.md` (`codes`) describe the pull request and the one-time setting.
 - `data/manual.json`: two new suggestions (asked for by the account owner on 2026-11-05, "Any more suggestions?"):
   `tc-23` (Town Center 23 raises the hero cap from 64 to 69 and opens Drill slot 9; cost from heaven-guardian.com's
   table) and `train-infantry` (about 44,500 more Infantry so Iron and Wood can go out together).

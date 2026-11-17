@@ -167,6 +167,12 @@ the code expired before it was redeemed on this account, found by trying it in t
 those codes and counts both in the lede and the Expired panel heading. The build warns when a code appears in two
 lists.
 
+Codes found by the automated gift-code check (`scripts/check_gift_codes.py`) reach `active` through a pull request
+that adds them to the Active table as ordinary rows: `` | `CODE` | Not recorded | Unverified: found by the automated
+gift-code check on 18 Nov, listed on 2 trackers (a, b); not tried in the game yet | 2026-11-18 | ``. The build reads
+only the code, so they show under "To redeem" like any other Active code once the pull request is merged; "unverified"
+is in the row's note, not in `KS_DATA` (since 2026-11-18).
+
 There is no `redeemed` list any more. Rows left under an old "Redeemed Codes" heading in `codes.md` are added to
 `expired` with `redeemed: true`, each with a warning; the page does the same with a `redeemed` list in older data.
 
