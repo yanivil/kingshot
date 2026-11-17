@@ -38,7 +38,7 @@ Mechanically, the game shares its progression framework and engine with Century 
 ## Repository Scope
 
 This repository provides:
-* **`profile.md`**: Governor account identity, Kingdom #2508, Town Center (Lv. 22 since 27 Oct) stats & perks, Governor Gear.
+* **`profile.md`**: Governor account identity, Kingdom #2508, Town Center (Lv. 23 by 17 Nov, deduced from the hero screens; Lv. 22 from 27 Oct) stats & perks, Governor Gear.
 * **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones
   (skill book counts are the shared stock of that book type on the date shown, not per-skill progress),
   plus heroes seen but not yet recruited (not shown on the dashboard).
@@ -56,6 +56,7 @@ This repository provides:
 * **`.github/workflows/build-dashboard.yml`**: Builds and publishes the dashboard to GitHub Pages.
 * **`design/dashboard-prototype.dc.html`**: The approved design prototype (design-canvas format; not runnable on its own).
 * **`CHANGELOG.md`**: History of changes.
+* **`CLAUDE.md`**: Standing instructions for Claude sessions: privacy rules, how to read the game from the Android phone with `adb` (read-only), recording rules, suggestion cards, git and reply format. Phone screenshots go in `phone_shots/`, which git ignores.
 
 ### Update dates
 

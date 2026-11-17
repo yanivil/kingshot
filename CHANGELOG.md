@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `CLAUDE.md`: standing instructions for Claude sessions, so a session on the owner's iMac follows the same rules:
+  privacy (never the Player ID or governor name), reading the game from the Android phone with `adb` (read-only:
+  never spend, upgrade, buy or send), recording and date rules, suggestion cards, git workflow, reply format.
+  `.gitignore` ignores `phone_shots/`, where phone screenshots go. README lists the file and shows Town Center 23.
 - Jabel and Diana recorded from their hero screens of 17 Nov (`hero.md`).
   - Jabel: Lv. 69, 4-Star (Tier 0), power 884,890 (764,215 on 5 Nov), Troop Capacity 13,030. Armet +32, Gauntlets +30,
     the Epic Crusader's Breastplate +30 in place of the Rare Brigader's one, Boots +31. Brave the Storm and Rally Flag
