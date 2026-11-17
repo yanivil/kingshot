@@ -20,6 +20,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - The old step-by-step derivations of earlier changes were replaced by the 17 Nov ones; they remain in git history.
   - Roster: stale skill values in the role column updated (Saul, Chenko, Yeonwoo, Seth, Edwin); Amadeus seen again
     with the same values.
+  - Heroes Not Yet Recruited: Zoe (Infantry, 3 / 10 shards), Hilde (Cavalry, 0 / 10) and Marlin (Archer, 0 / 10),
+    SSR, 19,800 power each, read on 18 Nov. They were not in the hero list on 28 Oct, so Generation 2 has reached the
+    kingdom (inferred; guides name these three as Generation 2, Unverified).
 - `data/manual.json`: the attack card quotes the 17 Nov march bonuses (Howard Infantry +103.45%, Quinn Archers
   +109.77%, Saul +94.92%) and Quinn's Sixth Sense at −16%; the hero choice is unchanged.
 - `CLAUDE.md`: standing instructions for Claude sessions, so a session on the owner's iMac follows the same rules:

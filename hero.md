@@ -39,6 +39,9 @@ Heroes shown in the hero list but not recruited. They are not in the roster abov
 | Hero | Rarity | Class | Shards | Shown Power | Notes | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
 | **Amadeus** | SSR / Mythic | Infantry | 0 / 20 to recruit | 20,550 | Combat specialist (crossed swords); Recruit button grey | 2026-11-17 |
+| **Zoe** | SSR / Mythic | Infantry | 3 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. Not in the hero list on 28 Oct (told by the account owner); community guides name Zoe, Hilde and Marlin as Generation 2 (Unverified) | 2026-11-18 |
+| **Hilde** | SSR / Mythic | Cavalry | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-18 |
+| **Marlin** | SSR / Mythic | Archer | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-18 |
 
 ## In-Depth Hero Profile: Jabel (Jable)
 
