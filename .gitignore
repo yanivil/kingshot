@@ -2,3 +2,6 @@
 build/
 # Python bytecode from running the generator or its tests.
 __pycache__/
+# Phone screenshots taken with adb while recording game data; they show private
+# details (governor name, Player ID), so they never enter git.
+phone_shots/
