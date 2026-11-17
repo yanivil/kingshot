@@ -43,7 +43,7 @@ The Town Center represents the administrative heart of the settlement, governing
 
 ### 1. Structure Specifications & Fortification Stats
 
-* **Current Level:** **Level 22** (Town Center screen, 27 Oct and 5 Nov; the Governor Profile also shows Lv. 22) _(2026-11-05)_
+* **Current Level:** **Level 23** (deduced from the hero screens of 17 Nov, not read on the Town Center screen: Jabel is Lv. 69, above the Lv. 64 cap of Town Center 22, and her next level requires Town Center Lv. 24. Level 22 on the Town Center screen on 27 Oct and 5 Nov. The Town Center figures below are still from 5 Nov) _(2026-11-17)_
 * **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-05)_
