@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Game data read from the phone on 18 Nov, in chunks:
+  - Profile and Town Center (`profile.md`, `troops.md`, README): power 23,042,384 (city top bar; 17,819,499 on 5 Nov),
+    kills 700,694, stamina 103 / 200, VIP 4, gems 13,447, bread 147.8M. Governor Gear: the Modest Cloak, Oakheart Ring and
+    Plain Breeches reached 1-Star (306,000 power and +12.75% each); gear power 1,672,800. The Town Center screen now
+    confirms Level 23 (it was deduced on 17 Nov): Attack 797, Defense 1,595, Health 23,929, the same six perks.
 - 13 heroes recorded from the phone on 17 Nov (`hero.md`), read with `adb` screenshots of each hero's Stats, Hero
   Stats panel, promotion preview, Skills and Gear screens: Chenko, Howard, Quinn, Gordon, Saul, Seth, Olive, Forrest,
   Edwin, Yeonwoo, Fahd, Amane and Helga. Diana was re-read and matches; Jabel was not re-read.

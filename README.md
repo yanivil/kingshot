@@ -38,7 +38,7 @@ Mechanically, the game shares its progression framework and engine with Century 
 ## Repository Scope
 
 This repository provides:
-* **`profile.md`**: Governor account identity, Kingdom #2508, Town Center (Lv. 23 by 17 Nov, deduced from the hero screens; Lv. 22 from 27 Oct) stats & perks, Governor Gear.
+* **`profile.md`**: Governor account identity, Kingdom #2508, Town Center (Lv. 23, read on the Town Center screen on 18 Nov; Lv. 22 from 27 Oct) stats & perks, Governor Gear.
 * **`hero.md`**: Complete roster profiles, star ascensions, gear pieces, skill levels, and promotion milestones
   (skill book counts are the shared stock of that book type on the date shown, not per-skill progress),
   plus heroes seen but not yet recruited (not shown on the dashboard).

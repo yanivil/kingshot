@@ -28,7 +28,7 @@ Standing forces are **Tier VIII (Elite)** units across the three military branch
 | **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen (5 Nov, as on 24 Oct). With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-11-05 |
 | **Infirmary Hospital Capacity** | 72,800 | 0 / 72,800 injured (38,600 on 24 Oct) | 2026-11-05 |
 | **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
-| **Town Center Level** | Level 23 | Deduced from the hero screens of 17 Nov (Jabel Lv. 69, next level needs Town Center 24), as in profile.md; Level 22 on 5 Nov (32/32 Citizens, 735 ATK / 1,470 DEF / 22,064 HP on 27 Oct) | 2026-11-17 |
+| **Town Center Level** | Level 23 | Town Center screen, 18 Nov (first deduced from the hero screens of 17 Nov); Level 22 on 5 Nov | 2026-11-18 |
 
 ## Saved March Formations
 
