@@ -90,7 +90,9 @@ Finish, Speedups; anywhere: Recruit, Dispatch All, Quick Deploy.
 - Remove a card when the owner has done it.
 - Standing account plans to respect in every card and play task (told by the owner on 2026-11-18): **no speedups
   until 2026-12-01** (alliance request), and **no upgrades other than research until 2026-12-01** (buildings including
-  Town Center 24, hero levels, skills, stars, gear); the owner finishes research first. Remove a line once its date has passed or the
+  Town Center 24, hero levels, skills, stars, gear); the owner finishes research first. The alliance's KvK save list
+  (announcement, 2026-11-18) is in `play_tasks.md`: speedups; gems, Roulette spins, hero shards; Mithril, Widgets,
+  Forgehammers; Governor Charm and Governor Gear items; Taming Marks, pet food and items. Remove a line once its date has passed or the
   owner says it no longer applies.
 
 ## Git

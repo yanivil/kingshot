@@ -9,6 +9,9 @@ available. A task is added, changed or removed here only from the owner's own wo
 - Never spend real money: no Shop, Deals, packs, top-ups or anything with a price in a currency.
 - Never spend gems unless a task below says so.
 - **No speedups until 2026-12-01** (alliance request, told by the owner on 2026-11-18).
+- **Save for KvK** (alliance announcement "KVK: WHAT TO SAVE", read on 2026-11-18): 1. all speedups; 2. gems, Roulette
+  spins, hero shards; 3. Mithril, Widgets, Forgehammers; 4. Governor Charm and Governor Gear items; 5. Taming Marks, pet
+  food and items. No task uses any of these.
 - **No upgrades other than research until 2026-12-01** (buildings including Town Center 24, hero levels, skills,
   stars, gear; told by the owner on 2026-11-18).
 - Never write in chat or mail, start or join a rally, attack, scout, teleport, or change alliance, unless a task says so.
@@ -27,6 +30,6 @@ available. A task is added, changed or removed here only from the owner's own wo
 | 6 | Alliance loot chests | When the Alliance button or its Chests tile shows a red count | Alliance (bottom bar) → **Chests** → Loot Chest tab → **Claim All** (161 / 500 of the daily limit on 18 Nov) | 2026-11-18 |
 | 7 | Big alliance box | Only when the big box at the top of the Chests screen is shining (glow and a red count) | Press the box; tap to close the rewards | 2026-11-18 |
 | 8 | Alliance gifts | When the Alliance Gift tab has gifts not yet claimed | Alliance → Chests → **Alliance Gift** tab: claim each gift **one by one**, never Claim All (owner, 18 Nov). Never press **Go** (it opens a purchase) or tick "Send Anonymous Alliance Gift" | 2026-11-18 |
-| 9 | Alliance tech contributions | When the Contribute (iron) attempts are not used up: up to 25, one more every few minutes | Alliance → **Tech** → the tech with a **thumbs-up** → the teal **Contribute** (1,250 iron each) until the attempts reach 0. **Never the orange Contribute** (10 gems). With no thumbs-up anywhere: if fewer than 20 attempts are waiting, wait for later; with 20 or more, choose any tech and contribute (owner, 18 Nov). 18 attempts on Archer Lethality I on 18 Nov | 2026-11-18 |
+| 9 | Alliance tech contributions | When the Contribute (iron) attempts are not used up: up to 25, one more every few minutes | Alliance → **Tech** → the tech with a **thumbs-up** → the teal **Contribute** until the attempts reach 0; it costs a resource (iron, wood, stone or bread: any is fine; 1,250 iron on 18 Nov). **Never the orange Contribute** (10 gems). With no thumbs-up anywhere: if fewer than 20 attempts are waiting, wait for later; with 20 or more, choose any tech and contribute (owner, 18 Nov). 18 attempts on Archer Lethality I on 18 Nov | 2026-11-18 |
 
 More tasks follow as the owner names them.
