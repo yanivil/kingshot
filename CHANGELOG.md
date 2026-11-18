@@ -19,6 +19,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `play_tasks.md`: task 10, Alliance Triumph: press a chest (weekly or personal) only when it shines, otherwise go back
+  (owner, 18 Nov).
 - `play_tasks.md` limits: the alliance's KvK save list (announcement read on 18 Nov: speedups; gems, Roulette spins,
   hero shards; Mithril, Widgets, Forgehammers; Governor Charm and Governor Gear items; Taming Marks, pet food and
   items), also noted in `CLAUDE.md`. Task 9: the tech contribution may cost iron, wood, stone or bread, never gems.
