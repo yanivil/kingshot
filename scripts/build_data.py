@@ -756,10 +756,16 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
     }
     resources = {
         "bread": parse_amount(label_value(tc_bullets, "Stored Food (Bread)", src, log)),
-        "wood": None, "stone": None, "iron": None,  # Not recorded in any .md file.
+        # Wood, stone and iron were first recorded on 2026-11-18 (Backpack overview), so an older
+        # file without these bullets is normal: read them without the missing-label warning.
+        "wood": parse_amount(tc_bullets.get("Stored Wood")),
+        "stone": parse_amount(tc_bullets.get("Stored Stone")),
+        "iron": parse_amount(tc_bullets.get("Stored Iron")),
         "gems": parse_amount(label_value(tc_bullets, "Free Gems", src, log)),
         "asOf": as_of,
-        "fieldAsOf": {"bread": tc_dates.get("Stored Food (Bread)", as_of), "gems": tc_dates.get("Free Gems", as_of)},
+        "fieldAsOf": {"bread": tc_dates.get("Stored Food (Bread)", as_of), "gems": tc_dates.get("Free Gems", as_of),
+                      "wood": tc_dates.get("Stored Wood", as_of), "stone": tc_dates.get("Stored Stone", as_of),
+                      "iron": tc_dates.get("Stored Iron", as_of)},
     }
     governor_gear = {
         "slotsTotal": gear_pair[1] if gear_pair else None,

@@ -17,7 +17,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Alliance** | **SPQ** | Primary allied faction (Governor Profile) | 2026-11-18 |
 | **Total Combat Kills** | **700,694** | Total enemy unit casualties inflicted (Governor Profile "Kills"; 658,745 on 5 Nov, 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-18 |
 | **VIP Level** | **VIP 4** | Active Governor concierge tier (city top bar, 18 Nov; VIP 3 on 27 Oct) | 2026-11-18 |
-| **Stamina** | **103 / 200** | Governor hunting and expedition energy (the bar under the portrait on the Governor Profile, drumstick icon; 124 / 200 on 5 Nov, 200 / 200 on 27 Oct) | 2026-11-18 |
+| **Stamina** | **79 / 200** | Governor hunting and expedition energy (Backpack overview "Governor Stamina 79", morning of 18 Nov; the maximum is from the bar under the portrait on the Governor Profile, which showed 103 / 200 the night before; 124 / 200 on 5 Nov) | 2026-11-18 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Equipped** | 6 Uncommon pieces worn, four of them 1-Star (see "Governor Gear" below; one was 1-Star on 5 Nov); 3 / 6 on 27 Oct | 2026-11-18 |
 | **Conquest Stage** | **339** | Current stage on the Conquest screen (stage 306 on 5 Nov) | 2026-11-18 |
@@ -50,6 +50,9 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-18)_
 * **Stored Food (Bread):** **155.3M** (city top bar, morning of 18 Nov; 147.8M the night before, 106.1M on 5 Nov, 1.7M on 27 Oct) _(2026-11-18)_
 * **Free Gems:** **14,856** (city top bar, morning of 18 Nov; 13,447 the night before, 35,597 on 5 Nov, 35,666 on 27 Oct) _(2026-11-18)_
+* **Stored Wood:** **164.1M** (Backpack, Overview: Resources & Speedups, 18 Nov: 659.89M in stock minus 495.79M in backpack items; the subtraction is inferred, as for bread, where 677.06M − 521.59M = 155.47M matches the city top bar's 155.3M) _(2026-11-18)_
+* **Stored Stone:** **32.7M** (same screen: 134.08M in stock minus 101.40M in items; inferred) _(2026-11-18)_
+* **Stored Iron:** **6.98M** (same screen: 33.30M in stock minus 26.32M in items; inferred) _(2026-11-18)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
@@ -111,3 +114,60 @@ All research bonuses together, from the list button on the Tech Research screen.
 | Battle | **Squads' Attack** | +18.50% | 2026-11-18 |
 | Battle | **Squads' Defense / Lethality / Health** | +13.75% / +13.75% / +13.75% | 2026-11-18 |
 | Battle | **Troops Deployment Capacity** | +7,100 | 2026-11-18 |
+
+## Backpack (Overview: Resources & Speedups)
+
+From the chart button on the Backpack screen, morning of 2026-11-18. "Items" are resource packs still in the backpack; "In Stock"
+is the city's storage plus those items. Custom Resource Chests are not counted (the screen says so).
+
+| Resource | In backpack items | In stock (city + items) | Updated |
+| :--- | :---: | :---: | :---: |
+| **Bread** | 521.59M | 677.06M | 2026-11-18 |
+| **Wood** | 495.79M | 659.89M | 2026-11-18 |
+| **Stone** | 101.40M | 134.08M | 2026-11-18 |
+| **Iron** | 26.32M | 33.30M | 2026-11-18 |
+| **Gold** | — | 2.80M | 2026-11-18 |
+| **Hero XP** | 55K | 429.72K | 2026-11-18 |
+| **Pet Food** | — | 65 | 2026-11-18 |
+
+| Speedup | Total time in the backpack | Updated |
+| :--- | :---: | :---: |
+| **General Speedup** | No items | 2026-11-18 |
+| **Soldier Training Speedup** | 12 h 38 min | 2026-11-18 |
+| **Construction Speedup** | 2 days 16 h | 2026-11-18 |
+| **Research Speedup** | 10 h 27 min | 2026-11-18 |
+| **Soldier Healing Speedup** | 3 days 12 h 52 min | 2026-11-18 |
+
+Hero skill books and Redeem shards are shared stock per rarity and are read on the hero screens (`hero.md`, 17 Nov):
+Mythic Conquest Books 49, Mythic Expedition Manuals 41; Epic Conquest Books 38, Epic Expedition Manuals 43; Rare Conquest
+Books 10, Rare Development Books 12. Redeem shards: Mythic 24, Epic 6, Rare 0. _(2026-11-17)_
+
+## Events (week of 16–22 Nov)
+
+From the Events screen, Calendar tab (UTC 2026-11-18 08:30). The calendar shows bars across Mon 16 to Sun 22 Nov;
+start and end days are read from where each bar begins and ends (inferred), except Hall of Governors, which states
+its dates. _(2026-11-18)_
+
+| Event | Type | Days shown | Notes | Updated |
+| :--- | :---: | :--- | :--- | :---: |
+| **Hall of Governors** | Event | 16–22 Nov | Stages I–VII; stage III, Soldier Training, on 18 Nov (15:29:45 left). My ranking 392, 1,915,350 points; next targets 2,210,000 / 3,680,000 / 5,360,000; season ends in 4d 15:29. Hero of the Season: a hooded heroine (portrait only) | 2026-11-18 |
+| **Alliance Championship** | Event | all week | | 2026-11-18 |
+| **Sanctuary Battle** | Event | 17–19 Nov | | 2026-11-18 |
+| **Viking…** (name cut off) | Event | 17–18 Nov | Viking Vengeance in the guides (Unverified) | 2026-11-18 |
+| **Defea…** (name cut off) | Event | 17–18 Nov | | 2026-11-18 |
+| **Hero Roulette** | Event | 17–19 Nov | Also a tab on the Events screen | 2026-11-18 |
+| **All Out** | Event | from 20 Nov | | 2026-11-18 |
+| **Hero Ascension Fund** | Deal | all week | | 2026-11-18 |
+| **Hero Rally** | Deal | all week | | 2026-11-18 |
+
+### Kingdom Monument
+
+Kingdom-wide milestones on the Monument screen. _(2026-11-18)_
+
+| Milestone | State | Goal | Updated |
+| :--- | :---: | :--- | :---: |
+| **Solidarity** | Completed | 6 alliances in the kingdom with 70 members (13 / 6); ended 2026-11-11 00:00 UTC | 2026-11-18 |
+| **The Ascension** | Goal not met | The alliance must fully control the King's Castle before the countdown ends (0 / 1) | 2026-11-18 |
+| **Bane of Beasts** | In progress (112 / 50) | The alliance hunted 50 Terrors of Lv 5 or higher; 1:46:49 left | 2026-11-18 |
+| **Road to Recovery** | Locked | The first 20 governors in the kingdom to reach Town Center 30 | 2026-11-18 |
+

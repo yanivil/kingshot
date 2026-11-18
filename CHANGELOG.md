@@ -6,6 +6,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Backpack read from the phone on 18 Nov (chart button, "Overview: Resources & Speedups"):
+  - `profile.md`: new Stored Wood 164.1M, Stored Stone 32.7M and Stored Iron 6.98M bullets (in stock minus backpack
+    items, inferred; the same sum gives bread 155.47M against the top bar's 155.3M); a Backpack section with each
+    resource's items and stock, gold 2.80M, Hero XP 429.72K, and speedup totals (training 12 h 38 min, construction
+    2 days 16 h, research 10 h 27 min, healing 3 days 12 h 52 min, no general speedups); the book and shard stock from
+    the 17 Nov hero screens. Stamina 79 / 200.
+  - `scripts/build_data.py` reads the three new bullets into `resources.wood` / `stone` / `iron` (optional: older files
+    without them give `null` and no warning; test `test_wood_stone_iron_are_optional`), so the City page shows them.
+    SCHEMA updated. "Wood, stone and iron", "Speedups" and "Shard and book inventories" leave the Data health missing list.
+- `profile.md`: Events of 16–22 Nov from the Events calendar (Hall of Governors stage III, ranking 392 with 1,915,350
+  points; Alliance Championship, Sanctuary Battle, Hero Roulette, All Out from 20 Nov, and two deals) and the Kingdom
+  Monument milestones (Solidarity completed, Bane of Beasts 112 / 50, The Ascension not met, Road to Recovery locked).
+  `data/manual.json`: the Research feature has data now; "Events" leaves the Data health missing list.
 - Game data read from the phone on 18 Nov, part 2:
   - `lineups.md`: Arena defense squad 3,555,833 (same five heroes and places, new levels and stars; 2,494,295 on 23 Oct)
     and Arena standing (rank 977, 1,083 points). The attack squad was not re-read (it opens only from Challenge).

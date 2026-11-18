@@ -217,7 +217,7 @@ when the value changes (see README "Update dates").
 | `meta.staleAfterDays`, `meta.previousSnapshot`, `meta.lockedHeroesNotInData` | `data/manual.json` | |
 | `governor` | profile.md, "Governor Identity" table | Governor Name (optional row, not stored today, so `name` is `null` and the header shows "Governor: Not recorded"), Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
 | `townCenter` | profile.md, "Town Center (TC)" section | Current Level, Citizens / Workforce Capacity, the Attack / Defense / Health table; perks from the heading `(6 / 7 Unlocked)`, checked against the perk table. `perks.namesVerified` comes from `data/manual.json` |
-| `resources` | profile.md | Stored Food (Bread), Free Gems. A K/M/B suffix (`94.6M`) means `rounded: true`. Wood, stone, iron: `null` |
+| `resources` | profile.md | Stored Food (Bread), Free Gems, and (since 2026-11-18, optional: no bullet gives `null` without a warning) Stored Wood, Stored Stone, Stored Iron. A K/M/B suffix (`94.6M`) means `rounded: true` |
 | `governorGear` | profile.md, "Governor Gear" row | `6 / 6 Locked` = 6 locked of 6 slots (`slotsLocked`); `3 / 6 Equipped` = 3 pieces worn of 6 (`slotsEquipped`); `asOf` is the row's date. The pieces are listed in profile.md's "Governor Gear" table |
 | `army` | troops.md | `Tier VIII (Elite)` → `"T8 Elite"` (`Tier VII (Brave)` → `"T7 Brave"` before 5 Nov); inventory table (Infantry → `inf`, Cavalry → `cav`, Marksmen → `arc` "Archers"); the "Total Military Force" row gives total and injured; the caps table gives march capacity, queues and infirmary |
 | `rules` | `data/manual.json` | Community rules (Unverified) |
