@@ -6,6 +6,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `data/manual.json`: six suggestion cards from the 17–18 Nov data:
+  1. Hall of Governors stage III (Soldier Training, ends about 00:00 UTC on 18 Nov): train Infantry and use the
+     12 h 38 min of training speedups (1,915,350 points, next target 2,210,000).
+  2. Start Town Center 24 with the two idle building queues (Jabel is capped at Lv 69).
+  3. Woo with the troops Iro, Sto and Bre leave (19,000 Infantry / 10,800 Cavalry / 11,100 Archers), so all four
+     queues can gather without training.
+  4. Hero XP into Olive and Quinn first, the Lv 67 instructors who set the Drill Camp level (not ready: about 1.3M XP).
+  5. Save Mythic books for Jabel's Gallant Throw (49 / 75), not Saul (49 / 50, in no combat line-up) (not ready).
+  6. Next Epic books to Quinn's Natural Selection and Precision Shot (not ready: 38 / 50 and 43 / 50).
+  The Infantry card moves to priority 4 and points to the Woo card.
 - `lineups.md`: both Barricades re-read on 18 Nov (the owner showed how to open them: tap the wall gate between two
   towers). Same six heroes at their new levels and stars; Barricade 1 2.2M (1.9M on 5 Nov), Barricade 2 2.0M (1.7M);
   each fits the sum of the 17 Nov hero powers (2,221,281 and 2,005,100). Total 4.2M.
