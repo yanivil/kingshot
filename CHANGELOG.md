@@ -5,6 +5,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+- Two owner plans (18 Nov) applied to the cards: the alliance asks not to use speedups until 1 Dec, so the Hall of
+  Governors card trains Infantry without speedups and the Town Center card no longer suggests construction speedups;
+  and research comes before Town Center 24, so that card is "Not yet" (priority 5). `CLAUDE.md` lists both plans
+  under Suggestions so every session respects them.
+
 ### Added
 - `CLAUDE.md`: "Phone notes (learned on 17–18 Nov)": Samsung Auto Blocker, the check that the game is in front before
   each tap, the owner's standing requests (Confirm on the welcome popup, alliance help, storehouse chest), a table of

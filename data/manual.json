@@ -135,55 +135,27 @@
       "id": "hog-stage3-training",
       "priority": 1,
       "type": "Events",
-      "what": "Hall of Governors today: train Infantry, use speedups",
-      "summary": "Stage III (Soldier Training) ends about 00:00 UTC tonight. You are at 1,915,350 points; the next target is 2,210,000. Train Infantry and spend the 12 h 38 min of training speedups.",
-      "why": "Hall of Governors (16–22 Nov) is on stage III, Soldier Training, with 15:29:45 left at 08:30 UTC on 18 Nov, so it ends about 00:00 UTC (02:00 Israel time). You have 1,915,350 points; the next targets are 2,210,000, 3,680,000 and 5,360,000. All three training queues showed Completed on 18 Nov, so they are free. Infantry is the troop you are short of (see the Infantry card), so training it serves both. Training speedups in the backpack add up to 12 h 38 min.",
+      "what": "Hall of Governors today: train Infantry, no speedups",
+      "summary": "Stage III (Soldier Training) ends about 00:00 UTC tonight. You are at 1,915,350 points; the next target is 2,210,000. Train Infantry in every free queue; keep speedups until 1 Dec (alliance).",
+      "why": "Hall of Governors (16–22 Nov) is on stage III, Soldier Training, with 15:29:45 left at 08:30 UTC on 18 Nov, so it ends about 00:00 UTC (02:00 Israel time). You have 1,915,350 points; the next targets are 2,210,000, 3,680,000 and 5,360,000. All three training queues showed Completed on 18 Nov, so they are free. Infantry is the troop you are short of (see the Infantry card), so training it serves both. Your alliance asks members not to use speedups until 1 Dec (told by the account owner on 18 Nov), so this card uses training time only: the 12 h 38 min of training speedups stay in the backpack.",
       "steps": [
         "Collect the finished troops from the three training buildings.",
         "Train Elite Infantry in all free queues (Cavalry and Archers only if Infantry is not offered).",
-        "Use Soldier Training Speedups (12 h 38 min in the backpack) before about 00:00 UTC.",
+        "Do not use speedups (alliance request, until 1 Dec); start the longest batch that finishes after the stage if needed, since a batch started now may still count when it ends (Unverified).",
         "Check Events → Hall of Governors for the points; claim 2,210,000 when it turns green."
       ],
       "evidence": [
         "profile.md Events, 18 Nov: Hall of Governors stage III Soldier Training, 15:29:45 left, ranking 392, 1,915,350 points, targets 2,210,000 / 3,680,000 / 5,360,000",
-        "profile.md Backpack, 18 Nov: Soldier Training Speedup 12 h 38 min",
-        "Side panel, 18 Nov: Infantry, Cavalry and Archer training Completed"
+        "Side panel, 18 Nov: Infantry, Cavalry and Archer training Completed",
+        "Alliance request, told by the account owner on 18 Nov: no speedups until 1 Dec"
       ],
-      "cost": "Training resources (not recorded) and up to 12 h 38 min of training speedups",
+      "cost": "Training resources (not recorded); no speedups",
       "confidence": [
         "Verified",
         "Unverified"
       ],
       "heroes": [],
-      "note": "Verified: the stage, its time left, your points and your speedups. Unverified: how many points each troop or speedup minute gives (not shown on the screens read). If a later stage counts speedups, you may want to keep some; stages IV–VII were not read."
-    },
-    {
-      "id": "tc24-idle-builders",
-      "priority": 2,
-      "type": "City",
-      "what": "Start Town Center 24 with the two idle builders",
-      "summary": "Both building queues were Idle on 18 Nov. Town Center 24 raises the hero level cap to 74 (Jabel is capped at 69) and moves toward Drill Camp slot 10 at Town Center 25.",
-      "why": "The side panel showed Building Queue 1 and 2 Idle on 18 Nov, and the quest bar says \"Upgrade Town Center to Lv. 24\". Jabel is at Lv 69, the cap at Town Center 23, and her next level needs Town Center 24 (hero screen, 17 Nov). Community tables give a Lv 74 cap at Town Center 24 (Unverified). The Drill Camp's slot 10 needs Town Center 25. You have 2 days 16 h of construction speedups.",
-      "steps": [
-        "Tap the Town Center → Upgrade, and read what it requires.",
-        "Upgrade any required building below 23 with the second queue, then the Town Center.",
-        "Use construction speedups (2 days 16 h) if you want it sooner."
-      ],
-      "evidence": [
-        "Side panel, 18 Nov: Building Queue 1 and 2 Idle",
-        "hero.md, 17 Nov: Jabel Lv 69, next level needs Town Center 24",
-        "data/manual.json Drill Camp, 18 Nov: slot 10 needs Town Center 25",
-        "profile.md Backpack, 18 Nov: Construction Speedup 2 days 16 h"
-      ],
-      "cost": "Town Center 24 cost and time not recorded; requirements not read",
-      "confidence": [
-        "Verified",
-        "Unverified"
-      ],
-      "heroes": [
-        "Jabel"
-      ],
-      "note": "Verified: idle queues, Jabel's cap, speedups. Unverified: the Lv 74 cap (community table). The upgrade's requirements and cost were not read."
+      "note": "Verified: the stage, its time left and your points. Unverified: how many points each troop gives, and whether a batch counts when it starts or when it finishes (not shown on the screens read)."
     },
     {
       "id": "woo-mixed-four-marches",
@@ -280,8 +252,38 @@
       "note": "Verified: your preset troops and troop counts. Inferred: that more Infantry is worth the training cost (training costs and times are not recorded)."
     },
     {
-      "id": "drill-xp-olive-quinn",
+      "id": "tc24-idle-builders",
       "priority": 5,
+      "type": "City",
+      "what": "Town Center 24 once your research is done",
+      "summary": "Your plan is to finish all research first. After that, Town Center 24 raises the hero level cap to 74 (Jabel is capped at 69) and leads to Drill Camp slot 10 at Town Center 25.",
+      "why": "The side panel showed Building Queue 1 and 2 Idle on 18 Nov, and the quest bar says \"Upgrade Town Center to Lv. 24\". Jabel is at Lv 69, the cap at Town Center 23, and her next level needs Town Center 24 (hero screen, 17 Nov). Community tables give a Lv 74 cap at Town Center 24 (Unverified). The Drill Camp's slot 10 needs Town Center 25. Your alliance asks members not to use speedups until 1 Dec (told by the account owner on 18 Nov), so the 2 days 16 h of construction speedups stay saved and the upgrade runs on its own time. The account owner plans to finish all research first and has time (18 Nov), so this waits.",
+      "steps": [
+        "After the research is done: Town Center → Upgrade, and read what it requires.",
+        "Upgrade any required building below 23 with the second queue, then the Town Center.",
+        "Do not use construction speedups until 1 Dec (alliance request)."
+      ],
+      "evidence": [
+        "Side panel, 18 Nov: Building Queue 1 and 2 Idle",
+        "hero.md, 17 Nov: Jabel Lv 69, next level needs Town Center 24",
+        "data/manual.json Drill Camp, 18 Nov: slot 10 needs Town Center 25",
+        "Alliance request, told by the account owner on 18 Nov: no speedups until 1 Dec"
+      ],
+      "cost": "Town Center 24 cost and time not recorded; requirements not read",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Jabel"
+      ],
+      "note": "Verified: idle queues and Jabel's cap. Unverified: the Lv 74 cap (community table). The upgrade's requirements, cost and build time were not read.",
+      "ready": false,
+      "waitingFor": "Your plan (18 Nov): finish all research at Town Center 23 first; there is no rush."
+    },
+    {
+      "id": "drill-xp-olive-quinn",
+      "priority": 6,
       "type": "Heroes",
       "ready": false,
       "waitingFor": "About 1.3M Hero XP for Olive and Quinn (Lv 67 → 68); 429.72K in stock (18 Nov). Diana's Lv 68 → 69 costs 670,000.",
@@ -312,7 +314,7 @@
     },
     {
       "id": "mythic-books-jabel",
-      "priority": 6,
+      "priority": 7,
       "type": "Skills",
       "ready": false,
       "waitingFor": "26 more Mythic Conquest Books for Gallant Throw Lv 5 (49 / 75, 17 Nov)",
@@ -340,7 +342,7 @@
     },
     {
       "id": "epic-books-quinn",
-      "priority": 7,
+      "priority": 8,
       "type": "Skills",
       "ready": false,
       "waitingFor": "12 more Epic Conquest Books (38 / 50) and 7 more Epic Expedition Manuals (43 / 50), 17 Nov",
