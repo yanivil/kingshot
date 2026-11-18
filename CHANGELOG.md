@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `lineups.md`: both Barricades re-read on 18 Nov (the owner showed how to open them: tap the wall gate between two
+  towers). Same six heroes at their new levels and stars; Barricade 1 2.2M (1.9M on 5 Nov), Barricade 2 2.0M (1.7M);
+  each fits the sum of the 17 Nov hero powers (2,221,281 and 2,005,100). Total 4.2M.
 - Backpack read from the phone on 18 Nov (chart button, "Overview: Resources & Speedups"):
   - `profile.md`: new Stored Wood 164.1M, Stored Stone 32.7M and Stored Iron 6.98M bullets (in stock minus backpack
     items, inferred; the same sum gives bread 155.47M against the top bar's 155.3M); a Backpack section with each
