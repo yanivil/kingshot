@@ -15,7 +15,8 @@ https://yanivil.github.io/kingshot/ on every push to `main`.
 
 ## Reading the game from the Android phone (adb)
 
-The phone is an Android device connected to the owner's iMac by USB. Run these from a Claude Code session on the iMac:
+The phone is an Android device connected to the owner's iMac by USB. Run these from a Claude Code session on the iMac. `scripts/phone.sh` wraps them (screenshots, taps with the
+Kingshot-in-front check, crops); use it instead of a temporary copy, which a session restart can delete:
 
 1. Check the connection: `adb devices` must list the phone as `device` (not `unauthorized`; if so, ask the owner to
    accept the "Allow USB debugging" prompt on the phone).
