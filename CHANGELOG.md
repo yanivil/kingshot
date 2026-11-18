@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- The owner wants Claude to play for them (18 Nov): new `play_tasks.md` lists the tasks Claude repeats whenever they
+  are available (welcome popup Confirm, alliance help, storehouse chest so far) and their limits. `CLAUDE.md`'s
+  read-only rule now allows exactly those tasks. README lists the file.
+- New owner plan (18 Nov): no upgrades other than research until 1 Dec. `CLAUDE.md` records it; the Town Center 24,
+  Hero XP and skill-book cards now wait for 1 Dec. A gift-code check on 18 Nov found no new codes.
 - Two owner plans (18 Nov) applied to the cards: the alliance asks not to use speedups until 1 Dec, so the Hall of
   Governors card trains Infantry without speedups and the Town Center card no longer suggests construction speedups;
   and research comes before Town Center 24, so that card is "Not yet" (priority 5). `CLAUDE.md` lists both plans
