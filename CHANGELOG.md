@@ -19,6 +19,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `play_tasks.md`: four alliance tasks from the owner (18 Nov): loot chests with Claim All, the big box only when it
+  is shining, Alliance Gift one by one (never Claim All), and Alliance Tech contributions with iron only (the
+  thumbs-up tech; without one, wait below 20 attempts, otherwise any tech).
 - `scripts/phone.sh`: the phone helper (screenshot, tap, swipe, Back, crop, and a check that Kingshot is in front
   before every input) is now in the repo, because the copy in a session's temporary folder was lost on a restart.
   `CLAUDE.md` and README point to it. `play_tasks.md`: task 2 is the help icon every time it shows; new task 4 heals
