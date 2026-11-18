@@ -180,11 +180,11 @@
       "name": "Research",
       "unlock": null,
       "state": "Active",
-      "hasData": false,
+      "hasData": true,
       "source": "profile.md",
       "section": "Research Building",
       "asOf": "2026-10-22",
-      "note": "Institute Lv 20: +2.0% research speed (Details table, 22 Oct). Research levels are not recorded yet."
+      "note": "Academy Lv 23; Tech Bonus Overview recorded on 18 Nov (all research totals). Current research: Special Defensive Training IV."
     },
     {
       "name": "Heroes",
@@ -374,10 +374,6 @@
       {
         "area": "Governor",
         "title": "Server day"
-      },
-      {
-        "area": "Events",
-        "title": "Events"
       }
     ]
   }

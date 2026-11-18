@@ -142,3 +142,32 @@ Hero skill books and Redeem shards are shared stock per rarity and are read on t
 Mythic Conquest Books 49, Mythic Expedition Manuals 41; Epic Conquest Books 38, Epic Expedition Manuals 43; Rare Conquest
 Books 10, Rare Development Books 12. Redeem shards: Mythic 24, Epic 6, Rare 0. _(2026-11-17)_
 
+## Events (week of 16–22 Nov)
+
+From the Events screen, Calendar tab (UTC 2026-11-18 08:30). The calendar shows bars across Mon 16 to Sun 22 Nov;
+start and end days are read from where each bar begins and ends (inferred), except Hall of Governors, which states
+its dates. _(2026-11-18)_
+
+| Event | Type | Days shown | Notes | Updated |
+| :--- | :---: | :--- | :--- | :---: |
+| **Hall of Governors** | Event | 16–22 Nov | Stages I–VII; stage III, Soldier Training, on 18 Nov (15:29:45 left). My ranking 392, 1,915,350 points; next targets 2,210,000 / 3,680,000 / 5,360,000; season ends in 4d 15:29. Hero of the Season: a hooded heroine (portrait only) | 2026-11-18 |
+| **Alliance Championship** | Event | all week | | 2026-11-18 |
+| **Sanctuary Battle** | Event | 17–19 Nov | | 2026-11-18 |
+| **Viking…** (name cut off) | Event | 17–18 Nov | Viking Vengeance in the guides (Unverified) | 2026-11-18 |
+| **Defea…** (name cut off) | Event | 17–18 Nov | | 2026-11-18 |
+| **Hero Roulette** | Event | 17–19 Nov | Also a tab on the Events screen | 2026-11-18 |
+| **All Out** | Event | from 20 Nov | | 2026-11-18 |
+| **Hero Ascension Fund** | Deal | all week | | 2026-11-18 |
+| **Hero Rally** | Deal | all week | | 2026-11-18 |
+
+### Kingdom Monument
+
+Kingdom-wide milestones on the Monument screen. _(2026-11-18)_
+
+| Milestone | State | Goal | Updated |
+| :--- | :---: | :--- | :---: |
+| **Solidarity** | Completed | 6 alliances in the kingdom with 70 members (13 / 6); ended 2026-11-11 00:00 UTC | 2026-11-18 |
+| **The Ascension** | Goal not met | The alliance must fully control the King's Castle before the countdown ends (0 / 1) | 2026-11-18 |
+| **Bane of Beasts** | In progress (112 / 50) | The alliance hunted 50 Terrors of Lv 5 or higher; 1:46:49 left | 2026-11-18 |
+| **Road to Recovery** | Locked | The first 20 governors in the kingdom to reach Town Center 30 | 2026-11-18 |
+

@@ -15,6 +15,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `scripts/build_data.py` reads the three new bullets into `resources.wood` / `stone` / `iron` (optional: older files
     without them give `null` and no warning; test `test_wood_stone_iron_are_optional`), so the City page shows them.
     SCHEMA updated. "Wood, stone and iron", "Speedups" and "Shard and book inventories" leave the Data health missing list.
+- `profile.md`: Events of 16–22 Nov from the Events calendar (Hall of Governors stage III, ranking 392 with 1,915,350
+  points; Alliance Championship, Sanctuary Battle, Hero Roulette, All Out from 20 Nov, and two deals) and the Kingdom
+  Monument milestones (Solidarity completed, Bane of Beasts 112 / 50, The Ascension not met, Road to Recovery locked).
+  `data/manual.json`: the Research feature has data now; "Events" leaves the Data health missing list.
 - Game data read from the phone on 18 Nov, part 2:
   - `lineups.md`: Arena defense squad 3,555,833 (same five heroes and places, new levels and stars; 2,494,295 on 23 Oct)
     and Arena standing (rank 977, 1,083 points). The attack squad was not re-read (it opens only from Challenge).
