@@ -19,6 +19,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `scripts/phone.sh`: the phone helper (screenshot, tap, swipe, Back, crop, and a check that Kingshot is in front
+  before every input) is now in the repo, because the copy in a session's temporary folder was lost on a restart.
+  `CLAUDE.md` and README point to it. `play_tasks.md`: task 2 is the help icon every time it shows; new task 4 heals
+  injured soldiers from the infirmary's green + (Heal, never Finish, which costs gems) and task 5 asks the alliance
+  for help on a working building (owner, 18 Nov). The storehouse chest came back after about an hour on 18 Nov.
 - `CLAUDE.md`: "Phone notes (learned on 17–18 Nov)": Samsung Auto Blocker, the check that the game is in front before
   each tap, the owner's standing requests (Confirm on the welcome popup, alliance help, storehouse chest), a table of
   where each value is read on the phone and which file it goes to, and the buttons never to press. So every session,

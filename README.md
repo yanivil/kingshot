@@ -51,6 +51,7 @@ This repository provides:
 * **`docs/SCHEMA.md`**: Reference for the dashboard's data object and where each field comes from.
 * **`data/manual.json`**: Hand-edited dashboard content that is not in the `.md` files (recommendations,
   data-health notes, community game rules, features, Drill Camp, a few hero notes).
+* **`scripts/phone.sh`**: Helper for reading and playing the game on the owner's Android phone over `adb` (screenshots into the git-ignored `phone_shots/`, taps that first check Kingshot is in front).
 * **`scripts/build_data.py`**: Generator that builds the dashboard data from the `.md` files
   (tests: `scripts/test_build_data.py`).
 * **`.github/workflows/build-dashboard.yml`**: Builds and publishes the dashboard to GitHub Pages.
