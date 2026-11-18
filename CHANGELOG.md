@@ -19,6 +19,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `play_tasks.md` and `CLAUDE.md`: rule "one tap at a time" (tap, screenshot, check, then the next tap), after a
+  chained batch of taps in Mail on 18 Nov opened an old battle report and pressed its Share button; the share window
+  was closed without choosing anyone, and the owner checks the chat. New task 11, Mail: Read & Claim All in each tab
+  with a red count, never Delete Read, never Share.
 - `play_tasks.md`: task 10, Alliance Triumph: press a chest (weekly or personal) only when it shines, otherwise go back
   (owner, 18 Nov).
 - `play_tasks.md` limits: the alliance's KvK save list (announcement read on 18 Nov: speedups; gems, Roulette spins,

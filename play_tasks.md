@@ -17,6 +17,10 @@ available. A task is added, changed or removed here only from the owner's own wo
 - Never write in chat or mail, start or join a rally, attack, scout, teleport, or change alliance, unless a task says so.
 - Before every tap, check that Kingshot is the app in front; stop if it is not (the owner may be using the phone).
 - If a tap would do something not listed here, or its result is unclear, stop and ask the owner.
+- **One tap at a time:** tap, take a screenshot, check the screen is the one expected, then the next tap. Never chain
+  taps on screens not yet seen. On 2026-11-18 a chained batch in Mail opened an old battle report, where the spot of
+  "Read & Claim All" is the **Share** button, and Share was pressed 2–3 times (the share window was closed without
+  choosing anyone).
 
 ## Tasks
 
@@ -32,5 +36,6 @@ available. A task is added, changed or removed here only from the owner's own wo
 | 8 | Alliance gifts | When the Alliance Gift tab has gifts not yet claimed | Alliance → Chests → **Alliance Gift** tab: claim each gift **one by one**, never Claim All (owner, 18 Nov). Never press **Go** (it opens a purchase) or tick "Send Anonymous Alliance Gift" | 2026-11-18 |
 | 9 | Alliance tech contributions | When the Contribute (iron) attempts are not used up: up to 25, one more every few minutes | Alliance → **Tech** → the tech with a **thumbs-up** → the teal **Contribute** until the attempts reach 0; it costs a resource (iron, wood, stone or bread: any is fine; 1,250 iron on 18 Nov). **Never the orange Contribute** (10 gems). With no thumbs-up anywhere: if fewer than 20 attempts are waiting, wait for later; with 20 or more, choose any tech and contribute (owner, 18 Nov). 18 attempts on Archer Lethality I on 18 Nov | 2026-11-18 |
 | 10 | Alliance Triumph chest | When a chest on the Activity Triumph screen is shining | Alliance → **Triumph** (bottom) → press a chest only if it shines (the weekly chest or the Personal Activity Triumph Chest); otherwise go back (owner, 18 Nov). Neither shone on 18 Nov: the personal chest (bottom) was open at 1,400 / 800 and a tap only showed its contents, so it had been claimed that day | 2026-11-18 |
+| 11 | Mail | When the envelope (bottom right) shows a red count | Envelope → for each tab with a red count (Wars, Alliance, System, Reports, Starred): open the tab, check it is the list (not an open mail), press **Read & Claim All**, tap to close the rewards. Never press **Delete Read**, and inside an open mail never press Delete, Star or **Share** (owner, 18 Nov) | 2026-11-18 |
 
 More tasks follow as the owner names them.
