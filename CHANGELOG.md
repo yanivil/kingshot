@@ -12,6 +12,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
     Guard Station: Quinn replaced Diana (Jabel 884.8K, Quinn 668.4K, Howard 671.4K; Intact, 15,000 / 15,000, not locked).
   - `profile.md`: power 23,171,282, gems 14,856 and bread 155.3M (city top bar, morning of 18 Nov); new row Conquest
     Stage 339 (306 on 5 Nov).
+  - `data/manual.json` Drill Camp (18 Nov): instructors Jabel 69, Chenko 68, Olive 67, Quinn 67, Diana 68 (Olive took
+    Seth's place); 9 open slots (slot 9 opened with Town Center 23) hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd,
+    Forrest, Saul and Seth at Lv 67; slot 10 needs Town Center 25. This clears the five Drill Camp level conflicts.
 - Game data read from the phone on 18 Nov, in chunks:
   - Profile and Town Center (`profile.md`, `troops.md`, README): power 23,042,384 (city top bar; 17,819,499 on 5 Nov),
     kills 700,694, stamina 103 / 200, VIP 4, gems 13,447, bread 147.8M. Governor Gear: the Modest Cloak, Oakheart Ring and

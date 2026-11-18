@@ -83,31 +83,31 @@
     }
   },
   "drillCamp": {
-    "asOf": "2026-11-05",
+    "asOf": "2026-11-18",
     "instructors": [
       {
         "hero": "Jabel",
-        "level": 64
+        "level": 69
       },
       {
         "hero": "Chenko",
-        "level": 64
+        "level": 68
       },
       {
-        "hero": "Seth",
-        "level": 64
+        "hero": "Olive",
+        "level": 67
       },
       {
         "hero": "Quinn",
-        "level": 64
+        "level": 67
       },
       {
         "hero": "Diana",
-        "level": 64
+        "level": 68
       }
     ],
     "slotsTotal": 15,
-    "slotsOpen": 8,
+    "slotsOpen": 9,
     "slotted": [
       "Amane",
       "Helga",
@@ -116,18 +116,19 @@
       "Yeonwoo",
       "Fahd",
       "Forrest",
-      "Saul"
+      "Saul",
+      "Seth"
     ],
     "lockedSlots": [
       {
-        "slot": 9,
-        "requirement": "TC 23",
-        "tcLevel": 23,
-        "note": "Screen shows the Town Center icon with Lv. 23"
+        "slot": 10,
+        "requirement": "TC 25",
+        "tcLevel": 25,
+        "note": "Screen shows the Town Center icon with Lv. 25"
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 5 Nov: the 5 instructors all show Lv 64. The screen shows no names; left to right they look like Jabel, Chenko, Seth, Quinn and Diana, and these are exactly the five heroes whose own 5 Nov screens show Lv 64 without the Drill Camp message (Olive showed Lv 63 then, reaching Lv 64 later on 5 Nov, and Edwin Lv 59), so the identification is firm. Seth took Olive's place since 27 Oct. The screen text says \"Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors\". The 8 slots hold, by portrait and class icon, Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest and Saul, all Lv 64, and each of them shows Lv 64 with the Drill Camp message on their own 5 Nov screen. Slot 9 needs Town Center Lv 23 and slots 10-15 are locked. On 27 Oct the instructors were Jabel 64, Diana 61, Olive 59, Chenko 59 and Quinn 64, so slotted heroes ran at Lv 59."
+    "_instructorNote": "From the Drill Camp screen of 18 Nov: the five instructors show Lv 69, 68, 67, 68 and 68 left to right; the middle one (Lv 67) is in yellow, the Level Minimum. The screen shows no names; by portrait they are Jabel 69, Chenko 68, Olive 67, Quinn 67 and Diana 68 (Chenko, Olive and Quinn showed a white level without the Drill Camp message on their own 17 Nov screens; inferred for Jabel and Diana). Olive took Seth's place since 5 Nov. The 9 open slots hold, by portrait and class icon, Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest, Saul and Seth, all Lv 67, the Level Minimum. Slot 9 opened with Town Center 23; slot 10 needs Town Center 25 and slots 11-15 are locked. Edwin (Lv 67, white) is in neither list. On 5 Nov the instructors were all Lv 64."
   },
   "recommendations": [
     {
