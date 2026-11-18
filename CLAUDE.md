@@ -49,7 +49,7 @@ screenshot):
 | Data | Route | File |
 | :--- | :--- | :--- |
 | Power, gems, bread, citizens, VIP | City top bar | `profile.md` |
-| Kills, stamina, governor gear | Avatar (top left, ~87, 212); tap each gear icon. The screen shows the governor name and Player ID: never record them | `profile.md` |
+| Kills, stamina, governor gear | Avatar (top left, ~87, 212); tap each gear icon. The screen shows the governor name and Player ID, which are never recorded | `profile.md` |
 | Troop counts, march queue, infirmary | Avatar → **Squad** (~546, 3001) = Troops Preview | `troops.md` |
 | March presets | Troops Preview → **Formations** (Deploy); tap each tab at the top. Never press Save, Clear All, Equalize or Balance | `troops.md`, `lineups.md` |
 | Gift codes | Avatar → Settings (~1239, 3001) → Gift Code. No history list | `codes.md` |
