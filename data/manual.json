@@ -158,72 +158,11 @@
       "note": "Verified: the stage, its time left and your points. Unverified: how many points each troop gives, and whether a batch counts when it starts or when it finishes (not shown on the screens read)."
     },
     {
-      "id": "woo-mixed-four-marches",
-      "priority": 3,
-      "type": "Formations",
-      "what": "Woo: use the leftover troops so 4 marches can gather",
-      "summary": "Iro, Sto and Bre leave 19,057 Infantry, 10,800 Cavalry and 11,106 Archers. Woo with 19,000 / 10,800 / 11,100 lets all four queues gather at once, with no training.",
-      "why": "Iro sends 51,914 Infantry, Sto 51,914 Cavalry and Bre 49,690 Archers. Of your 70,971 / 62,714 / 60,796 that leaves 19,057 Infantry, 10,800 Cavalry and 11,106 Archers, so Woo (51,942 Infantry) cannot go out with Iro today. A Woo of 19,000 Infantry, 10,800 Cavalry and 11,100 Archers (40,900) fits beside the other three, with the same heroes, and fills your 4 march queues. No hero is in two of these marches.",
-      "changes": [
-        {
-          "where": "Woo (tab 4)",
-          "rows": [
-            {
-              "label": "Heroes",
-              "before": [
-                "Forrest",
-                "Chenko",
-                "Yeonwoo"
-              ],
-              "after": [
-                "Forrest",
-                "Chenko",
-                "Yeonwoo"
-              ]
-            },
-            {
-              "label": "Troops",
-              "before": [
-                "Infantry 51,942"
-              ],
-              "after": [
-                "Infantry 19,000",
-                "Cavalry 10,800",
-                "Archers 11,100"
-              ]
-            }
-          ],
-          "note": "40,900 of 94,440 · fits beside Iro, Sto and Bre"
-        }
-      ],
-      "steps": [
-        "Deploy → Woo → set Infantry 19,000, Cavalry 10,800, Archers 11,100 → Save.",
-        "Send Iro, Sto, Bre and Woo to their resource tiles.",
-        "Call one back when you need a queue for a rally (Ter) or an attack (Att); go back to Infantry-only Woo once you have about 32,900 more Infantry."
-      ],
-      "evidence": [
-        "troops.md, Deploy screens of 18 Nov: Iro 51,914 Infantry, Sto 51,914 Cavalry, Bre 49,690 Archers, Woo 51,942 Infantry; available 70,971 / 62,714 / 60,796",
-        "troops.md, Troops Preview 18 Nov: March Queue 4/4"
-      ],
-      "cost": "None (a preset)",
-      "confidence": [
-        "Verified",
-        "Inferred",
-        "Unverified"
-      ],
-      "heroes": [
-        "Forrest",
-        "Chenko",
-        "Yeonwoo"
-      ],
-      "note": "Verified: the troop counts and presets. Inferred: the leftover numbers. Unverified: whether troop type changes how much a march can carry; a smaller march carries less, but an idle queue gathers nothing. All four queues busy means none is free for a rally until one returns."
-    },
-    {
       "id": "train-infantry",
       "priority": 4,
       "type": "Troops",
       "what": "Train about 32,900 more Infantry",
-      "summary": "Iron and Wood each send about 51,900 of your 70,976 Infantry. About 32,900 more lets both go out full; until then the mixed Woo card keeps all four queues busy.",
+      "summary": "Iron and Wood each send about 51,900 of your 70,976 Infantry, so only one can be out at a time. About 32,900 more lets both go out together.",
       "why": "Iro carries 51,914 Infantry, Woo 51,942 and Ter 47,270, while you have 70,976 (18 Nov). Iron and Wood together need 103,856, about 32,900 more than you have. Stone (Cavalry) and Bread (Archers) fit beside any one of them. Infantry was already training on 18 Nov (about 6 hours left); how many is not shown.",
       "changes": [
         {
