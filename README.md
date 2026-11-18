@@ -56,6 +56,7 @@ This repository provides:
 * **`.github/workflows/build-dashboard.yml`**: Builds and publishes the dashboard to GitHub Pages.
 * **`design/dashboard-prototype.dc.html`**: The approved design prototype (design-canvas format; not runnable on its own).
 * **`CHANGELOG.md`**: History of changes.
+* **`play_tasks.md`**: The tasks Claude plays in the game for the owner on the phone (alliance help, storehouse chest, and more as the owner names them), with their limits: no real money, no speedups and no upgrades other than research until 2026-12-01.
 * **`CLAUDE.md`**: Standing instructions for Claude sessions: privacy rules, how to read the game from the Android phone with `adb` (read-only), recording rules, suggestion cards, git and reply format. Phone screenshots go in `phone_shots/`, which git ignores.
 
 ### Update dates

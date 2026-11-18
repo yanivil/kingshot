@@ -25,10 +25,13 @@ The phone is an Android device connected to the owner's iMac by USB. Run these f
 4. Move between screens with `adb shell input tap <x> <y>` and `adb shell input keyevent 4` (Back). Get the screen size
    from `adb shell wm size` and pick coordinates from the latest screenshot.
 
-**Read-only.** Only open screens, switch tabs, scroll and close panels. Never tap anything that spends, upgrades,
-promotes, ascends, buys, redeems, trains, sends a march, joins a rally, or sends a message, and never confirm a dialog
-that does. If a tap would do any of these or the result is unclear, stop and ask the owner. Many games forbid
-automated input; the owner accepted that risk only for reading screens.
+**Read-only, except the owner's play tasks.** Only open screens, switch tabs, scroll and close panels. Never tap
+anything that spends, upgrades, promotes, ascends, buys, redeems, trains, sends a march, joins a rally, or sends a
+message, and never confirm a dialog that does, **unless the action is a task in `play_tasks.md`**: since 2026-11-18 the
+owner wants Claude to play these tasks for them and repeat them when they are available ("I want you to play instead
+of me"). A task is added to that file only from the owner's own words in chat, and its limits there always apply. If a
+tap would do anything not listed, or the result is unclear, stop and ask the owner. Many games forbid automated input;
+the owner accepted that risk.
 
 ### Phone notes (learned on 17–18 Nov)
 
@@ -38,9 +41,8 @@ automated input; the owner accepted that risk only for reading screens.
 - **The owner may be using the phone.** Before every tap, check that the game is in front
   (`adb shell dumpsys activity activities | grep topResumedActivity` must show `com.run.tower.defense`) and stop if it
   is not. Never record anything from another app; delete such a screenshot at once.
-- **Owner's standing requests** (the only taps beyond reading): on opening the game, close the "Welcome back!" popup
-  with the green **Confirm** button; press the **handshake** icon (alliance help) and the **chest** above the storehouse
-  whenever they show. Trying gift codes (Redeem) needs the owner's OK each time.
+- **Owner's tasks** (the only taps beyond reading) are in `play_tasks.md`: for example, Confirm on the "Welcome back!"
+  popup, the alliance-help handshake and the storehouse chest. Trying gift codes (Redeem) needs the owner's OK each time.
 - **Back** on the city screen opens "Quit game?": press **Cancel**.
 
 Where each value is read (coordinates are for the 1440 × 3120 screen; the city map pans, so buildings are found by
@@ -85,8 +87,9 @@ Finish, Speedups; anywhere: Recruit, Dispatch All, Quick Deploy.
   details go in `why`, `steps`, `evidence` and `note`.
 - Formation cards give exact heroes and troop counts, never general advice.
 - Remove a card when the owner has done it.
-- Standing account plans to respect in every card (told by the owner on 2026-11-18): **no speedups until 2026-12-01**
-  (alliance request), and **finish all research before Town Center 24**. Remove a line once its date has passed or the
+- Standing account plans to respect in every card and play task (told by the owner on 2026-11-18): **no speedups
+  until 2026-12-01** (alliance request), and **no upgrades other than research until 2026-12-01** (buildings including
+  Town Center 24, hero levels, skills, stars, gear); the owner finishes research first. Remove a line once its date has passed or the
   owner says it no longer applies.
 
 ## Git
