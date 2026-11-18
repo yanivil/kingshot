@@ -234,6 +234,24 @@ class MergeAndOutputTests(unittest.TestCase):
         # A missing row falls back to the file date.
         self.assertEqual(out["governor"]["fieldAsOf"]["vip"], "2026-10-25")
 
+    def test_wood_stone_iron_are_optional(self) -> None:
+        """Stored Wood / Stone / Iron bullets fill resources; without them the values are null and nothing warns.
+
+        Why: they were first recorded on 2026-11-18, so older data has no such bullets.
+        """
+        base = ("## Town Center (TC) & Settlement Status\n\n* **Current Level:** **Level 23** _(2026-11-18)_\n"
+                "* **Stored Food (Bread):** **155.3M** _(2026-11-18)_\n* **Free Gems:** **14,856** _(2026-11-18)_\n")
+        log = bd.BuildLog()
+        res = bd.parse_profile(base, None, log)["resources"]
+        self.assertEqual((res["wood"], res["stone"], res["iron"]), (None, None, None))
+        self.assertFalse(any("Wood" in w or "Stone" in w or "Iron" in w for w in log.warnings))
+        body = base + "* **Stored Wood:** **164.1M** (x) _(2026-11-18)_\n* **Stored Stone:** **32.7M** _(2026-11-18)_\n* **Stored Iron:** **6.98M** _(2026-11-18)_\n"
+        res = bd.parse_profile(body, None, bd.BuildLog())["resources"]
+        self.assertEqual(res["wood"]["value"], 164100000)
+        self.assertTrue(res["wood"]["rounded"])
+        self.assertEqual(res["iron"]["value"], 6980000)
+        self.assertEqual(res["fieldAsOf"]["stone"], "2026-11-18")
+
     def test_governor_gear_counts(self) -> None:
         """'6 / 6 Locked' fills slotsLocked; '3 / 6 Equipped' fills slotsEquipped; other text gives nulls."""
         head = ("## Governor Identity & Account Statistics\n\n"

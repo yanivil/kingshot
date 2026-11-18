@@ -376,18 +376,6 @@
         "title": "Server day"
       },
       {
-        "area": "City",
-        "title": "Speedups"
-      },
-      {
-        "area": "City",
-        "title": "Wood, stone and iron"
-      },
-      {
-        "area": "Heroes",
-        "title": "Shard and book inventories"
-      },
-      {
         "area": "Events",
         "title": "Events"
       }
