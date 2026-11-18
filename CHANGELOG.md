@@ -6,6 +6,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Game data read from the phone on 18 Nov, part 2:
+  - `lineups.md`: Arena defense squad 3,555,833 (same five heroes and places, new levels and stars; 2,494,295 on 23 Oct)
+    and Arena standing (rank 977, 1,083 points). The attack squad was not re-read (it opens only from Challenge).
+    Guard Station: Quinn replaced Diana (Jabel 884.8K, Quinn 668.4K, Howard 671.4K; Intact, 15,000 / 15,000, not locked).
+  - `profile.md`: power 23,171,282, gems 14,856 and bread 155.3M (city top bar, morning of 18 Nov); new row Conquest
+    Stage 339 (306 on 5 Nov).
 - Game data read from the phone on 18 Nov, in chunks:
   - Profile and Town Center (`profile.md`, `troops.md`, README): power 23,042,384 (city top bar; 17,819,499 on 5 Nov),
     kills 700,694, stamina 103 / 200, VIP 4, gems 13,447, bread 147.8M. Governor Gear: the Modest Cloak, Oakheart Ring and

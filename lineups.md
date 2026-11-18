@@ -12,6 +12,8 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 Your Arena configurations feature a dedicated setup for **Offensive Attacks** and **Defensive Stalls**:
 
+* **Arena Standing:** Rank 977 with 1,083 Arena Points; the season ends in 4d 15:43:58 (Arena of Glory screen; your own row shows 3.5M) _(2026-11-18)_
+
 ### 1. Arena Offensive Squad (Attack Lineup)
 * **Offensive Squad Power:** **2,502,855** (Squad Settings screen; equals the sum of the five heroes' powers) _(2026-10-23)_
 * **Formation Archetype:** Dual-Frontline Tank & Aggressive Flanker with Triple-Backline DPS _(2026-10-21)_
@@ -26,17 +28,19 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-23 |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
-* **Defensive Squad Power:** **2,494,295** (Defensive Squad Lineup screen; equals the sum of the five heroes' powers) _(2026-10-23)_
+* **Defensive Squad Power:** **3,555,833** (Defensive Squad Lineup screen, 18 Nov; 2,494,295 on 23 Oct. The recorded hero powers add up to 3,549,445; the 6,388 difference is presumably changes since the 17 Nov hero screens: Quinn shows 668.4K on the 18 Nov Guard Station screen, about 3,500 more than his 664,931 of 17 Nov; inferred) _(2026-11-18)_
 * **Formation Archetype:** Dual-Frontline Tank & Healer with Triple-Backline DPS _(2026-10-22)_
 * **Tactical Intent:** **Gordon** holds the front-right slot: BBQ Feast heals all troops and he takes 20% less damage, keeping the backline alive. _(2026-10-22)_
 
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-10-23 |
-| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 54 | 3-Star (T4) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-10-23 |
-| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 54 | 3-Star (T3) | **Core Carry:** Counter-offensive burst damage | 2026-10-23 |
-| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 54 | 3-Star (T5) | **Ranged DPS:** Ranged area-of-effect damage | 2026-10-23 |
-| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Single-target burst damage | 2026-10-23 |
+| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 4-Star (T1) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-11-18 |
+| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 67 | 4-Star (T1) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-11-18 |
+| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | **Core Carry:** Counter-offensive burst damage | 2026-11-18 |
+| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **Ranged DPS:** Ranged area-of-effect damage | 2026-11-18 |
+| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 4-Star (T2) | **Heavy Sniper:** Single-target burst damage | 2026-11-18 |
+
+The 18 Nov screen shows the same five heroes in the same places (Howard and Gordon in front, Jabel, Diana and Quinn behind), identified by portrait, class icon and level. The attack lineup was not re-read: it opens only from the Challenge button. _(2026-11-18)_
 
 ## Wall Guard (Barricades, Rebel Invasions)
 
@@ -74,21 +78,22 @@ from the heroes' own 5 Nov screens (hero.md).
 
 ## Guard Station (City Defense)
 
-The three heroes who defend the city. The screen says: "Your City will burn for 30 minutes if defeated by attackers. Your City will also automatically Teleport to a random location on the map if City Defense ever reaches 0." _(2026-11-05)_
+The three heroes who defend the city. The screen says: "Your City will burn for 30 minutes if defeated by attackers. Your City will also automatically Teleport to a random location on the map if City Defense ever reaches 0." _(2026-11-18)_
 
-* **Combined Hero Power:** 2.0M (Guard Station screen; the three hero powers it shows add up to 2,005.2K) _(2026-11-05)_
-* **Status:** Intact, City Defense 15,000 / 15,000 (the screen says "City Defense maxed") _(2026-11-05)_
-* **Guards Locked:** No (the box "Garrisoned heroes cannot be deployed" is unticked, so these heroes can leave on marches; all three are in `Ter`) _(2026-11-05)_
+* **Combined Hero Power:** 2.2M (the sum of the three powers the screen shows, 2,224.6K; the screen's own total was hidden by a phone-call bar on 18 Nov. 2.0M on 5 Nov) _(2026-11-18)_
+* **Status:** Intact, City Defense 15,000 / 15,000 (the screen says "City Defense maxed") _(2026-11-18)_
+* **Guards Locked:** No (the box "Garrisoned heroes cannot be deployed" is unticked, so these heroes can leave on marches; Jabel and Howard are in `Ter` and `Att`, Quinn in `Iro` and `Att`) _(2026-11-18)_
 
 | Slot | Hero | Class | Rarity | Level | Hero Power (screen) | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Slot 1** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 64 | 764.2K | 2026-11-05 |
-| **Slot 2** | **Diana** | Archer | Epic (Purple) | Lv. 64 | 639.3K | 2026-11-05 |
-| **Slot 3** | **Howard** | Infantry | Epic (Purple) | Lv. 64 | 601.7K | 2026-11-05 |
+| **Slot 1** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 884.8K | 2026-11-18 |
+| **Slot 2** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 668.4K | 2026-11-18 |
+| **Slot 3** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 671.4K | 2026-11-18 |
 
 The screen shows portraits, class icons, levels, stars and powers but no names; the heroes are identified by portrait and
-class, and Jabel's 764.2K matches her recorded 764,215. Howard's 601.7K and Diana's 639.3K are above their recorded
-powers (hero.md explains the likely changes).
+class. Quinn replaced Diana (Slot 2 on 5 Nov) between the 5 Nov and 18 Nov readings. Jabel's 884.8K and Howard's 671.4K
+match their 17 Nov powers (884,890 and 671,460); Quinn's 668.4K is about 3,500 above his 664,931 of 17 Nov, which is not
+explained on screen (inferred: about one Epic skill level). _(2026-11-18)_
 
 ## Saved March Deployment Presets
 
