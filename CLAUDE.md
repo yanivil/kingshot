@@ -30,6 +30,44 @@ promotes, ascends, buys, redeems, trains, sends a march, joins a rally, or sends
 that does. If a tap would do any of these or the result is unclear, stop and ask the owner. Many games forbid
 automated input; the owner accepted that risk only for reading screens.
 
+### Phone notes (learned on 17–18 Nov)
+
+- **Connection.** The phone is a Samsung. Its **Auto Blocker** (Settings → Security and privacy) blocks USB debugging
+  and has switched itself back on before: if `adb devices` shows only the emulator, ask the owner to turn it off and
+  re-enable USB debugging. The game's package is `com.run.tower.defense`.
+- **The owner may be using the phone.** Before every tap, check that the game is in front
+  (`adb shell dumpsys activity activities | grep topResumedActivity` must show `com.run.tower.defense`) and stop if it
+  is not. Never record anything from another app; delete such a screenshot at once.
+- **Owner's standing requests** (the only taps beyond reading): on opening the game, close the "Welcome back!" popup
+  with the green **Confirm** button; press the **handshake** icon (alliance help) and the **chest** above the storehouse
+  whenever they show. Trying gift codes (Redeem) needs the owner's OK each time.
+- **Back** on the city screen opens "Quit game?": press **Cancel**.
+
+Where each value is read (coordinates are for the 1440 × 3120 screen; the city map pans, so buildings are found by
+screenshot):
+
+| Data | Route | File |
+| :--- | :--- | :--- |
+| Power, gems, bread, citizens, VIP | City top bar | `profile.md` |
+| Kills, stamina, governor gear | Avatar (top left, ~87, 212); tap each gear icon. The screen shows the governor name and Player ID: never record them | `profile.md` |
+| Troop counts, march queue, infirmary | Avatar → **Squad** (~546, 3001) = Troops Preview | `troops.md` |
+| March presets | Troops Preview → **Formations** (Deploy); tap each tab at the top. Never press Save, Clear All, Equalize or Balance | `troops.md`, `lineups.md` |
+| Gift codes | Avatar → Settings (~1239, 3001) → Gift Code. No history list | `codes.md` |
+| Town Center level and stats | The "Upgrade Town Center" quest bar (~468, 2661) | `profile.md` |
+| Heroes | Heroes (~381, 3042) → a hero. Tabs Stats (~265, 3042), Skills (~718, 3042), Gear (~1170, 3042); Hero Stats panel (~1232, 2777); promotion preview (~1232, 2309); next hero (~1335, 1966). Grey heroes at the end of the list are not recruited | `hero.md` |
+| Drill Camp | Heroes → **Drill Camp** | `data/manual.json` |
+| Arena defense, standing | The building with crowns → Arena of Glory → **Def. Lineup**. Never press Challenge (starts a battle); the attack squad has not been read | `lineups.md` |
+| Guard Station | The building labelled "Guard Station" → City Defense | `lineups.md` |
+| Barricades 1 and 2 | Tap the wall gate (the arch between two square towers); each Barricade is a different gate | `lineups.md` |
+| Conquest stage | Conquest (~140, 3042). Never press Conquer or Claim | `profile.md` |
+| Current research, queues | Side panel tab on the left edge (~37, 1395) | `profile.md` |
+| Research totals | Side panel → Tech Research arrow → Academy → **Research**; the list button at the top left is the Tech Bonus Overview. Never press Finish or Speedups | `profile.md` |
+| Wood, stone, iron, speedups, Hero XP | Backpack (~605, 3033) → chart button at the top right (Overview: Resources & Speedups) | `profile.md` |
+| Events | Events icon at the top right (~1323, 437) → Calendar tab; Hall of Governors tab | `profile.md` |
+
+Never press on hero screens: Upgrade, Ascend, Quick Equip, Gear Enhancement, Mastery Forging; on buildings: Upgrade,
+Finish, Speedups; anywhere: Recruit, Dispatch All, Quick Deploy.
+
 ## Recording rules
 
 - Never invent a value. Label claims **Verified** (read on a screen), **Inferred** (worked out from screens) or

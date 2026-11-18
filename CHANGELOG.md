@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- `CLAUDE.md`: "Phone notes (learned on 17–18 Nov)": Samsung Auto Blocker, the check that the game is in front before
+  each tap, the owner's standing requests (Confirm on the welcome popup, alliance help, storehouse chest), a table of
+  where each value is read on the phone and which file it goes to, and the buttons never to press. So every session,
+  local or cloud, has the same route.
 - `data/manual.json`: six suggestion cards from the 17–18 Nov data:
   1. Hall of Governors stage III (Soldier Training, ends about 00:00 UTC on 18 Nov): train Infantry and use the
      12 h 38 min of training speedups (1,915,350 points, next target 2,210,000).
