@@ -15,6 +15,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `data/manual.json` Drill Camp (18 Nov): instructors Jabel 69, Chenko 68, Olive 67, Quinn 67, Diana 68 (Olive took
     Seth's place); 9 open slots (slot 9 opened with Town Center 23) hold Amane, Helga, Howard, Gordon, Yeonwoo, Fahd,
     Forrest, Saul and Seth at Lv 67; slot 10 needs Town Center 25. This clears the five Drill Camp level conflicts.
+  - `profile.md` research: the Academy is Lv 23 (Lv 20 on 22 Oct); current research Special Defensive Training IV
+    (3 / 5); new Tech Bonus Overview table with every research total (Research Speed +13.60%, Healing Speed +172.40%,
+    each troop type +43.50% Attack / Defense and +25% Lethality / Health, Squads' Attack +18.50%, and more).
+    "Research levels" leaves the Data health missing list.
 - Game data read from the phone on 18 Nov, in chunks:
   - Profile and Town Center (`profile.md`, `troops.md`, README): power 23,042,384 (city top bar; 17,819,499 on 5 Nov),
     kills 700,694, stamina 103 / 200, VIP 4, gems 13,447, bread 147.8M. Governor Gear: the Modest Cloak, Oakheart Ring and

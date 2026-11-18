@@ -71,11 +71,43 @@ The Town Center represents the administrative heart of the settlement, governing
 
 The Town Center screens of 5 Nov and 18 Nov show the same six perk icons in the same order, without names or descriptions, and no seventh slot. _(2026-11-18)_
 
-### 3. Research Building (Institute)
+### 3. Research Building (Academy)
 
-The building's Details screen reads "An Institute for researching new technologies. Upgrade for access to more powerful tech."
+The building's Details screen of 22 Oct reads "An Institute for researching new technologies. Upgrade for access to more powerful tech." On 18 Nov the building's label on the city map reads **Academy** with level 23.
 
-* **Institute Level:** **Level 20** (the highlighted row of the Details table) _(2026-10-22)_
-* **Research Speed Bonus:** **+2.0%** at Lv 20; Lv 21 gives +2.1% _(2026-10-22)_
-* **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628) _(2026-10-22)_
-* **Research Levels:** Not recorded (no research tree screen yet) _(2026-10-22)_
+* **Institute Level:** **Level 23** (the Academy's label on the city map, 18 Nov; Level 20 on 22 Oct) _(2026-11-18)_
+* **Research Speed Bonus:** **+13.60%** in total (Tech Bonus Overview, below; the Academy itself gave +2.0% at Lv 20 on 22 Oct) _(2026-11-18)_
+* **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628); later levels were not read _(2026-10-22)_
+* **Current Research:** **Special Defensive Training IV**, 3 / 5 to 4 / 5, 16:09 left on the morning of 18 Nov (Battle tab) _(2026-11-18)_
+* **Research Levels:** Battle tab, tier IV: Reprisal Tactics, Precision Targeting, Cavalry Charge, Defensive Formations, Picket Lines and Bulwark Formations at MAX; Special Defensive Training, Survival Techniques and Assault Techniques 3 / 5. The Growth and Economy trees were not opened; their totals are in the table below _(2026-11-18)_
+
+#### Tech Bonus Overview
+
+All research bonuses together, from the list button on the Tech Research screen. These are research only; heroes, gear and buildings add their own.
+
+| Tree | Bonus | Total | Updated |
+| :--- | :--- | :---: | :---: |
+| Growth | **Research Speed** | +13.60% | 2026-11-18 |
+| Growth | **Construction Speed** | +15.60% | 2026-11-18 |
+| Growth | **Healing Speed** | +172.40% | 2026-11-18 |
+| Growth | **Training Speed** | +86.40% | 2026-11-18 |
+| Growth | **Infirmary Capacity** | +56,300 | 2026-11-18 |
+| Growth | **Training Capacity** | +112 | 2026-11-18 |
+| Growth | **March Queue** | +3 | 2026-11-18 |
+| Economy | **Bread Output** | +67.50% | 2026-11-18 |
+| Economy | **Wood Output** | +67.50% | 2026-11-18 |
+| Economy | **Stone Output** | +67.50% | 2026-11-18 |
+| Economy | **Iron Output** | +67.50% | 2026-11-18 |
+| Economy | **Bread Gathering Speed** | +117.50% | 2026-11-18 |
+| Economy | **Wood Gathering Speed** | +117.50% | 2026-11-18 |
+| Economy | **Stone Gathering Speed** | +117.00% | 2026-11-18 |
+| Economy | **Iron Mining Speed** | +103.50% | 2026-11-18 |
+| Battle | **Infantry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Infantry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Cavalry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Cavalry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Archer Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Archer Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Squads' Attack** | +18.50% | 2026-11-18 |
+| Battle | **Squads' Defense / Lethality / Health** | +13.75% / +13.75% / +13.75% | 2026-11-18 |
+| Battle | **Troops Deployment Capacity** | +7,100 | 2026-11-18 |
