@@ -47,34 +47,35 @@ The 18 Nov screen shows the same five heroes in the same places (Howard and Gord
 Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). The game says so on each Barricade screen: "Assigned hero will fight alongside the governor in Rebel Invasion." _(2026-11-05)_ Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is recorded below.
 
 ### Barricade 1 (Primary Gate)
-* **Status:** Level 10 (MAX) _(2026-11-05)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-05)_
-* **Combined Hero Power:** 1.9M (Barricade screen; 1.5M on 22 Oct. The recorded hero powers add up to 1,953,154) _(2026-11-05)_
+* **Status:** Level 10 (MAX) _(2026-11-18)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-18)_
+* **Combined Hero Power:** 2.2M (Barricade screen, 18 Nov; 1.9M on 5 Nov, 1.5M on 22 Oct. The 17 Nov hero powers add up to 2,221,281) _(2026-11-18)_
 * **Tactical Assignment:** Core elite garrison trio. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
-| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 64 | 3-Star (T5) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
-| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 64 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 4-Star (T2) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
 
 ### Barricade 2 (Secondary Gate)
-* **Status:** Level 10 (MAX) _(2026-11-05)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-05)_
-* **Combined Hero Power:** 1.7M (Barricade screen; 1.3M on 22 Oct. The recorded hero powers add up to 1,757,581) _(2026-11-05)_
+* **Status:** Level 10 (MAX) _(2026-11-18)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-18)_
+* **Combined Hero Power:** 2.0M (Barricade screen, 18 Nov; 1.7M on 5 Nov, 1.3M on 22 Oct. The 17 Nov hero powers add up to 2,005,100) _(2026-11-18)_
 * **Tactical Assignment:** Fast cavalry flanking and defense support. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
-| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 64 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
-| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 64 | 4-Star (T2) | Fights alongside the governor in Rebel Invasions | 2026-11-05 |
+| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 67 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
 
-The 5 Nov Barricade screens show portraits, class icons, Lv. 64 and stars but no names; the heroes are identified by
-portrait and class, as on 22 Oct, and each Barricade's hero power fits the sum of the recorded hero powers. Stars are
-from the heroes' own 5 Nov screens (hero.md).
+The 18 Nov Barricade screens show portraits, class icons, levels and stars but no names; the heroes are identified by
+portrait, class and level, the same six as on 5 Nov and 22 Oct, and each Barricade's hero power fits the sum of the
+recorded hero powers. Stars are from the heroes' own 17 Nov screens (hero.md). The screen is opened by tapping the wall
+gate between two towers on the city map (shown to Claude by the account owner on 18 Nov). _(2026-11-18)_
 
-* **Total Barricade Hero Power:** 3.6M (1.9M + 1.7M, each cut, not rounded; 2.8M on 22 Oct) _(2026-11-05)_
+* **Total Barricade Hero Power:** 4.2M (2.2M + 2.0M, each cut, not rounded; 3.6M on 5 Nov, 2.8M on 22 Oct) _(2026-11-18)_
 
 ## Guard Station (City Defense)
 
