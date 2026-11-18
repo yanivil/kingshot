@@ -85,6 +85,9 @@ Finish, Speedups; anywhere: Recruit, Dispatch All, Quick Deploy.
   details go in `why`, `steps`, `evidence` and `note`.
 - Formation cards give exact heroes and troop counts, never general advice.
 - Remove a card when the owner has done it.
+- Standing account plans to respect in every card (told by the owner on 2026-11-18): **no speedups until 2026-12-01**
+  (alliance request), and **finish all research before Town Center 24**. Remove a line once its date has passed or the
+  owner says it no longer applies.
 
 ## Git
 
