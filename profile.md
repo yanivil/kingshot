@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **23,042,384** | City top bar, 18 Nov (the Governor Profile shows 23.0M). 17,819,499 on 5 Nov, 13,969,554 on 27 Oct, 12,464,731 on 25 Oct | 2026-11-18 |
+| **Overall Account Power** | **23,171,282** | City top bar, morning of 18 Nov (23,042,384 the night before; the Governor Profile shows 23.0M). 17,819,499 on 5 Nov, 13,969,554 on 27 Oct, 12,464,731 on 25 Oct | 2026-11-18 |
 | **Kingdom / Server** | **#2508** | Home realm state (Governor Profile) | 2026-11-18 |
 | **Alliance** | **SPQ** | Primary allied faction (Governor Profile) | 2026-11-18 |
 | **Total Combat Kills** | **700,694** | Total enemy unit casualties inflicted (Governor Profile "Kills"; 658,745 on 5 Nov, 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-18 |
@@ -20,6 +20,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | **Stamina** | **103 / 200** | Governor hunting and expedition energy (the bar under the portrait on the Governor Profile, drumstick icon; 124 / 200 on 5 Nov, 200 / 200 on 27 Oct) | 2026-11-18 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Equipped** | 6 Uncommon pieces worn, four of them 1-Star (see "Governor Gear" below; one was 1-Star on 5 Nov); 3 / 6 on 27 Oct | 2026-11-18 |
+| **Conquest Stage** | **339** | Current stage on the Conquest screen (stage 306 on 5 Nov) | 2026-11-18 |
 
 ### Governor Gear
 
@@ -47,8 +48,8 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Upgrades:** Lv 20 → 21 (in progress on 23 Oct) and Lv 21 → 22 were both done by the 27 Oct screens; their finish dates were not shown _(2026-10-27)_
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-18)_
-* **Stored Food (Bread):** **147.8M** (city top bar, 18 Nov; 106.1M on 5 Nov, 1.7M on 27 Oct, 96.1M on 25 Oct) _(2026-11-18)_
-* **Free Gems:** **13,447** (city top bar, 18 Nov; 35,597 on 5 Nov, 35,666 on 27 Oct) _(2026-11-18)_
+* **Stored Food (Bread):** **155.3M** (city top bar, morning of 18 Nov; 147.8M the night before, 106.1M on 5 Nov, 1.7M on 27 Oct) _(2026-11-18)_
+* **Free Gems:** **14,856** (city top bar, morning of 18 Nov; 13,447 the night before, 35,597 on 5 Nov, 35,666 on 27 Oct) _(2026-11-18)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
@@ -70,11 +71,43 @@ The Town Center represents the administrative heart of the settlement, governing
 
 The Town Center screens of 5 Nov and 18 Nov show the same six perk icons in the same order, without names or descriptions, and no seventh slot. _(2026-11-18)_
 
-### 3. Research Building (Institute)
+### 3. Research Building (Academy)
 
-The building's Details screen reads "An Institute for researching new technologies. Upgrade for access to more powerful tech."
+The building's Details screen of 22 Oct reads "An Institute for researching new technologies. Upgrade for access to more powerful tech." On 18 Nov the building's label on the city map reads **Academy** with level 23.
 
-* **Institute Level:** **Level 20** (the highlighted row of the Details table) _(2026-10-22)_
-* **Research Speed Bonus:** **+2.0%** at Lv 20; Lv 21 gives +2.1% _(2026-10-22)_
-* **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628) _(2026-10-22)_
-* **Research Levels:** Not recorded (no research tree screen yet) _(2026-10-22)_
+* **Institute Level:** **Level 23** (the Academy's label on the city map, 18 Nov; Level 20 on 22 Oct) _(2026-11-18)_
+* **Research Speed Bonus:** **+13.60%** in total (Tech Bonus Overview, below; the Academy itself gave +2.0% at Lv 20 on 22 Oct) _(2026-11-18)_
+* **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628); later levels were not read _(2026-10-22)_
+* **Current Research:** **Special Defensive Training IV**, 3 / 5 to 4 / 5, 16:09 left on the morning of 18 Nov (Battle tab) _(2026-11-18)_
+* **Research Levels:** Battle tab, tier IV: Reprisal Tactics, Precision Targeting, Cavalry Charge, Defensive Formations, Picket Lines and Bulwark Formations at MAX; Special Defensive Training, Survival Techniques and Assault Techniques 3 / 5. The Growth and Economy trees were not opened; their totals are in the table below _(2026-11-18)_
+
+#### Tech Bonus Overview
+
+All research bonuses together, from the list button on the Tech Research screen. These are research only; heroes, gear and buildings add their own.
+
+| Tree | Bonus | Total | Updated |
+| :--- | :--- | :---: | :---: |
+| Growth | **Research Speed** | +13.60% | 2026-11-18 |
+| Growth | **Construction Speed** | +15.60% | 2026-11-18 |
+| Growth | **Healing Speed** | +172.40% | 2026-11-18 |
+| Growth | **Training Speed** | +86.40% | 2026-11-18 |
+| Growth | **Infirmary Capacity** | +56,300 | 2026-11-18 |
+| Growth | **Training Capacity** | +112 | 2026-11-18 |
+| Growth | **March Queue** | +3 | 2026-11-18 |
+| Economy | **Bread Output** | +67.50% | 2026-11-18 |
+| Economy | **Wood Output** | +67.50% | 2026-11-18 |
+| Economy | **Stone Output** | +67.50% | 2026-11-18 |
+| Economy | **Iron Output** | +67.50% | 2026-11-18 |
+| Economy | **Bread Gathering Speed** | +117.50% | 2026-11-18 |
+| Economy | **Wood Gathering Speed** | +117.50% | 2026-11-18 |
+| Economy | **Stone Gathering Speed** | +117.00% | 2026-11-18 |
+| Economy | **Iron Mining Speed** | +103.50% | 2026-11-18 |
+| Battle | **Infantry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Infantry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Cavalry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Cavalry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Archer Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
+| Battle | **Archer Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
+| Battle | **Squads' Attack** | +18.50% | 2026-11-18 |
+| Battle | **Squads' Defense / Lethality / Health** | +13.75% / +13.75% / +13.75% | 2026-11-18 |
+| Battle | **Troops Deployment Capacity** | +7,100 | 2026-11-18 |
