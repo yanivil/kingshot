@@ -75,7 +75,7 @@ screenshot):
 | Events | Events icon at the top right (~1323, 437) → Calendar tab; Hall of Governors tab | `profile.md` |
 
 Never press on hero screens: Upgrade, Ascend, Quick Equip, Gear Enhancement, Mastery Forging; on buildings: Upgrade,
-Finish, Speedups; anywhere: Recruit, Dispatch All, Quick Deploy.
+Finish, Speedups; anywhere: Recruit (except `play_tasks.md` task 13, with keys already owned), Dispatch All, Quick Deploy.
 
 ## Recording rules
 
