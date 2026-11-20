@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `troops.md`: Troops Preview on 20 Nov: Elite Infantry 69,530 (70,976 on 18 Nov), Cavalry 63,964 (62,714), Archer
+  64,321 (60,796), plus 50 each of Hardy (Tier V) Infantry, Cavalry and Archer; total 197,965; 0 / 75,800 injured.
 - `profile.md`: 20 Nov readings from the city top bar and Governor Profile: power 23,449,642 (23,171,282 on
   18 Nov), kills 729,510 (700,694), stamina 20 / 200, bread 195.4M (155.3M), gems 33,029 (14,856; the source of
   the gain was not shown).

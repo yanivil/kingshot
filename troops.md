@@ -10,23 +10,23 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 ## Current Troop Inventory
 
-Standing forces are **Tier VIII (Elite)** units across the three military branches (Tier VII Brave on 24 Oct). Counts are from the Troops Preview screen, "All" tab, on 2026-11-18: the header reads "194.4K/194.4K", so all troops were in town, and the three counts add up to 194,486. All three units show a "VIII" badge. Net Change is against the 5 Nov counts. More of each type were in training on 18 Nov (about 6 hours left in each queue; the side panel does not show how many). _(2026-11-18)_
+Standing forces are **Tier VIII (Elite)** units across the three military branches (Tier VII Brave on 24 Oct). Counts are from the Troops Preview screen, "All" tab, on 2026-11-20: the header reads "197.9K/197.9K", so all troops were in town, and the six counts add up to 197,965. The three Elite units show a "VIII" badge. New on 20 Nov: **50 Hardy Infantry, 50 Hardy Cavalry and 50 Hardy Archer** (Tier V, "V" badge; not in the table below, which lists one unit per branch; where they came from was not shown). Net Change is against the 18 Nov counts: Infantry fell by 1,446 while kills rose by 28,816 (700,694 → 729,510), so the loss is inferred to be from battles; Cavalry and Archer grew as the training seen on 18 Nov finished (inferred). On 18 Nov the counts were 70,976 / 62,714 / 60,796 (194,486). _(2026-11-20)_
 
 | Branch | Tier | Unit Name | Headcount | Distribution % | Status | Net Change | Updated |
 | :--- | :---: | :--- | :---: | :---: | :--- | :---: | :---: |
-| **Infantry** | VIII | Elite Infantry | 70,976 | 36.5% | Troops Preview; the Deploy screen's preset tabs show 70,971 available | +24,814 | 2026-11-18 |
-| **Cavalry** | VIII | Elite Cavalry | 62,714 | 32.2% | Troops Preview and Deploy screen | +15,728 | 2026-11-18 |
-| **Marksmen** | VIII | Elite Archer | 60,796 | 31.3% | Troops Preview and Deploy screen | +16,928 | 2026-11-18 |
-| **Total Military Force** | **VIII** | — | **194,486** | **100%** | **0 Injured** (Troops Preview: Injured 0 / 75,800) | +57,470 | 2026-11-18 |
+| **Infantry** | VIII | Elite Infantry | 69,530 | 35.1% | Troops Preview, 20 Nov (70,976 on 18 Nov) | −1,446 | 2026-11-20 |
+| **Cavalry** | VIII | Elite Cavalry | 63,964 | 32.3% | Troops Preview, 20 Nov (62,714 on 18 Nov) | +1,250 | 2026-11-20 |
+| **Marksmen** | VIII | Elite Archer | 64,321 | 32.5% | Troops Preview, 20 Nov (60,796 on 18 Nov) | +3,525 | 2026-11-20 |
+| **Total Military Force** | **VIII** | — | **197,965** | **100%** | **0 Injured** (Troops Preview: Injured 0 / 75,800); includes 150 Hardy (Tier V) troops | +3,479 | 2026-11-20 |
 
 ## Army Statistics & Facility Caps
 
 | Attribute | Value | Status / Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Total Standing Troops** | 194,486 | Troops Preview, "All" tab, 18 Nov: the three counts add up to 194,486 and the header reads "194.4K/194.4K" (134.9K/134.9K on 5 Nov). 137,016 on 5 Nov (Deploy screen). On 22 Oct the header read "1,278/98,409" with March Queue 2/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-18 |
+| **Total Standing Troops** | 197,965 | Troops Preview, "All" tab, 20 Nov: the six counts add up to 197,965 and the header reads "197.9K/197.9K" (194.4K/194.4K on 18 Nov, 134.9K/134.9K on 5 Nov). 137,016 on 5 Nov (Deploy screen). On 22 Oct the header read "1,278/98,409" with March Queue 2/4, which suggests the first number counts troops in town (inferred; the screen does not say) | 2026-11-20 |
 | **Single March Capacity** | 94,540 | Largest preset on the Deploy screen, 18 Nov (`Ter`: Diana Lv. 68, Howard Lv. 67, Jabel Lv. 69). Every preset is 55,600 plus its heroes' Troop Capacity exactly (`Ter` 94,540, `Att` 94,490, `Woo` 94,440, `Iro` and `Sto` 94,390, `Bre` 81,460 with two heroes), so the base amount rose from 50,690 on 5 Nov to 55,600 (inferred; the screen does not show why). 88,880 on 5 Nov, 79,275 on 24 Oct | 2026-11-18 |
-| **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen (18 Nov, as on 5 Nov and 24 Oct). With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-11-18 |
-| **Infirmary Hospital Capacity** | 75,800 | 0 / 75,800 injured (Troops Preview, 18 Nov; 72,800 on 5 Nov, 38,600 on 24 Oct) | 2026-11-18 |
+| **Available March Queues** | 4 / 4 | Shown as "March Queue 4/4" on the Troops Preview screen (20 Nov, as on 18 Nov, 5 Nov and 24 Oct). With the 22 Oct reading of 2/4 (when most troops were not counted in town), this suggests the first number is free queues (inferred; the screen does not say) | 2026-11-20 |
+| **Infirmary Hospital Capacity** | 75,800 | 0 / 75,800 injured (Troops Preview, 20 Nov, as on 18 Nov; 72,800 on 5 Nov, 38,600 on 24 Oct) | 2026-11-20 |
 | **Overall Account Power** | Not recorded (kept in profile.md only, so this copy cannot fall behind) | See profile.md | 2026-10-22 |
 | **Town Center Level** | Level 23 | Town Center screen, 18 Nov (first deduced from the hero screens of 17 Nov); Level 22 on 5 Nov | 2026-11-18 |
 
