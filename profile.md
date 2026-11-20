@@ -50,9 +50,9 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-20)_
 * **Stored Food (Bread):** **195.4M** (city top bar, 20 Nov; 155.3M on the morning of 18 Nov, 147.8M the night before, 106.1M on 5 Nov, 1.7M on 27 Oct) _(2026-11-20)_
 * **Free Gems:** **33,029** (city top bar, 20 Nov; 14,856 on the morning of 18 Nov, 13,447 the night before, 35,597 on 5 Nov, 35,666 on 27 Oct). Where the 18,173 gems gained since 18 Nov came from was not shown on the screens read _(2026-11-20)_
-* **Stored Wood:** **164.1M** (Backpack, Overview: Resources & Speedups, 18 Nov: 659.89M in stock minus 495.79M in backpack items; the subtraction is inferred, as for bread, where 677.06M − 521.59M = 155.47M matches the city top bar's 155.3M) _(2026-11-18)_
-* **Stored Stone:** **32.7M** (same screen: 134.08M in stock minus 101.40M in items; inferred) _(2026-11-18)_
-* **Stored Iron:** **6.98M** (same screen: 33.30M in stock minus 26.32M in items; inferred) _(2026-11-18)_
+* **Stored Wood:** **209.2M** (Backpack, Overview: Resources & Speedups, 20 Nov: 731.38M in stock minus 522.20M in backpack items; the subtraction is inferred, as for bread, where 745.90M − 550.37M = 195.53M matches the city top bar's 195.5M. 164.1M on 18 Nov) _(2026-11-20)_
+* **Stored Stone:** **41.4M** (same screen, 20 Nov: 147.92M in stock minus 106.57M in items; inferred. 32.7M on 18 Nov) _(2026-11-20)_
+* **Stored Iron:** **9.12M** (same screen, 20 Nov: 36.88M in stock minus 27.76M in items; inferred. 6.98M on 18 Nov) _(2026-11-20)_
 
 | Attribute | Base Value | Tactical Function | Updated |
 | :--- | :---: | :--- | :---: |
@@ -117,26 +117,26 @@ All research bonuses together, from the list button on the Tech Research screen.
 
 ## Backpack (Overview: Resources & Speedups)
 
-From the chart button on the Backpack screen, morning of 2026-11-18. "Items" are resource packs still in the backpack; "In Stock"
+From the chart button on the Backpack screen, 2026-11-20 (values of 18 Nov in brackets). "Items" are resource packs still in the backpack; "In Stock"
 is the city's storage plus those items. Custom Resource Chests are not counted (the screen says so).
 
 | Resource | In backpack items | In stock (city + items) | Updated |
 | :--- | :---: | :---: | :---: |
-| **Bread** | 521.59M | 677.06M | 2026-11-18 |
-| **Wood** | 495.79M | 659.89M | 2026-11-18 |
-| **Stone** | 101.40M | 134.08M | 2026-11-18 |
-| **Iron** | 26.32M | 33.30M | 2026-11-18 |
-| **Gold** | — | 2.80M | 2026-11-18 |
-| **Hero XP** | 55K | 429.72K | 2026-11-18 |
-| **Pet Food** | — | 65 | 2026-11-18 |
+| **Bread** | 550.37M | 745.90M (677.06M) | 2026-11-20 |
+| **Wood** | 522.20M | 731.38M (659.89M) | 2026-11-20 |
+| **Stone** | 106.57M | 147.92M (134.08M) | 2026-11-20 |
+| **Iron** | 27.76M | 36.88M (33.30M) | 2026-11-20 |
+| **Gold** | — | 2.95M (2.80M) | 2026-11-20 |
+| **Hero XP** | 8K | 600.63K (429.72K) | 2026-11-20 |
+| **Pet Food** | — | 2.60K (65; where the rise came from was not shown) | 2026-11-20 |
 
 | Speedup | Total time in the backpack | Updated |
 | :--- | :---: | :---: |
-| **General Speedup** | No items | 2026-11-18 |
-| **Soldier Training Speedup** | 12 h 38 min | 2026-11-18 |
-| **Construction Speedup** | 2 days 16 h | 2026-11-18 |
-| **Research Speedup** | 10 h 27 min | 2026-11-18 |
-| **Soldier Healing Speedup** | 3 days 12 h 52 min | 2026-11-18 |
+| **General Speedup** | 4 h 36 min (no items on 18 Nov) | 2026-11-20 |
+| **Soldier Training Speedup** | 15 h 27 min (12 h 38 min) | 2026-11-20 |
+| **Construction Speedup** | 3 days 19 h 25 min (2 days 16 h) | 2026-11-20 |
+| **Research Speedup** | 11 h 36 min (10 h 27 min) | 2026-11-20 |
+| **Soldier Healing Speedup** | 2 days 17 h 8 min (3 days 12 h 52 min; 19 h 44 min fewer, and the screens read do not show where they went) | 2026-11-20 |
 
 Hero skill books and Redeem shards are shared stock per rarity and are read on the hero screens (`hero.md`, 17 Nov):
 Mythic Conquest Books 49, Mythic Expedition Manuals 41; Epic Conquest Books 38, Epic Expedition Manuals 43; Rare Conquest

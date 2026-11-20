@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `profile.md`: Backpack overview on 20 Nov: stored wood 209.2M, stone 41.4M, iron 9.12M; Hero XP 600.63K, Pet Food
+  2.60K (65 on 18 Nov); speedups grew except Soldier Healing (2 days 17 h, down from 3 days 12 h).
 - `troops.md`: Troops Preview on 20 Nov: Elite Infantry 69,530 (70,976 on 18 Nov), Cavalry 63,964 (62,714), Archer
   64,321 (60,796), plus 50 each of Hardy (Tier V) Infantry, Cavalry and Archer; total 197,965; 0 / 75,800 injured.
 - `profile.md`: 20 Nov readings from the city top bar and Governor Profile: power 23,449,642 (23,171,282 on
