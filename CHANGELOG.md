@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `profile.md`: research on 20 Nov: Targeted Sniping IV in progress; Special Defensive Training, Survival and
+  Assault Techniques IV at 4 / 5; Infantry Lethality +29.00%, Squads' Defense / Lethality / Health +15.50%, Troops
+  Deployment Capacity +8,100; both building queues idle.
 - `profile.md`: Backpack overview on 20 Nov: stored wood 209.2M, stone 41.4M, iron 9.12M; Hero XP 600.63K, Pet Food
   2.60K (65 on 18 Nov); speedups grew except Soldier Healing (2 days 17 h, down from 3 days 12 h).
 - `troops.md`: Troops Preview on 20 Nov: Elite Infantry 69,530 (70,976 on 18 Nov), Cavalry 63,964 (62,714), Archer
