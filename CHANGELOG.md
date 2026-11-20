@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `lineups.md`: Arena attack squad read on 20 Nov from the replay of that morning's attack (Challenge History), as the
+  owner allowed: 3.6M, Jabel and Howard in front, Chenko, Diana and Quinn behind (23 Oct: 2,502,855 at Lv. 54). Daily
+  challenges were 0, so the Squad Settings screen did not open.
 - `lineups.md`: Arena, Barricades and Guard Station on 20 Nov: Arena defense 3,586,116 (rank 1,012, 1,136 points);
   Barricades 2.2M and 2.0M, Guard Station 2.2M, same heroes, now Lv. 68 (Jabel 69). The Arena attack squad (23 Oct) needs the
   Challenge button and was not re-read.
