@@ -47,6 +47,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `scripts/phone_watch.py`: rally-skull threshold set from a real skull (the first one missed it); `--quiet-rally` ignores a rally already found full.
 - `scripts/phone_watch.py`: help-hand and Mail thresholds set from real screens on 20 Nov (the first ones missed both).
 - `scripts/phone_watch.py`: checks the phone every 30 seconds, as the owner asked on 20 Nov, by reading the raw
   screen with plain pixel tests. It taps the help hand itself, then checks that the city screen is still there.
