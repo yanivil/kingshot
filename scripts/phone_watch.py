@@ -120,8 +120,10 @@ def detect(img):
     sk, hd, ml = classes(img, SKULL), classes(img, HAND), classes(img, MAIL)
     found = {
         "rally": sk["red"] > 0.25 and sk["white"] > 0.03,
-        "help": hd["green"] > 0.15 and hd["white"] > 0.08 and hd["peach"] > 0.03,
-        "mail": ml["red"] > 0.06,
+        # Measured on 20 Nov: hand shown 0.111 green / 0.187 white / 0.130 peach, gone 0 / 0.029 / 0;
+        # envelope with a count 0.04 red, without 0.0.
+        "help": hd["green"] > 0.06 and hd["white"] > 0.10 and hd["peach"] > 0.06,
+        "mail": ml["red"] > 0.02,
     }
     return found, {"skull": sk, "hand": hd, "mail": ml}
 
@@ -177,8 +179,8 @@ def main():
     ap.add_argument("--every", type=float, default=30)
     ap.add_argument("--limit", type=float, default=600)
     a = ap.parse_args()
-    # The thresholds were set on 20 Nov from one city screen without the icons and from the icons' colours;
-    # "stats" prints the measurements so they can be checked against a screen that shows them.
+    # The help and mail thresholds were measured on 20 Nov on screens with and without the icons; the rally skull's
+    # are still from its colours. "stats" prints the measurements so they can be checked again.
     if a.mode == "stats":
         s = serial()
         if not s:
