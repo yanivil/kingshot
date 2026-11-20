@@ -79,41 +79,42 @@ The Town Center screens of 5 Nov and 18 Nov show the same six perk icons in the 
 The building's Details screen of 22 Oct reads "An Institute for researching new technologies. Upgrade for access to more powerful tech." On 18 Nov the building's label on the city map reads **Academy** with level 23.
 
 * **Institute Level:** **Level 23** (the Academy's label on the city map, 18 Nov; Level 20 on 22 Oct) _(2026-11-18)_
-* **Research Speed Bonus:** **+13.60%** in total (Tech Bonus Overview, below; the Academy itself gave +2.0% at Lv 20 on 22 Oct) _(2026-11-18)_
+* **Research Speed Bonus:** **+13.60%** in total (Tech Bonus Overview, below, unchanged on 20 Nov; the Academy itself gave +2.0% at Lv 20 on 22 Oct) _(2026-11-20)_
 * **Building Power:** **94,996** at Lv 20; Lv 21 shows 107,624 (+12,628); later levels were not read _(2026-10-22)_
-* **Current Research:** **Special Defensive Training IV**, 3 / 5 to 4 / 5, 16:09 left on the morning of 18 Nov (Battle tab) _(2026-11-18)_
-* **Research Levels:** Battle tab, tier IV: Reprisal Tactics, Precision Targeting, Cavalry Charge, Defensive Formations, Picket Lines and Bulwark Formations at MAX; Special Defensive Training, Survival Techniques and Assault Techniques 3 / 5. The Growth and Economy trees were not opened; their totals are in the table below _(2026-11-18)_
+* **Current Research:** **Targeted Sniping IV**, shown at 1 / 5 with 9:29 left on 20 Nov (Battle tab and side panel; the research is inferred to take it to 2 / 5). On the morning of 18 Nov it was Special Defensive Training IV, 3 / 5 to 4 / 5, which is now 4 / 5 _(2026-11-20)_
+* **Queues (side panel, 20 Nov):** Building Queue 1 and 2 **Idle** (no upgrades other than research until 1 Dec); Infantry, Cavalry and Archer training, 5:37 left in each _(2026-11-20)_
+* **Research Levels:** Battle tab, tier IV, 20 Nov: Weapons Prep, Reprisal Tactics, Precision Targeting, Cavalry Charge, Defensive Formations, Picket Lines and Bulwark Formations at MAX (Shield Upgrade III, Leathercraft III and Fortified Mail III at MAX above them); Special Defensive Training, Survival Techniques and Assault Techniques **4 / 5** (3 / 5 on 18 Nov); Regimental Expansion 3 / 5; Close Combat 2 / 5; Targeted Sniping, Lance Upgrade, Shield Upgrade, Leathercraft and Fortified Mail 1 / 5; the next node (two blades, name not shown) 0 / 6. Regimental Expansion and the techs below it were not read on 18 Nov, so when they rose is not known. The Growth and Economy trees were not opened; their totals are in the table below _(2026-11-20)_
 
 #### Tech Bonus Overview
 
-All research bonuses together, from the list button on the Tech Research screen. These are research only; heroes, gear and buildings add their own.
+All research bonuses together, from the list button on the Tech Research screen, read again on 20 Nov (18 Nov values in brackets where they changed). These are research only; heroes, gear and buildings add their own.
 
 | Tree | Bonus | Total | Updated |
 | :--- | :--- | :---: | :---: |
-| Growth | **Research Speed** | +13.60% | 2026-11-18 |
-| Growth | **Construction Speed** | +15.60% | 2026-11-18 |
-| Growth | **Healing Speed** | +172.40% | 2026-11-18 |
-| Growth | **Training Speed** | +86.40% | 2026-11-18 |
-| Growth | **Infirmary Capacity** | +56,300 | 2026-11-18 |
-| Growth | **Training Capacity** | +112 | 2026-11-18 |
-| Growth | **March Queue** | +3 | 2026-11-18 |
-| Economy | **Bread Output** | +67.50% | 2026-11-18 |
-| Economy | **Wood Output** | +67.50% | 2026-11-18 |
-| Economy | **Stone Output** | +67.50% | 2026-11-18 |
-| Economy | **Iron Output** | +67.50% | 2026-11-18 |
-| Economy | **Bread Gathering Speed** | +117.50% | 2026-11-18 |
-| Economy | **Wood Gathering Speed** | +117.50% | 2026-11-18 |
-| Economy | **Stone Gathering Speed** | +117.00% | 2026-11-18 |
-| Economy | **Iron Mining Speed** | +103.50% | 2026-11-18 |
-| Battle | **Infantry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
-| Battle | **Infantry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
-| Battle | **Cavalry Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
-| Battle | **Cavalry Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
-| Battle | **Archer Attack / Defense** | +43.50% / +43.50% | 2026-11-18 |
-| Battle | **Archer Lethality / Health** | +25.00% / +25.00% | 2026-11-18 |
-| Battle | **Squads' Attack** | +18.50% | 2026-11-18 |
-| Battle | **Squads' Defense / Lethality / Health** | +13.75% / +13.75% / +13.75% | 2026-11-18 |
-| Battle | **Troops Deployment Capacity** | +7,100 | 2026-11-18 |
+| Growth | **Research Speed** | +13.60% | 2026-11-20 |
+| Growth | **Construction Speed** | +15.60% | 2026-11-20 |
+| Growth | **Healing Speed** | +172.40% | 2026-11-20 |
+| Growth | **Training Speed** | +86.40% | 2026-11-20 |
+| Growth | **Infirmary Capacity** | +56,300 | 2026-11-20 |
+| Growth | **Training Capacity** | +112 | 2026-11-20 |
+| Growth | **March Queue** | +3 | 2026-11-20 |
+| Economy | **Bread Output** | +67.50% | 2026-11-20 |
+| Economy | **Wood Output** | +67.50% | 2026-11-20 |
+| Economy | **Stone Output** | +67.50% | 2026-11-20 |
+| Economy | **Iron Output** | +67.50% | 2026-11-20 |
+| Economy | **Bread Gathering Speed** | +117.50% | 2026-11-20 |
+| Economy | **Wood Gathering Speed** | +117.50% | 2026-11-20 |
+| Economy | **Stone Gathering Speed** | +117.00% | 2026-11-20 |
+| Economy | **Iron Mining Speed** | +103.50% | 2026-11-20 |
+| Battle | **Infantry Attack / Defense** | +43.50% / +43.50% | 2026-11-20 |
+| Battle | **Infantry Lethality / Health** | +29.00% (+25.00%) / +25.00% | 2026-11-20 |
+| Battle | **Cavalry Attack / Defense** | +43.50% / +43.50% | 2026-11-20 |
+| Battle | **Cavalry Lethality / Health** | +25.00% / +25.00% | 2026-11-20 |
+| Battle | **Archer Attack / Defense** | +43.50% / +43.50% | 2026-11-20 |
+| Battle | **Archer Lethality / Health** | +25.00% / +25.00% | 2026-11-20 |
+| Battle | **Squads' Attack** | +18.50% | 2026-11-20 |
+| Battle | **Squads' Defense / Lethality / Health** | +15.50% / +15.50% / +15.50% (each +13.75%) | 2026-11-20 |
+| Battle | **Troops Deployment Capacity** | +8,100 (+7,100) | 2026-11-20 |
 
 ## Backpack (Overview: Resources & Speedups)
 
