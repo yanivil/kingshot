@@ -83,7 +83,7 @@
     }
   },
   "drillCamp": {
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-20",
     "instructors": [
       {
         "hero": "Jabel",
@@ -95,11 +95,11 @@
       },
       {
         "hero": "Olive",
-        "level": 67
+        "level": 68
       },
       {
         "hero": "Quinn",
-        "level": 67
+        "level": 68
       },
       {
         "hero": "Diana",
@@ -128,7 +128,7 @@
       }
     ],
     "testHero": "Edwin",
-    "_instructorNote": "From the Drill Camp screen of 18 Nov: the five instructors show Lv 69, 68, 67, 68 and 68 left to right; the middle one (Lv 67) is in yellow, the Level Minimum. The screen shows no names; by portrait they are Jabel 69, Chenko 68, Olive 67, Quinn 67 and Diana 68 (Chenko, Olive and Quinn showed a white level without the Drill Camp message on their own 17 Nov screens; inferred for Jabel and Diana). Olive took Seth's place since 5 Nov. The 9 open slots hold, by portrait and class icon, Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest, Saul and Seth, all Lv 67, the Level Minimum. Slot 9 opened with Town Center 23; slot 10 needs Town Center 25 and slots 11-15 are locked. Edwin (Lv 67, white) is in neither list. On 5 Nov the instructors were all Lv 64."
+    "_instructorNote": "From the Drill Camp screen of 20 Nov: the five instructors show Lv 69, 68, 68, 68 and 68 left to right, so the Level Minimum is now 68 (67 on 18 Nov, when Olive and Quinn were Lv 67). The screen shows no names; by portrait they are Jabel 69, Chenko 68, Olive 68, Quinn 68 and Diana 68 (their own hero screens on 20 Nov agree). How Olive and Quinn went from Lv 67 to 68 is not shown on the screens read. The 9 open slots hold, by portrait and class icon, Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest, Saul and Seth, as on 18 Nov, now all Lv 68, the Level Minimum (\"Heroes within a Drill Slot will auto-level to the Level Minimum of the 5 instructors\"); Howard's slot showed \"Deployed\" because he was in a rally march. Slot 10 needs Town Center 25 and slots 11-15 are locked. Edwin (Lv 67) is in neither list. On 18 Nov the slotted heroes were Lv 67; on 5 Nov the instructors were all Lv 64."
   },
   "recommendations": [
     {
