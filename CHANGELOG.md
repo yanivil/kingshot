@@ -47,6 +47,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `play_tasks.md` task 13 (owner, 20 Nov): use recruitment keys when the key bubble shows above Hero Recruitment,
+  only keys already owned and never a button that needs more (it would buy keys with gems). First use: 2 silver keys,
+  Advanced "Recruit 2 times". `CLAUDE.md`'s never-press list now names that exception.
 - `scripts/phone_watch.py`: rally-skull threshold set from a real skull (the first one missed it); `--quiet-rally` ignores a rally already found full.
 - `scripts/phone_watch.py`: help-hand and Mail thresholds set from real screens on 20 Nov (the first ones missed both).
 - `scripts/phone_watch.py`: checks the phone every 30 seconds, as the owner asked on 20 Nov, by reading the raw
