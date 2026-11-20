@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `profile.md`: 20 Nov readings from the city top bar and Governor Profile: power 23,449,642 (23,171,282 on
+  18 Nov), kills 729,510 (700,694), stamina 20 / 200, bread 195.4M (155.3M), gems 33,029 (14,856; the source of
+  the gain was not shown).
 - `codes.md`: `HELLOWORLD25` tried in the game on 20 Nov with the owner's OK; the game said it is outside its
   redemption period, so it is marked ✗ (missed). The gift-code check on 20 Nov (all 6 trackers downloaded) found
   no new codes.
