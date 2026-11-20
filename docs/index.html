@@ -710,6 +710,13 @@ class Dashboard extends StateHost {
     var NR = 'Not recorded';
     var meta = D.meta || {};
     var gov = D.governor || {};
+    // The server day changes every UTC midnight, so it is worked out live from the opening date when that is
+    // recorded (same count as build_data.server_day: the opening day is Day 1).
+    if (gov.serverOpened) {
+      var openedDay = Date.parse(gov.serverOpened.slice(0, 10) + 'T00:00:00Z');
+      var todayUtc = new Date(); todayUtc = Date.UTC(todayUtc.getUTCFullYear(), todayUtc.getUTCMonth(), todayUtc.getUTCDate());
+      if (!isNaN(openedDay)) gov.serverDay = Math.round((todayUtc - openedDay) / 86400000) + 1;
+    }
     var tcObj = D.townCenter || {};
     var res = D.resources || {};
     var army = D.army || {};

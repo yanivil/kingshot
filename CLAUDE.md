@@ -73,6 +73,7 @@ screenshot):
 | Research totals | Side panel → Tech Research arrow → Academy → **Research**; the list button at the top left is the Tech Bonus Overview. Never press Finish or Speedups | `profile.md` |
 | Wood, stone, iron, speedups, Hero XP | Backpack (~605, 3033) → chart button at the top right (Overview: Resources & Speedups) | `profile.md` |
 | Events | Events icon at the top right (~1323, 437) → Calendar tab; Hall of Governors tab | `profile.md` |
+| Server day, upcoming events and unlocks (KvK, pets, hero generations) | Not in the game: the kingshotmastery.com Server Timeline, https://kingshotmastery.com/tools/server-timeline?kingdom_num=2508#result (the owner asked to use it whenever possible, 2026-11-20). Read it with the built-in browser (`get_page_text`). Record its values as Unverified | `profile.md` (Kingdom Opened row, "Server timeline" table) |
 
 Never press on hero screens: Upgrade, Ascend, Quick Equip, Gear Enhancement, Mastery Forging; on buildings: Upgrade,
 Finish, Speedups; anywhere: Recruit (except `play_tasks.md` task 13, with keys already owned), Dispatch All, Quick Deploy.

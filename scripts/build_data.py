@@ -648,7 +648,26 @@ def label_value(found: Dict[str, str], label: str, source: str, log: BuildLog) -
 # ---------------------------------------------------------------------------
 
 
-def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, Any]:
+def server_day(opened: dt.date, on: dt.date) -> int:
+    """Server day of a kingdom on a UTC date, counted as the kingshotmastery.com Server Timeline shows it.
+
+    Why "+ 1": that tracker showed Day 62 for Kingdom 2508 (opened 2026-09-20) on 2026-11-20 UTC, so the opening
+    day itself is Day 1 there (inferred from that one reading; the game shows no server day).
+    """
+    return (on - opened).days + 1
+
+
+def parse_opened(text: Optional[str]) -> Optional[dt.datetime]:
+    """'2026-09-20 14:45 UTC' (bold allowed) to an aware UTC datetime; None when absent or unreadable."""
+    match = re.search(r"(\d{4}-\d{2}-\d{2})(?:\s+(\d{1,2}):(\d{2}))?", strip_md(text or ""))
+    if not match:
+        return None
+    day = dt.date.fromisoformat(match.group(1))
+    hour, minute = (int(match.group(2)), int(match.group(3))) if match.group(2) else (0, 0)
+    return dt.datetime(day.year, day.month, day.day, hour, minute, tzinfo=dt.timezone.utc)
+
+
+def parse_profile(body: str, as_of: Optional[str], log: BuildLog, today: Optional[dt.date] = None) -> Dict[str, Any]:
     """Parse the governor profile and Town Center.
 
     Args:
@@ -700,9 +719,19 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         "powerRounded": power["rounded"] if power else None,
         "kills": parse_number(label_value(identity, "Total Combat Kills", src, log)),
         "stamina": {"current": stamina[0], "max": stamina[1]} if stamina else None,
-        "serverDay": None,  # Not recorded in any .md file.
+        # Optional "Kingdom Opened" row (from the kingshotmastery.com Server Timeline, 2026-11-20): the day is
+        # worked out from it on the build date, so the stored number never goes stale between readings.
+        "serverOpened": None,
+        "serverDay": None,
         "asOf": as_of,
     }
+    opened = parse_opened(identity.get("Kingdom Opened"))
+    if identity.get("Kingdom Opened") and opened is None:
+        log.warn(src, "Kingdom Opened row has no YYYY-MM-DD date; server day left null")
+    if opened:
+        on = today or dt.datetime.now(dt.timezone.utc).date()
+        governor["serverOpened"] = opened.strftime("%Y-%m-%dT%H:%MZ")
+        governor["serverDay"] = server_day(opened.date(), on)
 
     # Per-tile dates: rows of the identity table are read on different days
     # (power from the city top bar, kills from the Governor Profile), so each
@@ -718,6 +747,8 @@ def parse_profile(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, A
         "vip": row_date("VIP Level"),
         "stamina": row_date("Stamina"),
     }
+    if governor["serverDay"] is not None:
+        governor["fieldAsOf"]["serverDay"] = (today or dt.datetime.now(dt.timezone.utc).date()).isoformat()
 
     tc_sec = find_section(sections, r"^Town Center \(TC\)")
     tc_lines = tc_sec.lines if tc_sec else []

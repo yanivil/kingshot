@@ -47,6 +47,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- Server day (owner, 20 Nov: use the kingshotmastery.com Server Timeline when possible). `profile.md` has a Kingdom
+  Opened row (2026-09-20 14:45 UTC, Day 62 on 20 Nov) and a "Server timeline" table of the coming events and unlocks.
+  It shows the first KvK on 28 Nov – 7 Dec and Gen 2 Pets on 30 Nov. `build_data.py` works the server day out from
+  the opening date, so the dashboard's "Server day" and its server-day unlock rules (Pets, Gen 2 heroes) now
+  have a value; the page recomputes it live. `CLAUDE.md` lists the link as a data source; `docs/SCHEMA.md` describes
+  `serverOpened`.
 - `play_tasks.md` task 13 (owner, 20 Nov): use recruitment keys when the key bubble shows above Hero Recruitment,
   only keys already owned and never a button that needs more (it would buy keys with gems). First use: 2 silver keys,
   Advanced "Recruit 2 times". `CLAUDE.md`'s never-press list now names that exception.
