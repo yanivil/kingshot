@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import sys
 import tempfile
+import datetime as dt
 import unittest
 from pathlib import Path
 
@@ -233,6 +234,27 @@ class MergeAndOutputTests(unittest.TestCase):
         self.assertEqual(out["resources"]["fieldAsOf"]["gems"], "2026-10-25")
         # A missing row falls back to the file date.
         self.assertEqual(out["governor"]["fieldAsOf"]["vip"], "2026-10-25")
+
+    def test_server_day_from_kingdom_opened(self) -> None:
+        """The Kingdom Opened row gives serverOpened and a server day counted with the opening day as Day 1.
+
+        Why: the kingshotmastery.com tracker showed Day 62 for a kingdom opened on 2026-09-20 on 2026-11-20 (UTC).
+        Without the row both stay null and nothing warns; an unreadable date warns.
+        """
+        head = ("## Governor Identity & Account Statistics\n\n"
+                "| Attribute | Value | Details | Updated |\n| :--- | :---: | :--- | :---: |\n")
+        self.assertEqual(bd.server_day(dt.date(2026, 9, 20), dt.date(2026, 11, 20)), 62)
+        log = bd.BuildLog()
+        gov = bd.parse_profile(head + "| **Kingdom Opened** | **2026-09-20 14:45 UTC** | x | 2026-11-20 |\n",
+                               None, log, today=dt.date(2026, 11, 21))["governor"]
+        self.assertEqual((gov["serverOpened"], gov["serverDay"]), ("2026-09-20T14:45Z", 63))
+        self.assertEqual(gov["fieldAsOf"]["serverDay"], "2026-11-21")
+        self.assertFalse([w for w in log.warnings if "Kingdom Opened" in w])
+        gov = bd.parse_profile(head, None, bd.BuildLog())["governor"]
+        self.assertEqual((gov["serverOpened"], gov["serverDay"]), (None, None))
+        log = bd.BuildLog()
+        bd.parse_profile(head + "| **Kingdom Opened** | **soon** | x | 2026-11-20 |\n", None, log)
+        self.assertTrue([w for w in log.warnings if "Kingdom Opened" in w])
 
     def test_wood_stone_iron_are_optional(self) -> None:
         """Stored Wood / Stone / Iron bullets fill resources; without them the values are null and nothing warns.

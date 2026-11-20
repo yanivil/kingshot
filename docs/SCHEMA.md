@@ -52,7 +52,9 @@ hand-written, so the file still works when opened directly.
 | `lockedHeroesNotInData` | number \| null | Shown as a note under the hero grid |
 
 ### `governor`
-`name`, `kingdom`, `alliance`, `vip`, `power`, `powerRounded`, `kills`, `stamina{current,max}`, `serverDay`, `asOf`.
+`name`, `kingdom`, `alliance`, `vip`, `power`, `powerRounded`, `kills`, `stamina{current,max}`, `serverOpened`
+(`YYYY-MM-DDTHH:MMZ` or `null`), `serverDay` (worked out from `serverOpened` on the build date, the opening day
+counting as Day 1; the page recomputes it live), `asOf`.
 `powerRounded: true` means the game showed a rounded figure (e.g. 11.4M); the Overview tile then shows it
 rounded too instead of a precise-looking 11,400,000. `power` and `kills` are the first two Overview tiles;
 `kills` is also listed under Governor on the City view. `fieldAsOf{power, kills, vip, stamina}` gives each Overview
@@ -215,7 +217,7 @@ when the value changes (see README "Update dates").
 | `meta.schemaVersion` | script | Constant `1` |
 | `meta.snapshotAsOf` | upload dates | Newest date of the five files |
 | `meta.staleAfterDays`, `meta.previousSnapshot`, `meta.lockedHeroesNotInData` | `data/manual.json` | |
-| `governor` | profile.md, "Governor Identity" table | Governor Name (optional row, not stored today, so `name` is `null` and the header shows "Governor: Not recorded"), Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`). `serverDay` is not recorded: `null` |
+| `governor` | profile.md, "Governor Identity" table | Governor Name (optional row, not stored today, so `name` is `null` and the header shows "Governor: Not recorded"), Kingdom / Server, Alliance, VIP Level, Overall Account Power, Total Combat Kills, Stamina (`a / b`), Kingdom Opened (optional row, `YYYY-MM-DD HH:MM UTC`, from the kingshotmastery.com Server Timeline) giving `serverOpened` and `serverDay`; without it both are `null` |
 | `townCenter` | profile.md, "Town Center (TC)" section | Current Level, Citizens / Workforce Capacity, the Attack / Defense / Health table; perks from the heading `(6 / 7 Unlocked)`, checked against the perk table. `perks.namesVerified` comes from `data/manual.json` |
 | `resources` | profile.md | Stored Food (Bread), Free Gems, and (since 2026-11-18, optional: no bullet gives `null` without a warning) Stored Wood, Stored Stone, Stored Iron. A K/M/B suffix (`94.6M`) means `rounded: true` |
 | `governorGear` | profile.md, "Governor Gear" row | `6 / 6 Locked` = 6 locked of 6 slots (`slotsLocked`); `3 / 6 Equipped` = 3 pieces worn of 6 (`slotsEquipped`); `asOf` is the row's date. The pieces are listed in profile.md's "Governor Gear" table |

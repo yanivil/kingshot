@@ -14,6 +14,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 | :--- | :---: | :--- | :---: |
 | **Overall Account Power** | **23,449,642** | City top bar, 20 Nov (the Governor Profile shows 23.4M). 23,171,282 on the morning of 18 Nov, 23,042,384 the night before, 17,819,499 on 5 Nov, 13,969,554 on 27 Oct, 12,464,731 on 25 Oct | 2026-11-20 |
 | **Kingdom / Server** | **#2508** | Home realm state (Governor Profile) | 2026-11-18 |
+| **Kingdom Opened** | **2026-09-20 14:45 UTC** | Server open date from the kingshotmastery.com Server Timeline (Unverified: a community tracker; the game shows no server day). The tracker showed **Day 62** on 20 Nov (UTC); the dashboard works the day out from this date, counting the opening day as Day 1 as the tracker does (inferred) | 2026-11-20 |
 | **Alliance** | **SPQ** | Primary allied faction (Governor Profile) | 2026-11-18 |
 | **Total Combat Kills** | **729,510** | Total enemy unit casualties inflicted (Governor Profile "Kills", 20 Nov; 700,694 on 18 Nov, 658,745 on 5 Nov, 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-20 |
 | **VIP Level** | **VIP 4** | Active Governor concierge tier (city top bar, 20 Nov; VIP 3 on 27 Oct) | 2026-11-20 |
@@ -160,6 +161,30 @@ its dates. _(2026-11-18)_
 | **All Out** | Event | from 20 Nov | | 2026-11-18 |
 | **Hero Ascension Fund** | Deal | all week | | 2026-11-18 |
 | **Hero Rally** | Deal | all week | | 2026-11-18 |
+
+### Server timeline (Kingdom 2508)
+
+From the kingshotmastery.com Server Timeline for Kingdom 2508, read 2026-11-20 at about 22:00 UTC (Day 62). Unverified:
+a community tracker that predicts dates from the server age; the site says event dates can shift, so check the game's
+Event Center. _(2026-11-20)_
+
+| Event or unlock | Dates (UTC) | Server days | Notes | Updated |
+| :--- | :--- | :---: | :--- | :---: |
+| **Age of Truegold Begins** | 17–27 Nov | 59–69 | Unlock window open; Truegold research needs Town Center 30 (this account is at 23) | 2026-11-20 |
+| **Alliance Championship** | 16–22 Nov, then 23–29 Nov | | Weekly | 2026-11-20 |
+| **Hall of Governors** | 16–22 Nov | | | 2026-11-20 |
+| **Hero Rally** | 16–29 Nov | | | 2026-11-20 |
+| **Sanctuary Battle** | 17–20 Nov, then 24–27 Nov | | | 2026-11-20 |
+| **All Out** | 20–21 Nov, then 27–28 Nov | | | 2026-11-20 |
+| **Defeat nearby beasts** | 24–25 Nov | | | 2026-11-20 |
+| **Viking Vengeance** | 24–26 Nov | | | 2026-11-20 |
+| **Desert Trial** | 25–27 Nov | | | 2026-11-20 |
+| **First Kingdom of Power (KvK)** | 28 Nov – 7 Dec | 70–79 | The next unlock: matchmaking to the end of the event; a matchmaking bye can delay the first battle | 2026-11-20 |
+| **Generation 2 Pets** | 30 Nov | 72 | Cheetah and Moose in the Beast Cage | 2026-11-20 |
+| **Generation 3 Heroes + Pets; Master Academy** | 4 Jan 2027 | 106 | Lion and Grizzly Bear; Valora, Pan and Roman as the first Masters | 2026-11-20 |
+
+The tracker counts 11 of 32 tracked unlocks reached, the last ones the first King's Castle battle (Day 48–52, 6–10 Nov)
+and Generation 1 Pets (Day 55, 13 Nov). _(2026-11-20)_
 
 ### Kingdom Monument
 
