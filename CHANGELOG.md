@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `troops.md`: march presets on 20 Nov: `Ter` 26,571,624 and `Att` 26,835,011 power, 95,590 troops each; the
+  gathering presets about 52,500 troops; every hero Lv. 68 but Jabel (69) and Edwin (67); each march holds 1,000 more
+  (base 56,600). `play_tasks.md` task 12: when `Ter` is busy, join with what is free (owner, 20 Nov).
 - `data/manual.json`: Drill Camp on 20 Nov: instructors Jabel 69, Chenko 68, Olive 68, Quinn 68, Diana 68, so the
   Level Minimum is 68 and the nine slotted heroes are Lv. 68. `play_tasks.md` task 12: the owner confirmed the `Ter` preset
   (first formation, Terror and Beasts); first rally joined on 20 Nov.
