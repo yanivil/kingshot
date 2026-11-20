@@ -12,7 +12,7 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 Your Arena configurations feature a dedicated setup for **Offensive Attacks** and **Defensive Stalls**:
 
-* **Arena Standing:** Rank 977 with 1,083 Arena Points; the season ends in 4d 15:43:58 (Arena of Glory screen; your own row shows 3.5M) _(2026-11-18)_
+* **Arena Standing:** Rank 1,012 with 1,136 Arena Points; the season ends in 2d 06:10:51 (Arena of Glory screen, 20 Nov; your own row shows 3.5M). Rank 977 with 1,083 points on 18 Nov _(2026-11-20)_
 
 ### 1. Arena Offensive Squad (Attack Lineup)
 * **Offensive Squad Power:** **2,502,855** (Squad Settings screen; equals the sum of the five heroes' powers) _(2026-10-23)_
@@ -28,73 +28,75 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 54 | 4-Star (T0) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-10-23 |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
-* **Defensive Squad Power:** **3,555,833** (Defensive Squad Lineup screen, 18 Nov; 2,494,295 on 23 Oct. The recorded hero powers add up to 3,549,445; the 6,388 difference is presumably changes since the 17 Nov hero screens: Quinn shows 668.4K on the 18 Nov Guard Station screen, about 3,500 more than his 664,931 of 17 Nov; inferred) _(2026-11-18)_
+* **Defensive Squad Power:** **3,586,116** (Defensive Squad Lineup screen, 20 Nov: exactly the sum of the five heroes' 20 Nov powers, 884,890 + 764,122 + 682,725 + 671,099 + 583,280. 3,555,833 on 18 Nov, 2,494,295 on 23 Oct) _(2026-11-20)_
 * **Formation Archetype:** Dual-Frontline Tank & Healer with Triple-Backline DPS _(2026-10-22)_
 * **Tactical Intent:** **Gordon** holds the front-right slot: BBQ Feast heals all troops and he takes 20% less damage, keeping the backline alive. _(2026-10-22)_
 
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 4-Star (T1) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-11-18 |
-| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 67 | 4-Star (T1) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-11-18 |
-| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | **Core Carry:** Counter-offensive burst damage | 2026-11-18 |
-| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **Ranged DPS:** Ranged area-of-effect damage | 2026-11-18 |
-| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 4-Star (T2) | **Heavy Sniper:** Single-target burst damage | 2026-11-18 |
+| **Frontline (Left)** | **Howard** | Infantry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Main Tank:** Frontline shields & team defense fortification (*Joint Defense*) | 2026-11-20 |
+| **Frontline (Right)** | **Gordon** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Healer Bruiser:** Team healing (BBQ Feast) and 20% less damage taken | 2026-11-20 |
+| **Backline (Left / Flank)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | **Core Carry:** Counter-offensive burst damage | 2026-11-20 |
+| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **Ranged DPS:** Ranged area-of-effect damage | 2026-11-20 |
+| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T2) | **Heavy Sniper:** Single-target burst damage | 2026-11-20 |
 
-The 18 Nov screen shows the same five heroes in the same places (Howard and Gordon in front, Jabel, Diana and Quinn behind), identified by portrait, class icon and level. The attack lineup was not re-read: it opens only from the Challenge button. _(2026-11-18)_
+The 20 Nov screen shows the same five heroes in the same places as on 18 Nov (Howard and Gordon in front, Jabel, Diana and Quinn behind), identified by portrait, class icon and level; the five are ticked in the hero list below the field. Stars are from hero.md. The attack lineup was not re-read: it opens only from the Challenge button, which Claude does not press without the owner's OK, so its 23 Oct values above are out of date. _(2026-11-20)_
 
 ## Wall Guard (Barricades, Rebel Invasions)
 
 Two fully upgraded Barricades, garrisoned by heroes against Rebel Invasions (computer-controlled attacks). The game says so on each Barricade screen: "Assigned hero will fight alongside the governor in Rebel Invasion." _(2026-11-05)_ Community guides say Barricades are not used in PvP or Viking Vengeance: there, the three heroes in the **Guard Station** defend the city (kingshotguides.com Viking Vengeance guide, author's reply of 2025-09-03; read on 2026-11-05, not checked in the game). The Guard Station is recorded below.
 
 ### Barricade 1 (Primary Gate)
-* **Status:** Level 10 (MAX) _(2026-11-18)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-18)_
-* **Combined Hero Power:** 2.2M (Barricade screen, 18 Nov; 1.9M on 5 Nov, 1.5M on 22 Oct. The 17 Nov hero powers add up to 2,221,281) _(2026-11-18)_
+* **Status:** Level 10 (MAX) _(2026-11-20)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-20)_
+* **Combined Hero Power:** 2.2M (Barricade screen, 20 Nov; the 20 Nov hero powers add up to 2,238,714. 2.2M on 18 Nov, 1.9M on 5 Nov, 1.5M on 22 Oct) _(2026-11-20)_
 * **Tactical Assignment:** Core elite garrison trio. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
-| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
-| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 4-Star (T2) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 1** | **Howard** | Infantry | Epic (Purple) | Lv. 68 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
+| **Slot 2** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
+| **Slot 3** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T2) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
 
 ### Barricade 2 (Secondary Gate)
-* **Status:** Level 10 (MAX) _(2026-11-18)_
-* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-18)_
-* **Combined Hero Power:** 2.0M (Barricade screen, 18 Nov; 1.7M on 5 Nov, 1.3M on 22 Oct. The 17 Nov hero powers add up to 2,005,100) _(2026-11-18)_
+* **Status:** Level 10 (MAX) _(2026-11-20)_
+* **Fortification Attributes:** Defense: 150 | Health: 2,400 _(2026-11-20)_
+* **Combined Hero Power:** 2.0M (Barricade screen, 20 Nov; the 20 Nov hero powers add up to 2,027,238. 2.0M on 18 Nov, 1.7M on 5 Nov, 1.3M on 22 Oct) _(2026-11-20)_
 * **Tactical Assignment:** Fast cavalry flanking and defense support. _(2026-10-21)_
 
 | Slot | Hero | Class | Rarity | Level | Stars | Role & Function | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 67 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
-| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
-| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | Fights alongside the governor in Rebel Invasions | 2026-11-18 |
+| **Slot 1** | **Gordon** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
+| **Slot 2** | **Chenko** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
+| **Slot 3** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | Fights alongside the governor in Rebel Invasions | 2026-11-20 |
 
-The 18 Nov Barricade screens show portraits, class icons, levels and stars but no names; the heroes are identified by
-portrait, class and level, the same six as on 5 Nov and 22 Oct, and each Barricade's hero power fits the sum of the
-recorded hero powers. Stars are from the heroes' own 17 Nov screens (hero.md). The screen is opened by tapping the wall
-gate between two towers on the city map (shown to Claude by the account owner on 18 Nov). _(2026-11-18)_
+The 20 Nov Barricade screens show portraits, class icons, levels and stars but no names; the heroes are identified by
+portrait, class and level, the same six as on 18 Nov, 5 Nov and 22 Oct, and each Barricade's hero power fits the sum of the
+recorded hero powers. Stars are from hero.md. The screen is opened by tapping the wall gate between two towers on the city
+map (shown to Claude by the account owner on 18 Nov): Barricade 1 is the gate right of the Town Center, Barricade 2 the gate
+below the Arena and the Guard Station; the gate by the cliff on the left is not a Barricade. _(2026-11-20)_
 
-* **Total Barricade Hero Power:** 4.2M (2.2M + 2.0M, each cut, not rounded; 3.6M on 5 Nov, 2.8M on 22 Oct) _(2026-11-18)_
+* **Total Barricade Hero Power:** 4.2M (2.2M + 2.0M, each cut, not rounded; 20 Nov as on 18 Nov; 3.6M on 5 Nov, 2.8M on 22 Oct) _(2026-11-20)_
 
 ## Guard Station (City Defense)
 
 The three heroes who defend the city. The screen says: "Your City will burn for 30 minutes if defeated by attackers. Your City will also automatically Teleport to a random location on the map if City Defense ever reaches 0." _(2026-11-18)_
 
-* **Combined Hero Power:** 2.2M (the sum of the three powers the screen shows, 2,224.6K; the screen's own total was hidden by a phone-call bar on 18 Nov. 2.0M on 5 Nov) _(2026-11-18)_
-* **Status:** Intact, City Defense 15,000 / 15,000 (the screen says "City Defense maxed") _(2026-11-18)_
-* **Guards Locked:** No (the box "Garrisoned heroes cannot be deployed" is unticked, so these heroes can leave on marches; Jabel and Howard are in `Ter` and `Att`, Quinn in `Iro` and `Att`) _(2026-11-18)_
+* **Combined Hero Power:** 2.2M (Guard Station screen, 20 Nov; its three powers add up to 2,238.5K. 2.2M on 18 Nov (2,224.6K), 2.0M on 5 Nov) _(2026-11-20)_
+* **Status:** Intact, City Defense 15,000 / 15,000 (the screen says "City Defense maxed") _(2026-11-20)_
+* **Guards Locked:** No (the box "Garrisoned heroes cannot be deployed" is unticked, so these heroes can leave on marches; Jabel and Howard are in `Ter` and `Att`, Quinn in `Iro` and `Att`) _(2026-11-20)_
 
 | Slot | Hero | Class | Rarity | Level | Hero Power (screen) | Updated |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Slot 1** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 884.8K | 2026-11-18 |
-| **Slot 2** | **Quinn** | Archer | Epic (Purple) | Lv. 67 | 668.4K | 2026-11-18 |
-| **Slot 3** | **Howard** | Infantry | Epic (Purple) | Lv. 67 | 671.4K | 2026-11-18 |
+| **Slot 1** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 884.8K | 2026-11-20 |
+| **Slot 2** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 671.0K | 2026-11-20 |
+| **Slot 3** | **Howard** | Infantry | Epic (Purple) | Lv. 68 | 682.7K | 2026-11-20 |
 
 The screen shows portraits, class icons, levels, stars and powers but no names; the heroes are identified by portrait and
 class. Quinn replaced Diana (Slot 2 on 5 Nov) between the 5 Nov and 18 Nov readings. Jabel's 884.8K and Howard's 671.4K
 match their 17 Nov powers (884,890 and 671,460); Quinn's 668.4K is about 3,500 above his 664,931 of 17 Nov, which is not
-explained on screen (inferred: about one Epic skill level). _(2026-11-18)_
+explained on screen (inferred: about one Epic skill level). On 20 Nov the screen shows 884.8K, 671.0K and 682.7K, matching
+the 20 Nov hero screens (884,890, 671,099 and 682,725). _(2026-11-20)_
 
 ## Saved March Deployment Presets
 

@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `lineups.md`: Arena, Barricades and Guard Station on 20 Nov: Arena defense 3,586,116 (rank 1,012, 1,136 points);
+  Barricades 2.2M and 2.0M, Guard Station 2.2M, same heroes, now Lv. 68 (Jabel 69). The Arena attack squad (23 Oct) needs the
+  Challenge button and was not re-read.
 - `troops.md`: march presets on 20 Nov: `Ter` 26,571,624 and `Att` 26,835,011 power, 95,590 troops each; the
   gathering presets about 52,500 troops; every hero Lv. 68 but Jabel (69) and Edwin (67); each march holds 1,000 more
   (base 56,600). `play_tasks.md` task 12: when `Ter` is busy, join with what is free (owner, 20 Nov).
