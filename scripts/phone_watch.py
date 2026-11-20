@@ -119,7 +119,8 @@ def dark_screen(s):
 def detect(img):
     sk, hd, ml = classes(img, SKULL), classes(img, HAND), classes(img, MAIL)
     found = {
-        "rally": sk["red"] > 0.25 and sk["white"] > 0.03,
+        # Skull shown (night, 20 Nov): 0.149 red / 0.108 white; no skull: 0 / 0. The first 0.25 missed it.
+        "rally": sk["red"] > 0.07 and sk["white"] > 0.04,
         # Measured on 20 Nov: hand shown 0.111 green / 0.187 white / 0.130 peach, gone 0 / 0.029 / 0;
         # envelope with a count 0.04 red, without 0.0.
         "help": hd["green"] > 0.06 and hd["white"] > 0.10 and hd["peach"] > 0.06,
@@ -138,7 +139,9 @@ def tap(s, x, y):
     subprocess.run(["adb", "-s", s, "shell", "input", "tap", str(int(x * SCALE)), str(int(y * SCALE))])
 
 
-def watch(every, limit):
+def watch(every, limit, quiet_rally=0):
+    """Loop until something needs Claude. quiet_rally: seconds from the start in which a rally skull is ignored, for
+    a rally Claude has already found full or marching (it stays on screen until it leaves, about 2-5 minutes)."""
     start = time.time()
     while True:
         s = serial()
@@ -152,7 +155,7 @@ def watch(every, limit):
             img = capture(s)
             if img and in_city(img):
                 found, m = detect(img)
-                if found["rally"]:
+                if found["rally"] and time.time() - start > quiet_rally:
                     print("EVENT rally", m["skull"])
                     return
                 if found["help"]:
@@ -178,9 +181,10 @@ def main():
     ap.add_argument("mode", choices=["watch", "stats"])
     ap.add_argument("--every", type=float, default=30)
     ap.add_argument("--limit", type=float, default=600)
+    ap.add_argument("--quiet-rally", type=float, default=0,
+                    help="ignore the rally skull for this many seconds (a rally already found full)")
     a = ap.parse_args()
-    # The help and mail thresholds were measured on 20 Nov on screens with and without the icons; the rally skull's
-    # are still from its colours. "stats" prints the measurements so they can be checked again.
+    # The thresholds were measured on 20 Nov on screens with and without each icon. "stats" prints the measurements so they can be checked again.
     if a.mode == "stats":
         s = serial()
         if not s:
@@ -192,7 +196,7 @@ def main():
             print(k, {c: round(x, 3) for c, x in v.items()})
         print("city:", in_city(capture(s)), "found:", found)
     else:
-        watch(a.every, a.limit)
+        watch(a.every, a.limit, a.quiet_rally)
 
 
 if __name__ == "__main__":
