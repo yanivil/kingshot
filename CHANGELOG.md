@@ -35,6 +35,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `play_tasks.md` task 12 (owner, 20 Nov): join alliance rallies at once when the red skull shows, with the `Ter`
+  preset, without relying on the game's auto-join; and help at once when the help hand shows (tap it straight after
+  the screenshot, as a late tap opened the chat on 20 Nov).
 - `play_tasks.md` and `CLAUDE.md`: rule "one tap at a time" (tap, screenshot, check, then the next tap), after a
   chained batch of taps in Mail on 18 Nov opened an old battle report and pressed its Share button; the share window
   was closed without choosing anyone, and the owner checks the chat. New task 11, Mail: Read & Claim All in each tab
