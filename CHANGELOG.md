@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `data/manual.json`: Drill Camp on 20 Nov: instructors Jabel 69, Chenko 68, Olive 68, Quinn 68, Diana 68, so the
+  Level Minimum is 68 and the nine slotted heroes are Lv. 68. `play_tasks.md` task 12: the owner confirmed the `Ter` preset
+  (first formation, Terror and Beasts); first rally joined on 20 Nov.
 - `hero.md`: hero screens on 20 Nov: every hero is Lv. 68 except Jabel (Lv. 69, waiting for Town Center 24) and
   Edwin (Lv. 67); nine are in the Drill Camp. Power, troop capacity (+12,980 at Lv. 68) and Zoe's shards (4 / 10)
   updated; Conquest is still at stage 339.
