@@ -16,21 +16,21 @@ The **Redeem** count on a promotion screen is likewise a shared stock of shards 
 
 | Hero | Rarity | Class | Level | Stars / Ascension | Primary Assignments | Combat & Strategic Role | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :---: |
-| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 69 | 4-Star (Tier 0) | Arena (Back-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-17 |
-| **Saul** | SSR / Mythic | Archer | Lv. 67 | 3-Star (Tier 0) | Stone (`Sto`), City Construction, Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+8%) & HP (+12%), squad Lethality (+15%) | 2026-11-17 |
-| **Helga** | SSR / Mythic | Infantry | Lv. 67 | 1-Star (Tier 0) | Stone (`Sto`), Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-17 |
-| **Howard** | SR / Epic | Infantry | Lv. 67 | 4-Star (Tier 1) | Arena (Front-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-17 |
-| **Diana** | SR / Epic | Archer | Lv. 68 | 4-Star (Tier 4) | Arena (Back-C), Barricade 2, Guard Station, Terror & Beasts (`Ter` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & hunting march speed (+80%) | 2026-11-17 |
-| **Quinn** | SR / Epic | Archer | Lv. 67 | 4-Star (Tier 2) | Arena (Back-R), Barricade 1, Iron (`Iro`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-17 |
-| **Chenko** | SR / Epic | Cavalry | Lv. 68 | 4-Star (Tier 1) | Arena Offense (Front-R), Barricade 2 (Slot 2), Wood (`Woo`) | **Offensive Bruiser:** Frontline defense (+50%), +20% squad lethality & -16% dmg | 2026-11-17 |
-| **Gordon** | SR / Epic | Cavalry | Lv. 67 | 4-Star (Tier 1) | Arena Defense (Front-R), Barricade 2 (Slot 1), Iron (`Iro`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-17 |
-| **Fahd** | SR / Epic | Cavalry | Lv. 67 | 3-Star (Tier 1) | Bread (`Bre`), Drill slot | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-11-17 |
-| **Amane** | SR / Epic | Archer | Lv. 67 | 3-Star (Tier 0) | Reserve / Infirmary (Exorcism) / Drill slot | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-11-17 |
-| **Yeonwoo** | SR / Epic | Archer | Lv. 67 | 3-Star (Tier 1) | Wood (`Woo`), Development, Drill slot | **Research Specialist:** Research speed (+12%) & +20% squad lethality | 2026-11-17 |
-| **Forrest** | Rare (Blue) | Infantry | Lv. 67 | 4-Star (Tier 0) | Wood (`Woo` Lead) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-11-17 |
-| **Olive** | Rare (Blue) | Archer | Lv. 67 | 4-Star (Tier 0) | Bread (`Bre` Lead) (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-17 |
-| **Seth** | Rare (Blue) | Infantry | Lv. 67 | 4-Star (Tier 0) | Iron (`Iro` Lead), Drill instructor | **Iron Specialist:** Mine production (+25%) & gathering speed (+20%) | 2026-11-17 |
-| **Edwin** | Rare (Blue) | Cavalry | Lv. 67 | 4-Star (Tier 0) | Stone (`Sto` Lead) | **Stone Specialist:** Quarry production (+20%) & gathering speed (+20%) | 2026-11-17 |
+| **Jabel (Jable)** | SSR / Mythic | Cavalry | Lv. 69 | 4-Star (Tier 0) | Arena (Back-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Core Carry:** Primary burst damage dealer & rally leader | 2026-11-20 |
+| **Saul** | SSR / Mythic | Archer | Lv. 68 | 3-Star (Tier 0) | Stone (`Sto`), City Construction, Drill slot 8 | **Master Engineer:** Construction speed (+9%) & cost reduction (-9%), squad DEF (+8%) & HP (+12%), squad Lethality (+15%) | 2026-11-20 |
+| **Helga** | SSR / Mythic | Infantry | Lv. 68 | 1-Star (Tier 0) | Stone (`Sto`), Drill slot | **Valkyrie Tank:** Frontline stag charge AoE knockback & squad damage reduction | 2026-11-20 |
+| **Howard** | SR / Epic | Infantry | Lv. 68 | 4-Star (Tier 1) | Arena (Front-L), Barricade 1, Guard Station, Terror & Beasts (`Ter`) | **Main Tank:** Frontline shields, AoE knockback & squad mitigation | 2026-11-20 |
+| **Diana** | SR / Epic | Archer | Lv. 68 | 4-Star (Tier 4) | Arena (Back-C), Barricade 2, Guard Station, Terror & Beasts (`Ter` Lead) | **Beast Hunt Specialist:** Stamina reduction (-18%) & hunting march speed (+80%) | 2026-11-20 |
+| **Quinn** | SR / Epic | Archer | Lv. 68 | 4-Star (Tier 2) | Arena (Back-R), Barricade 1, Iron (`Iro`) | **Heavy Sniper:** Massive burst sniper & troop buffer | 2026-11-20 |
+| **Chenko** | SR / Epic | Cavalry | Lv. 68 | 4-Star (Tier 1) | Arena Offense (Front-R), Barricade 2 (Slot 2), Wood (`Woo`) | **Offensive Bruiser:** Frontline defense (+50%), +20% squad lethality & -16% dmg | 2026-11-20 |
+| **Gordon** | SR / Epic | Cavalry | Lv. 68 | 4-Star (Tier 1) | Arena Defense (Front-R), Barricade 2 (Slot 1), Iron (`Iro`) | **Combat Chef & Healer:** Team healing, +15% squad ATK & +15% squad HP | 2026-11-20 |
+| **Fahd** | SR / Epic | Cavalry | Lv. 68 | 3-Star (Tier 1) | Bread (`Bre`), Drill slot | **Defensive Bruiser:** Frontline brawler & enemy debuffer | 2026-11-20 |
+| **Amane** | SR / Epic | Archer | Lv. 68 | 3-Star (Tier 0) | Reserve / Infirmary (Exorcism) / Drill slot | **Infirmary & Ranged Support:** Backline archery DPS & healing speed | 2026-11-20 |
+| **Yeonwoo** | SR / Epic | Archer | Lv. 68 | 3-Star (Tier 1) | Wood (`Woo`), Development, Drill slot | **Research Specialist:** Research speed (+12%) & +20% squad lethality | 2026-11-20 |
+| **Forrest** | Rare (Blue) | Infantry | Lv. 68 | 4-Star (Tier 0) | Wood (`Woo` Lead) | **Lumber Specialist:** Sawmill production (+20%) & gathering speed (+20%) | 2026-11-20 |
+| **Olive** | Rare (Blue) | Archer | Lv. 68 | 4-Star (Tier 0) | Bread (`Bre` Lead) (Drill instructor until 27 Oct; Seth took her place by 5 Nov) | **Food Specialist:** Mill production (+20%) & gathering speed (+20%) | 2026-11-20 |
+| **Seth** | Rare (Blue) | Infantry | Lv. 68 | 4-Star (Tier 0) | Iron (`Iro` Lead), Drill instructor | **Iron Specialist:** Mine production (+25%) & gathering speed (+20%) | 2026-11-20 |
+| **Edwin** | Rare (Blue) | Cavalry | Lv. 67 | 4-Star (Tier 0) | Stone (`Sto` Lead) | **Stone Specialist:** Quarry production (+20%) & gathering speed (+20%) | 2026-11-20 |
 
 ## Heroes Not Yet Recruited
 
@@ -38,20 +38,20 @@ Heroes shown in the hero list but not recruited. They are not in the roster abov
 
 | Hero | Rarity | Class | Shards | Shown Power | Notes | Updated |
 | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Amadeus** | SSR / Mythic | Infantry | 0 / 20 to recruit | 20,550 | Combat specialist (crossed swords); Recruit button grey | 2026-11-17 |
-| **Zoe** | SSR / Mythic | Infantry | 3 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. Not in the hero list on 28 Oct (told by the account owner); community guides name Zoe, Hilde and Marlin as Generation 2 (Unverified) | 2026-11-18 |
-| **Hilde** | SSR / Mythic | Cavalry | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-18 |
-| **Marlin** | SSR / Mythic | Archer | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-18 |
+| **Amadeus** | SSR / Mythic | Infantry | 0 / 20 to recruit | 20,550 | Combat specialist (crossed swords); Recruit button grey | 2026-11-20 |
+| **Zoe** | SSR / Mythic | Infantry | 4 / 10 to recruit (3 / 10 on 18 Nov) | 19,800 | Combat specialist (crossed swords); Recruit button grey. Not in the hero list on 28 Oct (told by the account owner); community guides name Zoe, Hilde and Marlin as Generation 2 (Unverified) | 2026-11-20 |
+| **Hilde** | SSR / Mythic | Cavalry | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-20 |
+| **Marlin** | SSR / Mythic | Archer | 0 / 10 to recruit | 19,800 | Combat specialist (crossed swords); Recruit button grey. New since 28 Oct, like Zoe | 2026-11-20 |
 
 ## In-Depth Hero Profile: Jabel (Jable)
 
 * **Hero Name:** Jabel _(2026-11-17)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-27)_
 * **Class & Role:** Cavalry Combat Specialist (Crossed Swords) _(2026-10-27)_
-* **Current Level:** **Lv. 69** (level cap reached — next level requires **Town Center Lv. 24**; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Lv. 54 until the Town Center reached Lv. 22) _(2026-11-17)_
+* **Current Level:** **Lv. 69** (hero screen, 20 Nov; unchanged since 17 Nov. On 17 Nov: level cap reached — next level requires **Town Center Lv. 24**; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Lv. 54 until the Town Center reached Lv. 22) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 52 / 100 to Tier 1 promotion; Redeem shows 24, Mythic) _(2026-11-17)_
-* **Total Hero Power:** **884,890** (+120,675 since 5 Nov: +46,700 base power from 3-Star Tier 5 → 4-Star (exactly the 5 Nov preview); +45,255 from gear (Armet +23 → +32, +22,680; Gauntlets +25 → +30, +5,400; the Rare Brigader's Breastplate +30 replaced by the Epic Crusader's Breastplate +30, +16,425; Boots +30 → +31, +750); and +28,720 not itemised on screen, presumably the five levels 64 → 69 plus Brave the Storm and Rally Flag reaching Lv. 5 (inferred; the split is not shown). On 5 Nov: 764,215 (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred))) _(2026-11-17)_
-* **Troop Capacity Boost:** **+13,030 Troops** (12,730 at Lv. 64, 11,525 at Lv. 54) _(2026-11-17)_
+* **Total Hero Power:** **884,890** (hero screen, 20 Nov; unchanged since 17 Nov. History of the 17 Nov value: +120,675 since 5 Nov: +46,700 base power from 3-Star Tier 5 → 4-Star (exactly the 5 Nov preview); +45,255 from gear (Armet +23 → +32, +22,680; Gauntlets +25 → +30, +5,400; the Rare Brigader's Breastplate +30 replaced by the Epic Crusader's Breastplate +30, +16,425; Boots +30 → +31, +750); and +28,720 not itemised on screen, presumably the five levels 64 → 69 plus Brave the Storm and Rally Flag reaching Lv. 5 (inferred; the split is not shown). On 5 Nov: 764,215 (+110,685 since 27 Oct: +28,900 from the Tier 5 promotion, exactly the 27 Oct preview; +72,965 from gear (the Rare Brigader's Armet +25 replaced by the Mythic Judicator's Armet +23, +68,330; Gauntlets +24 → +25, +1,035; Breastplate +25 → +30, +3,600); and +8,820 not itemised on screen, presumably Persistence and Youthful Rage reaching Lv. 4 (about 4,410 each), which is inferred. On 27 Oct: 653,530, +47,920 since 25 Oct: +18,920 from gear — Armet and Breastplate +19 → +25, Gauntlets +20 → +24, Boots +20 → +30 — and +29,000 not itemised on screen, presumably the ten levels 54 → 64 (inferred))) _(2026-11-20)_
+* **Troop Capacity Boost:** **+13,030 Troops** (hero screen, 20 Nov, unchanged; 12,730 at Lv. 64, 11,525 at Lv. 54) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** (8 at Lv. 54) _(2026-11-17)_
 * **Total Equipped Gear Power:** **282,410** (4 pieces 252,410 + widget 30,000; the widget was not in the 25 Oct, 27 Oct, 5 Nov or 17 Nov screenshots; 237,155 on 5 Nov) _(2026-11-17)_
 
@@ -134,10 +134,10 @@ Post-promotion values below are the current value plus the increase the game sho
 * **Hero Name:** Howard _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Infantry Combat Specialist (Crossed Swords / Shield) _(2026-10-25)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 1)** (Shards: 10 / 100 to Tier 2 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **671,460** (591,419 on 5 Nov; +80,041 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +32,745 from gear; +14,736 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred) (gear counted as worn when that power was read, before the 5 Nov boots swap)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **682,725** (hero screen, 20 Nov; +11,265 since the 671,460 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 591,419 on 5 Nov; +80,041 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +32,745 from gear; +14,736 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred) (gear counted as worn when that power was read, before the 5 Nov boots swap)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **180,780** (43,875 + 45,990 + 44,925 + 45,990; 158,325 on 5 Nov) _(2026-11-17)_
 
@@ -217,10 +217,10 @@ Gear power is 43,875 + 45,990 + 44,925 + 45,990 = 180,780 (158,325 on 5 Nov). Ch
 * **Hero Name:** Chenko _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Cavalry Combat Specialist / Offensive Bruiser (Crossed Swords / Horse) _(2026-10-25)_
-* **Current Level:** **Lv. 68** (below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov; unchanged since 17 Nov. On 17 Nov: below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 1)** (Shards: 17 / 100 to Tier 2 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **676,936** (582,053 on 5 Nov; +94,883 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +48,475 from gear; +13,848 not itemised on screen, presumably the levels 64 → 68 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,980 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **679,836** (hero screen, 20 Nov; +2,900 since the 676,936 of 17 Nov; the screen does not show where it came from. History of the 17 Nov value: 582,053 on 5 Nov; +94,883 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +48,475 from gear; +13,848 not itemised on screen, presumably the levels 64 → 68 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov, unchanged; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **194,200** (98,550 + 29,950 + 32,850 + 32,850; 145,725 on 5 Nov) _(2026-11-17)_
 
@@ -300,10 +300,10 @@ Gear power is 98,550 + 29,950 + 32,850 + 32,850 = 194,200 (145,725 on 5 Nov). Ch
 * **Hero Name:** Gordon _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Cavalry Combat Specialist / Support Bruiser (Crossed Swords / Horse) _(2026-10-25)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 1)** (Shards: 20 / 100 to Tier 2 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **580,640** (539,750 on 5 Nov; +40,890 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +650 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **583,280** (hero screen, 20 Nov; +2,640 since the 580,640 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 539,750 on 5 Nov; +40,890 since: +32,560 base power from 4-Star (Tier 0) → 4-Star (Tier 1); +650 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **107,600** (29,250 + 26,550 + 25,900 + 25,900; 106,950 on 5 Nov) _(2026-11-17)_
 
@@ -383,10 +383,10 @@ Gear power is 29,250 + 26,550 + 25,900 + 25,900 = 107,600 (106,950 on 5 Nov). Ch
 * **Hero Name:** Diana _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-25)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-25)_
-* **Current Level:** **Lv. 68** (the Upgrade button shows 200,457 / 670,000 in red, so not enough for Lv. 69 yet; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Drill Camp instructor on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov; unchanged since 17 Nov. On 17 Nov: the Upgrade button shows 200,457 / 670,000 in red, so not enough for Lv. 69 yet; Lv. 64 on 5 Nov, when the next level required Town Center Lv. 23; Drill Camp instructor on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 4)** (Shards: 10 / 100 to Tier 5 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **747,524** (+111,746 since the 635,778 read on her own screen on 5 Nov: +74,000 base power from Tier 2 → Tier 4 (+36,080, exactly the 5 Nov preview, then +37,920); +20,370 from gear (Faceplate and Boots +20 → +27, +7,140 each; Bracers +22 → +26, +2,740; Leatherwear +20 → +25, +3,350); and +17,376 not itemised on screen, presumably Incendiary Arrows and Quick Paced reaching Lv. 4 (+3,528 each, the gain seen for Epic skills; Incendiary Arrows reaching Lv. 4 would also explain the Guard Station's 639.3K on 5 Nov) and the four levels 64 → 68 (about 10,320); inferred, the split is not shown. On 5 Nov: 635,778 (the Guard Station screen later on 5 Nov shows 639.3K, not re-read on her own screen: +3,528, the gain seen when an Epic skill reaches Lv. 4, gives 639,306, which also makes the Conquest squad total exact (see Howard); inferred. Before that: +36,080 later on 5 Nov from Tier 1 → Tier 2, exactly the preview; the stats rose by exactly the preview too. Earlier on 5 Nov: 599,698 (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17))))) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,980 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **764,122** (hero screen, 20 Nov; +16,598 since the 747,524 of 17 Nov; the screen does not show where it came from. History of the 17 Nov value: +111,746 since the 635,778 read on her own screen on 5 Nov: +74,000 base power from Tier 2 → Tier 4 (+36,080, exactly the 5 Nov preview, then +37,920); +20,370 from gear (Faceplate and Boots +20 → +27, +7,140 each; Bracers +22 → +26, +2,740; Leatherwear +20 → +25, +3,350); and +17,376 not itemised on screen, presumably Incendiary Arrows and Quick Paced reaching Lv. 4 (+3,528 each, the gain seen for Epic skills; Incendiary Arrows reaching Lv. 4 would also explain the Guard Station's 639.3K on 5 Nov) and the four levels 64 → 68 (about 10,320); inferred, the split is not shown. On 5 Nov: 635,778 (the Guard Station screen later on 5 Nov shows 639.3K, not re-read on her own screen: +3,528, the gain seen when an Epic skill reaches Lv. 4, gives 639,306, which also makes the Conquest squad total exact (see Howard); inferred. Before that: +36,080 later on 5 Nov from Tier 1 → Tier 2, exactly the preview; the stats rose by exactly the preview too. Earlier on 5 Nov: 599,698 (+96,805 since 27 Oct: +69,920 base power from 3-Star Tier 5 → 4-Star (+37,360, exactly the 27 Oct preview) → Tier 1 (+32,560); +19,525 from gear (Faceplate +0 → +20, Leatherwear and Boots +18 → +20); and +7,360 not itemised on screen, presumably Lv. 61 → 64, which is inferred. The stat changes split the same way and add up exactly. On 27 Oct: 502,893 (+13,710 since 25 Oct: −2,130 from swapping the Windbreaker Faceplate Rare +18 (24,630) for the Berserker's Faceplate Epic (22,500); the other +15,840 is not itemised on screen and is presumably Lv. 54 → 61, which is inferred. On 25 Oct: 489,183 (+2,170 from the Faceplate, Leatherwear and Boots each going up one level to +18, and +3,528 not itemised on screen, presumably Iron Constitution reaching Lv. 4, which is inferred. Earlier on 23 Oct: 482,570 → 483,485, +915 from the Boots going to +17))))) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov, unchanged; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **151,180** (45,990 + 29,950 + 29,250 + 45,990; 130,810 on 5 Nov) _(2026-11-17)_
 
@@ -456,10 +456,10 @@ All 4 pieces match the native **Archer** troop class synergy:
 * **Hero Name:** Quinn _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-27)_
 * **Class & Role:** Archer / Marksman Combat Specialist (Crossed Swords) _(2026-10-27)_
-* **Current Level:** **Lv. 67** (below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov; Lv. 67 on 17 Nov, the screens read do not show how. On 17 Nov: below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 2)** (Shards: 77 / 100 to Tier 3 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **664,931** (597,520 on 5 Nov; +67,411 since: +36,080 base power from 4-Star (Tier 1) → 4-Star (Tier 2); +16,595 from gear; +14,736 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **671,099** (hero screen, 20 Nov; +6,168 since the 664,931 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 597,520 on 5 Nov; +67,411 since: +36,080 base power from 4-Star (Tier 1) → 4-Star (Tier 2); +16,595 from gear; +14,736 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **148,755** (43,875 + 42,840 + 31,380 + 30,660; 132,160 on 5 Nov) _(2026-11-17)_
 
@@ -539,10 +539,10 @@ Gear power is 43,875 + 42,840 + 31,380 + 30,660 = 148,755 (132,160 on 5 Nov). Ch
 * **Hero Name:** Seth _(2026-11-17)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-24)_
 * **Class & Role:** Infantry Economy Specialist / Iron Gathering (Shield / Hammer) _(2026-10-24)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 26 / 100 to Tier 1 promotion; Redeem shows 0, Rare) _(2026-11-17)_
-* **Total Hero Power:** **516,656** (481,924 on 5 Nov; +34,732 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); -9,315 from gear; +13,692 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred) (gear counted as worn when that power was read, before the 5 Nov boots swap)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **518,801** (hero screen, 20 Nov; +2,145 since the 516,656 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 481,924 on 5 Nov; +34,732 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); -9,315 from gear; +13,692 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred) (gear counted as worn when that power was read, before the 5 Nov boots swap)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **146,085** (38,850 + 38,850 + 39,825 + 28,560; 145,110 on 5 Nov) _(2026-11-17)_
 
@@ -621,10 +621,10 @@ Gear power is 38,850 + 38,850 + 39,825 + 28,560 = 146,085 (145,110 on 5 Nov). Ch
 * **Hero Name:** Olive _(2026-11-17)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer Economy Specialist / Food & Bread Gathering (Bow / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 67** (below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov; Lv. 67 on 17 Nov, the screens read do not show how. On 17 Nov: below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 53 / 100 to Tier 1 promotion; Redeem shows 0, Rare) _(2026-11-17)_
-* **Total Hero Power:** **477,641** (418,174 on 5 Nov; +59,467 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +15,420 from gear; +13,692 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **479,786** (hero screen, 20 Nov; +2,145 since the 477,641 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 418,174 on 5 Nov; +59,467 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +15,420 from gear; +13,692 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **107,070** (38,850 + 22,800 + 16,860 + 28,560; 91,650 on 5 Nov) _(2026-11-17)_
 
@@ -703,10 +703,10 @@ Gear power is 38,850 + 22,800 + 16,860 + 28,560 = 107,070 (91,650 on 5 Nov). Cha
 * **Hero Name:** Forrest _(2026-11-17)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Economy Specialist / Wood Gathering (Shield / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 35 / 100 to Tier 1 promotion; Redeem shows 0, Rare) _(2026-11-17)_
-* **Total Hero Power:** **475,579** (438,984 on 5 Nov; +36,595 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +0 from gear; +6,240 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **477,724** (hero screen, 20 Nov; +2,145 since the 475,579 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 438,984 on 5 Nov; +36,595 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +0 from gear; +6,240 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **112,460** (24,010 + 26,550 + 37,890 + 24,010; 112,460 on 5 Nov) _(2026-11-17)_
 
@@ -785,10 +785,10 @@ Gear power is 24,010 + 26,550 + 37,890 + 24,010 = 112,460 (112,460 on 5 Nov). No
 * **Hero Name:** Edwin _(2026-11-17)_
 * **Rarity:** **Rare (Blue)** (Generation 1) _(2026-10-23)_
 * **Class & Role:** Cavalry Economy Specialist / Stone Gathering & Quarrying (Horse / Hammer) _(2026-10-23)_
-* **Current Level:** **Lv. 67** (below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 59 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 67** (hero screen, 20 Nov; unchanged since 17 Nov. On 17 Nov: below the Lv. 69 cap of Town Center 23 (Jabel's screen); Lv. 59 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **4-Star (Tier 0)** (Shards: 5 / 100 to Tier 1 promotion; Redeem shows 0, Rare) _(2026-11-17)_
-* **Total Hero Power:** **459,349** (396,177 on 5 Nov; +63,172 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +11,470 from gear; +21,347 not itemised on screen, presumably the levels 59 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,260 at Lv. 59) _(2026-11-17)_
+* **Total Hero Power:** **459,349** (hero screen, 20 Nov; unchanged since 17 Nov. History of the 17 Nov value: 396,177 on 5 Nov; +63,172 since: +30,355 base power from 3-Star (Tier 5) → 4-Star (Tier 0); +11,470 from gear; +21,347 not itemised on screen, presumably the levels 59 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,930 Troops** (hero screen, 20 Nov, unchanged; 12,260 at Lv. 59) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **96,230** (25,900 + 22,800 + 25,900 + 21,630; 84,760 on 5 Nov) _(2026-11-17)_
 
@@ -867,10 +867,10 @@ Gear power is 25,900 + 22,800 + 25,900 + 21,630 = 96,230 (84,760 on 5 Nov). Chan
 * **Hero Name:** Yeonwoo _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-23)_
 * **Class & Role:** Archer Development Specialist / Dual-Blade Duelist (Bow / Hammer) _(2026-10-23)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **3-Star (Tier 1)** (Shards: 28 / 40 to Tier 2 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **427,931** (380,548 on 5 Nov; +47,383 since: +18,880 base power from 3-Star (Tier 0) → 3-Star (Tier 1); +17,295 from gear; +11,208 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **452,481** (hero screen, 20 Nov; +24,550 since the 427,931 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 380,548 on 5 Nov; +47,383 since: +18,880 base power from 3-Star (Tier 0) → 3-Star (Tier 1); +17,295 from gear; +11,208 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **105,195** (40,815 + 22,800 + 19,950 + 21,630; 87,900 on 5 Nov) _(2026-11-17)_
 
@@ -950,10 +950,10 @@ Gear power is 40,815 + 22,800 + 19,950 + 21,630 = 105,195 (87,900 on 5 Nov). Cha
 * **Hero Name:** Fahd _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-23)_
 * **Class & Role:** Cavalry Combat Specialist / Defensive Bruiser (Horse / Crossed Swords) _(2026-10-23)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **3-Star (Tier 1)** (Shards: 1 / 40 to Tier 2 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **395,940** (368,930 on 5 Nov; +27,010 since: +18,880 base power from 3-Star (Tier 0) → 3-Star (Tier 1); +450 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **398,580** (hero screen, 20 Nov; +2,640 since the 395,940 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 368,930 on 5 Nov; +27,010 since: +18,880 base power from 3-Star (Tier 0) → 3-Star (Tier 1); +450 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **80,260** (25,900 + 15,450 + 17,850 + 21,060; 79,810 on 5 Nov) _(2026-11-17)_
 
@@ -1033,10 +1033,10 @@ Gear power is 25,900 + 15,450 + 17,850 + 21,060 = 80,260 (79,810 on 5 Nov). Chan
 * **Hero Name:** Amane _(2026-11-17)_
 * **Rarity:** **SR / Epic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Archer Development Specialist / Umbrella Marksman (Bow / Hammer) _(2026-10-21)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **3-Star (Tier 0)** (Shards: 27 / 40 to Tier 1 promotion; Redeem shows 6, Epic) _(2026-11-17)_
-* **Total Hero Power:** **362,300** (332,700 on 5 Nov; +29,600 since: +21,920 base power from 2-Star (Tier 5) → 3-Star (Tier 0); +0 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **364,940** (hero screen, 20 Nov; +2,640 since the 362,300 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 332,700 on 5 Nov; +29,600 since: +21,920 base power from 2-Star (Tier 5) → 3-Star (Tier 0); +0 from gear; +7,680 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **65,500** (20,500 + 15,000 + 15,000 + 15,000; 65,500 on 5 Nov) _(2026-11-17)_
 
@@ -1116,10 +1116,10 @@ Gear power is 20,500 + 15,000 + 15,000 + 15,000 = 65,500 (65,500 on 5 Nov). Chan
 * **Hero Name:** Saul _(2026-11-17)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-24)_
 * **Class & Role:** Archer Development Specialist / Master Engineer (Bow / Green Hammer) _(2026-10-24)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **3-Star (Tier 0)** (Shards: 0 / 40 to Tier 1 promotion; Redeem shows 24, Mythic) _(2026-11-17)_
-* **Total Hero Power:** **545,280** (474,025 on 5 Nov; +71,255 since: +27,400 base power from 2-Star (Tier 5) → 3-Star (Tier 0); +25,435 from gear; +18,420 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **557,400** (hero screen, 20 Nov; +12,120 since the 545,280 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 474,025 on 5 Nov; +71,255 since: +27,400 base power from 2-Star (Tier 5) → 3-Star (Tier 0); +25,435 from gear; +18,420 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **159,160** (30,660 + 49,275 + 29,950 + 49,275; 133,725 on 5 Nov) _(2026-11-17)_
 * **Exclusive Widget:** Locked — Rabbitgear Cannon (Unlock 0/5; 30,000 power; ATK 72 / DEF 60 / HP 450, escort ATK 24 / DEF 20 / HP 150; +5.00% Archer Lethality and +5.00% Archer Health; exclusive skill Fearless Advance) _(2026-10-23)_
@@ -1201,10 +1201,10 @@ Gear power is 30,660 + 49,275 + 29,950 + 49,275 = 159,160 (133,725 on 5 Nov). Ch
 * **Hero Name:** Helga _(2026-11-17)_
 * **Rarity:** **SSR / Mythic** (Generation 1) _(2026-10-21)_
 * **Class & Role:** Infantry Combat Specialist / Valkyrie Tank (Shield / Crossed Swords) _(2026-10-21)_
-* **Current Level:** **Lv. 67** (Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-17)_
+* **Current Level:** **Lv. 68** (hero screen, 20 Nov, in the Drill Camp ("You cannot level up a hero within a Drill Camp!"); Lv. 67 on 17 Nov, presumably from the Drill Camp (inferred). On 17 Nov: Drill Camp level: the hero screen shows it in yellow and says "You cannot level up a hero within a Drill Camp!"; Lv. 64 on 5 Nov) _(2026-11-20)_
 * **Star Tier:** **1-Star (Tier 0)** (Shards: 0 / 5 to Tier 1 promotion; the screen shows no Redeem button) _(2026-11-17)_
-* **Total Hero Power:** **346,865** (306,455 on 5 Nov; +40,410 since: +29,850 from gear; +10,560 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-17)_
-* **Troop Capacity Boost:** **+12,930 Troops** (12,730 at Lv. 64) _(2026-11-17)_
+* **Total Hero Power:** **350,495** (hero screen, 20 Nov; +3,630 since the 346,865 of 17 Nov, which includes the level 67 → 68; the split is not shown. History of the 17 Nov value: 306,455 on 5 Nov; +40,410 since: +29,850 from gear; +10,560 not itemised on screen, presumably the levels 64 → 67 and skill levels (inferred)) _(2026-11-20)_
+* **Troop Capacity Boost:** **+12,980 Troops** (hero screen, 20 Nov; 12,930 at Lv. 67 on 17 Nov; 12,730 at Lv. 64) _(2026-11-20)_
 * **Escort Guards:** **9 Escorts** _(2026-11-17)_
 * **Total Equipped Gear Power:** **137,695** (38,850 + 37,890 + 36,945 + 24,010; 107,845 on 5 Nov) _(2026-11-17)_
 * **Exclusive Widget:** Locked — Bands of Tyre (gear screen shows a lock) _(2026-10-22)_
