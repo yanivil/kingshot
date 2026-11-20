@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `hero.md`: hero screens on 20 Nov: every hero is Lv. 68 except Jabel (Lv. 69, waiting for Town Center 24) and
+  Edwin (Lv. 67); nine are in the Drill Camp. Power, troop capacity (+12,980 at Lv. 68) and Zoe's shards (4 / 10)
+  updated; Conquest is still at stage 339.
 - `profile.md`: research on 20 Nov: Targeted Sniping IV in progress; Special Defensive Training, Survival and
   Assault Techniques IV at 4 / 5; Infantry Lethality +29.00%, Squads' Defense / Lethality / Health +15.50%, Troops
   Deployment Capacity +8,100; both building queues idle.
