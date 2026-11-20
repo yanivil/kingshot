@@ -52,6 +52,7 @@ This repository provides:
 * **`data/manual.json`**: Hand-edited dashboard content that is not in the `.md` files (recommendations,
   data-health notes, community game rules, features, Drill Camp, a few hero notes).
 * **`scripts/phone.sh`**: Helper for reading and playing the game on the owner's Android phone over `adb` (screenshots into the git-ignored `phone_shots/`, taps that first check Kingshot is in front).
+* **`scripts/phone_watch.py`**: Checks the city screen every 30 seconds with plain pixel tests (no image library). It taps the alliance help hand itself and stops, which wakes the Claude session that runs it in the background, when a rally skull or a Mail count shows, the phone leaves `adb`, Game Booster's Touch Protection covers the game, or 10 minutes have passed. `stats` prints its measurements.
 * **`scripts/build_data.py`**: Generator that builds the dashboard data from the `.md` files
   (tests: `scripts/test_build_data.py`).
 * **`.github/workflows/build-dashboard.yml`**: Builds and publishes the dashboard to GitHub Pages.

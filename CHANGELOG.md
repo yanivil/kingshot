@@ -47,6 +47,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `scripts/phone_watch.py`: checks the phone every 30 seconds, as the owner asked on 20 Nov, by reading the raw
+  screen with plain pixel tests. It taps the help hand itself, then checks that the city screen is still there.
+  It stops for Claude on a rally skull, a Mail count, a lost phone, Game Booster's Touch Protection, or every 10
+  minutes for a full round. The thresholds were set from the icons' colours and need checking on screens that
+  show them (`stats`). README, `CLAUDE.md` and `play_tasks.md` describe it.
 - `play_tasks.md` task 12 (owner, 20 Nov): join alliance rallies at once when the red skull shows, with the `Ter`
   preset, without relying on the game's auto-join; and help at once when the help hand shows (tap it straight after
   the screenshot, as a late tap opened the chat on 20 Nov).

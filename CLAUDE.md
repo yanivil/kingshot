@@ -45,6 +45,10 @@ the owner accepted that risk.
 - **Owner's tasks** (the only taps beyond reading) are in `play_tasks.md`: for example, Confirm on the "Welcome back!"
   popup, the alliance-help handshake and the storehouse chest. Trying gift codes (Redeem) needs the owner's OK each time.
 - **Back** on the city screen opens "Quit game?": press **Cancel**.
+- **Checking every 30 seconds** (owner, 2026-11-20): run `python3 scripts/phone_watch.py watch` in the background. It
+  taps the help hand itself (task 2) and stops when a rally, Mail or a full round needs Claude; after each stop, do
+  that task and start it again. Samsung Game Booster's **Touch Protection** can cover the game: it darkens the screen and
+  blocks touches. It is a phone setting, so ask the owner to clear it.
 - **One tap at a time:** after each tap, take a screenshot and check the screen before the next tap; never chain taps
   on screens not yet seen (a chained batch pressed Share in a battle report on 2026-11-18).
 
