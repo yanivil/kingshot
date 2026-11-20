@@ -45,6 +45,7 @@ outside of redemption period!" for an expired code or "Redemption limit reached!
 | `KSPRAWNING` | ✓ | Not recorded | Expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Redemption limit reached!", which presumably means this account already redeemed it (inferred: expired codes give the "outside of redemption period" answer instead) | 2026-11-18 |
 | `KS1017` | ✗ | 500 Gems (5x 100), 10x 5m General Speedup, 2x 100 Hero XP, 3-Day Avatar Frame | Expired, told by the account owner on 5 Nov. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
 | `11OFFICIALSTORE08` | ✗ | Not recorded | Found by the automated gift-code check on 9 Nov (boostbot.org, kingshot.net, kingshotguide.org, kingshotmastery.com, kingshotoptimizer.com; issue #122) but not added here then. Tried in the game on 18 Nov: "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-18 |
+| `HELLOWORLD25` | ✗ | Not recorded | On the trackers before the automated check began on 4 Nov (in `data/gift_codes_baseline.txt`); PocketGamer listed it as working until 24 Nov. Tried in the game on 20 Nov (account owner's OK): "Cannot be redeemed outside of redemption period!", so it expired before it was redeemed on this account | 2026-11-20 |
 
 ## How to Redeem Codes
 
