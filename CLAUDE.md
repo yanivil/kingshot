@@ -4,6 +4,9 @@ This repository is a Kingshot (mobile game) account dashboard. The account owner
 the values in the Markdown data files and `data/manual.json`, and `scripts/build_data.py` builds the page published at
 https://yanivil.github.io/kingshot/ on every push to `main`.
 
+What earlier sessions learned about the game, the server timeline website and the phone is in `learned.md`: read it
+before playing or writing suggestions, and add to it when something new is learned.
+
 ## Privacy (never break these)
 
 - Never write the **Player ID** or the **governor name** (it starts with the alliance tag) into any file, commit
