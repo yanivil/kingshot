@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `scripts/phone_watch.py`: when a late help tap opens the alliance chat (another member helped first), it presses
+  the chat's handshake button and closes the chat. `play_tasks.md` task 2 and `learned.md`: the owner's tip that the
+  Embassy building helps without opening the chat (21 Nov).
+  When the hand stays up after a help ("Already helped allies' build queues"), the watcher leaves it for 5 minutes
+  instead of stopping.
 - `play_tasks.md` (owner, 21 Nov): task 12, with many troops waiting for healing, join only Terror rallies, no other
   rally or attack; new task 14, claim quest rewards in the notebook (Daily and Growth), never Go.
 - `troops.md`: the owner's answer on `Ter` and `Att` (21 Nov): alone about 95% of the time, together about 5%. They

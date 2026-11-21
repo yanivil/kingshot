@@ -136,7 +136,10 @@ Ascension calculator.
   - The game's "Auto-joining…" timer does not work well (owner, 20 Nov).
 - **Troop losses:** between 18 and 20 Nov, Infantry fell by 1,446 while kills rose by 28,816. The loss is inferred to come
   from the rallies.
-- **Alliance help hand:** it disappears within seconds of showing.
+- **Alliance help hand:** it disappears within seconds of showing. When another member helps first, a tap on the spot
+  opens the alliance chat instead; the chat shows a handshake button on the right that helps (owner and screens, 21 Nov).
+  Pressing the **Embassy** building never opens the chat when the icon has gone (owner, 21 Nov). The watcher presses the
+  chat's handshake and closes the chat with the X.
 - **Hero Recruitment:**
   - The building is the golden one with a red carpet.
   - A white key bubble above it means keys are waiting. The keys show at the top of the screen: silver for Advanced, gold for Epic.
