@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `troops.md`: the owner's answer on `Ter` and `Att` (21 Nov): alone about 95% of the time, together about 5%. They
+  stay marked as alternatives; the Army page note now says that when both go out, Jabel and Howard can be in only one.
 - Army & marches: a hero in two presets is a setup conflict only when the presets are not alternatives. troops.md
   marks `Att` as an alternative to `Ter` (same main heroes, Jabel and Howard; with 69,530 Infantry both can't go out
   full together), so the page shows them as "Shared on purpose" and the Overview counts 1 clash (Quinn, `Iro` and

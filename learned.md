@@ -103,8 +103,10 @@ Ascension calculator.
     +8,100 (inferred; the numbers match exactly).
   - The gathering presets send 55% of their capacity (61% for `Bre`).
 - **One march per hero:** a hero can be in only one march at a time (community rule). `Ter` and `Att` share Jabel and
-  Howard but take turns: troops.md marks `Att` "Alternative to: `Ter`", so the dashboard does not count them as a
-  conflict (21 Nov). With 47,795 Infantry each and 69,530 in total, they cannot both go out full anyway. Quinn in
+  Howard but mostly take turns: the owner said on 21 Nov they go out alone about 95% of the time and together about
+  5%. troops.md marks `Att` "Alternative to: `Ter`", so the dashboard shows a note, not a conflict. When both go
+  out, Jabel and Howard can be in only one of them. With 47,795 Infantry each and 69,530 in total, they cannot both
+  go out full anyway. Quinn in
   `Iro` and `Att` is a real clash; the card "Iron preset: Amane instead of Quinn" fixes it.
 
 ### Arena, Barricades and Guard Station
