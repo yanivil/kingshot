@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `lineups.md`: Arena attack squad from the Squad Settings screen the owner sent on 21 Nov: 3,682,672 power
+  (the 20 Nov replay showed 3.6M), Jabel and Howard in front, Chenko, Diana and Quinn behind, as in the replay.
 - `lineups.md`: Arena attack squad read on 20 Nov from the replay of that morning's attack (Challenge History), as the
   owner allowed: 3.6M, Jabel and Howard in front, Chenko, Diana and Quinn behind (23 Oct: 2,502,855 at Lv. 54). Daily
   challenges were 0, so the Squad Settings screen did not open.
