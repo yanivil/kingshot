@@ -132,55 +132,56 @@
   },
   "recommendations": [
     {
-      "id": "hog-stage3-training",
+      "id": "kvk-save-list",
       "priority": 1,
       "type": "Events",
-      "what": "Hall of Governors today: train Infantry, no speedups",
-      "summary": "Stage III (Soldier Training) ends about 00:00 UTC tonight. You are at 1,915,350 points; the next target is 2,210,000. Train Infantry in every free queue; keep speedups until 1 Dec (alliance).",
-      "why": "Hall of Governors (16–22 Nov) is on stage III, Soldier Training, with 15:29:45 left at 08:30 UTC on 18 Nov, so it ends about 00:00 UTC (02:00 Israel time). You have 1,915,350 points; the next targets are 2,210,000, 3,680,000 and 5,360,000. All three training queues showed Completed on 18 Nov, so they are free. Infantry is the troop you are short of (see the Infantry card), so training it serves both. Your alliance asks members not to use speedups until 1 Dec (told by the account owner on 18 Nov), so this card uses training time only: the 12 h 38 min of training speedups stay in the backpack.",
+      "what": "First KvK 28 Nov – 7 Dec: keep the save list for it",
+      "summary": "A server tracker puts your first Kingdom vs Kingdom on 28 Nov – 7 Dec, before your 1 Dec no-speedups date. Ask the alliance when the saved speedups are to be used.",
+      "why": "The kingshotmastery.com Server Timeline for Kingdom 2508 (read 20 Nov) lists the First Kingdom of Power (KvK) on 28 Nov – 7 Dec, server days 70–79. The game showed no KvK date on the screens read, and the site says dates can shift. Your alliance's \"KVK: WHAT TO SAVE\" list (18 Nov) covers speedups; gems, Roulette spins and hero shards; Mithril, Widgets and Forgehammers; Governor Charm and Governor Gear items; Taming Marks, pet food and items. Its other request, no speedups until 1 Dec, ends three days into KvK, so when the saved items are spent is the alliance's call. Saved now: General 4 h 36 min, Training 15 h 27 min, Construction 3 days 19 h 25 min, Research 11 h 36 min and Healing 2 days 17 h 8 min of speedups and 33,029 gems (20 Nov); Mythic 24 and Epic 6 Redeem shards (17 Nov). The same tracker puts Generation 2 Pets (Cheetah, Moose) on 30 Nov.",
       "steps": [
-        "Collect the finished troops from the three training buildings.",
-        "Train Elite Infantry in all free queues (Cavalry and Archers only if Infantry is not offered).",
-        "Do not use speedups (alliance request, until 1 Dec); start the longest batch that finishes after the stage if needed, since a batch started now may still count when it ends (Unverified).",
-        "Check Events → Hall of Governors for the points; claim 2,210,000 when it turns green."
+        "Keep every item on the alliance's save list unused; no play task spends them.",
+        "Ask the alliance whether speedups may be used in KvK before 1 Dec, and on which day.",
+        "On 28 Nov, check Events → Calendar for the KvK dates (the tracker's dates can shift)."
       ],
       "evidence": [
-        "profile.md Events, 18 Nov: Hall of Governors stage III Soldier Training, 15:29:45 left, ranking 392, 1,915,350 points, targets 2,210,000 / 3,680,000 / 5,360,000",
-        "Side panel, 18 Nov: Infantry, Cavalry and Archer training Completed",
-        "Alliance request, told by the account owner on 18 Nov: no speedups until 1 Dec"
+        "profile.md Server timeline, 20 Nov: First Kingdom of Power 28 Nov – 7 Dec (days 70–79), Generation 2 Pets 30 Nov (kingshotmastery.com, Unverified)",
+        "play_tasks.md Limits: the alliance's KvK save list (18 Nov) and no speedups until 1 Dec",
+        "profile.md, 20 Nov: speedups (Backpack overview) and 33,029 gems (city top bar); hero.md, 17 Nov: Redeem shards Mythic 24, Epic 6"
       ],
-      "cost": "Training resources (not recorded); no speedups",
+      "cost": "None (saving)",
       "confidence": [
         "Verified",
         "Unverified"
       ],
       "heroes": [],
-      "note": "Verified: the stage, its time left and your points. Unverified: how many points each troop gives, and whether a batch counts when it starts or when it finishes (not shown on the screens read)."
+      "note": "Verified: the stocks and the alliance's list (screens and the owner). Unverified: the KvK and pet dates (community tracker)."
     },
     {
       "id": "train-infantry",
-      "priority": 4,
+      "priority": 2,
       "type": "Troops",
-      "what": "Train about 32,900 more Infantry",
-      "summary": "Iron and Wood each send about 51,900 of your 70,976 Infantry, so only one can be out at a time. About 32,900 more lets both go out together.",
-      "why": "Iro carries 51,914 Infantry, Woo 51,942 and Ter 47,270, while you have 70,976 (18 Nov). Iron and Wood together need 103,856, about 32,900 more than you have. Stone (Cavalry) and Bread (Archers) fit beside any one of them. Infantry was already training on 18 Nov (about 6 hours left); how many is not shown.",
+      "what": "Train about 35,600 more Infantry",
+      "summary": "Iron and Wood each send 52,547 of your 69,530 Infantry and a Ter rally takes 47,795, so only one of them can be out. About 35,600 more lets Iron and Wood go out together.",
+      "why": "On the 20 Nov Deploy screen Iro and Woo each carry 52,547 Infantry, and Ter (the rally preset, play task 12) and Att 47,795. You have 69,530 Infantry (Troops Preview, 20 Nov; 70,976 on 18 Nov, the 1,446 lost in battles, inferred). Iron and Wood together need 105,094, about 35,600 more than you have; Ter with one of them needs 100,342, about 30,800 more. Stone (Cavalry) and Bread (Archers) fit beside any of them. All three training queues were busy on 20 Nov (5:37 left); how many Infantry is not shown. Training is not an upgrade, so it fits the plan until 1 Dec, without speedups.",
       "changes": [
         {
           "where": "Elite Infantry",
           "before": [
-            "70,976"
+            "69,530"
           ],
           "after": [
-            "about 103,900"
+            "about 105,100"
           ],
-          "note": "Enough for Iron and Wood together (51,914 + 51,942)"
+          "note": "Enough for Iron and Wood together (52,547 + 52,547)"
         }
       ],
       "steps": [
-        "Train Elite Infantry in the Barracks when the queue is free."
+        "Train Elite Infantry in the Barracks whenever its queue is free, without speedups."
       ],
       "evidence": [
-        "troops.md, Troops Preview and Deploy screens of 18 Nov: Iro 51,914 Infantry, Woo 51,942, Ter 47,270; available 70,976 / 62,714 / 60,796"
+        "troops.md, Deploy screen of 20 Nov: Iro and Woo 52,547 Infantry each, Ter and Att 47,795",
+        "troops.md, Troops Preview of 20 Nov: 69,530 / 63,964 / 64,321 Elite Infantry / Cavalry / Archers",
+        "profile.md side panel, 20 Nov: all three training queues busy, 5:37 left"
       ],
       "cost": "Training time and resources (not recorded)",
       "confidence": [
@@ -196,16 +197,16 @@
       "type": "City",
       "what": "Town Center 24 from 1 Dec, after your research",
       "summary": "No upgrades until 1 Dec, and research first. After that, Town Center 24 raises the hero level cap to 74 (Jabel is capped at 69) and leads to Drill Camp slot 10 at Town Center 25.",
-      "why": "The side panel showed Building Queue 1 and 2 Idle on 18 Nov, and the quest bar says \"Upgrade Town Center to Lv. 24\". Jabel is at Lv 69, the cap at Town Center 23, and her next level needs Town Center 24 (hero screen, 17 Nov). Community tables give a Lv 74 cap at Town Center 24 (Unverified). The Drill Camp's slot 10 needs Town Center 25. Your alliance asks members not to use speedups until 1 Dec (told by the account owner on 18 Nov), so the 2 days 16 h of construction speedups stay saved and the upgrade runs on its own time. The account owner plans to finish all research first and has time (18 Nov), so this waits.",
+      "why": "The side panel showed Building Queue 1 and 2 Idle on 20 Nov, and the quest bar says \"Upgrade Town Center to Lv. 24\". Jabel is at Lv 69 (hero screen, 20 Nov), the cap at Town Center 23; on 17 Nov her screen said the next level needs Town Center 24. Community tables give a Lv 74 cap at Town Center 24 (Unverified). The Drill Camp's slot 10 needs Town Center 25. Your alliance asks members not to use speedups until 1 Dec (told by the account owner on 18 Nov), so the 3 days 19 h 25 min of construction speedups (20 Nov) stay saved and the upgrade runs on its own time. The account owner plans to finish all research first and has time (18 Nov), so this waits.",
       "steps": [
         "After the research is done: Town Center → Upgrade, and read what it requires.",
         "Upgrade any required building below 23 with the second queue, then the Town Center.",
         "Do not use construction speedups until 1 Dec (alliance request)."
       ],
       "evidence": [
-        "Side panel, 18 Nov: Building Queue 1 and 2 Idle",
-        "hero.md, 17 Nov: Jabel Lv 69, next level needs Town Center 24",
-        "data/manual.json Drill Camp, 18 Nov: slot 10 needs Town Center 25",
+        "Side panel, 20 Nov: Building Queue 1 and 2 Idle",
+        "hero.md, 20 Nov: Jabel Lv 69; on 17 Nov her next level needed Town Center 24",
+        "data/manual.json Drill Camp, 20 Nov: slot 10 needs Town Center 25",
         "Alliance request, told by the account owner on 18 Nov: no speedups until 1 Dec"
       ],
       "cost": "Town Center 24 cost and time not recorded; requirements not read",
@@ -221,35 +222,35 @@
       "waitingFor": "Not before 1 Dec (no upgrades other than research until then), and after your research (owner, 18 Nov)."
     },
     {
-      "id": "drill-xp-olive-quinn",
+      "id": "drill-xp-four-to-69",
       "priority": 6,
       "type": "Heroes",
       "ready": false,
-      "waitingFor": "Not before 1 Dec: no upgrades other than research until then (owner, 18 Nov). About 1.3M Hero XP for Olive and Quinn (Lv 67 → 68); 429.72K in stock (18 Nov). Diana's Lv 68 → 69 costs 670,000.",
-      "what": "Hero XP: level Olive and Quinn first (Drill Camp)",
-      "summary": "The Drill Camp levels its 9 slotted heroes to the lowest instructor. Olive and Quinn (Lv 67) set it, so taking both to 68 gives all 9 slotted heroes a free level.",
-      "why": "Drill Camp instructors on 18 Nov: Jabel 69, Chenko 68, Olive 67, Quinn 67, Diana 68. Slotted heroes auto-level to the lowest instructor level, so the 9 slotted heroes (Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest, Saul, Seth) are at 67. Taking Olive and Quinn to 68 lifts all nine to 68; taking Chenko, Diana, Olive and Quinn to 69 (the Town Center 23 cap) lifts them to 69. XP on any other hero levels only that hero. You have 429.72K Hero XP (18 Nov); one level costs about 670,000 near Lv 68 (Diana's Upgrade button, 17 Nov), so this needs saving up.",
+      "waitingFor": "Not before 1 Dec: no upgrades other than research until then (owner, 18 Nov). About 2.7M Hero XP for the four levels; 600.63K in stock (20 Nov).",
+      "what": "Hero XP: Chenko, Olive, Quinn and Diana to Lv 69",
+      "summary": "Olive and Quinn reached Lv 68 by 20 Nov, so the 9 Drill Camp heroes are at 68. When the four Lv 68 instructors all reach 69, the 9 rise to 69 for free.",
+      "why": "Drill Camp on 20 Nov: instructors Jabel 69, Chenko 68, Olive 68, Quinn 68 and Diana 68, so the Level Minimum is 68 and the 9 slotted heroes (Amane, Helga, Howard, Gordon, Yeonwoo, Fahd, Forrest, Saul, Seth) are Lv 68. They auto-level to the lowest instructor, so the minimum moves to 69 only when the last of the four reaches 69, the Town Center 23 cap (Jabel is there already). Four levels of XP then give 13 heroes a level; XP on any other hero levels only that hero. One level near Lv 68 costs about 670,000 (Diana's Upgrade button, 17 Nov), so the four need about 2.7M; you have 600.63K (Backpack overview, 20 Nov). The earlier card, Olive and Quinn to Lv 68, is done.",
       "steps": [
-        "Put new Hero XP into Quinn and Olive only, until both reach Lv 68.",
-        "Then Chenko, Diana, Olive and Quinn to Lv 69."
+        "After 1 Dec, put Hero XP only into Chenko, Olive, Quinn and Diana until all four are Lv 69.",
+        "Then check Heroes → Drill Camp: the Level Minimum should read 69."
       ],
       "evidence": [
-        "data/manual.json Drill Camp, 18 Nov: instructors 69 / 68 / 67 / 67 / 68, 9 slotted heroes at 67",
-        "profile.md Backpack, 18 Nov: Hero XP 429.72K in stock",
+        "data/manual.json Drill Camp, 20 Nov: instructors 69 / 68 / 68 / 68 / 68, 9 slotted heroes at 68",
+        "profile.md Backpack, 20 Nov: Hero XP 600.63K in stock",
         "hero.md, 17 Nov: Diana's Upgrade button 200,457 / 670,000 to Lv 69"
       ],
-      "cost": "About 1.3M Hero XP for both to Lv 68 (inferred from Diana's 670,000)",
+      "cost": "About 2.7M Hero XP (4 × 670,000, inferred from Diana's cost)",
       "confidence": [
         "Verified",
         "Inferred"
       ],
       "heroes": [
+        "Chenko",
         "Olive",
         "Quinn",
-        "Chenko",
         "Diana"
       ],
-      "note": "Verified: instructor levels, XP stock, Diana's level cost. Inferred: the cost for Olive and Quinn (their Upgrade buttons were not read)."
+      "note": "Verified: instructor levels and XP stock. Inferred: the cost for Chenko, Olive and Quinn (only Diana's Upgrade button was read)."
     },
     {
       "id": "mythic-books-jabel",
@@ -258,15 +259,15 @@
       "ready": false,
       "waitingFor": "Not before 1 Dec: no upgrades other than research until then (owner, 18 Nov). 26 more Mythic Conquest Books for Gallant Throw Lv 5 (49 / 75, 17 Nov)",
       "what": "Mythic books: save them for Jabel, not Saul",
-      "summary": "Saul is 1 book from Lv 4 (49 / 50), but he is in no Arena, Conquest or combat march. Jabel is in all of them; her Gallant Throw needs 75 for Lv 5.",
-      "why": "Mythic books are one shared stock for Jabel, Saul and Helga. Saul's Final Prayer and Superior Techniques need 50 Mythic Conquest Books (you have 49), but Saul only gathers (Sto) and builds, and Conquest skills work only in the Arena and Conquest stages. Jabel is in the Arena defense, Conquest, Barricade 1, the Guard Station, Att and Ter; her Gallant Throw goes from 234% to 252% at Lv 5 for 75 books. Helga's skills are capped until 2-Star.",
+      "summary": "Saul is 1 book from Lv 4 (49 / 50), but he only gathers stone (Sto). Jabel is in both Arena squads, Barricade 1, the Guard Station, Ter and Att; her Gallant Throw needs 75.",
+      "why": "Mythic books are one shared stock for Jabel, Saul and Helga. Saul's Final Prayer and Superior Techniques need 50 Mythic Conquest Books (you have 49, 17 Nov), but Saul is only in Sto (stone gathering), and Conquest skills work only in the Arena and Conquest stages. Jabel is in the Arena attack and defense squads, Barricade 1, the Guard Station, Ter and Att (20–21 Nov); her Gallant Throw goes from 234% to 252% at Lv 5 for 75 books. Helga's skills are capped until 2-Star.",
       "steps": [
         "Do not upgrade Saul's Conquest skills.",
         "Keep Mythic Conquest Books until you have 75, then upgrade Jabel's Gallant Throw."
       ],
       "evidence": [
         "hero.md, 17 Nov: Saul Final Prayer and Superior Techniques 49 / 50 Mythic Conquest Books; Jabel Gallant Throw 49 / 75",
-        "lineups.md, 18 Nov: Jabel in Arena defense, Barricade 1, Guard Station; troops.md: Jabel in Ter and Att"
+        "lineups.md, 20–21 Nov: Jabel in both Arena squads, Barricade 1 and the Guard Station; troops.md, 20 Nov: Jabel in Ter and Att, Saul in Sto"
       ],
       "cost": "None now (saving)",
       "confidence": [
@@ -286,15 +287,15 @@
       "ready": false,
       "waitingFor": "Not before 1 Dec: no upgrades other than research until then (owner, 18 Nov). 12 more Epic Conquest Books (38 / 50) and 7 more Epic Expedition Manuals (43 / 50), 17 Nov",
       "what": "Next Epic books go to Quinn's two Lv 3 skills",
-      "summary": "Quinn is in the Arena, Conquest, Barricade 1, the Guard Station and Att. At 50 books, Natural Selection goes to +25% damage and Precision Shot to +40%.",
-      "why": "Every Epic skill that can be raised now needs 50 books (Lv 3 → 4) or 75 (Lv 4 → 5); you have 38 Epic Conquest Books and 43 Epic Expedition Manuals. Of the heroes in the Arena defense and Conquest squads, Quinn and Diana have Lv 3 Conquest skills; Quinn's Natural Selection raises all his damage (+20% → +25%), Diana's Sharpshooter only her attack speed. Of the heroes in the attack march (Att), only Quinn has a Lv 3 Expedition skill: Precision Shot, a 50% chance of +30% → +40% damage for the whole march.",
+      "summary": "Quinn is in both Arena squads, Barricade 1, the Guard Station and Att. At 50 books, Natural Selection goes to +25% damage and Precision Shot to +40%.",
+      "why": "Every Epic skill that can be raised now needs 50 books (Lv 3 → 4) or 75 (Lv 4 → 5); you have 38 Epic Conquest Books and 43 Epic Expedition Manuals (17 Nov). In the Arena, Quinn and Diana are in both squads, Chenko only in the attack and Gordon only in the defense; all four have Lv 3 Conquest skills. Quinn's Natural Selection raises all his damage (+20% → +25%); Diana's Lv 3 skills raise only her attack speed and crit rate. Of the heroes in the attack march (Att), only Quinn has a Lv 3 Expedition skill: Precision Shot, a 50% chance of +30% → +40% damage for the whole march. The rally preset Ter (Diana, Howard, Jabel) has no Epic skill that 50 manuals can raise: Howard's are Lv 4 and Diana's are hunting skills.",
       "steps": [
         "At 50 Epic Conquest Books: Quinn → Skills → Natural Selection → Upgrade.",
         "At 50 Epic Expedition Manuals: Quinn → Skills → Precision Shot → Upgrade."
       ],
       "evidence": [
-        "hero.md, 17 Nov: Quinn Natural Selection Lv 3 (38 / 50), Precision Shot Lv 3 (43 / 50); Diana Sharpshooter Lv 3; Howard's skills all Lv 4",
-        "lineups.md, 18 Nov: Quinn in Arena defense, Barricade 1, Guard Station; troops.md: Quinn in Att and Iro"
+        "hero.md, 17 Nov: Quinn Natural Selection Lv 3 (38 / 50), Precision Shot Lv 3 (43 / 50); Diana Sharpshooter and Deadly Strike Lv 3; Chenko's and Gordon's three Conquest skills Lv 3; Howard's skills all Lv 4",
+        "lineups.md, 20–21 Nov: Quinn in both Arena squads, Barricade 1 and the Guard Station; troops.md, 20 Nov: Quinn in Att and Iro"
       ],
       "cost": "50 Epic Conquest Books and 50 Epic Expedition Manuals",
       "confidence": [
@@ -327,7 +328,7 @@
       "source": "profile.md",
       "section": "Research Building",
       "asOf": "2026-10-22",
-      "note": "Academy Lv 23; Tech Bonus Overview recorded on 18 Nov (all research totals). Current research: Special Defensive Training IV."
+      "note": "Academy Lv 23; Tech Bonus Overview read on 20 Nov (all research totals). Current research on 20 Nov: Targeted Sniping IV."
     },
     {
       "name": "Heroes",
@@ -444,7 +445,7 @@
       "source": "profile.md",
       "section": "^Governor Gear$",
       "asOf": "2026-10-21",
-      "note": "6 of 6 slots equipped since 5 Nov, all Uncommon (the Plain Hood is 1-Star): Cavalry Attack and Defense +22.10%, Infantry and Archers +18.70% each; gear power 1,428,000 (profile.md)."
+      "note": "6 of 6 slots equipped, all Uncommon, four of them 1-Star (18 Nov): Infantry Attack and Defense +25.50%, Cavalry and Archers +22.10% each; gear power 1,672,800 (profile.md)."
     },
     {
       "name": "Governor Charms",
@@ -468,7 +469,7 @@
       "hasData": false,
       "source": null,
       "asOf": null,
-      "note": null
+      "note": "Generation 1 Pets on server day 55 (13 Nov) and Generation 2 (Cheetah, Moose) on 30 Nov, by the kingshotmastery.com server timeline (Unverified). The Pets screen has not been read; 2.60K pet food in the backpack (20 Nov)."
     },
     {
       "name": "Alliance",
@@ -483,11 +484,12 @@
     {
       "name": "Events",
       "unlock": null,
-      "state": null,
-      "hasData": false,
-      "source": null,
+      "state": "Active",
+      "hasData": true,
+      "source": "profile.md",
       "asOf": null,
-      "note": null
+      "note": "Calendar of 16–22 Nov (read 18 Nov) and the kingshotmastery.com server timeline (20 Nov, Unverified): first KvK 28 Nov – 7 Dec.",
+      "section": "^Events"
     },
     {
       "name": "Truegold / War Academy",
