@@ -190,6 +190,10 @@ def watch(every, limit, quiet_rally=0):
                     log("help hand tapped" + (" (still shown; quiet for 5 minutes)" if still["help"] else ""))
                     if still["help"]:
                         help_quiet_until = time.time() + 300
+                    if after and not in_city(after):
+                        # The "thanked you" toast or the chat closing can still cover the screen for a moment.
+                        time.sleep(2)
+                        after = capture(s)
                     if not in_front(s) or not (after and in_city(after)):
                         print("EVENT check: after the help tap the city screen is not as expected")
                         return

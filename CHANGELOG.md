@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `scripts/phone_watch.py`: after a help tap it looks again 2 seconds later before reporting that the city screen is gone
+  (a toast or the closing chat can cover it for a moment).
 - `scripts/phone_watch.py`: when a late help tap opens the alliance chat (another member helped first), it presses
   the chat's handshake button and closes the chat. `play_tasks.md` task 2 and `learned.md`: the owner's tip that the
   Embassy building helps without opening the chat (21 Nov).
