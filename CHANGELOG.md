@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `data/manual.json`: suggestion cards checked against the 20–21 Nov data. Removed the Hall of Governors stage III
+  card (the stage ended on 18 Nov) and the done Olive / Quinn Lv 68 card; added "First KvK 28 Nov – 7 Dec" (server
+  tracker) and "Chenko, Olive, Quinn and Diana to Lv 69" (Drill Camp). Infantry card: 35,600 more for 52,547-troop
+  Iron and Wood presets. Book cards: line-ups from 20–21 Nov, no unrecorded Conquest squad, and Chenko's and Gordon's
+  Lv 3 Conquest skills. Feature notes for Research, Governor Gear, Events and Pets brought up to date.
 - `lineups.md`: Arena attack squad from the Squad Settings screen the owner sent on 21 Nov: 3,682,672 power
   (the 20 Nov replay showed 3.6M), Jabel and Howard in front, Chenko, Diana and Quinn behind, as in the replay.
 - `lineups.md`: Arena attack squad read on 20 Nov from the replay of that morning's attack (Challenge History), as the
