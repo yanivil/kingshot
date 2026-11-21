@@ -1046,7 +1046,7 @@ class Dashboard extends StateHost {
     });
     var marchAlternates = Object.keys(altShared).map(function (k) {
       var p = k.split('|');
-      return { text: p[0] + ' and ' + p[1] + ' share ' + altShared[k].join(' and ') + '. They are marked as alternatives in troops.md: one goes out at a time, so this is not a conflict.' };
+      return { text: p[0] + ' and ' + p[1] + ' share ' + altShared[k].join(' and ') + '. troops.md marks them as alternatives that usually go out one at a time, so this is not counted as a conflict; when both go out, those heroes can be in only one of them.' };
     });
     var q = army.queues || {};
     var armyVM = {
