@@ -18,10 +18,12 @@ Dates in the **Updated** column show when each row was last changed in this repo
 
 Codes that are still listed as working and have not been redeemed on this account. New codes found by the automated check
 are added here, and stay unverified until they are tried in the game. When one is redeemed, move its row to Expired Codes
-with ✓. None right now (2026-11-05).
+with ✓.
 
 | Gift Code | Rewards | Source / Notes | Updated |
 | :--- | :--- | :--- | :---: |
+| `Bw8Gkp9Kn` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotguide.org); not tried in the game yet | 2026-11-21 |
+| `SAYHIHI` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-21 |
 
 ## Expired Codes
 
