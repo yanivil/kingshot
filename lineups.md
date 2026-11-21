@@ -15,18 +15,18 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 * **Arena Standing:** Rank 1,012 with 1,136 Arena Points; the season ends in 2d 06:10:51 (Arena of Glory screen, 20 Nov; your own row shows 3.5M). Rank 977 with 1,083 points on 18 Nov _(2026-11-20)_
 
 ### 1. Arena Offensive Squad (Attack Lineup)
-* **Offensive Squad Power:** **3.6M** (the replay of the 20 Nov 04:42 attack in Arena → History, "Challenge History"; the 20 Nov hero powers of the five add up to 3,682,672, which the game shows cut to 3.6M. 2,502,855 on the Squad Settings screen on 23 Oct) _(2026-11-20)_
-* **How it was read (20 Nov):** Challenge opens the "Challenge List" (My Power 3,586,116, the same number as the defense squad); with "Daily challenges: 0" its swords buttons are grey, so the Squad Settings screen did not open. History lists the day's attacks (crossed swords; two wins at 04:42, +9 points each) and defenses (shield); the replay shows both squads. Nothing was bought and no battle was started _(2026-11-20)_
+* **Offensive Squad Power:** **3,682,672** (Squad Settings screen, 21 Nov, sent by the owner: exactly the sum of the five heroes' 20 Nov powers, as worked out on 20 Nov. 3.6M in the replay of 20 Nov, 2,502,855 on 23 Oct) _(2026-11-21)_
+* **How it was read:** on 21 Nov the owner opened Challenge → Squad Settings and sent the screen; no battle was started from it. On 20 Nov, with "Daily challenges: 0", the Challenge List's swords buttons were grey, so the squad was read from the replay of that morning's attack in Arena → History ("Challenge History") _(2026-11-21)_
 * **Formation Archetype:** Dual-Frontline Tank & Aggressive Flanker with Triple-Backline DPS _(2026-10-21)_
-* **Positions:** at the start of the 20 Nov replay, Jabel and Howard stand in front and Chenko, Diana and Quinn behind; on 23 Oct Howard and Chenko were in front and Jabel behind, so Jabel and Chenko have swapped rows (inferred from the replay; the Squad Settings screen was not seen). On 21 Oct Chenko had replaced Fahd _(2026-11-20)_
+* **Positions:** on the 21 Nov Squad Settings screen, Jabel and Howard stand in front and Chenko, Diana and Quinn behind, as in the 20 Nov replay; the five are ticked in the hero list below the field. On 23 Oct Howard and Chenko were in front and Jabel behind, so Jabel and Chenko have swapped rows since. On 21 Oct Chenko had replaced Fahd _(2026-11-21)_
 
 | Grid Position | Hero | Class | Rarity | Level | Stars | Combat Role & Tactical Function | Updated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- | :---: |
-| **Frontline (Left)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | **Core Carry:** Cavalry burst damage at the front of the attack | 2026-11-20 |
-| **Frontline (Right)** | **Howard** | Infantry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) | 2026-11-20 |
-| **Backline (Left / Flank)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Offensive Bruiser:** Cavalry flanker, +20% squad lethality | 2026-11-20 |
-| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure | 2026-11-20 |
-| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T2) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-11-20 |
+| **Frontline (Left)** | **Jabel** | Cavalry | Mythic (Orange) | Lv. 69 | 4-Star (T0) | **Core Carry:** Cavalry burst damage at the front of the attack | 2026-11-21 |
+| **Frontline (Right)** | **Howard** | Infantry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Main Tank:** Absorbs primary frontline enemy bursts, AoE knockback (*Shielded Strike*) | 2026-11-21 |
+| **Backline (Left / Flank)** | **Chenko** | Cavalry | Epic (Purple) | Lv. 68 | 4-Star (T1) | **Offensive Bruiser:** Cavalry flanker, +20% squad lethality | 2026-11-21 |
+| **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **AoE Ranged DPS:** Incendiary splash damage and critical strike pressure | 2026-11-21 |
+| **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T2) | **Heavy Sniper:** Headshot single-target burst (Attack * 480%) | 2026-11-21 |
 
 ### 2. Arena Defensive Squad (Defense Lineup)
 * **Defensive Squad Power:** **3,586,116** (Defensive Squad Lineup screen, 20 Nov: exactly the sum of the five heroes' 20 Nov powers, 884,890 + 764,122 + 682,725 + 671,099 + 583,280. 3,555,833 on 18 Nov, 2,494,295 on 23 Oct) _(2026-11-20)_
@@ -41,7 +41,7 @@ Your Arena configurations feature a dedicated setup for **Offensive Attacks** an
 | **Backline (Center)** | **Diana** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T4) | **Ranged DPS:** Ranged area-of-effect damage | 2026-11-20 |
 | **Backline (Right)** | **Quinn** | Archer | Epic (Purple) | Lv. 68 | 4-Star (T2) | **Heavy Sniper:** Single-target burst damage | 2026-11-20 |
 
-The 20 Nov screen shows the same five heroes in the same places as on 18 Nov (Howard and Gordon in front, Jabel, Diana and Quinn behind), identified by portrait, class icon and level; the five are ticked in the hero list below the field. Stars are from hero.md. The attack lineup above was read from a replay on 20 Nov (the owner allowed pressing Challenge); its levels and stars are from hero.md. _(2026-11-20)_
+The 20 Nov screen shows the same five heroes in the same places as on 18 Nov (Howard and Gordon in front, Jabel, Diana and Quinn behind), identified by portrait, class icon and level; the five are ticked in the hero list below the field. Stars are from hero.md. The attack lineup above is from the Squad Settings screen of 21 Nov (levels shown there); its stars are from hero.md. _(2026-11-21)_
 
 ## Wall Guard (Barricades, Rebel Invasions)
 
