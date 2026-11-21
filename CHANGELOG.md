@@ -54,6 +54,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   smaller march did not look worth it); the Infantry card no longer points to it.
 
 ### Added
+- `learned.md`: what Claude learned about the game, the kingshotmastery.com server timeline (Kingdom 2508's unlocks
+  to 2028, read 21 Nov, and how the site counts days) and playing on the phone (rules seen on screens, taps that
+  work, watcher thresholds, mistakes not to repeat, the owner's way of working). `CLAUDE.md` points to it.
+  `data/manual.json`: War Academy on Day 218 (26 Apr 2027) by the kingdom's timeline.
 - Server day (owner, 20 Nov: use the kingshotmastery.com Server Timeline when possible). `profile.md` has a Kingdom
   Opened row (2026-09-20 14:45 UTC, Day 62 on 20 Nov) and a "Server timeline" table of the coming events and unlocks.
   It shows the first KvK on 28 Nov – 7 Dec and Gen 2 Pets on 30 Nov. `build_data.py` works the server day out from
