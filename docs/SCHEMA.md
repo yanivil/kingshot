@@ -113,7 +113,7 @@ slots = `slotsTotal` − `slotsOpen` (never counting fewer unlocked slots than f
 ### `lineups`
 | Field | Notes |
 |---|---|
-| `marches[]` | `{name, purpose, heroes[{hero, lead?}], troops{inf,cav,arc}, ratioPct{inf,cav,arc}, power, asOf}` |
+| `marches[]` | `{name, purpose, heroes[{hero, lead?}], troops{inf,cav,arc}, ratioPct{inf,cav,arc}, capacity, alternativeTo: string[], power, asOf}`. `capacity`: this preset's own troop capacity (null when not recorded; the page then falls back to `army.marchCapacity`). `alternativeTo`: tags of presets this one takes turns with; heroes they share are shown as "Shared on purpose", not as a setup conflict |
 | `arena.attack`, `arena.defense` | `{power, front: string[], back: string[], asOf}` |
 | `guardStation` | `{heroes: string[], power, powerRounded, status, defense, defenseMax, heroesLocked, asOf}` \| null. `heroesLocked`: `true` when "Garrisoned heroes cannot be deployed" is ticked, `false` when unticked (the guards can leave on marches), `null` when not recorded |
 | `barricades[]` | `{name, level, maxed, power, powerRounded, heroes: string[], asOf}` |
@@ -225,7 +225,7 @@ when the value changes (see README "Update dates").
 | `rules` | `data/manual.json` | Community rules (Unverified) |
 | `heroes[]` | hero.md | See below |
 | `drillCamp` | `data/manual.json` | |
-| `lineups.marches` | troops.md, "Formation N: Purpose (`Tag`)" sections | Heroes (`Lead` marks the lead), deployed counts, ratios, power. lineups.md's preset table is only a cross-check |
+| `lineups.marches` | troops.md, "Formation N: Purpose (`Tag`)" sections | Heroes (`Lead` marks the lead), deployed counts, ratios, power. `Total Troops` `52,547 / 95,540` → `capacity` 95540. An optional `Alternative to` bullet → the backticked tags in it (`` `Ter` `` → `["Ter"]`), else `[]`. lineups.md's preset table is only a cross-check |
 | `lineups.arena` | lineups.md | "… Squad Power"; `Frontline` rows → `front`, `Backline` rows → `back` |
 | `lineups.barricades` | lineups.md, "Barricade N" sections | `Level 10 (MAX)` → level 10, `maxed: true`; Combined Hero Power (`1.4M` → rounded) |
 | `lineups.guardStation` | lineups.md, "Guard Station" section | Combined Hero Power (`2.0M` → rounded); Status `Intact, City Defense 15,000 / 15,000` → `status` "Intact", `defense` 15000, `defenseMax` 15000; Guards Locked `Yes` / `No` → `heroesLocked` (other text → `null` with a warning); the `Slot` / `Hero` table → `heroes`. No section → `null` |

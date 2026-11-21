@@ -192,6 +192,62 @@
       "note": "Verified: your preset troops and troop counts. Inferred: that more Infantry is worth the training cost (training costs and times are not recorded)."
     },
     {
+      "id": "iro-quinn-to-amane",
+      "priority": 3,
+      "type": "Formations",
+      "what": "Iron preset: Amane instead of Quinn, to free Att",
+      "summary": "Quinn is in Iro and Att, so Att is short of Quinn while Iron is gathering. Amane is in no preset and has the same troop capacity, so Iron still sends 52,547 Infantry.",
+      "why": "A hero can be in only one march at a time (community rule). Quinn is the third hero of the Iron gathering preset (Seth lead, Gordon) and of Att, the attack preset (Jabel, Howard, Quinn). Iron gathering takes hours, and all that time Att cannot go out with Quinn. Neither Quinn nor Amane has a gathering skill; Iron's speed bonus is Seth's (+20%, Craftsmanship). Amane (Archer, Lv 68) is the only recruited hero in no preset, and her Troop Capacity is +12,980, the same as Quinn's, so Iro keeps its 95,540 capacity and its 52,547 Infantry. Iro's power drops, since Amane's hero power is 364,940 against Quinn's 671,099; that matters only if the gathering march is attacked. Ter and Att also share heroes (Jabel and Howard), but they take turns (troops.md), so they are not a conflict.",
+      "changes": [
+        {
+          "where": "Iro (Iron Gathering)",
+          "rows": [
+            {
+              "label": "Heroes",
+              "before": [
+                "Seth",
+                "Gordon",
+                "Quinn"
+              ],
+              "after": [
+                "Seth",
+                "Gordon",
+                "Amane"
+              ]
+            },
+            {
+              "label": "Troops",
+              "before": [
+                "52,547 Infantry"
+              ],
+              "after": [
+                "52,547 Infantry"
+              ]
+            }
+          ]
+        }
+      ],
+      "steps": [
+        "Avatar → Squad → Formations → the Iro tab.",
+        "Take Quinn out of the third place and put Amane in.",
+        "Check that it still shows 52,547 Infantry of 95,540, then Save."
+      ],
+      "evidence": [
+        "troops.md, Deploy screen of 20 Nov: Iro Seth, Gordon, Quinn (52,547 / 95,540); Att Jabel, Howard, Quinn; Amane in no preset",
+        "hero.md, 20 Nov: Quinn and Amane +12,980 Troop Capacity each; hero power Quinn 671,099, Amane 364,940"
+      ],
+      "cost": "None",
+      "confidence": [
+        "Verified",
+        "Unverified"
+      ],
+      "heroes": [
+        "Quinn",
+        "Amane"
+      ],
+      "note": "Verified: the presets, troop capacities and powers. Unverified: the one-march-per-hero rule (community), which the Army page also marks."
+    },
+    {
       "id": "tc24-idle-builders",
       "priority": 5,
       "type": "City",

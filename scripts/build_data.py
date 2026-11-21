@@ -928,12 +928,20 @@ def parse_troops(body: str, as_of: Optional[str], log: BuildLog) -> Dict[str, An
             if mapped:
                 troops[mapped[0]] = parse_number(row["Deployed Count"])
                 ratio[mapped[0]] = parse_number(cell(row, "Troop Ratio"))
+        # "Total Troops: 52,547 / 95,540": the second number is this preset's own
+        # capacity (base plus its heroes' Troop Capacity), which differs between
+        # presets, so the page must not show the largest march capacity for all.
+        total_pair = parse_pair(info.get("Total Troops"))
         marches.append({
             "name": head.group(2).strip(),
             "purpose": head.group(1).strip(),
             "heroes": parse_march_heroes(label_value(info, "Assigned Heroes", src, log) or ""),
             "troops": troops,
             "ratioPct": ratio,
+            "capacity": total_pair[1] if total_pair else None,
+            # Optional "Alternative to: `Ter`": presets meant to go out one at a
+            # time, so heroes they share are not a setup conflict on the page.
+            "alternativeTo": re.findall(r"`([^`]+)`", info.get("Alternative to", "")),
             "power": parse_number(label_value(info, "Formation Power", src, log)),
             "asOf": section_date(sec, as_of),
         })

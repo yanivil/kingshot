@@ -102,7 +102,10 @@ Ascension calculator.
   - The base was 56,600 on 20 Nov. It rose by 1,000 when the research total Troops Deployment Capacity went from +7,100 to
     +8,100 (inferred; the numbers match exactly).
   - The gathering presets send 55% of their capacity (61% for `Bre`).
-- **One march per hero:** a hero can be in only one march at a time. `Ter` and `Att` share Jabel and Howard.
+- **One march per hero:** a hero can be in only one march at a time (community rule). `Ter` and `Att` share Jabel and
+  Howard but take turns: troops.md marks `Att` "Alternative to: `Ter`", so the dashboard does not count them as a
+  conflict (21 Nov). With 47,795 Infantry each and 69,530 in total, they cannot both go out full anyway. Quinn in
+  `Iro` and `Att` is a real clash; the card "Iron preset: Amane instead of Quinn" fixes it.
 
 ### Arena, Barricades and Guard Station
 

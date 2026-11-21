@@ -6,6 +6,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- Army & marches: a hero in two presets is a setup conflict only when the presets are not alternatives. troops.md
+  marks `Att` as an alternative to `Ter` (same main heroes, Jabel and Howard; with 69,530 Infantry both can't go out
+  full together), so the page shows them as "Shared on purpose" and the Overview counts 1 clash (Quinn, `Iro` and
+  `Att`) instead of 3. New card: put Amane in `Iro` instead of Quinn. Each preset now shows its own capacity
+  (`Iro` and `Woo` 95,540, `Sto` 95,490, `Bre` 82,560), not 95,590 for all. The generator reads `capacity` and
+  `alternativeTo` for each march.
 - `data/manual.json`: suggestion cards checked against the 20–21 Nov data. Removed the Hall of Governors stage III
   card (the stage ended on 18 Nov) and the done Olive / Quinn Lv 68 card; added "First KvK 28 Nov – 7 Dec" (server
   tracker) and "Chenko, Olive, Quinn and Diana to Lv 69" (Drill Camp). Infantry card: 35,600 more for 52,547-troop
