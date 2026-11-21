@@ -12,13 +12,13 @@ Dates in the **Updated** column, and in _(YYYY-MM-DD)_ after other values, show 
 
 | Attribute | Value | Details / In-Game Notes | Updated |
 | :--- | :---: | :--- | :---: |
-| **Overall Account Power** | **23,449,642** | City top bar, 20 Nov (the Governor Profile shows 23.4M). 23,171,282 on the morning of 18 Nov, 23,042,384 the night before, 17,819,499 on 5 Nov, 13,969,554 on 27 Oct, 12,464,731 on 25 Oct | 2026-11-20 |
+| **Overall Account Power** | **20,585,227** | City top bar, 21 Nov, after the King's Castle rallies (the Governor Profile shows 20.6M; 22,427,011 earlier that day). 23,449,642 on 20 Nov. 23,171,282 on the morning of 18 Nov, 23,042,384 the night before, 17,819,499 on 5 Nov, 13,969,554 on 27 Oct, 12,464,731 on 25 Oct | 2026-11-21 |
 | **Kingdom / Server** | **#2508** | Home realm state (Governor Profile) | 2026-11-18 |
 | **Kingdom Opened** | **2026-09-20 14:45 UTC** | Server open date from the kingshotmastery.com Server Timeline (Unverified: a community tracker; the game shows no server day). The tracker showed **Day 62** on 20 Nov (UTC); the dashboard works the day out from this date, counting the opening day as Day 1 as the tracker does (inferred) | 2026-11-20 |
 | **Alliance** | **SPQ** | Primary allied faction (Governor Profile) | 2026-11-18 |
-| **Total Combat Kills** | **729,510** | Total enemy unit casualties inflicted (Governor Profile "Kills", 20 Nov; 700,694 on 18 Nov, 658,745 on 5 Nov, 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-20 |
+| **Total Combat Kills** | **736,458** | Total enemy unit casualties inflicted (Governor Profile "Kills", 21 Nov; 729,510 on 20 Nov, 700,694 on 18 Nov, 658,745 on 5 Nov, 592,690 on 27 Oct, 443,382 on 23 Oct) | 2026-11-21 |
 | **VIP Level** | **VIP 4** | Active Governor concierge tier (city top bar, 20 Nov; VIP 3 on 27 Oct) | 2026-11-20 |
-| **Stamina** | **20 / 200** | Governor hunting and expedition energy (the bar under the portrait on the Governor Profile, 20 Nov; 79 on the Backpack overview on the morning of 18 Nov, 103 / 200 the night before, 124 / 200 on 5 Nov) | 2026-11-20 |
+| **Stamina** | **127 / 200** | Governor hunting and expedition energy (the bar under the portrait on the Governor Profile, 21 Nov; 20 / 200 on 20 Nov, 79 on the Backpack overview on the morning of 18 Nov, 103 / 200 the night before, 124 / 200 on 5 Nov) | 2026-11-21 |
 | **Display Avatar / Skin** | **Saul** | Featured character model | 2026-10-23 |
 | **Governor Gear** | **6 / 6 Equipped** | 6 Uncommon pieces worn, four of them 1-Star (see "Governor Gear" below; one was 1-Star on 5 Nov); 3 / 6 on 27 Oct | 2026-11-18 |
 | **Conquest Stage** | **339** | Current stage on the Conquest screen (stage 306 on 5 Nov) | 2026-11-18 |
@@ -50,7 +50,7 @@ The Town Center represents the administrative heart of the settlement, governing
 * **Building Power:** **431,800** at Lv 20; Lv 21 adds +57,400 (Upgrade Bonus); the Lv 22 figure was not shown _(2026-10-23)_
 * **Citizens / Workforce Capacity:** **32 / 32** (100% capacity; city top bar) _(2026-11-20)_
 * **Stored Food (Bread):** **195.4M** (city top bar, 20 Nov; 155.3M on the morning of 18 Nov, 147.8M the night before, 106.1M on 5 Nov, 1.7M on 27 Oct) _(2026-11-20)_
-* **Free Gems:** **33,029** (city top bar, 20 Nov; 14,856 on the morning of 18 Nov, 13,447 the night before, 35,597 on 5 Nov, 35,666 on 27 Oct). Where the 18,173 gems gained since 18 Nov came from was not shown on the screens read _(2026-11-20)_
+* **Free Gems:** **22,010** (city top bar, 21 Nov; 11,019 fewer than the 33,029 of 20 Nov, and the screens read do not show where they went (no task spent gems; the recruitment on 21 Nov used only keys). 33,029 on 20 Nov; 14,856 on the morning of 18 Nov, 13,447 the night before, 35,597 on 5 Nov, 35,666 on 27 Oct). Where the 18,173 gems gained since 18 Nov came from was not shown on the screens read _(2026-11-21)_
 * **Stored Wood:** **209.2M** (Backpack, Overview: Resources & Speedups, 20 Nov: 731.38M in stock minus 522.20M in backpack items; the subtraction is inferred, as for bread, where 745.90M − 550.37M = 195.53M matches the city top bar's 195.5M. 164.1M on 18 Nov) _(2026-11-20)_
 * **Stored Stone:** **41.4M** (same screen, 20 Nov: 147.92M in stock minus 106.57M in items; inferred. 32.7M on 18 Nov) _(2026-11-20)_
 * **Stored Iron:** **9.12M** (same screen, 20 Nov: 36.88M in stock minus 27.76M in items; inferred. 6.98M on 18 Nov) _(2026-11-20)_

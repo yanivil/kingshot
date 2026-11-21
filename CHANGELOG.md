@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `troops.md`, `profile.md`: 21 Nov after the King's Castle rallies: 30,962 / 48,786 / 39,348 troops (119,096, −78,869),
+  infirmary full (75,800 / 75,800); power 20,585,227, kills 736,458, stamina 127 / 200, gems 22,010. Infantry card:
+  about 74,100 more.
 - `scripts/phone_watch.py`: after a help tap it looks again 2 seconds later before reporting that the city screen is gone
   (a toast or the closing chat can cover it for a moment).
 - `scripts/phone_watch.py`: when a late help tap opens the alliance chat (another member helped first), it presses

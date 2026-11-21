@@ -160,14 +160,14 @@
       "id": "train-infantry",
       "priority": 2,
       "type": "Troops",
-      "what": "Train about 35,600 more Infantry",
-      "summary": "Iron and Wood each send 52,547 of your 69,530 Infantry and a Ter rally takes 47,795, so only one of them can be out. About 35,600 more lets Iron and Wood go out together.",
-      "why": "On the 20 Nov Deploy screen Iro and Woo each carry 52,547 Infantry, and Ter (the rally preset, play task 12) and Att 47,795. You have 69,530 Infantry (Troops Preview, 20 Nov; 70,976 on 18 Nov, the 1,446 lost in battles, inferred). Iron and Wood together need 105,094, about 35,600 more than you have; Ter with one of them needs 100,342, about 30,800 more. Stone (Cavalry) and Bread (Archers) fit beside any of them. All three training queues were busy on 20 Nov (5:37 left); how many Infantry is not shown. Training is not an upgrade, so it fits the plan until 1 Dec, without speedups.",
+      "what": "Train about 74,100 more Infantry",
+      "summary": "The 21 Nov castle rallies left 30,962 Infantry: not enough for one full Ter (47,795) or Iron (52,547). About 74,100 more lets Iron and Wood go out together again.",
+      "why": "Troops Preview on 21 Nov: 30,962 Infantry (69,530 on 20 Nov), after the King's Castle rallies; the infirmary is full (75,800 / 75,800), so healing brings some back, but a System mail says not all injured were saved. Ter and Att each need 47,795 Infantry, Iro and Woo 52,547 each; Iron and Wood together need 105,094, about 74,100 more than you have. Healed troops count toward this as they return. Training is not an upgrade, so it fits the plan until 1 Dec, without speedups.",
       "changes": [
         {
           "where": "Elite Infantry",
           "before": [
-            "69,530"
+            "30,962"
           ],
           "after": [
             "about 105,100"
@@ -176,12 +176,12 @@
         }
       ],
       "steps": [
-        "Train Elite Infantry in the Barracks whenever its queue is free, without speedups."
+        "Train Elite Infantry in the Barracks whenever its queue is free, without speedups.",
+        "Heal the injured as the infirmary frees up (play task 4)."
       ],
       "evidence": [
-        "troops.md, Deploy screen of 20 Nov: Iro and Woo 52,547 Infantry each, Ter and Att 47,795",
-        "troops.md, Troops Preview of 20 Nov: 69,530 / 63,964 / 64,321 Elite Infantry / Cavalry / Archers",
-        "profile.md side panel, 20 Nov: all three training queues busy, 5:37 left"
+        "troops.md, Troops Preview of 21 Nov: 30,962 / 48,786 / 39,348 Elite Infantry / Cavalry / Archers; injured 75,800 / 75,800",
+        "troops.md, Deploy screen of 20 Nov: Iro and Woo 52,547 Infantry each, Ter and Att 47,795"
       ],
       "cost": "Training time and resources (not recorded)",
       "confidence": [
