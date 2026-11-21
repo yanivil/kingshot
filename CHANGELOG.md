@@ -6,6 +6,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- `play_tasks.md` (owner, 21 Nov): task 12, with many troops waiting for healing, join only Terror rallies, no other
+  rally or attack; new task 14, claim quest rewards in the notebook (Daily and Growth), never Go.
 - `troops.md`: the owner's answer on `Ter` and `Att` (21 Nov): alone about 95% of the time, together about 5%. They
   stay marked as alternatives; the Army page note now says that when both go out, Jabel and Howard can be in only one.
 - Army & marches: a hero in two presets is a setup conflict only when the presets are not alternatives. troops.md
