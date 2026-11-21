@@ -1024,8 +1024,29 @@ class Dashboard extends StateHost {
     classes.forEach(function (c) { armyCounts[c.key] = c.count; armyPcts[c.key] = c.pct; });
     var marchUse = {};
     (L.marches || []).forEach(function (m) { (m.heroes || []).forEach(function (x) { (marchUse[x.hero] = marchUse[x.hero] || []).push(m.name); }); });
-    var marchConflicts = Object.keys(marchUse).filter(function (n) { return marchUse[n].length > 1; }).map(function (n) {
-      return { text: n + ' is in ' + marchUse[n].join(' and ') + ', so those marches can’t run at the same time.' };
+    // Presets marked "Alternative to" each other in troops.md take turns (one goes out at a time), so heroes they
+    // share are not a setup conflict; the view says so in a note instead. Either side may carry the mark.
+    var altPair = {};
+    (L.marches || []).forEach(function (m) { (m.alternativeTo || []).forEach(function (o) { altPair[m.name + '|' + o] = altPair[o + '|' + m.name] = true; }); });
+    var isAlt = function (a, b) { return !!altPair[a + '|' + b]; };
+    var clashWith = {};   // hero -> marches that cannot run together because of this hero
+    var altShared = {};   // 'A|B' -> heroes shared by two alternative presets
+    Object.keys(marchUse).forEach(function (n) {
+      var ms = marchUse[n];
+      for (var i = 0; i < ms.length; i++) {
+        for (var j = i + 1; j < ms.length; j++) {
+          if (isAlt(ms[i], ms[j])) { (altShared[ms[i] + '|' + ms[j]] = altShared[ms[i] + '|' + ms[j]] || []).push(n); continue; }
+          var c = clashWith[n] = clashWith[n] || [];
+          [ms[i], ms[j]].forEach(function (x) { if (c.indexOf(x) < 0) c.push(x); });
+        }
+      }
+    });
+    var marchConflicts = Object.keys(clashWith).map(function (n) {
+      return { text: n + ' is in ' + clashWith[n].join(' and ') + ', so those marches can’t run at the same time.' };
+    });
+    var marchAlternates = Object.keys(altShared).map(function (k) {
+      var p = k.split('|');
+      return { text: p[0] + ' and ' + p[1] + ' share ' + altShared[k].join(' and ') + '. They are marked as alternatives in troops.md: one goes out at a time, so this is not a conflict.' };
     });
     var q = army.queues || {};
     var armyVM = {
@@ -1041,15 +1062,25 @@ class Dashboard extends StateHost {
       split: mkSplit(armyCounts, armyPcts),
       splitAria: 'Troop split: ' + classes.map(function (c) { return c.name + ' ' + (c.pct != null ? c.pct + '%' : NR); }).join(', '),
       hasConflicts: marchConflicts.length > 0, conflicts: marchConflicts,
+      hasAlternates: marchAlternates.length > 0, alternates: marchAlternates,
       marchAsOf: self.asOf(marchesAsOf),
       marches: (L.marches || []).map(function (m) {
         var t = m.troops || {};
         var sum = classes.reduce(function (s, c) { return s + (t[c.key] || 0); }, 0);
         var sp = mkSplit(t, m.ratioPct);
+        // Each preset has its own capacity (base plus its heroes' Troop Capacity); the largest march capacity is
+        // only a fallback for data without it.
+        var cap = m.capacity != null ? m.capacity : army.marchCapacity;
+        var heroNote = function (h) {
+          var other = (marchUse[h] || []).filter(function (o) { return o !== m.name; });
+          var clash = other.filter(function (o) { return !isAlt(m.name, o); });
+          if (clash.length) return ' · also in ' + clash.join(', ');
+          return other.length ? ' · also in ' + other.join(', ') + ' (alternative)' : '';
+        };
         return { name: m.name || NR, purpose: (m.purpose || 'Purpose: ' + NR) + olderNote(m, marchesAsOf),
-                 heroes: (m.heroes || []).map(function (x) { return { label: x.hero + (x.lead ? ' · lead' : '') + (marchUse[x.hero] && marchUse[x.hero].length > 1 ? ' · also in another march' : '') }; }),
+                 heroes: (m.heroes || []).map(function (x) { return { label: x.hero + (x.lead ? ' · lead' : '') + heroNote(x.hero) }; }),
                  split: sp, aria: 'Troop ratio ' + sp.map(function (s) { return s.name + ' ' + s.pctText; }).join(', '),
-                 totalText: sum ? self.num(sum) + (army.marchCapacity ? ' of ' + self.num(army.marchCapacity) : '') : NR,
+                 totalText: sum ? self.num(sum) + (cap ? ' of ' + self.num(cap) : '') : NR,
                  powerText: self.num(m.power) };
       }),
       noMarches: !(L.marches || []).length,
@@ -1390,7 +1421,7 @@ class Dashboard extends StateHost {
       { label: belowCap != null ? 'Heroes below the Lv ' + cap + ' cap' : 'Heroes below level cap', value: belowCap != null ? belowCap + ' of ' + heroes.length : NR, cls: belowCap ? 'warn' : '', go: go('heroes') },
       { label: 'Empty gear slots / pieces at +0', value: emptySlots + ' / ' + plus0, cls: (emptySlots || plus0) ? 'warn' : '', go: go('invest') },
       { label: 'Empty Drill Camp slots', value: DC ? String(Math.max(0, (DC.slotsOpen || 0) - (DC.slotted || []).length)) : NR, cls: DC && (DC.slotsOpen || 0) > (DC.slotted || []).length ? 'warn' : '', go: go('drill') },
-      { label: 'Heroes in more than one march', value: String(marchConflicts.length), cls: marchConflicts.length ? 'warn' : '', go: go('army') },
+      { label: 'Heroes in clashing marches', value: String(marchConflicts.length), cls: marchConflicts.length ? 'warn' : '', go: go('army') },
       { label: 'Data conflicts to resolve', value: String(conflicts.length), cls: conflicts.length ? 'warn' : '', go: go('health') }
     ];
 
@@ -1710,6 +1741,9 @@ function tplArmy(v) {
     tplSplit(a.split, a.splitAria, false) + '</section>' +
     when(a.hasConflicts, each(a.conflicts, function (c) {
       return '<div class="warnbox"><strong>Setup conflict:</strong> ' + esc(c.text) + ' <span class="conf conf-unverified">Unverified rule</span></div>';
+    })) +
+    when(a.hasAlternates, each(a.alternates, function (c) {
+      return '<p class="note"><strong>Shared on purpose:</strong> ' + esc(c.text) + '</p>';
     })) +
     '<section class="panel"><div class="panel-h"><h3>March presets</h3><span class="asof">' + esc(a.marchAsOf) + '</span></div>' +
     '<div class="grid2">' + each(a.marches, function (m) {

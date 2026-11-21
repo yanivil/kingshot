@@ -97,6 +97,7 @@ Standing forces are **Tier VIII (Elite)** units across the three military branch
 * **Total Troops:** 95,590 / 95,590 (Full March) _(2026-11-20)_
 * **Assigned Heroes:** Jabel (Lv. 69, Cavalry Lead), Howard (Lv. 68, Infantry), Quinn (Lv. 68, Archer) _(2026-11-20)_
 * **Tactical Objective:** Attacking a governor: the 50 / 20 / 30 Infantry / Cavalry / Archer split of the attack suggestion, sized to the larger march. Tab 6, saved by the account owner after 17 Nov (tab 6 was empty then). _(2026-11-20)_
+* **Alternative to:** `Ter`: the same two main heroes (Jabel and Howard) with Quinn in Diana's place, so the two take turns. Both are full 95,590-troop marches with 47,795 Infantry each, 95,590 together against the 69,530 Infantry the account has, so they cannot both go out full at the same time anyway (inferred; the owner can say otherwise) _(2026-11-21)_
 
 | Branch | Unit Tier | Deployed Count | Available Count | Troop Ratio % | Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |

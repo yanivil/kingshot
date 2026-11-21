@@ -103,7 +103,8 @@ The Overview opens with account power and total kills.
   `data/manual.json`, `docs/`, `scripts/` or the workflow, `.github/workflows/build-dashboard.yml`
   runs the tests and the generator and deploys `build/` to GitHub Pages. It never commits to `main`.
 * **Derived values are computed in the page**, not stored: hero level caps (from the Town Center rule
-  table), assignments, lineup power checks, march conflicts, the Drill Camp placement plan, feature
+  table), assignments, lineup power checks, march conflicts (a hero in two presets, unless troops.md marks the
+  presets as alternatives that take turns), the Drill Camp placement plan, feature
   states and the data-health checks. Data health flags a section as stale when it is more than 3 days old
   (`staleAfterDays` in `data/manual.json`) or has no date; the Drill Camp page says its reading is older than
   the hero data only when it trails it by more than the same number of days.

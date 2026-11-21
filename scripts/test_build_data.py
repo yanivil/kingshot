@@ -355,6 +355,25 @@ class MergeAndOutputTests(unittest.TestCase):
                                              "infirmary": "2026-10-21"})
         self.assertEqual(troops["marches"][0]["asOf"], "2026-10-22")
 
+    def test_march_capacity_and_alternatives(self) -> None:
+        """Each preset keeps its own capacity; "Alternative to" lists the presets it takes turns with."""
+        body = ("## Saved March Formations\n\n"
+                "### Formation 1: Terror & Beasts (`Ter`) — Rally / PvE Preset\n"
+                "* **Formation Power:** 26,571,624 _(2026-11-20)_\n"
+                "* **Total Troops:** 95,590 / 95,590 (Full March) _(2026-11-20)_\n"
+                "* **Assigned Heroes:** Diana (Lv. 68, Archer Lead), Jabel (Lv. 69, Cavalry) _(2026-11-20)_\n\n"
+                "### Formation 2: Iron Gathering (`Iro`) — Resource Preset\n"
+                "* **Formation Power:** 12,610,901 _(2026-11-20)_\n"
+                "* **Total Troops:** 52,547 / 95,540 _(2026-11-20)_\n"
+                "* **Assigned Heroes:** Seth (Lv. 68, Infantry Lead) _(2026-11-20)_\n\n"
+                "### Formation 6: Attack (`Att`) — PvP Preset\n"
+                "* **Formation Power:** 26,835,011 _(2026-11-20)_\n"
+                "* **Assigned Heroes:** Jabel (Lv. 69, Cavalry Lead) _(2026-11-20)_\n"
+                "* **Alternative to:** `Ter`: the same main heroes; one goes out at a time _(2026-11-21)_\n")
+        marches = bd.parse_troops(body, "2026-10-01", bd.BuildLog())["marches"]
+        self.assertEqual([m["capacity"] for m in marches], [95590, 95540, None])
+        self.assertEqual([m["alternativeTo"] for m in marches], [[], [], ["Ter"]])
+
     def test_lineup_parts_have_their_own_dates(self) -> None:
         """Each Arena squad and barricade takes the newest stamp in its own section."""
         squad = ("* **{0} Squad Power:** 1 _({1})_\n\n"
