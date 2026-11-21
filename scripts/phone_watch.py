@@ -43,6 +43,11 @@ HAND = (318, 870, 362, 925)       # help hand bubble above the Alliance button
 HAND_TAP = (340, 899)
 MAIL = (430, 815, 452, 900)       # red count at the envelope's top right
 WORLD = (400, 940, 455, 975)      # the World button's map icon: about 14% green on the city screen (20 Nov)
+# Since 21 Nov the hand (with a count) can open the alliance chat instead of helping; the chat then shows its own
+# handshake button on the right. Measured: shown 0.143 green / 0.266 white / 0.157 peach, gone 0 / 0 / 0.
+CHAT_HAND = (405, 826, 443, 866)
+CHAT_HAND_TAP = (424, 846)
+CHAT_CLOSE = (434, 57)            # the chat's X; nothing is ever typed
 
 
 def serial():
@@ -129,6 +134,12 @@ def detect(img):
     return found, {"skull": sk, "hand": hd, "mail": ml}
 
 
+def chat_hand(img):
+    """True when the alliance chat shows its handshake (help) button on the right."""
+    c = classes(img, CHAT_HAND)
+    return c["green"] > 0.07 and c["white"] > 0.12 and c["peach"] > 0.07
+
+
 def log(msg):
     os.makedirs(os.path.dirname(LOG), exist_ok=True)
     with open(LOG, "a") as f:
@@ -143,6 +154,9 @@ def watch(every, limit, quiet_rally=0):
     """Loop until something needs Claude. quiet_rally: seconds from the start in which a rally skull is ignored, for
     a rally Claude has already found full or marching (it stays on screen until it leaves, about 2-5 minutes)."""
     start = time.time()
+    # After a help whose icon stays up ("Already helped allies' build queues": every open request is already helped,
+    # 21 Nov), the hand is left alone for 5 minutes instead of being tapped, which would only open the chat again.
+    help_quiet_until = 0.0
     while True:
         s = serial()
         if not s:
@@ -158,13 +172,25 @@ def watch(every, limit, quiet_rally=0):
                 if found["rally"] and time.time() - start > quiet_rally:
                     print("EVENT rally", m["skull"])
                     return
-                if found["help"]:
+                if found["help"] and time.time() > help_quiet_until:
                     tap(s, *HAND_TAP)
                     time.sleep(1.5)
                     after = capture(s)
+                    if after and not in_city(after) and in_front(s) and chat_hand(after):
+                        # Another member helped first, so the tap opened the alliance chat (owner, 21 Nov): press
+                        # the chat's handshake, then close the chat. Nothing is ever typed.
+                        tap(s, *CHAT_HAND_TAP)
+                        time.sleep(1.5)
+                        log("help pressed in the alliance chat")
+                        if in_front(s):
+                            tap(s, *CHAT_CLOSE)
+                        time.sleep(1.5)
+                        after = capture(s)
                     still, _ = detect(after) if after else ({"help": True}, None)
-                    log("help hand tapped" + (" (still shown after the tap)" if still["help"] else ""))
-                    if still["help"] or not in_front(s) or not (after and in_city(after)):
+                    log("help hand tapped" + (" (still shown; quiet for 5 minutes)" if still["help"] else ""))
+                    if still["help"]:
+                        help_quiet_until = time.time() + 300
+                    if not in_front(s) or not (after and in_city(after)):
                         print("EVENT check: after the help tap the city screen is not as expected")
                         return
                 if found["mail"]:
