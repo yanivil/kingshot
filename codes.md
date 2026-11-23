@@ -24,6 +24,11 @@ with ✓.
 | :--- | :--- | :--- | :---: |
 | `Bw8Gkp9Kn` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotguide.org); not tried in the game yet | 2026-11-21 |
 | `SAYHIHI` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-21 |
+| `1T1G2D2` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 3 trackers (kingshot.net, kingshotguide.org, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `Bw8Qk3E4j` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotguide.org); not tried in the game yet | 2026-11-23 |
+| `KS27TGS` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `THANKS4WORK` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `7VAEyXPV7` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on one tracker only (kingshot.net), so less certain; not tried in the game yet | 2026-11-23 |
 
 ## Expired Codes
 
