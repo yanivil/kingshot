@@ -29,6 +29,7 @@ with ✓.
 | `KS27TGS` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
 | `THANKS4WORK` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
 | `7VAEyXPV7` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on one tracker only (kingshot.net), so less certain; not tried in the game yet | 2026-11-23 |
+| `THANKS` | Not recorded | Unverified: found by the automated gift-code check on 25 Nov, listed on one tracker only (boostbot.org), so less certain; not tried in the game yet | 2026-11-25 |
 
 ## Expired Codes
 
