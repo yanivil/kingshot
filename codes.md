@@ -18,10 +18,19 @@ Dates in the **Updated** column show when each row was last changed in this repo
 
 Codes that are still listed as working and have not been redeemed on this account. New codes found by the automated check
 are added here, and stay unverified until they are tried in the game. When one is redeemed, move its row to Expired Codes
-with ✓. None right now (2026-11-05).
+with ✓.
 
 | Gift Code | Rewards | Source / Notes | Updated |
 | :--- | :--- | :--- | :---: |
+| `Bw8Gkp9Kn` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotguide.org); not tried in the game yet | 2026-11-21 |
+| `SAYHIHI` | Not recorded | Unverified: found by the automated gift-code check on 21 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-21 |
+| `1T1G2D2` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 3 trackers (kingshot.net, kingshotguide.org, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `Bw8Qk3E4j` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotguide.org); not tried in the game yet | 2026-11-23 |
+| `KS27TGS` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `THANKS4WORK` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on 2 trackers (kingshot.net, kingshotmastery.com); not tried in the game yet | 2026-11-23 |
+| `7VAEyXPV7` | Not recorded | Unverified: found by the automated gift-code check on 23 Nov, listed on one tracker only (kingshot.net), so less certain; not tried in the game yet | 2026-11-23 |
+| `THANKS` | Not recorded | Unverified: found by the automated gift-code check on 25 Nov, listed on one tracker only (boostbot.org), so less certain; not tried in the game yet | 2026-11-25 |
+| `GOBBLE` | Not recorded | Unverified: found by the automated gift-code check on 27 Nov, listed on 5 trackers (boostbot.org, kingshot.net, kingshotguide.org, kingshotmastery.com, kingshotoptimizer.com); not tried in the game yet | 2026-11-27 |
 
 ## Expired Codes
 
